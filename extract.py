@@ -25,6 +25,10 @@ SKIP_TAGS = (
     "iframe",
     "button",
     "pre",  # code blocks / ASCII art — not lede material
+    # GitHub renders partials via <include-fragment>; the markup contains a
+    # "There was an error while loading. Please reload this page." fallback
+    # that is not article content.
+    "include-fragment",
 )
 
 # Box-drawing and block glyphs: a paragraph containing them is ASCII art.

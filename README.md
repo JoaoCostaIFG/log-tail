@@ -9,7 +9,8 @@ A static, black-and-white newspaper-style page rebuilt daily from
   scheme differences normalized away) with their points summed, so a story
   popular on both sites ranks higher. HN job postings, polls, "Launch HN"
   posts and the monthly "Who is hiring?" / "Who wants to be hired?" threads
-  are skipped.
+  are skipped. Recurring lobste.rs community threads ("Now Hiring" satire and
+the weekly "What are you doing this weekend?" discussion) are skipped too.
 - The edition is paginated like a print newspaper: 15 stories per page
   (the top story leads page one) and Show HN as the back page, with
   prev/next and page-number navigation.

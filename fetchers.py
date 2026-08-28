@@ -23,6 +23,12 @@ EXCLUDED_TITLES = re.compile(
 )
 EXCLUDED_AUTHORS = {"whoishiring"}
 
+# Recurring lobste.rs community threads that aren't news items.
+LOBSTERS_EXCLUDED_TITLES = re.compile(
+    r"^now\shiring\b|^what\sare\syou\sdoing\sthis\sweekend",
+    re.IGNORECASE,
+)
+
 USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
@@ -111,6 +117,8 @@ def lobsters_pages(session, pages=2):
         except (requests.RequestException, ValueError):
             continue
         for s in data:
+            if LOBSTERS_EXCLUDED_TITLES.search(s.get("title", "")):
+                continue
             stories.append(
                 {
                     "title": s.get("title", ""),

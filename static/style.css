@@ -144,6 +144,30 @@ a { color: inherit; }
 .discuss { text-decoration: none; }
 .discuss:hover { text-decoration: underline; }
 
+/* Story images — always black & white */
+
+.thumb,
+.lead-photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #000;
+  filter: grayscale(100%) contrast(1.05);
+  margin: 0 0 0.5rem;
+}
+
+.thumb { height: 8.5rem; }
+
+.lead-photo { height: clamp(12rem, 32vw, 22rem); }
+
+/* Image-focused posts (comics, photos, direct image links): uncropped */
+.thumb.full,
+.lead-photo.full {
+  height: auto;
+  max-height: 60rem;
+  object-fit: contain;
+}
+
 /* Pagination */
 
 .pagination {

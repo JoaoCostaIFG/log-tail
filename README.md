@@ -16,6 +16,12 @@ A static, black-and-white newspaper-style page rebuilt daily from
 - **Show HN** — the highest-scoring Show HN submissions of the last 24 hours.
 - Each story shows a short text excerpt fetched from the linked page
   (silently skipped when a site blocks bots or serves non-HTML content).
+- Stories carry an image when the linked site provides one (og:image /
+  twitter:image): hotlinked with `no-referrer`, lazy-loaded, rendered in
+  black & white via a CSS grayscale filter, and self-removed if the host
+  blocks hotlinking. Image-focused posts — direct image links, webcomics,
+  photo pages (detected as "has share image, no article prose") — are shown
+  uncropped instead of as cropped thumbnails.
 - Every edition is archived at `site/archive/YYYY-MM-DD.html` and linked from
   the front page. Raw data snapshots land in `data/YYYY-MM-DD.json`
   (git-ignored) — the future AI-summary step will consume those.

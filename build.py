@@ -4,6 +4,7 @@
 Pipeline: fetch feeds -> de-duplicate -> extract article text -> render HTML.
 """
 
+import hashlib
 import json
 import shutil
 import sys
@@ -13,7 +14,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import requests
 
-from extract import extract_ledes
+from extract import extract_content
 from fetchers import hn_front_page, hn_show_day, lobsters_pages
 from render import render_page
 
@@ -81,14 +82,30 @@ def dedupe(*groups):
     return ordered
 
 
-def finalize(stories, ledes):
-    """Attach link/domain/lede to each story in place."""
+IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")
+
+
+def finalize(stories, content):
+    """Attach link/domain/lede/image to each story in place."""
     for story in stories:
         link = story.get("url") or story["item_url"]
         story["link"] = link
         host = urlsplit(link).netloc
         story["domain"] = host[4:] if host.startswith("www.") else host
-        story["lede"] = ledes.get(story.get("url")) if story.get("url") else None
+        article = content.get(story.get("url")) if story.get("url") else None
+        if article:
+            story["lede"] = article["lede"]
+            story["image"] = article["image"]
+            story["image_full"] = article["full"]
+        else:
+            story["lede"] = None
+            story["image"] = None
+            story["image_full"] = False
+            url = story.get("url") or ""
+            if url.lower().split("?")[0].endswith(IMAGE_EXTENSIONS):
+                # Unfetched direct image link — let the browser try it.
+                story["image"] = url
+                story["image_full"] = True
 
 
 def recent_archives(edition_date):
@@ -138,12 +155,14 @@ def main():
           f"({dupes} cross-posts merged, ranked by points)")
 
     urls = [s["url"] for s in merged + show if s.get("url")]
-    print(f"Extracting text from {len(set(urls))} article URLs…")
-    ledes = extract_ledes(session, urls)
-    print(f"  {len(ledes)} excerpts extracted")
+    print(f"Extracting text and images from {len(set(urls))} article URLs…")
+    content = extract_content(session, urls)
 
-    finalize(merged, ledes)
-    finalize(show, ledes)
+    finalize(merged, content)
+    finalize(show, content)
+    n_images = sum(1 for s in merged + show if s.get("image"))
+    print(f"  {sum(1 for v in content.values() if v['lede'])} excerpts, "
+          f"{n_images} images")
 
     lead = merged[0] if merged else None
     front_page = merged[1:] if lead else merged
@@ -173,6 +192,12 @@ def main():
     # Page sequence: numbered front-page chunks, then the Show HN back page.
     sequence = list(range(1, n_pages + 1)) + (["show"] if show else [])
 
+    # Content hash of the stylesheet: cache-busting query param so browsers
+    # pick up CSS changes immediately after a rebuild.
+    css_version = hashlib.sha256(
+        (ROOT / "static" / "style.css").read_bytes()
+    ).hexdigest()[:8]
+
     def build_context(base, page):
         is_show = page == "show"
         number = None if is_show else page
@@ -190,6 +215,7 @@ def main():
             "edition_no": f"{now.timetuple().tm_yday:03d}",
             "volume": ROMAN.get(now.year - 2025, str(now.year - 2025)),
             "base": base,
+            "css_version": css_version,
             "page_number": number,
             "is_show": is_show,
             "lead": lead if page == 1 else None,
@@ -206,7 +232,8 @@ def main():
             "stats": {
                 "total": len(merged) + len(show),
                 "merged": dupes,
-                "excerpts": len(ledes),
+                "excerpts": sum(1 for s in merged + show if s.get("lede")),
+                "images": n_images,
             },
         }
 

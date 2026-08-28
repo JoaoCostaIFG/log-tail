@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Daily Tech Dispatch — {{ date_label }}{% if is_show %} — Show HN{% elif page_number and page_number > 1 %} — Page {{ page_number }}{% endif %}</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="{{ base }}style.css">
+  <link rel="stylesheet" href="{{ base }}style.css?v={{ css_version }}">
 </head>
 <body>
 <div class="paper">
@@ -26,18 +26,20 @@
 
   {% macro story(s) %}
   <article class="story">
+    {% if s.image %}<img class="thumb{% if s.image_full %} full{% endif %}" src="{{ s.image }}" alt="{{ s.title }}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
     <h3 class="headline"><a href="{{ s.link }}">{{ s.title }}</a></h3>
     <p class="dateline">
       {%- for src in s.sources %}<span class="badge">{{ src }}</span>{% endfor %}
       {{ s.points }} points · by {{ s.by }} · {{ s.domain }} · <a class="discuss" href="{{ s.item_url }}">discuss</a>
     </p>
-    {% if s.lede %}<p class="lede">{{ s.lede }}</p>{% endif %}
+    {% if s.lede and not s.image_full %}<p class="lede">{{ s.lede }}</p>{% endif %}
   </article>
   {% endmacro %}
 
   {% if lead %}
   <article class="lead story">
     <p class="kicker">Top Story</p>
+    {% if lead.image %}<img class="lead-photo{% if lead.image_full %} full{% endif %}" src="{{ lead.image }}" alt="{{ lead.title }}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
     <h2 class="headline"><a href="{{ lead.link }}">{{ lead.title }}</a></h2>
     <p class="dateline">
       {%- for src in lead.sources %}<span class="badge">{{ src }}</span>{% endfor %}
@@ -87,7 +89,7 @@
 
   <footer>
     <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
-    <p>{{ stats.total }} stories · {{ stats.merged }} cross-posts merged · {{ stats.excerpts }} excerpts fetched</p>
+    <p>{{ stats.total }} stories · {{ stats.merged }} cross-posts merged · {{ stats.excerpts }} excerpts · {{ stats.images }} images</p>
   </footer>
 
 </div>

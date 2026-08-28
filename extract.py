@@ -1,6 +1,7 @@
 """Fetch article pages and extract a text lede and a lead image for each."""
 
 import re
+import struct
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin
 
@@ -31,6 +32,12 @@ IMAGE_META_KEYS = {
     "twitter:image",
     "twitter:image:src",
 }
+
+# A share image must be at least this big; smaller ones are placeholders
+# (e.g. WordPress's blank 200x200 default) or tracker pixels.
+MIN_IMAGE_WIDTH = 400
+MIN_IMAGE_HEIGHT = 200
+IMAGE_PROBE_BYTES = 262144
 
 
 def _clean_text(soup):
@@ -83,6 +90,84 @@ def _extract_image(soup, base_url):
     return None
 
 
+def _jpeg_size(data):
+    i = 2
+    while i + 9 < len(data):
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        marker = data[i + 1]
+        if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):
+            h, w = struct.unpack(">HH", data[i + 5:i + 9])
+            return w, h
+        if marker in (0xD8, 0x01) or 0xD0 <= marker <= 0xD7:
+            i += 2
+            continue
+        seglen = struct.unpack(">H", data[i + 2:i + 4])[0]
+        i += 2 + seglen
+    return None
+
+
+def _image_dimensions(data):
+    """(width, height) for PNG/JPEG/GIF/WebP, or None if unknown."""
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return struct.unpack(">II", data[16:24])
+    if data[:3] == b"GIF":
+        return struct.unpack("<HH", data[6:10])
+    if data[:2] == b"\xff\xd8":
+        return _jpeg_size(data)
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        if data[12:16] == b"VP8 ":
+            w, h = struct.unpack("<HH", data[26:30])
+            return w & 0x3FFF, h & 0x3FFF
+        if data[12:16] == b"VP8L":
+            bits = struct.unpack("<I", data[21:25])[0]
+            return (bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1
+        if data[12:16] == b"VP8X":
+            w = int.from_bytes(data[24:27], "little") + 1
+            h = int.from_bytes(data[27:30], "little") + 1
+            return w, h
+    if b"<svg" in data[:1024].lower():
+        return None  # vector; no fixed dimensions — treated as valid
+    return None
+
+
+def _valid_share_image(session, url):
+    """Reject placeholder/tracker images; True means OK to use.
+
+    Unverifiable images (blocked, timing out) are kept optimistically —
+    the reader's browser may still load them.
+    """
+    try:
+        with session.get(
+            url, headers=BROWSER_HEADERS, timeout=(5, 12), stream=True
+        ) as resp:
+            if resp.status_code != 200:
+                return True
+            ctype = resp.headers.get("Content-Type", "").lower()
+            if ctype and not ctype.startswith("image/"):
+                return False
+            chunks = []
+            size = 0
+            for chunk in resp.iter_content(chunk_size=8192):
+                chunks.append(chunk)
+                size += len(chunk)
+                if size >= IMAGE_PROBE_BYTES:
+                    break
+            data = b"".join(chunks)
+    except Exception:
+        return True
+    if len(data) < 1024:
+        return False  # tracker pixels
+    if b"<svg" in data[:1024].lower():
+        return True
+    dims = _image_dimensions(data)
+    if dims is None:
+        return False  # not a recognizable raster image
+    w, h = dims
+    return w >= MIN_IMAGE_WIDTH and h >= MIN_IMAGE_HEIGHT
+
+
 def fetch_article(session, url, max_chars=800):
     """Return {"lede", "image", "full"} for the page at `url`.
 
@@ -119,6 +204,8 @@ def fetch_article(session, url, max_chars=800):
     soup = BeautifulSoup(html, "html.parser")
     text, has_prose = _clean_text(soup)
     image = _extract_image(soup, url)
+    if image and not _valid_share_image(session, image):
+        image = None
     return {
         "lede": _truncate(text, max_chars) if text else None,
         "image": image,

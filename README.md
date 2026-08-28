@@ -19,9 +19,12 @@ A static, black-and-white newspaper-style page rebuilt daily from
 - Stories carry an image when the linked site provides one (og:image /
   twitter:image): hotlinked with `no-referrer`, lazy-loaded, rendered in
   black & white via a CSS grayscale filter, and self-removed if the host
-  blocks hotlinking. Image-focused posts — direct image links, webcomics,
-  photo pages (detected as "has share image, no article prose") — are shown
-  uncropped instead of as cropped thumbnails.
+  blocks hotlinking. Candidates are validated at build time — placeholder
+  and tracker images (e.g. WordPress's blank 200×200 default, sub-1KB
+  pixels) are rejected, requiring ≥400×200 raster dimensions. Image-focused
+  posts — direct image links, webcomics, photo pages (detected as "has
+  share image, no article prose") — are shown uncropped instead of as
+  cropped thumbnails.
 - Every edition is archived at `site/archive/YYYY-MM-DD.html` and linked from
   the front page. Raw data snapshots land in `data/YYYY-MM-DD.json`
   (git-ignored) — the future AI-summary step will consume those.

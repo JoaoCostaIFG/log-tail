@@ -130,43 +130,99 @@ def recent_archives(edition_date):
 
 
 def main():
+    args = sys.argv[1:]
+    refresh = "--refresh" in args
+    full_refresh = "--full-refresh" in args
+
     now = datetime.now(timezone.utc)
     edition_date = now.strftime("%Y-%m-%d")
     date_label = now.strftime("%A, %B ") + str(now.day) + now.strftime(", %Y")
 
-    session = requests.Session()
+    snapshot_path = DATA_DIR / f"{edition_date}.json"
+    has_snapshot = snapshot_path.exists()
 
-    print("Fetching Hacker News front pages…")
-    hn = hn_front_page(session, pages=HN_PAGES, per_page=HN_PER_PAGE)
-    print(f"  {len(hn)} stories")
+    # Resolve the build mode:
+    #   --full-refresh  re-fetch feeds + re-extract articles
+    #   --refresh       keep the feed snapshot, re-extract articles only
+    #   (neither)       reuse the day's snapshot if present, else full fetch
+    if full_refresh:
+        do_full_fetch = True
+        do_extract = True
+    elif refresh:
+        do_full_fetch = False
+        do_extract = True
+        if not has_snapshot:
+            print(f"No snapshot for {edition_date}; performing a full fetch.")
+            do_full_fetch = True
+    elif has_snapshot:
+        do_full_fetch = False
+        do_extract = False
+    else:
+        do_full_fetch = True
+        do_extract = True
 
-    print("Fetching lobste.rs pages…")
-    lob = lobsters_pages(session, pages=LOBSTERS_PAGES)
-    print(f"  {len(lob)} stories")
+    session = requests.Session() if do_extract else None
+    dupes = 0
 
-    print("Fetching Show HN (last 24h)…")
-    show_raw = hn_show_day(session, limit=SHOW_HN_LIMIT)
-    print(f"  {len(show_raw)} stories")
+    if do_full_fetch:
+        print("Fetching Hacker News front pages…")
+        hn = hn_front_page(session, pages=HN_PAGES, per_page=HN_PER_PAGE)
+        print(f"  {len(hn)} stories")
 
-    # Drop Show HN submissions already on the front page — they're the same
-    # HN item, so letting them through dedupe would double-count their points.
-    seen_items = {s["item_url"] for s in hn}
-    show = [s for s in show_raw if s["item_url"] not in seen_items]
+        print("Fetching lobste.rs pages…")
+        lob = lobsters_pages(session, pages=LOBSTERS_PAGES)
+        print(f"  {len(lob)} stories")
 
-    merged = dedupe(hn, show, lob)
-    dupes = len(hn) + len(show) + len(lob) - len(merged)
-    merged.sort(key=lambda s: s["points"], reverse=True)
-    print(f"Merged front pages: {len(merged)} stories "
-          f"({dupes} cross-posts merged, ranked by points)")
+        print("Fetching Show HN (last 24h)…")
+        show_raw = hn_show_day(session, limit=SHOW_HN_LIMIT)
+        print(f"  {len(show_raw)} stories")
 
-    urls = [s["url"] for s in merged if s.get("url")]
-    print(f"Extracting text and images from {len(set(urls))} article URLs…")
-    content = extract_content(session, urls)
+        # Drop Show HN submissions already on the front page — they're the same
+        # HN item, so letting them through dedupe would double-count their
+        # points.
+        seen_items = {s["item_url"] for s in hn}
+        show = [s for s in show_raw if s["item_url"] not in seen_items]
 
-    finalize(merged, content)
-    n_images = sum(1 for s in merged if s.get("image"))
-    print(f"  {sum(1 for v in content.values() if v['lede'])} excerpts, "
-          f"{n_images} images")
+        merged = dedupe(hn, show, lob)
+        dupes = len(hn) + len(show) + len(lob) - len(merged)
+        print(f"Merged front pages: {len(merged)} stories "
+              f"({dupes} cross-posts merged, ranked by points)")
+
+        urls = [s["url"] for s in merged if s.get("url")]
+        print(f"Extracting text and images from {len(set(urls))} article URLs…")
+        content = extract_content(session, urls)
+
+        finalize(merged, content)
+        n_images = sum(1 for s in merged if s.get("image"))
+        print(f"  {sum(1 for v in content.values() if v['lede'])} excerpts, "
+              f"{n_images} images")
+    elif refresh:
+        print(f"Re-extracting articles from the {edition_date} snapshot…")
+        snap = json.loads(snapshot_path.read_text(encoding="utf-8"))
+        merged = snap["front_page"]
+        dupes = snap.get("dupes", 0)
+
+        urls = [s["url"] for s in merged if s.get("url")]
+        print(f"Extracting text and images from {len(set(urls))} article URLs…")
+        content = extract_content(session, urls)
+
+        finalize(merged, content)
+        n_images = sum(1 for s in merged if s.get("image"))
+        print(f"  {sum(1 for v in content.values() if v['lede'])} excerpts, "
+              f"{n_images} images")
+    else:
+        print(f"Loading edition {edition_date} from snapshot "
+              f"(no network)…")
+        snap = json.loads(snapshot_path.read_text(encoding="utf-8"))
+        merged = snap["front_page"]
+        dupes = snap.get("dupes", 0)
+        n_images = sum(1 for s in merged if s.get("image"))
+
+    # Stable ranking: equal-point stories break ties by item_url so the order
+    # doesn't depend on which API response came back first. Harmless on the
+    # snapshot path (already in this order) and makes a full-fetch rerun
+    # deterministic against minor feed reordering.
+    merged.sort(key=lambda s: (-s["points"], s["item_url"]))
 
     lead = merged[0] if merged else None
     front_page = merged[1:] if lead else merged
@@ -248,14 +304,15 @@ def main():
             (directory / page_href(base, page)).write_text(html, encoding="utf-8")
 
     DATA_DIR.mkdir(exist_ok=True)
-    (DATA_DIR / f"{edition_date}.json").write_text(
-        json.dumps(
-            {"edition": edition_date, "front_page": merged},
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
+    if do_extract:
+        snapshot_path.write_text(
+            json.dumps(
+                {"edition": edition_date, "front_page": merged, "dupes": dupes},
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
 
     for asset in (ROOT / "static").iterdir():
         shutil.copy(asset, SITE_DIR / asset.name)

@@ -145,22 +145,26 @@ def main():
     print(f"  {len(lob)} stories")
 
     print("Fetching Show HN (last 24h)…")
-    show = dedupe(hn_show_day(session, limit=SHOW_HN_LIMIT))
-    print(f"  {len(show)} stories")
+    show_raw = hn_show_day(session, limit=SHOW_HN_LIMIT)
+    print(f"  {len(show_raw)} stories")
 
-    merged = dedupe(hn, lob)
-    dupes = len(hn) + len(lob) - len(merged)
+    # Drop Show HN submissions already on the front page — they're the same
+    # HN item, so letting them through dedupe would double-count their points.
+    seen_items = {s["item_url"] for s in hn}
+    show = [s for s in show_raw if s["item_url"] not in seen_items]
+
+    merged = dedupe(hn, show, lob)
+    dupes = len(hn) + len(show) + len(lob) - len(merged)
     merged.sort(key=lambda s: s["points"], reverse=True)
     print(f"Merged front pages: {len(merged)} stories "
           f"({dupes} cross-posts merged, ranked by points)")
 
-    urls = [s["url"] for s in merged + show if s.get("url")]
+    urls = [s["url"] for s in merged if s.get("url")]
     print(f"Extracting text and images from {len(set(urls))} article URLs…")
     content = extract_content(session, urls)
 
     finalize(merged, content)
-    finalize(show, content)
-    n_images = sum(1 for s in merged + show if s.get("image"))
+    n_images = sum(1 for s in merged if s.get("image"))
     print(f"  {sum(1 for v in content.values() if v['lede'])} excerpts, "
           f"{n_images} images")
 
@@ -176,21 +180,17 @@ def main():
     n_pages = len(chunks)
 
     def page_href(base, page):
-        """Filename for an edition page: 1..n_pages or 'show'."""
+        """Filename for an edition page (1..n_pages)."""
         if base:  # archived edition
             if page == 1:
                 return f"{edition_date}.html"
-            if page == "show":
-                return f"{edition_date}-show.html"
             return f"{edition_date}-p{page}.html"
         if page == 1:
             return "index.html"
-        if page == "show":
-            return "show-hn.html"
         return f"page-{page}.html"
 
-    # Page sequence: numbered front-page chunks, then the Show HN back page.
-    sequence = list(range(1, n_pages + 1)) + (["show"] if show else [])
+    # Page sequence: numbered front-page chunks.
+    sequence = list(range(1, n_pages + 1))
 
     # Content hash of the stylesheet: cache-busting query param so browsers
     # pick up CSS changes immediately after a rebuild.
@@ -199,11 +199,10 @@ def main():
     ).hexdigest()[:8]
 
     def build_context(base, page):
-        is_show = page == "show"
-        number = None if is_show else page
+        number = page
         pagination = [
             {
-                "label": str(p) if p != "show" else "Show HN",
+                "label": str(p),
                 "href": page_href(base, p),
                 "current": p == page,
             }
@@ -217,22 +216,19 @@ def main():
             "base": base,
             "css_version": css_version,
             "page_number": number,
-            "is_show": is_show,
             "lead": lead if page == 1 else None,
-            "stories": [] if is_show else chunks[page - 1],
-            "show_hn": show if is_show else [],
+            "stories": chunks[page - 1],
             "pagination": pagination,
             "hrefs": {
                 "front": page_href(base, 1),
-                "show": page_href(base, "show"),
                 "prev": page_href(base, sequence[index - 1]) if index > 0 else None,
                 "next": page_href(base, sequence[index + 1]) if index + 1 < len(sequence) else None,
             },
             "archives": recent_archives(edition_date) if page == 1 else [],
             "stats": {
-                "total": len(merged) + len(show),
+                "total": len(merged),
                 "merged": dupes,
-                "excerpts": sum(1 for s in merged + show if s.get("lede")),
+                "excerpts": sum(1 for s in merged if s.get("lede")),
                 "images": n_images,
             },
         }
@@ -254,7 +250,7 @@ def main():
     DATA_DIR.mkdir(exist_ok=True)
     (DATA_DIR / f"{edition_date}.json").write_text(
         json.dumps(
-            {"edition": edition_date, "front_page": merged, "show_hn": show},
+            {"edition": edition_date, "front_page": merged},
             ensure_ascii=False,
             indent=2,
         ),
@@ -265,8 +261,8 @@ def main():
         shutil.copy(asset, SITE_DIR / asset.name)
 
     print(f"Edition {edition_date} written to {SITE_DIR}/ "
-          f"({len(front_page)} front page in {n_pages} pages of "
-          f"{STORIES_PER_PAGE}, {len(show)} show)")
+          f"({len(front_page)} stories in {n_pages} pages of "
+          f"{STORIES_PER_PAGE})")
     return 0
 
 

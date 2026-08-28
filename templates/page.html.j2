@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Log Tail — {{ date_label }}{% if is_show %} — Show HN{% elif page_number and page_number > 1 %} — Page {{ page_number }}{% endif %}</title>
+  <title>Log Tail — {{ date_label }}{% if page_number and page_number > 1 %} — Page {{ page_number }}{% endif %}</title>
   <link rel="icon" type="image/svg+xml" href="{{ base }}favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ base }}favicon-32.png">
   <link rel="apple-touch-icon" href="{{ base }}apple-touch-icon.png">
@@ -15,7 +15,6 @@
   <header class="masthead">
     <nav class="topbar">
       <a href="{{ base }}{{ hrefs.front }}">Front Page</a>
-      <a href="{{ base }}{{ hrefs.show }}">Show HN</a>
       <a href="{{ base }}{{ hrefs.front }}#archive">Archive</a>
     </nav>
     <h1><a class="masthead-link" href="{{ base }}{{ hrefs.front }}">Log Tail</a></h1>
@@ -51,21 +50,12 @@
   </article>
   {% endif %}
 
-  {% if is_show %}
-  <section id="show-hn">
-    <h2 class="section-title">Show HN — Best of the Day</h2>
-    <div class="columns">
-      {% for s in show_hn %}{{ story(s) }}{% endfor %}
-    </div>
-  </section>
-  {% else %}
   <section id="front-page">
     <h2 class="section-title">{% if page_number == 1 %}Front Page{% else %}Page {{ page_number }}{% endif %}</h2>
     <div class="columns">
       {% for s in stories %}{{ story(s) }}{% endfor %}
     </div>
   </section>
-  {% endif %}
 
   <nav class="pagination" aria-label="Pages">
     {% if hrefs.prev %}<a class="pg-arrow" href="{{ base }}{{ hrefs.prev }}">‹</a>{% endif %}
@@ -76,7 +66,7 @@
     {% if hrefs.next %}<a class="pg-arrow" href="{{ base }}{{ hrefs.next }}">›</a>{% endif %}
   </nav>
 
-  {% if page_number == 1 and not is_show %}
+  {% if page_number == 1 %}
   <section id="archive">
     <h2 class="section-title">Recent Editions</h2>
     {% if archives %}

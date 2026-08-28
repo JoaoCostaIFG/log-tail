@@ -1,0 +1,184 @@
+/* The Daily Tech Dispatch — black & white newspaper style */
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+a { color: inherit; }
+
+.paper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(0.75rem, 3vw, 2rem) 3rem;
+}
+
+/* Masthead */
+
+.masthead {
+  text-align: center;
+  padding-top: 0.5rem;
+  border-bottom: 4px double #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.4rem;
+}
+
+.topbar a { text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+
+.masthead h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0.4rem 0 0.3rem;
+}
+
+.edition-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-top: 1px solid #000;
+  padding: 0.35rem 0 0.5rem;
+  margin: 0;
+}
+
+/* Lead story */
+
+.lead {
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  margin: 0 0 0.35rem;
+}
+
+.lead .headline {
+  font-size: clamp(1.6rem, 4.2vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+/* Sections */
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.75rem 0 1.25rem;
+  padding: 0.4rem 0;
+  border-top: 3px double #000;
+  border-bottom: 1px solid #000;
+}
+
+.columns {
+  columns: 3;
+  column-gap: 2.25rem;
+  column-rule: 1px solid #000;
+}
+
+.columns.two { columns: 2; }
+
+/* Stories */
+
+.story {
+  break-inside: avoid;
+  margin: 0 0 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.headline {
+  font-size: 1.15rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.headline a { text-decoration: none; }
+.headline a:hover { text-decoration: underline; }
+
+.dateline {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 0 0.3em;
+  font-size: 0.68rem;
+  margin-right: 0.35em;
+}
+
+.lede { font-size: 0.92rem; margin: 0; }
+
+.discuss { text-decoration: none; }
+.discuss:hover { text-decoration: underline; }
+
+/* Archive & footer */
+
+.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 2.25rem;
+  font-size: 0.9rem;
+}
+
+.archive-empty { text-align: center; font-size: 0.9rem; font-style: italic; }
+
+footer {
+  border-top: 4px double #000;
+  margin-top: 2.25rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
+footer p { margin: 0; }
+
+/* Responsive */
+
+@media (max-width: 980px) {
+  .columns { columns: 2; }
+}
+
+@media (max-width: 640px) {
+  .columns,
+  .columns.two { columns: 1; }
+  .edition-line { justify-content: center; }
+  .topbar { gap: 0.25rem 1rem; }
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Daily Tech Dispatch — {{ date_label }}</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ base }}style.css">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="#page-one">Page One</a>
+      <a href="#page-two">Page Two</a>
+      <a href="#show-hn">Show HN</a>
+      <a href="#archive">Archive</a>
+    </nav>
+    <h1>The Daily Tech Dispatch</h1>
+    <p class="edition-line">
+      <span>Vol. {{ volume }} · No. {{ edition_no }}</span>
+      <span>{{ date_label }}</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+  {% macro story(s) %}
+  <article class="story">
+    <h3 class="headline"><a href="{{ s.link }}">{{ s.title }}</a></h3>
+    <p class="dateline">
+      {%- for src in s.sources %}<span class="badge">{{ src }}</span>{% endfor %}
+      {{ s.points }} points · by {{ s.by }} · {{ s.domain }} · <a class="discuss" href="{{ s.item_url }}">discuss</a>
+    </p>
+    {% if s.lede %}<p class="lede">{{ s.lede }}</p>{% endif %}
+  </article>
+  {% endmacro %}
+
+  {% if lead %}
+  <article class="lead story">
+    <p class="kicker">Top Story</p>
+    <h2 class="headline"><a href="{{ lead.link }}">{{ lead.title }}</a></h2>
+    <p class="dateline">
+      {%- for src in lead.sources %}<span class="badge">{{ src }}</span>{% endfor %}
+      {{ lead.points }} points · by {{ lead.by }} · {{ lead.domain }} · <a class="discuss" href="{{ lead.item_url }}">discuss</a>
+    </p>
+    {% if lead.lede %}<p class="lede">{{ lead.lede }}</p>{% endif %}
+  </article>
+  {% endif %}
+
+  <section id="page-one">
+    <h2 class="section-title">Page One</h2>
+    <div class="columns">
+      {% for s in page_one %}{{ story(s) }}{% endfor %}
+    </div>
+  </section>
+
+  {% if page_two %}
+  <section id="page-two">
+    <h2 class="section-title">Page Two</h2>
+    <div class="columns">
+      {% for s in page_two %}{{ story(s) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if show_hn %}
+  <section id="show-hn">
+    <h2 class="section-title">Show HN — Best of the Day</h2>
+    <div class="columns two">
+      {% for s in show_hn %}{{ story(s) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section id="archive">
+    <h2 class="section-title">Recent Editions</h2>
+    {% if archives %}
+    <ul class="archive-list">
+      {% for a in archives %}<li><a href="{{ base }}archive/{{ a.date }}.html">{{ a.label }}</a></li>{% endfor %}
+    </ul>
+    {% else %}
+    <p class="archive-empty">First edition — the archive starts tomorrow.</p>
+    {% endif %}
+  </section>
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>{{ stats.total }} stories · {{ stats.merged }} cross-posts merged · {{ stats.excerpts }} excerpts fetched</p>
+  </footer>
+
+</div>
+</body>
+</html>

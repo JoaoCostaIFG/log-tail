@@ -1,5 +1,6 @@
 """Fetch stories from Hacker News and lobste.rs."""
 
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 
@@ -9,6 +10,18 @@ HN_API = "https://hacker-news.firebaseio.com/v0"
 HN_ITEM_URL = "https://news.ycombinator.com/item?id={id}"
 ALGOLIA_API = "https://hn.algolia.com/api/v1/search"
 LOBSTERS_URLS = ("https://lobste.rs/hottest.json", "https://lobste.rs/page/2.json")
+
+# Extra IDs fetched so pages stay full after filtering.
+FILTER_BUFFER = 15
+
+# Launch HN posts (title match — no fixed author), and any non-official
+# "Ask HN" hiring threads as a fallback. The official monthly threads are
+# dropped by author ("whoishiring"); job postings and polls by item type.
+EXCLUDED_TITLES = re.compile(
+    r"^launch\shn\b|^ask\shn:.*\bwho\s+(is\s+hiring|wants\sto\s+be\shired)",
+    re.IGNORECASE,
+)
+EXCLUDED_AUTHORS = {"whoishiring"}
 
 USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -29,16 +42,26 @@ def _hn_item(session, item_id):
     return None
 
 
+def _keep_hn_item(item):
+    if item.get("type") != "story":
+        return False  # drops job postings and polls
+    if item.get("by") in EXCLUDED_AUTHORS:
+        return False  # official monthly hiring threads
+    return not EXCLUDED_TITLES.search(item.get("title", ""))
+
+
 def hn_front_page(session, pages=2, per_page=30):
     """Return the top `pages * per_page` stories from the HN front page."""
     ids = session.get(f"{HN_API}/topstories.json", timeout=TIMEOUT).json()
-    ids = ids[: pages * per_page]
+    ids = ids[: pages * per_page + FILTER_BUFFER]
     with ThreadPoolExecutor(max_workers=16) as pool:
-        items = [d for d in pool.map(lambda i: _hn_item(session, i), ids) if d]
+        items = [
+            d for d in pool.map(lambda i: _hn_item(session, i), ids)
+            if d and _keep_hn_item(d)
+        ]
+    items = items[: pages * per_page]
     stories = []
     for rank, d in enumerate(items):
-        if d.get("type") not in ("story", "job"):
-            continue
         stories.append(
             {
                 "title": d.get("title", ""),

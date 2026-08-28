@@ -6,7 +6,9 @@ A static, black-and-white newspaper-style page rebuilt daily from
 - **Page One / Page Two** — the first two front pages of HN and the two hottest
   pages of lobste.rs, merged and de-duplicated by URL (tracking parameters,
   `www.`, trailing slashes and scheme differences are normalized away).
-  Cross-posts get both source badges.
+  Cross-posts get both source badges. HN job postings, polls, "Launch HN"
+  posts and the monthly "Who is hiring?" / "Who wants to be hired?" threads
+  are skipped.
 - **Show HN** — the highest-scoring Show HN submissions of the last 24 hours.
 - Each story shows a short text excerpt fetched from the linked page
   (silently skipped when a site blocks bots or serves non-HTML content).

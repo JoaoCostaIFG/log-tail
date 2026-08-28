@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Daily Tech Dispatch — {{ date_label }}</title>
+  <title>The Daily Tech Dispatch — {{ date_label }}{% if is_show %} — Show HN{% elif page_number and page_number > 1 %} — Page {{ page_number }}{% endif %}</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="{{ base }}style.css">
 </head>
@@ -12,10 +12,9 @@
 
   <header class="masthead">
     <nav class="topbar">
-      <a href="#page-one">Page One</a>
-      <a href="#page-two">Page Two</a>
-      <a href="#show-hn">Show HN</a>
-      <a href="#archive">Archive</a>
+      <a href="{{ base }}{{ hrefs.front }}">Front Page</a>
+      <a href="{{ base }}{{ hrefs.show }}">Show HN</a>
+      {% if page_number == 1 and not is_show %}<a href="#archive">Archive</a>{% endif %}
     </nav>
     <h1>The Daily Tech Dispatch</h1>
     <p class="edition-line">
@@ -48,31 +47,32 @@
   </article>
   {% endif %}
 
-  <section id="page-one">
-    <h2 class="section-title">Page One</h2>
-    <div class="columns">
-      {% for s in page_one %}{{ story(s) }}{% endfor %}
-    </div>
-  </section>
-
-  {% if page_two %}
-  <section id="page-two">
-    <h2 class="section-title">Page Two</h2>
-    <div class="columns">
-      {% for s in page_two %}{{ story(s) }}{% endfor %}
-    </div>
-  </section>
-  {% endif %}
-
-  {% if show_hn %}
+  {% if is_show %}
   <section id="show-hn">
     <h2 class="section-title">Show HN — Best of the Day</h2>
     <div class="columns two">
       {% for s in show_hn %}{{ story(s) }}{% endfor %}
     </div>
   </section>
+  {% else %}
+  <section id="front-page">
+    <h2 class="section-title">{% if page_number == 1 %}Front Page{% else %}Page {{ page_number }}{% endif %}</h2>
+    <div class="columns">
+      {% for s in stories %}{{ story(s) }}{% endfor %}
+    </div>
+  </section>
   {% endif %}
 
+  <nav class="pagination" aria-label="Pages">
+    {% if hrefs.prev %}<a class="pg-arrow" href="{{ base }}{{ hrefs.prev }}">‹</a>{% endif %}
+    {% for p in pagination %}
+      {% if p.current %}<span class="pg-current">{{ p.label }}</span>
+      {% else %}<a href="{{ base }}{{ p.href }}">{{ p.label }}</a>{% endif %}
+    {% endfor %}
+    {% if hrefs.next %}<a class="pg-arrow" href="{{ base }}{{ hrefs.next }}">›</a>{% endif %}
+  </nav>
+
+  {% if page_number == 1 and not is_show %}
   <section id="archive">
     <h2 class="section-title">Recent Editions</h2>
     {% if archives %}
@@ -83,6 +83,7 @@
     <p class="archive-empty">First edition — the archive starts tomorrow.</p>
     {% endif %}
   </section>
+  {% endif %}
 
   <footer>
     <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>

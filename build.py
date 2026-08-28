@@ -28,6 +28,7 @@ LOBSTERS_PAGES = 2
 SHOW_HN_LIMIT = 30
 LEDE_CHARS = 800
 RECENT_EDITIONS = 7
+STORIES_PER_PAGE = 15
 
 TRACKING_PARAMS = {
     "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
@@ -61,7 +62,7 @@ def story_key(story):
 
 
 def dedupe(*groups):
-    """Merge stories that point at the same URL, keeping first-seen rank."""
+    """Merge stories that point at the same URL, summing their points."""
     by_key = {}
     ordered = []
     for group in groups:
@@ -76,8 +77,7 @@ def dedupe(*groups):
                 for src in story["sources"]:
                     if src not in existing["sources"]:
                         existing["sources"].append(src)
-                existing["page"] = min(existing["page"], story["page"])
-                existing["points"] = max(existing["points"], story["points"])
+                existing["points"] += story["points"]
     return ordered
 
 
@@ -92,20 +92,24 @@ def finalize(stories, ledes):
 
 
 def recent_archives(edition_date):
-    if not ARCHIVE_DIR.exists():
-        return []
-    dates = sorted(
-        p.stem for p in ARCHIVE_DIR.glob("*.html") if p.stem != edition_date
-    )
-    dates.reverse()
+    """Recent past editions (first page only) newest-first."""
     out = []
-    for d in dates[:RECENT_EDITIONS]:
-        day = datetime.strptime(d, "%Y-%m-%d")
+    if not ARCHIVE_DIR.exists():
+        return out
+    for path in ARCHIVE_DIR.glob("*.html"):
+        stem = path.stem
+        try:
+            day = datetime.strptime(stem, "%Y-%m-%d")
+        except ValueError:
+            continue  # extra pages of an edition (e.g. 2026-08-28-p2.html)
+        if stem == edition_date:
+            continue
         out.append({
-            "date": d,
+            "date": stem,
             "label": day.strftime("%A, %B ") + str(day.day) + day.strftime(", %Y"),
         })
-    return out
+    out.sort(key=lambda a: a["date"], reverse=True)
+    return out[:RECENT_EDITIONS]
 
 
 def main():
@@ -129,7 +133,9 @@ def main():
 
     merged = dedupe(hn, lob)
     dupes = len(hn) + len(lob) - len(merged)
-    print(f"Merged front pages: {len(merged)} stories ({dupes} cross-posts merged)")
+    merged.sort(key=lambda s: s["points"], reverse=True)
+    print(f"Merged front pages: {len(merged)} stories "
+          f"({dupes} cross-posts merged, ranked by points)")
 
     urls = [s["url"] for s in merged + show if s.get("url")]
     print(f"Extracting text from {len(set(urls))} article URLs…")
@@ -139,34 +145,84 @@ def main():
     finalize(merged, ledes)
     finalize(show, ledes)
 
-    lead = max(merged, key=lambda s: s["points"]) if merged else None
-    rest = [s for s in merged if s is not lead]
-    page_one = [s for s in rest if s["page"] == 1]
-    page_two = [s for s in rest if s["page"] == 2]
+    lead = merged[0] if merged else None
+    front_page = merged[1:] if lead else merged
 
-    context = {
-        "date_label": date_label,
-        "edition_no": f"{now.timetuple().tm_yday:03d}",
-        "volume": ROMAN.get(now.year - 2025, str(now.year - 2025)),
-        "lead": lead,
-        "page_one": page_one,
-        "page_two": page_two,
-        "show_hn": show,
-        "archives": recent_archives(edition_date),
-        "stats": {
-            "total": len(merged) + len(show),
-            "merged": dupes,
-            "excerpts": len(ledes),
-        },
-    }
+    chunks = [
+        front_page[i:i + STORIES_PER_PAGE]
+        for i in range(0, len(front_page), STORIES_PER_PAGE)
+    ]
+    if not chunks:
+        chunks = [[]]
+    n_pages = len(chunks)
+
+    def page_href(base, page):
+        """Filename for an edition page: 1..n_pages or 'show'."""
+        if base:  # archived edition
+            if page == 1:
+                return f"{edition_date}.html"
+            if page == "show":
+                return f"{edition_date}-show.html"
+            return f"{edition_date}-p{page}.html"
+        if page == 1:
+            return "index.html"
+        if page == "show":
+            return "show-hn.html"
+        return f"page-{page}.html"
+
+    # Page sequence: numbered front-page chunks, then the Show HN back page.
+    sequence = list(range(1, n_pages + 1)) + (["show"] if show else [])
+
+    def build_context(base, page):
+        is_show = page == "show"
+        number = None if is_show else page
+        pagination = [
+            {
+                "label": str(p) if p != "show" else "Show HN",
+                "href": page_href(base, p),
+                "current": p == page,
+            }
+            for p in sequence
+        ]
+        index = sequence.index(page)
+        return {
+            "date_label": date_label,
+            "edition_no": f"{now.timetuple().tm_yday:03d}",
+            "volume": ROMAN.get(now.year - 2025, str(now.year - 2025)),
+            "base": base,
+            "page_number": number,
+            "is_show": is_show,
+            "lead": lead if page == 1 else None,
+            "stories": [] if is_show else chunks[page - 1],
+            "show_hn": show if is_show else [],
+            "pagination": pagination,
+            "hrefs": {
+                "front": page_href(base, 1),
+                "show": page_href(base, "show"),
+                "prev": page_href(base, sequence[index - 1]) if index > 0 else None,
+                "next": page_href(base, sequence[index + 1]) if index + 1 < len(sequence) else None,
+            },
+            "archives": recent_archives(edition_date) if page == 1 else [],
+            "stats": {
+                "total": len(merged) + len(show),
+                "merged": dupes,
+                "excerpts": len(ledes),
+            },
+        }
+
+    # Remove today's pages from previous runs so page counts can shrink.
+    for pattern in ("page-*.html", "show-hn.html"):
+        for stale in SITE_DIR.glob(pattern):
+            stale.unlink()
+    for pattern in (f"{edition_date}-p*.html", f"{edition_date}-show.html"):
+        for stale in ARCHIVE_DIR.glob(pattern):
+            stale.unlink()
 
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    context["base"] = ""
-    (SITE_DIR / "index.html").write_text(render_page(context), encoding="utf-8")
-    context["base"] = "../"
-    (ARCHIVE_DIR / f"{edition_date}.html").write_text(
-        render_page(context), encoding="utf-8"
-    )
+    for base, directory in (("", SITE_DIR), ("../", ARCHIVE_DIR)):
+        for page in sequence:
+            html = render_page(build_context(base, page))
+            (directory / page_href(base, page)).write_text(html, encoding="utf-8")
 
     DATA_DIR.mkdir(exist_ok=True)
     (DATA_DIR / f"{edition_date}.json").write_text(
@@ -182,7 +238,8 @@ def main():
     shutil.copy(static_src, SITE_DIR / "style.css")
 
     print(f"Edition {edition_date} written to {SITE_DIR}/ "
-          f"({len(page_one)} page-one, {len(page_two)} page-two, {len(show)} show)")
+          f"({len(front_page)} front page in {n_pages} pages of "
+          f"{STORIES_PER_PAGE}, {len(show)} show)")
     return 0
 
 

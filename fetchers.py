@@ -61,7 +61,7 @@ def hn_front_page(session, pages=2, per_page=30):
         ]
     items = items[: pages * per_page]
     stories = []
-    for rank, d in enumerate(items):
+    for d in items:
         stories.append(
             {
                 "title": d.get("title", ""),
@@ -70,7 +70,6 @@ def hn_front_page(session, pages=2, per_page=30):
                 "by": d.get("by", ""),
                 "sources": ["HN"],
                 "item_url": HN_ITEM_URL.format(id=d["id"]),
-                "page": rank // per_page + 1,
             }
         )
     return stories
@@ -98,7 +97,6 @@ def hn_show_day(session, hours=24, limit=30):
                 "by": hit.get("author", ""),
                 "sources": ["HN"],
                 "item_url": HN_ITEM_URL.format(id=hit["objectID"]),
-                "page": 1,
             }
         )
     return stories
@@ -107,7 +105,7 @@ def hn_show_day(session, hours=24, limit=30):
 def lobsters_pages(session, pages=2):
     """Return the hottest lobste.rs stories across `pages` pages."""
     stories = []
-    for page_no, url in enumerate(LOBSTERS_URLS[:pages], start=1):
+    for url in LOBSTERS_URLS[:pages]:
         try:
             data = session.get(url, headers=BROWSER_HEADERS, timeout=TIMEOUT).json()
         except (requests.RequestException, ValueError):
@@ -121,7 +119,6 @@ def lobsters_pages(session, pages=2):
                     "by": s.get("submitter_user", ""),
                     "sources": ["L"],
                     "item_url": s.get("comments_url", "https://lobste.rs/"),
-                    "page": page_no,
                 }
             )
     return stories

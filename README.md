@@ -3,12 +3,16 @@
 A static, black-and-white newspaper-style page rebuilt daily from
 [Hacker News](https://news.ycombinator.com) and [lobste.rs](https://lobste.rs).
 
-- **Page One / Page Two** — the first two front pages of HN and the two hottest
-  pages of lobste.rs, merged and de-duplicated by URL (tracking parameters,
-  `www.`, trailing slashes and scheme differences are normalized away).
-  Cross-posts get both source badges. HN job postings, polls, "Launch HN"
+- **Front Page** — the first two front pages of HN and the two hottest pages
+  of lobste.rs, merged into a single list ranked by points. Cross-posted
+  URLs are de-duplicated (tracking parameters, `www.`, trailing slashes and
+  scheme differences normalized away) with their points summed, so a story
+  popular on both sites ranks higher. HN job postings, polls, "Launch HN"
   posts and the monthly "Who is hiring?" / "Who wants to be hired?" threads
   are skipped.
+- The edition is paginated like a print newspaper: 15 stories per page
+  (the top story leads page one) and Show HN as the back page, with
+  prev/next and page-number navigation.
 - **Show HN** — the highest-scoring Show HN submissions of the last 24 hours.
 - Each story shows a short text excerpt fetched from the linked page
   (silently skipped when a site blocks bots or serves non-HTML content).
@@ -36,8 +40,9 @@ python3 -m venv .venv
 ## Tuning
 
 Knobs live at the top of `build.py`: feed sizes (`HN_PAGES`, `HN_PER_PAGE`,
-`LOBSTERS_PAGES`, `SHOW_HN_LIMIT`), excerpt length (`LEDE_CHARS`), and the
-number of recent editions linked on the front page (`RECENT_EDITIONS`).
+`LOBSTERS_PAGES`, `SHOW_HN_LIMIT`), excerpt length (`LEDE_CHARS`), stories
+per page (`STORIES_PER_PAGE`), and the number of recent editions linked on
+the front page (`RECENT_EDITIONS`).
 
 ## Roadmap
 

@@ -261,8 +261,8 @@ def main():
         encoding="utf-8",
     )
 
-    static_src = ROOT / "static" / "style.css"
-    shutil.copy(static_src, SITE_DIR / "style.css")
+    for asset in (ROOT / "static").iterdir():
+        shutil.copy(asset, SITE_DIR / asset.name)
 
     print(f"Edition {edition_date} written to {SITE_DIR}/ "
           f"({len(front_page)} front page in {n_pages} pages of "

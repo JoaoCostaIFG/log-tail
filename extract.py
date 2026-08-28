@@ -1,5 +1,6 @@
 """Fetch article pages and extract a text lede and a lead image for each."""
 
+import json
 import re
 import struct
 from concurrent.futures import ThreadPoolExecutor
@@ -67,14 +68,45 @@ def _link_heavy(tag):
     return linked / total > 0.5
 
 
+# Meta descriptions that are site boilerplate rather than content
+# (YouTube serves this for non-JS fetches of watch pages).
+BOILERPLATE_DESCRIPTIONS = {
+    "enjoy the videos and music you love, upload original content, and "
+    "share it all with friends, family, and the world on youtube.",
+}
+
+
 def _meta_description(soup):
     for meta in soup.find_all("meta"):
         key = (meta.get("property") or meta.get("name") or "").lower()
         if key in ("og:description", "description", "twitter:description"):
             content = re.sub(r"\s+", " ", meta.get("content") or "").strip()
-            if content:
+            if content and content.lower() not in BOILERPLATE_DESCRIPTIONS:
                 return content
     return None
+
+
+def _youtube_description(html):
+    """Full video description from the embedded ytInitialPlayerResponse.
+
+    YouTube's og:description is truncated to a couple of lines (and is
+    homepage boilerplate when it serves a shell page), so pull the real
+    description out of the player JSON instead. Returns None for non-
+    YouTube pages or videos without a description.
+    """
+    marker = re.search(r"ytInitialPlayerResponse\s*=\s*", html)
+    if not marker:
+        return None
+    try:
+        data, _ = json.JSONDecoder().raw_decode(html, marker.end())
+    except ValueError:
+        return None
+    if not isinstance(data, dict):
+        return None
+    desc = (data.get("videoDetails") or {}).get("shortDescription")
+    if not isinstance(desc, str):
+        return None
+    return re.sub(r"\s+", " ", desc).strip() or None
 
 
 def _clean_text(soup):
@@ -243,7 +275,10 @@ def fetch_article(session, url, max_chars=800):
         return {"lede": None, "image": None, "full": False}
     soup = BeautifulSoup(html, "html.parser")
     text, has_prose = _clean_text(soup)
-    if not has_prose:
+    youtube = _youtube_description(html)
+    if youtube:
+        text, has_prose = youtube, False  # keep video thumbnails uncropped
+    elif not has_prose:
         meta = _meta_description(soup)
         if meta and len(meta) >= 80:
             text = meta  # clean human-written summary beats junk fallback text

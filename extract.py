@@ -41,6 +41,30 @@ IMAGE_META_KEYS = {
     "twitter:image:src",
 }
 
+# `<meta charset=...>` / `<meta http-equiv content-type ... charset=...>`.
+# Many sites declare UTF-8 only inside the document; when the HTTP
+# Content-Type header omits a charset, requests falls back to ISO-8859-1
+# (the RFC 9110 default for text/*), turning multi-byte sequences into
+# mojibake (e.g. '' → 'â€™'). We sniff the in-document declaration first.
+_META_CHARSET = re.compile(
+    rb"""<meta[^>]*?charset=["']?\s*([A-Za-z0-9_\-]+)""",
+    re.IGNORECASE,
+)
+
+
+def _decode_html(resp, data):
+    """Decode an HTTP body to text, trusting the in-document charset over
+    the RFC 9110 ISO-8859-1 default for text/* responses."""
+    ctype = resp.headers.get("Content-Type", "").lower()
+    if "charset=" in ctype:
+        return data.decode(resp.encoding or "utf-8", "replace")
+    m = _META_CHARSET.search(data[:4096])
+    if m:
+        enc = m.group(1).decode("ascii", "replace")
+    else:
+        enc = resp.apparent_encoding or "utf-8"
+    return data.decode(enc, "replace")
+
 # A share image must be at least this big; smaller ones are placeholders
 # (e.g. WordPress's blank 200x200 default) or tracker pixels.
 MIN_IMAGE_WIDTH = 400
@@ -270,7 +294,7 @@ def fetch_article(session, url, max_chars=800):
                 size += len(chunk)
                 if size >= MAX_BYTES:
                     break
-            html = b"".join(chunks).decode(resp.encoding or "utf-8", "replace")
+            html = _decode_html(resp, b"".join(chunks))
     except Exception:
         return {"lede": None, "image": None, "full": False}
     soup = BeautifulSoup(html, "html.parser")

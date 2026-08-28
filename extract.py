@@ -23,6 +23,13 @@ SKIP_TAGS = (
     "svg",
     "iframe",
     "button",
+    "pre",  # code blocks / ASCII art — not lede material
+)
+
+# Box-drawing and block glyphs: a paragraph containing them is ASCII art.
+ART_CHARS = set(
+    "─│┌┐└┘├┤┬┴┼╭╮╯╰═║╔╗╚╝╠╣╦╩╬"
+    "▁▂▃▄▅▆▇█▉▊▋▌▍▎▏░▒▓■□▪◄►▲▼"
 )
 
 IMAGE_META_KEYS = {
@@ -40,6 +47,36 @@ MIN_IMAGE_HEIGHT = 200
 IMAGE_PROBE_BYTES = 262144
 
 
+def _is_junk_paragraph(text):
+    """True for ASCII art, link menus, and other non-prose blocks."""
+    if any(ch in ART_CHARS for ch in text):
+        return True
+    stripped = re.sub(r"\s+", "", text)
+    if not stripped:
+        return True
+    letters = sum(ch.isalpha() for ch in stripped)
+    return letters / len(stripped) < 0.55
+
+
+def _link_heavy(tag):
+    """True when most of a tag's text is inside links (menus, index pages)."""
+    total = len(tag.get_text(strip=True))
+    if not total:
+        return True
+    linked = sum(len(a.get_text(strip=True)) for a in tag.find_all("a"))
+    return linked / total > 0.5
+
+
+def _meta_description(soup):
+    for meta in soup.find_all("meta"):
+        key = (meta.get("property") or meta.get("name") or "").lower()
+        if key in ("og:description", "description", "twitter:description"):
+            content = re.sub(r"\s+", " ", meta.get("content") or "").strip()
+            if content:
+                return content
+    return None
+
+
 def _clean_text(soup):
     """Return (text, has_prose). has_prose is False for pages with no real
     article paragraphs (e.g. webcomics, photo pages) — a signal that the
@@ -49,12 +86,15 @@ def _clean_text(soup):
     paragraphs = []
     for p in soup.find_all("p"):
         text = re.sub(r"\s+", " ", p.get_text(" ")).strip()
-        if len(text) >= 40:
-            paragraphs.append(text)
+        if len(text) < 40 or _is_junk_paragraph(text) or _link_heavy(p):
+            continue
+        paragraphs.append(text)
     prose = " ".join(paragraphs)
     if len(prose) >= 200:
         return prose, True
     text = re.sub(r"\s+", " ", soup.get_text(" ")).strip()
+    if len(text) < 80 or _is_junk_paragraph(text):
+        text = ""  # art, nav scraps, or a bare title — nothing readable here
     return text, False
 
 
@@ -203,6 +243,10 @@ def fetch_article(session, url, max_chars=800):
         return {"lede": None, "image": None, "full": False}
     soup = BeautifulSoup(html, "html.parser")
     text, has_prose = _clean_text(soup)
+    if not has_prose:
+        meta = _meta_description(soup)
+        if meta and len(meta) >= 80:
+            text = meta  # clean human-written summary beats junk fallback text
     image = _extract_image(soup, url)
     if image and not _valid_share_image(session, image):
         image = None

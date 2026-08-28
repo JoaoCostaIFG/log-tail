@@ -50,6 +50,8 @@ a { color: inherit; }
   margin: 0.4rem 0 0.3rem;
 }
 
+.masthead h1 a { color: inherit; text-decoration: none; }
+
 .edition-line {
   display: flex;
   flex-wrap: wrap;
@@ -102,8 +104,6 @@ a { color: inherit; }
   column-gap: 2.25rem;
   column-rule: 1px solid #000;
 }
-
-.columns.two { columns: 2; }
 
 /* Stories */
 
@@ -226,8 +226,7 @@ footer p { margin: 0; }
 }
 
 @media (max-width: 640px) {
-  .columns,
-  .columns.two { columns: 1; }
+  .columns { columns: 1; }
   .edition-line { justify-content: center; }
   .topbar { gap: 0.25rem 1rem; }
 }

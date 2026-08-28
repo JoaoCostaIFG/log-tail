@@ -14,9 +14,9 @@
     <nav class="topbar">
       <a href="{{ base }}{{ hrefs.front }}">Front Page</a>
       <a href="{{ base }}{{ hrefs.show }}">Show HN</a>
-      {% if page_number == 1 and not is_show %}<a href="#archive">Archive</a>{% endif %}
+      <a href="{{ base }}{{ hrefs.front }}#archive">Archive</a>
     </nav>
-    <h1>The Daily Tech Dispatch</h1>
+    <h1><a class="masthead-link" href="{{ base }}{{ hrefs.front }}">The Daily Tech Dispatch</a></h1>
     <p class="edition-line">
       <span>Vol. {{ volume }} · No. {{ edition_no }}</span>
       <span>{{ date_label }}</span>
@@ -52,7 +52,7 @@
   {% if is_show %}
   <section id="show-hn">
     <h2 class="section-title">Show HN — Best of the Day</h2>
-    <div class="columns two">
+    <div class="columns">
       {% for s in show_hn %}{{ story(s) }}{% endfor %}
     </div>
   </section>

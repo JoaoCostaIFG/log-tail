@@ -1,4 +1,4 @@
-# The Daily Tech Dispatch
+# Log Tail
 
 A static, black-and-white newspaper-style page rebuilt daily from
 [Hacker News](https://news.ycombinator.com) and [lobste.rs](https://lobste.rs).

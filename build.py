@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the daily edition of The Daily Tech Dispatch.
+"""Build the daily edition of Log Tail.
 
 Pipeline: fetch feeds -> de-duplicate -> extract article text -> render HTML.
 """

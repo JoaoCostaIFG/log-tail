@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Daily Tech Dispatch — {{ date_label }}{% if is_show %} — Show HN{% elif page_number and page_number > 1 %} — Page {{ page_number }}{% endif %}</title>
+  <title>Log Tail — {{ date_label }}{% if is_show %} — Show HN{% elif page_number and page_number > 1 %} — Page {{ page_number }}{% endif %}</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="{{ base }}style.css?v={{ css_version }}">
 </head>
@@ -16,7 +16,7 @@
       <a href="{{ base }}{{ hrefs.show }}">Show HN</a>
       <a href="{{ base }}{{ hrefs.front }}#archive">Archive</a>
     </nav>
-    <h1><a class="masthead-link" href="{{ base }}{{ hrefs.front }}">The Daily Tech Dispatch</a></h1>
+    <h1><a class="masthead-link" href="{{ base }}{{ hrefs.front }}">Log Tail</a></h1>
     <p class="edition-line">
       <span>Vol. {{ volume }} · No. {{ edition_no }}</span>
       <span>{{ date_label }}</span>

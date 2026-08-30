@@ -2,7 +2,7 @@ name: Build daily edition
 
 on:
   schedule:
-    - cron: "0 8 * * *" # daily, 8:00 UTC
+    - cron: "23 8 * * *"
   workflow_dispatch:
   push:
     branches:

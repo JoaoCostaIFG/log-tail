@@ -25,13 +25,20 @@
     </p>
   </header>
 
+  {# One "discuss" link per source thread; cross-posts list both. #}
+  {%- macro discuss_links(s) %}
+    {%- set ds = s.get("discussions") or [{"source": "", "url": s.item_url}] %}
+    {%- set labels = {"HN": "HN", "L": "lobste.rs"} -%}
+    {%- for d in ds %} · <a class="discuss" href="{{ d.url }}">discuss{% if ds|length > 1 and d.source %} on {{ labels.get(d.source, d.source) }}{% endif %}</a>{% endfor %}
+  {%- endmacro %}
+
   {% macro story(s) %}
   <article class="story">
     {% if s.image %}<img class="thumb{% if s.image_full %} full{% endif %}" src="{{ s.image }}" alt="{{ s.title }}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
     <h3 class="headline"><a href="{{ s.link }}">{{ s.title }}</a></h3>
     <p class="dateline">
       {%- for src in s.sources %}<span class="badge">{{ src }}</span>{% endfor %}
-      {{ s.points }} points · by {{ s.by }} · {{ s.domain }} · <a class="discuss" href="{{ s.item_url }}">discuss</a>
+      {{ s.points }} points · by {{ s.by }} · {{ s.domain }}{{ discuss_links(s) }}
     </p>
     {% if s.lede and not s.image_full %}<p class="lede">{{ s.lede }}</p>{% endif %}
   </article>
@@ -44,7 +51,7 @@
     <h2 class="headline"><a href="{{ lead.link }}">{{ lead.title }}</a></h2>
     <p class="dateline">
       {%- for src in lead.sources %}<span class="badge">{{ src }}</span>{% endfor %}
-      {{ lead.points }} points · by {{ lead.by }} · {{ lead.domain }} · <a class="discuss" href="{{ lead.item_url }}">discuss</a>
+      {{ lead.points }} points · by {{ lead.by }} · {{ lead.domain }}{{ discuss_links(lead) }}
     </p>
     {% if lead.lede %}<p class="lede">{{ lead.lede }}</p>{% endif %}
   </article>

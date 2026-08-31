@@ -72,12 +72,20 @@ def dedupe(*groups):
             existing = by_key.get(key)
             if existing is None:
                 copy = dict(story)
+                copy["discussions"] = [
+                    {"source": src, "url": copy["item_url"]}
+                    for src in copy["sources"]
+                ]
                 by_key[key] = copy
                 ordered.append(copy)
             else:
                 for src in story["sources"]:
-                    if src not in existing["sources"]:
-                        existing["sources"].append(src)
+                    if src in existing["sources"]:
+                        continue
+                    existing["sources"].append(src)
+                    existing["discussions"].append(
+                        {"source": src, "url": story["item_url"]}
+                    )
                 existing["points"] += story["points"]
     return ordered
 

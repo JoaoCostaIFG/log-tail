@@ -42,12 +42,13 @@ python3 -m venv .venv
 ## Daily rebuild & hosting (GitHub Actions + Pages)
 
 1. Push this repo to GitHub.
-2. In repo **Settings → Pages**, set **Source** to *GitHub Actions*.
+2. In repo **Settings → Pages**, set **Source** to *Deploy from a branch*,
+   branch `site` at `/`.
 3. The workflow (`.github/workflows/build-daily-edition.yml`) runs daily at 13:00 UTC and on
    manual dispatch (`workflow_dispatch`). Each run restores past editions from the
-   `site` branch, builds the day's edition, deploys `site/` to Pages via the
-   Actions artifact, and force-pushes `site` back as a single squashed commit —
-   the archive store for the next run.
+   `site` branch, builds the day's edition, and publishes it by force-pushing `site`
+   as a single squashed commit — that push is the deploy; Pages serves the branch
+   directly (`.nojekyll` is emitted at build time to skip the Jekyll pass).
 4. `main` stays code-only: generated HTML never lands in its history, and the
    `site` branch never grows past one commit, so the repository stays small no
    matter how many editions accumulate.

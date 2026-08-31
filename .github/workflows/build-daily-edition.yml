@@ -14,8 +14,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -24,9 +22,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -49,7 +44,7 @@ jobs:
       - name: Build edition
         run: python build.py
 
-      - name: Publish archives to the site branch
+      - name: Publish site branch
         run: |
           cd site
           git init -q -b site
@@ -59,13 +54,3 @@ jobs:
           git commit -qm "Edition $(date -u +%F)"
           git remote add origin "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
           git push -q --force origin site
-
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

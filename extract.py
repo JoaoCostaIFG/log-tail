@@ -114,27 +114,73 @@ def _meta_description(soup):
     return None
 
 
+# Video links (watch, youtu.be, shorts, embed, live) — for the dedicated
+# YouTube path in fetch_article.
+_YOUTUBE_VIDEO_ID = re.compile(
+    r"(?:"
+    r"youtu\.be/([\w-]{11})"
+    r"|youtube\.com/(?:watch\?(?:[^#]*&)?v=|shorts/|embed/|live/)([\w-]{11})"
+    r")"
+)
+
+
+def _youtube_video_id(url):
+    m = _YOUTUBE_VIDEO_ID.search(url)
+    if not m:
+        return None
+    return m.group(1) or m.group(2)
+
+
+def _decode_json_after(html, marker):
+    """JSON object value immediately following `marker` in the HTML."""
+    try:
+        data, _ = json.JSONDecoder().raw_decode(html, marker.end())
+    except ValueError:
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def _deep_find(obj, key):
+    """First value for `key` found anywhere in a nested dict/list."""
+    if isinstance(obj, dict):
+        if key in obj:
+            return obj[key]
+        for v in obj.values():
+            found = _deep_find(v, key)
+            if found is not None:
+                return found
+    elif isinstance(obj, list):
+        for v in obj:
+            found = _deep_find(v, key)
+            if found is not None:
+                return found
+    return None
+
+
 def _youtube_description(html):
     """Full video description from the embedded ytInitialPlayerResponse.
 
     YouTube's og:description is truncated to a couple of lines (and is
     homepage boilerplate when it serves a shell page), so pull the real
-    description out of the player JSON instead. Returns None for non-
-    YouTube pages or videos without a description.
+    description out of the player JSON instead; ytInitialData's
+    attributedDescription is the fallback when the player block is absent.
+    Returns None for non-YouTube pages or videos without a description.
     """
     marker = re.search(r"ytInitialPlayerResponse\s*=\s*", html)
-    if not marker:
-        return None
-    try:
-        data, _ = json.JSONDecoder().raw_decode(html, marker.end())
-    except ValueError:
-        return None
-    if not isinstance(data, dict):
-        return None
-    desc = (data.get("videoDetails") or {}).get("shortDescription")
-    if not isinstance(desc, str):
-        return None
-    return re.sub(r"\s+", " ", desc).strip() or None
+    if marker:
+        data = _decode_json_after(html, marker)
+        desc = ((data or {}).get("videoDetails") or {}).get("shortDescription")
+        if isinstance(desc, str) and desc.strip():
+            return re.sub(r"\s+", " ", desc).strip()
+    marker = re.search(r"ytInitialData\s*=\s*", html)
+    if marker:
+        data = _decode_json_after(html, marker)
+        attributed = _deep_find(data, "attributedDescription")
+        if isinstance(attributed, dict):
+            content = attributed.get("content")
+            if isinstance(content, str) and content.strip():
+                return re.sub(r"\s+", " ", content).strip()
+    return None
 
 
 def _clean_text(soup):
@@ -268,6 +314,67 @@ def _valid_share_image(session, url):
     return w >= MIN_IMAGE_WIDTH and h >= MIN_IMAGE_HEIGHT
 
 
+def _youtube_thumbnail(session, video_id):
+    """Best thumbnail YouTube actually serves for the video.
+
+    maxresdefault does not exist for every video (404s); fall back through
+    the smaller, always-present sizes. Unlike share images, a 404 here is
+    definitive, so it is not kept optimistically.
+    """
+    for size in ("maxresdefault", "sddefault", "hqdefault"):
+        url = f"https://i.ytimg.com/vi/{video_id}/{size}.jpg"
+        try:
+            with session.get(
+                url, headers=BROWSER_HEADERS, timeout=(5, 12), stream=True
+            ) as resp:
+                if resp.status_code == 200:
+                    return url
+        except Exception:
+            return url  # probe failed — let the reader's browser try
+    return None
+
+
+def _youtube_article(session, video_id, max_chars):
+    """Fetch the canonical watch page and extract description + thumbnail.
+
+    The watch page is requested with consent cookies so YouTube returns
+    the real page instead of the empty shell (which has neither the player
+    JSON nor a usable og:image). The thumbnail is synthesized from the
+    video ID, so it works even when the page fetch fails.
+    """
+    headers = dict(BROWSER_HEADERS)
+    headers["Cookie"] = "SOCS=CAI; CONSENT=YES+cb"
+    html = None
+    try:
+        with session.get(
+            f"https://www.youtube.com/watch?v={video_id}&bpctr=9999999999",
+            headers=headers,
+            timeout=(5, 12),
+            stream=True,
+        ) as resp:
+            if resp.status_code == 200:
+                chunks = []
+                size = 0
+                for chunk in resp.iter_content(chunk_size=16384):
+                    chunks.append(chunk)
+                    size += len(chunk)
+                    if size >= MAX_BYTES:
+                        break
+                html = _decode_html(resp, b"".join(chunks))
+    except Exception:
+        pass
+    text = _youtube_description(html) if html else None
+    if not text and html:
+        text = _meta_description(BeautifulSoup(html, "html.parser"))
+    return {
+        "lede": _truncate(text, max_chars) if text else None,
+        "image": _youtube_thumbnail(session, video_id),
+        # Not "full": videos show a cropped thumbnail plus their
+        # description, like any other story.
+        "full": False,
+    }
+
+
 def fetch_article(session, url, max_chars=800):
     """Return {"lede", "image", "full"} for the page at `url`.
 
@@ -275,6 +382,9 @@ def fetch_article(session, url, max_chars=800):
     link, or a page with a share image but no article prose) — those are
     displayed uncropped instead of as thumbnails.
     """
+    video_id = _youtube_video_id(url)
+    if video_id:
+        return _youtube_article(session, video_id, max_chars)
     try:
         with session.get(
             url,
@@ -303,10 +413,7 @@ def fetch_article(session, url, max_chars=800):
         return {"lede": None, "image": None, "full": False}
     soup = BeautifulSoup(html, "html.parser")
     text, has_prose = _clean_text(soup)
-    youtube = _youtube_description(html)
-    if youtube:
-        text, has_prose = youtube, False  # keep video thumbnails uncropped
-    elif not has_prose:
+    if not has_prose:
         meta = _meta_description(soup)
         if meta and len(meta) >= 80:
             text = meta  # clean human-written summary beats junk fallback text

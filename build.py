@@ -325,6 +325,10 @@ def main():
     for asset in (ROOT / "static").iterdir():
         shutil.copy(asset, SITE_DIR / asset.name)
 
+    # Skip GitHub Pages' Jekyll pass (story excerpts may contain Liquid-like
+    # braces that would break or mangle the build).
+    (SITE_DIR / ".nojekyll").write_bytes(b"")
+
     print(f"Edition {edition_date} written to {SITE_DIR}/ "
           f"({len(front_page)} stories in {n_pages} pages of "
           f"{STORIES_PER_PAGE})")

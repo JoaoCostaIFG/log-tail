@@ -1,4 +1,4 @@
-name: Build daily edition
+name: Build daily edition of the volume
 
 on:
   schedule:

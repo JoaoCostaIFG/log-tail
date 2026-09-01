@@ -211,6 +211,18 @@ def _truncate(text, max_chars):
     return cut.rstrip(" ,;:.-–—") + " …"
 
 
+def self_text_lede(html, max_chars=800):
+    """Lede from a feed item's own HTML body (lobste.rs text posts, Ask HN).
+
+    The feeds deliver these bodies pre-rendered as HTML, so no page fetch
+    is needed — just strip the tags. Returns None when nothing readable.
+    """
+    text = re.sub(
+        r"\s+", " ", BeautifulSoup(html, "html.parser").get_text(" ")
+    ).strip()
+    return _truncate(text, max_chars) if text else None
+
+
 def _extract_image(soup, base_url):
     """Best share image for the page: og:image > twitter:image > image_src."""
     metas = []
@@ -427,14 +439,16 @@ def fetch_article(session, url, max_chars=800):
     }
 
 
-def extract_content(session, urls, workers=16):
+def extract_content(session, urls, workers=16, max_chars=800):
     """Concurrently fetch articles; returns {url: {"lede", "image"}}.
 
     Pages that fail entirely are omitted.
     """
     unique = sorted(set(urls))
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(fetch_article, session, u): u for u in unique}
+        futures = {
+            pool.submit(fetch_article, session, u, max_chars): u for u in unique
+        }
         results = {}
         for future in futures:
             url = futures[future]

@@ -25,7 +25,7 @@ EXCLUDED_AUTHORS = {"whoishiring"}
 
 # Recurring lobste.rs community threads that aren't news items.
 LOBSTERS_EXCLUDED_TITLES = re.compile(
-    r"^now\shiring\b|^what\sare\syou\sdoing\sthis\sweekend",
+    r"^now\shiring\b|^what\sare\syou\sdoing\sthis\sweek(?:end)?\b",
     re.IGNORECASE,
 )
 
@@ -72,6 +72,7 @@ def hn_front_page(session, pages=2, per_page=30):
             {
                 "title": d.get("title", ""),
                 "url": d.get("url"),
+                "self_text": d.get("text"),  # HTML body of text-only posts
                 "points": d.get("score", 0),
                 "by": d.get("by", ""),
                 "sources": ["HN"],
@@ -99,6 +100,7 @@ def hn_show_day(session, hours=24, limit=30):
             {
                 "title": hit.get("title", ""),
                 "url": hit.get("url"),
+                "self_text": hit.get("story_text"),  # HTML body, text posts
                 "points": hit.get("points", 0),
                 "by": hit.get("author", ""),
                 "sources": ["HN"],
@@ -123,6 +125,8 @@ def lobsters_pages(session, pages=2):
                 {
                     "title": s.get("title", ""),
                     "url": s.get("url"),
+                    # HTML body of text-only posts (empty string for links)
+                    "self_text": s.get("description") or None,
                     "points": s.get("score", 0),
                     "by": s.get("submitter_user", ""),
                     "sources": ["L"],

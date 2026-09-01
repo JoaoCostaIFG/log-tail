@@ -14,7 +14,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import requests
 
-from extract import extract_content
+from extract import extract_content, self_text_lede
 from fetchers import hn_front_page, hn_show_day, lobsters_pages
 from render import render_page
 
@@ -114,6 +114,10 @@ def finalize(stories, content):
                 # Unfetched direct image link — let the browser try it.
                 story["image"] = url
                 story["image_full"] = True
+            elif story.get("self_text"):
+                # Text-only discussion post (lobste.rs text story, Ask HN):
+                # the post's own body is the article.
+                story["lede"] = self_text_lede(story["self_text"], LEDE_CHARS)
 
 
 def recent_archives(edition_date):
@@ -198,7 +202,7 @@ def main():
 
         urls = [s["url"] for s in merged if s.get("url")]
         print(f"Extracting text and images from {len(set(urls))} article URLs…")
-        content = extract_content(session, urls)
+        content = extract_content(session, urls, max_chars=LEDE_CHARS)
 
         finalize(merged, content)
         n_images = sum(1 for s in merged if s.get("image"))
@@ -212,7 +216,7 @@ def main():
 
         urls = [s["url"] for s in merged if s.get("url")]
         print(f"Extracting text and images from {len(set(urls))} article URLs…")
-        content = extract_content(session, urls)
+        content = extract_content(session, urls, max_chars=LEDE_CHARS)
 
         finalize(merged, content)
         n_images = sum(1 for s in merged if s.get("image"))

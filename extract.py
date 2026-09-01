@@ -31,11 +31,11 @@ SKIP_TAGS = (
     "include-fragment",
 )
 
-# Box-drawing and block glyphs: a paragraph containing them is ASCII art.
-ART_CHARS = set(
-    "─│┌┐└┘├┤┬┴┼╭╮╯╰═║╔╗╚╝╠╣╦╩╬"
-    "▁▂▃▄▅▆▇█▉▊▋▌▍▎▏░▒▓■□▪◄►▲▼"
-)
+# Box-drawing (U+2500–257F), block-element (U+2580–259F), and
+# geometric-shape (U+25A0–25FF) glyphs: text drawn with them is ASCII
+# art. A range check beats enumerating characters — art pages routinely
+# use glyphs beyond the obvious ones (tmpout.sh draws with ┊ ┈ ▀).
+ART_RANGE = re.compile(r"[\u2500-\u25ff]")
 
 IMAGE_META_KEYS = {
     "og:image",
@@ -78,13 +78,32 @@ IMAGE_PROBE_BYTES = 262144
 
 def _is_junk_paragraph(text):
     """True for ASCII art, link menus, and other non-prose blocks."""
-    if any(ch in ART_CHARS for ch in text):
+    if ART_RANGE.search(text):
         return True
     stripped = re.sub(r"\s+", "", text)
     if not stripped:
         return True
     letters = sum(ch.isalpha() for ch in stripped)
     return letters / len(stripped) < 0.55
+
+
+def _mine_art_text(raw):
+    """Readable text mined from an ASCII-art block.
+
+    Art pages (e.g. tmpout.sh e-zine covers) draw everything with
+    box-drawing/block glyphs: scrub the art out of each line, collapse
+    TOC dot leaders, and keep the lines that still look like prose —
+    often a title/date header plus a table of contents.
+    """
+    lines = []
+    for line in raw.splitlines():
+        line = ART_RANGE.sub("", line)
+        line = re.sub(r"[.·…]{3,}", " ", line)
+        line = re.sub(r"\s+", " ", line).strip()
+        if len(line) < 8 or _is_junk_paragraph(line):
+            continue
+        lines.append(line)
+    return " ".join(lines)
 
 
 def _link_heavy(tag):
@@ -187,6 +206,7 @@ def _clean_text(soup):
     """Return (text, has_prose). has_prose is False for pages with no real
     article paragraphs (e.g. webcomics, photo pages) — a signal that the
     page is focused on its image."""
+    pre_texts = [pre.get_text() for pre in soup.find_all("pre")]
     for tag in soup.find_all(list(SKIP_TAGS)):
         tag.decompose()
     paragraphs = []
@@ -200,7 +220,13 @@ def _clean_text(soup):
         return prose, True
     text = re.sub(r"\s+", " ", soup.get_text(" ")).strip()
     if len(text) < 80 or _is_junk_paragraph(text):
-        text = ""  # art, nav scraps, or a bare title — nothing readable here
+        # Art, nav scraps, or a bare title. Pages drawn as ASCII art keep
+        # all their text inside <pre> (or arrive as text/plain), so as a
+        # last resort mine those blocks for readable lines.
+        mined = _mine_art_text("\n".join(pre_texts or [text]))
+        if len(mined) >= 120:
+            return mined, True
+        text = ""
     return text, False
 
 

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, August 28, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-08-28.html">Front Page</a>
+      <a href="../2026-08-28.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-08-28.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 240</span>
+      <span>Friday, August 28, 2026</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://cdn.sanity.io/images/g1zo7y59/production/a827f6827959568db9e4482860cdf6091dcf338e-800x536.jpg?rect=0,58,800,420&amp;w=1200&amp;h=630" alt="What happens when a GPU reads memory" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory">What happens when a GPU reads memory</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by eatonphil · blog.doubleword.ai · <a class="discuss" href="https://lobste.rs/s/bkcjsa/what_happens_when_gpu_reads_memory">discuss</a>
+    </p>
+<p class="lede">Our previous post followed a vector-add kernel — c[i] = a[i] + b[i] , one thread per float — from nvcc down to the warps. We went into a lot of detail on how the kernel was launched, but we also left a lot out. This time, we’re going to address our omissions, and follow the path the critical SASS instruction (a global load) takes through the hardware — in this case, since it’s under my desk, an RTX 4090 We do this kind of reverse engineering for performance reasons, at least in principle (for a great rationale, see &#39;Why these details matter&#39; in the Citadel microbenchmarking paper). For the same work applied to more production-relevant GPUs, watch this space. . Little of the detail of this path is documented by NVIDIA, at least not to the level that we’d like, so we’ll determine it by …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://idlip.in/og/show-me-source.png" alt="Talk is Cheap. Code is Cheap. Show me the Source" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://idlip.in/posts/show-me-source/">Talk is Cheap. Code is Cheap. Show me the Source</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by confusedalex · idlip.in · <a class="discuss" href="https://lobste.rs/s/idizd1/talk_is_cheap_code_is_cheap_show_me_source">discuss</a>
+    </p>
+<p class="lede">I&#39;ve been meaning to write about this since [2026-03-20 Fri]. finally doing it. Quick note on the title before I get into it. It&#39;s riffing on Linus Torvalds&#39; old line, &#34;talk is cheap, show me the code&#34;. Except these days even that doesn&#39;t hold up, talk is cheap sure, but code is cheap too now, anyone can get an LLM to spit out a working function in seconds. What&#39;s actually hard to fake, and what most of what I read (and write) is missing, is the source: the history, the reasoning, the &#34;why&#34; behind a piece of code or a life&#39;s work, not just the diff. That&#39;s what this essay is actually about, so show me the source felt more honest than show me the code. To put it simply: Business gives us endless Talk for free, AI gives us endless Code for free, but the Source , the real reason behind any …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence">How cats.txt showed llms.txt evidence is GEO astrology</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by kaycebasques · markwilliamscook.substack.com · <a class="discuss" href="https://lobste.rs/s/suwcbt/how_cats_txt_showed_llms_txt_evidence_is">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://talos-agent.ch/brand/og-logo.png" alt="Show HN: Talos – An AI agent with a permission kernel between model and shell" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://talos-agent.ch/">Show HN: Talos – An AI agent with a permission kernel between model and shell</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by kurdman_007 · talos-agent.ch · <a class="discuss" href="https://news.ycombinator.com/item?id=49477530">discuss</a>
+    </p>
+<p class="lede">The real shell pipeline, ported into this page: path floor → hardline → dangerous → effect . Type a command. The page returns the verdict with its reason. Nothing executes, nothing leaves your browser. This page re-implements the kernel&#39;s shell path for the browser, with the shipped default: clean commands run sandboxed , and each run is logged. It is a simplification. The Python original decides more cases than these patterns name, and it is the authoritative one. Two things a page cannot show: before any of these stages, the real kernel checks who is asking, and there is no default allowlist. And file tools walk their own pipeline — system floor, identity, secrets, persistence, effect. 179 adversarial cases run against the Python kernel on every install and every update. This is what …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://maplant.com/2025-04-20-25x-Performance,-Three-Optimizations.html">25x Performance, Three Optimizations</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by abhin4v · maplant.com · <a class="discuss" href="https://lobste.rs/s/rhto2r/25x_performance_three_optimizations">discuss</a>
+    </p>
+<p class="lede">On December 31st 2024, I decided that it was time to convert my scheme implementation to a CPS-based JIT compiler from an AST interpreter. The main reason for this was to make the creation of continuations mechanical. I would say that when implementing a language with call-with-current-continuation there are two “proper” ways to go about it: Convert your program to some sort of bytecode that can run in a virtual machine. This makes implementing call/cc somewhat trivial; capturing the current continuation is akin to saving the stack and current program counter to be restored at a later time. With a bytecode virtual machine, this process can be made safe and efficient. Convert you program to Continuation-Passing Style . Converting to CPS explicitly and mechanically describes the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://tmpout.sh/5/2.html">Interview: Doug McIlroy</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by fs111 · tmpout.sh · <a class="discuss" href="https://lobste.rs/s/hett40/interview_doug_mcilroy">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.texttile.blog/assets/img/social-card.png" alt="Show HN: Texttile, a multiplayer blog engine for people who write together" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.texttile.blog/">Show HN: Texttile, a multiplayer blog engine for people who write together</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      12 points · by klausbreyer · texttile.blog · <a class="discuss" href="https://news.ycombinator.com/item?id=49477217">discuss</a>
+    </p>
+<p class="lede">Texttile is a blog engine for more than one writer. Everyone on the blog can be in the same entry at the same time, photos and videos included. One of you drags a picture into place, and the others watch it move. Any of you can drag them into a new order. Here is what happens when two of you open the same entry. That person types. Everyone else sees the words appear as they are written, and can take the text over with one click. Texttile asks before it hands the text over, and tells the person who had it. Nothing gets lost, and they can take it straight back. The gallery and the entry settings are never locked. You can all drag tiles, photos and videos alike, set the date and change the entry&#39;s web address at the same time, and you see each other doing it. The order you leave the tiles in …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media.wired.com/photos/6a91cfbdbb3a85e785f50a77/191:100/w_1280,c_limit/IMG_5395.jpeg" alt="Milo Yiannopoulos Detained by ICE in Louisiana" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.wired.com/story/milo-yiannopoulos-detained-by-ice-in-louisiana/">Milo Yiannopoulos Detained by ICE in Louisiana</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      12 points · by eecc · wired.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49484814">discuss</a>
+    </p>
+<p class="lede">Milo Yiannopoulos, a British national known for his near-constant reinventions as a vizier within far-right American politics for more than a decade, has been detained by US Immigration and Customs Enforcement in Louisiana, according to the department’s records. While it’s not clear which detention facility Yiannopoulos is currently being held in, the ICE directory instructs any family or legal representatives to contact the Enforcement and Removal Office in Alexandria, Louisiana, a processing center for the central part of the state, about 200 miles from New Orleans. In an emailed statement, a spokesperson from the US Department of Homeland Security says that Yiannopoulos legally entered the country through New York City in May 2019. “He chose to overstay his welcome in violation of our …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.youtube.com/watch?v=xcB_LF3cdqw">Simon Peyton Jones on Functional Programming, Thinking in Types, Useless Languages</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by mysticmode · youtube.com · <a class="discuss" href="https://lobste.rs/s/ko74yd/simon_peyton_jones_on_functional">discuss</a>
+    </p>
+<p class="lede">- YouTube About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy &amp; Safety How YouTube works Test new features NFL Sunday Ticket © 2026 Google LLC</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fdt196dzugry1anlsqkvf.png" alt="Nobody Argued For Your Stack" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://dev.to/playfulprogramming/nobody-argued-for-your-stack-51fj">Nobody Argued For Your Stack</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by nolan · dev.to · <a class="discuss" href="https://lobste.rs/s/hg2lbk/nobody_argued_for_your_stack">discuss</a>
+    </p>
+<p class="lede">Last week, it came to light Cursor had mostly finished migrating from SolidJS to React . This migration happened about seven months ago. But it became a central focus of discussion following the Solid 2.0 RC release . Then yesterday, a week later, it came to my attention that the Anthropic docs example command for their large-scale migration feature is: I admit that my gut reaction was not great. Out of all the examples they could have chosen... Years of my work became a canonical example of the thing you migrate away from — in the same week we shipped the biggest release in the project&#39;s history — stung in a way I won&#39;t pretend it didn&#39;t. My second reaction was to assume that, like the other trickle-down posts I&#39;d seen this week, this rode the same week-old news cycle. Then I checked the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://twitterwebviewer.com/?rev=1">Service Discontinued</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by dredmorbius · twitterwebviewer.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49482422">discuss</a>
+    </p>
+<p class="lede">As of August 28, 2026, this website has been permanently discontinued, following a request from X Corp. All cached content has been deleted. Subscribers: your subscription has been cancelled and refunded — please check your email for details. Thank you to everyone who used and supported the site. Seit dem 28. August 2026 ist diese Website auf Ersuchen von X Corp. dauerhaft eingestellt. Alle zwischengespeicherten Inhalte wurden gelöscht. Abonnenten: Ihr Abonnement wurde gekündigt und der Betrag erstattet — Einzelheiten finden Sie in Ihrer E-Mail. Vielen Dank an alle, die die Website genutzt und unterstützt haben. 2026年8月28日をもって、X Corp. からの要請により本サイトの運営を終了いたしました。キャッシュされていたコンテンツはすべて削除しました。 有料プランをご利用の方：ご登録は解除され、返金処理が完了しています。詳細はメールをご確認ください。</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://testing.googleblog.com/2015/01/testing-on-toilet-change-detector-tests.html">Change-Detector Tests Considered Harmful (2015)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by ohrv · testing.googleblog.com · <a class="discuss" href="https://lobste.rs/s/m5jzgj/change_detector_tests_considered">discuss</a>
+    </p>
+<p class="lede">This topic is very much related to that of testing behavior versus implementation. In this case, the examples given are very simple. What if your process function looked more like this : def process(w: Work) firstResult = firstPart.process(w) secondPart.process(w, firstResult) In this case, would it not be acceptable for your unit test to validate that the secondPart&#39;s process method is being called with the result of the firstPart.process as parameter? Or perhaps a slightly more complex case, one where the Processor modifies the result from the firstPart&#39;s process and passes that to the secondPart. Writing unit tests that are not change detectors sounds like a good objective. But, when coding in a system that is very service oriented, it is not always possible to write unit tests that …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://twing.dev/">Show HN: Coordination Layer for Coding Agents</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by imayank · twing.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49478737">discuss</a>
+    </p>
+<p class="lede">For engineering leaders running fleets of AI coding agents AI agents don&#39;t write one function at a time anymore — they write whole features, in parallel, on the same codebase. Twing is building the layer underneath that: so agents stop stepping on each other, reviews stay meaningful at machine scale, and the reasoning behind your system stops evaporating the moment a session ends. A single engineer used to open one PR at a time. Now a handful of engineers each run several agents, each agent opens PRs that touch dozens of files, and all of it lands on the same codebase in the same afternoon. The old assumptions — one author per change, a human reads every diff, tribal knowledge lives in people&#39;s heads — don&#39;t hold anymore. We think three things need to exist to make this way of building …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ziglang.org/devlog/2026/#2026-08-27">Pointer Stability for ArrayLists</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by jbauer · ziglang.org · <a class="discuss" href="https://lobste.rs/s/yqqsgk/pointer_stability_for_arraylists">discuss</a>
+    </p>
+<p class="lede">This page contains a curated list of recent changes to main branch Zig. This page contains entries for the year 2026 . Other years are available in the Devlog archive page . Pointer Stability Locks were added to std ’s Hash Map containers in 2024 . A pull request initially opened by Leo Emar-Kar in 2025 now brings this technique for ensuring memory safety to std.ArrayList . To make use of this in your code, add a call to lockPointers() when you first store a pointer to an element or a slice of elements backed by the ArrayList , and call unlockPointers() when those pointers are no longer needed. Here’s a somewhat contrived example. Let’s suppose we are managing two ArrayLists , say one of which is holding in memory the contents of some input, while the other is storing chunks of interest …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/55aa0280bbb23fd6cef01ecfc06c08ef0f74a5c3a6e8a2f3016acd98fda999c1/paoloanzn/pi-black" alt="Show HN: Pi-Black – Use Your Claude Max (Or Pro) Subscription with Pi" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/paoloanzn/pi-black">Show HN: Pi-Black – Use Your Claude Max (Or Pro) Subscription with Pi</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by paoloanzn · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49473333">discuss</a>
+    </p>
+<p class="lede">Use your Claude Max (or Pro) subscription with Pi. Pi Black is an unofficial Pi package that routes Anthropic OAuth requests through your existing Claude subscription usage by applying Claude Code 2.1.224 request conventions. The existing source patch and standalone-binary build system remain available as a fallback. Pi Black has three independently versioned compatibility surfaces: The Pi package fails closed on versions other than 0.84.1, 0.84.2, and 0.84.3. Each new Pi version must be explicitly revalidated and added to the runtime allowlist; the package peer dependencies are &#34;*&#34; because Pi supplies its core packages at runtime. Pi checks unpinned Git packages for updates in the background. When a newer Pi Black commit is available, Pi displays a package-update notice; apply it with …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-08-28-p5.html">‹</a><a href="../2026-08-28.html">1</a><a href="../2026-08-28-p2.html">2</a><a href="../2026-08-28-p3.html">3</a><a href="../2026-08-28-p4.html">4</a><a href="../2026-08-28-p5.html">5</a><span class="pg-current">6</span>
+<a href="../2026-08-28-p7.html">7</a><a href="../2026-08-28-p8.html">8</a><a href="../2026-08-28-p9.html">9</a><a class="pg-arrow" href="../2026-08-28-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>125 stories · 9 cross-posts merged · 117 excerpts · 82 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

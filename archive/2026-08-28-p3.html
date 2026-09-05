@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, August 28, 2026 — Page 3</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-08-28.html">Front Page</a>
+      <a href="../2026-08-28.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-08-28.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 240</span>
+      <span>Friday, August 28, 2026</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 3</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://storage.ghost.io/c/f5/e4/f5e49182-2f16-4855-8727-fde7524e784f/content/images/size/w1200/2026/08/f8dd5d3e-f924-4fcb-b4d5-840569aa6bf3.png" alt="Don&#39;t use musl if you care about performance" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.brokk.ai/dont-use-musl-if-you-care-about-performance/">Don&#39;t use musl if you care about performance</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      83 points · by jbellis · blog.brokk.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=49479826">discuss</a>
+    </p>
+<p class="lede">I&#39;ve spent most of my career working inside the JVM, with a sidebar of Python. So the first time I hit incompatible libc with containerized Bifrost , and GPT suggested musl as the solution, not only did I jump on it, I moved my other Rust projects to musl as well. Self contained binaries with a single implementation backing them? Yes, please! Then my colleague Ryan mentioned that musl is known to have a suboptimal allocator, and pointed me to Daniel Raneland&#39;s article . Uh-oh. I decided to measure it to see how bad it was. So, yes: musl&#39;s allocator is indeed bad. Terrible, even. And (contrary to some of the articles I&#39;ve read) not only in high concurrency scenarios; these numbers are from 4 core EC2 VMs, and Bifrost sizes its thread pools accordingly. This is a really bad footgun to leave …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://neilalexander.dev/2026/06/30/flooding-contributions.html">Please stop flooding our projects with AI slop to furnish your CV</a></h3>
+    <p class="dateline"><span class="badge">L</span>      81 points · by lr0 · neilalexander.dev · <a class="discuss" href="https://lobste.rs/s/rzvdqo/please_stop_flooding_our_projects_with_ai">discuss</a>
+    </p>
+<p class="lede">Successful contributions to open source projects are a kind of currency. GitHub in particular encourages this in a number of ways: by showing avatars of contributors on repository pages, by showing your contributions to your followers via the activity feed and by signalling contributions per day on the activity graph of your profile. Potential hiring managers often take note of this. Recruiters often find and screen candidates this way. If you are a software developer (either existing or aspiring) looking for work, tuning these signals can often work to your advantage. As an open source maintainer, it’s quite noticeable how the pattern of external contributions has changed in the last year. We’re far more likely to receive pull requests instead of issues. If we do receive issues, they …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/67eec49ce4b7e708fd5e05cbf05de7e9420fb5f9cee873486b171a161a8da18d/zedeus/nitter" alt="Nitter, XCancel Shutdown Over Cease-And-Desist" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/zedeus/nitter">Nitter, XCancel Shutdown Over Cease-And-Desist</a></h3>
+    <p class="dateline"><span class="badge">L</span>      80 points · by crunxxi · github.com · <a class="discuss" href="https://lobste.rs/s/zfhall/nitter_xcancel_shutdown_over_cease">discuss</a>
+    </p>
+<p class="lede">On 24 August 2026 cease and desist letters were sent by X Corp. demanding a permanent takedown of Nitter instances and the project&#39;s repository. A free and open source alternative Twitter front-end focused on privacy and performance. Inspired by the Invidious project. Liberapay : https://liberapay.com/zedeus Patreon : https://patreon.com/nitter Ko-fi : https://ko-fi.com/zedeus BTC : bc1qpqpzjkcpgluhzf7x9yqe7jfe8gpfm5v08mdr55 ETH : 0x24a0DB59A923B588c7A5EBd0dBDFDD1bCe9c4460 XMR : 42hKayRoEAw4D6G6t8mQHPJHQcXqofjFuVfavqKeNMNUZfeJLJAcNU19i1bGdDvcdN6romiSscWGWJCczFLe9RFhM3d1zpL SOL : FF5bheiD5AqPEdc3eyjymJ8AoMRF1hS78Ht6FiSZZF1t $Nitter : 4fSxCKc91ELQYVdv3tmHW8R15KoALPwEngyoQe1Xpump ZEC …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://pbs.twimg.com/profile_images/1133122333290291200/xV9gO-D6_400x400.jpg" alt="Debugging my new network, when 10 Gigabit Ethernet Runs at 300 Megabits" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.hanselman.com/blog/debugging-my-new-network-when-10-gigabit-ethernet-runs-at-300-megabits">Debugging my new network, when 10 Gigabit Ethernet Runs at 300 Megabits</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      77 points · by speckx · hanselman.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49478942">discuss</a>
+    </p>
+<p class="lede">I&#39;ve been moving my home storage over to a UniFi UNAS Pro 8 as part of a larger homelab moderization . My main IRONHEART (the ultimate PC from a few years back) desktop now has an Intel E610-XT2 10GbE card, the NAS is on 10GbE, and there&#39;s a Minisforum MS-01 miniPC on the same network with a 10GbE SFP+ connection running Immich and Portainer and a few other things. Everything says 10 gigabit. Windows says 10 gigabit. UniFi says 10 gigabit. SMB copies are using the correct NIC but my file copies are running at around 100 to 200 megabits per second which is sad making. Naturally, I blamed the NAS, and the spinning rust within. The UNAS has six 16 TB spinning disks in RAID 6 and a pair of NVMe SSDs being used as cache. I&#39;m also running Immich on the MS-01, with its photo library living on …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://terminalbytes.com/run-qwen-3-8-27b-locally/index.png" alt="Run Qwen3.8 27B locally: real numbers from my Mac Studio" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://terminalbytes.com/run-qwen-3-8-27b-locally/">Run Qwen3.8 27B locally: real numbers from my Mac Studio</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      76 points · by speckx · terminalbytes.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49479951">discuss</a>
+    </p>
+<p class="lede">For the past 10 days, Qwen3.8 27B has been quietly running on my Mac Studio as a background assistant. It summarizes my RSS feeds into a morning digest, renames and files the PDFs I scan into something searchable, and handles whatever summarizing chore I throw at it. Mundane stuff. That’s the appeal: this is the first local model I’ve trusted enough to leave alone with mundane stuff. Then last week the model was suddenly everywhere on r/LocalLLaMA, my feeds filled up with benchmark charts, and I realized I’d been sitting on the one thing most of those threads were missing: a machine that can actually run it properly, and time to measure it. So I benchmarked it. Five timed runs per model, same prompts, same machine, plus a 1-bit experiment that surprised me twice. Here’s everything I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8946030c-ef56-46f2-ac32-05fd2dadcddf.jpg?source=next-barrier-page&amp;fit=scale-down&amp;quality=highest&amp;width=700&amp;dpr=1" alt="Corporate profits hit highest share since WWII, as worker payouts wilt" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.ft.com/content/6f3ada65-c56c-499c-8eb6-008fac58949d">Corporate profits hit highest share since WWII, as worker payouts wilt</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      76 points · by marojejian · ft.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49481783">discuss</a>
+    </p>
+<p class="lede">Then $75 per month. Complete digital access to quality FT journalism on any device. Cancel anytime during your trial. Access to eight surprising articles a day, hand-picked by FT editors. For seamless reading, access content via the FT Edit page on FT.com and receive the FT Edit newsletter. Essential digital access to quality FT journalism on any device. Pay a year upfront and save 20%. Complete digital access to quality FT journalism with expert analysis from industry leaders. Pay a year upfront and save 20%. Check whether you already have access via your university or organisation. Discover all the plans currently available in your country Digital access for organisations. Includes exclusive features and content.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2608.23691">Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      68 points · by stephenchung · arxiv.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49481455">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!3lT4!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3353591d-8f0a-4331-b1cb-d8b4050f6523_1800x1391.jpeg" alt="“Weird” is a weird word" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.deadlanguagesociety.com/p/weird-is-a-weird-word">“Weird” is a weird word</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      65 points · by pseudolus · deadlanguagesociety.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49478489">discuss</a>
+    </p>
+<p class="lede">Weird is one of the most commonly used words in the English language. Chances are, the word will pass through your lips (or be tapped out by your fingers) today. You’ll use it when you need to describe something out of the ordinary: a weird coincidence , a weird smell in the fridge , or — heavens forfend! — that weird guy at the office . We say weird all the time for the little everyday oddities we encounter. But weird wasn’t always such a casual word. A thousand years ago, it was one of the heaviest words in the English language: the ancestor of weird was the Old English word wyrd , which meant ‘fate’ or ‘destiny’ Wyrd haunts Old English poetry. It shows up in the bleakest and most fateful moments of poems like The Wanderer and Beowulf . The Beowulf poet puts it on the lips of the hero …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://th-thumbnailer.cdn-si-edu.com/ycBVJpqJAO0uO1iV7PCFsdc7Zsk=/fit-in/1600x0/filters:focal(1800x1200:1801x1201)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/15/23/152387e3-9e0c-4a80-80b4-c5bc781e0cf3/20240331-mw104784.jpg" alt="Some conservationists are helping to restore Africa’s wild dog populations" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.smithsonianmag.com/science-nature/africa-wild-dogs-most-hated-carnivores-continent-heres-why-conservationists-saving-them-anyway-180989287/">Some conservationists are helping to restore Africa’s wild dog populations</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      63 points · by speckx · smithsonianmag.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49479302">discuss</a>
+    </p>
+<p class="lede">Meet the team that closely monitors the playful canines, which need help to form diverse packs and stop their numbers from dwindling A pair of African wild dogs at Tswalu Kalahari Reserve, the largest privately owned nature reserve in South Africa, near the Botswana border. Two white pickup trucks are parked beside a highway that cuts through the Waterberg, a South African municipality three hours from Johannesburg. Passing the trucks on foot, you might hear something that makes you stop: Their cargo is panting. Just visible through the holes at the top of three green wooden crates is fur over rib cages, mottled black, white and gold, rising and falling. The three sleeping female African wild dogs, sisters, have traveled a long way in the past few weeks, even by the standards of their …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://dactyl.dev/blog/how-dactyl-works/og.webp" alt="How Dactyl Works" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://dactyl.dev/blog/how-dactyl-works/">How Dactyl Works</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      63 points · by anorak27 · dactyl.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49480220">discuss</a>
+    </p>
+<p class="lede">App development has always been harder than web development for LLMs. Apps tend to have platform style norms and layouts, and they need to look and feel a certain way. People can feel when an app is “native” and crafted for their device. Plus, the web is open and universal in a way apps and app stores typically are not, which means LLMs have comparatively less data in their training sets. Many vibe-coding platforms have tried to solve the problem by, essentially, compromising. They generate apps using Expo/React Native, Flutter, or even just webviews. But we found none of those approaches provides an optimal user experience; you&#39;re always sacrificing something, whether it&#39;s cross-platform compatibility, native widgets, performance, or features. We made Dactyl to help you build native apps …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://subsmith.app/SubSmithLogo.svg" alt="Show HN: SubSmith – Turn your own videos into language-learning material" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://subsmith.app">Show HN: SubSmith – Turn your own videos into language-learning material</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      62 points · by IbrahimF96 · subsmith.app · <a class="discuss" href="https://news.ycombinator.com/item?id=49476894">discuss</a>
+    </p>
+<p class="lede">Understand what native speakers really say. Learn vocabulary in context. Make progress with every video you watch. Supports all popular formats: MKV, MP4, MP3. Accurately synced subtitles, so you never adjust timing again. Hover over any word for instant definitions. Stay in the flow while building vocabulary naturally. Export audio clips, screenshots, and definitions to Anki. Turn content into a week of flashcards. 7-day free trial. No credit card required. The Lifetime licence itself doesn&#39;t expire. Compatibility, updates, and online services depend on the supported lifetime of the product. See the Terms of Service . Everything you need to know about SubSmith These guides help you move from curiosity to a concrete immersion workflow. Use the Japanese roadmap or the Spanish roadmap to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://cavallette.noblogs.org/2026/08/10083/2">The Server Called Paranoia: Defend Autistici/Inventati Before September 25</a></h3>
+    <p class="dateline"><span class="badge">L</span>      61 points · by dustyweb · cavallette.noblogs.org · <a class="discuss" href="https://lobste.rs/s/gscm11/server_called_paranoia_defend_autistici">discuss</a>
+    </p>
+<p class="lede">For twenty-five years, an Italian hacker collective has built communications infrastructure designed to survive censorship, surveillance and police raids. On August 26, the United States designated it a terrorist organization. On September 25, the wind-down period ends. It should have been a dark and stormy night in an Italian hacklab. It was, annoyingly, a beautiful sunny Sunday. On March 3, 2001, roughly ten people gathered at the LOA hacklab in Milan around a computer assembled from discarded machinery. A bank had sold them an old server for the symbolic price of 15,000 lire, about eight dollars. They expanded it with scavenged components, including a hard drive pulled from someone’s home computer. Nobody arrived with a formal blueprint. Software packages were considered one at a time …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://acko.net/files/bezier/cover.jpg" alt="Curvature Beziers: Improving on a timeless recipe" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://acko.net/blog/curvature-beziers/">Curvature Beziers: Improving on a timeless recipe</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      56 points · by leephillips · acko.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49422743">discuss</a>
+    </p>
+<p class="lede">The bezier curve is a staple of CAD and computer graphics. Like Bic pens, the design is decades old and they&#39;re everywhere. You&#39;ll often find them as the default or only choice in various illustration and animation tools. Conceived by Paul de Casteljau in 1959, and refined by Pierre Bézier in the 1960s at Renault, the enduring appeal of the bezier curve lies in its simplicity. While more sophisticated curves have been invented, and new ones continue to be proposed , these are limited to specific domains, like high-precision CAD or road design. In general use, the bezier stubbornly refuses to be dethroned, despite its shortcomings. Hence bezier curves are a piece of legacy tech we appear to be stuck with. As a software engineer, my question then is: can we make beziers better without …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/6214884795aab99bc8160fa565b41cb34c210c971447e03386e120376ee39d70/tailscale/tailcat" alt="tailcat: like netcat, but over Tailscale&#39;s data plane, without Tailscale&#39;s control plane" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/tailscale/tailcat">tailcat: like netcat, but over Tailscale&#39;s data plane, without Tailscale&#39;s control plane</a></h3>
+    <p class="dateline"><span class="badge">L</span>      54 points · by gmem · github.com · <a class="discuss" href="https://lobste.rs/s/pdvxvf/tailcat_like_netcat_over_tailscale_s_data">discuss</a>
+    </p>
+<p class="lede">&#34;Tailscale without Tailscale, by Tailscale&#34; Tailcat is a remix of Tailscale open source pieces to act like netcat , but over Tailscale&#39;s data plane, without Tailscale&#39;s control plane. Tailscale&#39;s data plane ( magicsock , internally) gives you point-to-point WireGuard®-encrypted tunnels between two machines with DERP as the NAT-hole-punching communication side channel and the ultimate relay-of-last-resort if NAT traversal fails. Instead of using the Tailscale control plane, all tailcat connection metadata is exchanged out of band, however you want. The tailcat CLI (in cmd/tailcat ) is built on the tailcat Go library (importable as github.com/tailscale/tailcat ). Whether you use tailcat as a CLI tool or library, one side runs a tailcat server (listener) and gets back a short connection …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2288946075.jpg?c=16x9&amp;q=w_800,c_fill" alt="Police officer arrested after tracking ex-girlfriend on Flock over 2k times" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.cnn.com/2026/08/26/us/flock-kentucky-police-officer-arrest">Police officer arrested after tracking ex-girlfriend on Flock over 2k times</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      52 points · by cocacola1 · cnn.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49482734">discuss</a>
+    </p>
+<p class="lede">A Kentucky police officer was arrested after authorities said he used the Flock Safety license plate reader camera system to track his ex-girlfriend over 2,000 times, marking the latest in a string of recent law enforcement officer resignations or arrests for alleged abuses of the controversial technology. Shively Police Department Officer Asad Zahir’s alleged activity was flagged by the new AI-powered auditing tool implemented by Flock Safety after growing concerns around security and misuse by police, authorities said, in many cases involving officers accused of using the system to stalk exes or romantic interests. The audit assistance tool, now a requirement by Flock Safety, flags abnormal use by officers. ‘F**k Flock!’ Vandals wage war on AI surveillance cameras The Flock Safety …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-08-28-p2.html">‹</a><a href="../2026-08-28.html">1</a><a href="../2026-08-28-p2.html">2</a><span class="pg-current">3</span>
+<a href="../2026-08-28-p4.html">4</a><a href="../2026-08-28-p5.html">5</a><a href="../2026-08-28-p6.html">6</a><a href="../2026-08-28-p7.html">7</a><a href="../2026-08-28-p8.html">8</a><a href="../2026-08-28-p9.html">9</a><a class="pg-arrow" href="../2026-08-28-p4.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>125 stories · 9 cross-posts merged · 117 excerpts · 82 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

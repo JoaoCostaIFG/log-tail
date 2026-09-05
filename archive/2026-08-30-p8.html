@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Sunday, August 30, 2026 — Page 8</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-08-30.html">Front Page</a>
+      <a href="../2026-08-30.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-08-30.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 242</span>
+      <span>Sunday, August 30, 2026</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 8</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://snaketron.io">Show HN: Snaketron – Competitive multiplayer Snake. Back after 14 years</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by lopatin · snaketron.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49499499">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://loshz.com/debugging-bpf-tbaa/">Debugging Type-Based Alias Analysis optimizations in BPF</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by Shorden · loshz.com · <a class="discuss" href="https://lobste.rs/s/pkqqr5/debugging_type_based_alias_analysis">discuss</a>
+    </p>
+<p class="lede">During a seemingly routine update to an existing BPF program, my colleague and I noticed some of our internal integration tests began to fail due to packet drops. Maybe a transient network issue? Rerunning didn&#39;t help. Try sending different types of packets? Same issue. We need to repro this ourselves. After manually sending some ICMP packets inside a VM, tcpdump pointed us right to the issue: bad L3 checksums. The update itself was nothing of significance, merely updating the program to use BTF generated vmlinux.h definitions instead of depending on specific kernel headers: Ok, let&#39;s inspect the code to see if we&#39;re modifying the IP header anywhere without recomputing the checksum. The only occurrence is an update to the Type of Service (ToS) field, but we do recompute the checksum …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://bergs.biz/blog/wp-content/uploads/2026/08/ipv6.png" alt="OpenWrt: Monitor your IPv6 Status" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://bergs.biz/blog/2026/08/30/openwrt-monitor-your-ipv6-status/">OpenWrt: Monitor your IPv6 Status</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by jummo · bergs.biz · <a class="discuss" href="https://lobste.rs/s/zaavff/openwrt_monitor_your_ipv6_status">discuss</a>
+    </p>
+<p class="lede">I recently had a full outage of IPv6 on my Deutsche Glasfaser fibre-based internet line that lasted for more than 3.5 months. I only found out by chance, which I found very frustrating. If it happens again I want to be notified immediately, so I built an automation that has the following architecture: First we need events to be generated if and when the status of our WAN interface (more specifically the IPv6-specific interface named wan6 ) changes. We can easily and elegantly accomplish this by using the “ Hotplug ” mechanism built into Linux and OpenWrt. I had to write a script that parses the IPv6 status on changes of the wan6 interface and determines the IPv6 assignment and delegation of a prefix. If these are not available, then the status is “unhealthy.” Here’s my script which I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/269c0e83c1802340ed9466603477562a9f52b83e4a393789b6b09c368d2468d5/lennney/stop-that-shit" alt="Show HN: Stop That Shit – a guard against unrequested hashes from coding agents" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/lennney/stop-that-shit">Show HN: Stop That Shit – a guard against unrequested hashes from coding agents</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by lennney · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49492705">discuss</a>
+    </p>
+<p class="lede">你只让 Agent 导出一个结果文件。它顺手又生成一份 SHA-256 校验和，但后面没有任何命令会读取它。Stop That Shit。 Stop That Shit（别再造史了）处理 AI coding agent 自己加出来的防御性工作和任务越界，支持 Codex、Claude Code、OpenCode、Hermes Agent CLI 和 Pi。 安装 · Bad / Good Case · 案例库 · 参与贡献 · English 这份校验和生成了，任务却没有少做一步，后面的流程也完全一样。换个任务，多出来的可能是 guard、兼容层、全量测试或额外流程。Codex、Claude Code、OpenCode、Hermes Agent CLI 和 Pi 都可能这么做：每一步单看都有理由，但用户没要求，当前任务也用不上。 我也试过不断往 AGENTS.md 里补「不要乱改」「别过度设计」「没让我做的先别做」。规则越补越长， AGENTS.md 自己也开始造史。Stop That Shit 把其中能明确判断的边界做成 Skill 和可执行 Guard。 你用 review 、 change 等模式写明授权，再按需限制文件、依赖、hash 和 subagent 预算。Stop That Shit 在受覆盖的 Hook 路径上检查这些明确边界。Agent 仍然可以读 仓库，也必须处理真正受影响的调用方。Guard 确认某个动作越界时，会返回一枚红章： 0.1.0 是首个多平台正式版本：Codex、Claude Code、OpenCode 和 Hermes Agent CLI 四套 Adapter 共用同一套 Guard、Skill、成对案例与只存元数据的本地 Runtime。 项目从 Codex 起步：公开记录保留了 Codex CLI 0.145.0 + …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/8092fb7b8064c645893da52fd4838e40b75c90ff066fc92b012083de296c743c/SSH-Ache/ssh-ache" alt="Show HN: SSH Ache – open-source desktop SSH client with SFTP, tunnels and MCP" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/SSH-Ache/ssh-ache">Show HN: SSH Ache – open-source desktop SSH client with SFTP, tunnels and MCP</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by tanvirmahin24 · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49492712">discuss</a>
+    </p>
+<p class="lede">A desktop SSH client with a clean terminal UI — connections, SFTP, port forwarding, and an approval-gated AI agent bridge, with your data kept on your machine and nothing uploaded anywhere. Community edition. A fully local, open-source SSH client — everything runs on your machine, nothing is uploaded, no account required. SSH Ache Teams , an optional way to share connections with your team end-to-end encrypted, is a separate product. Grab the latest platform build — .dmg (macOS), .msi (Windows), or .AppImage / .deb (Linux) — from the Releases page. macOS builds are not signed or notarised yet. The first launch is blocked as &#34;unidentified developer&#34; — right-click the app → Open to run it anyway. If you would rather not click through that warning for an app that handles SSH credentials …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://hackernews.beliantech.com/og-image.png" alt="Show HN: HN Mirror with Image Previews" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://hackernews.beliantech.com/">Show HN: HN Mirror with Image Previews</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by ernsheong · hackernews.beliantech.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49494568">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=49495618">Show HN: Practice where countries are in the world</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by blackbrokkoli · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49495618">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://hourtobill.com/demo">Show HN: Time tracking for solo consultants that ends in a PDF invoice</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by Stackedboost · hourtobill.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49497476">discuss</a>
+    </p>
+<p class="lede">This is the whole product, running here. Press start, stop it, and take the PDF. Nothing is saved to an account and nothing asks for your email. It bills the first client in your list. The PDF comes from the same renderer the real product uses, so it is the actual document, not a picture of one. Nothing here is saved to any account: it lives in this browser until you clear it. Your own clients and rates, your logo and payment details on the invoice, sequential numbering, tax, CSV export, and hours that can only ever be billed once.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://usenuzzle.com/opengraph-image.png" alt="Show HN: Nuzzle – adorable live wallpapers of your pets" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://usenuzzle.com">Show HN: Nuzzle – adorable live wallpapers of your pets</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by 13001r · usenuzzle.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49497509">discuss</a>
+    </p>
+<p class="lede">Turn a favorite photo into a beautifully illustrated living wallpaper. Pick a style, add your one, and nuzzle paints the rest. Animated Live Photo playback on the Lock Screen requires iOS 17 or later. No prompts, sliders, or editing. Just pick a look and add your one. Choose a favorite photo of your pet or person. One finished living wallpaper, yours to keep. Download nuzzle and turn a favorite photo into a living wallpaper for your Lock Screen.</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://thethousand.co/final_preview_image.png" alt="Show HN: The Thousand – 1k founders, 1 question, one book" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://thethousand.co">Show HN: The Thousand – 1k founders, 1 question, one book</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by jabed · thethousand.co · <a class="discuss" href="https://news.ycombinator.com/item?id=49497592">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://1endpoint.dev/_enfyra/nuxt-seo/og?path=%2F" alt="Show HN: 1endpoint – Cheaper access to AI models" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://1endpoint.dev">Show HN: 1endpoint – Cheaper access to AI models</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by DustinPham12 · 1endpoint.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49497665">discuss</a>
+    </p>
+<p class="lede">One API with transparent token pricing for high-volume workloads. Input, cached input, and output are priced independently. No blended platform fee hidden in the rate. Blended assumes 70% of input served from cache and output equal to 25% of input volume — a reference mix for comparison only, not a billed rate. The gateway records usage after a successful response; rates shown are the currently configured rates. Keep the request shape your application already understands. Change the model ID when the workload changes. Message 12 of a conversation costs 3.7× less than it would without cache — because every message resends everything before it, and we charge full price only for the part that is new. $1.41 instead of $5.17 without cache. The first message has nothing cached yet, so it is …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://1mil.app/og-image.png" alt="Show HN: My startup-idea scanner scored 500 ideas; the best got 6.3/10" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://1mil.app/">Show HN: My startup-idea scanner scored 500 ideas; the best got 6.3/10</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by fayerman · 1mil.app · <a class="discuss" href="https://news.ycombinator.com/item?id=49497779">discuss</a>
+    </p>
+<p class="lede">For solo founders, indie hackers, and working professionals Describe the field you know and what you&#39;re good at. Get back ranked opportunities with named competitors, real pricing anchors, and a literal next step you could take this week. Free to start: sign in and your 1st free trial scan is on us. Business Idea Discovery is gathering strong public starting points for the catalog. Pick your role and the workspace pre-fills with seeds matched to your buyers, regulatory friction, and operator fit. We audit our own tool. Same 25 ideas, scored twice: rank correlation −0.05 . We published the number and demoted the score. Read the full audit → Scans now answer in the language you write in, down to the competitor research. Homepage redesigned around the discovery pipeline, and the FAQ rebuilt …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/96c5a39fe2f34812354583302eb3def768bcfbdf396ae6c618eccb2112ee7540/Podiom/Podiom" alt="Show HN: Podiom – durable sessions, scheduling and goals for local Claude/Codex" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/Podiom/Podiom">Show HN: Podiom – durable sessions, scheduling and goals for local Claude/Codex</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by Maphielbso · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49498323">discuss</a>
+    </p>
+<p class="lede">Podiom is an open-source, local-first workspace for Claude Code and OpenAI Codex. Give each agent a name and durable context, then chat, schedule work, or hand it a goal to pursue over time. Podiom keeps the sessions, projects, tasks, progress, and decisions together while the native CLIs do the work. A goal keeps the outcome, progress, and evidence in one place. Claude Code and Codex are easy to start in a terminal. They are harder to manage once you have several sessions, projects, and unattended jobs running at the same time. Context ends up spread across terminal tabs, and you spend time reconstructing what happened and what an agent should do next. Podiom puts those agents in one local workspace. Sessions stay available after the backing CLI session changes. Projects carry shared …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://sapporta.com/og.png" alt="Show HN: Sapporta – build database applications for power users" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sapporta.com/">Show HN: Sapporta – build database applications for power users</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by jasim · sapporta.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49499123">discuss</a>
+    </p>
+<p class="lede">Sapporta is a TypeScript + SQLite web framework for building database applications. Arrow keys for navigation. Space to expand quotes. If you are building new software today then it must have an agentic surface - a way for an agent to explore and use your entire system securely. For instance, compare a traditional accounting system against something built for agentic operations. Instead of manually entering transactions, we can point a coding agent at any bank statement. Then the agent can look for existing parsers for the statement, or write one itself. It can then classify the parsed transactions according to business rules written in freeform English, and then import them into the system. The agent can even reconcile entries, find missing/duplicated transactions, and answer ad-hoc …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/86719b9640969783a58f412941839894c06b54dddac8c845c51de0e53cc5030c/tenglvjun/mktero" alt="Show HN: Mktero – a source-linked Markdown reader for Zotero" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/tenglvjun/mktero">Show HN: Mktero – a source-linked Markdown reader for Zotero</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by tenglvjun · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49499373">discuss</a>
+    </p>
+<p class="lede">Read Zotero PDFs as source-linked Markdown. Mktero is a restartless Zotero extension for Zotero 7, 8, 9, and 10. It sends a local PDF to MinerU when needed, then opens the resulting Markdown, formulas, tables, figures, citations, and annotations in a temporary, reading-first Zotero tab. A content-addressed local cache avoids repeating conversions for the same PDF. Mktero is in beta. On a cache miss, the complete PDF is uploaded to MinerU, so a MinerU API Token is required. Optional AI translation sends protected Markdown batches to the provider configured by you. Review Privacy and data handling before processing sensitive documents. MinerU controls file-size, page-count, quota, and service-availability limits. See the MinerU API documentation for the current limits. Formal GitHub …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-08-30-p7.html">‹</a><a href="../2026-08-30.html">1</a><a href="../2026-08-30-p2.html">2</a><a href="../2026-08-30-p3.html">3</a><a href="../2026-08-30-p4.html">4</a><a href="../2026-08-30-p5.html">5</a><a href="../2026-08-30-p6.html">6</a><a href="../2026-08-30-p7.html">7</a><span class="pg-current">8</span>
+<a href="../2026-08-30-p9.html">9</a><a class="pg-arrow" href="../2026-08-30-p9.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 6 cross-posts merged · 117 excerpts · 83 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

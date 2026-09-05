@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Thursday, September 3, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-09-03.html">Front Page</a>
+      <a href="../2026-09-03.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-09-03.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 246</span>
+      <span>Thursday, September 3, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://www.gingerbill.org/article/2026/09/02/ctti-is-exponential-rtti-is-linear/">CTTI is Exponential, RTTI is Linear</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by clerno · gingerbill.org · <a class="discuss" href="https://lobste.rs/s/mj9qti/ctti_is_exponential_rtti_is_linear">discuss</a>
+    </p>
+<p class="lede">Runtime Type Information (RTTI) has a cost, but it is a tame cost compared to Compile-Time Type Information (CTTI), which is sold as “zero-cost”, and it is anything but. There is a trade-off between a linear memory cost (that can be measured) for an exponential compile-time cost (that cannot be measured), and people argue for the latter, advertising it as “zero-cost”. A common question I have received is regarding why Odin uses Runtime Type Information (RTTI) instead of Compile Time Type Information (CTTI) for things like formatted printing. Isn’t that an extra runtime cost? And isn’t everything to do with CTTI “zero-cost”? Of course you should just bake all of the computation at compile time so the compiler can optimize for those sets of types, right? There’s a nuance to be made between …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://abundance.build/blog/2026-08-31-risc-v-interpreter-from-the-future/">RISC-V interpreter from the future</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by ettolrach · abundance.build · <a class="discuss" href="https://lobste.rs/s/potdi9/risc_v_interpreter_from_future">discuss</a>
+    </p>
+<p class="lede">There were a lot of changes to the RISC-V interpreter I announced a while back , and I think it is now in a state that is usable for more people. A short list of features to get you interested: fully modular and generic, panic-free, no_std (and zero allocations), runs at compile time ( const fn ), implements RISC-V specification strictly (supposed to be suitable for blockchain purposes), passes RISC-V Architectural Certification Tests and is pretty fast while doing all that. The cost of all this? It is in the title of the post: ~30 nightly Rust features from advanced const generics to guaranteed tail calls, to achieve some really nice things impossible with stable Rust today. I hope most of these will be stabilized in the not-so-distant future. The details below correspond to 0.2 releases …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sachachua.com/blog/2026/04/what-s-in-the-emacs-newcomers-presets-theme/">What&#39;s in the Emacs newcomers-presets theme?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by matklad · sachachua.com · <a class="discuss" href="https://lobste.rs/s/307nji/what_s_emacs_newcomers_presets_theme">discuss</a>
+    </p>
+<p class="lede">[2026-08-31 Mon] : Added Emacs 31 mention. Changed code sample for flyspell-mode to flymake-mode . Thanks, jeenajeena! Emacs 31 (released Aug 2026) as well as development versions of Emacs after Feb 2026 includes a newcomers-presets theme that can be enabled from the splash screen or by using M-x load-theme RET newcomers-presets RET . (Not sure how to run that command? Start with the guided tour/tutorial or choose &#34;Help - Tutorial&#34; from the Emacs menu.) If you like it and want to make it automatically enabled in future Emacs sessions: I&#39;m not sure if someone else has made notes on what it does yet, so I thought I&#39;d put this together. Most Emacs newbies aren&#39;t running the development version of Emacs at the moment, but it will eventually make its way into Emacs 31. I wonder if it might be …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.virtualizor.com/blog/security-incident-bgp-hijacking/">Security Incident – BGP Hijacking</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by lorddimwit · virtualizor.com · <a class="discuss" href="https://lobste.rs/s/6e1y6s/security_incident_bgp_hijacking">discuss</a>
+    </p>
+<p class="lede">Between 28 August 2026 at approximately 20:57 UTC and 30 August 2026 at approximately 06:10 UTC , a block of IP addresses used by Softaculous services ( 162.55.80.0/24 , part of our infrastructure at Hetzner) was affected by a BGP hijack : an unauthorized announcement of that address space by an unrelated network, which diverted internet traffic destined for those addresses to a server operated by an attacker. The attacker obtained a technically valid TLS certificate for our domains, so connections affected by the hijack showed no certificate warning. The affected addresses served, among other systems, our software update endpoint , our client area / billing site. We have confirmed that a malicious Virtualizor update package was delivered to a small number of installations that checked …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sw-ml-study.github.io/sw-mlpl/">Show HN: Open source ML programming language playground</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by softwarewright · sw-ml-study.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49543217">discuss</a>
+    </p>
+<p class="lede">After joining a ML Study group and trying Google Colab I decided to create my own array programming language to help me learn and visualize machine learning. There are many demo repos using this language which has become more general purpose. Under active development. See github link in footer. Built in Tour, Demos, Tutorials, Glossary, etc. Can use this same UI on a local system to program Apple Silicon, NVIDIA GPUs, or to use Ollama models for context aware help in the REPL. The system architecture is documented in the wiki: https://github.com/sw-ml-study/sw-mlpl/wiki</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://theyfell.com/og.png" alt="Show HN: Every AI agrees with you. This writes your startup&#39;s obituary instead" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://theyfell.com/">Show HN: Every AI agrees with you. This writes your startup&#39;s obituary instead</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by kyleclouthier · theyfell.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49543617">discuss</a>
+    </p>
+<p class="lede">Put a link first and you can add what to aim at after it, like simgen.dev roast the pricing page . Optional, and it only uses what is really there. Do not paste ID numbers or anything you would not put on a postcard. Addresses, emails and phone numbers are stripped before it is read or stored. SIN, SSN, card and passport numbers are refused outright. That is the card , exactly as it unfurls when you share it. Kyle ran it on his own GitHub before anyone else&#39;s. And that is the framed print. 30 cm, black wood, printed near you and shipped to your door. Quoted for your address before you pay; about $65 in the US, $69 in Canada, shipping in. The birthday present for a founder who has everything except revenue. Wide for a feed, square for Instagram, a story for Reels and TikTok, and the cause …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.geekwire.com/wp-content/uploads/2026/09/AI_toys.jpg" alt="Kids go from curious to frustrated playing with AI-stuffed toys, UW study finds" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.geekwire.com/2026/kids-go-from-curious-to-frustrated-playing-with-ai-stuffed-toys-uw-study-finds/">Kids go from curious to frustrated playing with AI-stuffed toys, UW study finds</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by 01-_- · geekwire.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49547334">discuss</a>
+    </p>
+<p class="lede">by Kurt Schlosser on Sep 2, 2026 at 9:26 am September 2, 2026 at 9:26 am We’ve come a long way from Lincoln Logs and Hot Wheels that couldn’t talk to us. Today, plush toys aren’t just stuffed — they’re stuffed with artificial intelligence, and new research from the University of Washington reveals that when these “smart” toys start chatting, kids quickly go from curious to frustrated to outright hostile. Claims of “smart” toys date back decades, from 1960s talking dolls like Chatty Cathy to 1990s sensor-packed plushies like Microsoft’s ActiMates Barney and Furby. But generative AI marks a major shift. Companies like Curio are now packing plushies with onboard AI models, allowing characters like “Gabbo” or the viral brainrot figure “Ballerina Cappuccina” to hold dynamic, unscripted …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://codeberg.org/veqq/deforester">deforester - Logging for Janet</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by veqq · codeberg.org · <a class="discuss" href="https://lobste.rs/s/klhs7o/deforester_logging_for_janet">discuss</a>
+    </p>
+<p class="lede">I also made a r7rs scheme version (which lacks some things, due to portability/unfinished standard).</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://colossus.com/wp-content/uploads/2026/07/Untitled3.png" alt="Invisible Companies" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://colossus.com/article/invisible-companies/">Invisible Companies</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by ltononro · colossus.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49521264">discuss</a>
+    </p>
+<p class="lede">Subscribe to print for your office or home. S teve Ross was a legend . Starting with nothing but a job at his father-in-law’s funeral parlor, he built Time Warner into one of the world’s largest companies, making a mark on every part of the media landscape. MTV and Nickelodeon were born under his roof. He bought and ran Atari. He helped found the New York Cosmos and, with it, professional soccer in America. When Ross died in 1992, Clint Eastwood dedicated his Best Picture Oscar for Unforgiven to him; two years later, Steven Spielberg did the same with Schindler’s List . Everyone glosses over the boring part. To build the stake he needed to get into the media business, Ross bought and built a string of strikingly mundane companies in the 1950s and ’60s. He started by convincing his …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://shzlw.github.io/windrunner/img/windrunner-project-workspace.png" alt="Show HN: Windrunner – AI-powered project collaboration workspace" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://shzlw.github.io/windrunner/">Show HN: Windrunner – AI-powered project collaboration workspace</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by yuegui · shzlw.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49535163">discuss</a>
+    </p>
+<p class="lede">Keep work items, decisions, answers, blockers, and supporting context together in one shared workspace. See status, priority, due dates, assignments, blockers, and activity without losing the project context behind them. Ask what&#39;s next, what&#39;s blocked, or how work is progressing with the relevant project context built in. AI can suggest updates to work items and entries, while people stay in control of what gets accepted. Create, organize, assign, search, filter, and follow work so everyone knows what needs attention. Give the right people access to projects and keep collaboration focused on the work that matters. Use supported providers with your own credentials, models, and limits. Track usage, acceptance rates, and estimated time saved by project, provider, and feature. Let Codex …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://pbs.twimg.com/media/HRSLs9oXUAE-rRn.jpg:large" alt="Google Antigravity TOS: 3rd party usage can get Google account suspended" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://twitter.com/GergelyOrosz/status/2095453567955968398">Google Antigravity TOS: 3rd party usage can get Google account suspended</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by tosh · twitter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49548452">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.depesz.com/2026/08/25/new-things-for-regular-expressions-in-postgresql-pg_tre-and-pg_re2/">New things for regular expressions in PostgreSQL (pg_tre and pg_re2)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by fanf · depesz.com · <a class="discuss" href="https://lobste.rs/s/b53fwj/new_things_for_regular_expressions">discuss</a>
+    </p>
+<p class="lede">Well, truth be told these are not all that new (couple of months), but I finally have gotten around to research it. So, let&#39;s see what&#39;s what. For starters I need some test data. Luckily, I have explain.depesz.com DB … Extracted all plans to side table, with this structure: In total, there are 1.6 million rows there, with average length of 22kB, max length (of plan) ~ 9.5MB, and total length of all plans around 33GB. First test case is word “sususu&#34;. I picked this string as it is uncommon (only 93 plans with it). OK. So we see that it took ~ 40 seconds, it was 3-way parallel seq scan. Great. Luckily we know that we can optimize it using pg_trgm : First, is pg_tre , with initial (well, at least for me) announcement here . OH. MY. $DEITY. 7 hours. And how about size? You might have noticed …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://anyto.md/img/anytomd-og.png" alt="Show HN: Convert Anything to Markdown" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://anyto.md/">Show HN: Convert Anything to Markdown</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by vlucas · anyto.md · <a class="discuss" href="https://news.ycombinator.com/item?id=49536843">discuss</a>
+    </p>
+<p class="lede">Turn URLs, PDFs, Office files, and images into AI-friendly Markdown. Sending PDFs, Office files, HTML, and images straight to a model wastes context on layout and encoding. anyto.md converts them to plain Markdown so AI reads less and you pay for fewer tokens. Binary files and markup inflate every prompt — models tokenize structure, metadata, and layout you do not need. Convert once to Markdown, then reuse the plain text in chats, agents, and RAG pipelines without re-processing the original file. Binary files and markup are expensive for AI to read. anytomd turns URLs, documents, and images into plain Markdown you can search, store, and send to models with far fewer tokens. LLMs parse plain text efficiently. PDFs, Office files, HTML, and images carry encoding and layout overhead that …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://kekoso.app/og.png" alt="Show HN: Kekoso – On-device dictation and transcription for macOS" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://kekoso.app/">Show HN: Kekoso – On-device dictation and transcription for macOS</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by a_chmerev · kekoso.app · <a class="discuss" href="https://news.ycombinator.com/item?id=49539043">discuss</a>
+    </p>
+<p class="lede">Voice to text on your Mac: dictate into any app, drop in a recording or a YouTube link, record a call and get both sides as text, and hand your AI agents a transcription server that runs locally. One purchase — no cloud, no subscription, no account. macOS 14.4 or later · Apple silicon · $29 once, not per month · 7-day trial Quick note before the deposition: the client confirmed the timeline, so we can file on Thursday. Speech to text on a Mac usually means paying three or four services to cover it — one for dictation, one for calls, one for converting files, an API key for everything else. Kekoso does all four, and the voice recognition runs on hardware you already own. Press the hotkey, say it, and the text appears where your cursor already was — Mail, Slack, Cursor, a browser form. No …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.beckershospitalreview.com/finance/mark-cuban-why-us-hospitals-dont-know-their-costs/">Mark Cuban: Why US hospitals &#34;don&#39;t know their costs&#34;</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by elo2000 · beckershospitalreview.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49548497">discuss</a>
+    </p>
+  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-09-03-p6.html">‹</a><a href="../2026-09-03.html">1</a><a href="../2026-09-03-p2.html">2</a><a href="../2026-09-03-p3.html">3</a><a href="../2026-09-03-p4.html">4</a><a href="../2026-09-03-p5.html">5</a><a href="../2026-09-03-p6.html">6</a><span class="pg-current">7</span>
+<a href="../2026-09-03-p8.html">8</a><a href="../2026-09-03-p9.html">9</a><a class="pg-arrow" href="../2026-09-03-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>131 stories · 8 cross-posts merged · 118 excerpts · 77 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

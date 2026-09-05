@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, September 2, 2026 — Page 3</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-09-02.html">Front Page</a>
+      <a href="../2026-09-02.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-09-02.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 245</span>
+      <span>Wednesday, September 2, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 3</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb full" src="https://pbs.twimg.com/profile_images/1560764938083352577/B1X3m4NN_400x400.jpg" alt="Has early Scratch experience led to fulfilling careers?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://twitter.com/ID_AA_Carmack/status/2094450188911845827">Has early Scratch experience led to fulfilling careers?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      118 points · by ilamont · twitter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49516209">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://frn.sh/io-uring/">Io_uring Without Readahead</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      114 points · by porridgeraisin · frn.sh · <a class="discuss" href="https://news.ycombinator.com/item?id=49521623">discuss</a>
+    </p>
+<p class="lede">Someone opened a PR to implement readahead in Turso. It was a throwaway implementation, but a good excuse to measure io_uring and understand more about it. Turso has two backends. syscall uses pread(2). io_uring uses io_uring, and opens the database file with O_DIRECT with no option to use buffered I/O. O_DIRECT takes away kernel readahead, so getting it back means implementing it in the application. 1 The PR’s results are impressive. io_uring with an application buffer is faster. I want to understand why. Without readahead, io_uring issues only one entry at a time. The problem is the lack of concurrency: each read waits for the previous one. The application knows that “hey, at this time, I need page 100”, which means: Turso submits a read SQE for page 100, then waits for it. The scan …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.monicahq.com/og/monica-en.png" alt="We are rebuilding Monica" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.monicahq.com/en/blog/we-are-rebuilding-monica/">We are rebuilding Monica</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      110 points · by robinhood · monicahq.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49509655">discuss</a>
+    </p>
+<p class="lede">We are rebuilding Monica from scratch, and this new series will document how. This is the first article in a series called Building Monica . I want to use this series to document the process of rebuilding Monica, the open source personal CRM, from scratch. I&#39;ll talk about the problems we&#39;re trying to solve, the decisions we make along the way, and probably some of the things that don&#39;t work as expected. Almost ten years ago, I started building Monica because I was terrible at remembering things about people. I would forget the name of someone&#39;s child, what we had talked about the last time we met, or something important they had told me a few months earlier. I wanted a place where I could write these things down, mostly to compensate for my bad memory, so I started using a professional …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://hnmatchmaker.com/og-image.png" alt="Show HN: HN Match Maker – Matching &#34;Who Wants to Be Hired?&#34; With &#34;Who&#39;s Hiring?&#34;" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://hnmatchmaker.com/">Show HN: HN Match Maker – Matching &#34;Who Wants to Be Hired?&#34; With &#34;Who&#39;s Hiring?&#34;</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      99 points · by all2 · hnmatchmaker.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49528057">discuss</a>
+    </p>
+<p class="lede">AI-powered matchmaking between “Who is Hiring” job postings and “Who Wants to Be Hired” candidates. Every match is pre-scored and broken down by signals. Uncountable is hiring full-stack engineers for its web platform, with salaries of $130k-$220k plus equity in NY, SF, London, or Toronto. Monumental is hiring experienced software engineers in Amsterdam to build robotics software for autonomous building construction. Fastly is hiring senior to principal software engineers across edge cloud, security, platform, and networking roles, with onsite preferred and remote candidates considered. Sourcegraph is hiring remotely for multiple full-time roles across security, engineering, tech lead, agent engineering, product management, and product marketing. Quobyte is hiring for multiple full-time …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://daniel.haxx.se/blog/wp-content/uploads/2025/09/CVE.jpg" alt="curl: a CVE dispute" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://daniel.haxx.se/blog/2026/06/24/a-cve-dispute/">curl: a CVE dispute</a></h3>
+    <p class="dateline"><span class="badge">L</span>      98 points · by eugeny · daniel.haxx.se · <a class="discuss" href="https://lobste.rs/s/1pdfex/curl_cve_dispute">discuss</a>
+    </p>
+<p class="lede">A few years years ago the curl project signed up and became a CNA . This means that we are masters of and can allocate our own CVE identifiers. For any security problems within our territory, it is we who decides if the issue should get a CVE or not. No more bogus CVEs . During these years we have published fifty-seven separate security vulnerabilities with their associated CVE identifiers. Getting a CVE for an issue is easy and really quickly done when you are a CNA. No hassle, no friction and as we are a small and lean security team it just works as smoothly as you could ask. Just an API call and we have new number. Being a CNA is low maintenance, as there really is nothing extra we need to do. We already had an established and proven process for receiving, managing and assessing …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://en.wikipedia.org/wiki/Magic_eye_tube">Magic eye tube</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      94 points · by peter_d_sherman · en.wikipedia.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49490498">discuss</a>
+    </p>
+<p class="lede">A magic eye tube or tuning indicator , in technical literature called an electron-ray indicator tube , [ 1 ] is a vacuum tube which gives a visual indication of the amplitude of an electronic signal, such as an audio output, radio-frequency signal strength, or other functions. [ 1 ] The magic eye (also called a cat&#39;s eye , or tuning eye in North America) is a specific type of such a tube with a circular display similar to the EM34 illustrated. Its first broad application was as a tuning indicator in radio receivers , to give an indication of the relative strength of the received radio signal, to show when a radio station was properly tuned in. [ 1 ] The magic eye tube was the first in a line of development of cathode ray type tuning indicators developed as a cheaper alternative to needle …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://webfpga.io/">WebFPGA (2019)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      92 points · by gurjeet · webfpga.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49531525">discuss</a>
+    </p>
+<p class="lede">Welcome! Please read our Kickstarter page for the project&#39;s information and scope. Purchase a board below and use our Web IDE to program your FPGA device! For support, please email support@webfpga.io .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://servo.org/svg/servo-color-positive.svg" alt="July in Servo: more platforms, faster canvas, web fonts in SVG, and more" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://servo.org/blog/2026/08/31/july-in-servo/">July in Servo: more platforms, faster canvas, web fonts in SVG, and more</a></h3>
+    <p class="dateline"><span class="badge">L</span>      85 points · by FedericoSchonborn · servo.org · <a class="discuss" href="https://lobste.rs/s/8gved6/july_servo_more_platforms_faster_canvas">discuss</a>
+    </p>
+<p class="lede">Plus real world compat improvements on the DuckDuckGo and Gumroad websites. Servo 0.5.0 contains all of the changes we landed in July, which came out to 488 commits , and we now publish binaries for Linux aarch64 ( @mukilan , #46760 )! DOM text selections are now visible ( @mrobinson , @SimonSapin , #46698 , #46864 , #46742 , #46889 , #46126 ). Interactive selection is coming soon! We’ve shipped several new web platform features: This is another big update, so here’s an outline: If you’re working on a pull request that you think might be interesting for the next monthly update, even if you’re not 100% sure, tell us about it by following the steps below: You add the monthly update label to your pull request, or comment @servo-highfive monthly update Highfive posts a comment asking you some …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png" alt="VibeCoded AI-Slop License v1.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://gist.github.com/NicolasCARPi/3fd349ed1ed52ae6b835d5364cda4cd6">VibeCoded AI-Slop License v1.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      71 points · by ktr · gist.github.com · <a class="discuss" href="https://lobste.rs/s/zzn47c/vibecoded_ai_slop_license_v1_0">discuss</a>
+    </p>
+<p class="lede">Instantly share code, notes, and snippets. Considering that in most jurisdictions, one cannot assert copyright ownership of generative AI outputs, the first line of the license seems ill advised. It&#39;s laughable that most/all vibe-coded projects claim copyright. Ignorance is bliss until someone punches you in the face. This is exactly the license I was looking for ☝️ missing &#34;may not have noticed that this repo was created and shared publicly in the first place&#34; Was AI used to write this license too??? 😭</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.dougbarnesauthor.com/2018/06/how-bicycle-coaster-brakes-work.html">How bicycle coaster brakes work (2018)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      70 points · by Vedor · dougbarnesauthor.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49488224">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://iurii.net/_posts/10.software-engineering/2026-09-01.I-used-Fable-to-rewrite-65kLoC-to-Rust/hero.webp" alt="I used Fable to rewrite 65kLoC of Go in Rust. It cost $400" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://iurii.net/en/blog/posts/software-engineering/i-used-fable-to-rewrite-65kloc-to-rust/">I used Fable to rewrite 65kLoC of Go in Rust. It cost $400</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      66 points · by aka-rider · iurii.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49526131">discuss</a>
+    </p>
+<p class="lede">I kept joking that I would have learned Rust a long time ago, but C++ money is not enough for a decent fursuit. Moreover, I&#39;m bald, so I cannot simply dye my hair blue. First, I tried the /teach skill by Matt Pocock 1 to learn Rust, and it clicked: &#34;Teach a C++ programmer idiomatic Rust, skip syntax and helloworld, only focus on main differences.&#34; This skill is like a personal trainer — overcoming the pleasant challenge keeps me engaged, and at the same time, the material never gets overwhelming. I recommend trying it. Around the same time, I came across &#34;Rewriting Bun in Rust&#34; 2 and got curious about the method: Each dynamic workflow was a loop like this - a workflow for: The cost of this project was 535496 lines for $165000. I had an idea that a rewrite could be done much cheaper using …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://shkspr.mobi/blog/wp-content/uploads/2026/07/Google-Calendar-Help.webp" alt="&#34;iT woRKs BeTter in THe aPp!!&#34;" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://shkspr.mobi/blog/2026/08/it-works-better-in-the-app/">&#34;iT woRKs BeTter in THe aPp!!&#34;</a></h3>
+    <p class="dateline"><span class="badge">L</span>      65 points · by abnercoimbre · shkspr.mobi · <a class="discuss" href="https://lobste.rs/s/fjpexo/it_works_better_app">discuss</a>
+    </p>
+<p class="lede">The monkey-punchers at Google never quite seem to finish any of their apps. There&#39;s always some useful bit of work left undone, or showstopping bug which remains unfixed, a thousand jagged edges as yet unsolved by the greatest minds of their generation. I wanted to subscribe to an events calendar. I had a URl. I had my Google™ Pixel® phone running the latest Android© 17 with an updated calendar app. Is it possible to click on a calendar link and add it to my phone? This isn&#39;t the most complex software engineering task known to humanity. Add a + button. Pop open a text entry field. Validate. Save. Done. I&#39;m sure even the shitty Gemini model can vibe code that in a couple of months, right? Anyway, I opened calendar.google.com on my phone (using desktop mode), added the calendar, and it …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/58aab1a19cc418f09b9776099827d586f092f165b1be04ea5bc09f9293a1a881/janet-lang/janet/releases/tag/v1.42.0" alt="Janet 1.42.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/janet-lang/janet/releases/tag/v1.42.0">Janet 1.42.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      63 points · by veqq · github.com · <a class="discuss" href="https://lobste.rs/s/jbgnwk/janet_1_42_0">discuss</a>
+    </p>
+<p class="lede">This is a long-coming release, with lots of bug fixes and documentation improvements! Still more to come, but it&#39;s best to get these changes out to people where they can be used! Happy hacking, and special thanks to our new contributors, and @sogaiu for much of the work on the documentation revamp.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://benholmen.com/assets/images/halfmoon-chimes/open-graph.jpg" alt="Building an interactive instrument for a one-of-a-kind festival" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://benholmen.com/blog/halfmoon-chimes/">Building an interactive instrument for a one-of-a-kind festival</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      57 points · by tjwds · benholmen.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49479909">discuss</a>
+    </p>
+<p class="lede">My hometown - Eau Claire, Wisconsin - is home to a singular music, literary, and art festival that is the brainchild of Justin Vernon (Bon Iver). Called Eaux Claires , it&#39;s unlike any other major music festival, and has a heavy emphasis on unique collaboration, audience participation, and unexpected delights. Besides world class musicians performing unique sets and collaborating in new ways, the festival has hosted a wide range of art installations to be discovered if you&#39;re willing to dig for them. I&#39;ve experienced every version of this festival and even helped with an art installation in the 2016 edition. After running from 2015-2018, the festival took an indefinite hiatus. In the 2018-2026 interim, I&#39;d been pondering an idea for a custom instrument / art installation. It was very …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://contemporary-home-computing.org/prof-dr-style/">Top Web Design Styles of 1993</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      54 points · by luu · contemporary-home-computing.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49516117">discuss</a>
+    </p>
+<p class="lede">Every term I give an introduction to Interface Design studies to new students. 99% of them are under the delusion that the design of everything in the world is made in Photoshop or other Adobe products. In case the design is to be perceived on a computer, these Adobe files will be thrown into a room full of programmers who are longing to make it all interactive according to noble ideas embedded in the graphics. So the task is to show non-fictional challenges of new media and to explain why to study Interface Design. (To make it short here: interface designers develop projects that will be handed over to photoshoppers to put gradients on buttons.) Most of the students will not be convinced and will choose to study graphic design. Even those who want to be web designers. Though 17 years of …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-09-02-p2.html">‹</a><a href="../2026-09-02.html">1</a><a href="../2026-09-02-p2.html">2</a><span class="pg-current">3</span>
+<a href="../2026-09-02-p4.html">4</a><a href="../2026-09-02-p5.html">5</a><a href="../2026-09-02-p6.html">6</a><a href="../2026-09-02-p7.html">7</a><a href="../2026-09-02-p8.html">8</a><a href="../2026-09-02-p9.html">9</a><a class="pg-arrow" href="../2026-09-02-p4.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>133 stories · 3 cross-posts merged · 126 excerpts · 83 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

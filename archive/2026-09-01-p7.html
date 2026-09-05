@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 1, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-09-01.html">Front Page</a>
+      <a href="../2026-09-01.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-09-01.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 244</span>
+      <span>Tuesday, September 1, 2026</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://www.vesto.me/static/images/home-cover.jpg" alt="Any user process can escalate to root" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.vesto.me/2026/08/31/any-process-escalate-root.html">Any user process can escalate to root</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by ntietz · vesto.me · <a class="discuss" href="https://lobste.rs/s/q2zziq/any_user_process_can_escalate_root">discuss</a>
+    </p>
+<p class="lede">This is one of those things that I sorta knew in the back of my head seemed fishy but never fully grasped the security implications of. From 0xcc.io : Omarchy configured its default user as a member of the Linux docker group. That allows users to run commands such as: On arch the Docker daemon runs as root and listens on: Members of the docker group can communicate with that socket. Docker itself explicitly warns that the docker group grants root-level privileges to the user. A process with access to the Docker socket can ask the root-owned Docker daemon to launch a container as root, mount arbitrary portions of the host filesystem into it, operate on those files as root, and run code as root. On affected Omarchy systems, this means that the default user and all processes launched in that …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://app.notion.com/images/meta/default.png" alt="Show HN: I spent 3 years building a wearable to understand my back pain" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://gem-manatee-cd0.notion.site/Back-Pain-Care-A-New-Hope-3cec8d172a2480aab9c5d75cb889b538">Show HN: I spent 3 years building a wearable to understand my back pain</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by RohKo · gem-manatee-cd0.notion.site · <a class="discuss" href="https://news.ycombinator.com/item?id=49524381">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxniXKtE9nQqdyWN8d9wnNn80AEs7KH9T6e-7NAUNgML-r8tJyZrTjxfJDoL7-cf18WK8pqG23ErhRmbKHNNC1ityAlQ9HisZifiobMMXRJIHTXf6jrcCh0_Cw93npthcel5GFgdK30xhWyVpK573Nubxz8eBo09mE_WA1lLzG6vfX5DJpuXOt5u4Qyio/w1200-h630-p-k-no-nu/csr_1.png" alt="Privilege escalation from IIS AppPool to NT Authority/SYSTEM" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.mannulinux.org/2026/08/Privilege-escalation-from-IIS-AppPool-to-NT-AuthoritySYSTEM-via-AD-CS-RPC-endpoint.html">Privilege escalation from IIS AppPool to NT Authority/SYSTEM</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by hoistbypetard · mannulinux.org · <a class="discuss" href="https://lobste.rs/s/gqk57d/privilege_escalation_from_iis_apppool_nt">discuss</a>
+    </p>
+<p class="lede">Pranaam to all 🙏 In this blog post, I am going to demonstrate how to escalate privileges from [text color=&#34;amber&#34; weight=&#34;600&#34; ]IIS AppPool\DefaultAppPool[/text] to [text color=&#34;amber&#34; weight=&#34;600&#34;] NT Authority\SYSTEM[/text] without using any Potato exploit, when we have [mark color=&#34;danger&#34;]Remote Code Execution[/mark] on a web application running through an IIS web server with the privileges of [text color=&#34;amber&#34; weight=&#34;600&#34; ]IIS AppPool\DefaultAppPool[/text] and compromised host is a part of Windows Active Directory Domain . [h1 color=&#34;accent&#34;]Outline[/h1] The key insight behind this technique is a well-documented Windows behaviour: [note] when an IIS AppPool identity accesses a network-level resource, its identity is silently elevated to the underlying machine account of the host …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://osa1.net/posts/2026-08-29-coherence-and-orphans.html">Coherence and orphan instance rules</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by abhin4v · osa1.net · <a class="discuss" href="https://lobste.rs/s/vbu5ay/coherence_orphan_instance_rules">discuss</a>
+    </p>
+<p class="lede">August 29, 2026 - Tagged as: en , haskell , rust , plt . Typeclasses are an overloading mechanism that allows compile time or runtime polymorphism. A typeclass method call like m a b ... (or a.m(b, ...) in Rust) resolves to a concrete method based on the type arguments passed to the method. toString here is overloaded: the two calls to the same method actually call different concrete methods. These type arguments are commonly based on the arguments or the return value (which is inferred from the call site context). When a typeclass type parameter is not used in a method signature, the compiler has no way of choosing the instance, so we have to specify the type arguments explicitly: Here f calls Ambiguous Int Bool ’s weird , based on the explicit type arguments. Without the type arguments …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/08/random-stars-shuffle.webp" alt="Let’s Use the Emergent CSS random() Function in all the Browsers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://css-tricks.com/css-random-function-polyfill/">Let’s Use the Emergent CSS random() Function in all the Browsers</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by abhin4v · css-tricks.com · <a class="discuss" href="https://lobste.rs/s/edj52m/let_s_use_emergent_css_random_function_all">discuss</a>
+    </p>
+<p class="lede">The creator of the TV show The Good Place wrote a tie-in book about moral philosophy which includes a chapter called “The Luck of the Draw,” discussing how the myth of meritocracy leads people to “underestimate the role that luck has played in their lives.” Given how God seems to play dice with the universe , there is something compelling in the way art imitates life when websites embrace controlled chaos in their designs . The jury is out on whether extreme versions of this nondeterminism such as generative UI are a helpful usage of unpredictable UX. Indeed, when I see the YouTube comments reacting to Google’s upcoming usage of GenUI in search , maybe it’s taking the idea too far down a bad path. But there is still something about the idea of a webpage that exists in a state of subtle …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.cppstories.com/2026/images/hardening_experiments.png" alt="C++26: Standard Library Hardening Experiments" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.cppstories.com/2026/hardening-experiments/">C++26: Standard Library Hardening Experiments</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by lcapaldo · cppstories.com · <a class="discuss" href="https://lobste.rs/s/qtakqk/c_26_standard_library_hardening">discuss</a>
+    </p>
+<p class="lede">“Hardening” seems to be a very popular term in the C++ World in 2026. In this article we’ll explore what this word means and see some core examples. Can a hardened library make C++ fully safe? Let’s find out. When you learned about std::vector you may remember that you can access an element at the i -th position using at least two expressions: The main difference between those two is that [] is unchecked (and can generate undefined behaviour if you try to access an element which is not there), while .at() may throw std::out_of_range (so it’s a well defined behaviour). In C++26, the Standard introduces the notion of a hardened implementation . Whether a standard-library implementation is hardened, and how that mode is enabled, is implementation-defined. For std::vector&lt;T …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/">Wasmi 2.0 - Engineering of the Fastest Wasm Interpreters</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by isuffix · wasmi-labs.github.io · <a class="discuss" href="https://lobste.rs/s/sccfuu/wasmi_2_0_engineering_fastest_wasm">discuss</a>
+    </p>
+<p class="lede">In my last post about Wasmi 1.0 I promised a fundamental engine overhaul for the future Wasmi version. The future is now! 1 Wasmi is an efficient and feature-rich WebAssembly (Wasm) interpreter. It is an excellent choice for IoT devices, plugin systems ( Typst , Zellij , Josh ), cloud hosts, smart contracts ( Soroban , Ripple ) and even for your lightweight game consoles ( Firefly Zero ). Before going into all the details, a huge thank you to the Stellar Development Foundation (SDF) that has been sponsoring the Wasmi project since October 2024. Without their sponsorship, the Wasmi project wouldn’t be where it is today. Also special thanks to Felix Kutzner for proofreading the article and suggesting many improvements. Today, I am happy to announce that after eight months of focused work …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://videoai.me/tv-og.jpg" alt="Show HN: I built a live stream site where every spot is instantly AI-generated" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://videoai.me/live">Show HN: I built a live stream site where every spot is instantly AI-generated</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by Paul_Grsl · videoai.me · <a class="discuss" href="https://news.ycombinator.com/item?id=49520151">discuss</a>
+    </p>
+<p class="lede">VIDEO AI ME LIVE: the AI teleshopping channel NEXT SPOT LOADING PLAY 00:00:00 NEXT Host introduces The AI Journal +2s Ad spot: The AI Journal (free) +14s Host introduces youtube Say hello, the host is listening</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://orthogonal.sh/logo.jpg" alt="Show HN: Orthogonal – One integration for agents to discover and pay for APIs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.orthogonal.com/">Show HN: Orthogonal – One integration for agents to discover and pay for APIs</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by berasogut · orthogonal.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49523765">discuss</a>
+    </p>
+<p class="lede">Discover, call, and pay for 800+ endpoints from 50+ verified providers. All through one integration. Free credits to start · no card required Drop in the SDK, MCP, or REST API. Three lines, and your agent can reach anything in the catalog. Your agent describes what it needs. Orthogonal returns the right service. Same request shape on every provider. No separate accounts or keys to manage, and one balance for all of them. Metered to the call. Pay with credits, x402, or MPP, only for what your agent uses. A curated list — each one tested, monitored, and uptime-tracked by our team. It&#39;s one integration that lets your agent reach the tools it can&#39;t on its own: company data, contact information, real-time web search, financial data, and more. Your agent describes what it needs, and Orthogonal …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.supafork.com/og.png?v=2" alt="Show HN: Supafork – Share and Fork Sessions Across Harnesses" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.supafork.com">Show HN: Supafork – Share and Fork Sessions Across Harnesses</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by supafork · supafork.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49524608">discuss</a>
+    </p>
+<p class="lede">Every prompt prompt across every harness, stored effortlessly. Supafork is the one stop for your agentic metadata. ✓ repo registered · 3 harnesses detected ✓ detected claude-code · codex · opencode Install in one step, or ask your agent to set it up. Your harnesses are auto-detected and sessions auto-import to Supafork. $ sf session share --id a41 --email team@acme.dev Move sessions from one harness to another The source of truth for your agents: every prompt, session, tool call, and skill across every harness, stored in one place. Install the CLI, run sf init, and your agentic metadata starts syncing. OpenCode, Codex, Claude Code, DeepSeek, Pi, Gemini CLI, Cursor, GitHub Copilot CLI, Droid, and more on the way — see the full list on the supported harnesses page. Locally, sf harness shows …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.computerhistory.org/collections/catalog/300000188/">Andy Hertzfeld oral history</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by binjip978 · computerhistory.org · <a class="discuss" href="https://lobste.rs/s/hi2svr/andy_hertzfeld_oral_history">discuss</a>
+    </p>
+<p class="lede">Andy Hertzfeld was born in 1953 in Philadelphia, studied applied math and CS at Brown, and pursued a PhD in CS at Berkeley. After seeing the Apple II debut in 1977, he started writing, publishing and selling Apple II software. Hired by Apple in 1979 initially in the Apple II team, Hertzfeld befri...</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.hillelwayne.com/post/predicate-logic/feature.jpg" alt="A Crash Course in Predicate Logic" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.hillelwayne.com/post/predicate-logic/">A Crash Course in Predicate Logic</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by hwayne · hillelwayne.com · <a class="discuss" href="https://lobste.rs/s/rwqtzs/crash_course_predicate_logic">discuss</a>
+    </p>
+<p class="lede">I started writing Logic for Programmers because there weren’t any good resources on logic for, uh, programmers. Now that the book’s out, the new problem is that there aren’t any good free resources on logic for programmers. So, to solve that problem (and maybe hype the book a little), I converted the second chapter of LfP into a blog post. All footnotes are editorial comments not present in the book. 1 Enjoy! Formal logic is a very powerful tool, but it’s also very simple. Over this chapter, we’ll motivate and explain the basic concepts and syntax. This includes predicates, the implication operator, sets, and set quantifiers. Much of it may already be familiar to you from programming experience! To a first approximation, a predicate is a function that returns a Boolean. You’ve probably …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://raq.com/images/cover.webp" alt="Show HN: Guess the AI model from its web design" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://raq.com/blog/can-you-spot-ai-web-design/quiz">Show HN: Guess the AI model from its web design</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by hawke · raq.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49514013">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://i0.wp.com/www.shellsandpebbles.com/wp-content/uploads/2026/01/The-Creed-header.png?fit=696%2C428&amp;ssl=1" alt="A Genealogy of Freudenthal&#39;s Lincos" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.shellsandpebbles.com/2026/01/19/a-genealogy-of-freudenthals-lincos-part-i-looking-up-from-the-ruins-of-babel/">A Genealogy of Freudenthal&#39;s Lincos</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by akkartik · shellsandpebbles.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49516184">discuss</a>
+    </p>
+<p class="lede">This article is the first part of a two-part series, aiming to provide a short introduction to the intellectual history and genealogy of Hans Freudenthal’s Lingua Cosmica . This first part aims to describe the many predecessors to Lincos, from the various attempts to create a “philosophical language” in the 17th century to the rise of mathematical logic in the 20th century. In the 17th century, English intellectuals in Oxford found themselves thinking a lot about language. They lived in a Europe dominated by a small number of powerful monarchies and republics. Nationalistic sentiments began to arise, which naturally posed a problem: if a British merchant wanted to trade textiles in a Flemish market with a French counterpart, what language should they all speak? The prestige and power of …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://serendipity.surf/">Show HN: Serendipity – rediscover the web one interesting page at a time</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by RaCaS123 · serendipity.surf · <a class="discuss" href="https://news.ycombinator.com/item?id=49517768">discuss</a>
+    </p>
+<p class="lede">A calmer way to discover surprising, useful and beautiful things from across the web. Browse freely or search a topic. Serendipity finds pages from across the web and checks them before they reach the shared corpus. Like a page, ask for something similar, or say it is not your thing. The next finds gradually become more yours. Save pages to My Finds, share a find through Serendipity, and sync your saves, likes and recommendations across your own devices. A running showcase of real pages people have found and shared through the app — a taste of what is out there before you download. It did not simply disappear. But a particular kind of web discovery got lost along the way. A small feature that explains why Serendipity makes honest uncertainty part of the product.</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-09-01-p6.html">‹</a><a href="../2026-09-01.html">1</a><a href="../2026-09-01-p2.html">2</a><a href="../2026-09-01-p3.html">3</a><a href="../2026-09-01-p4.html">4</a><a href="../2026-09-01-p5.html">5</a><a href="../2026-09-01-p6.html">6</a><span class="pg-current">7</span>
+<a href="../2026-09-01-p8.html">8</a><a href="../2026-09-01-p9.html">9</a><a href="../2026-09-01-p10.html">10</a><a class="pg-arrow" href="../2026-09-01-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>137 stories · 1 cross-posts merged · 131 excerpts · 87 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

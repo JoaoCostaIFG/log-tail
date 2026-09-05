@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 1, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-09-01.html">Front Page</a>
+      <a href="../2026-09-01.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-09-01.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 244</span>
+      <span>Tuesday, September 1, 2026</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://spirali.github.io/blog/cargo-scheduler/">Could Cargo&#39;s scheduler be better?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      32 points · by jana · spirali.github.io · <a class="discuss" href="https://lobste.rs/s/by7xg6/could_cargo_s_scheduler_be_better">discuss</a>
+    </p>
+<p class="lede">I have been hanging around schedulers for the last ~10 years and I have recently added a new scheduler to HyperQueue (this post is not about this scheduler). It is based on MILP, and the implementation uses HiGHS , which quickly became a rather large crate in terms of compilation time. I started wondering how Cargo actually schedules its work, and whether it could be done better. Note 1: I am not familiar with Cargo&#39;s internals. The whole analysis here is based on observing its behavior from the outside, not on digging into its source code. Note 2: For all experiments, rustc 1.97.1 is used, 16 Intel cpu laptop, Linux. First, let&#39;s set up a benchmark. I picked 15 well-known Rust projects, plus two projects that I maintain myself: HyperQueue and FairyFlow . Their build times vary quite a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://matklad.github.io/2026/08/31/cancelation-terminology.html">Cancelation Terminology</a></h3>
+    <p class="dateline"><span class="badge">L</span>      31 points · by vulcan · matklad.github.io · <a class="discuss" href="https://lobste.rs/s/49hbhi/cancelation_terminology">discuss</a>
+    </p>
+<p class="lede">A short note explaining the difference between synchronous cancelation, asynchronous cancelation, and graceful shutdown. I am not too attached to these specific three terms , but I want to call your attention to the three things behind them, which are important not to confuse with each other. synchronous cancelation is an (often implicit) control flow structure. It unwinds the stack and looks like this: Synchronous cancelation is a bit like Molière’s prose — we do it all the time, but not necessarily in full consciousness. The primary source of synchronous cancelation is error handling — every time an Exception is thrown or an error returned, the code promptly breaks out of all the loops, ifs, and blocks, invoking the necessary cleanup actions via RAII, finally , with / try with resources …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.rebootedmom.com/build-a-potato-box/">DIY – Build a Potato Box (2022)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      31 points · by akkartik · rebootedmom.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49486951">discuss</a>
+    </p>
+<p class="lede">Success! Now check your email to confirm your subscription. Learn how to build a potato grow box and grow up to one hundred pounds of potatoes in just four square feet – an easy project for beginners! Potatoes are one of the best plants to grow, especially because they are so stinkin’ easy! While they might seem like the kind of plant you need a huge garden for, they really aren’t that picky at all. Potato tubers are quite easily grown in almost any yard with the right “space”. Because I live in town and my backyard isn’t as large as I’d really love it to be, I’m a big fan of growing things in small spaces. Learning how to build a potato growing box can put you ahead of the game with your potatoes. Each potato grow box can yield up to 100 lbs of potatoes in just 4 small, square feet. By …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nemin.hu/httpd-macros/index.html">Repeating Ourselves Less with M4</a></h3>
+    <p class="dateline"><span class="badge">L</span>      30 points · by zk · nemin.hu · <a class="discuss" href="https://lobste.rs/s/uueocw/repeating_ourselves_less_with_m4">discuss</a>
+    </p>
+<p class="lede">A short guide to how I made my httpd.conf file shorter using macros. In my previous post about migrating my websites over to an OpenBSD VPS I lamented the fact that I had to repeat identical blocks of code quite a few times to achieve blocking of malicious routes. However, while httpd indeed doesn&#39;t come with any built-in macros (beyond extremely simple key-value substitution which isn&#39;t fit for the purpose I was looking for), OpenBSD does in fact come with another utility (or, as you&#39;ll find two) that can reduce the repetitive parts considerably. Depending on how old you are (or how old the technology you&#39;re interested in is), your understanding of what a &#39;macro&#39; is will generally fall into two categories: 1 They are &#34;functions&#34; built into languages, that are capable of manipulating the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kingsbridge-consultancy.com/md-viewer/">Show HN: Markdown Viewer and Editor</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      30 points · by beerglass · kingsbridge-consultancy.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49514729">discuss</a>
+    </p>
+<p class="lede">Free markdown viewer and editor that runs entirely in your browser. Drag &amp; drop a .md file to read it beautifully rendered, edit it, and save it back — nothing is ever uploaded.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cyberinsider.com/wp-content/uploads/2026/08/GrapheneOS-may-skip-Pixel-11-over-missing-hardware-security-feature-e1788176960447.png" alt="GrapheneOS may skip Pixel 11 over missing hardware security feature" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://cyberinsider.com/grapheneos-may-skip-pixel-11-over-missing-hardware-security-feature/">GrapheneOS may skip Pixel 11 over missing hardware security feature</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      30 points · by DemiGuru · cyberinsider.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49521103">discuss</a>
+    </p>
+<p class="lede">GrapheneOS says it may abandon support for Google’s Pixel 11 series after discovering that the new devices appear to lack usable support for ARM Memory Tagging Extension (MTE). MTE is a hardware security feature the privacy-focused Android project relies on extensively to mitigate memory corruption exploits. The GrapheneOS team disclosed the issue on X after spending roughly a week on a partial Pixel 11 port. According to the project, MTE support is missing at the software and firmware levels and is “near certainly” absent from the hardware itself, preventing the team from completing the port to its normal security standards. MTE allows memory allocations to be tagged so that invalid or unexpected memory accesses can be detected before they are successfully exploited. GrapheneOS has used …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://trevmex.com/post/826439929093636096/the-us-is-more-than-just-the-us-according-to">The U.S. is more than just the US (according to the ISO)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      28 points · by jumex · trevmex.com · <a class="discuss" href="https://lobste.rs/s/ngqpa1/u_s_is_more_than_just_us_according_iso">discuss</a>
+    </p>
+<p class="lede">This has happened to me more than once in my career in the video streaming business. The business folks sign a deal that lets people watch video, but only in the U.S. This is what we call geofencing. We use software like MaxMind and others to ensure people are where they say they are. Pretty straightforward. You tell the software the locations you want people to be able to watch from, and there you go. Great. You launch your video streaming service in the U.S., and a few days later, you get a call from Puerto Rico. It turns out THEY are a part of the U.S., too. You, being a savvy and well-read person, of course, know this, so what is the problem? The problem, it turns out, is that geofencing software determines location using a country code. More specifically, an International …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://huggingface.co/blog/assets/state-of-open-models-summer-2026/thumbnail.png" alt="State of Open Models: Summer 2026 Observations" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://huggingface.co/blog/state-of-open-models-summer-2026">State of Open Models: Summer 2026 Observations</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by gmays · huggingface.co · <a class="discuss" href="https://news.ycombinator.com/item?id=49522816">discuss</a>
+    </p>
+<p class="lede">In the AI world, time feels compressed. A few months after our spring report in our biannual analysis worked through the ecosystem, there are quite a few findings that we have observed until this summer. This report lays out these observations from January to August 2026 and presents the data behind each one. Models and datasets on HF hub are growing on a daily basis. Public model repositories grew from 2.43 to 2.96 million over the period, datasets from 711,000 to 1 million, Spaces from 1.00 to 1.44 million. The distribution underneath stays extreme, roughly 85.6% of models have fewer than 200 lifetime downloads, and 1.5% of repositories account for 99.2% of all downloads. Everything below happens inside that shape. There used to be a clear progression path: labs would start by releasing …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://64.media.tumblr.com/6ac1af45e5be9aa1e32a3a1d11bf813d/96541d7f363acfd3-c3/s500x750/d1c9fc7c84570aad2cdc9981d4d430f7fb801cb4.gif" alt="Breaking down Amazon’s mega dropdown (2013)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://bjk5.com/post/44698559168/breaking-down-amazons-mega-dropdown">Breaking down Amazon’s mega dropdown (2013)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      27 points · by cesarandreu · bjk5.com · <a class="discuss" href="https://lobste.rs/s/haotvw/breaking_down_amazon_s_mega_dropdown_2013">discuss</a>
+    </p>
+<p class="lede">The hover effects on Amazon’s big ‘ole “Shop by Department” mega dropdown are super fast. Look&#39;it how quick each submenu fills in as your mouse moves down the list: It’s instant. I got nerd sniped by this. Most dropdown menus have to include a bit of a delay when activating submenus. Here’s an old Khan Academy dropdown as an example: See the delay? You need that, because otherwise when you try to move your mouse from the main menu to the submenu, the submenu will disappear out from under you like some sort of sick, unwinnable game of whack-a-mole. Enjoy this example from bootstrap’s dropdown menus: It’s easy to move the cursor from Amazon’s main dropdown to its submenus. You won’t run into the bootstrap bug. They get away with this by detecting the direction of the cursor’s path. At every …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://erk.dev/2026/08/30/rangefrom-part-2">RangeFrom, Part 2..: What I think is wrong about the design</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by valdemar · erk.dev · <a class="discuss" href="https://lobste.rs/s/hyn2bt/rangefrom_part_2_what_i_think_is_wrong">discuss</a>
+    </p>
+<p class="lede">In December 2025, about 8 months before this post James Munns made a post about how RangeFrom just wraps when it gets to the end. I started with a clippy lint , but it ended up being one of the things my mind would wander to quite often. This have led to me forming quite a few opinions and thoughts about about it. Wich I want to share with the ether in this article. While not a strict pre-requisite for reading this article, the first part in this series of posts will give some historical background: RangeFrom , Part 1..: History and background . I will list up a few things that I think people would expect from the RangeFrom iterator. Lets say we have an iterator let mut iter = (n..) . Here are some properties that I would expect from such a iterator: In the next parts I am going to show …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lwn.net/Articles/1088279/">Bootstrappable builds: how and why</a></h3>
+    <p class="dateline"><span class="badge">L</span>      25 points · by pushcx · lwn.net · <a class="discuss" href="https://lobste.rs/s/xygw0y/bootstrappable_builds_how_why">discuss</a>
+    </p>
+<p class="lede">With a subscription to LWN, you can stay current with what is happening in the Linux and free-software community and take advantage of subscriber-only site features. We are pleased to offer you a free trial subscription , no credit card required, so that you can see for yourself. Please, join us! This year&#39;s edition of the Free and Open Source Software Yearly conference , better known as &#34;FOSSY&#34;, moved north to the beautiful (and enormous) campus of the University of British Columbia (UBC) in Vancouver, Canada from its home for the three previous editions: Portland, Oregon, in the US. There were many different types of talks at FOSSY, from deeply technical kernel-track topics, through talks on legal and community issues, to the &#34;FOSS in Daily Life&#34; talks. In the &#34;Toolchains and Other …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/">The asteroid currently hitting front end web development</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by spiros · nolanlawson.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49520616">discuss</a>
+    </p>
+<p class="lede">Posted August 23, 2026 by Nolan Lawson in Web . Tagged: AI . 13 Comments A lot of the educators I admire in the frontend web space seem to be either bowing out or dialing back their efforts: Axel Rauschmayer , Salma Alam-Naylor , Josh W. Comeau , to name a few. Other well-known luminaries like Kent C. Dodds , Addy Osmani , Rachel Nabors , and Lydia Hallie have pivoted from talking about frontend development to talking about… well, take a wild guess. I never made a living from talking about web dev, but I do have this blog, and I’ve done conference talks and podcasts about stuff I’m excited about. Recently for example, my passion was explaining all the ins and outs of CSS performance: how shadow DOM works , how the browser’s style engine works , the traps of CSS-in-JS , etc. Just for …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.kenmuse.com/blog/rootless-docker-and-its-hidden-security-trade-offs/">Rootless Docker and Its Hidden Security Trade-Offs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by WilhelmVonWeiner · kenmuse.com · <a class="discuss" href="https://lobste.rs/s/lssato/rootless_docker_its_hidden_security">discuss</a>
+    </p>
+<p class="lede">This is a post in the series Docker Privilege . The posts in this series include: In the previous post , you traced the path used by the Docker daemon through the socket, image builds, and BuildKit. All of these steps required root. The security concern is straightforward: the daemon runs as root and the socket at /var/run/docker.sock grants full access to anyone in the docker group. If the daemon has a vulnerability or an attacker escapes a container, they suddenly have root privileges on the host. This post explores the alternative: rootless Docker. You’ll see how it works under the hood, what it genuinely improves, and why this solution introduces its own set of security trade-offs. Rootless Docker addresses the root-daemon risk by running dockerd itself as an unprivileged user. Each …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Kale: A Transformation-Safe Spreadsheet System" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2608.26345">Kale: A Transformation-Safe Spreadsheet System</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by yonkeltron · arxiv.org · <a class="discuss" href="https://lobste.rs/s/tkrcrg/kale_transformation_safe_spreadsheet">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://savartus.com/solutions/enterprise-laser-storage/">Physically Immutable Optical Archive Libraries</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by thunderbong · savartus.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49497741">discuss</a>
+    </p>
+<p class="lede">Savartus - Immutable Data Archive – ELS Immutable Data Archive – ELS Enterprise Laser Storage Physically Immutable Optical Archive Libraries Secure Storage for Long-Term Data Preservation Benefits: Secure EMP-proof and impervious to most disasters, viruses, or malware, optical discs leverage physical WORM technology which prevents data modification Based on proven technology that has been used for decades to store sensitive data and are not susceptible to viruses or malware Longevity Optical discs last for a minimum of 50-100 years while other media types will need to be updated or replaced every 7 to 15 years. Low cost Requires virtually zero electricity while not being accessed (vs. tapes and spinning disks that require environmentally controlled facilities and spooling/spinning). Uses …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-09-01-p4.html">‹</a><a href="../2026-09-01.html">1</a><a href="../2026-09-01-p2.html">2</a><a href="../2026-09-01-p3.html">3</a><a href="../2026-09-01-p4.html">4</a><span class="pg-current">5</span>
+<a href="../2026-09-01-p6.html">6</a><a href="../2026-09-01-p7.html">7</a><a href="../2026-09-01-p8.html">8</a><a href="../2026-09-01-p9.html">9</a><a href="../2026-09-01-p10.html">10</a><a class="pg-arrow" href="../2026-09-01-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>137 stories · 1 cross-posts merged · 131 excerpts · 87 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

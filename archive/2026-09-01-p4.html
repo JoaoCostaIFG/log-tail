@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 1, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../2026-09-01.html">Front Page</a>
+      <a href="../2026-09-01.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../2026-09-01.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 244</span>
+      <span>Tuesday, September 1, 2026</span>
+      <span>UTC Edition</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://dustycloud.org/blog/but-where-does-taste-come-from/">But where does taste come from?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      63 points · by dustyweb · dustycloud.org · <a class="discuss" href="https://lobste.rs/s/9naffr/where_does_taste_come_from">discuss</a>
+    </p>
+<p class="lede">By Christine Lemmer-Webber on Sun 30 August 2026 Another day, another blogpost reflecting on &#34;taste&#34; . It&#39;s not a bad post, but there are a billion of these now, and the irony of that is that this has tended to leave them fairly tasteless and bland for me. We&#39;ve probably all seen the Rick Rubin meme by now. Or maybe even better, the parody of the trend . People are afraid they can&#39;t do useful things anymore, because AI can do them better, so they hope they have some sort of edge over it with taste. But what is taste? I would define it as some kind of sense of aesthetics and judgment coming from experience and intuition, being able to say whether something is good or bad without necessarily being able to explain why. This seems like a reasonable explanation. &#34;Aesthetics and judgement&#34; …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.boristhebrave.com/wp-content/uploads/2026/08/fractal_voronoi.png" alt="Fractal Jittered Voronoi Partitions" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.boristhebrave.com/2026/08/29/fractal-jittered-voronoi-partitions/">Fractal Jittered Voronoi Partitions</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      62 points · by jp3141 · boristhebrave.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49492094">discuss</a>
+    </p>
+<p class="lede">I found a cool Voronoi variant that gives a nice fractal boundaries to each Voronoi cell, that is very efficient to compute. It seems like a good fit for coastlines, which are often similarly fractal in nature. “Jittered” Voronoi is where you start with an infinite grid, and then for each square in the grid, you pick a random point called a site in that square. Then you make a Voronoi diagram from those sites. It’s the same thing as Worley noise , except instead of outputting the distances, the output is the choice of point you are nearest to, partitioning the plane. It has the nice property that it’s very easy to compute on a per-point basis: for a point p you just find the nearest 25 grid cells, find each of their sites (via a hashed pseudo-random number generator), and then find which …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/87cb5a261f739d9863f159a202ac6fc2a04873ce1357435d59d3c2456475d54d/carloslfu/slotstream" alt="Show HN: Running 104GB Qwen3.8-Flash-Next on 48GB Mac with at ~12 tok/s" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/carloslfu/slotstream">Show HN: Running 104GB Qwen3.8-Flash-Next on 48GB Mac with at ~12 tok/s</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      55 points · by carloslfu · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49524447">discuss</a>
+    </p>
+<p class="lede">Run Qwen3.8-Flash-Next on a Mac that can&#39;t hold it. The model is a 125B-parameter mixture-of-experts, 104 GB on disk at 4-bit; slotstream streams it from SSD and runs it in whatever memory you give it. One Swift binary, no Python; it speaks the Ollama and OpenAI chat APIs, so your existing tools work unchanged. Apple Silicon, macOS 14+, and ~110 GB of free disk. Disk bites first: whatever your memory, a 512 GB Mac is the realistic minimum. Auto-sizing never takes the whole machine. What each tier gets: These rows come straight from slotstream doctor --sim-ram N , so you can reproduce them. Only the 48 GB row is measured on real hardware; the others are estimates from its curve, and smaller Macs also have slower SSDs. Run slotstream doctor before downloading anything — it prints your …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://maurycyz.com/misc/etherfiles/">Transfer files over an ethernet patch cable</a></h3>
+    <p class="dateline"><span class="badge">L</span>      53 points · by robalex · maurycyz.com · <a class="discuss" href="https://lobste.rs/s/mgwfjc/transfer_files_over_ethernet_patch_cable">discuss</a>
+    </p>
+<p class="lede">It&#39;s possible to just connect two computers together with Ethernet and do a bit of IP configuration: These commands assume you are using Linux, but this trick works everywhere. A nothing-special patch cable and ethernet jack should have no problem hitting ~900 Mbits/second, which is 6.7 GB per minute. Fancy network cards will allow speeds orders of magnitude faster, but it&#39;s already much faster than USB flash or cloud storage. ... for transferring a file larger than 10 GB or so between two machines a few meters apart. Cloud storage : upload it to a server and download it from the other machine. In most cases, this will be glacially slow, both because of slow internet connections and cloud providers throttling traffic. Worse, the file has to be transferred over the network twice which …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.humprog.org/~stephen/blog/2026/08/25/#flat-vs-segmented">Flat vs. segmented memory – it&#39;s recursive</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      48 points · by signa11 · humprog.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49460419">discuss</a>
+    </p>
+<p class="lede">Diverting trains of thought, wasting precious time My recent forays in x86 segmentation ( 1 2 ) made me notice a trend in the evolution of x86: the decline of fine-grained memory protection, both across the move to 64-bit and indeed before that in the fast system calling features . These both partially hobbled the sophisticated segmentation system, which had been a hallmark of the architecture since the 286. The explanation is possibly Unix: the dominance of Unix and its preference for flat address spaces, rather than segmented ones, arguably inherited from the PDP-11 or indeed PDP-7, meant that “nobody wanted” a 64-bit version of the segmentation features. Meanwhile, I like to joke among WebAssembly enthusiasts that “segmented memory is coming back”. WebAssembly is rather like a return …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/58aab1a19cc418f09b9776099827d586f092f165b1be04ea5bc09f9293a1a881/janet-lang/janet/releases/tag/v1.42.0" alt="Janet 1.42.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/janet-lang/janet/releases/tag/v1.42.0">Janet 1.42.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      47 points · by veqq · github.com · <a class="discuss" href="https://lobste.rs/s/jbgnwk/janet_1_42_0">discuss</a>
+    </p>
+<p class="lede">This is a long-coming release, with lots of bug fixes and documentation improvements! Still more to come, but it&#39;s best to get these changes out to people where they can be used! Happy hacking, and special thanks to our new contributors, and @sogaiu for much of the work on the documentation revamp.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://dbushell.com/images/articles/2026-09-01-text-editor.png" alt="Fine, I’ll build my own text editor" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://dbushell.com/2026/09/01/text-editor/">Fine, I’ll build my own text editor</a></h3>
+    <p class="dateline"><span class="badge">L</span>      46 points · by FedericoSchonborn · dbushell.com · <a class="discuss" href="https://lobste.rs/s/1malyo/fine_i_ll_build_my_own_text_editor">discuss</a>
+    </p>
+<p class="lede">Tuesday 1 Sept 2026 Play Synthesised Audio “They don’t make ’em like Sublime Text anymore” resonated with a lot of folk. Software these days is garbage. That got me thinking; I’m good at building garbage! VS Code is built upon Monaco Editor which is a &lt;div&gt; soup hellscape. I was late to the VS Code train because for years my Intel inside™ Mac was too slow. That issue was resolved when I bought Apple silicon. If that’s the standard I have a lot of room to make mistakes. My first experiment renders everything on a &lt;canvas&gt; element. You can’t tell, but your CPU is doing a lot of work to render that picture at 60–120 frames per second. Lack of interactivity is an obvious problem for a text editor. I made a list of the “minimum viable” features and implemented them. This next demo is …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://artflsrv04.uchicago.edu/roget-thesaurus/">Roget&#39;s Thesaurus</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      46 points · by gregsadetsky · artflsrv04.uchicago.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=49505584">discuss</a>
+    </p>
+<p class="lede">This digital edition of Roget&#39;s Thesaurus (1911) was originally prepared by MICRA Inc. in 1988 through manual transcription. MICRA Inc., a New Jersey corporation led by Patrick J. Cassidy, created this resource alongside other significant linguistic projects including an electronic version of Webster&#39;s 1913 Dictionary. This work was part of MICRA&#39;s broader contributions to natural language understanding and semantic interoperability research.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ersc.io/blog/martin-joins-ersc">The creator of Jujutsu has joined ERSC</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      45 points · by steveklabnik · ersc.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49525297">discuss</a>
+    </p>
+<p class="lede">East River Source Control has appointed Martin von Zweigbergk, creator of the Jujutsu version control system, as chief technology officer, to lead engineering on the company’s next generation version control platforms. von Zweigbergk began Jujutsu as a side project in late 2019 and turned it into his full-time work at Google. The project has more than 30,000 stars on GitHub and ships under the Apache 2.0 license. Before Jujutsu, he worked on Fig, the Mercurial client that gave Google engineers a distributed workflow on top of Piper, the monorepo holding most of the company’s code. He also contributed to Git, which according to the 2022 Stack Overflow developer survey , 96% of developers use professionally. The hard problems many engineering teams are just beginning to face are ones he’s …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://prela-lang.org/tutorial/">A Better SQL in 11 Lines of Code</a></h3>
+    <p class="dateline"><span class="badge">L</span>      43 points · by mpweiher · prela-lang.org · <a class="discuss" href="https://lobste.rs/s/xnljk9/better_sql_11_lines_code">discuss</a>
+    </p>
+<p class="lede">Prela is a new query language being developed at UCLA RePL . The language is quite different from SQL, but its key ideas are very simple. In this short tutorial, we will build a toy version of Prela in Python to understand its core principles. By the end of this tutorial, you will know how the following query works: You can probably already guess what it&#39;s doing: the query finds every movie produced by an American company and has a character name in its title, and outputs the title along with the alias for each cast member. Note that the equivalent query in SQL spans over 20 lines. The first special thing about Prela is that there are only binary relations, i.e., tables with two columns. That may sound very limiting at first, but it&#39;s easy to &#34;binarize&#34; a wide table with multiple columns …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nolanlawson.com/2026/08/31/on-not-becoming-a-cyborg/">On not becoming a cyborg</a></h3>
+    <p class="dateline"><span class="badge">L</span>      38 points · by cgrinds · nolanlawson.com · <a class="discuss" href="https://lobste.rs/s/uxqdfr/on_not_becoming_cyborg">discuss</a>
+    </p>
+<p class="lede">Posted August 31, 2026 by Nolan Lawson in writing . Tagged: AI . 4 Comments I was a voracious reader as a kid, and I noticed a funny phenomenon: whatever writer I had most recently read, my next paper for English class would sound like them. If I read a bunch of Stephen King, I’d sound like Stephen King. If I read the Narnia series, I’d sound like C.S. Lewis (complete with British spellings and antiquated turns of phrase). I know I’ve carried this tic into adulthood. As much as I’ve tried to find my own consistent voice in my blog writing, I know that whatever author I last read is sitting there in the back of my head, weighing in on my word choices and sentence rhythm. So imagine my alarm when, in my last blog post , the word “load-bearing” popped into my head. I used scare quotes and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://ooxml.silurus.dev/icon.png" alt="A browser-based viewer for Office Open XML documents" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://ooxml.silurus.dev/">A browser-based viewer for Office Open XML documents</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      37 points · by mathiaswp · ooxml.silurus.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49523361">discuss</a>
+    </p>
+<p class="lede">Rust/WASM parsers and Canvas renderers for DOCX, XLSX and PPTX, with document APIs and ready-to-use viewers. DOCX, XLSX and PPTX parsing is implemented in Rust and compiled to WebAssembly. Documents are rendered with the Canvas 2D API. Layout and feature support vary by format and document. The implementation refers to ECMA-376 / ISO 29500 and related Microsoft documentation where relevant. Use built-in viewers or document APIs for custom previews, thumbnails and navigation. Switch formats, navigate pages or slides, and scroll the sheet. Format documentation: DOCX · XLSX · PPTX Selected supported features for each format are listed below. See the README for the full matrix; complex documents may still differ from Office.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ucsfhealthcardiology.ucsf.edu/facstaff/spotlight/dr-melvin-scheinman-40th-anniversary-catheter-ablation">Dr. Melvin Scheinman: 40th Anniversary of Catheter Ablation</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      36 points · by efavdb · ucsfhealthcardiology.ucsf.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=49491398">discuss</a>
+    </p>
+<p class="lede">Forty years ago, patients with abnormal heart rhythms had few treatment options: frequently ineffective medications, or open-heart surgery. UCSF cardiac electrophysiologist Melvin Scheinman, MD, now the Walter H. Shorenstein Endowed Chair in Cardiology, spent years developing a new approach. In 1981 he performed the first catheter ablation in humans, threading a catheter through a blood vessel into the heart and successfully delivering an electric shock to short-circuit the arrhythmia. That innovation has revolutionized the care of millions of patients worldwide, relieving their suffering and even curing many of their arrhythmias. “Dr. Scheinman’s contribution to the field has been one of the most transformative in all of electrophysiology,” said Jeffrey Olgin, MD , Ernest Gallo-Kanu …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://keenableai.github.io/select-showcase/og.png" alt="Keenable SELECT: an agent that searches the web in SQL" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://keenableai.github.io/select-showcase/">Keenable SELECT: an agent that searches the web in SQL</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      36 points · by phoenix120 · keenableai.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49523473">discuss</a>
+    </p>
+<p class="lede">Research reports built by Keenable SELECT , an agent that searches the web in SQL. Every card links the finished report and the full trajectory behind it: each query, tool result, and result set. “Which AI researchers moved between frontier labs since 2025 ? For each move list the researcher , the lab they left , where they went and the month .” Keenable SELECT is an MCP server with one main tool: select . The tool runs one read-only DuckDB SELECT statement on live web data. The server runs the web and semantic operators outside DuckDB, puts their output back into the row set, and then runs the final SQL in DuckDB. A traditional web search gives an agent ten links. The agent must then read each page and build the answer from expensive tokens. SELECT moves this work into the query. One …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://moviescenemap.com/og.png" alt="Movie Scene Map – 13,312 films, series, games, anime and manga" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://moviescenemap.com/">Movie Scene Map – 13,312 films, series, games, anime and manga</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      36 points · by Flightmussy · moviescenemap.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49524320">discuss</a>
+    </p>
+<p class="lede">Movie Scene Map is a free interactive map of 15,535 real filming locations in 166 countries: the studios, castles, streets and landscapes where films and television series were shot. Pan and zoom the map above, click any point for a photograph and the productions shot there, or open a place’s page for everything filmed in it. Beside the 9,262 films and series with a page of their own sit 2,153 video games, 407 anime and 366 manga, placed by where their stories are set, because nothing is filmed in a drawn world. The countries with the most places on the map: Cities and regions ranked by everything shot inside them, the one number a single filming location statement cannot give you: The most widely covered productions on the map, by number of Wikipedia language editions: Movie Scene Map is …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="../2026-09-01-p3.html">‹</a><a href="../2026-09-01.html">1</a><a href="../2026-09-01-p2.html">2</a><a href="../2026-09-01-p3.html">3</a><span class="pg-current">4</span>
+<a href="../2026-09-01-p5.html">5</a><a href="../2026-09-01-p6.html">6</a><a href="../2026-09-01-p7.html">7</a><a href="../2026-09-01-p8.html">8</a><a href="../2026-09-01-p9.html">9</a><a href="../2026-09-01-p10.html">10</a><a class="pg-arrow" href="../2026-09-01-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>137 stories · 1 cross-posts merged · 131 excerpts · 87 images</p>
+  </footer>
+
+</div>
+</body>
+</html>

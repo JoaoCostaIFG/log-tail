@@ -3,6 +3,8 @@
 A static, black-and-white newspaper-style page rebuilt daily from
 [Hacker News](https://news.ycombinator.com) and [lobste.rs](https://lobste.rs).
 
+![Front page](docs/screenshot.png)
+
 - **Front Page** — the first two front pages of HN and the two hottest pages
   of lobste.rs, merged into a single list ranked by points. Cross-posted
   URLs are de-duplicated (tracking parameters, `www.`, trailing slashes and

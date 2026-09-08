@@ -1,9 +1,9 @@
 name: Build daily edition of the volume
 
 on:
-  schedule:
-    - cron: "23 8 * * *"
-      timezone: 'Europe/Lisbon'
+  #schedule:
+  #  - cron: "23 8 * * *"
+  #    timezone: 'Europe/Lisbon'
   workflow_dispatch:
   push:
     branches:

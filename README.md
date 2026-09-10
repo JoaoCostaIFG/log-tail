@@ -72,3 +72,7 @@ the front page (`RECENT_EDITIONS`).
 
 - AI-generated summaries replacing the raw text excerpts (data snapshots are
   already produced for this purpose).
+
+## License
+
+Licensed under the European Union Public Licence v. 1.2 (EUPL-1.2).

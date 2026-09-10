@@ -277,6 +277,9 @@ def main():
             for p in sequence
         ]
         index = sequence.index(page)
+        # Links to other editions: the front page reaches them through
+        # archive/, archived pages sit in the same directory.
+        archive_prefix = "" if base else "archive/"
         return {
             "date_label": date_label,
             "edition_no": f"{now.timetuple().tm_yday:03d}",
@@ -288,11 +291,14 @@ def main():
             "stories": chunks[page - 1],
             "pagination": pagination,
             "hrefs": {
-                "front": page_href(base, 1),
+                "front": "index.html",
                 "prev": page_href(base, sequence[index - 1]) if index > 0 else None,
                 "next": page_href(base, sequence[index + 1]) if index + 1 < len(sequence) else None,
             },
-            "archives": recent_archives(edition_date) if page == 1 else [],
+            "archives": [
+                {**a, "href": f"{archive_prefix}{a['date']}.html"}
+                for a in recent_archives(edition_date)
+            ] if page == 1 else [],
             "stats": {
                 "total": len(merged),
                 "merged": dupes,

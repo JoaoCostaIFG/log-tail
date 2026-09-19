@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, September 19, 2026 — Page 2</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="index.html">Front Page</a>
+      <a href="index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 262</span>
+      <span>Saturday, September 19, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 2</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://www.netmeister.org/blog/images/tired.jpg" alt="Everybody&#39;s Lost Their Minds" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.netmeister.org/blog/everybodys-lost-their-minds.html">Everybody&#39;s Lost Their Minds</a></h3>
+    <p class="dateline"><span class="badge">L</span>      195 points · by j11g · netmeister.org · <a class="discuss" href="https://lobste.rs/s/rok1za/everybody_s_lost_their_minds">discuss</a>
+    </p>
+<p class="lede">Men. Some would rather vomit up a rambling blog post wall of text that nobody&#39;s going to read than go to therapy. So here we are. I&#39;ve seen my share of stupid over the years, but now people with no engineering background have started pitching &#34;industry changing&#34; solutions they cooked up in their agent infested homelab; people&#39;s emails read like bozotic LinkedIn-fluencer posts with punchy &#34;it&#39;s not this, it&#39;s that&#34; single-sentence paragraphs; online articles suffer a similar fate in their own convergence on Meh; and half of the people you interact with have turned into meat proxies . Spending upwards of 75% of my time directly or indirectly dealing with AI every day has absolutely robbed me of most of my enjoyment of my work. Most days feel like that Twilight Zone where you wake up and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/cover.png" alt="Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/">Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      189 points · by synack · donjon.ledger.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49757050">discuss</a>
+    </p>
+<p class="lede">— Photon-emission microscopy allowed us to locate a register responsible for the enabling of debug features on the Raspberry Pi microcontroller. — Laser pulses at two nearby positions then restored debugger access to the chip’s Secure world, even though debug had been permanently disabled. — Using that access after a rescue reset, we recovered a secret from one-time-programmable memory. The reset halted the chip before firmware could apply its runtime lock, so the page stayed Secure-readable. — The attack requires physical access, destructive preparation, and approximately $250,000 of laboratory equipment. The RP2350 is Raspberry Pi’s dual-core microcontroller: each processor socket can select either an Arm Cortex-M33 or a RISC-V Hazard3 core at boot. Its hardware security features …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://storage.ghost.io/c/c7/75/c775a216-7ca2-4c5f-96a7-f2defe0fd756/content/images/size/w1200/2026/09/map--3840x2160---1-.png" alt="Pre-Greek: The lost language hidden within Ancient Greek" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://linguisticdiscovery.com/posts/pre-greek/">Pre-Greek: The lost language hidden within Ancient Greek</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      176 points · by axiologist · linguisticdiscovery.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49749771">discuss</a>
+    </p>
+<p class="lede">There are about 1,000 words in Ancient Greek that can’t be traced back to any Indo-European language or any other known language in the region. These lexical enigmas even include some words and names you might think of as quintessentially Greek: Despite centuries of effort, linguists have not been able to trace these words back to Proto-Indo-European (PIE), the parent language from which all the other Indo-European (IE) languages descend. Nor have they identified words in neighboring languages that Greek might have borrowed them from. Where, then, do these words come from? In this issue of the Linguistic Discovery newsletter, we’ll dig through layers of linguistic history to reveal the mystery language that influenced Ancient Greek. You&#39;re reading Linguistic Discovery , a weekly …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.sandordargo.com/blog/2026/09/16/cpp26-trivial-infinite-loops">C++26: Trivial infinite loops are no longer undefined behaviour</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      161 points · by ibobev · sandordargo.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49746406">discuss</a>
+    </p>
+<p class="lede">Let’s start with a question! Is this program well-defined? If you said yes, you’d be wrong — at least before C++26. A while (true); loop with no side effects used to be undefined behaviour . Compilers were free to assume it terminates, and some — Clang in particular — would optimize it away entirely, with spectacular consequences : In Clang, this prints “Hello world!” . The compiler removes the infinite loop, main falls through, and the linker-placed unreachable() function executes. This is not a compiler bug — it’s just UB, still better than nasal demons. Recently, I wrote about how C++26 reduces undefined behaviour , covering changes like erroneous behaviour for uninitialized reads and making incomplete-type deletes ill-formed. I completely forgot about this one. I only realized while …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://onionfutures.com/">San Francisco Onion Futures Company</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      161 points · by z-mach9 · onionfutures.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49763296">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157">Warez: The Infrastructure and Aesthetics of Piracy (2021)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      147 points · by succinct_ideas · archive.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49749724">discuss</a>
+    </p>
+<p class="lede">When most people think of piracy, they think of Bittorrent and The Pirate Bay. These public manifestations of piracy, though, conceal an elite worldwide,...</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html">Human brain is two separate organs, Stanford Medicine-led research finds</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      140 points · by emigre · med.stanford.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=49763697">discuss</a>
+    </p>
+<p class="lede">A new study led by Stanford Medicine found the brain is two separate organs adjacent to one another. The finding could aid research into devastating neurological diseases. For centuries, scientists have thought of the brain as a single, unified organ. But new research led by Stanford Medicine reveals that what we call the brain is two distinct organs that evolved independently over hundreds of millions of years. The discovery overturns a prevailing model of brain development. For decades researchers have subscribed to the theory that there is a single progenitor cell early in development that gives rise to the entire brain. This model suggested all parts of the brain shared a common developmental origin. The new research finding shows that the human brain consists of two ancient nervous …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/lcjf7c/what_is_still_exciting_tech">What is still exciting in tech?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      139 points · by ploum · lobste.rs · <a class="discuss" href="https://lobste.rs/s/lcjf7c/what_is_still_exciting_tech">discuss</a>
+    </p>
+<p class="lede">A comment on a lobste.rs post about the tech culture stagnating made me think. 20-15 or even 10 years ago, tech was really exciting. Sure, monopolies were bad, I was fighting them, but tech by itself was very interesting. New versions of software were expected, we were skimming through changelogs to find novelties, installing beta or alpha versions of totally unknown projects. And I had lived that excitement since the 90’s. When you think about it, today feels really bleak in comparison: Changelogs of commercial projects now all have that pseudo-humorous tone to tell you that &#34;they improved performance and fixed bugs&#34; The best smartphone I ever had is now 10 years old (and was not an expensive one, see https://ploum.net/2026-09-02-i_dont_have_a_smartphone.html ) Around me, at least 3 …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://images.zed.dev/blog/delta-public-beta/thumbnail.webp" alt="Replacing Pull Requests with Delta" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://zed.dev/blog/delta-public-beta">Replacing Pull Requests with Delta</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      138 points · by vquemener · zed.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49727245">discuss</a>
+    </p>
+<p class="lede">Today, we&#39;re launching the public beta of Delta , a multiplayer environment for coding with agents and reviewing what they build. We&#39;re building Delta because agents have fundamentally changed the way we write software, but our collaborative tooling isn&#39;t keeping up. Last week, we crossed a key milestone: we disabled pull requests on Delta&#39;s own repository. We now build and collaborate on Delta entirely within Delta. What makes Delta different from traditional workflows is that collaboration doesn&#39;t depend on committing and pushing code. You invite teammates directly into your conversations with agents. When someone joins your thread, they see the same worktrees you do and can work with them on their own machine. Teammates can ask the same agent why you chose a Mutex instead of an RwLock …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://developer.apple.com/tutorials/developer-og.jpg" alt="Xcode 27.1 Beta Release Notes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes">Xcode 27.1 Beta Release Notes</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      138 points · by CameronBanga · developer.apple.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49758419">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/09/18/4d38a4b8-98a8-4462-acfa-eb718c19a85d_2bb080b5.jpg?itok=AeGmKIDY&amp;v=1789736650" alt="Alibaba open-sources AI model that can detect cancer and nearly 150 conditions" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions">Alibaba open-sources AI model that can detect cancer and nearly 150 conditions</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      117 points · by yogthos · scmp.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49761840">discuss</a>
+    </p>
+<p class="lede">Tested on nearly 40,000 real-world exams, the model outperformed most radiologists, according to a new study published in Science Alibaba Group Holding’s research arm, Damo Academy, has open-sourced an artificial intelligence model capable of identifying nearly 150 abdominal conditions – including cancers – by reading computed tomography (CT) scans, marking the latest step in the firm’s growing medical AI efforts. The vision-language model, called Damo Radar, was designed to analyse contrast-enhanced CT scans covering 18 abdominal organs and identify a broad range of diseases and other abnormalities, such as malignant tumours, the institute said on Friday. The model was trained using CT scans paired with clinical reports. In nearly 40,000 real-world examinations, it achieved an average …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.newscientist.com/article/2589739-our-brain-evolved-from-two-primitive-nervous-systems-that-merged/">Two parallel neural ectoderm progenitors contribute to the developing brain</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      115 points · by Jimmc414 · newscientist.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49755533">discuss</a>
+    </p>
+<p class="lede">https://archive.is/1CFX9 https://med.stanford.edu/news/all-news/2026/09/two-separate-... Preprint of paper: https://www.biorxiv.org/content/10.1101/2025.07.02.662771v1</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://release.gnome.org/51.png" alt="Introducing GNOME 51" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://release.gnome.org/51/">Introducing GNOME 51</a></h3>
+    <p class="dateline"><span class="badge">L</span>      111 points · by uncenter · release.gnome.org · <a class="discuss" href="https://lobste.rs/s/gs10ad/introducing_gnome_51">discuss</a>
+    </p>
+<p class="lede">After six months of intense development, we are thrilled to introduce GNOME 51 , the latest version of GNOME. We would like to recognize all our contributors who worked tirelessly to make this new version more accessible, practical and user-friendly. This release is codenamed &#34;A Coruña&#34; in recognition of GUADEC 2026 , held in this beautiful Galician city in July. Thank you to the local organizers who made the event possible! GNOME&#39;s graphics technologies have received another round of performance enhancements for GNOME 51, making the desktop feel smoother and more responsive than ever. This release wouldn&#39;t have been possible without the contributions, feedback, and encouragement from our community. Help us keep building technology that works for everyone — every donation goes directly …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://spectrum.ieee.org/media-library/close-up-of-a-computer-processor-consisting-of-several-pieces-of-silicon.jpg?id=67770467&amp;width=1200&amp;height=600&amp;coordinates=0%2C356%2C0%2C144" alt="How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://spectrum.ieee.org/llms-for-chip-design">How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      111 points · by maxall4 · spectrum.ieee.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49761432">discuss</a>
+    </p>
+<p class="lede">AI drastically shortened its design time; it will only get faster Matthew S. Smith is a contributing editor for IEEE Spectrum and the former lead reviews editor at Digital Trends. OpenAI’s Jalapeño pairs its compute die with six stacks of HBM4 and an I/O chiplet. On 25 August, OpenAI fully unveiled Jalapeño, the company’s debut AI accelerator chip. Jalapeño delivers up to 13.4 petaflops of 4-bit compute and accesses 232 gigabytes of the most advanced memory available, linking to it at a blazing 15.4 terabytes per second. Benchmarks cited by OpenAI show that Jalapeño can reduce end-to-end latency (the time between prompt to last token) by up to 3.6 times when compared to Nvidia’s GB300 —a chip the company currently relies on—and do so while consuming less power. Whether these figures …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://storage.ghost.io/c/ab/b9/abb95af0-3cb7-4e49-a6c2-c87b36f5d5c2/content/images/size/w1200/2026/09/Screenshot-From-2026-09-16-08-56-39-1.png" alt="Flock cameras are riddled with security vulnerabilities and hard-coded credentials" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a></h3>
+    <p class="dateline"><span class="badge">L</span>      102 points · by robey · micahflee.com · <a class="discuss" href="https://lobste.rs/s/eyg3oe/flock_cameras_are_riddled_with_security">discuss</a>
+    </p>
+<p class="lede">This morning, DDoSecrets published an exciting new dataset: Filesystem images of the partitions from an in-use Flock ALPR camera. 404 Media and Wired published a joint investigation into it. I downloaded the dataset and am now thoroughly nerd-sniped. Hackers from a collective called stegan0gram collected the data. “Why just destroy [Flock cameras] when we can reverse engineer them and find the secrets of those spying on us?” one of the hackers told 404 Media and Wired in an interview. “We liberated hardware in the field, disarmed them, and proceeded with reverse engineering of the cameras and associated solar equipment.” Below are a few of the secrets that I&#39;ve found so far. I&#39;m crunching data and writing these newsletters in my free time. If you want to support my work, consider becoming …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="index.html">‹</a><a href="index.html">1</a><span class="pg-current">2</span>
+<a href="page-3.html">3</a><a href="page-4.html">4</a><a href="page-5.html">5</a><a href="page-6.html">6</a><a href="page-7.html">7</a><a href="page-8.html">8</a><a href="page-9.html">9</a><a class="pg-arrow" href="page-3.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>134 stories · 4 cross-posts merged · 128 excerpts · 90 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

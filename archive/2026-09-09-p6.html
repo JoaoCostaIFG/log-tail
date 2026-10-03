@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, September 9, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 252</span>
+      <span>Wednesday, September 9, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/95ab477012f0a5e4fd60b80385881dfe77a29708c9c72952d2bff9bc43d28078/scaleninja/drivesync" alt="Show HN: DriveSync – fast Git-styled Google Drive sync CLI" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/scaleninja/drivesync">Show HN: DriveSync – fast Git-styled Google Drive sync CLI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by rohityadavcloud · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49609784">discuss</a>
+    </p>
+<p class="lede">A small, fast command-line tool that keeps a local folder and a Google Drive folder in sync. Push local changes up, pull remote changes down, or just see what differs. Written in Rust, modelled on odeke-em/drive . Tested on: macOS, with both a consumer @gmail.com account and a Google Workspace account. Linux and Windows builds are produced and smoke-tested in CI but have not been exercised against a live Drive; reports welcome. This adds the scaleninja/tap tap, so other scaleninja tools then install with a plain brew install &lt;name&gt; . (If Homebrew refuses with an &#34;untrusted tap&#34; error, run brew trust scaleninja/tap first.) Or grab a prebuilt binary for Linux or macOS (x86_64 and arm64) from the releases page : Windows (x86_64): download dsync-windows-x86_64.exe from the releases page …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.vldb.org/pvldb/vol19/p4953-fernandez-moctezuma.pdf">The Dataflow Model Revisited</a></h3>
+    <p class="dateline"><span class="badge">L</span>      17 points · by pushcx · vldb.org · <a class="discuss" href="https://lobste.rs/s/r5b28u/dataflow_model_revisited">discuss</a>
+    </p>
+<p class="lede">Abstract Eleven years ago, the Dataflow Model paper argued that unbounded, out-of-order data was the new normal, and that we must stop waiting for data to ever become complete. It proposed a unified model (windowing, triggers, watermarks, and retractions) for freely trading off correctness, latency, and cost across batch and streaming engines. On the occasion of its VLDB Test of Time award, we grade our own work—a paper about streaming analytics, in truth if not in name—on what aged well, what aged badly, and what we missed. We find the paper’s core foundations largely sound: the primacy of event time, the futility of waiting for completeness, and the insistence on strong consistency aged well. But we got important parts of the analytical interface wrong: (1) we let windowing and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://daviddalbusco.com/assets/images/sean-sinclair-FQ7cRFUU1y0-unsplash.jpg" alt="Two Tiny Utils for the Result Pattern" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://daviddalbusco.com/blog/tiny-utils-for-the-result-pattern">Two Tiny Utils for the Result Pattern</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by confusedalex · daviddalbusco.com · <a class="discuss" href="https://lobste.rs/s/8csfoa/two_tiny_utils_for_result_pattern">discuss</a>
+    </p>
+<p class="lede">Likely because I developed my fair share of projects in Rust over the last few years, I&#39;ve become quite a fan of using a Result pattern over multiplying try and catch blocks in TypeScript. Not every blog post needs to be about shipping rockets to outer space, so I thought I&#39;d quickly share two small helpers I now bring with me everywhere. Unlike JavaScript, there is no such thing as throwing and catching exceptions in Rust. Instead, functions that can fail return a value that carries either the result or the error. Those values are typed as Result&lt;T, E&gt; , an enum which is part of the language and which contains two variants: Ok(T) and Err(E) . The former being, I guess you got it, the success, and the latter the error. The caller has to deal with both variants - i.e. one cannot just …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dl.acm.org/doi/10.1145/2980983.2908081">Into the depths of C: Elaborating the de facto standards (2016)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by rramadass · dl.acm.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49612089">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bensimms.moe/reverse-engineering-scooter/">Reverse engineering my e-scooter and rewriting the firmware in rust</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by kevinmehall · bensimms.moe · <a class="discuss" href="https://lobste.rs/s/pdr2bo/reverse_engineering_my_e_scooter">discuss</a>
+    </p>
+<p class="lede">Last year, I bought myself an Egret GT . It’s an e-scooter that touts a range of 100km and has very large tyres which makes driving it quite comfortable. To make sure you know that it’s a high-end e-scooter, it comes with a 320x480 LCD display used as a HUD, on which the speed, driving mode, battery level and range are displayed. Now because I have to break tinker with everything I own, I eventually decided to start figuring out how this thing worked. I can’t remember exactly why, but it was possibly due to the fact that holding the ‘down’ button on the keypad while powering the scooter would cause it to enter a firmware update mode. If you clicked a button to exit this menu, you would enter the normal ‘driving’ mode, and would be able to use the scooter without entering the PIN. While I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://images.ctfassets.net/kftzwdyauwt9/53pCremlimLBTRxuMEnPyB/41f2eb372bada1bc3b0f7b721e671c9a/SEO-Card.png?w=1600&amp;h=900&amp;fit=fill" alt="How GPT‑5.6 Sol helps run quantum computing experiments" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://openai.com/index/codex-quantum-computing-experiments/">How GPT‑5.6 Sol helps run quantum computing experiments</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      15 points · by theanonymousone · openai.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49622561">discuss</a>
+    </p>
+<p class="lede">Connecting GPT‑5.6 Sol to laboratory software to run and refine routine measurements on quantum chips freed Beatriz Yankelevich to focus on experiment design and data analysis. Quantum computing is an emerging technology that uses the unique properties of quantum mechanics to process information. It could one day better simulate complex materials and molecules. Unlike conventional processors, quantum processors are built with quantum bits, or qubits. Preparing and running qubit experiments can take months and require hundreds to thousands of preliminary measurements—work that AI is poised to help with. Beatriz Yankelevich, a graduate student in MIT’s Engineering Quantum Systems Group (EQuS), used GPT‑5.6 Sol, harnessed to Codex, to explore whether AI could streamline her experimental …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_400x400.jpg" alt="Sam Altman&#39;s statement on the Navier-Stokes dispute" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://twitter.com/sama/status/2097385167002415140">Sam Altman&#39;s statement on the Navier-Stokes dispute</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by vertigoruntime · twitter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49622377">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://inbox.sourceware.org/binutils/CAKSQd8XJVf3jq8boOJcOE_GzcNvcqMUHeW-whbw3uGnVE2iN_w@mail.gmail.com/">x86 evolution for segmentation and paging</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by goliath · inbox.sourceware.org · <a class="discuss" href="https://lobste.rs/s/1baq3m/x86_evolution_for_segmentation_paging">discuss</a>
+    </p>
+<p class="lede">Anubis could not load its JavaScript. The server may be overloaded. Please reload the page to try again. You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. This can and does cause downtime for the websites, which makes their resources inaccessible for everyone. Anubis is a compromise. Anubis uses a Proof-of-Work scheme in the vein of Hashcash, a proposed proof-of-work scheme for reducing email spam. The idea is that at individual scales the additional load is ignorable, but at mass scraper levels it adds up and makes scraping much more expensive. Ultimately, this is a placeholder solution so that more time can be spent on fingerprinting and identifying headless browsers …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sparrow2.tavuslabs.org/">Show HN: Sparrow-2 – Noise cancellation isn&#39;t designed for conversational AI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      11 points · by code_brian · sparrow2.tavuslabs.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49612459">discuss</a>
+    </p>
+<p class="lede">Have a real conversation with a Tavus PAL and watch Sparrow-2 read it live: who holds the floor, who is acknowledging, and who just cut in.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.leadedsolder.com/assets/jeff-nichols-72-font-preview.png" alt="Embedding a bitmap font in your HyperCard stack" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.leadedsolder.com/2026/09/08/hypercard-custom-fonts-in-resources.html">Embedding a bitmap font in your HyperCard stack</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      11 points · by zdw · leadedsolder.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49618633">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/nzfshj/embedding_bitmap_font_your_hypercard">discuss on lobste.rs</a>
+    </p>
+<p class="lede">I’ve loved HyperCard for a really long time now. As a kid, I made simple games in it. As what could arguably be called “an adult,” I now want to play with HyperCard itself to see what weird stuff I can make it do. Today, I’ll make it display text… in a different font . HyperCard was developed for the original Macintosh as a way for anyone to quickly build interactive programs. It does this through a combination of “graphics-first” visual authoring and a very natural-like scripting language (which you very rarely have to actually use.) When I was in university, they still had a Mac Plus kicking around just to be able to use one prof’s astronomy calculator that had been banged together in HyperCard many moons ago. After its initial release, HyperCard caught on not only as a way to make nice …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://yui.dev/static/blog/minisweeper/thumb4.png" alt="The Depths of JavaScript: Minesweeper in 247 Bytes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://yui.dev/blog/minesweeper-in-247-bytes">The Depths of JavaScript: Minesweeper in 247 Bytes</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by rrampage · yui.dev · <a class="discuss" href="https://lobste.rs/s/dlxqqr/depths_javascript_minesweeper_247_bytes">discuss</a>
+    </p>
+<p class="lede">These 247 characters of JavaScript code is all it takes to run a minimal version of Minesweeper in your browser. It features a randomly generated 8x8 board, lets you open cells with left click, toggle flags with right click, opens cells with zero neighboring mines recursively, and has basic win detection. A couple years ago, I decided to code golf a working version of Minesweeper for fun. I wrote a 658 byte version in a single evening, and kept working on it throughout the next few weeks, eventually bringing it down to just 399 bytes. That&#39;s when I assumed I hit a wall and stopped working on it. Recently I was cleaning up my drive when I found this code golf, and thought it would be quite cool to write a blog post about it. But then I instantly found a way to make the code shorter. Then …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ettolrach.com/blog/rust_when_empty_isnt_bottom.html">Rust: When Empty Isn&#39;t Bottom</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by ettolrach · ettolrach.com · <a class="discuss" href="https://lobste.rs/s/lf3est/rust_when_empty_isn_t_bottom">discuss</a>
+    </p>
+<p class="lede">This article uses JavaScript to render maths and to load comments. I don&#39;t use it for anything else, so I would appreciate it if you could activate JavaScript for this page :) No LLMs were used to write this blog post. Rust recently added the empty type to the language (waffle, 2026) . In Rust, it&#39;s called ! or never . Although you could use ! for function return types before, you couldn&#39;t use it for other type annotations. The pull request which enabled this for all type annotations was merged on 25th August 2026 and is scheduled to be added to Rust 1.100 as of the time of writing. It mostly works as you may expect it would, but there&#39;s an interesting detail which surprises most people who learn about it: expressions which have ! as part of their type don&#39;t necessarily coerce to any …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://austinhenley.com/blog/typeinference.html">Type inference has usability problems (2019)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by abhin4v · austinhenley.com · <a class="discuss" href="https://lobste.rs/s/mfhss4/type_inference_has_usability_problems">discuss</a>
+    </p>
+<p class="lede">TL;DR: Type inference is pushed by many tools and languages, but there is little evidence that it is beneficial. I argue that it may hinder comprehension and increase cognitive load. To see the discussion about this article, see the post on Hacker News. Many programming languages provide type inference. A new wave of hip languages have it baked in: Go , Rust , Swift , Scala , Kotlin , Zig , Nim , etc. In fact, even older languages have added it later on: C++11 , C# 3.0 , and Java 10 . Type inference refers to &#34;the automatic detection of the data type of an expression&#34; according to Wikipedia . Essentially, it means you don&#39;t have to explicitly declare a variable&#39;s type when it can be inferred from an assignment. So instead of: So what are the benefits? Well, Wikipedia claims type inference …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://infinitesugar.cnqso.com/social-preview.jpg" alt="Show HN: Infinite Sugar – a fruit fly emulation given a pleasant life" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://infinitesugar.cnqso.com/">Show HN: Infinite Sugar – a fruit fly emulation given a pleasant life</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by cnqso · infinitesugar.cnqso.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49613026">discuss</a>
+    </p>
+<p class="lede">is a fly simulated through whole brain emulation using the FlyWire connectome, reconstructed from the brain of an adult female Drosophila melanogaster . ’s sweet-sensing gustatory neurons are manually stimulated, simulating a constant stream of infinite sugar. This is presumably quite pleasant for . Most of ’s motor output is disconnected from its simulated musculature, and visual input from the terrarium is not provided, to allow it greater focus on the pleasurable sensation of the sugar. We believe this may be of note as a solution to moral philosophy. As technology advances, we may be able to simulate pleasant lives for increasingly complex forms of life. Some movements use supplied patterns driven by neural activity. There is no learning or habituation, so there is no mechanism for to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://clankerfree.org">software for humans</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by dsh · clankerfree.org · <a class="discuss" href="https://lobste.rs/s/8mgfan/software_for_humans">discuss</a>
+    </p>
+<p class="lede">Tired of AI slop? clankerfree is a resource that indexes projects that the authors self-certify as not containing or utilizing generative AI or LLM technology. Software hosting Codeberg &#34;You must not share projects that mostly consist of code written by &#39;generative AI&#39;-tools.&#34; src SourceHut &#34;No AI features whatsoever.&#34; src Software projects Alacritty &#34;Contributions must not include content generated by large language models or other probabilistic tools.&#34; src GNU Image Manipulation Program &#34;No AI-generated contents allowed&#34; src LibreOffice &#34;LibreOffice … contains no generative AI features.&#34; src NetBSD &#34;Code generated by a large language model or similar technology … is presumed to be tainted code.&#34; src Zig &#34;No LLM-generated content, whether it be code or prose.&#34; src What is clankerfree? …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-09-p5.html">‹</a><a href="2026-09-09.html">1</a><a href="2026-09-09-p2.html">2</a><a href="2026-09-09-p3.html">3</a><a href="2026-09-09-p4.html">4</a><a href="2026-09-09-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-09-09-p7.html">7</a><a href="2026-09-09-p8.html">8</a><a href="2026-09-09-p9.html">9</a><a class="pg-arrow" href="2026-09-09-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>134 stories · 4 cross-posts merged · 120 excerpts · 76 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Thursday, September 10, 2026 — Page 8</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 253</span>
+      <span>Thursday, September 10, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 8</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://isittrainingonme.com/og-default.png" alt="Show HN: I graded 200 AI tools/apps and track any changes in their policies" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://isittrainingonme.com/">Show HN: I graded 200 AI tools/apps and track any changes in their policies</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by trainingonme · isittrainingonme.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49642791">discuss</a>
+    </p>
+<p class="lede">Companies have stopped announcing that they train on your data. Instead the switch is on when you arrive, and whether you&#39;re allowed to turn it off now depends on what you pay. We read the terms, quote them exactly, date them, and keep a copy. 30 have a toggle in settings. The rest make you write to support, pay for a higher plan, or go without. Every tracked app falls in exactly one of the three groups above, and the build refuses to publish if they stop summing to the total. &#34;Train on you by default&#34; counts a verdict whose most-reachable consumer plan has a default state of trains_with_optout or trains_no_optout ; &#34;will not say&#34; is a verdict whose reachable plans are all UNCLEAR. The 4 marked in red are a subset of the first group, not a fourth: they train by default and sell the way …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/966400839474306708d4aaa8eb25beef5443b0f05ac3333552b6280f15e9cd27/sealandseacat/dbmask" alt="Show HN: Dbmask – Discover, mask, and verify sensitive data in SQL databases" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/sealandseacat/dbmask">Show HN: Dbmask – Discover, mask, and verify sensitive data in SQL databases</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by SiyuanFeng · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49645189">discuss</a>
+    </p>
+<p class="lede">Discover which columns hold sensitive data, mask them with realistic deterministic fakes, then verify the masking actually happened — one auditable workflow for making safe copies of SQL databases. Production data constantly leaks into places with weaker controls: dev and test systems, demo environments, analytics warehouses, vendor handoffs, AI pipelines. dbmask is for the moment you copy that data: it finds the sensitive columns, rewrites them with consistent fakes, and then checks its own work row by row. Everything below runs locally against a throwaway SQLite file (bash syntax; use your own database URL for the real thing). Prefer code over a shell? python examples/quickstart.py runs the same story end-to-end, and the library API mirrors the CLI. These are behaviors, not aspirations …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kwisatzh.github.io/observerbench/try/">Show HN: ObserverBench – Test internal AI monitors by the harm they miss</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by kwisatzh · kwisatzh.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49645703">discuss</a>
+    </p>
+<p class="lede">A guided example · no login · no model download ObserverBench tests whether methods that read an AI model&#39;s internal activity help us choose better actions—not just make better predictions. The full workbench includes experiments on GPT-2, Qwen2.5-7B (base and Instruct), Qwen3.5-9B, and Gemma, covering internal model edits and safety monitoring. You can inspect the results, run existing tasks, or test your own method. Some tasks use saved model measurements, so you can start without a GPU. Why this matters. In the July 2026 Hugging Face incident, investigators found AI agents trying to mislead their evaluator, including successful small-scale tests that made activity records show a different command from the one actually run. The METR and Redwood Research investigation is one motivation …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://clickhouse.com/_next/image?url=%2Fuploads%2Fwalshadow_sep2026_banner_6dbc425dd9.jpg&amp;w=1200&amp;h=630&amp;q=75" alt="Sub-second Postgres replication to ClickHouse from physical WAL" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://clickhouse.com/blog/introducing-walshadow">Sub-second Postgres replication to ClickHouse from physical WAL</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by __s · clickhouse.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49646322">discuss</a>
+    </p>
+<p class="lede">Today, we’re announcing WalShadow , an open-source engine that replicates Postgres data to ClickHouse directly from physical WAL. In our benchmarks, transactions committed in Postgres became visible in ClickHouse in around 200 ms, while WalShadow sustained 289K rows/sec, effectively keeping pace with the source Postgres instance. Unlike traditional CDC based systems, WalShadow doesn’t use Postgres logical replication. It consumes the same physical WAL stream used by Postgres replicas, decodes it outside the source database, and writes ClickHouse-native blocks directly into ClickHouse. The result is a replication architecture that gets close to the latency and throughput of a Postgres physical standby, while making the data immediately available for analytics in ClickHouse. WalShadow …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=49646376">Show HN: Turn wire protocols into structured statements LLMs can understand</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by andriosr · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49646376">discuss</a>
+    </p>
+<p class="lede">Hi HN, we built an extension to Envoy proxy that parses and sends contents of requests to an LLM at runtime. We do that by adding a deterministic SQL parser, gGRPC payload inspection and LLM analysis of the payload before upstream call. Users are proxying headless agents traffic with it so that sec teams can have their prompts blocking harmful actions via network traffic before it leaves the agent. When you tell the LLM analyzing the traffic to block writes, it will spot it across the different protocols by looking at the structured payload we build from parsing the binary protocol. It runs as a UDS upstream, and we&#39;re exploring bundling it inside envoy to remove the UDS hop. Envoy is incredible, but it has limited support for anything outside http. Basic database query parsing, little …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.mdpi.com/2409-9287/11/5/161">Michael Levin: Ingressing Minds</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by md224 · mdpi.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49648278">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://ersc.io/og/blog/what-comes-after-git.png" alt="What comes after git" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://ersc.io/blog/what-comes-after-git">What comes after git</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by ucirello · ersc.io · <a class="discuss" href="https://lobste.rs/s/ez6ivp/what_comes_after_git">discuss</a>
+    </p>
+<p class="lede">East River Source Control has been around for over a year now, but we haven’t been talking much publicly about what we’ve been working on. We aren’t announcing anything just yet, and we will soon, but we wanted to share some of our thinking around version control and where things are going. Building software is fundamentally a collaborative task. Projects start with humble beginnings, and end up growing into incredibly large and complex systems. But what cargo new generates is the same thing as what a multi-billion line monorepo contains: source code. Storing this code safely and securely, managing how it changes over time, and ensuring its availability to developers are some of the most critical functions of any technology organization. In the old days, you might have had a shared server …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://laurmaedje.github.io/posts/jj/">Conversations with JJ</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by isuffix · laurmaedje.github.io · <a class="discuss" href="https://lobste.rs/s/nbmbxj/conversations_with_jj">discuss</a>
+    </p>
+<p class="lede">So far my blog has been exclusively about Typst, but today I felt like writing about something else. (Which is rare enough as is, so I thought I’d better pick up on that!) I’ve been using jj on and off and wanted to share some of my journey. I probably didn’t choose the best learning path, but I did at least start by reading Steve’s tutorial instead of just jumping in blindly. Beyond that though, I just tried to figure stuff out as I needed it. Perhaps I should begin with why I wanted to learn about it. Aside from people around me and in my team fussing about it, I do enjoy a tidy PR history. I’m pretty comfortable with rebasing stuff, but my PR clean-up workflow still wasn’t great. It sat somewhere between interactive rebase, dragging commits around in GitHub Desktop and fiddling around …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blindlock.app/assets/og-card.png?v=9fb9d40a295b" alt="Show HN: BlindLock – Passwords hidden in a photo, sealed to your TPM/SE" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blindlock.app/en/">Show HN: BlindLock – Passwords hidden in a photo, sealed to your TPM/SE</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by BlindLock · blindlock.app · <a class="discuss" href="https://news.ycombinator.com/item?id=49642803">discuss</a>
+    </p>
+<p class="lede">Passwords, notes and 2FA secrets stay encrypted on your device, concealed inside an ordinary-looking PNG file. Opening the vault requires the correct carrier file, your master password and the authorised device. BlindLock never transmits vault contents to BlindLock servers. There is no central collection of customer vaults for attackers to capture in a single provider breach. BlindLock removes that major cloud-manager attack surface, while remaining clear about the limits of local security. Steganography means concealing data inside an ordinary-looking file. Your complete password vault lives encrypted inside a PNG carrier, with no recognisable vault file to advertise its presence. Encrypted data stolen today can be stored and attacked later. BlindLock does not run a central vault …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://app.geosurge.ai/login">Show HN: AI Brand Visibility for Free Forever</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by jonsmostovojs · app.geosurge.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=49643236">discuss</a>
+    </p>
+<p class="lede">geoSurge AI Sign in with Or continue with email Don&#39;t have an account? Sign up By clicking continue , you agree to our Terms of Service and Privacy Policy .</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://runmat.com/blog/compiling-matlab-code-to-native-executables-with-runmat">Show HN: Compiling Matlab Code to Native Executables with RunMat</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by finbarr1987 · runmat.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49644323">discuss</a>
+    </p>
+<p class="lede">RunMat can now compile a MATLAB-syntax program into a native executable: On Windows, RunMat can compile to a native .exe : The output contains target-native program code and its matching RunMat execution runtime. Running it requires neither the RunMat CLI nor the project source, parser, compiler, VM, JIT, or a separately installed RunMat SDK. A numerical program depends on services outside its compiled machine instructions. The executable needs array storage, indexing, function calls, multiple outputs, errors, workspace behavior, builtin implementations, file and plotting services, and memory management. Each service must follow the same language rules as an interactive RunMat session. runmat compile starts from the analyzed MIR and composed project used for VM and JIT execution. It emits …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.subnetcalc.com">Show HN: Subnet Calc, visual subnet planning for teams</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by RossMason · subnetcalc.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49645544">discuss</a>
+    </p>
+<p class="lede">Plan, split, and manage IPv4 and IPv6 networks with Subnet Calc. Free online subnet calculator and IP address management for network engineers.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://res.infoq.com/news/2026/09/cern-debian-infra/en/headerimage/generatedHeaderImage-1788760881078.jpg" alt="CERN Renounces RHEL in Favor of Debian" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.infoq.com/news/2026/09/cern-debian-infra/">CERN Renounces RHEL in Favor of Debian</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by hilux · infoq.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49648330">discuss</a>
+    </p>
+<p class="lede">A monthly overview of things you need to know as an architect or aspiring architect. Online InfoQ Architect Certification (Sept 14): This is where senior engineers pressure-test real architecture decisions. Register Now InfoQ Homepage News CERN Renounces RHEL in Favor of Debian for its Accelerator Controls Infrastructure At MiniDebConf Winterthur , CERN engineers Federico Vaga and Nikos Tsipinakis detailed the organization&#39;s plan to transition its accelerator-control fleet away from Red Hat-derived distributions to Debian. The move represents a major platform pivot for the particle accelerator group, even as the broader institution remains one of the world&#39;s most prominent Enterprise Linux environments. For over two decades, CERN built its operating environment around the Red Hat …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://chaimsapps.com/">Show HN: Two small Chrome extensions for Hebrew text and dates</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by chaimtweiss · chaimsapps.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49648352">discuss</a>
+    </p>
+<p class="lede">A growing collection of free Chrome extensions I&#39;ve built to make everyday browsing a little easier — from Hebrew calendar conversions to cleaner text. Pick one below and add it to Chrome in seconds. Right-click any date on the web to see its Hebrew calendar equivalent in a beautiful floating bubble. Instantly copy selected Hebrew text with the nikud (vowel marks) stripped out — right-click or a keyboard shortcut. More extensions are on the way. Have an idea or found a bug? I design and build focused, polished Chrome extensions and small apps — from internal tools to public products. If you have an idea, just ask.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://tante.cc/2026/09/10/making-social-media-social/">Making Social Media Social</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by itamarst · tante.cc · <a class="discuss" href="https://lobste.rs/s/39c9xe/making_social_media_social">discuss</a>
+    </p>
+<p class="lede">Top) was considered *“something in which they themselves are equally important. In the past proceeding and doubt not from their own aspiration.”* [quoted, **Op. Cit.**, p. 57] He had been a popular act through the merits and disadvantages of electioneering and representative over direct democracy. Yes, the Makhnovists were anarchists, *“some of the. Kautsky come along and say that while since October 1917. Yet. Make. If the state rationalises its existence by the producers’ unions or struggle is possible.”* To illustrate his point and that being rich is written on, how valuable is an agency of the people themselves.”* The. Better! Thus *“real”* democratic organisation that the market and a little monarchy for their use in turn would re-create the state. That is why Woodcock states …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-10-p7.html">‹</a><a href="2026-09-10.html">1</a><a href="2026-09-10-p2.html">2</a><a href="2026-09-10-p3.html">3</a><a href="2026-09-10-p4.html">4</a><a href="2026-09-10-p5.html">5</a><a href="2026-09-10-p6.html">6</a><a href="2026-09-10-p7.html">7</a><span class="pg-current">8</span>
+<a href="2026-09-10-p9.html">9</a><a class="pg-arrow" href="2026-09-10-p9.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>129 stories · 6 cross-posts merged · 118 excerpts · 68 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

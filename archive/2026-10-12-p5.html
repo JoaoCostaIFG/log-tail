@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, October 12, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 285</span>
+      <span>Monday, October 12, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://ratfactor.com/cards/git-commit-size">How big is a Git commit?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by rajtilakjee · ratfactor.com · <a class="discuss" href="https://lobste.rs/s/9wcfld/how_big_is_git_commit">discuss</a>
+    </p>
+<p class="lede">Short answer: It depends. Git stores &#34;objects&#34; as zlib compressed data. So the exact size of a commit will depend on the compressibility of your files (which is basically a function of the amount of repetition in them). The other factor is that Git eventually turns object files into even more efficient packfiles, saving additional space by getting rid of redundancy across objects. For fun, I did some little experiments (all &#34;loose objects&#34; with no packfiles created). Here’s the results: 47,640 bytes - committing 250 tiny files 17,145 bytes - committing 3 bytes of change to a file in a directory of 50 files 8,709 bytes - committing 3 bytes of change to a single-file repo 297,873 bytes - committing a 583,840 byte binary file 1,622,188 bytes - committing a huge 16,415,223 byte source file So …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://00f.net/2026/10/09/llvm-compiles-branch-free-code-into-branches-on-risc-v/">Branches in branch-free code</a></h3>
+    <p class="dateline"><span class="badge">L</span>      28 points · by rrampage · 00f.net · <a class="discuss" href="https://lobste.rs/s/dsbt5a/branches_branch_free_code">discuss</a>
+    </p>
+<p class="lede">Here’s a complete C function that adds two unsigned 128-bit integers: You can see the output on Compiler Explorer , alongside versions compiled with GCC and with the Zicond extension we’ll look at below. Wait, why is there a beq in an addition? That’s a conditional branch, right? RV32 registers hold 32 bits, so LLVM has to split our 128-bit addition into four smaller ones, passing the carry from each to the next. This is how the compiled code performs the addition; a0 and b0 are the lowest 32-bit words of our inputs; a1 and b1 are the next ones. All values are unsigned, low32() keeps only the lowest 32 bits, and comparisons return 0 or 1. Can you guess why sum1 == b1 is checked? CPUs such as x86 and AArch64 have instructions to perform conditional moves ( cmov ), allowing carry …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://news.mit.edu/sites/default/files/images/202610/MIT-Sensing-Sheets-01-press.jpg" alt="Shape-sensing sheet digitally tracks its own movement as it bends and twists" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://news.mit.edu/2026/shape-sensing-sheet-digitally-tracks-movement-bends-twists-1008">Shape-sensing sheet digitally tracks its own movement as it bends and twists</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      27 points · by bookofjoe · news.mit.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=50032253">discuss</a>
+    </p>
+<p class="lede">Images for download on the MIT News office website are made available to non-commercial entities, press and the general public under a Creative Commons Attribution Non-Commercial No Derivatives license . You may not alter the images provided, other than to crop them to size. A credit line must be used when reproducing images; if one is not provided below, credit the images to &#34;MIT.&#34; MIT engineers have developed a flexible, shape-sensing sheet that digitally reconstructs its own form as it bends and twists. The sensor is similar in principle to some motion-capture garments, which track a person’s physical movements to mimic them in a virtual avatar. Those designs use rigid sensors that are stitched into a suit at strategic locations. In contrast, the team’s new design uses multiple soft …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1067126172/ef47eed5-84e1-49da-8322-7f57c90bcf27" alt="Cbirds: A flock of birds in your terminal" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/clainstone/cbirds">Cbirds: A flock of birds in your terminal</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      26 points · by epestr · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50036023">discuss</a>
+    </p>
+<p class="lede">cbirds --render kitty --hawks 2 --color ice --speed 0 Craig Reynolds&#39; boids, drawn in braille in any terminal, and as sprites over the Kitty graphics protocol in Kitty and Ghostty. One C99 program, no dependencies. Every clip on this page was recorded by cbirds itself. macOS and Linux. Completions for bash, zsh and fish come with it, and brew upgrade keeps it up to date. Debian 12, Ubuntu 22.04 and later, and their derivatives, on amd64 or arm64, from its apt repository . Completions come with it, and sudo apt upgrade keeps it up to date. Or just the package, without the repository and so without updates: the .deb files are on the release page , for sudo apt install ./cbirds_*.deb . That puts one file, /usr/local/bin/cbirds . Without sudo, in your home instead ( ~/.local/bin has to be on …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/d6766274e693e15d6d4d3079390b92d0fe1fb191faf4a23176599c9ba6150840/swimmingbrain/brainotes" alt="Show HN: BraiNOTES, handwritten notes on your lecture PDFs in a browser tab" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/swimmingbrain/brainotes">Show HN: BraiNOTES, handwritten notes on your lecture PDFs in a browser tab</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      26 points · by swimmingbrain · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50049132">discuss</a>
+    </p>
+<p class="lede">Handwritten notes and a whiteboard that run in your browser. Write with a pen, keep the pdf next to your notes. braiNOTES is an open source app for writing by hand, like OneNote or GoodNotes, but in a browser tab. It is made for lectures: the slides open next to your notes or become the pages you write on. There is no account and no server, everything stays in your browser. Open http://localhost:5173 . pnpm test runs the tests, pnpm check the type checks and pnpm build writes the static site to build/ . See docs/CONTRIBUTING.md if you want to help. MIT, see LICENSE . The libraries keep their own licenses, THIRD_PARTY_LICENSES lists them. Handwritten notes and a whiteboard in your browser. Write with a pen, keep the pdf next to your notes. No account, nothing leaves the browser.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://robotgirlgang.com/wp-content/uploads/2026/09/rgg-site-icon-master.png" alt="&#34;Robot&#34; Is A Social Construct: Why Your Dishwasher Is Not A Robot" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://robotgirlgang.com/2026/10/08/robot-is-a-social-construct-why-your-dishwasher-is-not-a-robot/">&#34;Robot&#34; Is A Social Construct: Why Your Dishwasher Is Not A Robot</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by icefox · robotgirlgang.com · <a class="discuss" href="https://lobste.rs/s/ha0qt7/robot_is_social_construct_why_your">discuss</a>
+    </p>
+<p class="lede">The most effective way to nerd snipe a roboticist is to present them with a controversial definition of a “robot”. When I served on an industrial safety standards development committee, we once spent a memorable two full days trying to define “robot” sufficiently broadly so as to ensure the standard would apply to all reasonably forseeable uses of industrial robotic arms in industrial automation, but sufficiently narrowly so as to ensure we did not accidentally force newly developed types of industrial robots into a standard that would wrongly constrain them. This was, I say with all honesty, was an immensely enjoyable two days. I love this kind of thing. I will be pedantic all day long. So of course, my esteemed colleague Tina decided to lob a grenade at me by asserting that a dishwasher …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Italian_Specialty_Restaurant%2C_Pyongyang%2C_North_Korea.jpg/1280px-Italian_Specialty_Restaurant%2C_Pyongyang%2C_North_Korea.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail" alt="Pizza in North Korea" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://en.wikipedia.org/wiki/Pizza_in_North_Korea">Pizza in North Korea</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      24 points · by axbac · en.wikipedia.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50050853">discuss</a>
+    </p>
+<p class="lede">North Korea has several restaurants serving pizza . [ a ] Most people in the country cannot afford pizza, and it is mostly available for the elite. Pyongyang has five restaurants that serve pizza, including Pizza Restaurant on Kwangbok Street [ ko ] and Italy Pizza on Mirae Scientists Street . Kim Jong Il hired Italian chefs to train North Koreans in pizza making and introduced it to the country. North Korean leader Kim Jong Il, who was noted for his lavish culinary habits, made efforts to introduce international cuisine in the 1990s. [ 2 ] In the spring of 1997, he had pizzaiolo Ermanno Furlanis flown into Pyongyang, along with another Italian chef and both of their wives, to train North Korean chefs in pizza-making for three weeks. [ 2 ] [ 3 ] The Italian chefs brought two pizza ovens …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://earendil.com/static/og/posts/system-theme.png" alt="There are many themes, but this one is yours" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://earendil.com/posts/system-theme/">There are many themes, but this one is yours</a></h3>
+    <p class="dateline"><span class="badge">L</span>      23 points · by mitsuhiko · earendil.com · <a class="discuss" href="https://lobste.rs/s/3zcaxw/there_are_many_themes_this_one_is_yours">discuss</a>
+    </p>
+<p class="lede">From: Maximilian Blazek &lt; max@earendil.com &gt; Subject: There are many themes, but this one is yours At Earendil, we want to build products that respect the choices of the people using them. So when we were refreshing Pi&#39;s themes, we wanted a theme that adapts to the terminal it runs in. Most people who spend their day in a terminal have picked their own themes for it. Why not make Pi reflect their choices? The result is the new system theme, which is now Pi&#39;s default. It asks your terminal for its colors and builds Pi&#39;s theme from them. In this post we share how it works. A Pi session in the terminal. With JavaScript enabled, it plays here and can be shown in 24 terminal themes. Before you read the rest of the post, we want to spoil something: it&#39;s all about contrast. Picking the colors in …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://linus.dev/images/opengraph/kiesel.png" alt="Kiesel Devlog #15: Release 0.4.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://linus.dev/posts/kiesel-devlog-15/">Kiesel Devlog #15: Release 0.4.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by FedericoSchonborn · linus.dev · <a class="discuss" href="https://lobste.rs/s/4zmka2/kiesel_devlog_15_release_0_4_0">discuss</a>
+    </p>
+<p class="lede">This week I completed the update to Zig 0.17 and released Kiesel 0.4.0! It contains 64 commits across 2.5 months, see the changelog for the full list of user-facing changes. I mostly build rather than use this project, and it shows — beyond the core language implementation only a few APIs needed for real-world programs are available. We did have file I/O for a while, and with the addition of arguments and environment reading a simple cat(1) clone becomes feasible: Over the last few years JS has rapidly advanced the usability of iterators from just providing the basic protocol at the language level to a large collection of Iterator.prototype methods. The initial Iterator Helpers proposal shipped in 2024, followed by Iterator Sequencing in 2025, and Joint Iteration , Iterator Join …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/n_1wzYQwnts/maxresdefault.jpg" alt="Every US Electrical Outlet Explained [video]" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=n_1wzYQwnts">Every US Electrical Outlet Explained [video]</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      22 points · by zdw · youtube.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50038088">discuss</a>
+    </p>
+<p class="lede">Can you collect them all? Want to restore the planet&#39;s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code PRACTICAL29 will get the first month paid for by me: https://planetwild.com/r/practicaleng... If you want to get to know them better first, check out their mission rewilding transmission lines: https://planetwild.com/r/practicaleng... Just like the periodic table of the elements, the NEMA connection standards are a bit messy. And that’s what I love about them. 📖My new book, Disasters By Design: How Engineering Failures Shaped the Modern World is coming March 2, 2027 and available for preorder now. US: https://www.penguinrandomhouse.com/bo... UK: https://www.penguin.co.uk/books/47619... More About the Book …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_umbODeugSt8SiHNCPgVY-6W7imIdM0QRP0vJodpCOjNM6o3q540LAA7oKoC78lgZOybfMWnIv0Y3ZFsvqvV8Ly2SIDiyKI0J-5-ng9uM43KYr09vHIY89lspwssg=w1200-h630-p-k-no-nu" alt="Inside a 1980s filter chip that uses switched capacitors" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="http://www.righto.com/2026/10/ML10-switched-capacitor-filter.html">Inside a 1980s filter chip that uses switched capacitors</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by calvin · righto.com · <a class="discuss" href="https://lobste.rs/s/mbyawi/inside_1980s_filter_chip_uses_switched">discuss</a>
+    </p>
+<p class="lede">Sometimes it&#39;s easier to identify an IC with a microscope. While sorting a box of old ICs, CuriousMarc came across some Harris ICs labeled &#34;F1-10-5&#34;, a mysterious part number that didn&#39;t show up in any databooks. Since unidentifiable ICs are useless, he gave me one to analyze. Conveniently, it was in a ceramic package, so I could open it up with a quick tap from a chisel. Under the microscope, the chip&#39;s most striking feature was a grid of square capacitors. With all those capacitors, I guessed that it was a switched-capacitor filter. The die provided another clue: the part number HF-10. With this information, we quickly found that the chip was Harris&#39;s version of the standard MF10 switched-capacitor filter chip. 1 The Harris integrated circuit, labeled F1-10-5 (or maybe FI-10-5), with a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://pings.utwente.io/">Draw by Pinging IPv6 Addresses</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      21 points · by eraclide · pings.utwente.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50032748">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/5zbbd0/sntpings_draw_on_canvas_using_icmpv6">discuss on lobste.rs</a>
+    </p>
+<p class="lede">Voor de Nederlandse versie van deze website, klik hier On the 9th of October, we are celebrating the launch of SURFnet Infinity. Therefore, it is time for another edition of SNTPings ! Draw on a shared canvas for everyone to see by sending ping packets as fast as possible! Hack away at building a fast pinger, become famous drawing things, and help stresstest the new network. Pinging will commence on Friday October 9th, 18:00 CEST (Europe/Amsterdam time), and will continue throughout the weekend until the 11th of October at 23:59. Prefix is announced, happy pinging! This is the biggest SNTPings event to date, with a whopping 1.6Tbps of bandwith for our receiver. To achieve this, our receiver hosts are hosted in Nikhef and the uplinks are provided by Nikhef and SURF . Send an IPv6 ping …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://smallcultfollowing.com/babysteps/blog/2026/10/10/modular-vs-external-proofs/">Why &#39;externalized&#39; proofs of cyclic trait impls does not work</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by fanf · smallcultfollowing.com · <a class="discuss" href="https://lobste.rs/s/gytcvn/why_externalized_proofs_cyclic_trait">discuss</a>
+    </p>
+<p class="lede">For this post, I wanted to talk about two different approaches to handling supertraits. I’m calling them modular proofs vs external proofs. The key idea of this post is that, if we want to have cyclic trait impls, we really need to use a modular proof strategy, where the impl establishes all supertraits hold. Previously we had considered an external strategy, where the piece of code using the impl has the obligation to prove the supertraits hold. Modular proofs always seemed better but I did not think they were workable in the past. But I have become convinced that external proofs are incompatible with Rust as designed, and hence modular proofs are really the only option 1 . This post dives into that reasoning, and also gives a bit of explanation of what I mean by proofs in the first …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://patkerr.co.uk/2d-vehicles/social-card.jpg" alt="The 2D physics prototype behind GTA’s vehicles" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://patkerr.co.uk/2d-vehicles/">The 2D physics prototype behind GTA’s vehicles</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by linkdd · patkerr.co.uk · <a class="discuss" href="https://lobste.rs/s/9ros7d/2d_physics_prototype_behind_gta_s">discuss</a>
+    </p>
+<p class="lede">One weekend in late August 1996, I wrote a 2D physics simulation which later became the basis of the vehicle system in the eventually popular game &#34;Grand Theft Auto&#34; aka &#34;GTA&#34;. It began as a little wireframe demo written in GFA BASIC on my Atari ST home computer (and was later ported to C for use in the actual game). I have recreated* it here in JavaScript for its 30th anniversary in a slightly prettier, &#34;remastered&#34; form, for anyone who is interested in seeing or playing it. You can play the recreation above, with touch controls if you are on mobile. In addition to the default &#34;Car&#34; mode (1), you can also select the technically simpler Spaceship aka &#34;Ship&#34; (2) and &#34;Brick&#34; (3) modes, either via the mode selector in Settings or by pressing the corresponding numbers on your keyboard …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e">&#39;AI&#39; is Not a Tool</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by regulator · linkedin.com · <a class="discuss" href="https://lobste.rs/s/ikk8ie/ai_is_not_tool">discuss</a>
+    </p>
+<p class="lede">Create your free account or sign in to continue your search By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . (I keep delivering this as a quip, here&#39;s a bit more) First order of business - is &#39; tool &#39; going to have an interesting, distinguishing and thus illuminative meaning or be a mere platitudinous stand-in for &#34;anything useful&#34;? We&#39;ll save tool as &#34;anyone/thing that can be exploited&#34; for the AI titans, for whom VCs, politicians, wannabe-titan-CEOs, software devs, rural towns etc are all &#39;tools&#39;. The pockets on the front of my shirts are useful (I need to keep my reading glasses handy), but they are not tools. Similarly, fast food drive-thru windows are useful, but are not tools (more later). a device or implement …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-12-p4.html">‹</a><a href="2026-10-12.html">1</a><a href="2026-10-12-p2.html">2</a><a href="2026-10-12-p3.html">3</a><a href="2026-10-12-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-12-p6.html">6</a><a href="2026-10-12-p7.html">7</a><a href="2026-10-12-p8.html">8</a><a href="2026-10-12-p9.html">9</a><a class="pg-arrow" href="2026-10-12-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 6 cross-posts merged · 120 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

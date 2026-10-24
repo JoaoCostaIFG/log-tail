@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Sunday, October 11, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 284</span>
+      <span>Sunday, October 11, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://lumi.codeberg.page/blog/software-community.html">The importance of communities around software</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by stilic · lumi.codeberg.page · <a class="discuss" href="https://lobste.rs/s/o8xo9z/importance_communities_around_software">discuss</a>
+    </p>
+<p class="lede">As usual, the people are the important thing. Who could&#39;ve guessed? :3 I&#39;ve done a lot of activism for software freedom, over the years. At first it was purely for software freedom and related topics, (such as security, autonomy and privacy) but eventually this has evolved into something more holistic. I believe that the software I use should be held to higher ethical standards than only being free software. My activism used to focus on strong copyleft licenses, these are licenses which require that the project stay free; that no-one can take the project and make it proprietary. This has taken a backseat, as I now believe that there is something more important than license: community . The community around a software project is what dictates the values of the project. A strong copyleft …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://celld.dev/docs/engineering/deterministic-simulation-testing/og.png" alt="Deterministic Simulation Testing in Celld" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://celld.dev/docs/engineering/deterministic-simulation-testing/">Deterministic Simulation Testing in Celld</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by handfuloflight · celld.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50024805">discuss</a>
+    </p>
+<p class="lede">We are building celld , a runtime for Cloudflare Workers and Durable Objects applications on your own machines. It can run with an S3-compatible object store as its only external service dependency. celld is a distributed system. Making distributed systems reliable is hard, partly because we can unintentionally rely on assumptions that don’t hold in practice, even when we know the pitfalls. Peter Deutsch’s The Eight Fallacies of Distributed Computing lists eight such assumptions, including “The network is reliable” and “Latency is zero.” A bug can depend on a particular sequence of delayed messages, failed writes, and node restarts. Those events can happen in a different order on the next test run, making the failure difficult to reproduce. We need to be able to repeat the failing run so …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://carette.xyz/posts/minimal_swift_kernel_on_qemu/">A minimal kernel in Swift, running in QEMU</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by hashemi · carette.xyz · <a class="discuss" href="https://lobste.rs/s/myb8wf/minimal_kernel_swift_running_qemu">discuss</a>
+    </p>
+<p class="lede">Update (28th of September 2026) Max Desiatov told me that the @c swift attribute should work, instead of declaring the functions using @_cdecl . The @c attribute marks a global function as a C function implemented in Swift, which formalizes the @_cdecl attribute. A link to the proposal is available here . I did update the blog post and the code accordingly to that comment. Thanks Max! I started a small experiment: writing a very basic kernel in Swift, and running on QEMU . The goal is obviously not to replace Linux or any other popular kernel, but just to have fun and understand what is required to make a program run without an operating system underneath it. Actually I made a similar experiment years before with arOS 10 years ago. For the moment, the kernel does only one thing: it prints …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://purplesyringa.moe/blog/vectorized-clz-and-ctz/og.png" alt="Vectorized CLZ and CTZ" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://purplesyringa.moe/blog/vectorized-clz-and-ctz/">Vectorized CLZ and CTZ</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by fanf · purplesyringa.moe · <a class="discuss" href="https://lobste.rs/s/9xcc2g/vectorized_clz_ctz">discuss</a>
+    </p>
+<p class="lede">clz and ctz are instructions that compute the number of leading (trailing) zero bits in a fixed-size integer. They are natively supported by modern CPUs, though they are not always fast, e.g. tzcnt has a latency of 3 on Arrow Lake. I used ctz in an FPU emulator I’m working on, but figured out how to avoid it with floating-point trickery, and I just realized that this generalizes to a vectorizable ctz polyfill in a round-about way. I also implemented clz for completeness. clz Let’s start with clz , the easier of the two: The general idea goes like this: Floating-point exponents are biased logarithms of their values. By substituting a 32-bit number x into the mantissa of some value 2 k , we get a double representing 2 k ( 1 + 2 − 52 x ) . We can then subtract 2 k as a double to get 2 k − 52 …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://littleguys.hervalicio.us/opengraph-image.jpg?opengraph-image.2q_4w406n58h4.jpg" alt="Show HN: Littleguys – Claude Code, Codex and OpenClaw agents in your menu bar" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://littleguys.hervalicio.us">Show HN: Littleguys – Claude Code, Codex and OpenClaw agents in your menu bar</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      15 points · by herval · littleguys.hervalicio.us · <a class="discuss" href="https://news.ycombinator.com/item?id=50038883">discuss</a>
+    </p>
+<p class="lede">The guy in your menu bar acts out what your agents are doing. No dashboards, no tab-hunting. Click the guy for every agent on every machine, with a live status ring, the last message and a quick reply. Commands that need you show up as cards: allow once, always allow or deny. No more “[y/N]” buried in terminal tab #9. Morning digests, nightly dependency bumps, weekly numbers. Friendly schedules, run-now, and results that land in a thread. Guys on your Mac mini, your homelab and your laptop, all in one place. Finds gateways on your tailnet and LAN by itself. littleguys speaks the Agent Client Protocol, so new agents are one click away from the ACP registry. It&#39;s a friendly face for the agents you already run, not a new place to run them. littleguys holds your gateway tokens and approves …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://hpc.guix.info/blog/2026/10/hip-and-rocm-as-first-class-citizens/">HIP and ROCm as first-class citizens in Guix</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by untrusem · hpc.guix.info · <a class="discuss" href="https://lobste.rs/s/os95xc/hip_rocm_as_first_class_citizens_guix">discuss</a>
+    </p>
+<p class="lede">Earlier this year, two years after AMD engineers contributed packages the HIP/ROCm stack to the Guix-HPC channels , Guix developers migrated the whole HIP/ROCm stack into Guix proper, starting with version 7.1.1. This was quite a milestone as it makes HIP/ROCm first-class citizens and gives them more exposure and better support in the community. The package set consists of more than 40 packages covering many things: We are also gradually adding HIP/ROCm variants of scientific software such as CP2K and Chameleon , a dense linear algebra solver developed at Inria. The set of AMD GPU architectures grows quickly . As packagers, we choose a default set of target GPU architectures to build ROCm/HIP-enabled applications for, but that set of architectures must be limited given the build time and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://pings.utwente.io/">SNTPings, draw on a canvas using ICMPv6</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by Levitating · pings.utwente.io · <a class="discuss" href="https://lobste.rs/s/5zbbd0/sntpings_draw_on_canvas_using_icmpv6">discuss</a>
+    </p>
+<p class="lede">Voor de Nederlandse versie van deze website, klik hier On the 9th of October, we are celebrating the launch of SURFnet Infinity. Therefore, it is time for another edition of SNTPings ! Draw on a shared canvas for everyone to see by sending ping packets as fast as possible! Hack away at building a fast pinger, become famous drawing things, and help stresstest the new network. Pinging will commence on Friday October 9th, 18:00 CEST (Europe/Amsterdam time), and will continue throughout the weekend until the 11th of October at 23:59. Prefix is announced, happy pinging! This is the biggest SNTPings event to date, with a whopping 1.6Tbps of bandwith for our receiver. To achieve this, our receiver hosts are hosted in Nikhef and the uplinks are provided by Nikhef and SURF . Send an IPv6 ping …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://unsung.aresluna.org/_media/deeper-dive-keyboard-differences-between-windows-and-macs/ogimage.jpg" alt="Deeper dive: Keyboard differences between Windows and Macs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://unsung.aresluna.org/deeper-dive-keyboard-differences-between-windows-and-macs/">Deeper dive: Keyboard differences between Windows and Macs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by seb · unsung.aresluna.org · <a class="discuss" href="https://lobste.rs/s/m2ixv3/deeper_dive_keyboard_differences">discuss</a>
+    </p>
+<p class="lede">Send me feedback, tips, bug reports, and anything else: My name is Marcin Wichary (he/him). I’ve worked as a UX designer, typographer, front-end person, and manager at Google, Medium, and Figma . I’ve also written a book about keyboards and typing , gave talks, and published essays about design, typography, and technology. Unsung is my blog about software craft and quality. Send me feedback, tips, bug reports, and anything else: Over the years, I learned about many gotchas and strange differences between keyboard handling on Mac and Windows – pertinent especially to web apps, which use the same codebase to cater to both. I thought it might be helpful to someone if I compile them all in one place. This post is meant to be a reference, and there aren’t any cute or riveting stories hiding …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://theconsensus.dev/p/2026/10/08/deepthi-sigireddi-from-supabase.html">Deepthi Sigireddi from Supabase</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by eatonphil · theconsensus.dev · <a class="discuss" href="https://lobste.rs/s/pmzbuu/deepthi_sigireddi_from_supabase">discuss</a>
+    </p>
+<p class="lede">Deepthi Sigireddi is a developer with over 25 years of experience. She&#39;s worked on Vitess and Multigres. And she now serves as Head of Databases at Supabase. By Phil Eaton October 8, 2026 Focus You are getting early access to this article as a subscriber. Your support makes articles like this possible. Thank you. This article is part of a series interviewing developers (not founders, not executives) working on software infrastructure to understand their work, how they got here, the projects they’re proud of, the incidents they’ve learned from, and what they’re curious about. Deepthi is a developer with over 25 years of experience. She has worked on sharding projects for both MySQL and Postgres : as the project lead for Vitess at PlanetScale and later on the Multigres team at Supabase …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://linus.dev/images/opengraph/kiesel.png" alt="Kiesel Devlog #15: Release 0.4.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://linus.dev/posts/kiesel-devlog-15/">Kiesel Devlog #15: Release 0.4.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by FedericoSchonborn · linus.dev · <a class="discuss" href="https://lobste.rs/s/4zmka2/kiesel_devlog_15_release_0_4_0">discuss</a>
+    </p>
+<p class="lede">This week I completed the update to Zig 0.17 and released Kiesel 0.4.0! It contains 64 commits across 2.5 months, see the changelog for the full list of user-facing changes. I mostly build rather than use this project, and it shows — beyond the core language implementation only a few APIs needed for real-world programs are available. We did have file I/O for a while, and with the addition of arguments and environment reading a simple cat(1) clone becomes feasible: Over the last few years JS has rapidly advanced the usability of iterators from just providing the basic protocol at the language level to a large collection of Iterator.prototype methods. The initial Iterator Helpers proposal shipped in 2024, followed by Iterator Sequencing in 2025, and Joint Iteration , Iterator Join …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://smallcultfollowing.com/babysteps/blog/2026/10/10/modular-vs-external-proofs/">Why &#39;externalized&#39; proofs of cyclic trait impls does not work</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by fanf · smallcultfollowing.com · <a class="discuss" href="https://lobste.rs/s/gytcvn/why_externalized_proofs_cyclic_trait">discuss</a>
+    </p>
+<p class="lede">For this post, I wanted to talk about two different approaches to handling supertraits. I’m calling them modular proofs vs external proofs. The key idea of this post is that, if we want to have cyclic trait impls, we really need to use a modular proof strategy, where the impl establishes all supertraits hold. Previously we had considered an external strategy, where the piece of code using the impl has the obligation to prove the supertraits hold. Modular proofs always seemed better but I did not think they were workable in the past. But I have become convinced that external proofs are incompatible with Rust as designed, and hence modular proofs are really the only option 1 . This post dives into that reasoning, and also gives a bit of explanation of what I mean by proofs in the first …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/865562f8c89728ea48f511ffdefc0ae85d211a8a3f0f61a346fed7734d71056d/facebook/Lifeguard" alt="Lifeguard: A static analyzer for Python lazy imports compatibility" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/Facebook/lifeguard">Lifeguard: A static analyzer for Python lazy imports compatibility</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by zem · github.com · <a class="discuss" href="https://lobste.rs/s/qwqne6/lifeguard_static_analyzer_for_python">discuss</a>
+    </p>
+<p class="lede">A fast static analysis tool to aid adoption of Lazy Imports in Python. In Python, every import statement executes immediately when a module is loaded. This overhead is incurred regardless of whether that import is actually used. PEP 810 introduces explicit Lazy Imports to Python, which defer the actual loading of a module until the imported name is first accessed. Lazy Imports can significantly reduce memory usage, startup times, and import overhead, especially in large codebases with deep dependency trees. However, some Python patterns depend on imports executing immediately. For example: Adapting an existing codebase to use Lazy Imports can be a daunting task, especially at scale. Lifeguard identifies these incompatible patterns so you can adopt Lazy Imports with confidence. Lifeguard …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.sigplan.org/2026/10/01/equality-saturation-an-incomplete-project/">Equality Saturation: An “Incomplete” Project</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by dbremner · blog.sigplan.org · <a class="discuss" href="https://lobste.rs/s/5n7zxa/equality_saturation_incomplete_project">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://karansaini.com/media/1-click-mmi-card.png" alt="1-click MMI execution in Android" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://karansaini.com/mmi-android/">1-click MMI execution in Android</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by rrampage · karansaini.com · <a class="discuss" href="https://lobste.rs/s/txa6dj/1_click_mmi_execution_android">discuss</a>
+    </p>
+<p class="lede">This article describes how vulnerable dialer applications can be exploited to achieve 1-click MMI execution in Android. I’ve known for some time that Android apps with the CALL_PHONE permission can dial USSD and MMI codes alongside regular phone numbers. For as long as I have known this, I have wanted to develop an attack to execute MMI codes from an application or a web page with little or no user interaction. Three years ago, I created a proof of concept that would silently forward calls on a handset by abusing the CALL_PHONE permission. This would have obviously required a user to sideload the malicious application, undermining its impact. Last month, I discovered and reported vulnerabilities resulting in 1-click MMI execution where a user has a vulnerable dialer application installed …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lineageos.org/Changelog-32/">LineageOS 24.0 released</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by timschumi · lineageos.org · <a class="discuss" href="https://lobste.rs/s/ecxril/lineageos_24_0_released">discuss</a>
+    </p>
+<p class="lede">We’re a bit sentimental about this release, as it precedes a really fun upcoming milestone. On December 24, 2026, LineageOS will celebrate 10 years. It’s a remarkable milestone for a project built by a passionate community of developers, maintainers, contributors, and users who have kept so many devices alive along the way. This release is part of that story: one more step forward, and a small moment to appreciate how far we’ve come. Here’s to the next decade. And thank you for your continued patronage, support, and belief in the project. The last year has been crazy, but we have remained dedicated to bringing an updated LineageOS based on Android 17 to the masses! We’ve been hard at work rebasing all of our changes and features since Android 17’s release in June. Android 17’s first …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-11-p5.html">‹</a><a href="2026-10-11.html">1</a><a href="2026-10-11-p2.html">2</a><a href="2026-10-11-p3.html">3</a><a href="2026-10-11-p4.html">4</a><a href="2026-10-11-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-10-11-p7.html">7</a><a href="2026-10-11-p8.html">8</a><a href="2026-10-11-p9.html">9</a><a class="pg-arrow" href="2026-10-11-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>135 stories · 3 cross-posts merged · 119 excerpts · 80 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

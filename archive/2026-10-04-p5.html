@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Sunday, October 4, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 277</span>
+      <span>Sunday, October 4, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://eli.thegreenplace.net/2016/the-softmax-function-and-its-derivative/">The Softmax function and its derivative</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      34 points · by costco · eli.thegreenplace.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49928196">discuss</a>
+    </p>
+<p class="lede">The softmax function takes an N-dimensional vector of arbitrary real values and produces another N-dimensional vector with real values in the range (0, 1) that add up to 1.0. It maps S(\mathbf{a}):\mathbb{R}^{N}\rightarrow \mathbb{R}^{N} : It&#39;s easy to see that S_j is always positive (because of the exponents); moreover, since the numerator appears in the denominator summed up with some other positive numbers, S_j&lt;1 . Therefore, it&#39;s in the range (0, 1). For example, the 3-element vector [1.0, 2.0, 3.0] gets transformed into [0.09, 0.24, 0.67] . The order of elements by relative size is preserved, and they add up to 1.0. Let&#39;s tweak this vector slightly into: [1.0, 2.0, 5.0] . We get the output [0.02, 0.05, 0.93] , which still preserves these properties. Note that as the last element is …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.rust-lang.org/static/images/rust-social-wide.jpg" alt="Generic Const Args and You" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.rust-lang.org/inside-rust/2026/10/02/generic-const-args-and-you/">Generic Const Args and You</a></h3>
+    <p class="dateline"><span class="badge">L</span>      33 points · by ettolrach · blog.rust-lang.org · <a class="discuss" href="https://lobste.rs/s/6jcvdn/generic_const_args_you">discuss</a>
+    </p>
+<p class="lede">Back in June of 2024 at RustFest Zürich, the Const Generics project group first discussed a new design for supporting more complex uses of generic parameters in Const Generics. Since then, we&#39;ve continued to refine the initial design and have implemented the new design as a family of features dubbed &#34;Generic Const Arguments&#34; (GCA for short). These features are intended to replace the existing generic_const_exprs feature which has existed in some form or another since min_const_generics was stabilized back in 2021. Even though GCA obviates generic_const_exprs it was still incredibly valuable to have invested the time into it that we did as the design and implementation of GCA was informed quite significantly by generic_const_exprs . Each feature in the GCA family introduces support for a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/3da0fe77e6ed434eac8c2ca9617c50de676dafeaa149165c8e564e8ec3609579/google/mozc-devices" alt="Gboard Conveyor Belt Version" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/google/mozc-devices/tree/main/mozc-conveyorbelt">Gboard Conveyor Belt Version</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      31 points · by xnx · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49927514">discuss</a>
+    </p>
+<p class="lede">This directory contains the design data and firmware for the Gboard Conveyor Belt Version, released on October 1, 2026. The Gboard Conveyor Belt Version is not an official Google product. This year again, we are releasing 3D printing model data, board data, and firmware. For those who are accustomed to moving their hands for text input, we also offer the standard version of Gboard. It provides a comfortable input experience in conjunction with various Google services such as voice input and translation functions.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://aras-p.info/blog/2026/10/01/Fast-blur-with-animated-radius/">Fast Blur with Animated Radius</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      31 points · by luu · aras-p.info · <a class="discuss" href="https://news.ycombinator.com/item?id=49929312">discuss</a>
+    </p>
+<p class="lede">Almost a year ago, while testing some Blender compositor related things, I noticed that their “Fast Blur” mode is not very fast in some cases, and I started to wonder maybe Blender should get a Dual Kawase blur mode, but that had limitations, and after a whole bunch of poofing around I assembled a bunch of existing blurry ideas into Smol Gaussian . So! As everyone knows, doing a Gaussian blur in the most naïve way is a cost that grows up as square of the blur radius. But luckily enough, Gaussian is separable, so you can do horizontal &amp; vertical blurs separately, and now the cost scales linearly with radius. That is perfectly fine for blurring just a little bit, but if you need really large blurs, that becomes slow. There are many ways to make blur scale to larger radii, FrostKiwi has a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://assets.aboutamazon.com/dims4/default/b34b9b7/2147483647/strip/true/crop/2000x1000+0+63/resize/1200x600!/quality/90/?url=https%3A%2F%2Fassets.aboutamazon.com%2F21%2Fb1%2Fce065b0b4cd9a58fdf5a2338d72b%2Fsmaller-kindle-edition-hero-ube-amazon-news-lt.gif" alt="Amazon introduces a redesigned Kindle family" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.aboutamazon.com/news/devices/new-kindle-lineup-2026">Amazon introduces a redesigned Kindle family</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      30 points · by seam_carver · aboutamazon.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49922074">discuss</a>
+    </p>
+<p class="lede">The all-new Kindle, Kindle Paperwhite, and Kindle Colorsoft are thinner and lighter with a new display stack and seamless edge-to-edge color across the lineup. Written by Kevin Keith , Vice President, Devices Twisty thrillers, swoony romance, epic romantasy, and page-to-screen favorites—these standout reads show just how much Kindle Unlimited has to offer. Learn how Kindle Kids devices and child profiles work, what parental controls are available, and how to build your child&#39;s library.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/877bdfe84459cd66036af644116310d939d1b82f8388975cbcf30ccb39a7f4bc/graphene-data/graphene" alt="Show HN: Graphene – Data analysis toolkit for your coding agent" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/graphene-data/graphene">Show HN: Graphene – Data analysis toolkit for your coding agent</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      30 points · by kcmarr · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49927295">discuss</a>
+    </p>
+<p class="lede">Graphene is a data analytics framework built for coding agents. Ask questions and build visualizations 10x faster when agents do the work. Graphene is an everything-as-code analytics framework for SQL-based data exploration, visualization, and reporting. It is designed with coding agents in mind as the primary user persona. It provides two critical pieces that allow coding agents to do better data work: We believe coding agents coupled with an everything-as-code analytics stack beats traditional BI in several ways: Graphene is free to use, forever. Your business logic lives in your repo and is never locked into a contract with us. Graphene pages support visualizations, input components for filtering and dynamic behaviors, and layout modes for monitoring-oriented dashboards vs …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/">The Era of Software Quality, or the Era of Ostriches?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by calvin · blogs.gnome.org · <a class="discuss" href="https://lobste.rs/s/elziso/era_software_quality_era_ostriches">discuss</a>
+    </p>
+<p class="lede">Humans are bad at writing secure code, and GNOME developers are no exception. GNOME is primarily written using unsafe programming languages where simple mistakes in our code lead to devastating consequences for our users , and we make these mistakes all the time . No matter how much we try, GNOME developers will fail write secure code when using unsafe languages like C, C++, or Vala: it’s just too hard for even experienced developers to do properly. The above paragraph is taken from the abstracts of my GUADEC 2024 and 2025 talks. At the time, I thought failure was inevitable: we humans were so bad at writing software that we had no chance to do it properly, and I certainly would not have trusted an AI to do better than a human. But the landscape today is completely different than last …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://royapakzad.substack.com/p/multilingual-ai-agents">Three AI agents, two countries, and one uneven world wide web</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      29 points · by effects · royapakzad.substack.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49938326">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://futhark-lang.org/blog/2026-10-02-cpu_function.html">Keeping Futhark off the GPU</a></h3>
+    <p class="dateline"><span class="badge">L</span>      28 points · by fanf · futhark-lang.org · <a class="discuss" href="https://lobste.rs/s/8f5elm/keeping_futhark_off_gpu">discuss</a>
+    </p>
+<p class="lede">Earlier this year, Elias Smedegaard did a BSc thesis on efficiently computing sparse Jacobian matrices via automatic differentiation. For this post, it is not important to understand exactly what this is, or why it is useful - it relates to automatic differentiation , which I have yet to write a blog post about. For the purpose of this post, the salient detail is that part of his solution involves colouring a graph corresponding to the sparsity pattern of a matrix. Now, optimal graph colouring is a famously NP-hard problem, but we did not need optimal colouring - we just needed decent , and implemented with an efficient algorithm. Elias found a pretty fast greedy algorithm for distance-2 colouring (Algorithm 3.1 in this paper if you are curious), but unfortunately the algorithm is …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.python.org/og/language-summit-2026-rust-for-cpython.png" alt="Rust for CPython (Python Language Summit 2026)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.python.org/2026/09/language-summit-2026-rust-for-cpython/">Rust for CPython (Python Language Summit 2026)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by blin · blog.python.org · <a class="discuss" href="https://lobste.rs/s/cpf8w6/rust_for_cpython_python_language_summit">discuss</a>
+    </p>
+<p class="lede">“No one said ‘don’t do this’ last year”. After testing the waters at PyCon US 2025 , David Hewitt returned to the Python Language Summit asking what Python core developers want from Rust, along with proposed timelines, phases, and success criteria for how the Rust for CPython project might proceed and become a permanent fixture within the CPython project. David is acting as an “ambassador” for the Rust for CPython project team, which is currently led by core developers Kirill Podoprigora and Emma Smith as authors of the Rust for CPython PEP draft . Emma also spoke at PyCon US 2026 about the Rust for CPython project. The team itself is around 60 developers in a Discord channel, among them a “few [Python] core developers” and a “delegation from the Rust project”. The team has experience …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://loige.co/og/hidden-design-compromises-of-docker-layers.png" alt="The hidden design compromises of Docker layers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://loige.co/hidden-design-compromises-of-docker-layers/">The hidden design compromises of Docker layers</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by loige · loige.co · <a class="discuss" href="https://lobste.rs/s/uuu6us/hidden_design_compromises_docker_layers">discuss</a>
+    </p>
+<p class="lede">The other week I was looking into some Docker shenanigans, specifically SOCI (Seekable OCI). In a nutshell, SOCI builds an index of the contents of your container image layers, so that a container can start before the whole image has been downloaded, and the files it needs are lazily fetched as they are accessed. (Spoiler: there will probably be an AWS Bites episode about SOCI soon, so stay tuned there if you are curious.) While reading about compressed layers, indexes and lazy loading, I started poking at my own understanding of Docker images. And I didn’t love what I found. I have been using Docker for years. I could happily tell you that “an image is made of a stack of immutable layers” and I would probably even draw you a nice diagram with some boxes stacked on top of each other. But …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://orlp.net/blog/two-stack-sliding-window-aggregation/">Two-Stack Sliding-Window Aggregation</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by fanf · orlp.net · <a class="discuss" href="https://lobste.rs/s/49glor/two_stack_sliding_window_aggregation">discuss</a>
+    </p>
+<p class="lede">An aggregation is some kind of summary of a set of data. This can be the sum, length, minimum, etc. It is quite common to want to calculate such a summary repeatedly, e.g. “the maximum noise level in dB for the past 30 seconds” for a nuisance detector. In such a case we say there is a sliding window over our data, and we want to aggregate over our window. If our aggregation is a binary operator with an inverse, like integer sums, there is a very easy solution using a double-ended queue: But what if our operator has no inverse? This is actually the case for most interesting summaries such as minimum, quantile, approximate unique count (for example using HyperLogLog ), etc. In fact, even something as simple as a floating-point sum suffers from the fact that floating-point addition is not …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yarchive.net/blog/plastics/">The characters of plastics (2024)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by thelastgallon · yarchive.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49941764">discuss</a>
+    </p>
+<p class="lede">“It’s made of plastic” is a common put-down. Marketers selling higher-end bits made of plastic (like gun parts) try to evade the stigma by calling it “polymer”, but that’s just a stupid euphemism: every plastic is a polymer, though not every polymer is a plastic. The word “polymer” says nothing to indicate that this might be a superior sort of plastic. Yet there are superior sorts; plastics vary widely in their characters. Some analogies between plastic and human characters: Polyethylene, polypropylene: Snow White (simple, pure, weak). These are the cheapest and most common plastics, and are made of just hydrogen and carbon atoms. Ethylene (two carbons and four hydrogens) is polymerized to make polyethylene, and the quantity of ethylene made each year is measured in cubic miles. They can …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.computerhistory.org/revolution/supercomputers/10/33/62">Watson Jr. memo about CDC 6600 (1963)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by mooreds · computerhistory.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49943685">discuss</a>
+    </p>
+<p class="lede">Watson penned this scathing memo asking how IBM lost “our industry leadership” to a company with “34 people, including the janitor.” Also known as &#34;The Janitor Memo,&#34; it shows the impact Control Data Corporation and its computers had on the leadership of IBM. Watson penned this scathing memo asking how IBM lost “our industry leadership” to a company with “34 people, including the janitor.” Also known as &#34;The Janitor Memo,&#34; it shows the impact Control Data Corporation and its computers had on the leadership of IBM.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://shannadige.com/_astro/hero-canisters.CByBbBgp_1mj5S6.jpeg" alt="Automating my 35mm film scanning pipeline" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://shannadige.com/blog/darkroom/">Automating my 35mm film scanning pipeline</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by shannadige · shannadige.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49946148">discuss</a>
+    </p>
+<p class="lede">A story about replacing a creative workflow and focusing on another. I love photography. There is a special feeling to seeing an image through a lens, organizing it to compose a story, and working with the resulting photo. I had cycled through DSLR and mirroless cameras before falling in deep love with the Canon AE-1P, an analog SLR that my dad traveled with around the world before settling down in the States. Film photography is simple, but particular: you expose reflected light against a strip of plastic and burn-in a chemical image. Depending on the light conditions, film stock used, and lens, you’ll get magically unique compositions. For years my process looked like this: load film and take photos, send the film to a lab and wait for development, pick up said film, cut the negatives …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-04-p4.html">‹</a><a href="2026-10-04.html">1</a><a href="2026-10-04-p2.html">2</a><a href="2026-10-04-p3.html">3</a><a href="2026-10-04-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-04-p6.html">6</a><a href="2026-10-04-p7.html">7</a><a href="2026-10-04-p8.html">8</a><a href="2026-10-04-p9.html">9</a><a class="pg-arrow" href="2026-10-04-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>131 stories · 8 cross-posts merged · 121 excerpts · 77 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

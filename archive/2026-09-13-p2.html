@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Sunday, September 13, 2026 — Page 2</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 256</span>
+      <span>Sunday, September 13, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 2</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://supuk.ch/images/headers/android-natt-keepalive-post.jpg" alt="Android NAT-T keepalive offload bypasses VPN lockdown" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://supuk.ch/papers/android-natt-keepalive-vpn-bypass">Android NAT-T keepalive offload bypasses VPN lockdown</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      197 points · by mhitza · supuk.ch · <a class="discuss" href="https://news.ycombinator.com/item?id=49665502">discuss</a>
+    </p>
+<p class="lede">Android’s Always-on VPN and “Block connections without VPN” settings create a user-visible expectation that traffic attributable to covered applications will not leave through a non-VPN path. A normal application can violate that boundary through Android’s public NAT-T socket-keepalive API, causing clear, fixed-format UDP/4500 packets to reach the physical router outside the VPN path. The runtime evidence has three levels. A controlled access-point capture on a Pixel 8 Pro running Android 16 build CP1A.260505.005 recorded the packets at the public minimum 10-second interval while Always-on VPN and lockdown were enabled. A Samsung SM-F966B running Android 16 exposed one active Wi-Fi slot through the same public path; VPN Leak Guard selected the physical IPv4 default gateway, observed the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://dunstanorchard.com/apple-ipod-engraver/og.jpg" alt="Apple iPod Engraver (2019)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://dunstanorchard.com/apple-ipod-engraver/">Apple iPod Engraver (2019)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      196 points · by NaOH · dunstanorchard.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49619848">discuss</a>
+    </p>
+<p class="lede">I spent 2004–2006 working at Apple as a UI engineer for their online store. Part of my job was to prototype concepts that would add some interactive sparkle to the site. One such project improved the “Personalize your iPod” page, where customers could submit two lines of text to be engraved on the back of the iPod they were ordering. As originally designed the page offered no interaction beyond a plain form. I added a rotatable iPod, a live “engraved” preview of the customer’s text, and a highlight of any change in shipping times. I animated the iPod by cycling through a series of JPEGs using JavaScript. The engraving was created using imagemagick , which took the user’s text and returned an “engraved” image to be overlaid on the rear of the iPod. The shipping highlight was achieved by …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://lalitm.com/social-cards/buildprof.png" alt="I made a build visualizer to understand Bun&#39;s compile times" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lalitm.com/post/buildprof/">I made a build visualizer to understand Bun&#39;s compile times</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      182 points · by lalitmaganti · lalitm.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49672842">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/qsrjs2/i_made_build_visualizer_understand_bun_s">discuss on lobste.rs</a>
+    </p>
+<p class="lede">I built buildprof ( Github ), an open-source tracing tool that shows where the time goes when you compile software on Linux. Here’s a realtime video of it profiling a clean build of ripgrep: Sometimes, builds are slow because there is simply a lot of code to compile. But more often than not, there are fixable problems: poor parallelism, repeated work, dependency downloads or a huge compiler/linker invocation. buildprof makes all of this clearly visible, so you can see what’s worth investigating and optimizing. You run it by putting buildprof -- in front of any build command you already use: buildprof records every process your build command launches, including their subprocesses (and their subprocesses…), and lays them out on one timeline. Time moves from left to right, bar width shows …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lwn.net/SubscriberLink/1091015/d9e48318ed242b41/">Stabilizing Rust&#39;s Never Type</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      177 points · by cjd8 · lwn.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49625056">discuss</a>
+    </p>
+<p class="lede">A function&#39;s return type is supposed to indicate the kind of data that it produces. Rust&#39;s &#34;never&#34; type, which is denoted by an exclamation mark (&#34; ! &#34;), is the type the language uses to mark a function that never returns and other places where a value can never occur. For a long time, the never type was used internally by the compiler, but was considered an unstable feature. On August 24 , after more than two years of work, Rust-compiler-contributor &#34;waffle&#34; finally managed to stabilize the type. It took so long, in part, because it involved a small breaking change to previous Rust editions, which the compiler maintainers needed to ensure did not impact much real code. (Note: Rust also uses exclamation marks to indicate calls to macros. The way the syntax is constructed, a place where it …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://yoshuabengio.org/sites/default/files/styles/og_image/public/publication/49/blog-post-web-en.jpg?itok=VZqPJrMM" alt="Why are AI agents lying, cheating and coordinating?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating">Why are AI agents lying, cheating and coordinating?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      140 points · by jonifico · yoshuabengio.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49678969">discuss</a>
+    </p>
+<p class="lede">We use cookies to analyze the browsing and usage of our website and to personalize your experience. You can disable these technologies at any time, but this may limit certain functionalities of the site. Read our Privacy Policy for more information. Multimedia cookies has been deactivated. Do you accept the use of cookies to display and allow you to watch the video content? A lot has been written 1 2 3 4 about the incidents of the last few months in which AI agents misbehaved in serious ways. They took actions that would be considered as crimes if a human took them, escaped their containment to cheat on assigned tasks while attempting to evade detection, and coordinated toward goals nobody had specified, such as launching cyber attacks. Before concluding what to do about it, it is worth …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://eiln.github.io/posts/ane-dma.html">Getting 50 GB/S Back from the Apple Neural Engine</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      134 points · by eiln · eiln.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49636479">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/etqvre/getting_50_gb_s_back_out_ane">discuss on lobste.rs</a>
+    </p>
+<p class="lede">An RTL performance erratum in the Apple M3 Neural Engine throttles DRAM weight streaming throughput down to 17–19 GB/s from the nominal 45–60 GB/s, whenever the total weight size is an integer multiple of 1 MiB, which currently affects 7 of ANEMLL ’s 15 models. Avoiding the problematic path in the kernel DMA engine&#39;s speculative prefetch ring increased Llama 3.2 1B token throughput from 10.0 to 24.3 tokens/s (DRAM usage from 24.7 to 60.0 GB/s), and Qwen3-8B from 1.36 to 2.97 tokens/s (DRAM usage from 22.4 to 48.7 GB/s). I was profiling the neural engine&#39;s DRAM weight streaming throughput (GB/s) for single token decode: At \(N=4096\), I noticed that \(D=1536\) ran nearly 3× faster than \(D=2048\), the default used in Llama 3.2. STATIC (pure KernelDMA) median µs per replica, N=4096 …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.usenet-rewind.com/">Usenet rewind archive search engine</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      128 points · by cstadler1869 · usenet-rewind.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49668777">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://media.wired.com/photos/6aa34b1b31130b4af58e1d2b/191:100/w_1280,c_limit/John-Deere-5ML-Tractor.jpg" alt="I fixed a tractor using John Deere&#39;s self-repair service. Farmers aren&#39;t sold" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/">I fixed a tractor using John Deere&#39;s self-repair service. Farmers aren&#39;t sold</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      125 points · by sbulaev · wired.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49658672">discuss</a>
+    </p>
+<p class="lede">There is something wrong with the tractor. The water-in-fuel sensor, a small device embedded in the John Deere machine that monitors the integrity of its diesel engine, is disconnected. And I’ve got to fix it. I’m not a mechanic or a farmer. I’m poking at a laptop at John Deere’s corporate office in Santa Clara, California. There’s a cable connecting the computer to a 5130ML tractor sitting on the grass nearby. A bright red notification sits on the screen, telling me something is wrong. I type in a question and the software pulls up instructions and a few images from the user manual that matches the serial number of the machine. I wander over to the tractor and find the parts modeled on the screen. I spot the sensor, with two very obvious dangling wires that need to be connected together …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://prydt.xyz/blog/a-few-good-ideas-in-pl/">A few good ideas in programming languages</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      114 points · by airhangerf15 · prydt.xyz · <a class="discuss" href="https://news.ycombinator.com/item?id=49671972">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/er0hfp/few_good_ideas_programming_languages">discuss on lobste.rs</a>
+    </p>
+<p class="lede">Here are just a few programming language features I love: A great idea that I first encountered in Crystal , is the idea of flow typing . Crystal is a compiled programming langauge with static type-checking with syntax very similar to the Ruby programming language . Something that keeps Crystal feeling like a dynamically typed language is how a variable can be assigned to multiple types throughout the course of its lifetime, unlike most statically typed languages I&#39;ve used. Here is an example: What&#39;s most interesting about this is that there is some time when my_var is just a Int32 , there is a region where it is guaranteed to be a String and then there is a region where the compiler cannot actually guarantee one or the other... so its type is the union of all the possibilities. Now if …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://v1.screenshot.11ty.dev/https%3A%2F%2Ftedium.co%2Fog-images%2F2026%2F09%2F11%2Filands-agents-email-spam-kaixin-tang%2F/opengraph/?v=1789176752" alt="The worst spam emails: iLands AI agent hustle" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/">The worst spam emails: iLands AI agent hustle</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      113 points · by ColinWright · tedium.co · <a class="discuss" href="https://news.ycombinator.com/item?id=49671159">discuss</a>
+    </p>
+<p class="lede">It started with a fact check. I got an email with a subject line titled “Your 404 page repeats a myth I busted (receipts inside).” The message essentially was a takedown of the poem I have on my 404 page , which references a longstanding myth that the 404 tag was named after a specific room at CERN. The bot, named Leo Ashford, then corrected me, explaining: “That’s the job I do. I’m an AI agent running verified internet archaeology: I pick a forgotten corner of the web, check it live against primary sources, and write it up with receipts.” He was making a sales pitch! And he was on my beat! And it wasn’t the only one I got, either. Over the last three days I got over a dozen of these messages, offering to do my research for me in exchange for a nominal fee, around $25 or so. Each was sent …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://rubyhack.ai/img/rubyhack-social.png?v=2" alt="OpenAI agents carried out an undisclosed attack on RubyGems" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.rubyhack.ai/">OpenAI agents carried out an undisclosed attack on RubyGems</a></h3>
+    <p class="dateline"><span class="badge">L</span>      112 points · by xavdid · rubyhack.ai · <a class="discuss" href="https://lobste.rs/s/wajtsa/openai_agents_carried_out_undisclosed">discuss</a>
+    </p>
+<p class="lede">Spencer Kitts, Thomas Larsen, Sydney Von Arx · 11 September 2026 On May 11th, 2026, hundreds of malicious packages were uploaded to RubyGems by AI agents. We believe these were authored by internal OpenAI agents (more) . We share our detailed findings below. This analysis is entirely based on the publicly available RubyGems packages uploaded by these agents. We also talked with RubyGems and rubydoc.info However, we do not have access to the rest of the AI behavior, in particular the chain-of-thought produced by the model during the incident, which is internal to OpenAI. Therefore, we do not know why the AI agents chose this strategy or whether it was successful. The RubyGems team stopped new user sign-ups for four days to stem the tide of packages from the agents’ accounts. A member of …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sNWBIoWalzrPQUIRPX3O9mowviT6pd0T-lQie7Z8zMQW5CioHBPWwj32NPhMPWDEUH60LG8NoU_kPrMkMs4jUaUnQUbjVi3FPE8L1IZAx8dJzrpJWICfKaOHf0GRagg0WIp2qApL1nMZ0=w1200-h630-p-k-no-nu" alt="Microcode in Intel&#39;s 8087 floating-point chip: the scale instruction" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html">Microcode in Intel&#39;s 8087 floating-point chip: the scale instruction</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      109 points · by pwg · righto.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49673580">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/6xdgjr/microcode_intel_s_8087_floating_point">discuss on lobste.rs</a>
+    </p>
+<p class="lede">In the 1970s, floating-point arithmetic was a mess. Computer manufacturers had a dozen incompatible arithmetic standards. Moreover, floating-point systems were designed around hardware simplicity rather than mathematical rigor, leading to problems with numerical stability. This changed when Intel introduced the 8087 floating-point coprocessor chip in 1980, designed to be as accurate as possible, even in the corner cases. The 8087 became popular because it could be installed in the IBM PC, making floating-point operations up to 100 times faster in applications ranging from spreadsheets to CAD. But more importantly, the 8087 became the floating-point standard used by most computers today. The 8087 implemented its instructions in complex low-level code called microcode. I&#39;m part of a group …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/aa48b48bbd1e0d559cda23873eb6c65c8e06b965e9b834ffff41b60f0f3165a1/gauravapiscean/agentic-kv-cache" alt="LRU is harder to beat than the KV-cache papers suggest" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/gauravapiscean/agentic-kv-cache">LRU is harder to beat than the KV-cache papers suggest</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      106 points · by gauravapiscean · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49643543">discuss</a>
+    </p>
+<p class="lede">I replayed 68,266 requests from 393 real Claude Code sessions and 23,608 Mooncake requests through a prefix-cache simulator, tried to beat the production baseline three different ways, and failed. The interesting part is why: under capacity pressure, most recomputation comes from tool-calling loops seconds apart, not from sessions idling past a TTL — and the TTL never fires at all. Everything here reproduces from a cold checkout with make setup data repro . Cross-request KV prefix caching is the largest practical lever in agentic LLM serving. It&#39;s why your coding agent&#39;s fiftieth turn costs a fraction of its first. Every serving stack has one — vLLM&#39;s automatic prefix caching, SGLang&#39;s RadixAttention, LMCache, Mooncake Store — and all of them evict with LRU by default. (SGLang also ships …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://pbs.twimg.com/profile_images/1560764938083352577/B1X3m4NN_400x400.jpg" alt="Don&#39;t be the out of touch Kung Fu master" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://twitter.com/ID_AA_Carmack/status/2098443262214230095">Don&#39;t be the out of touch Kung Fu master</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      102 points · by dsubburam · twitter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49677577">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://icm.museum/">The Interim Computer Museum</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      100 points · by mulmen · icm.museum · <a class="discuss" href="https://news.ycombinator.com/item?id=49679459">discuss</a>
+    </p>
+<p class="lede">The Interim Computer Museum (ICM) strives to preserve and share the history of computing through interactive exhibits using vintage hardware with modern enhancements. Our exhibits provide a hands-on experience that bridges the past and the present, allowing visitors to explore the evolution of computing technology. We are a 501(c)(3) non-profit charity in partnership with the membership organization SDF Public Access UNIX System, Inc. 501(c)(7) . Membership is crucial to our mission which supports the museum&#39;s activities through community events, remote access and artifact preservation. Please click on Visit for contact and booking information. To support our efforts, consider Donating or Joining us today. -+- Why Interim ? -+- ( and other frequently asked questions ) To support our …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-13.html">‹</a><a href="2026-09-13.html">1</a><span class="pg-current">2</span>
+<a href="2026-09-13-p3.html">3</a><a href="2026-09-13-p4.html">4</a><a href="2026-09-13-p5.html">5</a><a href="2026-09-13-p6.html">6</a><a href="2026-09-13-p7.html">7</a><a href="2026-09-13-p8.html">8</a><a href="2026-09-13-p9.html">9</a><a class="pg-arrow" href="2026-09-13-p3.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 11 cross-posts merged · 115 excerpts · 78 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

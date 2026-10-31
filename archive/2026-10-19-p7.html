@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, October 19, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 292</span>
+      <span>Monday, October 19, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://anderegg.ca/img/logo.png" alt="What the heck is /pkg?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://anderegg.ca/2026/10/18/what-the-heck-is-pkg">What the heck is /pkg?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by trousers · anderegg.ca · <a class="discuss" href="https://lobste.rs/s/w6xosj/what_heck_is_pkg">discuss</a>
+    </p>
+<p class="lede">Recently, while troubleshooting a PATH issue, I noticed an entry for /pkg/env/global/bin . At first, I worried that something had gone horribly wrong. Turns out, this is part of macOS 27.0… though no one is sure what it’s for yet. First, some background. Since Mac OS X 10.5 in 2007, the OS has included a path_helper utility. This reads entries from /etc/paths as well as from any files in the /etc/paths.d directory. While one could potentially take advantage of this system, I (and I’d guess most others) handle adding new PATH entries using the .zshrc file , or similar. The path_helper utility seems to be primarily used by Apple. In macOS 10.15, an entry was added to /etc/paths.d to support the new location of the rvictl utility . In macOS 13.3, Apple added some new entries to support …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://darwinsys.com/blog/20260925-hp-envy-17/">Un-hanging the HP Envy 17-DA0013dx for OpenBSD</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by zk · darwinsys.com · <a class="discuss" href="https://lobste.rs/s/gl8yly/un_hanging_hp_envy_17_da0013dx_for_openbsd">discuss</a>
+    </p>
+<p class="lede">I recently acquired a lightly-used HP Envy 17&#34; laptop, model DA0013dx, and of course wanted to run OpenBSD on it. It came with Windows 11 on an internal NVME drive. Booting OpenBSD from a USB device failed fast: it hung. To get there, first of course I had to disable &#34;secure boot&#34; in the BIOS. Then, the boot process hung part way through the device probe section of the boot process. Familiar to BSD users since 1979, probing is where the OS tries every device it knows about and, if the device responds appropriately, marks it active and prints a short message on the console. Other OSes go through the same process, but the three mainstream OSes simply choose to hide it under a GUI. Both Linux and macOS have a Unix-derived dmesg command which prints the messages that are hidden at boot. On …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://crystl.dev/og.png?v=3" alt="Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://crystl.dev/guides/tmux-for-ai-agents/">Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by ankitg12 · crystl.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50148855">discuss</a>
+    </p>
+<p class="lede">tmux runs your AI coding agents in named, detachable sessions that survive a closed terminal or a dropped SSH connection. You get one window holding many agents, send-keys to type into any of them from a script, and capture-pane to read one back. That combination is why people use it. Before you build any of it by hand, check the built-in path: recent versions of Claude Code can create the worktree and the tmux session for you with claude --worktree --tmux . This guide covers that first, then everything it doesn’t reach, then the point where tmux itself stops. A coding agent is a long-running process that wants to keep talking to a terminal. Three properties of tmux match that shape: It survives disconnection. The tmux server owns the pty, not your terminal window. Close the window, lose …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.basis.ai/ship-your-interpreters/pipeline_v1.png" alt="Ship Your Interpreter" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.basis.ai/blog/ship-your-interpreters/">Ship Your Interpreter</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by edoput · basis.ai · <a class="discuss" href="https://lobste.rs/s/rtd5gq/ship_your_interpreter">discuss</a>
+    </p>
+<p class="lede">LLMs are growing alarmingly capable at finding and exploiting bugs in production software, with increasing reports of AI-assisted hacks in the wild. Fortunately, LLMs are advancing quickly in their ability to write verified software : programs that come with mathematical proofs, checked by a computer, that rule out entire classes of bugs. In April, our agents built a JavaScript-to-WebAssembly compiler but could not prove that it preserved program behaviour. Months later, our agents verified Linux’s nftables compiler , which translates firewall rules into instructions the kernel executes. In September, MIT researchers Frans Kaashoek and Nickolai Zeldovich used AI agents to verify the xv6 operating-system kernel down to its machine code. Our goal at Basis is to develop verification methods …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!ybEt!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fab43bde7-d415-4d3d-9019-d682641024d6_723x443.png" alt="How to Train Your Robot" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.construction-physics.com/p/how-to-train-your-robot">How to Train Your Robot</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by crescit_eundo · construction-physics.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50104874">discuss</a>
+    </p>
+<p class="lede">The enormous advance in AI capabilities over the last several years has in large part been driven by the availability of vast amounts of training data. Gwern’s influential 2020 essay “ The Scaling Hypothesis ,” written after the release of GPT-3, argues that recent advances in AI have been the result of scale: bigger models, bigger datasets, and more compute spent training them. Gwern writes: The scaling hypothesis regards the blessings of scale as the secret of AGI: intelligence is ‘just’ simple neural units &amp; learning algorithms applied to diverse experiences at a (currently) unreachable scale. As increasing computational resources permit running such algorithms at the necessary scale, the neural networks will get ever more intelligent. Likewise, pseudonymous AI researcher …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/fd5f7396c45d0867400f9608db783d1dc904fb0664e2419275117f49bb1ab00c/electric-dragon-80000v/pi-cowboy" alt="Show HN: Pi-cowboy – use Codex, Claude Code, OpenCode as subagents" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/electric-dragon-80000v/pi-cowboy">Show HN: Pi-cowboy – use Codex, Claude Code, OpenCode as subagents</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by suoloordi · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50142277">discuss</a>
+    </p>
+<p class="lede">pi-cowboy is a multi-agent orchestrator for pi . Break a large job into focused subtasks, hand them off to background agents running in parallel, and consolidate them when they finish. Each agent runs in its own terminal pane inside Herdr and works in an isolated copy-on-write Git worktree. You can watch agents work in real time, jump into any pane to steer them, or mix and match harnesses like Pi, Claude Code, OpenCode, and Codex in the same session. When the work is finished, pi-cowboy cleans up the leftovers for you. Give each agent a smaller, isolated subtask. A single task with clear instructions leaves little room for error, whereas a long list of expectations invites drift and over-engineering. Because each agent commits to its own branch, you can review and merge each subtask on …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="http://bs.ell.dev/">Show HN: Bullet Script (bs) – a Lisp(y) VM for shmup bullet patterns</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by ellg · bs.ell.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50144805">discuss</a>
+    </p>
+<p class="lede">Scripts read these with (input &#39;var1 default) . Unset vars use the default. How many paths it keeps each tick and how far ahead it looks for bullets. More finds more, slower. Any symbol works as a kind. Unknown ones draw as &#39;bullet ; &#39;emitter draws nothing. Click to insert.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yila.ai">Show HN: Yila – A Codex for Scientific Research</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by blacktechnology · yila.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50148356">discuss</a>
+    </p>
+<p class="lede">Trusted by researchers at institutions around the world Upload a CSV or XLSX and Yila profiles the data first, chooses an analysis path for your question, and returns clear results, professional charts, and reusable files. Upload a CSV or XLSX and Yila profiles the data first, chooses an analysis path for your question, and returns clear results, professional charts, and reusable files. Describe a mechanism, workflow, or scientific concept and quickly generate a polished figure for papers and academic slides, ready for further refinement. Describe a mechanism, workflow, or scientific concept and quickly generate a polished figure for papers and academic slides, ready for further refinement. Yila searches and reads 50+ full papers, compares methods, findings, and evidence strength, then …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://abolish-ai.net/abolish-ai-a-manifesto/">Abolish AI! Manifesto</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by janus · abolish-ai.net · <a class="discuss" href="https://lobste.rs/s/1kesjm/abolish_ai_manifesto">discuss</a>
+    </p>
+<p class="lede">‘AI’ is not a neutral tool. It is a tool of a society that has given up. By its developers’ own admission, ‘AI’ is meant to enable control of population that subverts, and overpowers, all existing political apparatuses, and which, by design, is meant to substitute people’s capacity to make their judgements. If anyone is deluded in their misplaced optimism, it’s the ‘AI’ users and promoters who think they can plug themselves into this massive thing and use it to their advantage, without being dominated by it , not us who recognise that ‘AI’ can (and must) be abolished. If we muster just a fraction of the faith that ‘AI’ boosters allocate to ‘AI’, and put this faith into a revolutionary project instead, that would be enough to change the world. We just need to convincingly argue for such a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://shkspr.mobi/blog/2026/10/some-thoughts-on-unit-testing-activitypub/">Some quick thoughts on Unit Testing ActivityPub</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by hongminhee · shkspr.mobi · <a class="discuss" href="https://lobste.rs/s/gwuebx/some_quick_thoughts_on_unit_testing">discuss</a>
+    </p>
+<p class="lede">I&#39;ll be radically honest here - I never really got the idea of &#34;Test Driven Development&#34;. I&#39;m much more of a &#34;telnet into production and damn the consequences&#34; kind of guy. Look, it&#39;s much more fun and my cardiologist recommends severe shocks every now and again. The essence of unit testing is pretty simple: Send it good data and if it returns &#34;true&#34; the test passes. Send it bad data and make sure it returns false. Easy peasy lemon squeezy. As part of my NLnet funded work on ActivityBot , I&#39;m writing some proper tests for my bot framework. I am hopeful that some of them will be useful to other projects doing similar things. There are four major classes of tests - here are the problems I&#39;ve found while writing them. A basic test might be how to validate that an ActivityPub username is …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.seangoedecke.com/what-requirements-dont-you-have/">What requirements don&#39;t you have?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by nolan · seangoedecke.com · <a class="discuss" href="https://lobste.rs/s/nuepys/what_requirements_don_t_you_have">discuss</a>
+    </p>
+<p class="lede">When designing software, the requirements you don’t have are as important as the requirements you do. Identifying what you can compromise on — what can be slow, or stale, or inflexible — is usually the key to an elegant design. For instance, take preforking web servers like Unicorn . Because they lack the feature of shared mutable state between server instances, they can run each server in its own process, which provides isolation for free. Because Unicorn specifically ignores the problem of slow client handling 1 , it can queue requests directly on Unix sockets, drastically simplifying the implementation. Because S3 does not support atomic multi-key updates — you cannot update multiple blobs in a single transaction — it can store data at the blob level however it chooses. That makes it …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://johnzanussi.com/_astro/cover-weather.BLi9QVef_1voTRn.jpeg" alt="Show HN: My Personal Weather Station" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://johnzanussi.com/weather">Show HN: My Personal Weather Station</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by johnz · johnzanussi.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50147671">discuss</a>
+    </p>
+<p class="lede">This data comes straight from a weather station on the roof of my house. I’ve always been interested in the weather. It started with growing up surfing on Long Island. While we do get quality surf conditions, it doesn’t happen nearly as often as somewhere like Southern California, and most of our waves depend on fairly local weather instead of swell from thousands of miles away. Before sites like Surfline.com made condition reports and live camera feeds easy to check, we had to figure out wave quality from raw data. The National Weather Service has a network of weather reporting buoys , and the page for our local buoy, 44025 , is probably one of the pages I’ve visited most in my life. Checking swell height, swell period, and wind direction was how we decided whether it was worth driving …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://plfa.github.io/">Programming Language Fundamentals in Agda</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by solomon · plfa.github.io · <a class="discuss" href="https://lobste.rs/s/dtwbpu/programming_language_fundamentals_agda">discuss</a>
+    </p>
+<p class="lede">This book is an introduction to programming language theory using the proof assistant Agda. Comments on all matters—organisation, material to add, material to remove, parts that require better explanation, good exercises, errors, and typos—are welcome. The book repository is on GitHub . Pull requests are encouraged. There is a private repository of answers to selected questions on github. Please contact one of the authors if you would like to access it.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/-0D0rFdU6HY/maxresdefault.jpg" alt="Real-time Software On Linux: How Hard Can It Be?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=-0D0rFdU6HY">Real-time Software On Linux: How Hard Can It Be?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by leela · youtube.com · <a class="discuss" href="https://lobste.rs/s/jp6tfb/real_time_software_on_linux_how_hard_can_it">discuss</a>
+    </p>
+<p class="lede">From Software You Can Love Vancouver 2026 https://softwareyoucan.love</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://mbork.pl/2026-10-17_Using_timers_to_perform_weekly_tasks">Using timers to perform weekly tasks</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by 7tehdt3cnw6kir6o · mbork.pl · <a class="discuss" href="https://lobste.rs/s/u8vxmz/using_timers_perform_weekly_tasks">discuss</a>
+    </p>
+<p class="lede">There are some things I do on a regular basis, and of course I try to automate as much as possible so that I don’t need to remember them. One of these things is a weekly review. A part of my weekly review is checking how much time I’d spent on various things during the past week. Of course, I use Org-mode clock tables for that. I have this piece of Elisp which updates all clock tables in the current buffer, and I run it in the Org file before I start my review. However, this takes some time (slightly less than a minute, but still). My usual procedure is that I evaluate that form some time after I get up on Sundays (I do my review on Sunday morning), then I go to the bathroom or something, and when I’m back, my clock tables are updated. I thought that it would be cool if Emacs did it …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-19-p6.html">‹</a><a href="2026-10-19.html">1</a><a href="2026-10-19-p2.html">2</a><a href="2026-10-19-p3.html">3</a><a href="2026-10-19-p4.html">4</a><a href="2026-10-19-p5.html">5</a><a href="2026-10-19-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-10-19-p8.html">8</a><a href="2026-10-19-p9.html">9</a><a class="pg-arrow" href="2026-10-19-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 7 cross-posts merged · 123 excerpts · 79 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

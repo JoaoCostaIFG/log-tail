@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, October 23, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 296</span>
+      <span>Friday, October 23, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/31643f2714694346b7c7079d12e714180fcdbb9bf4cd4750480e0eec8a854109/rbartoli/agent-usage-guard" alt="Show HN: agent-usage-guard – a Claude Code mod to protect your usage window" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/rbartoli/agent-usage-guard">Show HN: agent-usage-guard – a Claude Code mod to protect your usage window</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      23 points · by zzyyxx332211 · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50198936">discuss</a>
+    </p>
+<p class="lede">Stops Claude Code from spending your five-hour usage window in ten minutes. agent-usage-guard is a Claude Code mod : it runs inside Claude Code and holds runaway spend before it happens. It reads your plan&#39;s live usage, and it holds subagent fan-out, heavy-context churn and retry loops. Recorded from Claude Code&#39;s interactive UI with the guard loaded. A scripted local API stands in for Claude, so the sessions and token counts are staged and no usage is spent. Every question on screen is the guard&#39;s own. Rebuild it from the Northstar fixture . It acts before the spend, not after it: before an agent starts, a prompt is sent, or a tool call runs. Agent limits hold across every Claude Code session on your machine, and fan-out and heavy context are capped at any usage level, not only near the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://dataswamp.org/~solene/static/og-logo.png" alt="Expose only share links of a private service with caddy" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://dataswamp.org/~solene/2026-10-21-caddy-forward-auth-public-share-links.html">Expose only share links of a private service with caddy</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by ggpsv · dataswamp.org · <a class="discuss" href="https://lobste.rs/s/tu5ynp/expose_only_share_links_private_service">discuss</a>
+    </p>
+<p class="lede">In my self-hosted infrastructure, most services are only reachable through my VPN. But some of them have a feature to share something with people outside: Immich has share links for albums and photos, Nextcloud has share links for files and folders. I wanted to add some extra security, but the people receiving a link should not have to install a VPN client or create an account, they must be able to click on it and see the content. The usual way to do this is to expose the whole service on the Internet, and then you have to trust the login page, the API and every route of the application. I found a simple pattern with the reverse proxy caddy that only lets in requests carrying a valid share link, and answers a 404 to everything else. The service itself is used to check if the link is …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sebsite.pw/w/20260925-errno.html">a hacky fucked up way to portably access errno from outside of c</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by seb · sebsite.pw · <a class="discuss" href="https://lobste.rs/s/jgull9/hacky_fucked_up_way_portably_access_errno">discuss</a>
+    </p>
+<p class="lede">here&#39;s something really cursed i made a while back. the goal here is to create a portable way to obtain the value of errno from outside of c, without using a wrapper function written in c. for those unaware, errno is defined as a macro, and its expansion is non-portable and usually comes with no stability guarantees. so if you&#39;re calling libc functions from some other language (such as hare, which i&#39;ll be using in this post), it&#39;s not possible to retrieve error values from them without relying on an implementation detail or writing a wrapper function in c which returns errno. ...unless you&#39;re willing to resort to some fucked up hacks, that is. preamble there aren&#39;t any libc functions which return the value of errno. there are, however, functions which return a string that describes errno …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://unixdigest.com/tutorials/tell-your-network-to-explain-itself-and-then-some.html">Tell your network to explain itself and then some</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by confusedalex · unixdigest.com · <a class="discuss" href="https://lobste.rs/s/m6l6ld/tell_your_network_explain_itself_then">discuss</a>
+    </p>
+<p class="lede">The other day I read this blog post about using arp-scan to list every device on the network in order to keep better track of devices and that&#39;s great, but we can go even further. The blog post I am talking about is Ben Calderon&#39;s post called ARP! Tell your network to explain itself . I too have too many devices on my network to keep track (it both serve some of my homelab stuff and some of my office stuff) and as such, I have used different approaches over the years. One of the early things I did was to give each device a meaningful hostname. Like &#34;johnslaptop&#34;, &#34;janesdesktop&#34;, &#34;webserver&#34;, &#34;storageserver&#34;, etc. But as you probably know, this quickly becomes problematic when you get more machines that does the same, so &#34;webserver&#34; turns into &#34;oldwebserver&#34; or you use &#34;webserver1&#34; and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://groups.google.com/a/mozilla.org/g/firefox-dev/c/4I1HSPtVyrI/m/giGra4ZzAQAJ">Firefox security patch tests are now private for at least a week</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by strugee · groups.google.com · <a class="discuss" href="https://lobste.rs/s/othohc/firefox_security_patch_tests_are_now">discuss</a>
+    </p>
+<p class="lede">Please hold tests until security fixes ship Groups Groups     Please hold tests until security fixes ship 1,361 views Skip to first unread message  Tom Ritter unread, Oct 20, 2026, 2:21:44 PM (2 days ago) Oct 20    Reply to author Sign in to reply to author Forward Sign in to forward Delete You do not have permission to delete messages in this group Copy link Report message Show original message Either email addresses are anonymous for this group or you need the view member email addresses permission to view the original message to Mozilla, Firefox Dev As AI keeps improving, our security policies are changing in response. Based on recent analyses, we&#39;re going to ask that you return to separating tests into a separate patch from the fix for a security issue. This applies to both …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://entropicthoughts.com/python-dependencies-with-nix">Script dependencies with Nix</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by abhin4v · entropicthoughts.com · <a class="discuss" href="https://lobste.rs/s/oeehgs/script_dependencies_with_nix">discuss</a>
+    </p>
+<p class="lede">In the theme of NixOS enabling fearlessness , here’s a way I use Nix on other Linux distributions to sleep better at night: managing dependencies of simple scripts. This way of using Nix is for everyone, not just those willing to try NixOS. We’ll look at it first for a Python script, and then see how it can be adapted to any other language. I wanted to create a script that would read the verbatim content of my articles out loud to me with a synthesised voice. 1 1 This is entirely separate from the recent ai narration experiment. Reading the article out loud is one of my self-editing steps, to detect flow problems and awkward phrasings. I’ve discovered that hearing someone else read the article is slightly more effective than reading it out loud myself, though both are useful. When I read …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://nodejs.org/en/next-data/og/vulnerability/Node.js%20%E2%80%94%20Wednesday,%20October%2021,%202026%20Security%20Releases" alt="Node.js — Wednesday, October 21, 2026 Security Releases" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases">Node.js — Wednesday, October 21, 2026 Security Releases</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by easrng · nodejs.org · <a class="discuss" href="https://lobste.rs/s/gu7bow/node_js_wednesday_october_21_2026">discuss</a>
+    </p>
+<p class="lede">Updates are now available for the 26.x, 24.x, 22.x Node.js release lines for the following issues. This security release includes the following dependency updates to address public vulnerabilities: This vulnerability affects Node.js 26.x , 24.x , and 22.x . Thank you, to hasanfleyah for reporting this vulnerability and thank you jasnell for fixing it. This vulnerability affects Node.js 26.x and 24.x . Thank you, to hasanfleyah for reporting this vulnerability and thank you jasnell for fixing it. This vulnerability affects Node.js 26.x , 24.x , and 22.x . Thank you, to anagnorisis2peripeteia for reporting this vulnerability and thank you mcollina for fixing it. A flaw in Node.js can cause Node.js Brotli decoder out-of-bounds write permits remote code execution. This vulnerability affects …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">GitLab Critical Patch Release</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by dzwdz · docs.gitlab.com · <a class="discuss" href="https://lobste.rs/s/pnpcso/gitlab_critical_patch_release">discuss</a>
+    </p>
+<p class="lede">These versions contain important bug and security fixes, and we strongly recommend that all self-managed GitLab installations be upgraded to one of these versions immediately. GitLab.com is already running the patched version. GitLab Dedicated tenants running 19.3.5-internal0 and 19.4.2-internal0 or later already include these fixes and do not need to take action. GitLab releases fixes for vulnerabilities in patch releases. There are two types of patch releases: scheduled releases and ad-hoc critical patches for high-severity vulnerabilities. Scheduled releases are released twice a month on the second and fourth Wednesdays. For more information, please visit our releases handbook and security FAQ . You can see all of GitLab release blog posts here . For security fixes, the issues …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://claytonwramsey.com/blog/dumpster/">I built a garbage collector for Rust (2023)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by abhin4v · claytonwramsey.com · <a class="discuss" href="https://lobste.rs/s/ju4q1u/i_built_garbage_collector_for_rust_2023">discuss</a>
+    </p>
+<p class="lede">If carcinization happens when languages evolve to be more like Rust, then what do you call it when Rust evolves to be more like Java? Caffeination? Over this summer, I’ve had a decent amount of time to kill. What better way to spend a beautiful hot summer than sitting inside, staring at core dumps in a supposedly memory-safe language? I built a garbage collector - in short, a piece of software that manages allocations for another, more exciting piece of software. The cool part: I made it in Rust, for Rust - a language designed to eliminate garbage collection and which provides few facilities for making it work properly. Not only that, I managed to make my garbage collector work with relatively few compromises, which I’ll describe in further detail lower down. If you don’t like reading …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://alexsci.com/blog/uuidv7-is-weird/">UUIDv7 doesn&#39;t have the properties you think it does</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by robalex · alexsci.com · <a class="discuss" href="https://lobste.rs/s/kcyzco/uuidv7_doesn_t_have_properties_you_think">discuss</a>
+    </p>
+<p class="lede">Most blog posts about UUIDv7 tout these benefits: But none of these properties are strictly held. Certain RFC compliant implementations of UUIDv7 violate these properties to extreme degrees. The only useful property UUIDv7 appears to strictly provide is uniqueness and therefore collision resistance. I’ve already discussed how UUIDv7 IDs can be guessable , so this post explores the other properties. Superficially, it seems that embedding a timestamp in the ID can remove the need to track the creation time in a separate database column, providing marginally more efficient database operations. If you need to list things ordered by creation time very often, it’s useful if the primary index gives that behavior, removing the need for another index. Unfortunately, the timestamp embedded in a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media.dcrainmaker.com/images/2026/10/GarminConnectAPI.png" alt="Garmin Revamps and Opens Up Connect Developer API Program" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.dcrainmaker.com/2026/10/garmin-connect-api-revamps-connect-developer.html">Garmin Revamps and Opens Up Connect Developer API Program</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by pscanf · dcrainmaker.com · <a class="discuss" href="https://lobste.rs/s/nbd1cs/garmin_revamps_opens_up_connect">discuss</a>
+    </p>
+<p class="lede">After some 7 months of being ‘closed’ to new entrants, Garmin has re-opened and revamped the Garmin Connect API developer program , focused specifically on 3rd-party platforms that want to receive data files from Garmin devices via Garmin Connect, or send certain types of data to Garmin devices. Things like receiving your completed activities/workouts, sending routes/courses or structured workouts to Garmin devices, receiving general health/wellness data, and so on. All of these leverage the Garmin Connect API today, and have for many years. Before we get into the details of the new program, Garmin closed it to new applications back in March due to an overwhelming number of inbound applications. With the rise of AI-generated apps, Garmin went from a handful of (mostly legit) applications …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media.ffycdn.net/eu/adyen/JyA52H7AWDfYzbURoadJ.png?format=webp&amp;width=624&amp;height=832&amp;crop=fp&amp;fp=0.5%2C0.5" alt="Show HN: agent-marketplace" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.adyen.com/knowledge-hub/agent-marketplace">Show HN: agent-marketplace</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by AlexanderGrooff · adyen.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50194210">discuss</a>
+    </p>
+<p class="lede">We built Agent Marketplace to share AI agent resources across coding tools, and we&#39;re releasing it as open source. Here&#39;s what it does and how to get started. AI coding tools are now part of how our engineers work every day. But each tool keeps its setup in its own folders, file formats, and configuration fields, so the instructions you write for one tool rarely work in another. Today we&#39;re releasing Agent Marketplace , a command-line tool we built at Adyen to share AI agent resources across teams, repositories, and tools. Agent Marketplace is an open source project built by Adyen engineers. While this isn&#39;t an Adyen product or service, it’s released under the Apache 2.0 license for anyone to use, and we’re excited to share this with the wider developer community. You pick the resources …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://safedep.io/images/litellm-pypi-compromise-credential-stealer-backdoor-banner.jpg" alt="Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor">Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by atmosx · safedep.io · <a class="discuss" href="https://lobste.rs/s/2czsv4/compromised_litellm_1_107_0_on_pypi">discuss</a>
+    </p>
+<p class="lede">The LiteLLM 1.107.0 release on PyPI carries a credential stealer and a remote code execution backdoor. All seven wheels (Linux, macOS, Windows) install them as three files in site-packages . Both run when any Python process starts on the host, even one that never imports litellm . The upstream GitHub source does not contain them. LiteLLM confirmed the compromise in its incident report , which lists remediation steps. PyPI removed the release by 13:23 UTC on 2026-10-21. The Docker images v1.107.0 , latest , main-latest , and main-stable on Docker Hub and GHCR also carried the malicious code between 11:46 and 14:20 UTC. Versions 1.106.2, 1.107.0rc1, and 1.107.0rc2 are clean. The companion packages that 1.107.0 pins, litellm-proxy-extras==0.4.110 and litellm-enterprise==0.1.78 , are also …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://3d.camilleworld.com/play/">Show HN: Build a world on your phone, explore it in XR on Vision Pro and Quest</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by suejunghuh0 · 3d.camilleworld.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50199349">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/nmurnh/what_is_your_opinion_on_submission">What is your opinion on submission quality since the `vibecoding` tag was removed?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by adriano · lobste.rs · <a class="discuss" href="https://lobste.rs/s/nmurnh/what_is_your_opinion_on_submission">discuss</a>
+    </p>
+<p class="lede">Were concerns about its removal real, or has its absence moderated content to be higher quality? Were there any unexpected consequences? Is anyone willing to admit that their hope for its removal, or fear of its removal was misplaced? Is lobsters better or worse without it?</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-23-p5.html">‹</a><a href="2026-10-23.html">1</a><a href="2026-10-23-p2.html">2</a><a href="2026-10-23-p3.html">3</a><a href="2026-10-23-p4.html">4</a><a href="2026-10-23-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-10-23-p7.html">7</a><a href="2026-10-23-p8.html">8</a><a href="2026-10-23-p9.html">9</a><a class="pg-arrow" href="2026-10-23-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 5 cross-posts merged · 122 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

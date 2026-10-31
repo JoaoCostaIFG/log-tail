@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, October 27, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 300</span>
+      <span>Tuesday, October 27, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://t3x.org/lisp64k/index.html">LISPy things you can do in 64K bytes of core (2019)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      58 points · by andsoitis · t3x.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50231041">discuss</a>
+    </p>
+<p class="lede">where &#34;in 64K bytes&#34; shall mean 64K bytes for the LISP system, the runtime stack, and the cons pool! This is the amount of space your LISP system would get on a basic DEC PDP-11 or in a tiny-model PCDOS program. It is probably a little less space than the first implementations of LISP could use. The IBM 704 electronic data processing machine at M.I.T., on which LISP was first implemented in 1960, had 32K words of 36-bit core memory, [1] which in this case really means one tiny ferrite ring per bit. So there was a total of 36×32768=1,183,608 tiny little toroids housed in a not so tiny steel frame. The 704 required a rather spacious room with reinforced floors and industrial air conditioning. The total weight of a typical installation was around 10 metric tons. The LISP system itself …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://fishbowl.pastiche.org/2026/10/26/ai-skills">“AI Skills” are worthless in 2026</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      57 points · by saikatsg · fishbowl.pastiche.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50255346">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/x1s5oq/ai_skills_are_worthless_2026">discuss on lobste.rs</a>
+    </p>
+<p class="lede">When I was first learning the C programming language, in my early 20s, it was common knowledge that of the two ways to increment a variable, i++ was slower than ++i . The post-increment function returned the original value of i , which meant stashing a copy of that value before performing the increment. Pre-increment avoided this wasteful operation. And by “common knowledge” I really mean folklore, because I turned 20 in 1995 and even by then, the most basic of optimising compilers knew to check if you ever used the return value of i++ , and if not, skip the operation to save it. Scratch an old programmer and you&#39;ll probably find a dozen or so ingrained habits that, in an era where CPUs are doing branch prediction and code reordering, are just as likely to make their program slower. It …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://eliasfarhan.ch/graphics/cpp/2026/01/27/why-i-teach-opengles.html">I still teach OpenGL ES 3.0</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      55 points · by majorchord · eliasfarhan.ch · <a class="discuss" href="https://news.ycombinator.com/item?id=50253939">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/lfxzi1/why_i_still_teach_opengl_es_3_0">discuss on lobste.rs</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html">Writing about pratt parsing so I remember it</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      55 points · by dverlaeckt80 · unix.dog · <a class="discuss" href="https://news.ycombinator.com/item?id=50255177">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/mu3xcd/writing_about_pratt_parsing_so_i_remember">discuss on lobste.rs</a>
+    </p>
+<p class="lede">I got bored and wanted to make a parser of C expressions. this will probably become a compiler at some point. previously, I’ve made a calculator using shunting yard , but with an itch to perhaps make a compiler of some kind, I looked at pratt parsing . you won’t find much information about pratt parsing in a conventional learning path of computer science. the dragon book , for all it talks about parsing, doesn’t mention it. as far as I’m aware, most programming language courses will probably teach either LR or recursive descent depending on how academic it is (mine taught recursive descent). pratt parsing specifically appears to be relegated mostly to compiler development and PLT circles. the most mainstream mention I know of it is in crafting interpreters ; wikipedia also links a few …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bsandro.tech/posts/simple-netbsd-webserver/">Simple NetBSD webserver</a></h3>
+    <p class="dateline"><span class="badge">L</span>      54 points · by bsandro · bsandro.tech · <a class="discuss" href="https://lobste.rs/s/hzrmwz/simple_netbsd_webserver">discuss</a>
+    </p>
+<p class="lede">There might be time you want to have a sensible space in that untangible mess that is modern World Wide Web. The choices run slim and at some point there are ~three operating systems that you can trust having on your server 1 . I’ll describe here the quick and proven route for running a NetBSD 11 web server - the ‘stock’ way with bozohttpd that requires only one additional package for HTTPS 2 . It probably won’t do if you expect heavy traffic, but for homebrew projects and small scale communities it should do just fine. A VPS (or local machine or virtual machine) and a terminal emulator. Maybe web-browser to check the results (though curl is quite sufficient for that imo). I’m not affiliated but as far as recommendations go - I’m using netcup service, it looks okay. Not expensive and they …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://evancz.dev/why-is-it-so-expensive-to-send-an-email">Why is it so expensive to send an email?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      52 points · by wolfadex · evancz.dev · <a class="discuss" href="https://lobste.rs/s/ryjnyi/why_is_it_so_expensive_send_email">discuss</a>
+    </p>
+<p class="lede">Sending an email is essentially the same as making an HTTPS request. You open a TCP connection to port 25, you do a little SSL handshake, and you send some data through. Most personal computers out there can easily do this thousands of times per second, so how can companies charge $15 to send 1000 emails?! Why do I need some 3rd party company involved at all?! I used to work at Google specifically on GMail, and nothing from my little corner of the product on the “tabbed inbox” team led me to a clear answer... Unfortunately for me, I was determined to figure it out for myself! I mostly program with Haskell, and I call C code as necessary for things like OpenSSL and SQLite. I already had a setup for making HTTPS requests from my Haskell code with OpenSSL. I had code for working with HTTP …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://support.apple.com/en-us/149555">About the compromised eMudhra intermediate CAs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      52 points · by freddyb · support.apple.com · <a class="discuss" href="https://lobste.rs/s/xzp4m0/about_compromised_emudhra_intermediate">discuss</a>
+    </p>
+<p class="lede">Apple is blocking the compromised certificates automatically. Mac administrators can take optional steps for some command-line tools. Since 19 October 2026, Apple has been blocking the certificates of the compromised eMudhra intermediate Certification Authorities (CAs) that issue TLS certificates, and is making additional updates to this block. If you don&#39;t use Terminal as part of your workflow, you don&#39;t need to do anything. Your Apple devices now automatically block these certificates in Safari, Mail, and apps that use Apple&#39;s networking and security frameworks. If you use Terminal as part of your workflow (such as system administrators or developers), you might use command-line tools that can still accept these certificates. Some tools included with macOS or the Xcode Command Line …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://petapixel.com/assets/uploads/2026/10/sigma-fp2-featured.jpg" alt="Sigma Says the Compact, Modular FP2 Is the Ultimate Hybrid Camera" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://petapixel.com/2026/10/22/sigma-says-the-compact-modular-fp2-is-the-ultimate-hybrid-camera/">Sigma Says the Compact, Modular FP2 Is the Ultimate Hybrid Camera</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      49 points · by thm · petapixel.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50211780">discuss</a>
+    </p>
+<p class="lede">It’s been a long time since Sigma announced the fp , billed as the world’s smallest full-frame mirrorless camera. Much has changed in the industry since 2019, and now the Sigma FP2 is here with a fresh style to its model name and some new tricks up its sleeve. What hasn’t changed, though, is the megapixel count and the ultra-compact design. “The Sigma FP2 is a direct reflection of our unwavering commitment to optical excellence and our passion for meaningful engineering innovation,” says Mark Amir-Hamzeh, President of Sigma Corporation of America. “We listened closely to the feedback from our creative community — vloggers, podcasters, photographers, and filmmakers alike — to deliver an compromised hybrid tool built to handle the future of multi-platform storytelling,” Amir-Hamzeh …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://categorica.io/blog/2026.10.16_nginx-stats-prometheus/">Native Prometheus Integration with Nginx</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      47 points · by foxhill · categorica.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50213502">discuss</a>
+    </p>
+<p class="lede">NGINX has been the de-facto choice for a reverse proxy server for quite some time now. At Categorica, we too use NGINX for this purpose, along with more traditional web-content serving. Similarly, we rely on Prometheus to collect and Grafana to aggregate and display statistics on our active deployments. As it stands, there’s only really one choice for statistics &amp; metrics collection with NGINX: NGINX Prometheus Exporter , a fully featured Prometheus exporter. When it came to setting up our own metrics collection, there was something that just felt slightly off: Why does the metrics endpoint itself run its own web-server? In practise, this isn’t a big problem. Whilst it’s possible to deploy it as a systemd service (and hence just a regular binary), it is more typical to deploy NGINX …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://ca-times.brightspotcdn.com/dims4/default/64e287b/2147483647/strip/true/crop/2400x1260+0+0/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fdf%2F45%2F57d858144a2a88575fa2b03080bb%2Flatlogo-ss.jpg" alt="Virtual and Real World Combine at LAN Party (1998)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.latimes.com/archives/la-xpm-1998-aug-10-mn-11870-story.html">Virtual and Real World Combine at LAN Party (1998)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      44 points · by npunt · latimes.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50226808">discuss</a>
+    </p>
+<p class="lede">The moon hangs warm and fat in Costa Mesa, casting its midsummer light across the roof of a corporate office complex. Inside, Andrea Bruns squeezes through the sweaty chaos, edging past a couple grinding on the impromptu dance floor and the rows of men playing computer games. Flashing strobes and the glow of dozens of monitors cast psychedelic patterns of light across her pale face. Every month, Bruns grabs her computer out of her San Rafael apartment, crams it into her tiny black convertible and heads for Southern California. Her destination is the BeatDown, a monthly computer-game party that has hundreds of fans vying for an invitation. The protocol is simple: Bring cash, a personal computer and the desire to revel for up to 72 hours straight. “I can’t get this off the Internet,” said …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dl.acm.org/doi/10.1145/3830440.3832304">An incremental approach to JIT construction</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      42 points · by andsoitis · dl.acm.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50222794">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.gregoryalexander.com/blog/enclosures/facebook/phpBug.jpg" alt="Is PHP Running on Your ColdFusion Server? How to Check, and Remove It" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.gregoryalexander.com/blog/2026/10/23/is-php-quietly-running-on-your-coldfusion-server-how-to-check-and-remove-it">Is PHP Running on Your ColdFusion Server? How to Check, and Remove It</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      40 points · by rmason · gregoryalexander.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50252008">discuss</a>
+    </p>
+<p class="lede">If you run ColdFusion or Lucee on a Windows server with IIS, and you&#39;ve never installed PHP on purpose, this one&#39;s for you. There&#39;s a good chance PHP is on your server. It may be left behind by a control panel, a phpMyAdmin install from years ago, or your host&#39;s setup image. Here&#39;s how to find out in a few minutes with PowerShell, and how to remove it safely if nothing uses it. I remember when I could go years without applying a security fix. Now it feels like I&#39;m chasing something down every few weeks: a patch here, a mitigation there, a bot hammering a page that shouldn&#39;t exist. Such is life in the AI era, sigh. While I was signing in to my test blog the other day, the admin page refused me with a plain IIS error: 403 Forbidden , and a message saying multipart form-data requests were …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.militaryaviationmuseum.org/wp-content/uploads/P51-6.jpg" alt="World Wars I and II Military Aviation Museum Collection" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.militaryaviationmuseum.org/our-collection/">World Wars I and II Military Aviation Museum Collection</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      38 points · by NaOH · militaryaviationmuseum.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50214967">discuss</a>
+    </p>
+<p class="lede">The Museum’s oldest aircraft operate as part of our World War I collection. Flown alongside a number replicas built to original specifications, the restored originals, and aircraft flying with original engines provide a glimpse of the birth of air combat. Restored to wartime configuration and flying condition, our WWII aircraft are the heart of the collection. Counted among the collection are combat veterans, battlefield recoveries and survivors – flown continuously since the end of the war.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://ocdn.eu/pulscms-transforms/1/nNTktkpTURBXy8wMzZkZjViN2Q4YTdmZjkzYzhlMDhhYzRlYzkxYWNmNy5qcGeSlQMNAM0C_M0BrpMFzQSwzQJ2" alt="UK to charge universities $1,200 per international student" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://africa.businessinsider.com/local/markets/uk-to-charge-universities-dollar1200-per-international-student-including-those-from/qe5rqbe">UK to charge universities $1,200 per international student</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      37 points · by teleforce · africa.businessinsider.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50254935">discuss</a>
+    </p>
+<p class="lede">Universities in England will begin paying an annual levy of £925 ($1,200) for each international student beyond an exemption threshold from August 2028, introducing a new financial obligation for institutions recruiting students from countries including Nigeria, China, India, Pakistan and Bangladesh. First announced in the government&#39;s 2025 Budget, the International Student Levy has faced opposition from university leaders concerned about rising operating costs and declining overseas enrolment. However, the government reaffirmed its plans on October 19, 2026, when Education Minister Josh MacAlister told Parliament that the revenue would support England&#39;s higher education and skills system. Responding to a parliamentary question about the policy&#39;s economic justification, MacAlister said …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.sciencealert.com/images/2026/10/GettyImages-2280049531-2560x1440-1.jpg" alt="New &#39;Circadian&#39; Subtype of Depression Affecting 1 in 4 Patients" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.sciencealert.com/researchers-identify-new-circadian-subtype-of-depression-affecting-1-in-4-patients">New &#39;Circadian&#39; Subtype of Depression Affecting 1 in 4 Patients</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      35 points · by gmays · sciencealert.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50196212">discuss</a>
+    </p>
+<p class="lede">Many people with depression don&#39;t respond to existing treatments, and scientists think it might be because of the many different routes people can take to arrive at the same depressive symptoms. A new study found a quarter of patients fit into a &#39;circadian&#39; subtype of depression, arising from a state of perpetual jet lag. Led by psychiatry researchers Jacob Crouse and Ian Hickie, a team from the University of Sydney in Australia has published its findings in the British Journal of Psychiatry . Current clinical guidelines treat depression as one disorder. But Hickie and team believe that while depression may look similar for each patient, many different biological problems may be driving the symptoms. Most available treatments for depression assume the disorder is underpinned by anxiety …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-27-p3.html">‹</a><a href="2026-10-27.html">1</a><a href="2026-10-27-p2.html">2</a><a href="2026-10-27-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-10-27-p5.html">5</a><a href="2026-10-27-p6.html">6</a><a href="2026-10-27-p7.html">7</a><a href="2026-10-27-p8.html">8</a><a href="2026-10-27-p9.html">9</a><a class="pg-arrow" href="2026-10-27-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>129 stories · 9 cross-posts merged · 121 excerpts · 77 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, October 3, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 276</span>
+      <span>Saturday, October 3, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://loige.co/og/hidden-design-compromises-of-docker-layers.png" alt="The hidden design compromises of Docker layers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://loige.co/hidden-design-compromises-of-docker-layers/">The hidden design compromises of Docker layers</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by loige · loige.co · <a class="discuss" href="https://lobste.rs/s/uuu6us/hidden_design_compromises_docker_layers">discuss</a>
+    </p>
+<p class="lede">The other week I was looking into some Docker shenanigans, specifically SOCI (Seekable OCI). In a nutshell, SOCI builds an index of the contents of your container image layers, so that a container can start before the whole image has been downloaded, and the files it needs are lazily fetched as they are accessed. (Spoiler: there will probably be an AWS Bites episode about SOCI soon, so stay tuned there if you are curious.) While reading about compressed layers, indexes and lazy loading, I started poking at my own understanding of Docker images. And I didn’t love what I found. I have been using Docker for years. I could happily tell you that “an image is made of a stack of immutable layers” and I would probably even draw you a nice diagram with some boxes stacked on top of each other. But …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/9ddda03526b3d09fbfcf7825414b6aeeb10389d0b2a62122b8a8ab535c004f47/dtonon/outis" alt="Show HN: Outis – Fight AI spam by sending fake &#34;user unknown&#34; bounce emails" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/dtonon/outis">Show HN: Outis – Fight AI spam by sending fake &#34;user unknown&#34; bounce emails</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      14 points · by dtonon · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49934692">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/1h7qzj/outis_fight_ai_spam_by_generating_sending">discuss on lobste.rs</a>
+    </p>
+<p class="lede">Outis fights spam generating and sends a fake &#34;user unknown&#34; bounce for an email you received, so the sender believes your address does not exist. This should work well for the recent trend of AI-generated automated emails, where the sender may expect a reply; it helps to clean your email from their list. Outis (Οὖτις) is Greek for &#34;nobody&#34;. In the Odyssey, Odysseus gives it as his name to the Cyclops Polyphemus, so that when the blinded giant calls for help and shouts that &#34;Nobody&#34; is hurting him, the other Cyclopes leave. The tool does the same for your mailbox: it tells whoever is asking that there is nobody here. The bounce is an RFC 3464 delivery status notification modelled on Postfix: multipart/report with a human-readable part, a message/delivery-status part with status 5.1.1 …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://iea.blob.core.windows.net/assets/1c696cc3-e251-46a9-8d4d-9edb2a4e806a/Electrification.pdf">Electrification Special Report 2026 [pdf]</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by gmays · iea.blob.core.windows.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49921834">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://rahuljuliato.com/assets/blog/posts/emacs-rx-in-typescript-cover.png" alt="Readable Regular Expressions for JavaScript/TypeScript, Inspired by Emacs&#39; rx" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://rahuljuliato.com/posts/emacs-rx-in-typescript">Readable Regular Expressions for JavaScript/TypeScript, Inspired by Emacs&#39; rx</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by confusedalex · rahuljuliato.com · <a class="discuss" href="https://lobste.rs/s/3hdied/readable_regular_expressions_for">discuss</a>
+    </p>
+<p class="lede">That&#39;s the official regexp from semver.org . It validates version numbers like: Don&#39;t get me wrong, I love regexps, but in practice you probably spend a bunch of time writing one, testing it against some cases, and moving on, proud of your achievement! Some time passes and lucky future you (or unlucky someone else) has to change it. Dramatic pause here. I bet you&#39;ve been there. Now your options are probably: decode it again from the start, rewrite the whole thing, or, in the age of AI, ask (and hopefully not blindly accept) an LLM for a new recipe. Emacs has had a nice answer for more readable regexps for a long time: the rx macro. I started using it all the time in Emacs Lisp, as reviewers always suggested it to me. Later, I started missing this DSL in JavaScript and TypeScript, so I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/sequencehash-banner.png" alt="SequenceHash: multihashing for the rest of us" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/">SequenceHash: multihashing for the rest of us</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by sarciszewski · blog.trailofbits.com · <a class="discuss" href="https://lobste.rs/s/llnale/sequencehash_multihashing_for_rest_us">discuss</a>
+    </p>
+<p class="lede">Multihashing is one of those cryptographic tasks that’s easy not to think about too much. This is unfortunate, because multihashing is a common stumbling point when cryptographers try to use hashes. As part of our goal to “fix software, not bugs,” Trail of Bits is introducing SequenceHash and its sister function SequenceMAC , a pair of related hash constructions that bring secure multihashing to developers using hash functions other than Keccak. We hope SequenceHash and SequenceMAC will help cryptographers avoid attacks that take advantage of ambiguous input encodings. The specification is open source, and is now a part of the Community Cryptography Specification Project (C2SP). SequenceHash and SequenceMAC behave similarly to NIST’s TupleHash , but have the advantage of not being tied to …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://gvisor.dev/assets/logos/logo_solo_on_white_bordered.svg" alt="gVisor is being donated to CNCF" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://gvisor.dev/blog/2026/10/02/gvisor-cncf/">gVisor is being donated to CNCF</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by carlana · gvisor.dev · <a class="discuss" href="https://lobste.rs/s/asoxjl/gvisor_is_being_donated_cncf">discuss</a>
+    </p>
+<p class="lede">In 2018, Google open-sourced gVisor under the Apache 2.0 license. To the best of its contributors’ knowledge, it has ever since remained the second most mature implementation of Linux, after Linux. This year, the gVisor project is being donated to CNCF , and its governance model is shifting accordingly. Google is donating the gVisor project, including its name and trademarks, to the Cloud Native Computing Foundation (CNCF) , a subsidiary of the Linux Foundation . Like its name implies, CNCF is focused on cloud-native computing, with Google having seeded its creation by donating the Kubernetes project. Since then, Kubernetes has grown to become the industry-standard for container orchestration, and has grown a large and vibrant ecosystem around it. gVisor is now following the same …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://write.as/tmcb/thrust-vs-steer-or-yet-another-anecdotal-case-of-the-dunning-kruger-effect">Thrust vs. Steer (or: Yet Another Anecdotal Case of the Dunning-Kruger Effect)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by tmcb · write.as · <a class="discuss" href="https://lobste.rs/s/kp2tg8/thrust_vs_steer_yet_another_anecdotal">discuss</a>
+    </p>
+<p class="lede">Let me summarize something that happened to me in three acts: I am not denying that this was all my fault, and yet another case of PEBKAC (or, more specifically, PEBDAC). I was literally holding it wrong. This is yet another anecdotal case of a guy who thought he was savvy enough to figure things out by himself. Somehow, he did. But, occasionally, the jetpack will throw you against the neighbor&#39;s roughcast wall when all you want to do is cross the street.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/21b294fde6fe9b3b466257fc4c037b23e15b3aa8a48141c9068354cccae08f4e/enkiruntime/enki" alt="Show HN: Enki – Write GPU compute kernels in pure stable Rust" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/enkiruntime/enki">Show HN: Enki – Write GPU compute kernels in pure stable Rust</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by enki_runtime · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49937352">discuss</a>
+    </p>
+<p class="lede">Pure-Rust Heterogeneous GPU Compute Platform with Just-In-Time Compilation Write standard, idiomatic Rust functions and execute them natively across CPU cores or compile them just-in-time directly onto GPU silicon. No Nightly toolchains required. No foreign shading languages. No descriptor set juggling. Enki unifies host and accelerator execution. The showcase below demonstrates a real-time procedural 3D raymarching with smooth lighting, ambient occlusion, and mouse-driven orbital camera controls—compiled just-in-time from a single Rust function running on a potato GPU: Pressing SPACE dynamically switches execution between GPU silicon (Enki) and multi-threaded CPU cores (Rayon) in real time. Note: On your first build, Enki will prompt to automatically configure --emit=llvm-bc and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/17602e2fd17eda89e729505fc4a84628e2fb41d70f0737c50e735fec1cdd82c3/MaxwellVolz/hn_whos_hiring" alt="Show HN: Rank every HN &#34;Who is hiring?&#34; post against your resume, locally" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/MaxwellVolz/hn_whos_hiring">Show HN: Rank every HN &#34;Who is hiring?&#34; post against your resume, locally</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by intervolz · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49938748">discuss</a>
+    </p>
+<p class="lede">The thread gets hundreds of posts every month, and reading them all takes an evening. This reads every one, scores it against your resume and what you&#39;re looking for, explains each score, drafts the email, and fills in the application form. It runs on your machine, using your own Claude subscription. You need Python 3.10+ and Claude Code , installed and logged in ( claude on your PATH). Nothing to pip install , and no API key. Refresh again as the month goes on: only new or edited posts get scored. All model calls go through claude -p , so they use whatever Claude Code is logged in with: a Pro or Max subscription, an API key, Bedrock or Vertex. Nothing else is needed. Two buttons on each job put it in a queue: Queue Gmail draft + resume and Queue form prefill . Open Claude Code in this …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://gmapscrawl.com/images/social/og-image.png" alt="Show HN: Google Maps Scraper MCP" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://gmapscrawl.com/google-maps-scraper-mcp">Show HN: Google Maps Scraper MCP</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by qwikhost · gmapscrawl.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49940653">discuss</a>
+    </p>
+<p class="lede">Give your agent the same business data workflow you use in your workspace. Find businesses by keyword and location, with listing details your agent can organize and analyze. Read available addresses, contact details, ratings, and review counts in structured result pages. Receive up to 20 businesses in structured JSON for research and applications. Configure your client to use /api/mcp , then pass your API key in the authorization header. Streamable HTTP — your client handles protocol negotiation. Bearer API key authentication — configure secrets outside prompts. Keep your API key in a secure environment variable or your client’s protected input setting. Add this server to .mcp.json. Make GMSCRAPER_API_KEY available in the environment that launches Claude Code. Need step-by-step guidance? …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://grim.cargocut.org/a/rev-list.html">Lists that keep track of their reversal</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by xvw · grim.cargocut.org · <a class="discuss" href="https://lobste.rs/s/eqemtu/lists_keep_track_their_reversal">discuss</a>
+    </p>
+<p class="lede">Recently, we ( Cargocut , a collective enthusiastic and amused by the use of OCaml) released the nel package, a tiny library ( with a very modest API ) for describing non-empty lists (containing at least one element, for which the pair of functions hd/tl is total). The purpose of this data structure is to serve as an error buffer for our Pidgin library, in the context of applicative validation , ensuring that in the event of an error, we have at least one error (thanks to the semigroup nature of a non-empty list). Even though the implementation is very straightforward and naive: However, even though it is naively trivial, this data structure shows that sometimes we want to use something that looks like a list, but maintains more invariants (in this case, the presence of at least one …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/7Tr0ty9-yeQ/maxresdefault.jpg" alt="How to make a text box: A crash course in Unicode and OpenType" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=7Tr0ty9-yeQ">How to make a text box: A crash course in Unicode and OpenType</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by rrampage · youtube.com · <a class="discuss" href="https://lobste.rs/s/tslwlq/how_make_text_box_crash_course_unicode">discuss</a>
+    </p>
+<p class="lede">Jimmy Lefevre&#39;s talk at BSC 2026, walking through all the messy steps required to input, edit, and shape text. kb_text_shape.h can be found at: https://github.com/JimmyLefevre/kb 00:00:46 Talk 01:11:50 Q&amp;A and Discussion Hosted by Cameron DaCamara, featuring Taha Torabpour and Eric Lengyel PhD. Jimmy&#39;s links: https://www.newroadoldway.com/ https://github.com/JimmyLefevre/ BSC links: https://BetterSoftwareConference.com/ https://x.com/BetterSoftwareC Edited using Blick: https://blickeditor.com/</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://yeet.property/cdn-cgi/image/width=1200,height=620/landing-assets/blog/nobody-is-listening-on-8125/opengraph-image.png" alt="Nobody Is Listening on Port 8125" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://yeet.cx/blog/nobody-is-listening-on-8125">Nobody Is Listening on Port 8125</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by zasc · yeet.cx · <a class="discuss" href="https://news.ycombinator.com/item?id=49916007">discuss</a>
+    </p>
+<p class="lede">Founding engineer at yeet, working on kernel-side observability and the tooling around it. I write about eBPF, Linux internals, and why your telemetry bill looks the way it does. There&#39;s a Fedora box on my desk named stick . An app on it has been firing StatsD datagrams at 127.0.0.1:8125 ten times a second for about a week now, the way apps have done since Etsy taught everyone to in 2011. This is the first post in a series where we go down the list of exporters everyone runs next to Prometheus and replace them, one at a time, with a yeet script. The pitch for the series is short: you do not need fifty exporters in six languages, each with its own port, its own config format, and its own opinion about vendoring. You need one binary that can read the kernel. We&#39;re starting with …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://rivendell.dmitrybrant.com/farfuture/">Show HN: Timeline of the Far Future</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by dmitrybrant · rivendell.dmitrybrant.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49940317">discuss</a>
+    </p>
+<p class="lede">An interactive, visual journey through Wikipedia&#39;s Timeline of the far future — from a thousand years from now to the end of time.</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://storage.googleapis.com/gpt-engineer-file-uploads/AwmrFUJUl1Miu5dNMpFBx8P372K3/social-images/social-1783516958074-CASP_Social_Logos_White.webp" alt="Understanding Frontier Artificial Intelligence" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://casp.ac/reports/intelligence-explosion">Understanding Frontier Artificial Intelligence</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by roversx · casp.ac · <a class="discuss" href="https://news.ycombinator.com/item?id=49942002">discuss</a>
+    </p>
+  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-03-p5.html">‹</a><a href="2026-10-03.html">1</a><a href="2026-10-03-p2.html">2</a><a href="2026-10-03-p3.html">3</a><a href="2026-10-03-p4.html">4</a><a href="2026-10-03-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-10-03-p7.html">7</a><a href="2026-10-03-p8.html">8</a><a href="2026-10-03-p9.html">9</a><a class="pg-arrow" href="2026-10-03-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 4 cross-posts merged · 124 excerpts · 87 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

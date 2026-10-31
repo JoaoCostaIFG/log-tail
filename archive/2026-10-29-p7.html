@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Thursday, October 29, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 302</span>
+      <span>Thursday, October 29, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=50285197">Show HN: A malleable and formally verified Web engine</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by polyglotfacto · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50285197">discuss</a>
+    </p>
+<p class="lede">Hello HN, I&#39;ve been working on a new Web engine, build around two ideas: - use formal methods from day one. - make it modular. The modularity is orientated towards the following goals: - enabling shipping anywhere, including on IOS in the EU as per Apple’s guidelines. - only write code for stuff the OS or application platform cannot do for you: keep binary size to a minimum and achieve native performance. - developer choice: bring what you want, and only build what you need. For example you can choose a JS engine like v8 or Boa, or just bring your own. The entire graphics pipeline consists of components whose implementation can be swapped-out, with currently a relatively fast path on Mac integrating with Core Animation and a slower cross platform path. Project is at …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://earendil.com/static/og/posts/pi-durable-on-cloudflare.png" alt="Pi Durable on Cloudflare – Earendil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://earendil.com/posts/pi-durable-on-cloudflare/">Pi Durable on Cloudflare – Earendil</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by RebelPotato · earendil.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50290757">discuss</a>
+    </p>
+<p class="lede">From: Earendil Engineering &lt; rfc@earendil.com &gt; Many AI agents respond to user requests or other external events, do their work and then sit idle for long periods. Keeping a machine running around the clock wastes compute and quickly gets expensive. Pi Durable is a harness designed for long-running agents. Read the announcement explaining its concepts and storage model in detail. And Cloudflare Durable Objects offer a stateful objects that shut down when idle and start up again when a request, WebSocket message, or alarm arrives. In this post we will build a chat agent that stores every session in its own Durable Object, manages multiple conversations per session, survives hibernation, wakes up for scheduled work, and uses a subagent to search across conversations. We’ll run with 90s …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://shantaram.xyz/posts/2026/10/a-serenityos-for-myself">Thursday: A SerenityOS for Myself</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by _shantaram · shantaram.xyz · <a class="discuss" href="https://news.ycombinator.com/item?id=50292825">discuss</a>
+    </p>
+<p class="lede">Thursday is my newest project. I&#39;m experimenting with ways to make building software fun again, using AI and the internet to shorten the feedback loop between developer and user. The first experiments are deliberately simple - right now I&#39;m trying to gather data about how other devs think and work, to build solutions that work for myself and hopefully them. It all started when my last job kinda... evaporated, overnight, due to some funding troubles. I was completely lost. It felt like an unraveling of who I was, for a little -- I hadn&#39;t realised how much importance I attached to my job, that superpower of being able to sit down, write code, and make my life better. Coding used to be incredibly fun. I sank hours and hours everyday into coding even before I ever knew it was something I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/9cefc7087f50f4a5592a0b39b1a290db73d3c154dfdadeaa453f64970b9143e6/phpclaw-php/phpclaw-monorepo" alt="Show HN: phpClaw – AI agent runtime for PHP with tools, memory and guards" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/phpclaw-php/phpclaw-monorepo">Show HN: phpClaw – AI agent runtime for PHP with tools, memory and guards</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by akashpatel7204 · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50293361">discuss</a>
+    </p>
+<p class="lede">Tools, memory, security, and a ReAct loop, already built. Zero framework dependencies in core. Any LLM provider. One env var, one builder, one send() . The builder checks ANTHROPIC_API_KEY , then OPENAI_API_KEY , GROQ_API_KEY , GEMINI_API_KEY , MISTRAL_API_KEY , DEEPSEEK_API_KEY , OLLAMA_HOST , in that order, and uses whichever it finds first. No YAML, no agent framework to learn, no vendor lock-in. An agent without tools can only talk. Register the ones your application needs and it starts doing real work: The agent decides which tools to call and in what order, running a ReAct loop (reason, act, observe, repeat) until it has an answer or hits the iteration cap. This works identically whether the tools touch your shell, your database, your HTTP APIs, or your codebase. Every &#34;AI in PHP&#34; …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://streamhpc.com/wp-content/uploads/2026/10/3.png" alt="Making SIMD Code Scale to Any Vector Width" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://streamhpc.com/blog/2026-10-28/making-simd-code-scale-to-any-vector-width/">Making SIMD Code Scale to Any Vector Width</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by MyNameIsTrez · streamhpc.com · <a class="discuss" href="https://lobste.rs/s/3jyfg9/making_simd_code_scale_any_vector_width">discuss</a>
+    </p>
+<p class="lede">I will be using x86 naming throughout this post, but the concepts apply to other architectures too. Basic familiarity with SIMD and x86 assembly is assumed; uops.info and Intel’s intrinsics guide explain any instruction you don’t recognize. A lot of SIMD code, particularly in the graphics programming space, use vec3/vec4 types all over the place. The issue is that this typically doesn’t scale beyond the SSE instruction set. In this post I want to share how you can “transpose” those vectors into lanes to scale your math operations beyond just those typical 4 component XMM registers, and have the efficiency scale up to 8 or 16 wide vectors (or maybe 32 wide vectors, if we ever get them). To avoid the use of intrinsics, I’ll use Clang’s vector extensions ( ext_vector_type ) to represent the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nixtamal.toast.al/cookbook/nixos-using-nixtamal/">Building NixOS using Nixtamal</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by toastal · nixtamal.toast.al · <a class="discuss" href="https://lobste.rs/s/4x3ten/building_nixos_using_nixtamal">discuss</a>
+    </p>
+<p class="lede">NixOS is the evolution &amp; natural outcome of Nix — where if you can build software reliably, reproducibly, &amp; across different machines, but instead stopping at standalone software, a collection of software + a bootstraping process can build an operating system — with the same guarantees like rolling back from bad states. One issue beginners struggle with is the nix-channel command [ * ] which is usually not recommended long term as it is stateful to the machine in question leading to drift that either makes it hard to reproduce on this specific machine, but later becomes next to impossible when talking about building multiple machines, working with teams, &amp; deployments. But recommended to where? The solution goes back to the dawn of Nixpkgs: input pinning . While pinning can be done with …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.synthtopia.com/wp-content/uploads/2026/07/m-vave-fm-1-1.jpg" alt="Will Open Firmware Become the Next Big Trend in Electronic Music Gear?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear/">Will Open Firmware Become the Next Big Trend in Electronic Music Gear?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by snej · synthtopia.com · <a class="discuss" href="https://lobste.rs/s/j4ntsz/will_open_firmware_become_next_big_trend">discuss</a>
+    </p>
+<p class="lede">For decades, most hardware synthesizers, samplers, and drum machines have operated within the limits of their manufacturers’ software. Users could customize presets and sequences, but adding fundamentally new capabilities usually depended on an official update—or purchasing a different instrument. That model may be starting to change. The success of M-Vave ’s inexpensive FM-1 synthesizer has helped demonstrate how a relatively affordable piece of hardware can become a platform for community-developed software. Independent developers have experimented with alternative synthesizers, sequencers, effects, and other applications, leading M-Vave to release an official development environment. Now, larger music technology companies are exploring opening their platforms and supporting the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.phorge.it/">Phorge</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by miro · phorge.it · <a class="discuss" href="https://lobste.rs/s/tw3rsp/phorge">discuss</a>
+    </p>
+<p class="lede">Anubis could not load its JavaScript. The server may be overloaded. Please reload the page to try again. This is a measure against bots and malicious requests similar to a CAPTCHA. However, instead of having to do work yourself, your browser is given a calculation task that it has to solve to ensure that it is a valid client. This concept is called Proof of Work . The task is calculated in a few seconds and you are granted access to the website. Thank you for your understanding and patience. Please note that Anubis requires the use of modern JavaScript features that plugins like JShelter will disable. Please disable JShelter or other such plugins for this domain.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://tangledtaste.com/">Show HN: A visual map of related food dishes from around the world</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by agendreau · tangledtaste.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50280120">discuss</a>
+    </p>
+<p class="lede">Tangled Taste Show Illustrations Show the watercolor food paintings. Off: plain colored dots. Show Cuisines on Graph Off: cuisine names and country paintings are never drawn on the map. Show Relationship Strength On: when you select something, its links are drawn thicker and bolder the stronger the relationship (more dishes shared by two ingredients; for dishes, the share of their ingredients they have in common, on the same scale everywhere). Background links are unchanged. Size by Commonality On: common ingredients are drawn larger. Off: everything is one size. Hide Common Ingredients None 0 10 20 30 40 50 Density Minimal High Medium Low Minimal How much of the background map is drawn. Lower densities keep the most common ingredients and strongest connections; whatever you select always …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/50cce31d649291bb7e9d4a478c7d7dd7a28f7963ce16e9506898d6a491d508f1/skorotkiewicz/lfm3-chat" alt="Show HN: LFM3 Video Chat" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/skorotkiewicz/lfm3-chat">Show HN: LFM3 Video Chat</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by modinfo · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50280966">discuss</a>
+    </p>
+<p class="lede">Talk to LFM3-Omni-2B through your microphone and camera. The model replies with text and audio, and you can interrupt it by speaking or pressing a button. Start the server and open http://localhost:8000 on the same computer. Camera and microphone access on localhost works without SSL certificates. An ONNX version is available in src-onnx/ , with a separate uv environment. Use q4 for CPU or q4f16 for NVIDIA GPU. It supports the same camera, voice, and interruption controls without installing PyTorch. To download ONNX weights separately, use the bundle download commands . You need uv and a microphone. The project uses Python 3.12. Run these commands from the project folder on the computer hosting the model. Already downloaded the model? Skip the next command and use your existing folder …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.fabivo.app/og-image.jpg" alt="Show HN: Fabivo – Furniture design from a photo to a numbered cut list" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.fabivo.app/en">Show HN: Fabivo – Furniture design from a photo to a numbered cut list</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by superpapotas · fabivo.app · <a class="discuss" href="https://news.ycombinator.com/item?id=50284856">discuss</a>
+    </p>
+<p class="lede">Four steps in one tool: sketch the piece, let the optimizer lay out the sheets, follow the numbered cut order, and assemble with step-by-step instructions. Nothing to install. Not a marketing render: three consecutive screenshots of the same session, untouched. Under a minute from start to finish. No CAD, no account, nothing to install. Sketch the elevation with a finger, pen or mouse. Fabivo straightens it and builds a parametric piece with sides, shelves, dividers, doors and drawers. The guillotine optimizer places parts on your real sheets, accounting for saw kerf, edge trim, grain direction and the priority you choose. Every sheet comes with its diagram and a numbered cut order, including the position of each pass, so the sequence is one a saw can actually follow. Assembly …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://witnessory.org/og.png" alt="Show HN: Witnessory – a signed record of the web&#39;s move to post-quantum crypto" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://witnessory.org">Show HN: Witnessory – a signed record of the web&#39;s move to post-quantum crypto</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by parthod0x · witnessory.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50291911">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://entropicthoughts.com/history-of-pdp-computers">Extremely brief history of PDP computers</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by icefox · entropicthoughts.com · <a class="discuss" href="https://lobste.rs/s/ldvd3n/extremely_brief_history_pdp_computers">discuss</a>
+    </p>
+<p class="lede">I don’t know why I started to put this together. These machines fascinate me, because so much of early computing/hacker type culture happened on them. I started writing a table, but realised a timeline would be more intuitive. In this graph, the price is for a minimal configuration and adjusted for inflation. The time is the memory cycle time, a decent proxy for speed. There is a noticeable split in the hacker culture between users of the smaller (18 bit and less) and larger (32 bits and more) computers, exemplified by the contrast between Unix and Emacs. Unix was first created on pdp -7, then ported to pdp -11, then distributed to other pdp -11 users. The fact that it needed to run on these smaller machines, and still handle time sharing, shaped much of its implementation and interface …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://gpy.pl/">Show HN: I built a map of billboards and banners in Poland (gpy.pl)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by tomge · gpy.pl · <a class="discuss" href="https://news.ycombinator.com/item?id=50279937">discuss</a>
+    </p>
+<p class="lede">Tysiące powierzchni reklamowych na jednej mapie Wybierz region na mapie i znajdź nośnik najbliższy Twoim klientom. Wskaż miejsce na mapie, opisz wymiary nośnika i podaj cennik wynajmu. Twoja powierzchnia pojawi się na mapie gpy.pl i będzie widoczna dla firm szukających miejsc na reklamę. Dodanie jest darmowe. Billboardy, ekrany LED, bannery i citylighty w całej Polsce. Przeglądaj na mapie i wybierz lokalizację, która trafi do Twoich klientów. Nie masz czasu samemu dodać swoich reklam? Skontaktuj się z nami, a zrobimy to za Ciebie, zupełnie za darmo! Wysyłasz nam w dowolny sposób dane swoich punktów reklamowych - listę adresów, zdjęcia i cennik, w jakimkolwiek formacie. Dodajemy je za Ciebie do systemu - Twoje punkty pojawią się na mapie i zaczną pracować, a Ty nie musisz nic robić …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1434065609/aa16bcdd-43a3-486e-a64e-67acde10d75f" alt="Show HN: A Cursor-like workspace for your LaTeX papers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/cu1ch3n/papilot">Show HN: A Cursor-like workspace for your LaTeX papers</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by cuichen · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50284944">discuss</a>
+    </p>
+<p class="lede">A Cursor-like workspace for your papers: annotate and review PDFs directly without ever touching LaTeX. You read and mark up the PDF the way a supervisor marks up a draft. An AI agent makes the edits in LaTeX, and every change comes back to you as a before-and-after of the typeset page. Nothing touches your paper until you accept it. Also: ✨ skills such as Polish, Proofread and Check math, one / away, plus your own · 🤖 Codex, Claude or Antigravity , each with your own login · 🌳 every task in its own Git worktree , up to two at once · 🌗 light and dark · 📱 runs on your computer , and you can open it from your phone. You need Node.js 22.22+ , Git and a full TeX distribution ( MacTeX or TeX Live ). Revising also needs one signed-in agent . Open http://127.0.0.1:7274 and choose PDF in the …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-29-p6.html">‹</a><a href="2026-10-29.html">1</a><a href="2026-10-29-p2.html">2</a><a href="2026-10-29-p3.html">3</a><a href="2026-10-29-p4.html">4</a><a href="2026-10-29-p5.html">5</a><a href="2026-10-29-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-10-29-p8.html">8</a><a href="2026-10-29-p9.html">9</a><a class="pg-arrow" href="2026-10-29-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 8 cross-posts merged · 120 excerpts · 78 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 8, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 251</span>
+      <span>Tuesday, September 8, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://www.vldb.org/pvldb/vol19/p4953-fernandez-moctezuma.pdf">The Dataflow Model Revisited</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by pushcx · vldb.org · <a class="discuss" href="https://lobste.rs/s/r5b28u/dataflow_model_revisited">discuss</a>
+    </p>
+<p class="lede">Abstract Eleven years ago, the Dataflow Model paper argued that unbounded, out-of-order data was the new normal, and that we must stop waiting for data to ever become complete. It proposed a unified model (windowing, triggers, watermarks, and retractions) for freely trading off correctness, latency, and cost across batch and streaming engines. On the occasion of its VLDB Test of Time award, we grade our own work—a paper about streaming analytics, in truth if not in name—on what aged well, what aged badly, and what we missed. We find the paper’s core foundations largely sound: the primacy of event time, the futility of waiting for completeness, and the insistence on strong consistency aged well. But we got important parts of the analytical interface wrong: (1) we let windowing and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/ec8d1d2f30128d96524e66a979252d4a6bdeda3f543bd0ee2d1fa76163294cfc/senoff/self-hosted-ci-runner" alt="Our GitHub Actions bill kept climbing, so we moved CI to one box" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/senoff/self-hosted-ci-runner">Our GitHub Actions bill kept climbing, so we moved CI to one box</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by senoff · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49612772">discuss</a>
+    </p>
+<p class="lede">Stand up a small fleet of GitHub Actions self-hosted runners on one Linux box, provisioned so heavy CI jobs don&#39;t OOM the machine or fill its disk. It&#39;s three short, idempotent scripts plus a config file: Everything is parameterized through config.env — set your repo, runner count, swap size, and labels there. Nothing here is specific to any one project. The reference box below is an 8 GB machine. On that class of box the guidance is: Two easy ways to enforce the 2-concurrent cap (pick one; it&#39;s your call — bigger box, bump both numbers): RUNNER_COUNT controls how many get provisioned. The concurrency cap is a policy you apply in your workflows — this repo doesn&#39;t force one. The reference deployment is a single Hetzner Cloud VM. Observed configuration: The box runs nothing but the runners …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/794e79bd2885f3dd987970375ff9ddaeb4f0eaef2dce13754a0f2a70bc0936fe/triglav-os/gem" alt="GEM for Linux provides a classic graphical desktop with windows, menus, dialogs &amp; a 68K emulator" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/triglav-os/gem">GEM for Linux provides a classic graphical desktop with windows, menus, dialogs &amp; a 68K emulator</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by lproven · github.com · <a class="discuss" href="https://lobste.rs/s/5yga7r/gem_for_linux_provides_classic_graphical">discuss</a>
+    </p>
+<p class="lede">GEM for Linux provides a classic graphical desktop with windows, menus, dialogs, a terminal, calculator and clock. Applications share a display server, with either a Rasta viewer or a native Linux framebuffer display. Requires Linux, GCC/G++, GNU Make, CMake 3.20+, Git, Python 3, pkg-config, SDL2 development files and ImageMagick. The build downloads and verifies a pinned Rasta and Musashi source archives into ignored build/ storage. Subsequent builds reuse them; no separate checkouts are needed. From the repository root: Alternatively, make container builds and tests using Docker; the host needs Docker and GNU Make instead of the compiler dependencies. The first build needs internet access. See the build guide . Start these commands in three separate terminals, in order. Wait for gemd to …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://austinhenley.com/blog/images/python1024.png" alt="Making a Python interpreter in 1024 bytes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://austinhenley.com/blog/python1024.html">Making a Python interpreter in 1024 bytes</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by azhenley · austinhenley.com · <a class="discuss" href="https://lobste.rs/s/n0zgj1/making_python_interpreter_1024_bytes">discuss</a>
+    </p>
+<p class="lede">See the discussion of this post on Hacker News , r/programming , and Lobste.rs . To feel human, I write code by hand on the weekends. My latest challenge? Make a Python interpreter in 512 1024 bytes of good ole C code. Oh, and no macro shenanigans or library tomfoolery. I probably can&#39;t fit all of the Python language into an interpreter that is only 1024 bytes of code. So what can I fit that will look like Python? This fizzbuzz program looks distinctly Python. It has the def , the colons, the indentations, and no parentheses for if statements. Looks like Python to me! Of course, I&#39;ll also have to add some additional limitations beyond just a subset of the syntax. I&#39;ve written many recursive descent parsers, so how different can this be? A subset of Python should be similar to the other …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cognition.com/images/series-e/cover.jpg" alt="Cognition (Devin) raises $2B at $48B valuation" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://cognition.com/blog/series-e">Cognition (Devin) raises $2B at $48B valuation</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      15 points · by meco · cognition.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49613312">discuss</a>
+    </p>
+<p class="lede">Cognition has raised over $2B at a $48B valuation. The round was led by new investors Andreessen Horowitz and Accel, alongside existing investors Founders Fund, General Catalyst, and Avenir. Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, Atreides, Valor, T. Rowe Price, Lux, 8VC, D1, 137 Ventures, DST, Positive Sum, HOF, Soma, BoxGroup, Battery, Ribbit, Swish, Stripes, Definition, Hanabi, Journey, Bain Capital Ventures, Layer Global, A* Capital, Alpha Wave, Alkeon, and Diffusion. Software shapes nearly every aspect of modern life. Yet the world’s demand for software far exceeds our capacity to build it. Even the most ambitious, well-resourced teams leave products unbuilt, postpone critical upgrades, and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sparrow2.tavuslabs.org/">Show HN: Sparrow-2 – Noise cancellation isn&#39;t designed for conversational AI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      11 points · by code_brian · sparrow2.tavuslabs.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49612459">discuss</a>
+    </p>
+<p class="lede">Have a real conversation with a Tavus PAL and watch Sparrow-2 read it live: who holds the floor, who is acknowledging, and who just cut in.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://inbox.sourceware.org/binutils/CAKSQd8XJVf3jq8boOJcOE_GzcNvcqMUHeW-whbw3uGnVE2iN_w@mail.gmail.com/">x86 evolution for segmentation and paging</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by goliath · inbox.sourceware.org · <a class="discuss" href="https://lobste.rs/s/1baq3m/x86_evolution_for_segmentation_paging">discuss</a>
+    </p>
+<p class="lede">Anubis could not load its JavaScript. The server may be overloaded. Please reload the page to try again. You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. This can and does cause downtime for the websites, which makes their resources inaccessible for everyone. Anubis is a compromise. Anubis uses a Proof-of-Work scheme in the vein of Hashcash, a proposed proof-of-work scheme for reducing email spam. The idea is that at individual scales the additional load is ignorable, but at mass scraper levels it adds up and makes scraping much more expensive. Ultimately, this is a placeholder solution so that more time can be spent on fingerprinting and identifying headless browsers …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://austinhenley.com/blog/typeinference.html">Type inference has usability problems (2019)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by abhin4v · austinhenley.com · <a class="discuss" href="https://lobste.rs/s/mfhss4/type_inference_has_usability_problems">discuss</a>
+    </p>
+<p class="lede">TL;DR: Type inference is pushed by many tools and languages, but there is little evidence that it is beneficial. I argue that it may hinder comprehension and increase cognitive load. To see the discussion about this article, see the post on Hacker News. Many programming languages provide type inference. A new wave of hip languages have it baked in: Go , Rust , Swift , Scala , Kotlin , Zig , Nim , etc. In fact, even older languages have added it later on: C++11 , C# 3.0 , and Java 10 . Type inference refers to &#34;the automatic detection of the data type of an expression&#34; according to Wikipedia . Essentially, it means you don&#39;t have to explicitly declare a variable&#39;s type when it can be inferred from an assignment. So instead of: So what are the benefits? Well, Wikipedia claims type inference …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://infinitesugar.cnqso.com/social-preview.jpg" alt="Show HN: Infinite Sugar – a fruit fly emulation given a pleasant life" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://infinitesugar.cnqso.com/">Show HN: Infinite Sugar – a fruit fly emulation given a pleasant life</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by cnqso · infinitesugar.cnqso.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49613026">discuss</a>
+    </p>
+<p class="lede">is a fly simulated through whole brain emulation using the FlyWire connectome, reconstructed from the brain of an adult female Drosophila melanogaster . ’s sweet-sensing gustatory neurons are manually stimulated, simulating a constant stream of infinite sugar. This is presumably quite pleasant for . Most of ’s motor output is disconnected from its simulated musculature, and visual input from the terrarium is not provided, to allow it greater focus on the pleasurable sensation of the sugar. We believe this may be of note as a solution to moral philosophy. As technology advances, we may be able to simulate pleasant lives for increasingly complex forms of life. Some movements use supplied patterns driven by neural activity. There is no learning or habituation, so there is no mechanism for to …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://matthewritch.com/images/pentacle.png" alt="&#34;Please Remove All Mannered Prose&#34; and Other LLM Incantations" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://matthewritch.com/blog/2026/09/08/Mannered-Prose-Style-Prompts/">&#34;Please Remove All Mannered Prose&#34; and Other LLM Incantations</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by mdritch · matthewritch.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49613200">discuss</a>
+    </p>
+<p class="lede">The Key of Solomon details incantations, prayers, and invocations that when said exactly right allow an adept to harness supernatural powers, including non-human intelligences. Messing up an incantation even slightly can result in disaster. While using LLMs, I constantly add little modifiers to my main prompts to shift the model’s outputs to our preferred style. “Please be concise”, “avoid em dashes and semicolons”, “restrict inline comments to 8 words or less” and so on. These “style prompts” work pretty well, but I have found them unpredictable. Also, sometimes two “style prompts” that seem to mean the same thing to a human reader will change a model’s outputs in different ways. Anthropic recently posted some docs recommending adding Please remove all mannered prose to avoid the LLM …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/og.png" alt="How to Build a Printer" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/">How to Build a Printer</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      10 points · by cat-whisperer · nishantjosh.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49617255">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/pxreik/how_build_f_king_printer">discuss on lobste.rs</a>
+    </p>
+<p class="lede">I was planning to build an e-ink display when I came across the Xteink X3 online. Somewhere in the fine print, it said the thing was fully programmable. When it arrived, I liked how flat it was. It felt solid in my hand. I started adding things to the CrossPoint firmware: a different boot animation, dice I could roll by shaking the reader, a LinkedIn QR code for SF networking events. But getting stuff onto it was tedious. I had to join its hotspot and open a little upload website in my browser. While looking for a nicer way to send things to it, a thought struck me. If it looks like paper, it should act like paper. I wanted to open something on my MacBook, press Print, and pick the Xteink. That meant finding out what my computer expected to find at the other end. I ended up in the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9f25d4d8-5fe1-4a0b-81ea-4afea46626d6/poetry-cover-1200x630.png?t=1788557541" alt="One decision put Ruby into a downward spiral. It&#39;s not too late to fix it" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://rubyai.beehiiv.com/p/one-decision-put-ruby-into-a-downward-spiral-it-s-not-too-late-to-fix-it">One decision put Ruby into a downward spiral. It&#39;s not too late to fix it</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by MattRogish · rubyai.beehiiv.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49617319">discuss</a>
+    </p>
+<p class="lede">Editor’s note: I want to extend my sincere thanks to SerpApi , the world’s leading API provider of search data, for sponsoring this article. This content would not be possible without their support. They are a phenomenal friend of the Ruby community, sponsoring conferences, creators, and open source. Be sure to check out their careers page , they are hiring. Since this is an opinion piece, I want to note that their sponsorship is not an endorsement of the views expressed herein, which are mine alone. As I read through the recent recaps of RubyConf, one statement jumped out at me. Michael Carroll shared that “Matz is having the time of his life” working with AI. DHH had a similar sentiment, stating “for anyone with endless ideas, this agent age is nirvana as those ideas are met with …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kjartanvandriel.github.io/asic/">Reverse Engineering an ASIC</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by burekqueen · kjartanvandriel.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49599825">discuss</a>
+    </p>
+<p class="lede">Excluding the warmup puzzle -- which you should for sure try -- the puzzle consists of just two files: puzzle.gds and example_inputs.vcd . The puzzle centres on the Graphic Data System , or GDS file. The example inputs are there as a simple test case: one input, and the output the chip should produce for it. Opening the GDS file in a dedicated program like KLayout, we can immediately see some of its structure. It describes a layout: polygons of different types, indicated by their layer. It also contains annotations, which make the entire file look like a mess when you first open it. The GDS file format allows you to group polygons into cells. Such cells can be defined once and placed many times. They typically define logic gates, which in turn make up registers, computational units and so …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://brw.donworks.co.uk/opengraph-image.png?70fbc4f3294a2deb" alt="Show HN: Brw - better than Claude chrome" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://brw.donworks.co.uk">Show HN: Brw - better than Claude chrome</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by maxrev17 · brw.donworks.co.uk · <a class="discuss" href="https://news.ycombinator.com/item?id=49604261">discuss</a>
+    </p>
+<p class="lede">brw runs a real, visible Chrome and exposes it over MCP and HTTP. Agents act from stable refs like e17 instead of CSS selectors or screenshots, and get a plain observation back after every action — so they know what actually happened. Other agent browsers burn tokens re-reading pixels, lock you to one vendor, and stall at the login wall. brw takes the other path. Pre-release head-to-heads vs Claude-in-Chrome: same tasks, fewer turns and fewer tokens. Agents act from stable refs, not a fresh screenshot each turn. Public benchmark on the way. Not tied to one vendor&#39;s browser. Claude Code, Codex, Cursor, opencode, pi, Gemini or your own client — anything that speaks MCP or HTTP drives the same brw. Bridges to your installed, signed-in Chrome. The sites you&#39;re logged into, brw is too …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://avatars.githubusercontent.com/u/326261350?s=280&amp;v=4" alt="Show HN: Caveat, a self-hosted publishing and newsletter tool" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/CaveatJS">Show HN: Caveat, a self-hosted publishing and newsletter tool</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by jonas_kgomo · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49605072">discuss</a>
+    </p>
+<p class="lede">Caveat landing, documentation and examples Caveat is an open-source publishing app with a simple editor, an editable website, and email delivery—on infrastructure you own. Caveat is an open-source publishing app with a simple editor, an editable website, and email delivery—on infrastructure you own. There was an error while loading. Please reload this page . There was an error while loading. Please reload this page . Caveat landing, documentation and examples There was an error while loading. Please reload this page . There was an error while loading. Please reload this page . This organization has no public members. You must be a member to see who’s a part of this organization.</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-08-p5.html">‹</a><a href="2026-09-08.html">1</a><a href="2026-09-08-p2.html">2</a><a href="2026-09-08-p3.html">3</a><a href="2026-09-08-p4.html">4</a><a href="2026-09-08-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-09-08-p7.html">7</a><a href="2026-09-08-p8.html">8</a><a href="2026-09-08-p9.html">9</a><a class="pg-arrow" href="2026-09-08-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>133 stories · 5 cross-posts merged · 117 excerpts · 82 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

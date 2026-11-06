@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Thursday, October 8, 2026 — Page 9</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 281</span>
+      <span>Thursday, October 8, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 9</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://linnemanlabs.com/img/og/og-base_hu_94126da721a8d093.png" alt="Hello, my name is Orca" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://linnemanlabs.com/posts/hello-my-name-is-orca/">Hello, my name is Orca</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by goldstein · linnemanlabs.com · <a class="discuss" href="https://lobste.rs/s/ffn6sm/hello_my_name_is_orca">discuss</a>
+    </p>
+<p class="lede">Any unprivileged app can claim Orca&#39;s D-Bus name and read raw Wayland keystrokes - passwords included. I set out to understand the full path of keyboard input while hardening my workstation and researching methods to add keylogging capabilities to Glimmer . I found that the newer Wayland accessibility KeyboardMonitor path can expose raw compositor keyboard events to an unprivileged process that claims a specific D-Bus session bus name: org.gnome.Orca.KeyboardMonitor . I confirmed this behavior on both KDE Plasma/KWin and GNOME Shell/Mutter. In both cases, no root access, input group membership, /dev/input access, capabilities, or accessibility setting changes were required. This is not a Wayland protocol vulnerability. Wayland’s normal client input isolation is working: ordinary unfocused …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://noteflakes.com/articles/2026-10-07-unrolled-code">Unrolled code</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by noteflakes · noteflakes.com · <a class="discuss" href="https://lobste.rs/s/gvz6gn/unrolled_code">discuss</a>
+    </p>
+<p class="lede">The other day I was looking at a little project called grubby , a minimal static site generator for git repos, written in Ruby. The style is quite interesting. It feels solid and unapologetic: Nothing is particularly optimized, it just uses available tools to do its work: After running git ls-tree and collecting the filenames in the repository, it generates an HTML page for each file. Looking at the code examples above we can discern a primitive templating system: there’s #fill_template for replacing place-holders in the template with values, there’s a #render_markdown helper function, there’s the composition of the inner HTML with the header and footer HTML in #write_page . The header and footer are stored in separate files, but where are the templates for the actual page content? A bit …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dev.clintonblackburn.com/2026/10/08/a-rant-about-apis.html">A rant about APIs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by clintonb · dev.clintonblackburn.com · <a class="discuss" href="https://lobste.rs/s/jiphkt/rant_about_apis">discuss</a>
+    </p>
+<p class="lede">I have had the displeasure of integrating with a few different APIs over the past few weeks while working to automate Vori’s onboarding flow. These APIs have been for systems including contract rendering and e-signature collection, invoicing/billing systems, CRMs, card processors and gateways, and card terminal providers. They all kinda suck in their own ways. This would be somewhat acceptable if they were doing novel work in new fields, but these are all APIs for solutions that have existed for a decade or more. It’s also frustrating because the developers could simply copy existing, better, APIs and practices, and come out ahead! You’ve already messed up if I need to log in to read your API documentation. Kudos for actually writing the docs, but why do I need to log in!? I have to …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://buf.build/images/og/blog/connect-go-v2.png" alt="connect-go v2 is here · Buf Blog" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://buf.build/blog/connect-go-v2">connect-go v2 is here · Buf Blog</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by joonas · buf.build · <a class="discuss" href="https://lobste.rs/s/lpnmlt/connect_go_v2_is_here_buf_blog">discuss</a>
+    </p>
+<p class="lede">Today we’re releasing connect-go v2 , a new major version of the Go implementation of Connect. Before you panic, this is not a v2 of the Connect protocol. The breaking changes are in the Go API, so v2 clients and v1 servers continue to talk to each other without issue. Also, v1 is not going anywhere: it will keep receiving fixes and security patches indefinitely. And because v2 uses the module path connectrpc.com/connect/v2 , both versions can coexist in the same program and you can migrate one service at a time, or not at all. So let’s cover what v2 changes and why we decided to introduce some breaking changes: Our use of generics turned out to be more pain than it was worth. When we designed v1, we wrapped unary requests and responses in one of two generic types, connect.Request[T] or …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://eli.thegreenplace.net/2026/monte-carlo-simulations/">Monte-Carlo simulations</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by cgrinds · eli.thegreenplace.net · <a class="discuss" href="https://lobste.rs/s/pift8w/monte_carlo_simulations">discuss</a>
+    </p>
+<p class="lede">Monte Carlo simulations (or methods ) is the technique of applying randomness and the Law of large numbers to the solution of various scientific and engineering problems. One of its first documented uses was by Stanislaw Ulam and John von Neumann for nuclear weapon simulations after WWII [1] . In this post I want to provide examples of some simple uses of Monte Carlo simulations. We&#39;ll start with the classical example of calculating the value of \pi by throwing darts. Suppose we take a square board and inscribe a quarter of a circle into it. We then proceed to throw darts at the board and record whether each dart hits inside or outside the quarter circle. Having thrown many such darts, we calculate the ratio of the darts inside the circle to the total number thrown. Assuming our darts are …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://theconsensus.dev/p/2026/09/13/query-plan-rewriting-in-postgresql.html">Query Plan Rewriting in PostgreSQL</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by fanf · theconsensus.dev · <a class="discuss" href="https://lobste.rs/s/qlxpzx/query_plan_rewriting_postgresql">discuss</a>
+    </p>
+<p class="lede">We take a look at some of the ways PostgreSQL rewrites your queries (or not). By Phil Eaton September 13, 2026 Focus You are getting early access to this article as a subscriber. Your support makes articles like this possible. Thank you. A query plan is an abstract representation of operations on data such as scanning rows on disk, scanning an index, applying a filter, selecting a subset of columns, joining two tables, and operating on a column. To get to a query plan, a database parses your SQL query into an Abstract Syntax Tree (AST) and then resolves identifiers into a query plan. Within the database, the query planner is responsible for rewriting and optimizing the query plan: folding constants, deciding which index to use (if any), deciding which table to scan first, deciding the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/BanG_wLnSfE/maxresdefault.jpg" alt="Escape Analysis in Go: Stack or Heap?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=BanG_wLnSfE">Escape Analysis in Go: Stack or Heap?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by func25 · youtube.com · <a class="discuss" href="https://lobste.rs/s/vzcqqd/escape_analysis_go_stack_heap">discuss</a>
+    </p>
+<p class="lede">This video is meant for learning in a simple way, so it doesn&#39;t cover every edge case, and some parts are simplified to keep them easy to follow. Also, these internals can change from one Go version to the next. If something big changes, let me know and I&#39;ll make a follow-up. Chapters 0:00 Goroutine stacks and stack frames 2:11 The heap, and what escape analysis does 4:03 Ask the compiler: -gcflags=-m 6:27 Two safety rules of escape analysis 8:28 Limit 1: when the compiler can&#39;t tell 11:28 Interfaces, fmt.Println and function values 15:58 Go 1.27: known functions stay on the stack 17:12 Limit 2: too big for the stack 19:12 make([]byte, n) with an unknown size 20:58 Benchmark 22:23 More cases</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://kennyqin.com/static/og-image.png" alt="I&#39;ve Been Deindexed by Google" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://kennyqin.com/deindexed-by-google/">I&#39;ve Been Deindexed by Google</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by brn · kennyqin.com · <a class="discuss" href="https://lobste.rs/s/en3vgh/i_ve_been_deindexed_by_google">discuss</a>
+    </p>
+<p class="lede">I don&#39;t remember exactly when but, earlier in the year, I decided I didn&#39;t want this website to be indexed by search engines anymore. A lot of it has to do with AI and the relentless scraping that plagues the internet now. I know that as long as my blog is accessible by the public internet, there are no real measures I can put in to stop it but at least some of it will be respected. I started out by setting a blanket disallow in the robots.txt. When I realised that didn&#39;t do anything after a few weeks of waiting and checking, I set the robots meta tag. I thought that would do the trick. What I didn&#39;t realise is that you have to actually, ironically, allow the bot that will do the deindexing to visit your website so that it can see the meta tag that tells it to not index your page anymore …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://devblogs.microsoft.com/oldnewthing/20261007-00/?p=112759/">How can undefined opcodes ud0 and ud1 have parameters?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by abareplace · devblogs.microsoft.com · <a class="discuss" href="https://lobste.rs/s/hzwqzv/how_can_undefined_opcodes_ud0_ud1_have">discuss</a>
+    </p>
+<p class="lede">Gunnar Dalsnes wondered how ud0 and ud1 could have parameters if they were undefined ? “Does it mean they were not completely undefined, just undocumented and not completely implemented?” The opcodes ud0 and ud1 have no definition, but that’s not the same as being architecturally an “undefined instruction”. They live in a purgatory where they were not assigned a meaning, but were also not officially declared to be meaningless. Originally, these byte sequences went through the instruction decoder and happened to slip through a few cracks before somebody finally noticed, “Wait a second, I don’t know how to execute this.” You can see this when you look at the instructions that are encoded as 00001111 11111xxx , as of the Pentium III. The byte sequences 0F FB and 0F FF had yet to be assigned …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ninashamsi.com/writing/i-am-a-bad-writer.html">On using AI as a writing assistant</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by nishnash · ninashamsi.com · <a class="discuss" href="https://lobste.rs/s/jfxvvk/on_using_ai_as_writing_assistant">discuss</a>
+    </p>
+<p class="lede">Some people are using AI for writing assistance, but not everyone is using it the same way. If you were always bad at something, I don&#39;t think AI makes you better at it; in fact, it may even amplify your inadequacies, and anything you produce will be just as dysfunctional as without AI. This article is about sharing a process, and I am wondering what process others use. Maybe AI anything is just enshittfying everything it touches? You can express those views as well (this is your safe space).</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yogthos.net/posts/2026-10-07-clojure-llms.html">Clojure in the Age of Language Models</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by silcoon · yogthos.net · <a class="discuss" href="https://lobste.rs/s/xtgwsd/clojure_age_language_models">discuss</a>
+    </p>
+<p class="lede">In the age of generative models, the most important skill for a developer is to be able to recognize the shape of the problem and pick the correct way to express it. What&#39;s relevant today is the ability to do high level reasoning about algorithms, data structures, and data flows within the system. Imperative programming is quickly becoming akin to writing assembly because language models are quite competent at writing code in the small, while they stumble at high level design and architecture. So it is good to learn a language that operates at a higher level, such as Clojure, which is data-centric, composes functions declaratively, and keeps code close to the shape of the problem. LLMs can generate code much quicker than I can, but the issue is how to test that the generated code does …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-08-p8.html">‹</a><a href="2026-10-08.html">1</a><a href="2026-10-08-p2.html">2</a><a href="2026-10-08-p3.html">3</a><a href="2026-10-08-p4.html">4</a><a href="2026-10-08-p5.html">5</a><a href="2026-10-08-p6.html">6</a><a href="2026-10-08-p7.html">7</a><a href="2026-10-08-p8.html">8</a><span class="pg-current">9</span>
+  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 4 cross-posts merged · 125 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

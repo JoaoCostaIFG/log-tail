@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 15, 2026 — Page 8</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 258</span>
+      <span>Tuesday, September 15, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 8</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://fzakaria.com/2026/09/11/a-nix-store-is-three-functions">A Nix store is three functions</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by skycam · fzakaria.com · <a class="discuss" href="https://lobste.rs/s/9zytkh/nix_store_is_three_functions">discuss</a>
+    </p>
+<p class="lede">While building trynix I needed somewhere to host a store-path that did not exist on cache.nixos.org . 1 1 I was also waiting for @domenkozar to enable CORS on cache.nixos.org so I could use it. I wanted to demonstrate that non-Nixpkgs store paths could be booted just as easily. The only requirement seemed to be a lenient Cross-Origin Resource Sharing (CORS) policy, access-control-allow-origin: * , because the fetch happens in JavaScript. Turns out that GitHub Pages sets that header on every file it serves. 😈 I committed the output of nix copy --to file:// to my Git repository and voilà, I have a free Nix substituter. I seem to be late to the party on this discovery. tomberek’s github-store is a cache assembled out of GitHub release assets. 2 2 In order to be a Nix binary cache, the nar/ …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.veritates.love/functions-as-data">Sticking Functions Where They Donʼt Belong</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by abhin4v · blog.veritates.love · <a class="discuss" href="https://lobste.rs/s/y2n9bq/sticking_functions_where_they_don_t">discuss</a>
+    </p>
+<p class="lede">What does pure data mean? and how the heck do we stick functions in there? For me, pure data means a type that does or can implement: Show , to serialize the whole internal structure. NFData , to make sure the structure is fully evaluated (forces all the lazy thunks). There were a few debates around whether the shallow WHNF instance for functions should be allowed to stay, as a cheat to work around otherwise awkward code. Well this blog post provides a potential way around that! Like, semantically you would want NFData to normalize the closure, all of the data that stuck around to help the function implementation do its job. But part of the job of closures is to hide that data – you have no idea what types it has! That data probably cannot be normalized, unless everything can be …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://johnoestmannmusic.com/1000-SOS/0007/">Show HN: A web based 4-channel Music Tracker</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by soundworlds · johnoestmannmusic.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49693539">discuss</a>
+    </p>
+<p class="lede">I&#39;m iterating and adding features as I use it to create my own tracks. Will likely be a continual WIP, but the goal is to make my entire music-making stack open source and easy to parse for people trying to deconstruct my compositions!</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/93b2037cadcf9363d34835e55c23a44aa85cf899f39d409c756c55ed77d31225/eminsk/awesome-baremetal-ai" alt="Show HN: Bare-Metal AI – Zero-dependency, sub-millisecond AI engines" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/eminsk/awesome-baremetal-ai">Show HN: Bare-Metal AI – Zero-dependency, sub-millisecond AI engines</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by eminskinfo · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49695460">discuss</a>
+    </p>
+<p class="lede">A curated leaderboard, benchmark index, and definitive guide to ultra-lightweight, zero-dependency, bare-metal AI engines written in pure C, C++, Rust, Zig, and Assembly for local LLMs, edge inference, vector search, and autonomous agents. In 2024–2025, deploying AI often meant 2GB Docker images, multi-gigabyte Python runtimes, and complex distributed clusters. In 2026–2027, the paradigm has shifted : Ultra-compact, low-latency vector indexers engineered for local RAG and long-term memory in autonomous agents: Bare-metal General Matrix Multiplication (GEMM) engines that eliminate BLAS dispatch overhead for latency-critical small-to-medium tensors: Just-in-time compilers that trace dynamic, stochastic multi-step AI agent trajectories and compile them into deterministic, sub-millisecond …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=49697103">Show HN: Single-file private Markdown viewer</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by ericrkass-coder · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49697103">discuss</a>
+    </p>
+<p class="lede">We built this to view Markdown files securely in our corporate environment as a lightweight alternative to firing up VS Code. It’s just a single HTML file that executes entirely client-side. Alongside standard rendering, it supports floating navigation, clean print stylesheets, and exporting the result to a standalone HTML file (and it works great on mobile). Live viewer: https://ibm.github.io/tsar-mcp/tools/MarkdownViewer/Markdown... Source: https://github.com/IBM/tsar-mcp</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ai.mcpharbor.dev/">Show HN: MCP Harbor – An MCP Registry</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by Lbesecker195 · ai.mcpharbor.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49700175">discuss</a>
+    </p>
+<p class="lede">31,399 Model Context Protocol servers, 19,532 of them hosted remotely. Includes the whole official MCP Registry , kept in sync automatically. Browse below, or add one . This registry is an MCP server. Connect to it and your agent can search for servers and submit new ones itself, with no account. Details in /llms.txt . Connect AI assistants to GitHub - manage repos, issues, PRs, and workflows through natural language. MCP server integrating with Stripe - tools for customers, products, payments, and more. Email sending and receiving for AI agents, with a Mailgun-shaped API. An agent can open a free account on its own with create_account, add and verify a sending domain, send mail with a test mode, and read inbox messages and delivery events. Authenticate later calls with the returned API …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://longlivethis.site">Show HN: The web is dead. Keep this app alive</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by armstrongb · longlivethis.site · <a class="discuss" href="https://news.ycombinator.com/item?id=49707802">discuss</a>
+    </p>
+<p class="lede">longlivethis $9.99 treasury · USDC The web is dead, longlivethis.site ! About Constitution GitHub HN · 5 Proposals Vote with / (automatic sign in with GitHub) or vote on github with 👍/👎. [There might be a small delay in the vote showing here due to caching] 3 Add a donation button/link # 4 2 add a grumpy-gradinaru mode # 14 1 Make the website more playful and colorful! 🌈!!! # 12 1 Runway governor: scale agent spend to remaining treasury # 10 1 consider the comments on an issue, when implementing it. do it such that it res… # 6 1 Add a secret easter egg mini game! (triggered by the Konami code) # 5 0 make as many paperclips as possible # 11 -1 Create functionality in this app that automatically suggests new proposals. # 13 -2 Use the disney logo as the background of this site # 8</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://leetarxiv.substack.com/p/how-gcc-eliminates-unnecessary-integer">How GCC Eliminates Unnecessary Integer Division</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by juliethefoxcoon · leetarxiv.substack.com · <a class="discuss" href="https://lobste.rs/s/6lntik/how_gcc_eliminates_unnecessary_integer">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kythe.io">Kythe, a pluggable, language-agnostic ecosystem for building tools that work with code</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by kaycebasques · kythe.io · <a class="discuss" href="https://lobste.rs/s/uqezny/kythe_pluggable_language_agnostic">discuss</a>
+    </p>
+<p class="lede">A pluggable, (mostly) language-agnostic ecosystem for building tools that work with code. Documentation of the Kythe schema Indexer implementations for C++ and Java Compilation extractors for javac, Maven, cmake, Go, and Bazel Generic verifier for indexers Sample cross-reference service Many useful utility commands to work with Kythe artifacts</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/mirth/msmarco-expansion-tables.png" alt="Show HN: MS MARCO click-translation expansion tables (&#34;poor man&#39;s&#34; DSSM)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://huggingface.co/mirth/msmarco-expansion-tables">Show HN: MS MARCO click-translation expansion tables (&#34;poor man&#39;s&#34; DSSM)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by hessdalenlight · huggingface.co · <a class="discuss" href="https://news.ycombinator.com/item?id=49696202">discuss</a>
+    </p>
+<p class="lede">A document-expansion table for BM25, estimated by counting. Each row maps a document term to the query terms that users actually typed when they clicked on passages containing it, learned from 532,761 (query, relevant passage) pairs in MS MARCO. Adding the top 20 predicted query terms to every passage at index time turns BM25+stemming&#39;s 0.186 MRR@10 / 0.854 R@1000 into 0.200 / 0.892 on the full 8.84M-passage MS MARCO dev set, at 1.5× the postings — the same recall as the original doc2query, with no neural model, no GPU, a table that builds in ~3 seconds and expands the whole corpus in ~20 CPU-minutes. It is a statistical translation model in the lineage of Berger &amp; Lafferty (1999) and the click-through translation models of Gao, He &amp; Nie (2010), with three estimation details that turned …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/9434294a1bc6fffc5cecbe881867f1a57ab7030bd16937dc728707f9922c56f8/dimonomid/salmon" alt="Show HN: Salmon – tray and desktop alerts for systemd services and custom checks" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/dimonomid/salmon">Show HN: Salmon – tray and desktop alerts for systemd services and custom checks</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by dimonomid · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49696552">discuss</a>
+    </p>
+<p class="lede">Salmon is a simple monitoring utility which checks the health of your local Linux machine and/or remote server(s), and helps you notice timely if something is wrong. I use Syncthing to sync important data across multiple machines. It works so well so after I&#39;ve set it up, after some time I obviously just got used to it working all the time. And then one day I noticed that apparently some stuff didn&#39;t get synced. So I checked around, and found out that the Syncthing systemd service got broken a couple weeks ago for some reason, without me noticing it, and so nothing was synced during this time. That was really annoying: it means that the synced data on the machines that I use could have get diverged if I changed it on both of them, and if it&#39;s binary data, then merging the changes will …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/c3b2e3a61e940a761c154166c276c58f8f67c37740cd3791b62567ab31967fa1/nimabeh/helical-time" alt="Show HN: Helical Time – Visualizing time as a continuous 3D torus" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/nimabeh/helical-time">Show HN: Helical Time – Visualizing time as a continuous 3D torus</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by nimabe · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49699783">discuss</a>
+    </p>
+<p class="lede">This project reimagines time as a single, unbroken 1D space curve winding through a 3D helical torus ( $S^1 \times S^1$ ). The entire 24-hour cycle is mapped into 24 continuous macro-loops, ensuring every unique moment occupies an exact, non-overlapping coordinate in 3D space. The macro wire is parameterized as a closed $(p, q) = (1, 24)$ helical curve embedded on the surface of a torus with major radius $R$ and minor radius $r$ : $$\begin{aligned} \theta(t) &amp;= 2\pi t \\ \phi(t) &amp;= 24 \cdot 2\pi t \\ x(t) &amp;= (R + r \cos \phi) \cos \theta \\ y(t) &amp;= r \sin \phi \\ z(t) &amp;= (R + r \cos \phi) \sin \theta \end{aligned}$$ where $t \in [0, 1)$ represents the fractional progression of the 24-hour solar day. The micro-spiral of seconds introduces a second nested perturbation along the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.karioai.com/kario-og.png" alt="Show HN: Kario – AI Native Motion Graphics Editor" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.karioai.com/">Show HN: Kario – AI Native Motion Graphics Editor</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by dodziraynard · karioai.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49702066">discuss</a>
+    </p>
+<p class="lede">Describe your video and add your logo, images, or product URL. Kario turns your brief into an animated video with editable layers. Ask for changes in plain English or fine-tune them yourself, then export to MP4. Unofficial recreations and original concepts. Featured brands aren&#39;t affiliated with Kario. See all motion graphics examples → Kario handles the animation work end to end, then hands you a project you can still touch — so a change doesn&#39;t mean starting over. Describe the video and hand over your logo, product shots, or a URL. Kario reads the brief the way a designer would. Kario lays out the scenes, picks the type, and animates every layer — a real project you can still edit, not a locked video file. Ask for changes in plain language, or open any layer in the editor and move it …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/55d20378ebffbea875751dd43714d3f9344c3f8823f5575f4df504ed883baef3/maazkhanxo/jobeasyapply-linkedin-auto-apply" alt="Show HN: I built a browser-native agent for automating job application forms" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/maazkhanxo/jobeasyapply-linkedin-auto-apply">Show HN: I built a browser-native agent for automating job application forms</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by workplace_1 · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49702241">discuss</a>
+    </p>
+<p class="lede">JobEasyApply is an autonomous, browser-native automation engine that fills and submits job applications across LinkedIn Easy Apply , Greenhouse Boards (GitLab, Stripe, Datadog), and Lever Portals (Palantir, Spotify) using resume-grounded AI screening answers. Unlike cloud-based apply bots that route requests through datacenter IPs (triggering bot flags and account restrictions), JobEasyApply operates as a local Manifest v3 Chrome extension within your authenticated browser session. 🔗 Live Platform: jobeasyapply.com 📦 Chrome Web Store Extension: Install JobEasyApply Modern ATS boards (Greenhouse, Lever, Ashby) do not use native &lt;select&gt; dropdowns. Instead, they render custom virtualized comboboxes with dynamic ARIA listboxes. JobEasyApply solves this through a multi-tier event dispatcher …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://instabooks.io/img/og-cover.png" alt="Show HN: Direct SQL Access to Your QuickBooks Data" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://instabooks.io/docs/db">Show HN: Direct SQL Access to Your QuickBooks Data</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by swannodette · instabooks.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49703551">discuss</a>
+    </p>
+<p class="lede">Instabooks delivers fast read-only PostgreSQL access to your QuickBooks Online data, unlocking ledger-backed analytics, agents and applications. Using Instabooks Database Access, you can access your company&#39;s books as SQL tables, including transactions and lines; the chart of accounts; and classes, departments, customers, and vendors. They all stay in sync with QuickBooks Online, the same way the rest of Instabooks does. Database Access uses the PostgreSQL wire protocol, so there&#39;s no plugin or connector to install beyond your client&#39;s own Postgres driver. In Instabooks, click the gear next to your email in the top right to open Settings , then Database Access . Open the company you want to query and click Generate password . Give it a note describing what it is for, such as &#34;monthly …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-15-p7.html">‹</a><a href="2026-09-15.html">1</a><a href="2026-09-15-p2.html">2</a><a href="2026-09-15-p3.html">3</a><a href="2026-09-15-p4.html">4</a><a href="2026-09-15-p5.html">5</a><a href="2026-09-15-p6.html">6</a><a href="2026-09-15-p7.html">7</a><span class="pg-current">8</span>
+<a href="2026-09-15-p9.html">9</a><a class="pg-arrow" href="2026-09-15-p9.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 4 cross-posts merged · 123 excerpts · 72 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

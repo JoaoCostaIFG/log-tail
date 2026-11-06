@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, October 20, 2026 — Page 9</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 293</span>
+      <span>Tuesday, October 20, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 9</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/abd3d893ac7301cf3258cb707df11a8180192cd95b8e708bf9ea3f7ab4ff6b4b/ehnruiz/claude-skills" alt="Show HN: Claude Code skills and hooks that prove a fix&#39;s test fails without it" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/ehnruiz/claude-skills">Show HN: Claude Code skills and hooks that prove a fix&#39;s test fails without it</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by ehnruiz · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50158230">discuss</a>
+    </p>
+<p class="lede">Skills, subagents and hooks for Claude Code , for engineers who want an agent that proves its work. A supervisor sends each step to the cheapest model that can do it and moves it up a tier after two failures. A gate passes by its exit code. A bug fix ships with a test shown to fail without the fix, and a session ends with a handoff note the next one picks up. The library checks itself: frontmatter, links, scripts, hooks and this README run in CI, and a collision audit keeps skill descriptions from competing. The plugin is agent-workflow in the ehnruiz marketplace, the names in .claude-plugin/ . Once installed, its skills are namespaced: /agent-workflow:handoff , /agent-workflow:pick-up . The same two steps from a shell are claude plugin marketplace add ehnruiz/claude-skills and claude …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://x.com/AgentMemoryL">Show HN: AML CYCLE 2, a benchmark for long-term agent memory</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by IreneAI · x.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50161060">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://rouler.io/og-image.png" alt="Show HN: Rouler – Steer Windows traffic per app or IP across multiple interfaces" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://rouler.io/">Show HN: Rouler – Steer Windows traffic per app or IP across multiple interfaces</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by brndnbuilds · rouler.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50161144">discuss</a>
+    </p>
+<p class="lede">Send each app, IP or subnet out the network interface you choose. Run WireGuard, Tailscale, OpenVPN and your work VPN side by side. Rouler is split tunnelling for Windows. You choose which network interface each app uses: a privacy VPN for your browser, a work tunnel for work apps, and your normal connection for everything else. They all run at the same time. It does one job at the network layer, sending each app&#39;s traffic out the interface you chose. It isn&#39;t a VPN or a firewall. Rouler works with network interfaces, so it isn&#39;t tied to a particular VPN. Use the official WireGuard client, Tailscale, Mullvad, OpenVPN or AmneziaWG, and run several side by side. If Windows has an interface for it, Rouler can send traffic over it. A rule can match an app, a destination IP or subnet, or both …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/fonp7g/intermediary_between_public_private">Intermediary between public and private members</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by nrposner · lobste.rs · <a class="discuss" href="https://lobste.rs/s/fonp7g/intermediary_between_public_private">discuss</a>
+    </p>
+<p class="lede">Say I were to have a struct Foo { pub public: Bar, restricted: Qux } where ‘restricted’ is some member variable which I want to be able to get, but not set, from outside of the struct methods. Normally, I would write a getter method impl Foo { pub fn restricted(&amp;self) -&gt; &amp;Qux { self.restricted }} which isn’t very much typing, and probably I could generate these automatically with an IDE or a plugin. But all the same, why not build this into the declaration syntax with a modifier in between private (implicit in Rust but some languages have it) and public ? Maybe something like read so that we could have struct Foo { x, read y, pub z } Where x is genuinely private to the struct and can only be read or written by member functions, y can be read by anyone but not modified arbitrarily, and z …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dns.museum/">The DNS Museum</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by fs111 · dns.museum · <a class="discuss" href="https://lobste.rs/s/nfeqdx/dns_museum">discuss</a>
+    </p>
+<p class="lede">A reference for the odd, inventive, and always impractical things people have done with DNS. A predictable traceroute path uses PTR records on its routers to spell lines from “American Pie”, turning reverse DNS into a lyric display. A traceroute to bad.horse spells lyrics through reverse-DNS names; signed.bad.horse adds a separate Easter egg in its TLS certificate chain. A static traceroute uses reverse-DNS names to reveal a Christmas tree, with each hop adding another branch to the seasonal picture. A traceroute display used live Euro 2020 scores, pairing a controlled route with DNS names to turn network diagnostics into a changing scoreboard. An IPv6 traceroute uses reverse-DNS names to draw a hand; raising the hop limit reveals more of the picture one numbered hop at a time. A …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://webkit.org/wp-content/uploads/blocking-identity-resolution-01-light.png" alt="Blocking Identity Resolution Infrastructure" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/">Blocking Identity Resolution Infrastructure</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by ahobson · webkit.org · <a class="discuss" href="https://lobste.rs/s/tsyxpn/blocking_identity_resolution">discuss</a>
+    </p>
+<p class="lede">by John Wilander, Charlie Wolfe, and Matthew Finkel. Apple and WebKit have shipped protections against web tracking for a long time. We put privacy protections in place for cookies in the very first version of Safari, we invented storage and cache partitioning and shipped it ten years before other major browsers, and we’re actively fighting device fingerprinting. We do this because users deserve to not be tracked, not across websites and not covertly through fingerprinting, unless they explicitly opt in to it. See WebKit’s Tracking Prevention Policy for a comprehensive overview. We fully blocked cross-site cookies six years ago. That was a huge step forward for privacy on the web. However, the tracking industry has not sat idle since. A “post-cookie” tracking method emerged, called …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ataias.com.br/2026/10/01/removing-a-type-assertion-with-object.assign/">Removing a Type Assertion with Object.assign</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by ataias · ataias.com.br · <a class="discuss" href="https://lobste.rs/s/l5oolm/removing_type_assertion_with_object">discuss</a>
+    </p>
+<p class="lede">I loathe type assertions in TypeScript. Every as is a spot where I am telling the compiler “trust me”, and every as unknown as is me telling it to stop thinking altogether. So when I found one in an adapter function I was working on, I wanted to get rid of it. In the process, I learned an interesting fact about how unknown and Object.assign behave together. The setup was roughly this: a library exposes a function that takes a client, and that client must have a request function resolving to a Response with a typed json method. On my side, I already had a function that does the request and returns the parsed data directly. I just needed to adapt one to the other. The library only ever calls json() on the response, so my first version just returned an object with that method: TypeScript …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://andrew-helmer.github.io/post_assets/2026-10-15-demystifying-spherical-harmonics/spherical-harmonics-header-meta.jpg" alt="Demystifying Spherical Harmonics: An Optimization Approach" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://andrew-helmer.github.io/demystifying-spherical-harmonics/">Demystifying Spherical Harmonics: An Optimization Approach</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by ocharles · andrew-helmer.github.io · <a class="discuss" href="https://lobste.rs/s/ncwfdh/demystifying_spherical_harmonics">discuss</a>
+    </p>
+<p class="lede">Ever since I first heard of spherical harmonics as an approximation in computer graphics, I have felt that the way they are explained is too complicated. Sometimes the explanations assume a bunch of math knowledge that isn’t really necessary, and they tend to be very abstract. Other times they show something complex and through a lot of effort end up simplifying them to something usable. In addition to making it harder to learn, I think those approaches to SH can lead to misapplication. SH introductions often have discussion about certain SH artifacts (ringing and negative values), but ignore another class of common issues. In this post, what we’re going to do is start with a common problem in graphics, solve it as simply as we can using tools that I think many programmers are familiar …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/rwQ8p_J5KhI/maxresdefault.jpg" alt="My 6 Month Journey to Recreate Half-Life" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=rwQ8p_J5KhI">My 6 Month Journey to Recreate Half-Life</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by FedericoSchonborn · youtube.com · <a class="discuss" href="https://lobste.rs/s/qowvjs/my_6_month_journey_recreate_half_life">discuss</a>
+    </p>
+<p class="lede">My most ambitious project ever! I remade the first Half-Life game using Geometry Nodes. Download the project file free on my Gumroad: https://malcd.gumroad.com/l/blendwork... Paid Patreon members, if you&#39;d like to support my work: / half-life-in-165513418 Blendworks (game engine) playlist: • Making a Game Engine in Blender (blendworks)</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-20-p8.html">‹</a><a href="2026-10-20.html">1</a><a href="2026-10-20-p2.html">2</a><a href="2026-10-20-p3.html">3</a><a href="2026-10-20-p4.html">4</a><a href="2026-10-20-p5.html">5</a><a href="2026-10-20-p6.html">6</a><a href="2026-10-20-p7.html">7</a><a href="2026-10-20-p8.html">8</a><span class="pg-current">9</span>
+  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 6 cross-posts merged · 120 excerpts · 80 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

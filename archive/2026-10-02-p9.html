@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, October 2, 2026 — Page 9</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 275</span>
+      <span>Friday, October 2, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 9</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://cdn.builder.io/api/v1/image/assets%2F3eb6f92aedf74f109c7b4b0897ec39a8%2F53d433e5b2e24d41afa583b0e804c8df" alt="ESXi Exploitation in the Wild" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.huntress.com/blog/esxi-vm-escape-exploit">ESXi Exploitation in the Wild</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by juliethefoxcoon · huntress.com · <a class="discuss" href="https://lobste.rs/s/f6dogm/esxi_exploitation_wild">discuss</a>
+    </p>
+<p class="lede">In December 2025, Huntress observed an intrusion leading to the deployment of VMware ESXi exploits. Based on indicators we observed, including the workstation name the threat actor was operating from and other TTPs, the Huntress Tactical Response team assesses with high confidence that initial access occurred via SonicWall VPN. The toolkit analyzed in this report also includes simplified Chinese strings in its development paths, including a folder named “全版本逃逸--交付” (translated: “All version escape - delivery”), and evidence suggesting it was potentially built as a zero-day exploit over a year before VMware&#39;s public disclosure, pointing to a well-resourced developer likely operating in a Chinese-speaking region. Given the nature of ESXi exploitation, this activity could have culminated in …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/fujfew/django_modern_rest_0_16_0_release">django-modern-rest@0.16.0 release</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by sobolevn · lobste.rs · <a class="discuss" href="https://lobste.rs/s/fujfew/django_modern_rest_0_16_0_release">discuss</a>
+    </p>
+<p class="lede">Hi everyone, I am the release manager of django-modern-rest :) django-modern-rest 0.16.0 is out! Is this your first time that you hear about this project? django-modern-rest is a fully typed / fast / flexible / async-ready framework to create REST APIs for Django. It supports Pydantic, msgspec, attrs and many other models. Here&#39;s how the code looks like: import uuid import pydantic from dmr import Body, Controller from dmr.plugins.pydantic import PydanticFastSerializer class UserCreateModel(pydantic.BaseModel): email: str class UserModel(UserCreateModel): uid: uuid.UUID class UserController(Controller[PydanticFastSerializer]): def post(self, parsed_body: Body[UserCreateModel]) -&gt; UserModel: return UserModel(uid=uuid.uuid4(), email=parsed_body.email) Other notable features: Builtin auth …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://jimmyhmiller.com/change-our-languages">We Should be Able to Change our Languages</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by arcade · jimmyhmiller.com · <a class="discuss" href="https://lobste.rs/s/oeflod/we_should_be_able_change_our_languages">discuss</a>
+    </p>
+<p class="lede">Programming languages are fixed artifacts. Defined by committee or that one really smart person. They are sacred artifacts whose contours are fixed for good reasons. The idea of changing your programming language, of customizing it for your own needs, is a drastic measure that should never be done. Or at least that&#39;s how people act. In a world where software is becoming increasingly flexible, moldable, editable, our programming languages resist this change. Instead, we build incredibly complicated build systems. We create complex conventions that give us the semantics we wished our languages had. We reuse existing language constructs and give them different meanings. We form committees to advocate for changes to our languages, bike-shedding endlessly, because the idea of just letting each …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://calif.io/og/the-great-glyph-grift.jpg" alt="CVE-2026-86950: The Great Glyph Grift - An in-the-wild iOS bug with a possible WhatsApp zero-click path" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://calif.io/research/the-great-glyph-grift">CVE-2026-86950: The Great Glyph Grift - An in-the-wild iOS bug with a possible WhatsApp zero-click path</a></h3>
+    <p class="dateline"><span class="badge">L</span>      3 points · by ni5arga · calif.io · <a class="discuss" href="https://lobste.rs/s/yfttkn/cve_2026_86950_great_glyph_grift_wild_ios">discuss</a>
+    </p>
+<p class="lede">An in-the-wild iOS bug with a possible WhatsApp zero-click path. Dion Blazakis, Josh Maine, and Anna Groza Apple recently released iOS 26.7.1 to fix a bug in CoreGraphics ( CVE-2026-86950 ). The security advisory stated that the vulnerability was reported by Meta Product Security and &#34;may have been exploited in an extremely sophisticated attack against specific targeted individuals.&#34; For those who are unfamiliar with Apple’s English dialect, it means that the bug was actually exploited in the wild. As usual, Apple provides no meaningful technical information for our curious minds. Well, the research team at Calif has an unusual affinity for zero-click attacks (check out WeWorm ) so we decided to investigate the bug and share the details with everyone. Through patch analysis, we identified …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://rgboo.com/">Show HN: RGBoo – interactive lofi stream for Halloween</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      3 points · by na10 · rgboo.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49924667">discuss</a>
+    </p>
+<p class="lede">RGBoo year 2 is live! It is a 24/7 interactive Halloween stream &amp; lofi station. Submit a name and color to change the display live on stream. …and there’s even more ways to tune in this year. Use the website, YouTube, twitch, or even listen from a terminal!</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://web-assets.dd-static.net/42588/1789661538-hero-async-python-profiler.jpeg" alt="How we built an async-aware Python profiler" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.datadoghq.com/blog/engineering/async-python-profiler/">How we built an async-aware Python profiler</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by eatonphil · datadoghq.com · <a class="discuss" href="https://lobste.rs/s/3r00ol/how_we_built_async_aware_python_profiler">discuss</a>
+    </p>
+<p class="lede">We released the first version of the Datadog Python profiler almost 10 years ago . Since then, frameworks built on asyncio have become common, and asynchronous code has become the norm for many Python services. Traditional flame graphs, however, often lose the relationships between asyncio tasks: They can show where work is happening without showing which application path led to it. We encountered this limitation while investigating the performance of our own Python services. To preserve the context needed to understand performance regressions, we built an async-aware profiling model that reconstructs the relationships between tasks. Making that model practical in production also led us to reduce profiler overhead by more than 60% while producing higher-fidelity profiles. In this post …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Schedules Are Solvable Symbols: Tuning-Free Compilation of Tile Programs on Dataflow Architectures" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2609.29219">Schedules Are Solvable Symbols: Tuning-Free Compilation of Tile Programs on Dataflow Architectures</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by dbremner · arxiv.org · <a class="discuss" href="https://lobste.rs/s/4553tn/schedules_are_solvable_symbols_tuning">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://storyteller-platform.dev/img/Storyteller_Logo.jpg" alt="@storyteller-platform/epub v1.0.0 release" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://storyteller-platform.dev/blog/20261001_epub_v1">@storyteller-platform/epub v1.0.0 release</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by smoores · storyteller-platform.dev · <a class="discuss" href="https://lobste.rs/s/gx0wiv/storyteller_platform_epub_v1_0_0_release">discuss</a>
+    </p>
+<p class="lede">Storyteller has had its own EPUB library for a very long time (originally published as @smoores/epub !). It&#39;s always been published to npm and documented, but it&#39;s also always had some limitations that we suspect have limited its utility outside of Storyteller itself. With this v1 release, we think we&#39;ve eliminated many of those limitations. Let&#39;s talk about what&#39;s new! @storyteller-platform/epub supports two storage adapters; MemoryAdapter and TmpFsAdapter . We now have browser support! Currently, this is only available for the MemoryAdapter : This library was originally built around fast-xml-parser . While impressive in many ways, fast-xml-parser has an awkward API that is not well suited to being exposed to library consumers. Its XML namespace handling was also rather limited, which …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://setevoy.substack.com/p/ai-llms-agents-work-and-us-engineers">AI: LLMs, Agents, Work, and Us - Engineers. Personal Thoughts</a></h3>
+    <p class="dateline"><span class="badge">L</span>      2 points · by terryfilch · setevoy.substack.com · <a class="discuss" href="https://lobste.rs/s/ymulrg/ai_llms_agents_work_us_engineers_personal">discuss</a>
+    </p>
+<p class="lede">Author shares his thoughts on vibecoding, the use of AI agents and neural networks in the work of a DevOps engineer, and how this affects the individual as an engineer from a specialist&#39;s perspective.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kloenk.eu/posts/unifree/usw-flex-mini/">Deeper dive into the Ubiquiti USW Flex Mini</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by 7tehdt3cnw6kir6o · kloenk.eu · <a class="discuss" href="https://lobste.rs/s/3nf17z/deeper_dive_into_ubiquiti_usw_flex_mini">discuss</a>
+    </p>
+<p class="lede">A while ago a friend of mine ( ember ) discovered that the firmware names of some of the small Ubiquiti switches (mostly USW flex ) contains the string ESP32 . This lead to an investigation for what they contain an ESP. (Most of the events described here are already a while back as we are currently focusing most of the reverse engineering/development effort on the USW-Ultra but though it&#39;s still useful to write it down and we plan to eventually pick the USW-Flex-Mini up again, though missing useful support in zephyr for the used MCU does not make it easier.) We quickly found tech notes from jade.wtf detailing some pictures about the used ICs in the USW-Flex-Mini . The tech notes detailed some looking into firmware extracted from the firmware image available to download from the ui …</p>  </article>
+  <article class="story">
+<img class="thumb" src="http://adolfoalvarez.cl/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/featured.jpg" alt="Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="http://adolfoalvarez.cl/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/">Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R</a></h3>
+    <p class="dateline"><span class="badge">L</span>      1 points · by Sietsebb · adolfoalvarez.cl · <a class="discuss" href="https://lobste.rs/s/tob6sq/plumbers_chains_famous_painters_updated">discuss</a>
+    </p>
+<p class="lede">Note: This post is an updated version of another I published in 2014, in a previous version of this site . Our story starts as many other R related stories… in stackoverflow . On January 17th, 2012 , an anonymous user “user4” asked the following question: How can you implement F#’s forward pipe operator in R? The operator makes it possible to easily chain a sequence of calculations. For example, when you have an input data and want to call functions foo and bar in sequence, you can write: Ben Bolker answered same day and gives what can be considered the first pipe in R: Although probably the first formal introduction of a pipe function in an R package occured on April 5, 2012 , when Peter Meilstrup started the package ptools as a way to collect “various data manipulation and programming …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-02-p8.html">‹</a><a href="2026-10-02.html">1</a><a href="2026-10-02-p2.html">2</a><a href="2026-10-02-p3.html">3</a><a href="2026-10-02-p4.html">4</a><a href="2026-10-02-p5.html">5</a><a href="2026-10-02-p6.html">6</a><a href="2026-10-02-p7.html">7</a><a href="2026-10-02-p8.html">8</a><span class="pg-current">9</span>
+  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 5 cross-posts merged · 115 excerpts · 73 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

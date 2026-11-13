@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, October 5, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 278</span>
+      <span>Monday, October 5, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/eZ8WWZzoaR0/maxresdefault.jpg" alt="Homa: The end of TCP for AI clusters [video]" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=eZ8WWZzoaR0">Homa: The end of TCP for AI clusters [video]</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      70 points · by signa11 · youtube.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49957117">discuss</a>
+    </p>
+<p class="lede">John Ousterhout, Stanford Professor and author of A Philosophy of Software Design, turns our attention to the evolving nature of AI networking workloads and why traditional protocols like TCP and RDMA are becoming bottlenecks in modern data center environments! transcript/notes: https://ai.engineer/talks/eZ8WWZzoaR0... Paper: https://www.usenix.org/system/files/a... Related: https://lwn.net/Articles/1003059/ Shift in Workloads Historical context: AI traffic was dominated by massive, long-running transfers (gigabytes of gradients), where throughput was the primary metric (2:19-2:42). Modern AI: Workloads, especially inference and agentic applications, now rely on frequent, small coordination messages (e.g., KV cache lookups, barrier synchronization). These small messages are highly …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://jacobg.co/open-graph/emails-at-jacobg-co.png" alt="All I wanted was a custom domain email" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://jacobg.co/emails-at-jacobg-co/">All I wanted was a custom domain email</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      69 points · by jgx0 · jacobg.co · <a class="discuss" href="https://news.ycombinator.com/item?id=49956092">discuss</a>
+    </p>
+<p class="lede">At this point, I have owned the domain jacobg.co for over 2 years. For the longest time, I have been trying to have a custom email address at my domain without paying a fortune for a service that isn’t widely used. Here are some of the things I was looking for: I tried a few different solutions, from Cloudflare’s built-in email routing to completely self-hosted options. In this post, I’ll go over what I tried, what didn’t work, and what I’ve finally settled on. This site is hosted on Cloudflare Pages, and the DNS records for this domain are routed through Cloudflare. Naturally, my first instinct was to use Cloudflare’s own solution for custom domain email: Email Routing. Cloudflare receives each email sent to your domain and forwards it to an address of your choice. For receiving mail …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world">The evolution of effective altruism</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      68 points · by bazzmt · economist.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49953777">discuss</a>
+    </p>
+<p class="lede">https://archive.ph/3gSCc Related: https://www.economist.com/by-invitation/2026/10/04/will-maca...</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yuka.dev/blog-2026-10-02-linux-m4.html">The forgetful CPU (Linux on M4)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      67 points · by calvin · yuka.dev · <a class="discuss" href="https://lobste.rs/s/s4wm69/forgetful_cpu_linux_on_m4">discuss</a>
+    </p>
+<p class="lede">This blog post goes into quite some detail about how I first booted Linux on my M4 Mac mini. I encourage you to look up terms and concepts you don’t know, since I cannot explain all the background in this post ;) Before saying anything further, I need to thank the entire Asahi Linux team for all their prior work and help during the journey. Please consider donating to the Asahi Open Collective if you want to see more mainline Linux on Apple Silicon work! In November 2024, I bought an M4 Mac mini, gambling that it would be similar to the M1-M3 Apple Silicon machines and could be quickly supported in Asahi Linux. While the M4 was sitting on my desk for several months, more details started surfacing about this SoC. It turned out to be more difficult, since the M4 machines are the first …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yossarian.net/til/post/rust-s-derive-often-implies-inline/">Rust&#39;s derive often implies inline</a></h3>
+    <p class="dateline"><span class="badge">L</span>      65 points · by yossarian · yossarian.net · <a class="discuss" href="https://lobste.rs/s/dldhpw/rust_s_derive_often_implies_inline">discuss</a>
+    </p>
+<p class="lede">In Rust, one of the most common ways to implement core traits (like Debug , Display , and Clone ) is to #[derive(...)] them, e.g.: What I didn&#39;t know until recently is that Rust currently emits #[inline] as part of these derivations. This is seemingly not guaranteed, but is implied by example in the reference and can also be seen if one expands the macros. Using the example above, this is what you get when you expand the #[derive(Debug)] in the playground : This is almost always what we want: #[inline] is just a hint, and typical derived Debug , Clone , etc. implementations benefit from being inlined (since they&#39;re often trivial). But not always! Imagine an error hierarchy like this 1 : That&#39;s a lot of code that can get inlined for each invocation of the Debug implementation of Errors …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://frn.sh/pagetables/">Page Table Memory Consumption</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      62 points · by shellpipe · frn.sh · <a class="discuss" href="https://news.ycombinator.com/item?id=49916753">discuss</a>
+    </p>
+<p class="lede">The other day I was reading Linus Torvalds punch some people over hashed page tables. His argument: in a tree, the entries of neighboring pages are adjacent, which means one cache-line fills several TLB entries at once. A hash table, on the other hand, scatters neighbors in buckets: The fact is, you just don’t know what GOOD actually is. I’ll tell you: t a good TLB fill should pre-populate the TLB with all the entries it can fit in one cache-line. Do you realize that a bog-standard Intel CPU will fetch 8 TLB entries in one go? Together with a self-mapping (or, as Andy points out, you can just cache the other levels in dedicated caches), that means that with a single memory reference you get eight_times the coverage that the silly Power hash tables get. This discussion happened in 2003, in …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://math.tejstead.com/heilbronn/og.png" alt="The Heilbronn Problem" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://math.tejstead.com/heilbronn/">The Heilbronn Problem</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      62 points · by tejstead · math.tejstead.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49939637">discuss</a>
+    </p>
+<p class="lede">Place n points in a unit-area region such that the smallest triangle determined by any three points achieves the largest possible area, A(n). This site collects the best known configurations across three classic containers: the square, the triangle, and optimal convex regions. Each entry includes exact coordinates, symmetry and congruence analysis, references to published proofs, and an in-browser rational arithmetic verifier . The ten most recent improvements. New records are also published as an Atom feed .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.techspot.com/images2/news/bigimage/2026/10/2026-10-04-image-9.jpg" alt="Anthropic reported diary entry to police, woman faces felony charge" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html">Anthropic reported diary entry to police, woman faces felony charge</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      62 points · by emptybits · techspot.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49961057">discuss</a>
+    </p>
+<p class="lede">What just happened? Another incident has taken place that illustrates the need to be careful what you tell AI. A Florida woman is facing felony charges after she used Claude as a diary and allegedly wrote that she planned to &#34;shoot up&#34; the Sheriff&#39;s office. After a human reviewer examined the statements, they were reported to police. According to the arrest report , Carli Michelle Heller, of Bonita Springs, Florida, wrote on September 26 that she would attack the Sheriff&#39;s office. She later said that she uses Anthropic&#39;s chatbot like a &#34;diary.&#34; Claude&#39;s safety systems flagged the entry and it was escalated to a human reviewer. After deciding it was a credible threat, the reviewer reported it to law enforcement. The company says it may share user information in limited emergencies if it …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://content.wolfram.com/sites/43/2026/09/social-pure-math-v3.png" alt="What&#39;s the future for pure math research in the age of AI?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/">What&#39;s the future for pure math research in the age of AI?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      61 points · by 6bitquant · writings.stephenwolfram.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49951641">discuss</a>
+    </p>
+<p class="lede">The headlines keep coming: such and such an AI system has solved such and such a math problem. And more and more I’m hearing people saying: maybe we don’t need people doing math research anymore; maybe we should just delegate it all to more and more powerful AIs. I must admit that I’m getting a bit impatient with some of what’s being said. Because it seems to me too often to involve fundamental misunderstandings of what math is really about—and also, frankly, what AI is about. Perhaps I have a unique piece of personal history that informs this. After all, back in 1988 , when we first introduced Mathematica , there was also some of the same kind of talk about math being taken over, and made pointless. Of course that’s not how it worked out at all. Instead, Mathematica (now Wolfram Language …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://gvisor.dev/assets/logos/logo_solo_on_white_bordered.svg" alt="gVisor is being donated to CNCF" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://gvisor.dev/blog/2026/10/02/gvisor-cncf/">gVisor is being donated to CNCF</a></h3>
+    <p class="dateline"><span class="badge">L</span>      53 points · by carlana · gvisor.dev · <a class="discuss" href="https://lobste.rs/s/asoxjl/gvisor_is_being_donated_cncf">discuss</a>
+    </p>
+<p class="lede">In 2018, Google open-sourced gVisor under the Apache 2.0 license. To the best of its contributors’ knowledge, it has ever since remained the second most mature implementation of Linux, after Linux. This year, the gVisor project is being donated to CNCF , and its governance model is shifting accordingly. Google is donating the gVisor project, including its name and trademarks, to the Cloud Native Computing Foundation (CNCF) , a subsidiary of the Linux Foundation . Like its name implies, CNCF is focused on cloud-native computing, with Google having seeded its creation by donating the Kubernetes project. Since then, Kubernetes has grown to become the industry-standard for container orchestration, and has grown a large and vibrant ecosystem around it. gVisor is now following the same …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.msoos.org/2026/10/incentives-in-academic-research/">Incentives in Academic Research</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      48 points · by zero_k · msoos.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49956035">discuss</a>
+    </p>
+<p class="lede">Charlie Munger said: “Show me the incentive and I will show you the outcome”. The issue with Academic Research, in my opinion, is that the outcomes have drifted very far away from the original goal, which I believe to be the advancement of scientific understanding, and training of the new generation of researchers. Academic research was meant to be about breaking new ground, keeping to honesty and good scientific conduct, being clear and upfront about uncertainties, errors, and mistakes, and improving our common understanding of science, all the while training the new generation to follow these goals and principles. Recently, I have bumped into multiple cases where I believe the correctness of the results, the honesty of the people writing them, or the lack of curiosity once they are told …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://onlinelibrary.wiley.com/doi/10.1002/eng2.70108">Replacement of petroleum based products with plant-based materials (2025)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      47 points · by thelastgallon · onlinelibrary.wiley.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49960901">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/">The Era of Software Quality, or the Era of Ostriches?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      41 points · by calvin · blogs.gnome.org · <a class="discuss" href="https://lobste.rs/s/elziso/era_software_quality_era_ostriches">discuss</a>
+    </p>
+<p class="lede">Humans are bad at writing secure code, and GNOME developers are no exception. GNOME is primarily written using unsafe programming languages where simple mistakes in our code lead to devastating consequences for our users , and we make these mistakes all the time . No matter how much we try, GNOME developers will fail write secure code when using unsafe languages like C, C++, or Vala: it’s just too hard for even experienced developers to do properly. The above paragraph is taken from the abstracts of my GUADEC 2024 and 2025 talks. At the time, I thought failure was inevitable: we humans were so bad at writing software that we had no chance to do it properly, and I certainly would not have trusted an AI to do better than a human. But the landscape today is completely different than last …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/8d1544e080704ab5f0601078899df0aae8c307b29f3cf280d646dd52e28c53b0/rcalixte/ncdu" alt="Ncdu: An Updated Fork" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/rcalixte/ncdu">Ncdu: An Updated Fork</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      41 points · by rcalixte · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49957028">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/dsoh2w/ncdu_ncurses_disk_usage_updated_fork">discuss on lobste.rs</a>
+    </p>
+<p class="lede">Ncdu is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don&#39;t have an entire graphical setup available, but it is a useful tool even on regular desktop systems. Ncdu aims to be fast, simple and easy to use, and should be able to run in any minimal POSIX-like environment with ncurses installed. See the ncdu 2 release announcement for information about the differences between this Zig implementation (2.x) and the C version (1.x). You can use the Zig build system if you&#39;re familiar with that. There&#39;s also a handy Makefile that supports the typical targets, e.g.:</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.computerhistory.org/revolution/supercomputers/10/33/62">Watson Jr. memo about CDC 6600 (1963)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      40 points · by mooreds · computerhistory.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49943685">discuss</a>
+    </p>
+<p class="lede">Watson penned this scathing memo asking how IBM lost “our industry leadership” to a company with “34 people, including the janitor.” Also known as &#34;The Janitor Memo,&#34; it shows the impact Control Data Corporation and its computers had on the leadership of IBM. Watson penned this scathing memo asking how IBM lost “our industry leadership” to a company with “34 people, including the janitor.” Also known as &#34;The Janitor Memo,&#34; it shows the impact Control Data Corporation and its computers had on the leadership of IBM.</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-05-p3.html">‹</a><a href="2026-10-05.html">1</a><a href="2026-10-05-p2.html">2</a><a href="2026-10-05-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-10-05-p5.html">5</a><a href="2026-10-05-p6.html">6</a><a href="2026-10-05-p7.html">7</a><a href="2026-10-05-p8.html">8</a><a href="2026-10-05-p9.html">9</a><a class="pg-arrow" href="2026-10-05-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>133 stories · 5 cross-posts merged · 120 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

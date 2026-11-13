@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, October 31, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 304</span>
+      <span>Saturday, October 31, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/">The support case of a customer who said that all they could see was a black screen</a></h3>
+    <p class="dateline"><span class="badge">L</span>      37 points · by ubernostrum · devblogs.microsoft.com · <a class="discuss" href="https://lobste.rs/s/soosuu/support_case_customer_who_said_all_they">discuss</a>
+    </p>
+<p class="lede">If you hold a PC’s power button for 12 seconds, it will turn off at the hardware level without notifying the operating system. This is a safety feature so that you can turn of the computer even if the operating system’s “Shut down” command isn’t working. After eight seconds of the power button being held down, the Windows kernel realizes that the user is trying to do a force-power-off of the system, and it quickly takes a kernel dump that can be uploaded to the Windows Error Reporting service the next time you turn the system on. (Sometimes four seconds isn’t enough time to get enough information, and the kernel dump is incomplete. I believe that on Windows Insider builds of Windows, you get a message that says something like “Please let go of the power button so we can collect more …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://serce.me/images/whitespace/whitespace.png" alt="How hard is it to check for whitespace?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://serce.me/posts/2026-10-30-how-hard-is-it-to-check-for-whitespace">How hard is it to check for whitespace?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by serce · serce.me · <a class="discuss" href="https://lobste.rs/s/1pmuy7/how_hard_is_it_check_for_whitespace">discuss</a>
+    </p>
+<p class="lede">By Sergey Tselovalnikov on 30 October 2026 When looking through a piece of source code recently, I stumbled across this method from Guava – a popular Java library from Google. As you might&#39;ve guessed from the name, this method checks whether a given character is a whitespace character. Yet the code looks a lot more complex than a simple c == &#39; &#39; check. This made me curious and sent me down a small rabbit hole trying to understand where all this complexity was coming from. If you&#39;re curious how this code works too, this article is for you. The first thing one needs when inspecting a function that checks whether a character is whitespace is to define what whitespace actually is. While the SPACE (U+0020) is probably the best-known whitespace character, it&#39;s not the only one. If you&#39;ve been …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://smoores.dev/post/no_npm_estee_is_not_a_typo/">No, npm, “estee” is not a typo of “testem”</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by smoores · smoores.dev · <a class="discuss" href="https://lobste.rs/s/xudbqx/no_npm_estee_is_not_typo_testem">discuss</a>
+    </p>
+<p class="lede">So, alright, look, here&#39;s the thing. Storyteller has a really long npm namespace because “storyteller” is a really common word, and so “@storyteller/” was already taken (by someone who doesn’t actually seem to use it, which, if you’re reading this, I’m still interested in your namespace!). So we’re stuck with “@storyteller-platform/”, and that means our command line tool for book forced alignment is named “@storyteller-platform/align”, and so you need to run “npx @storyteller-platform/align --help”, etc, which is a handful! And so we came up with a cute nickname, “estee” (get it? Storyteller -&gt; ST -&gt; estee?), and we were pretty happy with it, so I went to publish a v0.0.1 to npm so I could set up Trusted Publishing with our GitLab repo and then this happened: ... What? Too similar to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.da.vidbuchanan.co.uk/blog/c2pa-four.html">C2PA&#39;s eMudhra Moment</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by retr0id · da.vidbuchanan.co.uk · <a class="discuss" href="https://lobste.rs/s/2matgw/c2pa_s_emudhra_moment">discuss</a>
+    </p>
+<p class="lede">By David Buchanan (aka retr0id), 29 th October 2026 The eMudhra incident has shown how the modern Web PKI ecosystem reacts to a CA compromise. All things considered, I think it went smoothly—all the web browsers I use picked up the revocations swiftly. But it has also been a clusterfuck, with eMudhra trying to downplay their responsibilities and refusing to elaborate on how exactly the failure occurred. There&#39;s also a long tail of TLS clients that don&#39;t have a great way to handle revocations, or are otherwise not getting their trust stores updated in a timely manner. The C2PA ecosystem tries to solve a very similar problem to Web PKI, but it is comparatively in its infancy. The media verification tools you&#39;ll find in search result top-spots today don&#39;t support revocation-checking at all …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://opengraph.githubassets.com/635c5ef555e9d2bc0a184c6cfacb99a3fdb6a952a0403cc6d257ec83c698e6be/xqlsystems/xarray-sql" alt="Show HN: Automatic deduction of FlashAttention kernel from ~25 lines of SQL" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/xqlsystems/xarray-sql/blob/6debe2495dcb4e8fac20ab97df5b89baae2a31a6/benchmarks/ml/01_attention.py">Show HN: Automatic deduction of FlashAttention kernel from ~25 lines of SQL</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      25 points · by alxmrs · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50309479">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.phorge.it/">Phorge</a></h3>
+    <p class="dateline"><span class="badge">L</span>      23 points · by miro · phorge.it · <a class="discuss" href="https://lobste.rs/s/tw3rsp/phorge">discuss</a>
+    </p>
+<p class="lede">Anubis could not load its JavaScript. The server may be overloaded. Please reload the page to try again. This is a measure against bots and malicious requests similar to a CAPTCHA. However, instead of having to do work yourself, your browser is given a calculation task that it has to solve to ensure that it is a valid client. This concept is called Proof of Work . The task is calculated in a few seconds and you are granted access to the website. Thank you for your understanding and patience. Please note that Anubis requires the use of modern JavaScript features that plugins like JShelter will disable. Please disable JShelter or other such plugins for this domain.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/7b00771f8ac8c7a53222e4a268ddeb9314dd0c909b46ccc826c7b9c1a043fd09/spinfinc/spinf-serve" alt="Show HN: Spinf-serve – inference server for bulk scoring and decisions" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/spinfinc/spinf-serve">Show HN: Spinf-serve – inference server for bulk scoring and decisions</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      22 points · by giarec · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50306815">discuss</a>
+    </p>
+<p class="lede">Bulk classification and decision inference on one GPU. spinf-serve reads a piece of content once and answers many questions about it in the same pass. Each answer is a probability over the options you give, not generated text. It runs on one 24 GB NVIDIA GPU and serves an OpenAI-compatible API, the same API as the hosted spinf service. Apache 2.0. We built this engine for our own work: a daily market index read from millions of news articles, each article asked dozens of narrow, calibrated questions. A serving engine built for chat re-reads the content for every question and generates one token at a time, which made that job slow and expensive. spinf-serve lays every question out as a branch of one read of the content and packs many contents into one forward pass. Bulk classification is …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://brand.nixos.org/logos/nixos-logo-default-gradient-white-regular-horizontal-recommended.svg" alt="Shrinking NixOS Ram footprint and resource requirements to the bare minimum" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum">Shrinking NixOS Ram footprint and resource requirements to the bare minimum</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by msangi · lowendspirit.com · <a class="discuss" href="https://lobste.rs/s/o1z9mm/shrinking_nixos_ram_footprint_resource">discuss</a>
+    </p>
+<p class="lede">A few people were surprised by how low you can go with NixOS, so i thought I would do a write up as I did not realise this was anything special, I kept notes when doing it but not for the intention of writing a blog article so i might miss small tweaks I did here and there. I initially set aside half a day for this; it actually took closer to 3 days. This guide is not very focused on saving disk space. If you want a disk space saving guide that has already been done by someone else here: https://nixcademy.com/posts/minimizing-nixos-images/ this has its own set of challenges and drawbacks so if you want to layer them together, be my guest I have decided not to implement the disk-minimising options into the TierHive NixOS template as I feel it is too likely to cause a default that end users …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.mos.cms.futurecdn.net/JbTarwH24z4CPsHjZGNwJN-1920-80.jpg" alt="Neuroscientists reveal method to train people to have lucid dreams" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.livescience.com/health/neuroscience/neuroscientists-reveal-method-to-train-people-to-have-lucid-dreams-and-it-involves-virtual-reality-and-mediation">Neuroscientists reveal method to train people to have lucid dreams</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by giuliomagnifico · livescience.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50314611">discuss</a>
+    </p>
+<p class="lede">Keep exploring and earning more as a member. Read about discoveries from beyond Earth Keep exploring with your premium access. Read more news stories for free, receive our daily newsletter, post comments, play games and earn badges. Unlimited access to our exclusive features, expert analysis and in-depth interviews, all ad-free. Rigorously fact-checked science, expert commentary and an ad-free experience built for those who want to go beyond the headlines No ads on any Live Science articles. No pop-ups. Full access to everything. Trusted, in-depth, pro-science features that are available only to Pro members. The latest science direct from the most respected people in their fields. Exclusive newsletter. Members-only area. Early access to content. Get the world’s most fascinating …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lapcatsoftware.com/articles/2026/10/10.html">Design the interface for functionality not familiarity</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by nishnash · lapcatsoftware.com · <a class="discuss" href="https://lobste.rs/s/qqelq1/design_interface_for_functionality_not">discuss</a>
+    </p>
+<p class="lede">This blog post is about touch screen Macs, but I’ll start by talking about touch screen cars. Vehicle manufacturers have increasingly replaced physical controls in cars with touch screens, and it hasn’t gone well, because the touch screens frustrate drivers. As a resident of the Upper Midwest who drives wearing gloves in the winter, I suspect that the idea for touch screens came from somewhere warmer than the traditional home of the automotive industry, Detroit. For further reading on the serious, indeed dangerous problems with touch screens in cars, I found a couple of recent articles from Popular Mechanics and The Conversation . Smartphones have become ubiquitous, bringing ubiquitous familiarity with touch screen interfaces. Nonetheless, a touch screen is not the best interface for all …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://canada1.discourse-cdn.com/flex007/uploads/imfreedom/original/1X/248e6940c2d0e9bfba479c1fd0fe45e0af4e1478.png" alt="Pidgin 3.0 Alpha 4 2.98.0 has been released" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://discourse.imfreedom.org/t/pidgin-3-0-alpha-4-2-98-0-has-been-released/445">Pidgin 3.0 Alpha 4 2.98.0 has been released</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by grim · discourse.imfreedom.org · <a class="discuss" href="https://lobste.rs/s/qsvspv/pidgin_3_0_alpha_4_2_98_0_has_been_released">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.mos.cms.futurecdn.net/uCXNTvaQDC2MRU8U37YwaV-2169-80.jpg" alt="Anthropic&#39;s Claude AI blocks video game cloning and reverse-engineering" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked">Anthropic&#39;s Claude AI blocks video game cloning and reverse-engineering</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by gloxkiqcza · tomshardware.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50315987">discuss</a>
+    </p>
+<p class="lede">Get started with free access to reviews, badges and discussions. Unlock exclusive tools and insights for enthusiasts who want more. Access Bench, Roadmaps, deep analysis and other exclusive tools. Dive into our proprietary testing data and compare hardware with detailed benchmarks. Go beyond the headlines with expert reporting on the hardware industry. Track upcoming CPUs, GPUs and tech releases before they arrive. In-depth features, interviews and insider stories from the world of hardware. Expert insights and analysis delivered to your inbox. Dive into our proprietary testing data and compare hardware with detailed benchmarks. Go beyond the headlines with expert reporting on the hardware industry. Track upcoming CPUs, GPUs and tech releases before they arrive. In-depth features …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/spv7tb/rationale_for_filtering_llm_usage_links">Rationale for filtering LLM usage links as off-topic</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by facundoolano · lobste.rs · <a class="discuss" href="https://lobste.rs/s/spv7tb/rationale_for_filtering_llm_usage_links">discuss</a>
+    </p>
+<p class="lede">Hi, I&#39;ve been following recent moderation changes and the discussion around them. I understand that the vibecoding tag was conflating multiple meanings and uses, and how moving to the building-LLM-tooling makes it more precise for that subset of the discussion. I also see how people may be tired of the LLM discussion and want to completely filter out anything LLM related. What I don&#39;t quite understand and I&#39;m not sure if it was clearly explained is why stories about &#34;(not) using LLMs&#34; are now considered completely off-topic in this site. There have been plenty of useful discussions around practices and figuring out how to adjust for professional programming in the presence of LLMs over the last few months, and the &#34;flavor&#34; of those discussions is very different from that found in other …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://helios-i.mashable.com/imagery/articles/038UOQPV1s42HhW3C7IwTY7/hero-image.fill.size_1200x675.v1793312007.jpg" alt="NASA&#39;s Voyager 1 mysteriously lost touch with Earth" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://mashable.com/science/nasa-voyager-1-communication-outage">NASA&#39;s Voyager 1 mysteriously lost touch with Earth</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by entryleveljobsc · mashable.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50315409">discuss</a>
+    </p>
+<p class="lede">NASA &#39;s farthest spacecraft gave mission control a scare when it inexplicably went silent and missed two days of planned check-ins. The nail-biting incident happened just two weeks ago, when the Deep Space Network didn&#39;t receive a call from Voyager 1 on either Oct. 18 or 19. But before the agency could send repair commands, the spacecraft, now outside the solar system, signaled back on Oct. 20. No communication outages have happened since. Engineers still don&#39;t know what caused the problem. So far, the team has discovered that one set of thrusters shut down, leaving a backup set to take over. The thrusters are small engines that point and steady the spacecraft. Voyager 1&#39;s computers do this automatically whenever they detect an issue with the active thrusters to ensure the spacecraft is …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://i.ytimg.com/vi/P5eO7BNyJao/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLB-GfQJC_R_c8SCYQJF_TExXmF-nw&amp;days_since_epoch=20757" alt="Clojure/Conj 2026" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="http://www.youtube.com/playlist?list=PLAkHRk3lgU_Q">Clojure/Conj 2026</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by binjip978 · youtube.com · <a class="discuss" href="https://lobste.rs/s/wd4ye5/clojure_conj_2026">discuss</a>
+    </p>
+  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-31-p4.html">‹</a><a href="2026-10-31.html">1</a><a href="2026-10-31-p2.html">2</a><a href="2026-10-31-p3.html">3</a><a href="2026-10-31-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-31-p6.html">6</a><a href="2026-10-31-p7.html">7</a><a href="2026-10-31-p8.html">8</a><a href="2026-10-31-p9.html">9</a><a class="pg-arrow" href="2026-10-31-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>129 stories · 8 cross-posts merged · 121 excerpts · 79 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

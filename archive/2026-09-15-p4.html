@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 15, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 258</span>
+      <span>Tuesday, September 15, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689">Why is the x86 undefined instruction called ud2? Why 2?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      71 points · by eranb · devblogs.microsoft.com · <a class="discuss" href="https://lobste.rs/s/zbb37v/why_is_x86_undefined_instruction_called">discuss</a>
+    </p>
+<p class="lede">If you look at x86 compiler output (or if, like me, you’re looking at a crash caused by some software that tried to detour an API), you may see an instruction ud2 . What’s up with that? The ud2 instruction is an architecturally undefined instruction, guaranteed to raise an “invalid opcode” exception. Some compilers generate it to mark “unreachable” code, so that if execution somehow manages to reach it, you get a crash rather than executing random instructions. For example, if a function marked [[noreturn]] somehow returns, the compiler will put a ud2 after the call so that the program crashes instead of falling through to the next function. Anyway, why is this instruction called ud2 instead of just ud ? Was there a ud1 ? What was so wrong about ud1 that we had to make a ud2 ? I think I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://brew.sh/assets/img/homebrew-social-card.png" alt="Homebrew 7.0.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://brew.sh/2026/09/13/homebrew-7.0.0/">Homebrew 7.0.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      65 points · by EvanHahn · brew.sh · <a class="discuss" href="https://lobste.rs/s/vmapye/homebrew_7_0_0">discuss</a>
+    </p>
+<p class="lede">Today, I’m proud to announce Homebrew 7.0.0. The most significant changes since 6.0.0 are faster installations and upgrades, stronger sandboxing, a native macOS app, built-in vulnerability checks and an advisory database, the end of macOS 10.15 support and Intel Macs moving to Tier 3. An auto-update or manual brew update (if you have $HOMEBREW_NO_AUTO_UPDATE set) will upgrade Homebrew for you. Now means 7.0.0. Deprecated interfaces warn until disablement; disabled interfaces reject use and removed interfaces are unavailable. The following improvements apply across platforms unless stated otherwise. Greater concurrency across downloads, preparation and installation maximises performance while coordinating failures and summaries. Homebrew 7.0.0 includes various security fixes and new …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://char.lt/blog/2026/09/sorcery-repo-viewer/">what if my git host were a static site generator?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      63 points · by easrng · char.lt · <a class="discuss" href="https://lobste.rs/s/6syfar/what_if_my_git_host_were_static_site">discuss</a>
+    </p>
+<p class="lede">i have been running several personal git forges for, at this point, almost half my life :o i like running my own dev infrastructure, not only because i’m almost always 120ms+ away from us-east-1 , but because sysadmin is just plain fun :3 in 2015 i had a Gogs instance which became a Gitea instance which became a Forgejo instance, and i’ve also deployed GitLab/Forgejo several other times for various groups i’ve been a member of. i like the communal collaborative git forge, and Forgejo is great at this! but my Forgejo server keeps running out of disk space (from crashing while repacking git repos that haven’t updated) and falling over / OOMing under ambient scraper load. for my needs it’s clear that this is just the wrong size of thing: on the tiny machines i use for personal …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://david.alvarezrosa.com/images/home-illustration.png" alt="Optimizing a Spin-Lock" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://david.alvarezrosa.com/posts/optimizing-a-spin-lock/">Optimizing a Spin-Lock</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      62 points · by signa11 · david.alvarezrosa.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49670699">discuss</a>
+    </p>
+<p class="lede">A spin-lock is a lock that never sleeps. Instead of yielding to the scheduler, the thread stays on the CPU and spins . No syscalls. No context switches. In this post, we’ll build a version, step by step, that is 5.7x faster while drawing 5.4x less energy. Threads increment a shared counter under the lock. 1 1 Run on a box tuned for benchmarking . Built with clang . All optimizations enabled. The lock and the counter get a cache line each. Threads are pinned. An atomic bool and an exchange loop. 2 2 exchange atomically writes true and returns the previous value. false means the lock was free and is now ours. true means someone else holds it, so we retry. Uncontended it takes 3.14 ns. Two threads take 61.5 ns, twenty times as long. Four take 246 ns . A core must own the line exclusively to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/lbavmm/what_blog_posts_influenced_your_thinking">What blog posts influenced your thinking the most?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      60 points · by mt · lobste.rs · <a class="discuss" href="https://lobste.rs/s/lbavmm/what_blog_posts_influenced_your_thinking">discuss</a>
+    </p>
+<p class="lede">Interested in hearing your opinions, I usually learn a lot from it. For me it has to be Parse, Don’t Validate and early joelonsoftware.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yuvalino.com/how-can-you-not-be-romantic-about-unix-domain-sockets">How can you not be romantic about UNIX domain sockets?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      60 points · by polywolf · yuvalino.com · <a class="discuss" href="https://lobste.rs/s/uauns9/how_can_you_not_be_romantic_about_unix">discuss</a>
+    </p>
+<p class="lede">Earlier this summer, I gave a technical iOS talk at the DEFCON 34 convention (search up “ Rage Against the Sandbox ”) and my demo crashed on stage right at startup. I played it off cool and just re-launched the demo and it all worked pretty nicely. Honestly, I was so nervous about a 1-day LPE exploit (DarkSword) with 36% success rate I was about to show, that the crash didn’t even bother me. But it was Vegas, so I figured “what the hell” and beat the house with a success on first try on stage (not counting the initial crash as it’s not related to the exploit). Coming back home, I began finalizing the project before releasing its code publicly and it made me want to dig deeper into the crash issue. I noticed this crash always occurs only after the iOS device is freshly booted, never on the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/16f9d19dc2f6846416a97739a37981be411cb270112c2b8fb12afca4107b2d03/enactic/openarm" alt="OpenArm: An open-source 7DOF humanoid arm" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/enactic/OpenArm">OpenArm: An open-source 7DOF humanoid arm</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      59 points · by Lwrless · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49684289">discuss</a>
+    </p>
+<p class="lede">OpenArm is an open-source 7DOF humanoid arm designed for physical AI research and deployment in contact-rich environments. With high backdrivability and compliance, it is built with safe human-robot interaction in mind while delivering practical payload capabilities for real-world applications. OpenArm Cell (on the right) is a standardized environment with unified background, lighting, and camera placement. Research performed using OpenArm can be reproduced around the world in consistent evaluation conditions, facilitating the global discussion on state of the art physical AI research. OpenArm features human-scale proportions, safety and compliance, and practical payloads. At $6,500 USD for a complete bimanual system, it provides a flexible platform for teleoperation, imitation learning …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/b4a348e714c0a106a603b31d90696b88eb107801547db025ea3426d84cc44438/Newspicel/sdrminusminus" alt="SDR–; open source SDR with a patchable signal graph, Rust DSP, web UI" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/Newspicel/sdrminusminus">SDR–; open source SDR with a patchable signal graph, Rust DSP, web UI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      59 points · by newspicel · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49695805">discuss</a>
+    </p>
+<p class="lede">sdr-- is a software-defined radio application with a visual signal path. Connect devices, decoders, displays, and recorders on a canvas, then pin the controls you use to a rack. A Rust server handles the radio and signal processing. The React interface runs in a desktop window or browser. You can run both on one computer, or leave the server beside the antenna and connect over the network. A built-in signal generator lets you try it without an SDR. sdr-- is under active development. Most decoders have been tested with generated IQ fixtures; only some have been verified on air. The channel catalog lists the evidence for each mode and its limitations. Experimental modes may provide acquisition or measurements without decoded audio or video. Download a desktop installer or portable server …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/fb6aeba78c65dceb0a67b481bbcb32603524cc6e53ea5770bf3c4e8df1cac724/JamesRyanATX/fcbnerd" alt="Show HN: Macros with a Behringer FCB1010 MIDI Pedalboard in macOS" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/JamesRyanATX/fcbnerd">Show HN: Macros with a Behringer FCB1010 MIDI Pedalboard in macOS</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      59 points · by fretlessjazz · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49705442">discuss</a>
+    </p>
+<p class="lede">Use a MIDI foot controller as an extra keyboard for your Mac. fcbnerd connects to your MIDI sources and either runs a shell command when a footswitch or pedal sends a message you&#39;ve bound, or prints one JSON object per line for every message so another program can decide what a stomp means. Or stream everything for another program to handle: Built for the Behringer FCB1010, but nothing in it is FCB1010-specific: any CoreMIDI source works. Anything that acts on your Mac, like pressing keys or running scripts, needs permissions that sandboxed apps can&#39;t get, and every user wants a different set of actions anyway. fcbnerd only reads MIDI, which needs no permissions. The actions belong to your shell, or to a tool that already has the access, such as Hammerspoon or Keyboard Maestro. Or from …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://twitter.com/kevinnbass/status/2099626156660043891">Anthropic is in regulatory-capture financial loop</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      59 points · by 762236 · twitter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49705630">discuss</a>
+    </p>
+<p class="lede">The AI safety nonprofits around Anthropic promote an Anthropic-aligned Doomer narrative, whether Tarbell Fellows in popular media, or METR in evaluations. All rely on Moskovitz&#39;s Anthropic stock worth $7 billion, which the parent funding org sits on. This stock increases in value if Anthropic gro…</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://poltora.dev/redis/redis-city-og-v1.jpg" alt="Show HN: Redis City – Explore how Redis works in an interactive 3D model" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://poltora.dev/redis">Show HN: Redis City – Explore how Redis works in an interactive 3D model</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      58 points · by poltora · poltora.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49676425">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.sciencedaily.com/images/1920/devils-arrows-standing-stones.webp" alt="Devil&#39;s Arrows: Ancient builders hauled 55k-lb stones 11 miles for UK stone row" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.sciencedaily.com/releases/2026/09/260909005152.htm">Devil&#39;s Arrows: Ancient builders hauled 55k-lb stones 11 miles for UK stone row</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      54 points · by bookofjoe · sciencedaily.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49659557">discuss</a>
+    </p>
+<p class="lede">Ancient builders hauled enormous 25-tonne (55,000-pound) stones across at least 18 kilometers (11 miles) to create Britain&#39;s tallest surviving prehistoric stone row, according to new research into the iconic Devil&#39;s Arrows. The study, led by Curtin University in collaboration with the University of York, UK, is the first to pinpoint the geological source of the towering stones. Researchers traced them to Brimham Rocks, a rugged area in North Yorkshire. Located near Boroughbridge in northern England, the Devil&#39;s Arrows rise as high as seven meters (23 feet). They form an unusual stone alignment in a lowland landscape, and despite their striking size, scientists had not been able to determine where the stones originally came from. Researchers believe the stones were transported and raised …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.sanity.io/images/cxgd3urn/production/c14e19f476a0250d4bb9bfcd3c1cb11f2767a505-4846x3231.jpg?rect=0,162,4846,2908&amp;w=1200&amp;h=720&amp;q=85&amp;fit=crop&amp;auto=format" alt="Largest known Roman mosaic, beneath Baths of Trajan, opens to the public" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.theartnewspaper.com/2026/09/14/largest-roman-mosaic-opens-to-the-public">Largest known Roman mosaic, beneath Baths of Trajan, opens to the public</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      53 points · by bookofjoe · theartnewspaper.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49696132">discuss</a>
+    </p>
+<p class="lede">Archaeologists are unsure whether the mosaic depicts a real or imagined city Independent Photo Agency/Alamy Live News A vast mosaic uncovered in Rome, the largest ever discovered in the Roman world, has opened to the public for the first time. The mosaic and an accompanying fresco were discovered during excavations in the 1990s in an underground gallery beneath the Baths of Trajan, an expansive imperial leisure complex comprising libraries and bathing pools. The works, known as the “Painted City” fresco and the “Muse and the Philosopher” mosaic, have opened to the public during weekends, initially for groups of 15. The first visitors saw the site last weekend (12 and 13 September); from 2 October, the viewings will run from Friday to Sunday. The opening times were confirmed by the mayor …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://whhone.com/posts/switching-to-gnu-guix/">Switching to GNU Guix: A Beginner&#39;s Perspective</a></h3>
+    <p class="dateline"><span class="badge">L</span>      51 points · by tusharhero · whhone.com · <a class="discuss" href="https://lobste.rs/s/loapzc/switching_gnu_guix_beginner_s">discuss</a>
+    </p>
+<p class="lede">Arch Linux was my distribution of choice for more than a decade. With its rolling-release model, minimal base, and the invaluable ArchWiki, it felt like the final distribution I would ever need. My primary Linux machine is a dedicated home server, handling services like Home Assistant, local DNS, background jobs, and developer sandboxes. For a server running 24/7, long-term stability and maintainability are critical. Over years of incremental tweaks, configuration entropy inevitably crept in. System state became scattered across /etc , /usr , systemd service units, and package manager transactions. Whenever I made changes, I had to keep diligent notes about which files were edited, when, and why. Recent events, such as the Arch Linux AUR security incidents (which I touched upon in my …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://codeberg.org/mergiraf/mergiraf">Mergiraf: A syntax-aware git merge driver for a growing collection of programming languages and file formats</a></h3>
+    <p class="dateline"><span class="badge">L</span>      48 points · by hongminhee · codeberg.org · <a class="discuss" href="https://lobste.rs/s/gslcz7/mergiraf_syntax_aware_git_merge_driver">discuss</a>
+    </p>
+  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-15-p3.html">‹</a><a href="2026-09-15.html">1</a><a href="2026-09-15-p2.html">2</a><a href="2026-09-15-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-09-15-p5.html">5</a><a href="2026-09-15-p6.html">6</a><a href="2026-09-15-p7.html">7</a><a href="2026-09-15-p8.html">8</a><a href="2026-09-15-p9.html">9</a><a class="pg-arrow" href="2026-09-15-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 4 cross-posts merged · 123 excerpts · 72 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

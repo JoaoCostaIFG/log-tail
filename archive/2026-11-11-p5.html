@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 11, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 315</span>
+      <span>Wednesday, November 11, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://forge-blog.github.io/images/forge.png" alt="Memory Safety Bugs in Rust Standard Library" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://forge-blog.github.io/posts/rust-std-memory-safety/">Memory Safety Bugs in Rust Standard Library</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by expurple · forge-blog.github.io · <a class="discuss" href="https://lobste.rs/s/plreds/memory_safety_bugs_rust_standard_library">discuss</a>
+    </p>
+<p class="lede">Microsoft’s FORGE Lab found several memory safety issues in Rust’s standard library ( std and core ), including cases where code written entirely in safe Rust can trigger undefined behavior. The research used Hyenas, FORGE’s frontier research version of codename MDASH, an AI-powered vulnerability-scanning system. The findings reveal three recurring patterns of misplaced trust in unsafe code: trusting code not to panic, trusting user-provided implementations to be correct, and trusting the underlying system. Rust’s safety guarantees are precisely what make these findings interesting. Its rich type system and ownership model rule out whole classes of memory-safety issues, but much of the standard library relies on unsafe code underneath its safe APIs. When that code breaks its safety …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://nodejsdesignpatterns.com/og/whats-new-in-nodejs-27.png" alt="What&#39;s new in Node.js 27" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://nodejsdesignpatterns.com/blog/whats-new-in-nodejs-27/">What&#39;s new in Node.js 27</a></h3>
+    <p class="dateline"><span class="badge">L</span>      25 points · by loige · nodejsdesignpatterns.com · <a class="discuss" href="https://lobste.rs/s/vtjjbc/what_s_new_node_js_27">discuss</a>
+    </p>
+<p class="lede">On October 29, 2026, the Node.js team published v27.0.0-alpha.0.0.0 . If you have been using Node.js for a few years, that version string alone probably made you do a double take. Where is the usual October v27.0.0 Current release? Node.js 27 is the first release to follow the new annual schedule. Under the old schedule, October brought a major release that reached end of life six months later without entering Long Term Support (LTS). October now starts a six-month Alpha phase, ahead of the 27.0.0 Current release in April 2027 and LTS promotion in October 2027. In this first Alpha, V8 moves from 14.6 to 15.6, adding Iterator.zip() , Iterator.zipKeyed() , Iterator.prototype.join() , Iterator.prototype.includes() , and Math.sumPrecise() . There is a promises API for node:net , along with …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://dbushell.com/images/articles/2026-11-09-dark-mode.png" alt="I was wrong about dark mode" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://dbushell.com/2026/11/09/dark-mode/">I was wrong about dark mode</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by loige · dbushell.com · <a class="discuss" href="https://lobste.rs/s/iqhxz6/i_was_wrong_about_dark_mode">discuss</a>
+    </p>
+<p class="lede">They’re calling the new feature Adaptive Dark Mode ™ . I’m learning that other browsers already had a similar feature . I assumed people relied on add-ons like Dark Reader (and millions do). Regardless, pushing what is effectively an accessibility option to the forefront goes a long way to help people respect it. My site used to have dark mode but I wasn’t happy with my colour choice and implementation. I redesigned my site back in Feb and removed it. Later I experimented with colour themes which I’ve since adapted for alternate blog banners . Personally I prefer reading with a dark theme for long-form content. Dark is not my brand though and I don’t believe every website needs to support colour scheme preference automatically. A good browser has reader mode, I use that all the time. What …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://tiki.li/blog/about_blqsort">A C++ Quicksort Faster Than std::sort</a></h3>
+    <p class="dateline"><span class="badge">L</span>      23 points · by chkas · tiki.li · <a class="discuss" href="https://lobste.rs/s/qi2lni/c_quicksort_faster_than_std_sort">discuss</a>
+    </p>
+<p class="lede">blqsort is a very fast quicksort algorithm. I am not aware of any other general-purpose comparison-based sorting algorithm that is faster on random data. Only specialized SIMD-based algorithms are generally faster when dealing with small primitive data types. The implementation is available on GitHub under the MIT license. There is also a C version of it, including multithreaded versions, each as a single header file. The following benchmarks show the execution times for sorting 50 million random doubles using different sorting implementations. The measurements were taken on an Apple M1 system using Clang and on an Intel i5-9300H Linux system using GCC , both compiled with the -O3 option. Real-world data is often partially sorted. Here are benchmark results for 90% sorted input: Execution …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1445832118/919683d0-c60e-41f7-9913-132f49b4bdd6" alt="Show HN: Klad, a paint app your coding agent can drive (source-available)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/klad-app/klad">Show HN: Klad, a paint app your coding agent can drive (source-available)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      23 points · by ambewas · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50454951">discuss</a>
+    </p>
+<p class="lede">Give your agent real brushes. klad is a 2D painting and animation app you share with a coding agent. You paint in the editor with a pen. The agent paints through the klad command line, with the same brushes, on the same drawing, and each of you sees the other&#39;s strokes instantly. There is no image model in klad. Your agent (Claude Code, Codex, anything that can run commands) decides what to paint; klad gives it brushes, layers and a timeline. Whatever either of you puts down stays what it was: a stroke with its path, pressure, brush and colour, a shape with its points, a fill with its region. So there&#39;s no rerolling and hoping for the best: if one leaf looks off, you fix that leaf. Asked for &#34;a little sprout creature for my game&#34;, the agent paints 4,344 strokes and fills. You change them …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.benjoffe.com/manual-assets/fast-easter-socialthumb.png" alt="A faster Easter date function" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.benjoffe.com/fast-easter">A faster Easter date function</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by eatonphil · benjoffe.com · <a class="discuss" href="https://lobste.rs/s/alijyg/faster_easter_date_function">discuss</a>
+    </p>
+<p class="lede">This post is a fun little side quest to kickstart my journey optimising regional calendars. Computing the date of Easter faster is not going to matter in any real application. Even in places where it might seem to matter, like high frequency trading applications, it is probably better to just use an in-memory lookup table for holiday dates... However, no &#34;Fast Date&#34; series would be complete without some mention of this classic problem. The rules for Easter were broadly decided at the First Council of Nicaea, organised by Emperor Constantine in 325 AD, ultimately landing on the first Sunday after the first full moon, on or after March 21 . Later, for operational efficiency, the church defined &#34;full moon&#34; according to a formula, which was eventually modified by Pope Gregory XIII in 1582 …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/4b044880dff0a36e440e71ab4027c0e9f9b28545c6fdd9020f6114ac757f1f5b/0xdeadf1sh/T1DMAI" alt="Show HN: I have trained 15 blood glucose forecasting models on my own data" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/0xdeadf1sh/T1DMAI">Show HN: I have trained 15 blood glucose forecasting models on my own data</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by 0xdeadf1sh · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50444761">discuss</a>
+    </p>
+<p class="lede">Most of the code in this repo was written by AI. If you don&#39;t like that, feel free to leave. This repo is a zoo. Here I train &amp; test many blood glucose forecasting models (including my own) on both my own data and metabonet (public). My model is a small transformer that forecasts blood glucose 2 hours ahead. I&#39;ve made two variants: D16 DILATE and D16 MSE which use DILATE and MSE loss for training, respectively. D16 refers to the width of the model (16). They are both trained on synthetic traces, and then a LoRA adapter is added for light fine-tuning, but I also test them without the adapter. Feast thine eyes on some of their forecasts (these have been trained on synthetic traces and no adapter is used for predictions): Research and educational use only - not a medical device. T1DMAI is a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://zellij.dev/img/046-preview.png" alt="Zellij 0.46: built-in terminal, attention inbox, session previews" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://zellij.dev/news/terminal-inbox-session-previews/">Zellij 0.46: built-in terminal, attention inbox, session previews</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by worble · zellij.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50452313">discuss</a>
+    </p>
+<p class="lede">Zellij 0.46.0 has just been released! Check it out! Zellij has always been and will always be a terminal multiplexer first. Now, it also includes a built-in terminal for those who want a more complete experience. The built-in terminal can be run directly on the machine that runs zellij with zellij terminal . It uses Zellij as its UI, providing the same experience one would get if running Zellij using an external terminal. It intentionally does not have GUI tabs or splits, as I believe textual interfaces are the natural choice for those who love the terminal. To emphasize: absolutely nothing changes for those who want to keep running Zellij as a multiplexer inside another terminal or on a remote server. Zellij is a multiplexer first and always will be. In developing the terminal, it was …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.cs.cmu.edu/~ph/nyit/masson/history.htm">The Computer Graphics Book of Knowledge</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by num42 · cs.cmu.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=50454823">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1453132706/355ef15b-b53b-4211-bd76-47cdaad9ef5b" alt="Show HN: Yogurt – Free, private, open-source alternative to Granola" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/FrigadeHQ/yogurt">Show HN: Yogurt – Free, private, open-source alternative to Granola</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by brownrout · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50454625">discuss</a>
+    </p>
+<p class="lede">Private AI meeting notes. Free and open source. Yogurt records your calls without adding a bot to the meeting. macOS 14.4+ (Apple Silicon) · Windows 10 2004+ (x64) · Ubuntu 22.04+ or similar (x64 AppImage) · 8 GB memory yogurt.so · Help · Build from source · MIT license Made by Frigade . Private AI meeting notes. Free and open source.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.gitori.com/blog/covers/hardest-notes-on-the-guitar-fretboard.jpg" alt="The hardest notes to find on the guitar fretboard" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.gitori.com/blog/articles/hardest-notes-on-the-guitar-fretboard">The hardest notes to find on the guitar fretboard</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by udit99 · gitori.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50454995">discuss</a>
+    </p>
+<p class="lede">Gitori&#39;s Find the Notes game challenges users to find a given note in a highlighted area of the fretboard. Over the last 3 years, the game has been played by over 10,000 people , and I&#39;ve collected 275,169 different data points on note identification . Based on that data, I have a heatmap of the hardest notes to identify on the fretboard. Reds are the hardest and greens are the easiest. 275,169 answers from the Find the Notes Game · refreshed Nov 11, 2026 275,169 answers from the Find the Notes Game · refreshed Nov 11, 2026 275,169 answers from the Find the Notes Game · refreshed Nov 11, 2026</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://vulpinecitrus.info/blog/what-if-you-could-handle-sigkill/">Modding Linux to use SIGKILL on every process</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by WinnerWind · vulpinecitrus.info · <a class="discuss" href="https://lobste.rs/s/5wrucm/modding_linux_use_sigkill_on_every">discuss</a>
+    </p>
+<p class="lede">Sometimes, a thought occurs to you: what if i did the thing nobody&#39;s supposed to do? i was recently having a discussion online about different perspectives on signals. It led to a question me and someone else asked simultaneously: what if you could ignore or handle the absolute, unstoppable order from the kernel to be killed or stopped? Signals in POSIX are a form of IPC that allows userland processes (and the kernel) to send each other simple indications of actions to take. The Linux kernel, at the time of writing, handles about 31 of those on the x86(-64) architecture. The most frequent situation where you might encounter signals as a developer is when making handlers for these signals: callbacks which are to be executed upon the reception of a signal by your process. You may also mask …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://jcarreras.es/posts/100x-developers/">100x Developers</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by krenel · jcarreras.es · <a class="discuss" href="https://news.ycombinator.com/item?id=50454395">discuss</a>
+    </p>
+<p class="lede">Think about it. 10x of something is a lot . We referenced the mythical 10x developer casually in the dev world. Now that we have AI, we’re mentioning the existance of 100x developers! It bothers me. Not because it might be true or false in particular instances, but because the number just scapes me. 100x. It’s a lot if talking about productivity. Lets put this number in perspective. In 3 days, at 100x and you achieve the work of 300 working days. There are 260 working days in a year . That sounds unrealistic. Under some circumstances, I think it’s possible to have such a big multiplier: Newbies . You know absolutely nothing about programming. Doing a full website, including frontend, backend, DB access, prod setup… that’s a lot of work for someone who’s knows nothing. You’ll be blazing …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://fingerprinting.study/">Large-Scale Measurement and Real-World Mitigation of Web Browser Fingerprinting in the Wild</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by freddyb · fingerprinting.study · <a class="discuss" href="https://lobste.rs/s/zu8tdw/large_scale_measurement_real_world">discuss</a>
+    </p>
+<p class="lede">Tom Ritter 1 , Fatih Kilic 2 , Frederik Braun 1 , Elisa Luo 3 , Geoffrey M. Voelker 3 , Stefan Savage 3 , Christoph Kerschbaumer 1 1 Mozilla Corporation · 2 University of Toronto · 3 UC San Diego This is the companion site to a study Mozilla ran on browser fingerprinting. With the help of almost 25 million Firefox release users, we measured how identifiable browsers really are, found which characteristics make them unique, and used that to design the fingerprinting protections that shipped in Firefox 143. Here you can read the paper and its key findings, browse the full appendix data the PDF had no room for, download the privacy-preserving aggregate data and analysis code, learn how the data was collected, and run an interactive test that compares your own browser against the measured …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://now-next.nl/og/en-insights.jpg" alt="JSON vs. jsonb in Postgres: size and speed, measured" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://now-next.nl/en/insights/postgresql-json-vs-jsonb-measured/">JSON vs. jsonb in Postgres: size and speed, measured</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by plaur782 · now-next.nl · <a class="discuss" href="https://news.ycombinator.com/item?id=50452394">discuss</a>
+    </p>
+<p class="lede">Whether jsonb takes more room than json depends on the JSON you put in, not on the type alone. In PostgreSQL 17.11 and 18.6, which stored every table byte for byte the same size, a million compact documents of about 200 bytes took 17.8% more room as jsonb , while the same documents pretty-printed took 3.6% less; across six document shapes, two input forms and two compression methods we measured everything from 22.6% smaller to 40.9% larger. Reading one key with -&gt;&gt; was 2.7 to 10.6 times faster from jsonb in every case we timed, and only jsonb can be compared, grouped or indexed for containment at all. Two numbers that show up when you search for this point in opposite directions. In the slides of a PGConf.Russia talk from 2015 by Alexander Korotkov, Oleg Bartunov and Teodor Sigaev, 1.25 …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-11-p4.html">‹</a><a href="2026-11-11.html">1</a><a href="2026-11-11-p2.html">2</a><a href="2026-11-11-p3.html">3</a><a href="2026-11-11-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-11-11-p6.html">6</a><a href="2026-11-11-p7.html">7</a><a href="2026-11-11-p8.html">8</a><a href="2026-11-11-p9.html">9</a><a class="pg-arrow" href="2026-11-11-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 6 cross-posts merged · 119 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

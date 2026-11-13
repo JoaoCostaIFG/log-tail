@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, October 10, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 283</span>
+      <span>Saturday, October 10, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://casuarina.org/news/ending-the-casuarina-linux-experiment/">Ending the Casuarina Linux Experiment</a></h3>
+    <p class="dateline"><span class="badge">L</span>      56 points · by FedericoSchonborn · casuarina.org · <a class="discuss" href="https://lobste.rs/s/sdlhhs/ending_casuarina_linux_experiment">discuss</a>
+    </p>
+<p class="lede">I didn’t expect this to be the second post after the announcement, but here we are. The short version is that I’ve decided to wind down the Casuarina Linux project. Things will continue as-is until the end of October 2026. After which, depending how my migration to another distro has gone, package updates will stop. The infrastructure will remain up until the end of 2026, after which I may retire some things. There are no plans to retire the package repo or website for now. As alluded to in the Q&amp;A I am the proverbial dog that has no idea what I’m doing. I thought that after I fought through all the changes to bootstrap the system most of the hard stuff was done, and that from then on maintenance would mostly be updating packages. I also expected that the distro would pique the interest …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/7a050c9aa9a5c0676c156ffdd3878b96fca9be4fbed70d094a5c9516ec497f3c/jj-vcs/jj/releases/tag/v0.46.0" alt="jujutsu (jj) 0.46.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/jj-vcs/jj/releases/tag/v0.46.0">jujutsu (jj) 0.46.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      50 points · by kingmob · github.com · <a class="discuss" href="https://lobste.rs/s/nz3b1h/jujutsu_jj_0_46_0">discuss</a>
+    </p>
+<p class="lede">jj is a Git-compatible version control system that is both simple and powerful. See the installation instructions to get started. The minimum supported git command version is now 2.42.0, up from 2.41.0. jj workspace add uses git worktree add --orphan , which was added in 2.42.0. The minimum supported Rust version (MSRV) is now 1.97.1. jj bisect run now runs some consistency checks before proceeding to bisect. This helps ensure that the command can tell good and bad revisions apart, and that the working copy does go from bad to good over the provided revset. Use the new flag --trust-endpoints to disable these checks. jj split now opens a single editor session to edit descriptions for the split commits. jj undo and jj redo now refuse to undo/redo an operation that was performed in another …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://linum.ai/field-notes/pyramid-jit/opengraph-image/card?67ee6b6af80a4a6f" alt="Training Text-to-Image Models Without a VAE" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.linum.ai/field-notes/pyramid-jit">Training Text-to-Image Models Without a VAE</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      49 points · by schopra909 · linum.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=49983582">discuss</a>
+    </p>
+<p class="lede">In our last post, we developed a pixel-space encoder-decoder architecture (JiT-DDT). By throwing away the VAE, we were able to compress tokens more aggressively. In turn, this slashed the cost of attention and directly led to faster training and inference. While effective, it&#39;s unclear how to scale encoder-decoder architectures under fixed parameter budgets. So today, we propose the Pyramid-JiT (P-JiT), a novel decoder-only pixel space architecture that beats our prior models, by predicting the target image at several resolutions along the DiT trunk. It reaches Linum v2&#39;s FD-DINOv2 on 11.3× fewer training samples, and trains in 4.3× fewer GPU-hours at 4× the pixels. P-JiT matches Linum v2&#39;s final FD-DINOv2 in 11.3 × fewer samples P-JiT code and model weights are available under the Apache …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.primeintellect.ai/blog/porting-prime-agent-to-rust/cover-swarm.png?v=f7c567a4763b" alt="Rewriting Prime Agent in Rust" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.primeintellect.ai/blog/prime-agent-rust">Rewriting Prime Agent in Rust</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      48 points · by piotrgrabowski · primeintellect.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50027694">discuss</a>
+    </p>
+<p class="lede">Since we launched Prime Agent [1] in August, it has been downloaded more than 300,000 times and has processed over 8 trillion tokens. Today, we&#39;re excited to ship a faster, cleaner and more reliable Prime Agent, rewritten from the ground up in Rust. Over two weeks, Prime Agent orchestrated a swarm of over 2,000 agents to rewrite itself end to end, operating across 10,000+ Prime Sandboxes with over 200 billion tokens from Prime Inference’s GLM-5.3 endpoint. The Rust rewrite stress-tested Prime Agent’s multi-agent capabilities, including the sandbox and inference infrastructure we’ve been building to power large-scale agent swarms, autonomous research, and reinforcement learning. To ensure feature parity with the TypeScript version, Prime Agent orchestrated subagents to topologically sort …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.broadinstitute.org/news/clinical-trial-prion-disease-drug-candidate-begins-enrolling-participants">Clinical trial of a prion disease drug candidate begins enrolling participants</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      48 points · by luu · broadinstitute.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50028027">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://atarimuseum.nl/atari-falcon/">Atari Falcon</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      43 points · by debo_ · atarimuseum.nl · <a class="discuss" href="https://news.ycombinator.com/item?id=50027590">discuss</a>
+    </p>
+<p class="lede">The Atari Falcon030 Computer System was Atari Corporation’s final computer product. Codenamed Sparrow, the machine was based on a Motorola 68030 main CPU, and had a Motorola 56000 digital signal processor, a feature which distinguished it from most other microcomputers of the era. The Falcon was released in late 1992 and subsequently cancelled in late 1993 as Atari Corp restructured itself to focus completely on the release and support of its newest product, the Atari Jaguar video game console. Atari Corp. created a number of prototypes of the Falcon040 (based on the more capable fully pipelined, integrated-FPU, Motorola 68040, and using a “microbox” case), but canceled it. The microbox case resembled the later Sony PlayStation 2, right down to the ability to run it vertically or …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.gentoo.org/assets/img/og-image.jpg" alt="Gentoo infrastructure sponsors wanted" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.gentoo.org/news/2026/10/07/infrastructure-sponsors-wanted.html">Gentoo infrastructure sponsors wanted</a></h3>
+    <p class="dateline"><span class="badge">L</span>      42 points · by gmem · gentoo.org · <a class="discuss" href="https://lobste.rs/s/jmqi5h/gentoo_infrastructure_sponsors_wanted">discuss</a>
+    </p>
+<p class="lede">Gentoo Linux is made possible by many community donations and sponsors, together with the enthusiastic work of our developers. Unfortunately, this year several long-running sponsors were unable to continue their prior support, and at the moment we are looking for replacements. Are you or your organization interested in supporting Gentoo via an infrastructure sponsorship? There are many ways to do that , ranging from providing rack space or servers in a data center to donating server hardware; details and typical arrangements are described on a wiki page of the Infrastructure project . Partnerships with organizations aligning with Gentoo’s goals are strongly preferred. We can be reached at infra@gentoo.org . Please help us continue to provide the best source-based Linux distribution ever!</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://unison-lang.org//assets/unison-services-preview.svg" alt="Unison Cloud is now open source" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.unison-lang.org/blog/unison-cloud-open-source/">Unison Cloud is now open source</a></h3>
+    <p class="dateline"><span class="badge">L</span>      42 points · by bontaq · unison-lang.org · <a class="discuss" href="https://lobste.rs/s/zubabn/unison_cloud_is_now_open_source">discuss</a>
+    </p>
+<p class="lede">Unison Cloud is now open source, MIT licensed. There are four projects: Unison Cloud turns any pool of nodes into a distributed computer, programmable with the Unison language. See a series of demos . Some features: We think this tech will be more useful to the world as an open source technology and hope that people build great things with it. If you&#39;re interested in professional support for a Unison Cloud cluster, get in touch at hello@unison.cloud .</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.python.org/downloads/release/python-3150/">Python 3.15.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      41 points · by kaycebasques · python.org · <a class="discuss" href="https://lobste.rs/s/rpiwtb/python_3_15_0">discuss</a>
+    </p>
+<p class="lede">Notice: This page displays a fallback because interactive scripts did not run. Possible causes include disabled JavaScript or failure to load scripts or stylesheets. Python 3.15.0 is the newest major release of the Python programming language, and it contains many new features and optimisations compared to Python 3.14, in 5,643 commits from 1,012 contributors. Some of the major new features and changes in Python 3.15 are: For more details on the changes to Python 3.15, see What’s new in Python 3.15 . When running IDLE or other GUI applications that use the tkinter module, these applications may hang when using an application&#39;s menu command that opens a dialog (for example, IDLE&#39;s About IDLE , Settings , and Open Module commands) resulting in a spinning beach ball with Force Quit needed …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://letsencrypt.org/images/LetsEncrypt-SocialShare.png" alt="64-Day Certificate Lifetimes Coming Feb 2027" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://letsencrypt.org/2026/10/07/64-day-certs.html">64-Day Certificate Lifetimes Coming Feb 2027</a></h3>
+    <p class="dateline"><span class="badge">L</span>      38 points · by fanf · letsencrypt.org · <a class="discuss" href="https://lobste.rs/s/dcrosf/64_day_certificate_lifetimes_coming_feb">discuss</a>
+    </p>
+<p class="lede">On February 10, 2027, all Let’s Encrypt subscribers will move to certificates with 64 day lifetimes by default unless they select an even shorter lifetime (45 or 6 days, as previously announced ). This means that any certificate we issue or renew on and after that date will have a 64 day validity period, and we expect the last 90-day certificate to expire on May 11, 2027. We will not revoke valid certificates as a part of this process. We will switch to issuing 64 day certificates in our staging environment on October 14, 2026 to enable testing. We recommend testing in staging before the change takes effect in production. If your renewals are automated and your client supports ACME Renewal Info (ARI), you should be all set since ARI allows Let’s Encrypt to tell your client when to renew …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/8rrtma/cloudflare_shutting_down_deno_is_news_not">Cloudflare shutting down Deno is news, not just PR</a></h3>
+    <p class="dateline"><span class="badge">L</span>      36 points · by conartist6 · lobste.rs · <a class="discuss" href="https://lobste.rs/s/8rrtma/cloudflare_shutting_down_deno_is_news_not">discuss</a>
+    </p>
+<p class="lede">Requesting the currently-removed post for https://deno.com/blog/cloudflare be restored. Thread: https://lobste.rs/s/8hauxs/deno_is_joining_cloudflare My reasoning: It isn&#39;t just PR, but significant tech news that Cloudflare is buying up open source teams while dismantling the projects they maintain. Is this not the best place to discuss the ramifications of companies acting in this manner?</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blueberrywren.dev/blog/primes/">A tale of four theorem provers, or: A (reasonably) opinionated comparison of Isabelle/HOL, Lean, HOL4, and Agda</a></h3>
+    <p class="dateline"><span class="badge">L</span>      33 points · by blueberrywren · blueberrywren.dev · <a class="discuss" href="https://lobste.rs/s/4dwrz0/tale_four_theorem_provers_reasonably">discuss</a>
+    </p>
+<p class="lede">In which I compare Lean, Isabelle/HOL, Agda, and HOL4 with only mild regard for &#34;fairness&#34;. All four of the above are theorem proving applications; that is, their purpose is to computer-formalize mathematics. Broadly speaking, both Lean and Agda are dependent-types based systems, utilizing the Curry-Howard correspondence to prove theorems via a complex type system, whereas Isabelle/HOL and HOL4 are LCF-style systems, with a small &#34;proof kernel&#34; containing base rules (e.g. forall x, x = x ) that all proofs must be constructed via. Both foundations have advantages and disadvantages, and some will be discussed. I have formalized in all four a proof of the infinitude of primes; that is, the statement &#34;For any number n, there is a prime larger than n&#34;. The exact proof formalized is the &#34;usual&#34; …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.bloomberg.com/news/articles/2026-10-09/data-center-darling-s-30-billion-ipo-dream-crushed-in-48-hours">Data Center Darling&#39;s $30B IPO Dream Crushed in 48 Hours</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by mfiguiere · bloomberg.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50029452">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://vale.rocks/assets/og/post.webp" alt="Beauty in DVD Menus" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://vale.rocks/posts/dvd-menus">Beauty in DVD Menus</a></h3>
+    <p class="dateline"><span class="badge">L</span>      27 points · by kaycebasques · vale.rocks · <a class="discuss" href="https://lobste.rs/s/9mykk7/beauty_dvd_menus">discuss</a>
+    </p>
+<p class="lede">Look at many early DVD releases, and you’ll see interactive menus touted as a selling point. Coming from VHS (or LaserDisc), which had no menus to speak of, this was a genuine improvement. That isn’t to say all DVD s had interactive menus, however. Many of the earliest releases just entered straight into their content, and the same is true of some cheaper releases. However, once DVD became widespread, publishers started to really embrace the capabilities the format afforded them. The format first released in late 1996; however it wasn’t until the 2000s that they really kicked off. With the medium’s strengths and foibles known, players widely adopted, and technology ready to handle the task, DVD s hit their stride. With this came some brilliant and memorable menus. In NTSC regions video on …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Navier-Stokes lost in translation: Why Lean verification of AI autoformalisation does not guarantee correct natural language proofs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2610.08144">Navier-Stokes lost in translation: Why Lean verification of AI autoformalisation does not guarantee correct natural language proofs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      25 points · by Corbin · arxiv.org · <a class="discuss" href="https://lobste.rs/s/axmhji/navier_stokes_lost_translation_why_lean">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-10-p3.html">‹</a><a href="2026-10-10.html">1</a><a href="2026-10-10-p2.html">2</a><a href="2026-10-10-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-10-10-p5.html">5</a><a href="2026-10-10-p6.html">6</a><a href="2026-10-10-p7.html">7</a><a href="2026-10-10-p8.html">8</a><a href="2026-10-10-p9.html">9</a><a class="pg-arrow" href="2026-10-10-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 3 cross-posts merged · 114 excerpts · 79 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

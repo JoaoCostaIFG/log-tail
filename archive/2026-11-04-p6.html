@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 4, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 308</span>
+      <span>Wednesday, November 4, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://hy.tencent.ai/research/hy4">Tencent Hy4</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by Philpax · hy.tencent.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50365780">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://antonz.org/go-concurrency/cover.png" alt="Gist of Go: Concurrency" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://antonz.org/go-concurrency/">Gist of Go: Concurrency</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by hartzell · antonz.org · <a class="discuss" href="https://lobste.rs/s/erkjnx/gist_go_concurrency">discuss</a>
+    </p>
+<p class="lede">Many Go concurrency books and tutorials are like: here&#39;s goroutine, here&#39;s channel, here&#39;s select — use them as you like. Others just throw concurrent patterns at you without really explaining them. This is not very helpful: the most important thing in concurrent programming is not pure knowledge, but the understanding and ability to apply concurrency primitives. That&#39;s why I&#39;ve created an interactive book that teaches Go concurrency from the ground up through practical exercises. These exercises are simple enough to be solved with a single page of code yet are closely aligned with real-world scenarios. The book is intended for programmers who are already familiar with Go, from language basics to interfaces and errors. You don&#39;t need any prior knowledge of goroutines and channels — we&#39;ll …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nnethercote.github.io/2026/11/04/how-to-speed-up-the-rust-compiler-in-november-2026.html">How to speed up the Rust compiler in November 2026</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by polywolf · nnethercote.github.io · <a class="discuss" href="https://lobste.rs/s/ecrqpy/how_speed_up_rust_compiler_november_2026">discuss</a>
+    </p>
+<p class="lede">My first month working on Rust compiler performance for Hexcat is over and it’s time to see some of what’s happened since my last post . Spans are a critical data structure in the Rust compiler. Every AST, HIR, and MIR node carries a span. Each span has four fields recording the following. Each of the four fields is 32 bits, resulting in 16 bytes of data. But most of the time these 16 bytes can be compressed into one of three 8-byte inline formats, and the remaining cases are interned into a global table. This works by taking advantage of patterns in the data: many source locations have a small length (i.e. a small difference between lo and hi ); many spans have a zero context and/or parent, and the non-zero contexts and parents are typically small integers; parents are only used in …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.snowflake.com/content/dam/snowflake-site/engineering-blog/featured-images/sf-eng-blog-ML-2.png" alt="Postgres 19 REPACK: Built-In Online Table Bloat Cleanup" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/">Postgres 19 REPACK: Built-In Online Table Bloat Cleanup</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by hongminhee · snowflake.com · <a class="discuss" href="https://lobste.rs/s/uutnr5/postgres_19_repack_built_online_table">discuss</a>
+    </p>
+<p class="lede">REPACK is my favorite feature in Postgres 19. It&#39;s not the flashiest, but it is the one that’s going to matter most if you’re running a production database. Vacuum, autovacuum and bloat have always been this sore spot for Postgres users. On the one hand, Postgres MVCC design is not new. And yet, on high update systems, this churn of having dead rows that get freed up later, vacuum being tweaked to the right levels to maintain low bloat is still a bit of an inexact science. Once bloat does exist, it’s just sitting there. And you see that unclaimed space not being used. Before Postgres 19, your options for reclaiming that space were: Let’s back up. You may be familiar with bloat as a seasoned Postgres user, but just to make sure we’re all on the same page… It&#39;s one of those Postgres …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.veitheller.de/A_Second_Futamura_Projection.html">A Second Futamura Projection</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by abhin4v · blog.veitheller.de · <a class="discuss" href="https://lobste.rs/s/ihvhfk/second_futamura_projection">discuss</a>
+    </p>
+<p class="lede">Two months ago , we turned compfuck back into an interpreter and wrote a specializer that, given a Brainfuck program, folded the interpreter away and left behind the operations we couldn’t specialize. That’s the first Futamura projection, which is what I likened compfuck to historically in lazy shorthand. If you missed the article and this whole paragraph refuses to make sense to you, start there! Of course, that article was only the first step. We’re not done with our Origami piece. Specifically, we ended up with a way to obtain compiled programs without writing instruction translations by hand. That’s great, but we still ran the specializer on every single program, walking through the interpreter’s source each time. The specializer and the interpreter were always the same, though, we …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lists.debian.org/debian-security-announce/2026/msg00526.html">Man-in-the-middle arbitrary code execution in Debian’s apt</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by gnyeki · lists.debian.org · <a class="discuss" href="https://lobste.rs/s/h7bvma/man_middle_arbitrary_code_execution">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://hromadske.ua/static/content/thumbs/1200x630/9/e0/utcrbt---c1200x630x43px12p-rc--d61408f852aee1cab079037cddb09e09.jpeg" alt="Kyiv Independent reports system breach" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://hromadske.ua/en/war/273759-kyiv-independent-reports-system-breach-after-readers-receive-fake-nuclear-attack-warning">Kyiv Independent reports system breach</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by wubin · hromadske.ua · <a class="discuss" href="https://news.ycombinator.com/item?id=50367073">discuss</a>
+    </p>
+<p class="lede">The Kyiv Independent, a Ukrainian English-language news outlet, said one of its systems had been hacked after subscribers received an unauthorized email falsely claiming that a nuclear warhead had been launched toward Kyiv. The Russian-language message also claimed that Ukrainian President Volodymyr Zelenskyy and Russian leader Vladimir Putin had joined forces. In a message to readers on November 4, Kyiv Independent Editor-in-Chief Olga Rudenko confirmed that the email had not been sent by the newsroom. &#34;One of our systems was breached, and everything we know so far, including the content of the email, points to a Russian operation,&#34; Rudenko said. According to the editor-in-chief, the attackers also attempted to publish similar messages on the outlet&#39;s website, but they were promptly …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.mos.cms.futurecdn.net/Lsdx8py6CqRVLqSZCT29ze-1920-80.png" alt="AI data centers comprehensively defeated at US midterm elections" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments">AI data centers comprehensively defeated at US midterm elections</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by rndsignals · tomshardware.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50367085">discuss</a>
+    </p>
+<p class="lede">Get started with free access to reviews, badges and discussions. Unlock exclusive tools and insights for enthusiasts who want more. Access Bench, Roadmaps, deep analysis and other exclusive tools. Dive into our proprietary testing data and compare hardware with detailed benchmarks. Go beyond the headlines with expert reporting on the hardware industry. Track upcoming CPUs, GPUs and tech releases before they arrive. In-depth features, interviews and insider stories from the world of hardware. Expert insights and analysis delivered to your inbox. Dive into our proprietary testing data and compare hardware with detailed benchmarks. Go beyond the headlines with expert reporting on the hardware industry. Track upcoming CPUs, GPUs and tech releases before they arrive. In-depth features …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.johndcook.com/blog/wp-content/uploads/2022/05/twittercard.png" alt="Fraction comparison trick revisited" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.johndcook.com/blog/2026/11/03/fraction-comparison-trick-revisited/">Fraction comparison trick revisited</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by freetonik · johndcook.com · <a class="discuss" href="https://lobste.rs/s/fcfoqq/fraction_comparison_trick_revisited">discuss</a>
+    </p>
+<p class="lede">A few years ago I wrote about a curious result: a / b is usually greater than c / d when a + d is greater than b + c . And “usually” means with probability 11/12. As stated in the post, you can make this statement rigorous by choosing integers up to size N at random and taking the limit as N goes to infinity. We can also choose a , b , c , and d uniformly from [0, 1]. This is similar to choosing four integers up to N and dividing all the integers by N , which doesn’t change the probabilities. Now a / b &gt; c / d if and only if ad &gt; bc , so another way to state the theorem is that Or to state it yet another way, pick two pairs of numbers at random. The probability that the pair with the larger sum also has the larger product is 11/12. That seems more intuitive to me than the original …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://coalton-lang.github.io/mine/">mine</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by veqq · coalton-lang.github.io · <a class="discuss" href="https://lobste.rs/s/znbrpn/mine">discuss</a>
+    </p>
+<p class="lede">mine is an integrated development environment for Coalton and Common Lisp for Windows, macOS, and Linux. Coalton? Common Lisp? Both? The editor is exclusive to neither, and both come built-in. If you want strong, static types with a flavor of functional programming, Coalton is available. If you want free-wheeling dynamicism and an advanced object system, Common Lisp is available. You can use one, the other, or mix-and-match as your project demands. The REPL is completely integrated, not a bolted on afterthought. From functions to entire projects, beam your code to the REPL so you can immediate interact with it. When you encounter an error, a debugger will pop up with the error, options to correct it, and a stack trace for your reference. Beaming your code will flag errors and warnings …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://spooler.sh/">Show HN: Spooler – a simple, managed message queue</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by gobwas · spooler.sh · <a class="discuss" href="https://news.ycombinator.com/item?id=50359936">discuss</a>
+    </p>
+<p class="lede">Spooler is a simple, fully managed message queue. So you can build your next big thing. Spooler gives your agent the tools and the skills to work the queue. If your agent can run a command, it can use Spooler. spooler help documents the commands, flags and exit codes, with links to the docs. Your agent reads the same help you do, and the skills explain how to use Spooler. Your agent is a worker like any other: it leases messages and acks them when done. A crash costs a redelivery, not the message. You or your agent can inspect failed messages, then recover or discard them. You and your agent use the same commands: data on stdout, diagnostics on stderr and documented exit codes. You can list messages, inspect a payload or describe a spool with the same CLI. Your queues can model a state …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://attackanddefense.dev/2026/11/02/firefox-security-and-privacy-newsletter-q3.html">Firefox Security &amp; Privacy Newsletter 2026 Q3</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by freddyb · attackanddefense.dev · <a class="discuss" href="https://lobste.rs/s/trqbi2/firefox_security_privacy_newsletter">discuss</a>
+    </p>
+<p class="lede">Welcome to the Q3 2026 edition of the Firefox Security &amp; Privacy Newsletter. Security and privacy are core principles of Mozilla’s Manifesto and remain at the heart of Firefox’s development. This edition highlights key initiatives from Q3 2026 across three areas: Note: Some of the bugs linked below might not be accessible to the general public and restricted to specific work groups. We de-restrict fixed security bugs after a grace-period , until the majority of our user population have received Firefox updates. If a link does not work for you, please accept this as a precaution for the safety of all Firefox users. Rapid Releases, Now Even Faster: Since September 2026, Firefox has followed a faster release cycle, bringing improvements, including security fixes, to users more quickly. We …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/electronicvoting_socialbanner_updated.png" alt="The cryptography behind electronic voting (and why paper ballots are still essential)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/">The cryptography behind electronic voting (and why paper ballots are still essential)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by buherator · blog.trailofbits.com · <a class="discuss" href="https://lobste.rs/s/6omthz/cryptography_behind_electronic_voting">discuss</a>
+    </p>
+<p class="lede">As millions of Americans vote in today’s U.S. midterms, most will use paper ballots, which are protected by strict chain-of-custody protocols and, in some cases, statistical audits. You may wonder why we still use paper for our elections and voting systems when tasks like banking, tax filing, and document signing have moved away from paper-based legacy systems and become fully electronic. The short answer: security. That may come as a surprise to some. After all, cryptography and other security advancements have enabled secure electronic systems for many applications. In fact, cryptography can be used to provide two essential safeguards in elections: keeping (1) individual votes secret while (2) making the final tally independently verifiable. This is exactly the approach of cryptographic …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://res.cloudinary.com/dmukukwp6/image/upload/moving_off_duckdb_4c95538aac.png" alt="Why we&#39;re moving our warehouse off DuckDB" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://posthog.com/blog/moving-off-duckdb">Why we&#39;re moving our warehouse off DuckDB</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by arcatan · posthog.com · <a class="discuss" href="https://lobste.rs/s/wpahfd/why_we_re_moving_our_warehouse_off_duckdb">discuss</a>
+    </p>
+<p class="lede">Five months ago, we rebuilt PostHog&#39;s warehouse product on DuckDB instead of ClickHouse, as we explained at the time . We did it because a shared ClickHouse cluster couldn&#39;t handle hours-long modeling queries, and it lacked a cost-based query optimizer. DuckDB gave every customer their own instance, and tools like dbt could connect over Postgres. We&#39;re still fans. But we underestimated how big and complex our customers&#39; workloads would get. We didn&#39;t want them to have just a good experience, we wanted the best experience you can get when you pay someone else to run your warehouse. It should work at any scale, at a fair price. So we spent the last three months re-architecting it, this time without DuckDB. We love DuckDB. It&#39;s probably the best single-node tool for analyzing heaps of data …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://recto.design">Show HN: Recto: A desktop app where you can design with AI, edit with your mouse</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by maroofkhan2007 · recto.design · <a class="discuss" href="https://news.ycombinator.com/item?id=50357042">discuss</a>
+    </p>
+<p class="lede">recto runs locally, giving your coding agent a visual workspace to build in, while you see every change, edit anything directly, or simply reprompt. all without leaving recto. but designing with them still means jumping between terminals, browser previews, screen shots and prompts like: [Image #1] Move the second card a little to the left. recto gives your agent a real visual canvas. recto automatically detects the coding agents installed on your computer. install another agent and it becomes available too. you can even work with multiple agents on the same design. ❯ Give this hero a warmer feel and more room to breathe. › Give this hero a warmer feel and more room to breathe. • Edited pages/index.html − A new perspective. + A softer kind of everyday. • Updated the headline and hero …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-04-p5.html">‹</a><a href="2026-11-04.html">1</a><a href="2026-11-04-p2.html">2</a><a href="2026-11-04-p3.html">3</a><a href="2026-11-04-p4.html">4</a><a href="2026-11-04-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-11-04-p7.html">7</a><a href="2026-11-04-p8.html">8</a><a href="2026-11-04-p9.html">9</a><a class="pg-arrow" href="2026-11-04-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 7 cross-posts merged · 122 excerpts · 82 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

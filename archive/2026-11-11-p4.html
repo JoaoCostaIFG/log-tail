@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 11, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 315</span>
+      <span>Wednesday, November 11, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/">I deleted all my SSH keys</a></h3>
+    <p class="dateline"><span class="badge">L</span>      51 points · by pushcx · blog.infected.systems · <a class="discuss" href="https://lobste.rs/s/sdtcvv/i_deleted_all_my_ssh_keys">discuss</a>
+    </p>
+<p class="lede">I’ve been using ed25519-sk keys with YubiKeys since practically the moment they were available. But because of some specific use-cases (and because, frankly, YubiKeys are expensive) I’ve had a few traditional on-disk keys hanging around for a while just waiting for me to finally decide to get rid of them. This post documents how I’m using various secure enclaves (YubiKey, TPM, Apple Secure Enclave) to hold/encrypt SSH key material and achieve the goal of not having any unprotected key material living on-disk. Probably. I don’t intend to imply that this post is the only way that anyone should be doing SSH keys. Using a passphrase will encrypt the key with bcrypt &amp; AES which keeps it protected even if the on-disk keyfile leaks somehow. And with a functioning ssh-agent, the passphrase should …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/938f9c6088dc9212a077c8ddc156e756112012add57267541552a9a552d399e5/LuKks/like-webrtc" alt="Peer-to-peer WebRTC connections with built-in signaling and discovery" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/lukks/like-webrtc">Peer-to-peer WebRTC connections with built-in signaling and discovery</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      48 points · by LuKks · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50416640">discuss</a>
+    </p>
+<p class="lede">Peer-to-peer WebRTC connections with built-in signaling and peer discovery. Works across browsers, Node.js, and React Native. Live demo: https://web.leet.ar (P2P Discord clone built in 48 hours) Need support with WebRTC? Open a GitHub issue :) A peer can create a server listening on a public key as address. Another peer can use that address to connect to the server. A familiar API like Node.js http , but peer-to-peer and running directly in your browser. Peers can create servers with random key pairs. You can announce or lookup any server under the same shared topic. Each peer runs the same code to join the swarm. It&#39;s a WebSocket server with a RPC protocol. Creates a P2P connection and returns a RTCPeerConnection . Add a data channel, track, or transceiver to begin WebRTC negotiation …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://eaj.no/posts/open-graph-images-with-typst/og.png?rev=b6f45f390d" alt="Open Graph images with Astro and Typst" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://eaj.no/posts/open-graph-images-with-typst/">Open Graph images with Astro and Typst</a></h3>
+    <p class="dateline"><span class="badge">L</span>      45 points · by eaj · eaj.no · <a class="discuss" href="https://lobste.rs/s/gj5obq/open_graph_images_with_astro_typst">discuss</a>
+    </p>
+<p class="lede">Links to blog articles look better when they’re accompanied by an image. If the HTML head has a meta tag like this, it will happen automatically: My previous, tedious workflow for these kinds of images was to go to unspash.com , search for something like structure or archive , and then select an image I thought would fit the theme of the post. Being both boring and error-prone, I abandonded that process and set up a pipeline that generates image cards at build-time instead. They look like this: Typst is a tool that generates high-quality documents from a simple markup language. A lovechild of LaTeX and Markdown , it works great for math whilst also keeping the day-to-day text formatting syntax bearable. As a small taste, this snippet (adapted from the Typst README ) By default the typst …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cabird.com/talks/shipping-faster/title.jpg" alt="Why aren&#39;t we shipping faster now?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://cabird.com/talks/shipping-faster/">Why aren&#39;t we shipping faster now?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      45 points · by azhenley · cabird.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50455332">discuss</a>
+    </p>
+<p class="lede">Talk · UC Irvine software engineering seminar · October 30, 2026 AI, activity, and outcomes in software engineering 21 minutes, with captions. Also on YouTube . Cha, Badea, Baym, Bird, Butler, Murphy-Hill, Hadley. The Activity-Outcome Gap: Why AI Does Not Solve Software Engineering. In submission, 2026. The 30 interviews; a link will appear here when the paper is public. Demirer, Musolff, Yang. Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools. NBER Working Paper 35275, 2026. nber.org/papers/w35275 Choudhuri, Butler, Bird, Badea, Houck, Sarma. “To Boldly Go Where No One Has Gone Before”: What Has AI Let Developers Unlock? 2026. arXiv:2610.23708 Jensen Huang, Computex keynote, Taipei, 29 May 2023, as reported by Reuters . Yang, He, Cheng, Butler …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://images.theconversation.com/files/765306/original/file-20261009-50-7ar5dc.jpg?ixlib=rb-4.1.1&amp;rect=0%2C400%2C5184%2C2592&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop" alt="Hooked on Tuna" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://theconversation.com/hooked-on-tuna-people-have-been-harvesting-these-ocean-predators-for-44-000-years-292428">Hooked on Tuna</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      41 points · by dnetesn · theconversation.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50449080">discuss</a>
+    </p>
+<p class="lede">From a humble mayonnaise-laden sandwich to an expensive piece of sashimi, tuna is a prized source of food for people around the world. Once an inexpensive, easily shipped canned protein source, today’s bluefin tunas can fetch millions of dollars at auction . Millions of tons of tuna are harvested every year, supporting a global industry worth around US$40 billion annually . But tunas are more than just the pink flesh found in cans and sushi, and humanity’s story with these fish goes back further than you might expect. As a biologist and an archaeologist interested in long-term human-environment interactions, we wanted to investigate the deep record of people’s relationship with tunas. We drew on the expertise of 18 leading researchers worldwide and studied a variety of sources, from the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://go.dev/doc/gopher/gopher5logo.jpg" alt="Go Turns 17" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://go.dev/blog/17years">Go Turns 17</a></h3>
+    <p class="dateline"><span class="badge">L</span>      38 points · by cgrinds · go.dev · <a class="discuss" href="https://lobste.rs/s/idktfu/go_turns_17">discuss</a>
+    </p>
+<p class="lede">Austin Clements, for the Go team 10 November 2026 Today, November 10th, we celebrate the 17th anniversary of Go’s open source release ! Over the past year, we released Go 1.26 in February and Go 1.27 in August , alongside a steady stream of releases across our golang.org/x libraries and developer tools. Meanwhile, the pace of change across the software industry continues to accelerate, driven by shifting hardware, evolving security threats, and the rapid rise of AI-assisted development and agentic systems. In a tumultuous time for the industry, Go aims to be a steady hand on the tiller. Our goal is to keep Go grounded in its foundational principles of simplicity, reliability, efficiency, and an unwavering commitment to compatibility , while adapting to modern hardware, production …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://essenceia.github.io/projects/expresso/feature.gif" alt="Building a networking switch ASIC chip" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://essenceia.github.io/projects/expresso/">Building a networking switch ASIC chip</a></h3>
+    <p class="dateline"><span class="badge">L</span>      38 points · by florianhartung · essenceia.github.io · <a class="discuss" href="https://lobste.rs/s/n8reli/building_networking_switch_asic_chip">discuss</a>
+    </p>
+<p class="lede">Well that was a ride, where do I start ? I am currently on a quest to build some open source networking equipment with the final boss being a full router. There are a lot of very valuable and less complex pieces of hardware on the way that also need building, one of them being the common networking switch. Previously I was building the infrastructure to handle ethernet packets and worked my way up to a simple three-port switch that I had taped it out via Tiny Tapeout. But a few days after that tapeout, as I was still reeling from the adrenaline of rushing to meet the deadline, an unexpected opportunity presented itself: the possibility of taping out my own full chip, free of charge! But there was one slight problem, I only had four days to design the entire thing, also known as 96 hours ( …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lobste.rs/s/nld6x3/what_are_some_no_ai_apps_companies">What are some &#34;No AI&#34; apps/companies/resources you know of?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      36 points · by brn · lobste.rs · <a class="discuss" href="https://lobste.rs/s/nld6x3/what_are_some_no_ai_apps_companies">discuss</a>
+    </p>
+<p class="lede">Hey everyone I&#39;m wondering if there&#39;s any useful/helpful list of apps, companies, or resources in general that avoid AI (they don&#39;t have to be vocally or openly &#34;anti&#34;, but at least explicitly avoid it) that you know of? I&#39;m not looking to start a discussion on what&#39;s good/bad or (un)worthy about AI, or who&#39;s for/against, just links and/or communities promoting this sentiment/position. For example, https://www.rebeltechalliance.org would be one of those resources. Thank you!</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://shkspr.mobi/blog/wp-content/uploads/2017/11/Confused-Robot.jpg" alt="Blunt Banhammer Blocks Basic Bots Ballistically" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://shkspr.mobi/blog/2026/11/blunt-banhammer-blocks-basic-bots-ballistically/">Blunt Banhammer Blocks Basic Bots Ballistically</a></h3>
+    <p class="dateline"><span class="badge">L</span>      33 points · by soulcutter · shkspr.mobi · <a class="discuss" href="https://lobste.rs/s/bubqox/blunt_banhammer_blocks_basic_bots">discuss</a>
+    </p>
+<p class="lede">I cut bot traffic to my site by over 80% with a simple trap. Last month, my hobby website OpenBenches.org transferred more than 2.5TB of data to visitors. As much as I&#39;d like to think the site is enormously popular, it looks like it is just AI bots endlessly crawling the data and slurping up the images. So I&#39;ve built B 6 to be an indiscriminate tool to eradicate these unwanted parasites. It is very loosely inspired by Jeff Starr&#39;s Blackhole , but works even on sites with heavy caching. Here&#39;s the high level description of how it works. This blog post shows you how you can build this yourself and discusses some of the problems it might cause. The file robots.txt lives at the root of your website. It contains a list of instructions to automated web crawlers. Respectful bots will read it and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC9pYW5iYXJiZXIuYmxvZ1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNFwvMTFcL2Nyb3BwZWQtbG9nby1yZW1vdmViZy1wcmV2aWV3LnBuZz9maXQ9NDI1JTJDNDI1JnNzbD0xIiwidHh0IjoiSWFuXHUyMDE5cyBCbG9nIiwidGVtcGxhdGUiOiJlZGdlIiwiZm9udCI6IiIsImJsb2dfaWQiOjIzODYzMzU2NX0.fq3U-V5MT1pTFs8OrXpT6sb83b9JfIPBwAcqO8AHRQQMQ" alt="Make this forward pass as fast as possible" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://ianbarber.blog/2026/11/09/make-this-forward-pass-as-fast-as-possible/">Make this forward pass as fast as possible</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      30 points · by matt_d · ianbarber.blog · <a class="discuss" href="https://news.ycombinator.com/item?id=50435962">discuss</a>
+    </p>
+<p class="lede">Flapping Airplanes just raised a billion dollars , in part through demonstrating a megakernel framework that could do efficient forward and backwards passes while (for some reason) playing Doom 1 . Elsewhere, Hyperstition have what they call a Hyperkernel , which is generating high-performance kernels for all sorts of models . Turning a model into something faster is exactly what ML compilers have traditionally done, and all this activity begs the question of whether we need ML compilers at all any more, or whether we can let agents optimize directly? The folks working on TVM have been asking this, too: If agents can handle the low-level details themselves, should we still put a compiler between them and the hardware? We believe the answer is yes, but for a different reason. Instead of …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://daniel.haxx.se/blog/wp-content/uploads/2026/10/curl-tshirt-back-lightblue.jpg" alt="30 years of Internet transfers with curl" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://daniel.haxx.se/blog/2026/11/11/30-years-of-internet-transfers-with-curl/">30 years of Internet transfers with curl</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by hugoarnal · daniel.haxx.se · <a class="discuss" href="https://lobste.rs/s/x4kaac/30_years_internet_transfers_with_curl">discuss</a>
+    </p>
+<p class="lede">Thirty years ago, on November 11, 1996 the young Brazilian student Rafael Sagula posted the source code for his tiny HTTP download tool online. That was httpget 0.1: a little over 100 lines of C code. Bare bones source code with almost no error checks and limited functionality. When I found the source code of that initial httpget release just days after Rafael put it online, I had no idea how HTTP worked. The language to speak over the network to ask for resources. Okay, I already knew we call it protocol but not a lot more. I also had never heard of neither httpget nor Rafael before. I imagine that I found httpget by searching on Altavista since this was before Google, but I can’t recall the details. Seeing the simplicity of this code it was not difficult to immediately spot the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2026/11/announcing-dotnet-11-scaled.webp" alt="Announcing .NET 11" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/">Announcing .NET 11</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by runesoerensen · devblogs.microsoft.com · <a class="discuss" href="https://lobste.rs/s/zingk1/announcing_net_11">discuss</a>
+    </p>
+<p class="lede">Today, we’re excited to announce the release of .NET 11! This year’s release makes building modern applications faster, more productive, and has improvements across C# 15, ASP.NET Core, .NET MAUI, and Windows development. With hundreds of runtime optimizations, more responsive SDK tooling, and less overhead in everyday commands, you can spend less time waiting and more time creating. Build richer web and cross-platform applications, take advantage of new C# language features, and explore AI-powered development with improved tools and agentic capabilities. .NET 11 support .NET 11 is a Standard Term Support (STS) release with two years of support under the .NET support policy . STS and Long Term Support (LTS) releases have the same quality and servicing policies; the difference is the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.eventfoundation.io/previews/resources/blog/eventsourcingdb-1-3-0-is-available.png" alt="EventSourcingDB 1.3.0 Is Available" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.eventfoundation.io/resources/blog/eventsourcingdb-1-3-0-is-available">EventSourcingDB 1.3.0 Is Available</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by goloroden · eventfoundation.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50453080">discuss</a>
+    </p>
+<p class="lede">EventSourcingDB 1.3.0 is out, and it is faster and more stable than any version before it. Writing and EventQL queries are considerably faster, reading is faster as well, every request is bounded in time, and more than sixty fixes went in. Next to all that, it brings a new API that reports the outcome of every request it accepts in its body and names every error with a code of its own. This post walks through what changed and what to mind when you upgrade. The v1 API is supported until January 31, 2027 , and a later release removes it, so you can move to the new one at your own pace. And from today on, the documentation of EventSourcingDB lives on eventfoundation.io ; every old link leads there. The new v2 API runs next to the v1 API, on the same data. Its central idea is simple: once the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png" alt="Attention to Mamba: A Recipe for Cross-Architecture Distillation" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://machinelearning.apple.com/research/attention-mamba-distillation">Attention to Mamba: A Recipe for Cross-Architecture Distillation</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by zerop · machinelearning.apple.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50453171">discuss</a>
+    </p>
+<p class="lede">Attention to Mamba: A Recipe for Cross-Architecture Distillation Authors Abhinav Moudgil†**, Ningyuan Huang‡**, Eeshan Gunesh Dhekane, Pau Rodríguez Lopez, Luca Zappella, Federico Danieli State Space Models (SSMs) such as Mamba have become a popular alternative to Transformer models, due to their reduced memory consumption and higher throughput at generation compared to their Attention-based counterparts. On the other hand, the community has built up a considerable body of knowledge on how to train Transformers, and many pretrained Transformer models are readily available. To facilitate the adoption of SSMs while leveraging existing pretrained Transformers, we aim to identify an effective recipe to distill an Attention-based model into a Mamba-like architecture. In prior work on …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dustri.org/b/weird-licenses-and-the-new-open-source.html">Weird licenses and the new open source</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by ema-pe · dustri.org · <a class="discuss" href="https://lobste.rs/s/kqjcnb/weird_licenses_new_open_source">discuss</a>
+    </p>
+<p class="lede">Somewhere on an IRC channel, I ended up in a conversation about the The Filthy Human Hands (FHH) License . It wasn&#39;t the first time weird licenses were discussed there: Reticulum &#39;s sparked some interesting discussions as well. If you don&#39;t want to read the Wikipedia article on Free Software , a couple of years ago, I gave a small presentation at school as part of the &#34;Oral communication in English&#34; course, which is a (shoddy) cake-based explanation of the topic. Long story short, a Free Software is a software with 4 freedoms: There is also the term Open Source, which is more or less Free Software but without the sociopolitical aspect of it, which is like a pizza without olives, or art without context: something devoid of meaning, a business-oriented product instead of a creation. Like in …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-11-p3.html">‹</a><a href="2026-11-11.html">1</a><a href="2026-11-11-p2.html">2</a><a href="2026-11-11-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-11-11-p5.html">5</a><a href="2026-11-11-p6.html">6</a><a href="2026-11-11-p7.html">7</a><a href="2026-11-11-p8.html">8</a><a href="2026-11-11-p9.html">9</a><a class="pg-arrow" href="2026-11-11-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 6 cross-posts merged · 119 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

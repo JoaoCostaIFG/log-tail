@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, October 17, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 290</span>
+      <span>Saturday, October 17, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://www.rust-lang.org/static/images/rust-social-wide.jpg" alt="Announcing Rust 1.99.1" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/">Announcing Rust 1.99.1</a></h3>
+    <p class="dateline"><span class="badge">L</span>      32 points · by BD103 · blog.rust-lang.org · <a class="discuss" href="https://lobste.rs/s/ttcx5k/announcing_rust_1_99_1">discuss</a>
+    </p>
+<p class="lede">The Rust team has published a new point release of Rust, 1.99.1. Rust is a programming language that is empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup, getting Rust 1.99.1 is as easy as: If you don&#39;t have it already, you can get rustup from the appropriate page on our website. Rust 1.99.1 fixes the following regressions from prior releases: Missing symbol wcslen : Some Rust targets were getting link errors for missing wcslen , and that function is now present in Rust&#39;s compiler-builtins library as a fallback. The LLVM loop-idiom-wcslen pass may introduce calls to wcslen as an optimization, and some Rust targets did not have that function readily available in libc or elsewhere. The UEFI targets in particular were …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://devblogs.microsoft.com/oldnewthing/wp-content/uploads/sites/38/2025/10/banner-oldnewthing-blue.webp" alt="Where did WIN32_LEAN_AND_MEAN come from? (2009)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://devblogs.microsoft.com/oldnewthing/20091130-00/?p=15863/">Where did WIN32_LEAN_AND_MEAN come from? (2009)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      31 points · by thombles · devblogs.microsoft.com · <a class="discuss" href="https://lobste.rs/s/eqoieo/where_did_win32_lean_mean_come_from_2009">discuss</a>
+    </p>
+<p class="lede">Commenter asdf wonders where WIN32_LEAN_AND_MEAN came from . The WIN32_LEAN_AND_MEAN symbol was introduced in the Windows 95 time frame as a way to exclude a bunch of Windows header files when you include windows.h . You can take a look at your windows.h file to see which ones they are. The symbol was added as part of the transition from 16-bit Windows to 32-bit Windows. The 16-bit windows.h header file didn’t include all of those header files, and defining WIN32_LEAN_AND_MEAN brought you back to the 16-bit Windows philosophy of a minimal set of header files for writing a bare-bones Windows program. This appeased the programmers who liked to micro-manage their header files, and it was a big help because, at the time the symbol was introduced, precompiled header files were not in common …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://pckt-blog-media.s3.us-east-2.amazonaws.com/og_image/af8625ec-336c-4727-b61b-a98109b8f7f6/gleam-case-exhaustiveness-as-a-fan-fd4whyp-og-2026-10-16-17-12-08.png" alt="Gleam case exhaustiveness, as a fan" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://oyster.pckt.blog/gleam-case-exhaustiveness-as-a-fan-fd4whyp">Gleam case exhaustiveness, as a fan</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by pushcx · oyster.pckt.blog · <a class="discuss" href="https://lobste.rs/s/vyo9n2/gleam_case_exhaustiveness_as_fan">discuss</a>
+    </p>
+<p class="lede">Commit at which review happened: 85dca0df7d84 Decisions, decisions. As I write this, I juggle a handful of nested decisions just to live my life in the next 10 minutes. I am privileged in that the decisions laid out in front of me are ones that support my comfort, each mundane but carrying complex side-effects. It&#39;s getting sunny; do I bother to reach into my bag and pull out my hat? If yes, shall I also grab my notebook and draw something? If I&#39;m going to draw something, what should I draw of the infinite possibilities of the beautiful city laid out in front of me? I simultaneously risk sunburn and rob the world of a little doodle, by instead writing this. One of the primary jobs of a computer is to make decisions, and our subject today involves tracing the steps a compiler can take to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://spritely.institute/news/end-to-end-encrypted-relays-for-ocapn.html">End-to-end encrypted relays for OCapN</a></h3>
+    <p class="dateline"><span class="badge">L</span>      28 points · by untrusem · spritely.institute · <a class="discuss" href="https://lobste.rs/s/yxnovw/end_end_encrypted_relays_for_ocapn">discuss</a>
+    </p>
+<p class="lede">Creating a direct connection between any two computers (not just from client to server) over the internet is notoriously difficult. Many home networks are behind NATs which prevent new inbound connections. Sometimes these NATs are from the ISP (carrier-grade NATs) which are impossible to work around with port forwarding and/or UPnP. While hole punching techniques can break through NATs, it&#39;s far from guaranteed. Thus, we need something that works in the general case: relays . Relays are servers, accessible over the public internet, that act as a proxy between two computers that cannot directly connect. In Goblins 0.12 we introduced a federated relay named &#34;prelay&#34;. While OCapN traffic is encrypted in transit, the prelay crucially lacks end-to-end encryption (E2EE) . E2EE secures all the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://stoke.money/opengraph-image-pwu6ef?535d18336e9b3399" alt="Show HN: Stoke Money – Personal finance app built around a cash flow forecast" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://stoke.money">Show HN: Stoke Money – Personal finance app built around a cash flow forecast</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by _wesley · stoke.money · <a class="discuss" href="https://news.ycombinator.com/item?id=50122776">discuss</a>
+    </p>
+<p class="lede">Spend like you normally do. Stoke finds the recurring transactions in your history, then projects each account forward, day by day, so you know what you can spend without keeping a budget. Cancel anytime before day 30 and you won&#39;t be charged. Three steps from sign-up to a forecast that updates as you spend. Link a bank in seconds, or hand-enter accounts and transactions yourself. Either way, it feeds the same forecast. Paychecks, rent, subscriptions, and bills are picked out of your history and grouped. Anything we miss, you categorize once with a rule that runs on future transactions too. The forecast shows when bills land, what your buffer looks like, and whether rent will clear Friday. Adjust any projected item and the line moves. The ledger and the forecast are the same data, day by …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://unsung.aresluna.org/_media/in-every-study-that-considered-the-question/ogimage.jpg" alt="&#34;In every study that considered the question&#34;" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://unsung.aresluna.org/in-every-study-that-considered-the-question/">&#34;In every study that considered the question&#34;</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by zdw · unsung.aresluna.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50127839">discuss</a>
+    </p>
+<p class="lede">Send me feedback, tips, bug reports, and anything else: My name is Marcin Wichary (he/him). I’ve worked as a UX designer, typographer, front-end person, and manager at Google, Medium, and Figma . I’ve also written a book about keyboards and typing , gave talks, and published essays about design, typography, and technology. Unsung is my blog about software craft and quality. Send me feedback, tips, bug reports, and anything else: I spent most daylight hours yesterday driving in torrential rains in pretty bad visibility, and I was astonished how many cars didn’t have their lights on. It looked something like this. The cars with tail lights on were somewhat visible, but the cars without them didn’t stand a chance: I read up about it, and it turns out that the issue wasn’t as much …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTYwODIyLXpIN2ltbw?revision=4" alt="Microsoft Defender for Linux" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/secure-linux-desktops-with-microsoft-defender/4560822">Microsoft Defender for Linux</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by alemi · techcommunity.microsoft.com · <a class="discuss" href="https://lobste.rs/s/46dcms/microsoft_defender_for_linux">discuss</a>
+    </p>
+<p class="lede">As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery (CI/CD) pipelines, cloud infrastructure, container environments and internal development platforms. If their workstation is compromised, an attacker doesn’t just gain access to a laptop, but a foothold in the pipelines that build and ship the organization’s software. As Linux adoption expands beyond the data center, organizations need a consistent approach to protecting Linux wherever it is used. That’s why we’ve extended our industry-leading endpoint protection in Microsoft Defender, bringing …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://onedeploy.co">Show HN: OneDeploy – Managed open-source apps with nightly backups and TLS</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      26 points · by relatedcode · onedeploy.co · <a class="discuss" href="https://news.ycombinator.com/item?id=50119752">discuss</a>
+    </p>
+<p class="lede">Pick an app, a region and a plan. OneDeploy creates the server, installs the app, issues the certificate and backs it up every night. Billed by the hour, with a monthly cap. Delete anytime and billing stops. Websites, chat, files, CRM, analytics, AI and developer tools. Each one deploys the same way. A subscription is easy but it is never yours. A server of your own is yours but never easy. OneDeploy gives you both. Subscriptions charge per seat. Here your team shares one server at one price. OneDeploy never charges per user. The app runs on a server nobody else uses, in the region you choose. Restore a backup, move it, or delete it. It is your call. Server, certificate, backups, updates and resizing are handled from the dashboard. You spend your time in the app, not on it. Browse the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://fakeipedia.org">Show HN: Fakeipedia – Wikipedia for worlds that don&#39;t exist</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      25 points · by darajava · fakeipedia.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50126334">discuss</a>
+    </p>
+<p class="lede">An encyclopedia of different worlds. Explore the histories, people, and peculiarities of an alternate reality.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://maevyn.codes/decoherence/decoherence-social.png" alt="The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://maevyn.codes/decoherence">The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by maevyn · maevyn.codes · <a class="discuss" href="https://lobste.rs/s/vjmn84/decoherence_trap_when_ai_slop_drowns_out">discuss</a>
+    </p>
+<p class="lede">This essay introduces the concept of decoherence : the accumulation of locally valid but mutually incompatible or redundant models within a system, such that the cost of change is dominated by translating among those models and preventing unintended side-effects. In other words, it&#39;s what happens when slop drowns out the signal in an endless sea of noise. Decoherence grows relative to the rate of change of a system, and it increases faster the more decoherent a system is, resulting in runaway exponential growth. It is not a new phenomenon, and humans have always countered it through carefully finding ways to do more with less, unifying disparate patterns and models into a cohesive whole. However, the widespread use of AI is currently producing it at a rate that is unsustainable. The good …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.codeberg.org/migrate-your-site-to-the-new-git-pages-backed-codeberg-pages-now-were-sunsetting-codeberg-pages-v2.html">We&#39;re sunsetting Codeberg Pages v2</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by FedericoSchonborn · blog.codeberg.org · <a class="discuss" href="https://lobste.rs/s/e7rvsp/we_re_sunsetting_codeberg_pages_v2">discuss</a>
+    </p>
+<p class="lede">For many years, Codeberg Pages v2, our in-house solution, served as a way for hosting project pages through your_codeberg_username .codeberg.page or custom domains. This project has been unmaintained for a longer time now, and we already have git-pages as a replacement to power Codeberg Pages. A lot of users already migrated - and now it is time for you to also make the switch, if you have not done already. On that date, for users who are still relying on the old way of hosting sites through Codeberg Pages v2 (which is the case for users who never set up a webhook in their repository), the content will not be served anymore. We already have instructions how to do so. So please refer to our Migration Guide for migrating. If you do not remember whether you migrated or not, you can test …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.percona.com/blog/pgo-or-not-pgo-this-is-the-dilemma-step-2/">PGO or not PGO this is the dilemma. Step 2</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      21 points · by hnp9j9qtda · percona.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50090453">discuss</a>
+    </p>
+<p class="lede">Given the topic complexity and the length of this article I have split it in 3 three different blog-post: How PGO works: PGO is a two-pass build. First pass compiles with instrumentation ( -fprofile-generate ): every basic block and branch gets a counter. You run a training workload, counters are dumped to profraw files. Second pass recompiles using those counts to drive inlining decisions, branch layout (hot path falls through, cold path jumps away), hot/cold function splitting, code ordering for icache/iTLB locality, loop unrolling, and indirect-call promotion. Crucially, PGO is not “make the trained workload fast” it’s “tell the compiler which code is hot and which is cold, and let it reshape the whole binary accordingly.” Phase 1: what actually gets recorded. The instrumented binary …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://av.vimuser.org/bootmenu.jpg" alt="Libreboot 26.10 “Ominous Olive” released with full UEFI support" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://libreboot.org/news/libreboot2610.html">Libreboot 26.10 “Ominous Olive” released with full UEFI support</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by runxiyu · libreboot.org · <a class="discuss" href="https://lobste.rs/s/9xticb/libreboot_26_10_ominous_olive_released">discuss</a>
+    </p>
+<p class="lede">You can find today’s release in https://rsync.libreboot.org/stable/26.10/ or you can use one of the mirrors . Libreboot is free, open source boot firmware replacing proprietary BIOS/UEFI firmware on supported Intel/AMD and ARM64 hardware. It initialises the hardware inside your computer such as the CPU or memory controller, configuring the machine in such a way as to enable use of an operating system like Linux or BSD at boot - and now Microsoft Windows is also compatible because Libreboot has added full UEFI support via MrChromebox EDK2 payload. Libreboot offers greater security and customisation compared to proprietary firmware; its goal, plainly, is to rid the world of proprietary software and to do that, we therefore try to provide firmware that is extremely easy for non-technical …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/5zIOfBLQ3U4/maxresdefault.jpg" alt="Getting Canceled" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=5zIOfBLQ3U4">Getting Canceled</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by hgrsd · youtube.com · <a class="discuss" href="https://lobste.rs/s/tty7hm/getting_canceled">discuss</a>
+    </p>
+<p class="lede">From Software You Can Love Vancouver 2026 https://softwareyoucan.love</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blogs.gnome.org/adrianvovk/files/2026/10/gnome-os-preview.jpg" alt="Introducing GNOME OS Preview" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blogs.gnome.org/adrianvovk/2026/10/16/gnome-os-preview/">Introducing GNOME OS Preview</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by FedericoSchonborn · blogs.gnome.org · <a class="discuss" href="https://lobste.rs/s/xwng6u/introducing_gnome_os_preview">discuss</a>
+    </p>
+<p class="lede">It’s been two years since my initial post about making GNOME OS an end-user general purpose OS. Today, we’re excited to announce that we’ve hit a major milestone! TL;DR: We’re launching a new edition called “GNOME OS Preview”, which is built from the latest stable GNOME release. This means that GNOME OS is no longer just a nightly OS for GNOME developers and testers! Even though GNOME OS has been usable on real hardware for a few years now, its appeal was limited. We’ve only had the Nightly edition, which is constantly rebuilt to ship the latest git commit of every GNOME component (and a few others, like systemd and Flatpak). This form of GNOME OS is extremely useful, since GNOME developers and designers can daily-drive it to test the latest changes. However, it’s not something we’d …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-17-p4.html">‹</a><a href="2026-10-17.html">1</a><a href="2026-10-17-p2.html">2</a><a href="2026-10-17-p3.html">3</a><a href="2026-10-17-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-17-p6.html">6</a><a href="2026-10-17-p7.html">7</a><a href="2026-10-17-p8.html">8</a><a href="2026-10-17-p9.html">9</a><a class="pg-arrow" href="2026-10-17-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>129 stories · 7 cross-posts merged · 118 excerpts · 78 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

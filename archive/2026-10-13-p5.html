@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, October 13, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 286</span>
+      <span>Tuesday, October 13, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://www.lemonde.fr/en/international/article/2026/10/10/denmark-set-to-allow-the-return-of-physical-force-to-maintain-order-in-schools_6758443_4.html">Denmark set to allow return of &#39;physical force&#39; in school</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      42 points · by janisz · lemonde.fr · <a class="discuss" href="https://news.ycombinator.com/item?id=50067570">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://verdagon.dev/blog/valen-group-borrowing">Valen&#39;s Memory Safety: A New Kind of Borrow Checking</a></h3>
+    <p class="dateline"><span class="badge">L</span>      39 points · by Verdagon · verdagon.dev · <a class="discuss" href="https://lobste.rs/s/gmnqhj/valen_s_memory_safety_new_kind_borrow">discuss</a>
+    </p>
+<p class="lede">This post is about Valen &#39;s new flexible borrow checker. Welcome! You all know me, I love exploring new memory safety approaches and blending them together in weird ways. It&#39;s part of my eternal quest to find the memory safety holy grail: something as powerful as Rust&#39;s borrow checking, yet something as simple and flexible as reference counting or garbage collection. 0 1 I&#39;ve long suspected that to find the holy grail, we&#39;d have to solve three memory-safety challenges: Vague and arcane, I know! Further below I&#39;ll explain what that all means, and how Valen might have found a solution for them. 5 This post mainly focuses on the first piece: Valen&#39;s more relaxed borrow checker. So in this post, I&#39;ll talk about what it is, what it can do, and how it works. And, along the way, I&#39;ll explain …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch">Show HN: Opus 5.5 made a fully featured Figma clone in 3 hours / 8 prompts</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      39 points · by behzadhaghgoo · mana.space · <a class="discuss" href="https://news.ycombinator.com/item?id=50060311">discuss</a>
+    </p>
+<p class="lede">I think a chasm has been crossed. Opus 5.5 few shotted a fully working Figma for me. In the past year I have been trying to benchmark vibe coded apps and see how good they get and this week it did it with very very little guidance from me. I basically just told it reach feature parity. Prior to this vibe coded apps would resemble the real software, this is not a resemblance it&#39;s the real thing. As a casual Figma user in the past, I can&#39;t really see a difference. And if there is one you have an LLM that can on the fly operate the app or use it. P.S. I did this is on Mana which is our startup making it easier for LLMs to do it (probably the code is half of what would have been and there are primitives it can use but ultimately it&#39;s a testament to how good models have gotten). I went on to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://eliasebner.com/blog/guides/arena-allocators-in-c/">Arena Allocators in C</a></h3>
+    <p class="dateline"><span class="badge">L</span>      32 points · by eliasebner · eliasebner.com · <a class="discuss" href="https://lobste.rs/s/zziknb/arena_allocators_c">discuss</a>
+    </p>
+<p class="lede">As we all know, C is a very low level language. It allows you (and kind of forces you) to manage the memory you use by yourself. This is one of the (probably many) reasons that people are turn to other languages when it comes to their daily programming. In this article, I will show you a paradigm for managing memory which is not only very performant, but it’s also extremely versatile. It makes the task significantly easier and decrease the chance of memory leaks by a large margin. Maybe you already know about them, maybe not, in any case: I’m talking about arena allocators. I will get to the implementation, but before I do that, here is a brief introduction to the concept of an arena allocator. The way people usually go about managing memory is that they allocate a small amount of memory …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ratfactor.com/cards/git-commit-size">How big is a Git commit?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      31 points · by rajtilakjee · ratfactor.com · <a class="discuss" href="https://lobste.rs/s/9wcfld/how_big_is_git_commit">discuss</a>
+    </p>
+<p class="lede">Short answer: It depends. Git stores &#34;objects&#34; as zlib compressed data. So the exact size of a commit will depend on the compressibility of your files (which is basically a function of the amount of repetition in them). The other factor is that Git eventually turns object files into even more efficient packfiles, saving additional space by getting rid of redundancy across objects. For fun, I did some little experiments (all &#34;loose objects&#34; with no packfiles created). Here’s the results: 47,640 bytes - committing 250 tiny files 17,145 bytes - committing 3 bytes of change to a file in a directory of 50 files 8,709 bytes - committing 3 bytes of change to a single-file repo 297,873 bytes - committing a 583,840 byte binary file 1,622,188 bytes - committing a huge 16,415,223 byte source file So …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html">Type-safe HTML templating in Zig</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by nemin · lalinsky.com · <a class="discuss" href="https://lobste.rs/s/dujxbl/type_safe_html_templating_zig">discuss</a>
+    </p>
+<p class="lede">I’ve done a lot of web development over the years. I started around the year 2000, just after PHP 3.0 was released and started taking over the web world. I’ve used all kinds of approaches for generating HTML: raw PHP, string concatenation in Python, Smarty templates in PHP, Template Toolkit in Perl, and Jinja/Django templates in Python. Then, as the world moved on to SPAs and JavaScript frameworks, I stopped working on frontends. Two years ago, I picked up Zig, and I’d never have imagined I’d be considering web development in such a low-level language. But as I was building my own ecosystem with zio and Dusty , I realized it’s not that far-fetched. I built these libraries for API backends, where the output is JSON or MessagePack, but then I saw that with proper use of arena allocators …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.afp.com/sites/default/files/afp-stories/7c20d3e6cc43ae9598fec7dbe162d544-0-hi.jpg" alt="French supermarket chains say cyberattack forced refrigerator shutdown" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.afp.com/en/french-supermarket-chains-say-cyberattack-forced-refrigerator-shutdown">French supermarket chains say cyberattack forced refrigerator shutdown</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by aldantanneo · afp.com · <a class="discuss" href="https://lobste.rs/s/u4vlin/french_supermarket_chains_say">discuss</a>
+    </p>
+<p class="lede">Major French supermarket chains on Monday said they were hit by a cyberattack that caused their refrigerators to shoot up in temperature in hundreds of stores, forcing spoiled food to be thrown away and raising concerns about food security. Top retailers E. Leclerc, Intermarche and Cooperative U confirmed to AFP they suffered a cyberattack that Cooperative U&#39;s chief executive described as &#34;unprecedented&#34;. &#34;Food security requires more attention at all levels,&#34; said the EU&#39;s food and agriculture commissioner Christophe Hansen on X, condemning the attack and saying such &#34;exploitation of food&#34; was now a &#34;reality&#34;. At least 300 shops of Intermarche or its Netto brand were targeted, along with over 100 Cooperative U outlets, and several E. Leclerc stores, the retailers told AFP in separate …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://larstofus.com/wp-content/uploads/2026/10/fasterhashthumbnail.png" alt="Speeding up the Unreal editor by… not using unnecessarily secure hash methods" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://larstofus.com/2026/10/11/speeding-up-the-unreal-editor-by-not-using-unnecessarily-secure-hash-methods/">Speeding up the Unreal editor by… not using unnecessarily secure hash methods</a></h3>
+    <p class="dateline"><span class="badge">L</span>      25 points · by fanf · larstofus.com · <a class="discuss" href="https://lobste.rs/s/5feguu/speeding_up_unreal_editor_by_not_using">discuss</a>
+    </p>
+<p class="lede">One good trick when trying to look for ways to optimize software is to stay away from areas that are very likely already quite well optimized, and instead focus on areas that might have been overlooked, either because they are too obscure or don’t show up during regular profiling sessions. This tactic worked well in the past, as shown with my optimization of tooltip creation , or the loading of editor localization files . So when profiling the editor launch (again), this is why I mostly skip over any functions that contain words like “Shader Compilation” or “Shader Source” when I stumble over them in my profiler. The compilation of shaders is a famously long and elaborate process, and I’m pretty sure that very smart people at Epic already spent a lot of time optimizing those areas. That’s …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.nytimes.com/2026/10/11/opinion/clutter-spring-cleaning-psychology.html">Neuroscience can make decluttering easier</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      25 points · by gumby · nytimes.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50040317">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://gamesbymason.com/blog/2024/6-years-in-rust-ama/#what-made-you-decide-to-use-rust">Highlights from &#34;I spent 6 years developing a game in Rust and it just shipped, AMA&#34; (2024)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      23 points · by PuercoPop · gamesbymason.com · <a class="discuss" href="https://lobste.rs/s/dodzdb/highlights_from_i_spent_6_years">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/sjNpfz4UzqU/maxresdefault.jpg" alt="Woman who rescued injured crow keeps getting &#39;thank-you gifts&#39; from birds [video]" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=sjNpfz4UzqU">Woman who rescued injured crow keeps getting &#39;thank-you gifts&#39; from birds [video]</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      23 points · by johnnyApplePRNG · youtube.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50065859">discuss</a>
+    </p>
+<p class="lede">&#34;Wow! This crow has given me a thank you gift!&#34; Adam Sawatsky finds out how a woman formed a friendship with a crow after discovering the bird in distress. Subscribe to CTV News to watch more videos: / ctvnews Connect with CTV News: For live updates and latest headlines visit: http://www.ctvnews.ca/ For breaking news, fast, download the CTV News App: https://www.ctvnews.ca/app Must-watch stories and full programs at http://www.ctvnews.ca/video CTV News on TikTok: https://www.tiktok.com/discover/CTV-News CTV News on X (formerly Twitter): / ctvnews CTV News on Reddit: / ctvnews CTV News on LinkedIn: / ctv-news --- CTV News is Canada&#39;s most-watched news organization both locally and nationally, and has a network of national, international, and local news operations. #ctvnews #ctvnationalnews …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://chuck.is/paranoid/">3-2-1 Backup Strategy with restic and Backblaze B2</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by zk · chuck.is · <a class="discuss" href="https://lobste.rs/s/9zcxev/3_2_1_backup_strategy_with_restic">discuss</a>
+    </p>
+<p class="lede">In order to follow a proper 3-2-1 backup strategy, you should have three copies of your important data: two local on different media types, and one off site. For local, I have a DAS with two 14TB drives configured in a RAID 1 array 1 and a RPI5 with a 4TB drive (my most important data is around 1.5TB). For the off site copy, I opted to utilize Backblaze&#39;s B2 Cloud Storage and restic. Backblaze is a cloud storage provider, while Restic encrypts and chunks the files before upload. Restic is responsible for uploading, encryption/decryption, and deduplication. Set up a Backblaze B2 bucket To begin, I had to configure Backblaze. Create a Backblaze account Create a bucket (I called mine restic-ganymede) Under application keys, make a key. Be sure to copy the keyID and applicationkey as they&#39;re …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sebsite.pw/w/20261012-notstdc.html">your c is not standard c</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by nytpu · sebsite.pw · <a class="discuss" href="https://lobste.rs/s/0aocct/your_c_is_not_standard_c">discuss</a>
+    </p>
+<p class="lede">this is an incomplete list of some incompatibilities between c as it&#39;s written in the standard and c as it exists in the real world for people who use gcc/clang + glibc/musl. asm by default, gcc and clang recognize the asm keyword as an extension. this is not strictly conformant, because in standard c, asm is a valid non-reserved identifier. so code which conforms to the standard may not compile with gcc/clang with their default settings. and like, whatever, that&#39;s fine, that&#39;s why -std exists, but 1. it&#39;s notable that compilers aren&#39;t conformant by default , and 2. why doesn&#39;t the standard just make asm a reserved word? c++ does that; i&#39;m not sure why c doesn&#39;t. FLT_ROUNDS the standard specifies the FLT_ROUNDS macro in float.h as follows: 5.3.5.3.3p23 : The rounding mode for …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://sindresorhus.com/og/blog/swift-website.jpg" alt="Show HN: I rewrote my website in Swift" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sindresorhus.com/blog/swift-website">Show HN: I rewrote my website in Swift</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by mofle · sindresorhus.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50060268">discuss</a>
+    </p>
+<p class="lede">This website used to be made with Astro. Now it’s all Swift: every page, component, and style. The same language as my apps, and it feels a lot like SwiftUI. The browser still gets plain HTML and CSS, with a little JavaScript. What changed is how it’s made, and how much I enjoy working on it. I write Swift all day, and I love it. I no longer have to switch languages and tools when I go from an app to the website. But the real reason is the compiler. A website is lots of small things that need to agree: links, class names, styles, scripts, and the data of more than 60 apps. In a typical web stack, they only meet in the browser, and a mistake becomes a broken page. Here, most of them meet in the compiler. Rename a page, and every link to it in the code stops compiling. The HTML comes from …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://technicalwriting.dev/blog/2026/10/polyglot/index.html">The wild west of polyglot docs sites</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by kaycebasques · technicalwriting.dev · <a class="discuss" href="https://lobste.rs/s/wyxufm/wild_west_polyglot_docs_sites">discuss</a>
+    </p>
+<p class="lede">Given a project that provides libraries in N different programming languages, the docs site for that project often needs to interact with N or N+1 different documentation generators. This is because each programming language has its own API reference generator. While the libraries themselves may be loosely coupled or decoupled from each other, the docs site often needs tighter coupling in many ways: all pages should use the same fonts and colors, the in-site search UX should be consistent, etc. There doesn’t seem to be an established term for this kind of docs site, where you’re attempting to wrangle the outputs from disparate docs generators into one cohesive whole. Let’s call it a polyglot docs site for now. Maybe someone will come up with a better name in the future. Short story long …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-13-p4.html">‹</a><a href="2026-10-13.html">1</a><a href="2026-10-13-p2.html">2</a><a href="2026-10-13-p3.html">3</a><a href="2026-10-13-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-13-p6.html">6</a><a href="2026-10-13-p7.html">7</a><a href="2026-10-13-p8.html">8</a><a href="2026-10-13-p9.html">9</a><a class="pg-arrow" href="2026-10-13-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 8 cross-posts merged · 112 excerpts · 73 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

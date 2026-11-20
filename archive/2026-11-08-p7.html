@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Sunday, November 8, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 312</span>
+      <span>Sunday, November 8, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://neongd.com/articles/netbsd11-rpi4.gmi">NetBSD 11 desktop on a Raspberry Pi 4</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by jaypatelani · neongd.com · <a class="discuss" href="https://lobste.rs/s/rv1icj/netbsd_11_desktop_on_raspberry_pi_4">discuss</a>
+    </p>
+<p class="lede">Now that I moved this capsule to a VPS, my Raspberry Pi became available for other use. NetBSD is the only open-source operating system in development that I know of, that doesn&#39;t include AI slop. At least for now? I decided to give it a go and try to install it on the Pi. How hard can it be? It turns out, not that much. I made a small guide on how I did it, maybe it helps someone. I assume you&#39;re preparing the SD card for the Pi on Linux. Get the latest Raspberry Pi UEFI firmware: Get Balena&#39;s Etcher (if you don&#39;t have it): Insert the microSD card in your laptop (I used cheap USB SD card reader). Extract the Etcher, enter it&#39;s directory and launch it (as a regular user): In the UI, select the &#34;Flash from file&#34; option and find the previously extracted NetBSD arm64 image. For destination …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://noteflakes.com/articles/2026-11-07-introducing-project-steadfast">Introducing Project Steadfast</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by noteflakes · noteflakes.com · <a class="discuss" href="https://lobste.rs/s/5cavvx/introducing_project_steadfast">discuss</a>
+    </p>
+<p class="lede">Recently I wrote about an idea that’s been floating around in my mind for a long time - the ability to do metaprogramming in Ruby by manipulating Ruby ASTs, similar to the macro capabilities of languages such as Lisp or Elixir. The use of eval (in its different variations) is a common metaprogramming technique in Ruby that consists of generating code at runtime from dynamically constructed strings. This is often done for performance reasons: ERB compiles templates into optimized code by generating pieces of Ruby source code then putting them together and calling eval ; In Rails, the same technique is used for implementing features such as associations, or scaffolding. With eval , we can avoid paying the performance overhead that’s often associated with using DSLs in Ruby. But using eval …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blogapp.bitdefender.com/labs/content/images/2026/11/Smartphone-trapped-in-a-restart-loop--1-.png" alt="GhostMap: The Android flaw that crashes your phone before you open the app" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.bitdefender.com/en-us/blog/labs/ghostmap-android">GhostMap: The Android flaw that crashes your phone before you open the app</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by strugee · bitdefender.com · <a class="discuss" href="https://lobste.rs/s/c99mdx/ghostmap_android_flaw_crashes_your_phone">discuss</a>
+    </p>
+<p class="lede">Bitdefender Labs researchers found that installing a specially crafted app can leave an Android phone stuck in a crash loop, even if you never open it or grant it a single permission. The app contains no code and never needs to run. After installation, a core system process crashes, restarts, and crashes again, leaving the phone stuck in a boot loop. Restarting doesn&#39;t help, and neither does safe mode. To get the phone working again, you need a factory reset, which erases the user&#39;s data. If, by chance, USB debugging had already been enabled, you could use a computer with ADB (Android Debug Bridge) to delete the file before the phone reboots. We began investigating on Aug. 12, 2026, when an APK collected from the wild crashed emulators in our analysis infrastructure. The sample was a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://chimera-vocal-synth.vercel.app/">CHIMERA simulates organic sound with acoustic tubes</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by amoffat · chimera-vocal-synth.vercel.app · <a class="discuss" href="https://lobste.rs/s/ngkqj1/chimera_simulates_organic_sound_with">discuss</a>
+    </p>
+<p class="lede">CHIMERA: a physically modelled voice synthesizer. Every sound comes from a simulated airway.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://api.pwn.ai/api/blog/images/photo-2026-11-04-22-55-56-b01dcd719e0c.jpeg" alt="Firecracker VM Escape: PwnEscape Part 2" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://pwn.ai/blog/firecracker-escape">Firecracker VM Escape: PwnEscape Part 2</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by atmosx · pwn.ai · <a class="discuss" href="https://lobste.rs/s/wzz4u3/firecracker_vm_escape_pwnescape_part_2">discuss</a>
+    </p>
+<p class="lede">Firecracker is supposed to keep untrusted code inside a microVM. We escaped it and achieved code execution as root on the host. We found how it saved registers, changed where it would resume, and made it execute a call of our choosing when it returned from KVM. The guest then restored the temporary stack changes. Firecracker kept running, and the VM remained accessible over SSH. PwnEscape Part 1 introduced the host memory primitive behind this work. Here we follow the next part of the chain: using that access to find Firecracker in memory and take over a live thread from inside the guest. This is a continuation to show CVE-2026-99999 on a Firecracker setup. A Firecracker microVM has a process on the host that manages it. Each virtual CPU, or vCPU, has a thread in that process. The thread …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.master.dev/wp-json/social-image-generator/v1/image/11668" alt="Multi-Column Different-Speed Scrolling" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.master.dev/multi-column-different-speed-scrolling/">Multi-Column Different-Speed Scrolling</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by ibobev · blog.master.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50360044">discuss</a>
+    </p>
+<p class="lede">I got this idea stuck in my head that if you’re scrolling through a “gallery”, it sorta doesn’t matter how the things scroll past you. It could scroll horizontally; things could scroll at different rates; it could scroll backward somehow — whatever. It doesn’t matter because you’re just exploring . Scrolling is just the mechanism for seeing new stuff. There should still be a scrollbar, so the affordance of “how much is there left” is still there, but otherwise fairly free rein? My first idea was to make two columns of photos scroll at different rates. The first column would scroll at the regular rate. The page moves down as you scroll, revealing new photos as it goes. The 2nd column moves faster. We’re not going to mess with scrolling directly; it’s just going to be an illusion. The trick …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://wasp.sh/img/blog/2026-08-13-advice-for-contributing-in-2026/banner.webp" alt="A Maintainer&#39;s Advice on Contributing to Open Source in 2026" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://wasp.sh/blog/2026/08/13/advice-for-contributing-in-2026">A Maintainer&#39;s Advice on Contributing to Open Source in 2026</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by hp77 · wasp.sh · <a class="discuss" href="https://lobste.rs/s/5mnquy/maintainer_s_advice_on_contributing_open">discuss</a>
+    </p>
+<p class="lede">As an open-source maintainer, you imagine the ideal contributor as an individual that is excited about your project, uses it and understands it, and wants to contribute to make it better for themselves, others, or because of an exciting technical problem. You get to share ideas with them, learn from each other, maybe even get to know them a bit as a person in the process, and they inspire you to do better work. A profoundly human, intellectual interaction, inspiring and fulfilling, sometimes even resulting in a life-long relationship. When that happens, it is an amazing experience, absolutely my favorite part of building open-source software. I still remember when Craig, whom we didn&#39;t know yet then, came out of nowhere and shared his proposal for formal language grammar for Wasp, a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://x86.cx/blog/redanger">Hacking the T-Mobile Sidekick, 20 Years Too Late</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by robey · x86.cx · <a class="discuss" href="https://lobste.rs/s/f1nsnm/hacking_t_mobile_sidekick_20_years_too">discuss</a>
+    </p>
+<p class="lede">The Danger Hiptop, better known as the T-Mobile Sidekick, came out in 2002 with a full QWERTY keyboard, AIM and Yahoo Messenger built in, and push notifications, at a time when most phones could barely handle a text message. All of it ran on DangerOS, Danger&#39;s own Java-based operating system. The Sidekick was a cloud device before &#34;the cloud&#34; was even a term most people knew. Everything lived on Danger&#39;s servers: contacts, messages, photos, settings. Most users had no idea that their phone was essentially a thin client, completely dependent on a backend they&#39;d never think about. It just worked, and that was enough. Microsoft acquired Danger in 2008, and after a catastrophic data loss in 2009 that wiped users&#39; contacts, photos, and personal data, the service shut down for good in 2011. A …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://docs.github.com/assets/cb-345/images/social-cards/actions.png" alt="Workflow dependency lockfiles" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles">Workflow dependency lockfiles</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by kokada · docs.github.com · <a class="discuss" href="https://lobste.rs/s/nft1s2/workflow_dependency_lockfiles">discuss</a>
+    </p>
+<p class="lede">A lockfile pins every action your workflows depend on to a verified commit, so the code you reviewed is the code that runs. Workflows often reference an action by a tag or branch, such as uses: octo-org/deploy-action@v3 or uses: octo-org/deploy-action@main . GitHub Actions resolves that reference to whatever commit the tag or branch points to at run time. Tags and branches can move. As a result, the code that runs is not guaranteed to be the code that the workflow author originally reviewed. If an upstream maintainer&#39;s account is compromised and a tag is repointed, your repositories could run malicious code. A workflow dependency lockfile pins a commit SHA to every action your workflows depend on, including transitive dependencies. It doesn&#39;t pin calls to reusable workflows ( …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://zenmemes.com/threads/thread-20261107173646-27caa60f/">Show HN: We made a new theme to increase engagement on our website</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by forgotmypw17 · zenmemes.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50406700">discuss</a>
+    </p>
+<p class="lede">Some visitors find ZenMemes disorienting. There&#39;s no cookie banner. Nobody asks for your email. You can read a whole thread and never once be told the experience is better in the app. For people raised on today&#39;s internet, this can be a lot to take in. We think the web should be accessible to everyone, including people who have only ever used the modern one. So today we&#39;re adding Engagify, a theme that makes ZenMemes behave like the sites you already know. A cookie banner that values your privacy. Your preferences are saved when you select Accept all. A newsletter popup inviting you to join 0 subscribers who get the best of ZenMemes in their inbox every hour. You can decline, but only by admitting you prefer being uninformed. A banner reminding you that ZenMemes is better in the app …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://sunshineatlas.com/">Sunshine Atlas – the climate of 3,833 destinations, month by month</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by momentmaker · sunshineatlas.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50413732">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://djad04.github.io/php2shell-deep-dive/">PHP2Shell — Deep Dive</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by hoistbypetard · djad04.github.io · <a class="discuss" href="https://lobste.rs/s/d8dgav/php2shell_deep_dive">discuss</a>
+    </p>
+<p class="lede">I started writing this research on October 26, 2026, and I&#39;m not entirely sure when I&#39;ll finish it. At the time of writing, there is still very little information available about PHP2Shell, particularly when it comes to detailed technical analysis of the vulnerabilities and the exploitation process. Honestly, I was getting tired of finding explanations that only scratched the surface without actually showing what was happening internally. I wanted to do something different: a proper, in depth technical walkthrough that explores the entire process, examining every important detail and explaining not just WHAT happens, but WHY and HOW it happens. This research is based on my own understanding of the PHP source code, my experiments, and the investigations I&#39;ve conducted while trying to …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://goodfirsttoken.org/card.png" alt="Show HN: Good First Token – Spend your spare tokens on open source" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://goodfirsttoken.org/">Show HN: Good First Token – Spend your spare tokens on open source</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by jconley · goodfirsttoken.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50407523">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://apanda.dev/">Show HN: I&#39;m 15 and my personal website looks like iMessage</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by pizzalover125 · apanda.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50410056">discuss</a>
+    </p>
+<p class="lede">apanda hey! i&#39;m aaradhya panda 👋 🐼 you can call me adi i craft experiences; software, hardware, and events i like debating, coding, and making i run the code hatch i help with events @ hack club i help seniors with tech @ cyberseniors check out my github and linkedin email me at adi@apanda.dev 🐼 Aaradhya Panda mail Hide Alerts Send Read Receipts Show in Shared with You Photos Links the code hatch codehatch.org Hack Club hackclub.com pizzalover125 (Aaradhya Panda) github.com 🐼 adi apanda.dev 🐼 Aaradhya Panda founder, builder, maker, debater mail mobile (602) 555-0142 FaceTime home adi@apanda.dev homepage apanda.dev home Phoenix AZ United States birthday April 1 LinkedIn aaradhyapanda GitHub pizzalover125 Notes runs the code hatch 🐣 ask about debate</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=50412646">Show HN: No more code reviews. Fuzz instead</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by KingOfCoders · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50412646">discuss</a>
+    </p>
+<p class="lede">Hi HN, I&#39;m Stephan. I&#39;m an ex-CTO and many companies I look in today, want to get AI coded apps into production, but engineering code reviews are the new bottleneck - and engineers don&#39;t even love to do them. No more code reviews. Fuzz instead. appfuzz works with WASM and runs the .wasm thousands of times against a simulated backend and reports problems: crashes, n+1 queries, XSS, SQL injection, leaked secrets, blown IO/CPU/instruction budgets. Try it of your own - you don&#39;t need an app for the demo: https://appfuzz.dev Why: agents write code faster than anyone can review it, and in many companies people outside engineering (marketing, sales, support) want to ship apps too - pressure from the CEO is high. But then engineers get the pager alerts. One way to make them safer is to treat them …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-08-p6.html">‹</a><a href="2026-11-08.html">1</a><a href="2026-11-08-p2.html">2</a><a href="2026-11-08-p3.html">3</a><a href="2026-11-08-p4.html">4</a><a href="2026-11-08-p5.html">5</a><a href="2026-11-08-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-11-08-p8.html">8</a><a href="2026-11-08-p9.html">9</a><a class="pg-arrow" href="2026-11-08-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>134 stories · 4 cross-posts merged · 121 excerpts · 77 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

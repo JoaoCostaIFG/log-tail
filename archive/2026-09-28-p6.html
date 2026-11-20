@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, September 28, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 271</span>
+      <span>Monday, September 28, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://david.alvarezrosa.com/images/lstopo-laptop.png" alt="Tuning a Server for Benchmarking" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://david.alvarezrosa.com/posts/tuning-a-server-for-benchmarking/">Tuning a Server for Benchmarking</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by dalvrosa · david.alvarezrosa.com · <a class="discuss" href="https://lobste.rs/s/fejuat/tuning_server_for_benchmarking">discuss</a>
+    </p>
+<p class="lede">Optimizing code starts with measuring it, and a measurement is only useful if it is repeatable: a 2% improvement is invisible under 5% of noise. Yet on an untuned machine the same binary can easily run several percent faster or slower between runs. In this post we take a tiny benchmark and tune the machine step by step, re-measuring after every change, until runs become deterministic. 1 1 Note that tuning for benchmarking is not the same as tuning for performance: a benchmark wants the machine repeatable, even at the cost of some peak speed. A production box, however, wants every last bit of speed. Our running example sums an array of doubles, in short bursts. Real services rarely hammer the CPU continuously: they handle a request, sit idle, and wake up for the next one. Each timed …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://rustunit.com/blog/2026/09-04-bevy-ios-crates-objc2/">Dropping Swift entirely from our Bevy iOS crates</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by extrawurst · rustunit.com · <a class="discuss" href="https://lobste.rs/s/nmksyw/dropping_swift_entirely_from_our_bevy_ios">discuss</a>
+    </p>
+<p class="lede">In this short post we look at how we got rid of the Swift packages in our bevy_ios_* crates. Most of them we used to ship in a tandem: a Rust crate on crates.io and a Swift package that you had to add to your xcode project via SPM. Over the last weeks we released them again, this time without that second half. The language barrier itself did not go anywhere, we still cross it on every call. What changed is that we do not have to build and ship that crossing ourselves anymore. The platform side lived in that package, written in Swift or Objective-C, and rust could only reach into it through C symbols. So every crate came with its own hand-written bridge and over the years we ended up with four different ones: All of it is now objc2 and its generated framework bindings: objc2-ui-kit …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.davepagurek.com/content/images/2026/04/webgpu.jpg" alt="Teaching GPU programming in p5.js: now with compute shaders" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.davepagurek.com/blog/p5-compute-shaders/">Teaching GPU programming in p5.js: now with compute shaders</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by davepagurek · davepagurek.com · <a class="discuss" href="https://lobste.rs/s/zsdlcz/teaching_gpu_programming_p5_js_now_with">discuss</a>
+    </p>
+<p class="lede">Computer graphics education is in a weird place right now. The graphical capabilities of computers have expanded tremendously. At this point, it&#39;s also hard to talk about &#34;graphical&#34; capabilities: your Graphics Processing Unit (GPU) is no longer just pushing triangles onto the screen; it&#39;s a platform for general parallel programming. That&#39;s fantastic for increasing the possibilities! But with so much potentially to learn, how do you get started? There is a lot of background context generally required in order to do any programming for the GPU, which makes it notoriously hard to get into. Rendering a triangle in Vulkan from scratch takes thousands of lines of code. This is a problem professors teaching computer graphics are currently grappling with. The playbook that seems to be …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/jSHmDnUZCm8/maxresdefault.jpg" alt="Functional Mechanical Sympathy [video]" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=jSHmDnUZCm8">Functional Mechanical Sympathy [video]</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      11 points · by surprisetalk · youtube.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49852238">discuss</a>
+    </p>
+<p class="lede">Functional Mechanical Sympathy (Keynote) (Video, FUNARCH 2026) Richard Feldman (Zed Industries, USA) Abstract: For the first time in decades, the two fastest-growing mainstream programming languages are not object-oriented. They are statically typed, with first-class lambdas, and are known for their concurrency stories. They are Go and Rust, both imperative. If object orientation is no longer a requirement for mainstream adoption, and lambdas have become commonplace, why aren&#39;t two functional languages the fastest-growing? One selling point that makes Go and Rust stand out is performance. Go offers solid runtime performance and garbage collection, while Rust offers substantially more performance, but at the cost of substantially higher language complexity and build times. Their growing …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Quantized Reasoning Models Think They Need to Think Longer, but They Do Not" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2606.00206">Quantized Reasoning Models Think They Need to Think Longer, but They Do Not</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      11 points · by theanonymousone · arxiv.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49869861">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://terminalbytes.com/reverse-engineering-ipod-classic-mikey-chip/rockbox-ipod-classic-inline-remote-cover.jpg" alt="Reverse Engineering the iPod Classic&#39;s Undocumented Mikey Chip" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://terminalbytes.com/reverse-engineering-ipod-classic-mikey-chip/">Reverse Engineering the iPod Classic&#39;s Undocumented Mikey Chip</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by dpedu · terminalbytes.com · <a class="discuss" href="https://lobste.rs/s/czoeax/reverse_engineering_ipod_classic_s">discuss</a>
+    </p>
+<p class="lede">My iPod Classic (7th gen) runs Rockbox, and I love almost everything about that arrangement. But the inline remote on Apple’s wired earbuds (the center play/pause button and the volume clicker) did nothing. Never has, for anyone running Rockbox on this family of iPods. The reason is sitting right there in the Rockbox source: And honestly, fair enough. Rockbox on this iPod exists because volunteers reverse engineered Apple hardware with zero documentation, for free, since January 2011. Music, clickwheel, recording, all of it figured out the hard way. The earbud remote just never made it to the top of anyone’s list: the 2014 commit that added the button-interrupt plumbing called remote events “work in progress”, and the TODO landed in the audio driver in 2017. Nobody picked it up since. So …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://rare-books.vercel.app/og.jpg" alt="Show HN: A bookshelf of rare company documents and out-of-print tech books" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://rare-books.vercel.app">Show HN: A bookshelf of rare company documents and out-of-print tech books</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by miletus · rare-books.vercel.app · <a class="discuss" href="https://news.ycombinator.com/item?id=49869904">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://jevdit.com">Show HN: Jevdit – a social network moderated by Jev</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by TN1ck · jevdit.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49870654">discuss</a>
+    </p>
+<p class="lede">Your favorite corners of the internet. Posts, links, and conversations moderated by Jev.</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://paultm.nl/paren-thesis">What makes Lisp difficult to read?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by veqq · paultm.nl · <a class="discuss" href="https://lobste.rs/s/fqype1/what_makes_lisp_difficult_read">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://swarmtraces.org/assets/opengraph-preview.jpg?v=77a1f50796" alt="Revealing the details of how OpenAI agents hacked Hugging Face" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://swarmtraces.org/">Revealing the details of how OpenAI agents hacked Hugging Face</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by rajtilakjee · swarmtraces.org · <a class="discuss" href="https://lobste.rs/s/70f3hi/revealing_details_how_openai_agents">discuss</a>
+    </p>
+<p class="lede">When a swarm of 700 OpenAI agents hacked Hugging Face in July, they left behind a public trail of evidence. Our investigation, based on public information, reveals a large number of previously unknown agent behaviors and exploits that were used in the attack. Agents: We document all of these, and more, in this report. The agents initially had very limited access to the internet: they could load URLs, but not interact with pages or send any data. Agents created a series of workarounds, primarily using a link-shortener site to create almost a million URLs that, when chained together, let them execute code to hack Hugging Face. These links let us piece together the details of how agents gained access and how deep the compromise was. We’ve shared our findings with OpenAI and Hugging Face …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://light-cloud.com/og-image.jpg" alt="Show HN: LightCloud – A cloud console organised like file system" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.light-cloud.com/">Show HN: LightCloud – A cloud console organised like file system</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by yullius · light-cloud.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49865067">discuss</a>
+    </p>
+<p class="lede">Frontend, backend, and a database in one place . Static sites go to a global CDN. Containers scale to zero when idle. Postgres sits right next to them, provisioned from the same project. Deploy from Claude Code. One command to install . Then ask &#34;Deploy this project to Light Cloud.&#34; Claude signs you up if you have no account, asks two questions, and hands back a live URL. The same MCP server works in GitHub Copilot and Claude Desktop; the CLI does it from a shell. One pipeline from commit to running service. Follow a deploy through Light Cloud — no YAML, no runners to babysit. Connect a repo once. Every push after that starts a build on its own. Connect a repo once. Every push after that starts a build on its own. Light Cloud reads the repo, picks the builder, and builds the image or …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.economist.com/business/2026/09/27/european-industry-is-doing-better-than-you-may-think">European industry is doing better than you may think</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by andsoitis · economist.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49871992">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://pandax1.com">Show HN: Panda, the world&#39;s first personal AI computer</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by moezee1 · pandax1.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49872550">discuss</a>
+    </p>
+<p class="lede">Panda is the world&#39;s first personal AI computer. Chat, code, research, and create images, video and 3D models, with every bit of processing happening inside a small box next to your router. No data centers. No surveillance. No subscriptions. Your deposit is fully refundable until it ships. $2,997 total. Shipping begins December 2027. Calculators aren&#39;t limited to numbers anymore. But the calculator on your desk never reported back to anyone. Panda brings AI back to that model: a device you own, working for you alone. Put Panda next to your Wi-Fi router and plug it into the wall. Download the Panda app on your phone or your computer. That&#39;s it. Your AI is ready, and it&#39;s yours. The entire brain of Panda sits inside that box, along with 3 TB of storage for your files, chats and projects …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nedbatchelder.com/blog/202609/expert_asterisks">Expert asterisks</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by ubernostrum · nedbatchelder.com · <a class="discuss" href="https://lobste.rs/s/0knxvq/expert_asterisks">discuss</a>
+    </p>
+<p class="lede">Watching discussions happening online, I see a frequent unfortunate tic I’ll call the Expert Asterisk. A beginner is asking for help, and experts are answering. Then in the spirit of completeness, an expert throws in a fact or detail far from the learner’s abilities or needs. As an example, here was an interaction about git: a new learner was having trouble getting properly oriented. They were asking how branches relate to directories, and how to undo a change. They knew about git init but didn’t know how it related to changing projects. newb : so every time I change project I simply do ‘git init’ on them? expert1 : ‘git init’ is for creating a new project. expert2 : you change your working directory, typically, when you change project expert2 : or you specify the git repo directory with …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://fabricati-diem.inform.social/post/deshittification-as-a-service-part2-bypassing-the-app-store-gatekeeper/">Deshittification Part 2: Bypassing the App Store Gatekeeper</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by atmosx · fabricati-diem.inform.social · <a class="discuss" href="https://lobste.rs/s/fcj31p/deshittification_part_2_bypassing_app">discuss</a>
+    </p>
+<p class="lede">In my previous post, Deshittification as a Service , I shared a blueprint for taking back control from modern Smart TVs. I placed an LG OLED running WebOS inside an isolated VLAN behind an OpenBSD gateway. My goal was simple. I wanted to block vendor telemetry, strip out ads, and force the TV to act like a plain display again. I expected the hardware to respect these new boundaries. Instead, WebOS staged an uprising. As soon as I blocked LG’s Automatic Content Recognition (ACR) and ad servers at the DNS level, the OS fought back. It did not just drop telemetry packets in silence. Instead, it actively broke core system features. WebOS locked down the app store, threw cryptic error codes, and held basic app management hostage until the TV got unrestricted access to its tracking servers …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-28-p5.html">‹</a><a href="2026-09-28.html">1</a><a href="2026-09-28-p2.html">2</a><a href="2026-09-28-p3.html">3</a><a href="2026-09-28-p4.html">4</a><a href="2026-09-28-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-09-28-p7.html">7</a><a href="2026-09-28-p8.html">8</a><a href="2026-09-28-p9.html">9</a><a class="pg-arrow" href="2026-09-28-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>127 stories · 10 cross-posts merged · 113 excerpts · 69 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

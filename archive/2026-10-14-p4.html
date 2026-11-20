@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, October 14, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 287</span>
+      <span>Wednesday, October 14, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://simonkoeck.com/og/google-devsite-flask-session-pickle-rce.png" alt="Finding a $90,000 Remote Code Execution Vulnerability in Google" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce">Finding a $90,000 Remote Code Execution Vulnerability in Google</a></h3>
+    <p class="dateline"><span class="badge">L</span>      61 points · by hoistbypetard · simonkoeck.com · <a class="discuss" href="https://lobste.rs/s/mldt0o/finding_90_000_remote_code_execution">discuss</a>
+    </p>
+<p class="lede">I was mapping the OAuth flow that Google’s developer docs sites all share. You hit /oauth2authorize , it sets a Flask session cookie and redirects you to Google’s sign-in page. No account needed: The cookie caught my eye. It had Flask’s usual three-part session=&lt;payload&gt;.&lt;timestamp&gt;.&lt;signature&gt; format, but at about 1,200 bytes it seemed large for a CSRF token and a return URL. So I decoded it. Flask session cookies are signed, not encrypted, so the contents are right there for anyone holding one. The leading dot means the payload is zlib-compressed: The &#34; b&#34; key is Flask tagging a bytes value. Base64-decoding it gave me a pickle, and pickletools.dis printed an oauth2client.client.OAuth2WebServerFlow object with its fields: The cookie contained a pickle-serialized payload and Google’s …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!o-F_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f01e8a4-f509-496c-87c4-cc998882d7ac_1418x736.png" alt="The Four Colour Theorem: The first time machines mogged mathematicians" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://newsletter.pessimistsarchive.org/p/the-1st-time-machines-mogged-mathematicians">The Four Colour Theorem: The first time machines mogged mathematicians</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      59 points · by list · newsletter.pessimistsarchive.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50077096">discuss</a>
+    </p>
+<p class="lede">In July 1976 a mathematical mystery that confounded mathematicians for more than a century was finally solved: the Four Color Theorem * *Four Color Theorem states: no more than four colors are required to color the regions of any map so that no two adjacent regions have the same color Its authors - Kenneth Appel and Wolfgang Haken - would credit an unconventional collaborator: a computer had done much of the mathematical heavy lifting, 1,200 hours of compute and 10 billion decisions to be exact. Pessimists Archive Newsletter is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber. Appel and Haken would later describe how the system “began to teach us things about how to proceed that we never expected” , conceding that the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.julik.nl/2026/10/the-weimar-of-ruby">Living in the Weimar era of Ruby</a></h3>
+    <p class="dateline"><span class="badge">L</span>      58 points · by julik · blog.julik.nl · <a class="discuss" href="https://lobste.rs/s/lfen2h/living_weimar_era_ruby">discuss</a>
+    </p>
+<p class="lede">Much has been said about the DHH keynote that he gave at RailsWorld. To me, it was the voice of a person in an existential crisis, but also a very jaded one. “Look how I don’t care anymore, and you should not care either” is not a great message when you are the headline speaker at the conference - let’s call it CareConf - that you have, yourself, lobbied for. The message from the supreme leader was clear: we vibe-rewrote HEY in a more performant way, it worked great, we neither need nor care about Rails anymore. I honestly believe that, instead of amassing even more applause via vitriolic truth-bombing, he could have just left the toy he no longer loves - including its community - in peace. But here is the thing: the rich and famous losing interest in the good stuff does not oblige the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves">The reverts will continue until morale improves</a></h3>
+    <p class="dateline"><span class="badge">L</span>      52 points · by kngl · peter.eisentraut.org · <a class="discuss" href="https://lobste.rs/s/aasanp/reverts_will_continue_until_morale">discuss</a>
+    </p>
+<p class="lede">Many readers will be aware that an unusually high number of features have been reverted from the PostgreSQL 19 branch after the beta period began. Having some reverts is not unusual, maybe one per cycle could be expected. But this time around, about 8 to 10 significant features, depending on how you count, have been reverted, and some of them quite late in the beta period. I have been on the receiving end of some of that, as the developer or committer of some of those features, and have gotten some questions about it, and so I want to take a moment to reflect on this. I’ll try to extrapolate a little bit to similarly affected work that I was not actively involved in, but these are just my opinions at this point. I don’t think we, meaning all the developers affected, have had enough time …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://website.pi-asset.com/api/social/911828ba2189/pi-api-hero-loop-poster.jpg" alt="Physical Intelligence API Beta: Frontier Models for Every Robot" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.pi.website/blog/api-beta">Physical Intelligence API Beta: Frontier Models for Every Robot</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      49 points · by modeless · pi.website · <a class="discuss" href="https://news.ycombinator.com/item?id=50079437">discuss</a>
+    </p>
+<p class="lede">We are making our latest models available for training and inference through the Pi API beta . Deploying robots is challenging. Besides identifying the right use case and building the right hardware, developers need models intelligent enough to perform the task at hand. General-purpose robotic foundation models such as π 0 and π 0.5 offer a promising way to tackle this challenge. They provide a strong foundation of physical knowledge and capabilities, substantially reducing the data and effort needed to adapt to new tasks, environments, or robots. But adapting them still requires ML infrastructure, compute, and complex data pipelines, which are difficult in their own right. What if the latest and most powerful robotic foundation models could be adapted to each application through a simple …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/bee-TOP-1152x648-1791731084.jpg" alt="High-speed video reveals how honey bee stingers pump venom" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arstechnica.com/science/2026/10/honey-bee-stingers-are-double-piston-venom-pumps/">High-speed video reveals how honey bee stingers pump venom</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      47 points · by gumby · arstechnica.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50081133">discuss</a>
+    </p>
+<p class="lede">Honey bees are known to leave their stingers embedded in tender flesh once they sting you and fly away. Scientists have now determined that the stinger is able to continue pumping venom into its unfortunate victim even after the bee flies away, thanks to a unique double-piston pump-like mechanism, according to a new paper published in the Proceedings of the National Academy of Sciences. Different species have evolved different mechanisms for delivering venom, which involves piercing the skin and then pumping venom from a gland or reservoir. Spiders, for instance, have muscles surrounding their venom glands, which contract and eject venom through hollow fangs. Bees, wasps, and ants deliver venom via their stingers, either by contracting muscles around the venom reservoir or through stiff …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://brookslybrand.com/posts/do-frameworks-matter-anymore/">Do Frameworks Matter Anymore?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      44 points · by fagnerbrack · brookslybrand.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50081092">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://larstofus.com/wp-content/uploads/2026/10/fasterhashthumbnail.png" alt="Speeding up the Unreal editor by… not using unnecessarily secure hash methods" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://larstofus.com/2026/10/11/speeding-up-the-unreal-editor-by-not-using-unnecessarily-secure-hash-methods/">Speeding up the Unreal editor by… not using unnecessarily secure hash methods</a></h3>
+    <p class="dateline"><span class="badge">L</span>      43 points · by fanf · larstofus.com · <a class="discuss" href="https://lobste.rs/s/5feguu/speeding_up_unreal_editor_by_not_using">discuss</a>
+    </p>
+<p class="lede">One good trick when trying to look for ways to optimize software is to stay away from areas that are very likely already quite well optimized, and instead focus on areas that might have been overlooked, either because they are too obscure or don’t show up during regular profiling sessions. This tactic worked well in the past, as shown with my optimization of tooltip creation , or the loading of editor localization files . So when profiling the editor launch (again), this is why I mostly skip over any functions that contain words like “Shader Compilation” or “Shader Source” when I stumble over them in my profiler. The compilation of shaders is a famously long and elaborate process, and I’m pretty sure that very smart people at Epic already spent a lot of time optimizing those areas. That’s …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.natemeyvis.com/static/og-image.png" alt="Where is all the new, good software?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.natemeyvis.com/where-is-all-the-new-good-software/">Where is all the new, good software?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      40 points · by gerikson · natemeyvis.com · <a class="discuss" href="https://lobste.rs/s/hjhufj/where_is_all_new_good_software">discuss</a>
+    </p>
+<p class="lede">Here&#39;s a question we see, especially from AI skeptics: if AI coding is so great, shouldn&#39;t we be seeing more new, good software by now? Here are some answers. As usual in this style of post, these are conjectural, candidate answers, and I would give some of them little weight. Again, some of these are speculative and some should be given little weight. This is just presented as an example, however realistic. It&#39;s certainly not tax advice and I am emphatically not a lawyer or tax professional or anything similar. ↩</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opensidian.org/assets/og.jpg" alt="Show HN: Opensidian" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://opensidian.org/">Show HN: Opensidian</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      40 points · by jpzk · opensidian.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50070286">discuss</a>
+    </p>
+<p class="lede">Open-source and non-profit under GPLv3, vault-compatible cross-platform markdown notes app. It&#39;s based on Rust + Tauri v2 and under heavy development. We&#39;re looking for Linux distribution maintainers. Not affiliated with or endorsed by Obsidian or Dynalist Inc.; &#34;Obsidian&#34; is their trademark. SHA256SUMS is signed with key A6E6 9ED6 BC47 79F3 2817 2148 4CC1 AFDE 15B6 4EA3 : Tested 2026-10-03 on fresh Ubuntu 26.04 LTS and Fedora 44 with Rust 1.98.0 (build ~2.5 min on 4 cores, binary runs and renders on both). Rust, if you don&#39;t have it (distro rustc is often older than 1.98): GPL-3.0-or-later ( LICENSE ). Read THIRD-PARTY.md before redistributing. Most Obsidian community themes work as they are. Ships with AnuPpuccin (default), Material Gruvbox , Minimal and Solarized , unmodified ( …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://royfish.dev/fingerprints-are-the-new-cookies">Fingerprints are the new cookies</a></h3>
+    <p class="dateline"><span class="badge">L</span>      37 points · by eduard · royfish.dev · <a class="discuss" href="https://lobste.rs/s/ml9xrb/fingerprints_are_new_cookies">discuss</a>
+    </p>
+<p class="lede">Try refreshing the page. Clear the cookies. Connect to a VPN. Now open it on your phone or some other device and your nickname will be different and just as consistent. Is it different in incognito? Good. But it’s always the same? Bad news. Most websites you visit get paid to show ads and indirectly run my script that lets me know you’re the … . I can use it to decide what ads you’ll see. But more importantly, if you’ve made an account on that website, I can offer to buy your data - whatever they can share under their privacy policy: your name, activity, conversations with AI… Pretty soon I’d know more about you than your friends do - perhaps more than you know yourself. “I have nothing to hide. And I prefer my ads to be relevant… sometimes they show me exactly what I need! And the data …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://daniel.haxx.se/blog/wp-content/uploads/2021/06/trimming-hedge.jpg" alt="A slightly faster slimmer curl" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://daniel.haxx.se/blog/2026/10/13/a-slightly-faster-slimmer-curl/">A slightly faster slimmer curl</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by wonk · daniel.haxx.se · <a class="discuss" href="https://lobste.rs/s/d9rpcl/slightly_faster_slimmer_curl">discuss</a>
+    </p>
+<p class="lede">Back in August I mentioned the new curl performance tests we have running. I figured it could be apt to return to this topic just to mention some of the initial outcomes. When the team gets a new set of charts, graphs and plots that visualize something, like performance, they offer an excellent opportunity for us to try to make them look better. This new setup is no exception. The performance tests have only been running for just a little over two months but they have already made us improve curl performance in several areas. Of course, for most transfers these changes won’t make many visible differences to users. This is more in the vein that every little bit counts and that nothing should run slower than it has to. This is a list of some improvements that are included in the curl 8.23.0 …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.afp.com/sites/default/files/afp-stories/7c20d3e6cc43ae9598fec7dbe162d544-0-hi.jpg" alt="French supermarket chains say cyberattack forced refrigerator shutdown" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.afp.com/en/french-supermarket-chains-say-cyberattack-forced-refrigerator-shutdown">French supermarket chains say cyberattack forced refrigerator shutdown</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by aldantanneo · afp.com · <a class="discuss" href="https://lobste.rs/s/u4vlin/french_supermarket_chains_say">discuss</a>
+    </p>
+<p class="lede">Major French supermarket chains on Monday said they were hit by a cyberattack that caused their refrigerators to shoot up in temperature in hundreds of stores, forcing spoiled food to be thrown away and raising concerns about food security. Top retailers E. Leclerc, Intermarche and Cooperative U confirmed to AFP they suffered a cyberattack that Cooperative U&#39;s chief executive described as &#34;unprecedented&#34;. &#34;Food security requires more attention at all levels,&#34; said the EU&#39;s food and agriculture commissioner Christophe Hansen on X, condemning the attack and saying such &#34;exploitation of food&#34; was now a &#34;reality&#34;. At least 300 shops of Intermarche or its Netto brand were targeted, along with over 100 Cooperative U outlets, and several E. Leclerc stores, the retailers told AFP in separate …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html">Type-safe HTML templating in Zig</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by nemin · lalinsky.com · <a class="discuss" href="https://lobste.rs/s/dujxbl/type_safe_html_templating_zig">discuss</a>
+    </p>
+<p class="lede">I’ve done a lot of web development over the years. I started around the year 2000, just after PHP 3.0 was released and started taking over the web world. I’ve used all kinds of approaches for generating HTML: raw PHP, string concatenation in Python, Smarty templates in PHP, Template Toolkit in Perl, and Jinja/Django templates in Python. Then, as the world moved on to SPAs and JavaScript frameworks, I stopped working on frontends. Two years ago, I picked up Zig, and I’d never have imagined I’d be considering web development in such a low-level language. But as I was building my own ecosystem with zio and Dusty , I realized it’s not that far-fetched. I built these libraries for API backends, where the output is JSON or MessagePack, but then I saw that with proper use of arena allocators …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.markround.com/blog/2026/zx-spectrum-intro">Writing a Demoscene Intro for the ZX Spectrum</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by mdr · markround.com · <a class="discuss" href="https://lobste.rs/s/nroajo/writing_demoscene_intro_for_zx_spectrum">discuss</a>
+    </p>
+<p class="lede">I’m a DevOps architect, musician and all-round geek. When I’m not writing code or fiddling with computers for a living, I produce my own music and provide the low-end rumble for my band in West Sussex. In the late 80s, I spent an embarrassing number of hours hunched over my ZX Spectrum, typing in Sinclair BASIC programs and rudimentary assembler routines copied from magazines, trying to re-create the Amiga crack intros I’d seen round at a friend’s house. Obviously, they never came even slightly close - but now, many decades later, I’ve finally managed it! I’m now the proud author of a hand-rolled retro demoscene intro that runs on a stock 128Kb Spectrum. It features all those late 80s tropes: A smooth scrolltext (with ‘leet custom fonts!), a three-channel AY soundtrack, bouncing VU meters …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-14-p3.html">‹</a><a href="2026-10-14.html">1</a><a href="2026-10-14-p2.html">2</a><a href="2026-10-14-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-10-14-p5.html">5</a><a href="2026-10-14-p6.html">6</a><a href="2026-10-14-p7.html">7</a><a href="2026-10-14-p8.html">8</a><a href="2026-10-14-p9.html">9</a><a class="pg-arrow" href="2026-10-14-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>126 stories · 3 cross-posts merged · 115 excerpts · 88 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

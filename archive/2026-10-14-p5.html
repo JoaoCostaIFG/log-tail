@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, October 14, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 287</span>
+      <span>Wednesday, October 14, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://sebsite.pw/w/20261012-notstdc.html">your c is not standard c</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by nytpu · sebsite.pw · <a class="discuss" href="https://lobste.rs/s/0aocct/your_c_is_not_standard_c">discuss</a>
+    </p>
+<p class="lede">this is an incomplete list of some incompatibilities between c as it&#39;s written in the standard and c as it exists in the real world for people who use gcc/clang + glibc/musl. asm by default, gcc and clang recognize the asm keyword as an extension. this is not strictly conformant, because in standard c, asm is a valid non-reserved identifier. so code which conforms to the standard may not compile with gcc/clang with their default settings. and like, whatever, that&#39;s fine, that&#39;s why -std exists, but 1. it&#39;s notable that compilers aren&#39;t conformant by default , and 2. why doesn&#39;t the standard just make asm a reserved word? c++ does that; i&#39;m not sure why c doesn&#39;t. FLT_ROUNDS the standard specifies the FLT_ROUNDS macro in float.h as follows: 5.3.5.3.3p23 : The rounding mode for …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://eliasebner.com/blog/guides/arena-allocators-in-c/">Arena Allocators in C</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by dimonomid · eliasebner.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50046022">discuss</a>
+    </p>
+<p class="lede">As we all know, C is a very low level language. It allows you (and kind of forces you) to manage the memory you use by yourself. This is one of the (probably many) reasons that people are turn to other languages when it comes to their daily programming. In this article, I will show you a paradigm for managing memory which is not only very performant, but it’s also extremely versatile. It makes the task significantly easier and decrease the chance of memory leaks by a large margin. Maybe you already know about them, maybe not, in any case: I’m talking about arena allocators. I will get to the implementation, but before I do that, here is a brief introduction to the concept of an arena allocator. The way people usually go about managing memory is that they allocate a small amount of memory …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/1d0e22584016946a732e05e61ccffd56dc9b5405f7c2c8ef59fee0b48cd25a23/maharshi365/deslop" alt="Show HN: Deslop – Oxlint rules for AI-generated TypeScript" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/maharshi365/deslop">Show HN: Deslop – Oxlint rules for AI-generated TypeScript</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by maharshi365 · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50075809">discuss</a>
+    </p>
+<p class="lede">Opinionated Oxlint rules that reject low-evidence, low-signal, AI-slop code patterns. Rules are vendored from dmmulroy/anti-slop (generic rules) alongside additional deslop rules, all renamed under the deslop/* namespace. The vendored source is MIT licensed; see Credits below. Ships compiled JavaScript — works with any oxlint JS-plugin runtime (Bun, Deno, or Node.js).</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://storage.ghost.io/c/19/0d/190dff69-8936-47d7-8b0c-f48a6a36ddb4/content/images/2026/08/lotus_title_card.png" alt="Lotus Improv on the NeXT" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://stonetools.ghost.io/lotusimprov-next/">Lotus Improv on the NeXT</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by gecko · stonetools.ghost.io · <a class="discuss" href="https://lobste.rs/s/zmuawx/lotus_improv_on_next">discuss</a>
+    </p>
+<p class="lede">It is spoken of in reverent tones, invoked like a magic spell, whispered about as one of the mythical &#34;roads not taken&#34; in computing history. Its proponents write glowing reports and fawning YouTube reviews, lamenting its failure in the historical marketplace, each offering some justification for it not having set the world ablaze. It is safe to say, the legend of Lotus Improv persists to this day. If we put ourselves in Steve Jobs&#39;s shoes circa 1988, it&#39;s easy to see why he would have been smitten by an early preview of what we now call a &#34;pivot table.&#34; NeXT was struggling to find its market, and exclusives which justified a system purchase were sorely needed. &#34;Maybe Improv can do for NeXT what VisiCalc did for the Apple II,&#34; must surely have crossed Jobs&#39;s mind. In making it a NeXT …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kristaps.bsd.lv/kcgi/">Kcgi – minimal CGI and FastCGI library for C/C++</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      22 points · by Bluestein · kristaps.bsd.lv · <a class="discuss" href="https://news.ycombinator.com/item?id=50063104">discuss</a>
+    </p>
+<p class="lede">kcgi is an open source CGI and FastCGI library for C/C++ web applications. It is minimal, secure, and auditable. To start, install the library. Then read the deployment and usage guides. For fuller examples, see sample.c (C and CGI), samplepp.cc (C++ and CGI), sample-fcgi.c (C and FastCGI), or jump to the Documentation section. kcgi supports many features: auto-compression, handling of all HTTP input operations (query strings, cookies, page bodies, multipart) with validation, authentication, configurable output caching, request debugging, formatted writers (JSON, XML, etc.) and so on. Its strongest differentiating feature is using sandboxing and process separation for handling the untrusted input path. First, check if kcgi isn&#39;t already packaged for your system, such as with pkg_add kcgi …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://memorysync.io/og-image.png" alt="Show HN: MemorySync – Memory for AI Agents" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://memorysync.io/try">Show HN: MemorySync – Memory for AI Agents</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      22 points · by mohd_rafay · memorysync.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50070688">discuss</a>
+    </p>
+<p class="lede">Tell MemorySync one fact, reload the page, then ask for it back in your own words. No signup, nothing to install — and every API call is shown as it happens. Write one fact about you or your work. It’s saved on MemorySync’s servers, not in this page — and not word for word: the lasting facts are pulled out, so one sentence can become more than one memory. Now reload. Reloading throws this page away — every variable and all of its state. Watch the page load number above change. If the fact still comes back in step 3, it was stored on the server, not in your browser. That’s the boundary most agent memory doesn’t survive. Ask in your own words. MemorySync searches by meaning, so you don’t need to repeat the words you used. “Remember this” will send this request. It updates as you type. The …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://mei.puppycat.house/_app/screenshots/wseeing-261010.png" alt="What I&#39;ve been seeing lately (in software)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://mei.puppycat.house/w/seeing-261010">What I&#39;ve been seeing lately (in software)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by mei · mei.puppycat.house · <a class="discuss" href="https://lobste.rs/s/awjqvn/what_i_ve_been_seeing_lately_software">discuss</a>
+    </p>
+<p class="lede">What is going on in software? You know what I’m talking about, the stuff with Generative AI. This thing that everyone is frothing talking about. Apparently I am too. Let’s not talk about that for a minute, and instead look at my little world as of late: There are people who care. Around me I am seeing more and more people who care about the “art of software” force themselves to not give into LLMs, and we are.. losing slower, mostly. Or not? Where I feel we are gaining, it is more extremely hobbyist. It is better ideas that are being done with the (little) execution we have. So now, what are these ideas? This has to come first for everything else to work. We are normalizing handmade creative output and asserting that the practical merits of a tool cannot outweigh the moral ones; the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lemire.me/blog/2026/10/12/parsing-json-at-tens-of-gigabytes-per-second-in-python/">Parsing JSON at tens of gigabytes per second… in Python</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by raymii · lemire.me · <a class="discuss" href="https://lobste.rs/s/iufma5/parsing_json_at_tens_gigabytes_per_second">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/a713114fa62bd19063d0e8b1cb620f99b567f0f3a39c69d0a4e8a64a1fb5056b/watzon/sayso" alt="Show HN: Sayso, free open source dictation for Mac, Windows, and Linux" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/watzon/sayso">Show HN: Sayso, free open source dictation for Mac, Windows, and Linux</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by watzon · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50073755">discuss</a>
+    </p>
+<p class="lede">Sayso is a dictation app for macOS, Windows, and Linux. You press a key, speak, and Sayso writes the text into the app you are using. Speech recognition runs on your computer: on the Neural Engine of a Mac, and on the processor of a Windows or Linux computer. Nothing leaves the computer unless you choose a cloud model or turn on an AI style with a cloud provider. Sayso is written in Rust with GPUI . On macOS the speech engine is a Swift program that uses WhisperKit and FluidAudio . On Windows it is a Rust program that uses transcribe-rs (ONNX Runtime and whisper.cpp). On Linux it is a Rust program that uses sherpa-onnx . The same developer made Pindrop . Select a button to download the file of the newest release. The Releases page has all files, each with a .sha256 file. Linux runs on X11 …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://devlog.creusot.rs/creusot-logo-center.jpg" alt="Creusot 0.14.0 release - Contracts for Rust, formally proved" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://devlog.creusot.rs/v0-14-0/">Creusot 0.14.0 release - Contracts for Rust, formally proved</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by lyxia · devlog.creusot.rs · <a class="discuss" href="https://lobste.rs/s/6tbd2o/creusot_0_14_0_release_contracts_for_rust">discuss</a>
+    </p>
+<p class="lede">We are pleased to announce the release of version 0.14.0 of Creusot , our formal verification tool for Rust. In this post, we highlight a small selection of new features. See the full changelog for the rest. Previously, Creusot restricted its specification of PartialOrd to total orders. Since version 0.13.0, we have relaxed it to allow partial orders. (We skipped a devlog entry for 0.13.0 so let&#39;s talk about this here.) Our previous definition of total order ( OrdLogic ) relied on the comparison function cmp_log (the logic counterpart to cmp ), which returns an Ordering . That had the benefit of making totality an implicit consequence of the type of the function: any two elements must compare either Less , Equal , or Greater . With the switch to partial orders, a traditional formulation …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.johnwolff.au/calculators/Tech/OdhnerPinwheel/Odhner127Rebuild.htm">Rebuilding the Original Odhner Model 127 Pinwheel Calculator</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by goshtasb · johnwolff.au · <a class="discuss" href="https://news.ycombinator.com/item?id=50057612">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://nozzle.io/_media/research/poisoned-google-serps/social-card.png" alt="Poisoned Google SERPs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://nozzle.io/research/poisoned-google-serps/">Poisoned Google SERPs</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by armcat · nozzle.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50077964">discuss</a>
+    </p>
+<p class="lede">The search “white label local seo” loads page 1, and three days later every site on it has been replaced, with nothing on the page to say so; a rank report reads it as a crash. The film then follows the study: 27.5 million SERPs, requests to Google failing from September 13 and poisoned SERPs from September 20, why a poisoned SERP is worse than a blocked request, the social sites and forums that take the usual sites’ place, tracked sites falling out of the top 10, and how quickly it passes. Each pair below is the same keyword, device and target location , collected one to three days apart. Pick one, then drag the divider across the page. Drag the divider, or click anywhere on the page to move it there. Scroll inside the frame to move down both SERPs together. A SERP is poisoned when fewer …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://hex.ooo/library/power.html">The Feeling of Power</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by layer8 · hex.ooo · <a class="discuss" href="https://news.ycombinator.com/item?id=50081124">discuss</a>
+    </p>
+<p class="lede">Jehan Shuman was used to dealing with the men in authority on long-embattled earth. He was only a civilian but he originated programming patterns that resulted in self-directing war computers of the highest sort. Generals, consequently listened to him. Heads of congressional committees too. There was one of each in the special lounge of New Pentagon. General Weider was space-burned and had a small mouth puckered almost into a cipher. He smoked Denebian tobacco with the air of one whose patriotism was so notorious, he could be allowed such liberties. Shuman, tall, distinguished, and Programmer-first-class, faced them fearlessly. He said, &#34;This, gentlemen, is Myron Aub.&#34; &#34;The one with the unusual gift that you discovered quite by accident,&#34; said Congressman Brant placidly. &#34;Ah.&#34; He …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/27adeffca3ffa180221cf844bf1046636f037140a7ddbb93f2045a0a6e14b575/Arunjay4213/mosh-rs" alt="Show HN: Mosh-rs, Mosh rewritten in Rust with scrollback and Windows support" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/Arunjay4213/mosh-rs">Show HN: Mosh-rs, Mosh rewritten in Rust with scrollback and Windows support</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by Arunjay__ · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50080836">discuss</a>
+    </p>
+<p class="lede">The mobile shell, rewritten in Rust: wire-compatible with mosh 1.4, with a native Windows client and real scrollback. mosh-rs is an independent project. It is not affiliated with MIT, Keith Winstein, or the mosh maintainers. It exists because of their work: see License and attribution . mosh is a remote terminal that survives what kills ssh: Wi-Fi to cellular handoffs, a laptop that sleeps overnight, and links with high latency or packet loss. It runs over UDP, keeps the screen in sync instead of streaming bytes, and echoes your keystrokes locally before the server answers. mosh-rs is a Rust port of mosh master (decd9b7, March 2026), wire-compatible with mosh 1.4.0, so that it works with the mosh-server already installed on your hosts. It adds two things upstream mosh never had: a native …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://lix.systems/images/logo.png" alt="Announcing Lix 2.96 “Bingsu”" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lix.systems/blog/2026-10-13-lix-2.96-release/">Announcing Lix 2.96 “Bingsu”</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by ThinkChaos · lix.systems · <a class="discuss" href="https://lobste.rs/s/y65egs/announcing_lix_2_96_bingsu">discuss</a>
+    </p>
+<p class="lede">We at the Lix team are proud to announce our seventh major release, version 2.96 “Bingsu”. This release focuses on security, debugger support, quality-of-life improvements, and continues the work towards both the new Cap’n’Proto RPC protocol and Rust support. Bingsu is a milk-based Korean shaved ice dessert with sweet toppings that may include chopped fruit, condensed milk, fruit syrup, tteok, and red beans. Lix is a Nix implementation focused on reliability, predictability, friendliness, developed by a community of people from around the world. We have long term plans to incrementally evolve Nix to work in more places, to make it more reliable and secure, and to update the language and semantics to correct past mistakes and reduce errors, all the while providing an amazing tooling …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-14-p4.html">‹</a><a href="2026-10-14.html">1</a><a href="2026-10-14-p2.html">2</a><a href="2026-10-14-p3.html">3</a><a href="2026-10-14-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-14-p6.html">6</a><a href="2026-10-14-p7.html">7</a><a href="2026-10-14-p8.html">8</a><a href="2026-10-14-p9.html">9</a><a class="pg-arrow" href="2026-10-14-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>126 stories · 3 cross-posts merged · 115 excerpts · 88 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

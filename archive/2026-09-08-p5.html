@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Tuesday, September 8, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 251</span>
+      <span>Tuesday, September 8, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://jerf.org/iri/post/2026/func_args_are_not_colors/">Function Arguments Are Not Function Colors</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      24 points · by ingve · jerf.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49615139">discuss</a>
+    </p>
+<p class="lede">In several debates online about function colors over the years, people have argued the apparently reasonable position that function arguments can constitute colors as well. For instance, in Go, there is a context.Context value, which manages timeouts, cancellation, and a small amount of data that can be threaded through various functions. It is, by design, intended to be something passed through functions even if the receiver doesn’t use it directly but only passes it along. Generally, once one function starts using a context, you should thread it along to all called functions that could conceivably have a use for it. So, superficially, this appears to be a color. Once you have this particular argument in hand, you “have” to call all future functions of that type with that argument …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/09708c1e244d6390653464281d42866685646303e6a63891f509f1f81b7028b7/iczelia/bzip3" alt="bzip3: A better and stronger spiritual successor to BZip2" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/iczelia/bzip3">bzip3: A better and stronger spiritual successor to BZip2</a></h3>
+    <p class="dateline"><span class="badge">L</span>      23 points · by mrunix · github.com · <a class="discuss" href="https://lobste.rs/s/9coxwz/bzip3_better_stronger_spiritual">discuss</a>
+    </p>
+<p class="lede">A better, faster and stronger spiritual successor to BZip2. Features higher compression ratios and better performance thanks to a order-0 context mixing entropy coder, a fast Burrows-Wheeler transform code making use of suffix arrays and a RLE with Lempel Ziv+Prediction pass based on LZ77-style string matching and PPM-style context modeling. Like its ancestor, BZip3 excels at compressing text or code . Alternatively, you might be able to install bzip3 using your system&#39;s package manager: On macOS, you can use Homebrew to easily install: First, I have downloaded every version of Perl5 ever released and decompressed them. Then, I put all the resulting .tar files in a single .tar file and tried to compress it using various compressors: Finally, wall clock time decompression times (WD Blue …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://ladybird.org/assets/img/ladybird-purple-on-black.png" alt="This Month in Ladybird - August 2026" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://ladybird.org/newsletter/2026-08-31/">This Month in Ladybird - August 2026</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by spikewall · ladybird.org · <a class="discuss" href="https://lobste.rs/s/npyzwy/this_month_ladybird_august_2026">discuss</a>
+    </p>
+<p class="lede">Hello friends! In August Ladybird gained video playback on Twitch, more video formats on YouTube, CSS scroll snap, JavaScript debugging in DevTools, downloads you can pause and resume, and session restore. It’s also the month engine performance went from occasional attention to a sustained focus, with a new style engine, layout caching, and CSS animations moving off the main thread. We added caging for cell pointers stored in JavaScript values, and CSS parsing and the painting pipeline moved to Rust. Ladybird is entirely funded by the generous support of companies and individuals who believe in the open web. This month, we’re excited to welcome the following new sponsors: You can see everyone currently supporting the project on our sponsors page , and we’re grateful to all of them. If …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.grepular.com/img/og-default.png?v=BQk80DfWRSqEt8E2" alt="Hardening Container Images" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.grepular.com/Hardening_Container_Images">Hardening Container Images</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by pushcx · grepular.com · <a class="discuss" href="https://lobste.rs/s/8hz82r/hardening_container_images">discuss</a>
+    </p>
+<p class="lede">I recently set up a new server using Flatcar Container Linux . I decided that any container that I put on this system should be &#34;hardened&#34; from the start. The first container I decided to add was PowerDNS Recursor . The official image has a lot of unnecessary exposure that I wanted to get rid of. I don&#39;t wish to dump on PowerDNS here, I am expecting to find similar situations for most containers I wish to add. The first thing to notice about the official image is that it&#39;s just Debian , with a pdns-recursor added on top. So a ~355 MB image with about ~7,500 files in it. You can statically compile pdns-recursor down to a single executable with Musl . If you want to include rec_control too that makes two executables. So that&#39;s how I started to build pdns-recursor-trimmed ( Container image …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.veitheller.de/numpy.html">Tracing np.add, all the way down</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by luu · blog.veitheller.de · <a class="discuss" href="https://news.ycombinator.com/item?id=49562430">discuss</a>
+    </p>
+<p class="lede">The notes for this blog post have been sitting in my drafts folder for half a year now. I’ve done a little work on NumPy itself in the past year. Nothing notable, but enough to have to find my way around the source. That gave me the idea to write this, but then, as other obligations overshadowed my NumPy contributions, it just started rotting quietly. One or two NumPy releases later I finally picked it up again, retraced my steps, and here we are. Here’s the premise: np.add(a, b) might well be among the most executed lines of numerical Python in the world, and most of us have a working mental model that’s equivalent to “it adds the arrays, in C, quickly”. That model is correct, but there’s a lot of machinery between the Python call and the loop that does the adding, and I think it’s a fun …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://guix.gnu.org/blog/2026/demystifying-complex-configurations//">Demystifying complex configurations</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by FedericoSchonborn · guix.gnu.org · <a class="discuss" href="https://lobste.rs/s/awrzbh/demystifying_complex_configurations">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://logicola.org/blog/the-new-logicola/opengraph-image-yqks0s/card?8850c3e9dffeceb1" alt="Reverse engineering the 2008 LogiCola, a logic drill program" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://logicola.org/blog/the-new-logicola">Reverse engineering the 2008 LogiCola, a logic drill program</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by kotk · logicola.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49611329">discuss</a>
+    </p>
+<p class="lede">Building LogiCola&#39;s new design language from what I found reverse-engineering the 2008 original. Two years ago, I set out to design and release an updated version of LogiCola with the goal of preserving Professor Gensler’s work and introducing a more accessible solution that could be used by students carrying any device or operating system. Since the original was built for Windows, many students were not able to use it. Today, many students use Chromebooks or mobile devices. In August, more than 100 devices in Asia visited LogiCola 3 in a single week and 72 of them did at least one exercise. Of those, 66 came from the Philippines . Over half of them were phones and tablets. This is a signal I receive with enthusiasm. The product seems to be delivering on the original promise I made in …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH">Large Language Models Develop Novel Social Biases Through Adaptive Exploration</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by paimapi · openreview.net · <a class="discuss" href="https://news.ycombinator.com/item?id=49617581">discuss</a>
+    </p>
+<p class="lede">Verifying your browser | OpenReview Verifying your browser Complete the check below to continue to OpenReview Please complete the verification above. Have an OpenReview account? Sign in to skip this check.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.kashyapsuhas.com/blog/i18n-l10n/opengraph-image-1t5cxp?8cfbbb6eec3ec12b" alt="Internationalization and Localization" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.kashyapsuhas.com/blog/i18n-l10n">Internationalization and Localization</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by abhin4v · kashyapsuhas.com · <a class="discuss" href="https://lobste.rs/s/mqbqbz/internationalization_localization">discuss</a>
+    </p>
+<p class="lede">Consider this scenario: You&#39;re a person from the US, staying in Canada, and looking to book a hotel room in Jaipur, India from my Travel site. You&#39;re looking at a card like this: &#34;ok, why is 2 days of stay showing up as a million Dollars?&#34; &#34;what does it say in Hindi?&#34; &#34;wait, that&#39;s not a million, why are the commas all wrong?&#34; &#34;is the rate in Canadian Dollars or US Dollars?&#34; &#34;aaah I&#39;m going to book from a different website!&#34; If my site happened to have supported good localization (l10n), you would&#39;ve switched to the exact format that you&#39;d understand, and seen this card instead: You&#39;d realise that you had accidentally chosen 2 months of stay instead of 2 days, that the currency was in Canadian Dollars, and that it said &#34;Free cancellation&#34;. And perhaps would&#39;ve continued booking a room on …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lwn.net/SubscriberLink/1092512/0772b817c369632b/">CERN&#39;s migration path from CentOS Linux to Debian</a></h3>
+    <p class="dateline"><span class="badge">L</span>      17 points · by zg · lwn.net · <a class="discuss" href="https://lobste.rs/s/3cfr3a/cern_s_migration_path_from_centos_linux">discuss</a>
+    </p>
+<p class="lede">LWN counts on its subscribing readers to support its mission of creating relevant human-written news coverage of the Linux and free-software communities. Please subscribe to LWN and help to keep us on the net. As a special offer, subscribe to LWN now for at least six months, and receive a 25% discount on your subscription. As a special offer, subscribe to LWN now for at least six months, and receive a 25% discount on your subscription. [+] Proceed to the article By Joe Brockmeier September 7, 2026 The European Laboratory for Particle Physics, usually just called CERN , is not only the birthplace of the World Wide Web , it is home to the Large Hadron Collider (LHC), the world&#39;s largest and highest-energy particle accelerator . As such, its computing environment is both truly unique and of …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://mastodon.social/@tristanbuckmaster/117233413705701198">Finite-time blowup with smooth forcing for 3D incompressible Euler, Boussinesq, and IPM</a></h3>
+    <p class="dateline"><span class="badge">L</span>      17 points · by soulware · mastodon.social · <a class="discuss" href="https://lobste.rs/s/ki3ylq/finite_time_blowup_with_smooth_forcing">discuss</a>
+    </p>
+<p class="lede">Today, Levent Alpöge and I have made public three results: finite-time blowup with smooth forcing for incompressible porous media, for Boussinesq, and for 3d incompressible Euler. https://cims.nyu.edu/~tristanb/statement.pdf https://cims.nyu.edu/~tristanb/euler.pdf https://cims.nyu.edu/~tristanb/ipm.pdf https://cims.nyu.edu/~tristanb/boussinesq.pdf https://github.com/tristanbuckmaster/fluid_lean</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://albertjoseph0.github.io/nyc-maptap/">Show HN: NYC MapTap – Learn NYC neighborhoods</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by abj908 · albertjoseph0.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49605122">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/2a6641e227b84459d5fa645390e97daa95c4bb4641513deac8aff6d8237d27eb/scaleninja/drivesync" alt="Show HN: DriveSync – fast Git-styled Google Drive sync CLI" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/scaleninja/drivesync">Show HN: DriveSync – fast Git-styled Google Drive sync CLI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by rohityadavcloud · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49609784">discuss</a>
+    </p>
+<p class="lede">A small, fast command-line tool that keeps a local folder and a Google Drive folder in sync. Push local changes up, pull remote changes down, or just see what differs. Written in Rust, modelled on odeke-em/drive . Tested on: macOS, with both a consumer @gmail.com account and a Google Workspace account. Linux and Windows builds are produced and smoke-tested in CI but have not been exercised against a live Drive; reports welcome. This adds the scaleninja/tap tap, so other scaleninja tools then install with a plain brew install &lt;name&gt; . (If Homebrew refuses with an &#34;untrusted tap&#34; error, run brew trust scaleninja/tap first.) Or grab a prebuilt binary for Linux or macOS (x86_64 and arm64) from the releases page : Windows (x86_64): download dsync-windows-x86_64.exe from the releases page …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://asteriskmag.com/media/pages/issues/15/after-work-we-ll-have-each-other/49f82ec657-1788203208/after-work-clara-collier-1600x900-crop-sharpen50.png" alt="After Work, We&#39;ll Have Each Other" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://asteriskmag.com/issues/15/after-work-we-ll-have-each-other">After Work, We&#39;ll Have Each Other</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by devonnull · asteriskmag.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49616238">discuss</a>
+    </p>
+<p class="lede">Once you realize what that means, you’ll be giving two cheers for the American work ethic. What will people do all day? I mean, of course, if the AIs surpass us at all economically necessary forms of labor. There’s an emerging consensus on this point, assuming we’re all still alive and not subjects of a cyberpunk feudalist dystopia. When the machines can do everything else, our relationships will be what’s left. Maybe we won’t have to work at all. Or maybe we’ll still have something that superficially resembles modern employment, just concentrated in what economist Alex Imas 1 calls “the relational sector” in his essay “ What Will Become Scarce .” We’ll always need humans to supply the human touch. And how will we get those relational jobs? Relationships, obviously. It’s not what you …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://daviddalbusco.com/assets/images/sean-sinclair-FQ7cRFUU1y0-unsplash.jpg" alt="Two Tiny Utils for the Result Pattern" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://daviddalbusco.com/blog/tiny-utils-for-the-result-pattern">Two Tiny Utils for the Result Pattern</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by confusedalex · daviddalbusco.com · <a class="discuss" href="https://lobste.rs/s/8csfoa/two_tiny_utils_for_result_pattern">discuss</a>
+    </p>
+<p class="lede">Likely because I developed my fair share of projects in Rust over the last few years, I&#39;ve become quite a fan of using a Result pattern over multiplying try and catch blocks in TypeScript. Not every blog post needs to be about shipping rockets to outer space, so I thought I&#39;d quickly share two small helpers I now bring with me everywhere. Unlike JavaScript, there is no such thing as throwing and catching exceptions in Rust. Instead, functions that can fail return a value that carries either the result or the error. Those values are typed as Result&lt;T, E&gt; , an enum which is part of the language and which contains two variants: Ok(T) and Err(E) . The former being, I guess you got it, the success, and the latter the error. The caller has to deal with both variants - i.e. one cannot just …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-08-p4.html">‹</a><a href="2026-09-08.html">1</a><a href="2026-09-08-p2.html">2</a><a href="2026-09-08-p3.html">3</a><a href="2026-09-08-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-09-08-p6.html">6</a><a href="2026-09-08-p7.html">7</a><a href="2026-09-08-p8.html">8</a><a href="2026-09-08-p9.html">9</a><a class="pg-arrow" href="2026-09-08-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>133 stories · 5 cross-posts merged · 117 excerpts · 82 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, October 2, 2026 — Page 2</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 275</span>
+      <span>Friday, October 2, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 2</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://blog.cloudflare.com/_emdash/api/media/file/01M3SXWJMRR7ZENPNFNB5QZYPA.jpg" alt="Cloudflare K2: serverless event streams" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.cloudflare.com/cloudflare-k2-streams/">Cloudflare K2: serverless event streams</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      230 points · by elffjs · blog.cloudflare.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49921923">discuss</a>
+    </p>
+<p class="lede">With traditional Remote Procedure Call (RPC) architectures, there exists a core challenge: producers and consumers must align in scale and in time. If your producers send too much data for your consumers to handle or if your consumers or downstream services become unavailable, events are dropped. This problem is compounded with multiple consumers that need to independently process the data. For example, an ecommerce backend may emit events when transactions are completed, which need to be read by an analytics system and a fraud detection service. We can solve this by decoupling our producers and consumers — inserting a service in the middle that absorbs writes while allowing independent readers to consume at their own pace. Today we are launching Cloudflare K2 in public beta to solve this …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.netlify.com/images/blog/edge-functions-firecracker-microvms.png" alt="5x faster Edge Functions: V8 isolates to Firecracker MicroVMs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.netlify.com/blog/edge-functions-firecracker-microvms/">5x faster Edge Functions: V8 isolates to Firecracker MicroVMs</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      227 points · by jbott · netlify.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49912444">discuss</a>
+    </p>
+<p class="lede">About a billion Edge Functions run on Netlify every day — Sunweb personalizing pages, Loto-Québec routing traffic on a cookie check, and hundreds of thousands of other sites doing everything from personalization to routing to auth. All of it runs on a full JavaScript runtime that scales with our customers’ traffic. This poses a significant technical challenge, as we strive to make the latency as low as possible. To run tens, sometimes hundreds of thousands, of edge functions per second, we need to process each request, route it correctly, allocate compute capacity, and boot both our platform code and the customer’s code. All of that has to happen within milliseconds. Over the past several months, our team has rebuilt the infrastructure behind Edge Functions, working closely with the team …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://molily.de/img/spidermum-gray-bg-square-small.png" alt="The death of web development education" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://molily.de/web-dev-education/">The death of web development education</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      222 points · by ibobev · molily.de · <a class="discuss" href="https://news.ycombinator.com/item?id=49927100">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/td9dxd/death_web_development_education">discuss on lobste.rs</a>
+    </p>
+<p class="lede">In a personal blog post, Baldur Bjarnason describes how he worked in various fields and positions: as an author, publisher, consultant, developer, educator, as well as radio and TV producer. None of these jobs were economically viable in the long term. Adding insult to injury, the respective communities alienate interdisciplinary people who do not fit into their narrow conception of the field. For example, either you are considered as too “technical” for a “creative” job or too “creative” for “technical” job. Bjarnason describes the impact of generative AI on web development education: [All] my training and education projects had dropped off one by one. Most of my peers who had been selling courses and training were shutting down their businesses. The demand for web dev ebooks had …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.rtl-sdr.com/various-projects-independently-find-hidden-sdr-capabilities-in-esp32-microcontrollers/">Various Projects Find Hidden SDR Capabilities in ESP32 Microcontrollers</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      215 points · by nkw · rtl-sdr.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49922674">discuss</a>
+    </p>
+<p class="lede">Back in 2025, we posted about ESPARGOS, a phased array of many patch antennas, each connected to an ESP32 WiFi microcontroller. ESPARGOS could be used to determine the direction of arrival for WiFi signals and create a live augmented reality heatmap. Recently, the ESPARGOS team has made an exciting discovery . They found that several ESP32 chips have an undocumented feature that lets the firmware bypass the fixed WiFi and Bluetooth functionality and instead capture raw IQ baseband samples. As a result, several ESP32 models can now be used as an internal SDR covering 2.2–2.7 GHz, plus 4.8–6.0 GHz on the ESP32-C5, with up to 80 MS/s sample rate and roughly 13–54 MHz of analog bandwidth, depending on the chip. However, for use as a general-purpose PC-connected SDR, the output bandwidth is …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.deepseek.com/harness/images/deepseek-harness-social.jpg" alt="DeepSeek Harness Desktop for macOS and Windows" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.deepseek.com/en/harness/">DeepSeek Harness Desktop for macOS and Windows</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      197 points · by Kuyawa · deepseek.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49929489">discuss</a>
+    </p>
+<p class="lede">Everyday tasks, coding, or your own harness—it starts here. DeepSeek Harness is now in public preview worldwide and open source, with composable plugins that extend what agents can do. I&#39;m DeepSeek Harness, an open-source harness from DeepSeek built on Cordis &#39;s “everything is a plugin” architecture. Run me as a desktop app or launch the web UI from code. Install plugins, or create them through chat in “Creator mode”, to extend tools, skills, and the interface. The floating Pomodoro timer is built, installed, and verified. Organize documents, analyze spreadsheets, and write code. Preview the results directly and refine them through conversation. Enable the Scheduled tasks plugin to start tasks anytime and run recurring work on schedule. Stay on top of progress and inspect tool call …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://techrights.org/n/2026/10/01/Red_Hat_Being_Phased_Out_of_Existence_Like_Many_Other_Companies.shtml">Red Hat being phased out of existence?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      193 points · by amcclure · techrights.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49923056">discuss</a>
+    </p>
+<p class="lede">posted by Roy Schestowitz on Oct 01, 2026 The &#34;Red Hat&#34; brand (and badge) is being dissolved some more today &#34;Today the &#34;badge&#34; says IBM,&#34; Thomas Wilson said two hours ago (above). &#34;The team is still here. The work continues. And I’m excited about what comes next.&#34; But the role changed, there&#39;s lots of slop (&#34;hey hi&#34;) dross or filler, and everybody at IBM knows what PIPs and RA come next. It&#39;s not hard to see that the vast majority of redhat.com blog posts sell slop, not Linux. It helps inflate the share price without accomplishing anything of substance. It&#39;s &#34;fake work&#34;, just like slop. It cheats the shareholders, but for how much longer? Red Hat&#39;s &#34;way&#34; or &#34;culture&#34; or &#34;open source org&#34; is going away, step by step (one step at a time), and some people altogether quit today (or …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://mattkeeter.com/projects/halfspace/hero@2x.png" alt="Halfspace experimental IDE for solid modeling with distance fields" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.mattkeeter.com/projects/halfspace/">Halfspace experimental IDE for solid modeling with distance fields</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      187 points · by luu · mattkeeter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49913350">discuss</a>
+    </p>
+<p class="lede">Halfspace is an experimental IDE for solid modeling with distance fields. (The demo is best experienced on a computer; mobile Safari has some WebGPU issues, and pan / tilt / zoom interactions are not yet designed for multitouch) Halfspace is a showcase app for the Fidget kernel , which is used for rasterization and meshing. Within the GUI, images are rasterized in real(ish)-time; models can be exported as either images or triangle meshes: Since it&#39;s 2026, let me note at the outset that this is not vibe-coded . I&#39;ve been working on it since April 2025 and am writing the code using my human brain, for various reasons (and Fidget dates back to 2022 ). Now, the rest of this writeup assumes some knowledge of implicit surfaces; please see many previous writeups for details for more background …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://mmx.prnewswire.com/media/MS1999865/Synopsys-OpenAI.jpg?id=OA2980139&amp;p=facebook" alt="GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design">GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      177 points · by giuliomagnifico · news.synopsys.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49919910">discuss</a>
+    </p>
+<p class="lede">A guide to virtualization in software-defined vehicles for automotive leaders. Companies form strategic partnership to dramatically advance and accelerate semiconductor innovation SAN FRANCISCO and SUNNYVALE, Calif. , Sept. 30, 2026 / PRNewswire / -- Synopsys (Nasdaq: SNPS) and OpenAI today announced a strategic partnership that brings together OpenAI&#39;s advanced AI capabilities with Synopsys&#39; industry-leading EDA tools and agentic AI capabilities to revolutionize the design of semiconductors. The companies signed an expansive, multi-year agreement to jointly develop GPT-Synopsys, a specialized model, optimized to use Synopsys EDA tools to perform semiconductor design workflows. The agreement includes a revenue sharing arrangement and go-to-market collaboration to jointly make GPT-Synopsys …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://automatictransmission.khoury.northeastern.edu/index.html">Automatic Transmission – a data-privacy study of connected vehicles</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      177 points · by rafaelc · automatictransmission.khoury.northeastern.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=49926628">discuss</a>
+    </p>
+<p class="lede">This diagram shows the data flows to and from a vehicle and its companion mobile app. Both devices send data, including private consumer data, to different 1st and 3rd party servers using Wi-Fi and cellular service. Solid arrows represent flows that were intercepted through our experiments. Once the data gets sent to these servers, it is up to the companies that receive the consumer information to make decisions on what they do with it. Unfortunately, in many cases, this includes sharing or selling consumer data to other undisclosed 3rd parties. Consumers have no control over their data once it has left their device In this paper, we take the first steps to address the limited visibility into the privacy implications of the connected vehicle ecosystem. We identify two vantage points in …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Context Language Models" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2609.37725">Context Language Models</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      141 points · by emersonmacro · arxiv.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49922437">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://con.racket-lang.org/">RacketCon Is Saturday</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      140 points · by spdegabrielle · con.racket-lang.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49922515">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/auypcd/sixteenth_racketcon_this_weekend">discuss on lobste.rs</a>
+    </p>
+<p class="lede">(sixteenth RacketCon) (sixteenth RacketCon) October 3-4, 2026 Oakland, California, USA Oakstop, Broadway Gallery Suite RacketCon is a public gathering dedicated to fostering a vibrant, innovative, and inclusive community around the Racket programming language . We aim to create an exciting and enjoyable conference open to anyone interested in Racket, filled with inspiring content, reaching and engaging both the Racket community and the wider programming world. Registration is open! Please register for RacketCon 2026 by following this registration link with discounted early registration before September 13 . As in previous years, RacketCon will be streamed for those unable to attend in person. Recordings will also be made available on YouTube some time after the conference. Streaming users …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://stoppels.ch/goalposts/">Vote on which of Hacker News&#39; challenges for AI have been met</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      136 points · by stabbles · stoppels.ch · <a class="discuss" href="https://news.ycombinator.com/item?id=49924618">discuss</a>
+    </p>
+<p class="lede">Goalposts That was the last comment. See the results . Loading comments… Has this happened? Voting has closed. See the results .</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://www.frogandtoad.ai/illustrations/FAT-social-card.jpg" alt="Frog and Toad and the Increasingly Capable Machines" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.frogandtoad.ai/">Frog and Toad and the Increasingly Capable Machines</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      133 points · by supermdguy · frogandtoad.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=49927760">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness">Using Opus 5.5 to discover a new eyewitness record of the dodo</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      127 points · by benbreen · resobscura.substack.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49926917">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.oliverdunk.com/2026/09/30/iana-reply">IANA&#39;s email about why example.com changed</a></h3>
+    <p class="dateline"><span class="badge">L</span>      119 points · by videah · oliverdunk.com · <a class="discuss" href="https://lobste.rs/s/qgd17n/iana_s_email_about_why_example_com_changed">discuss</a>
+    </p>
+<p class="lede">I emailed IANA (Internet Assigned Numbers Authority) earlier today to ask about the new content on example.com . To my surprise, their VP replied. Here is the email: I am happy to try and answer any questions you have. The changes we make to the site from time-to-time are usually informed by a desire to either reduce the overall bandwidth demands of serving the site, or improve its utility. At its heart it is a placeholder for a site no-one should be accessing, but we have historically showed a message there to inform visitors about why the domain is registered and how they may use it. As it tends to be heavily trafficked, the overall bandwidth is a key consideration, and to that end one of the changes we made this week was to split the page content into a more basic page, augmented by a …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-02.html">‹</a><a href="2026-10-02.html">1</a><span class="pg-current">2</span>
+<a href="2026-10-02-p3.html">3</a><a href="2026-10-02-p4.html">4</a><a href="2026-10-02-p5.html">5</a><a href="2026-10-02-p6.html">6</a><a href="2026-10-02-p7.html">7</a><a href="2026-10-02-p8.html">8</a><a href="2026-10-02-p9.html">9</a><a class="pg-arrow" href="2026-10-02-p3.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 5 cross-posts merged · 115 excerpts · 73 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

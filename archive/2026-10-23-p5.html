@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, October 23, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 296</span>
+      <span>Friday, October 23, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://blickeditor.com/blog/media/2b379078a3288e76f775560e2caece06.png" alt="Don&#39;t throw it all away: Caching an immediate-mode UI" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blickeditor.com/blog/caching-an-immediate-mode-ui">Don&#39;t throw it all away: Caching an immediate-mode UI</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by asb · blickeditor.com · <a class="discuss" href="https://lobste.rs/s/cq7wn7/don_t_throw_it_all_away_caching_immediate">discuss</a>
+    </p>
+<p class="lede">One common criticism of immediate-mode UI is that it repeats work. The application reconstructs its description of the interface each frame, even though much of the interface may be unchanged. The apparent tradeoff is simplicity of the programming model at the cost of repeated work. I would like to show that this is not necessarily the case. One straightforward rebuttal is that modern computers are really fast. If rebuilding the UI takes a millisecond at most, how much should we care? And if you really dislike the idea of repeating work, then the simplest solution I can think of is to put your application to sleep when nothing is happening. This is what all immediate-mode desktop apps that I know of already do and is something that presumably suffices in many cases. It is also very easy …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.corsix.org/content/using-a-lookup-table-to-correct-an-approximation">Using a lookup-table to correct an approximation</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by fanf · corsix.org · <a class="discuss" href="https://lobste.rs/s/os7brs/using_lookup_table_correct">discuss</a>
+    </p>
+<p class="lede">I often find myself writing (by which I mean generating) functions to convert enums to strings. A naïve implementation of such a function might look like: Compiling the above with a modern gcc at -O0 or -O1 gives some fairly horrible assembly code. Thankfully, at -O2 and above, a modern gcc can rewrite it to something more along the lines of: The assembly code for this is much nicer, although the table of pointers still takes up more space than I&#39;d like (and that&#39;s before you account for each table entry needing a relocation entry...). It can be made smaller by concatenating all the strings together into a single contiguous piece of memory and then using a table of offsets into that memory, taking advantage of the fact that a relative offset can be much smaller than a pointer: This is …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.colorado.edu/asmagazine-archive/node/2039">The phenomena that brighten dawn and dusk (2016)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      34 points · by NaOH · colorado.edu · <a class="discuss" href="https://news.ycombinator.com/item?id=50172660">discuss</a>
+    </p>
+<p class="lede">The apparent rising and setting of the sun may sometimes seem to be prosaic, everyday events. But when we have time to watch and appreciate, sunrises and sunsets are fascinating and entertaining interactions of light and atmosphere providing daily reminders of our place on a spinning planet.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.sciencealert.com/images/2026/10/schrodinger-1200x675.png" alt="A lost Schrödinger manuscript reveals a twist in quantum physics" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.sciencealert.com/a-lost-schrdinger-manuscript-reveals-a-surprising-twist-in-quantum-physics">A lost Schrödinger manuscript reveals a twist in quantum physics</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      33 points · by ibobev · sciencealert.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50192396">discuss</a>
+    </p>
+<p class="lede">For more than 80 years, a manuscript penned by one of the founders of quantum physics has been gathering dust in an Austrian library. Now brought to light by physics historian Flavio Del Santo of the University of Geneva, the three-page document is the very soul of brevity – but on it is scrawled a long-lost contribution to one of the most contentious debates in quantum mechanics. And it offers a surprising insight into what Erwin Schrödinger himself believed about the nature of reality. Rather than the discomfort with quantum randomness he is often portrayed as espousing, Schrödinger believed that there were aspects of the Universe that couldn&#39;t be predicted – a belief he held even before the emergence of quantum theory in the 1920s. &#34;The strongest plea in favor of indeterminism is older …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bernsteinbear.com/blog/object-shapes/">Objects, attributes, maps, oh my</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      33 points · by ibobev · bernsteinbear.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50197692">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/8rkyrl/objects_attributes_maps_oh_my">discuss on lobste.rs</a>
+    </p>
+<p class="lede">In many dynamically typed programming languages, objects look like a big ol’ mapping of names to values. The languages encourage this flexibility. Consider for example Python: This might encourage the VM implementor to model object attributes using a hash table. Hash tables, after all, are very good at mapping names to values. Here is, by way of example, a Python sketch of what this object model looks like. Because it is a sketch, it uses write_attr and read_attr instead of the much more common syntax that your programming language comes with. This means that literally every operation a.b is doing hundreds or thousands of CPU instructions, including multiple dependent memory loads. This is not good for performance. So runtime implementors tend to implement this thing called maps, or …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.maps.com/app/uploads/2025/08/article-stars-northern-sky-featured.webp" alt="Mapping the Northern Sky" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.maps.com/star-map-charts-stars-and-constellations-of-northern-hemisphere/">Mapping the Northern Sky</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      33 points · by tmseidman · maps.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50202766">discuss</a>
+    </p>
+<p class="lede">Long before satellite navigation and GPS, explorers were already setting their sights toward space. Since we first saw the night sky, humanity has been fascinated by the stars. Over thousands of years, astronomers have tracked the positions of stars and other objects (such as planets, which were described as planetes , or wanderers, by the ancient Greeks). They used the stars to tell stories, make predictions, and even find their way. All of which depended on having an accurate map, mental or otherwise, of the heavens above. This stunning map by Florian Winkler catalogs the stars of the night sky in the Northern Hemisphere. It’s built using information from Stellarium , the HYG Database , and W. H. Finlay’s Concise Catalog of Deep-sky Objects . The map shows the accurate position and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://jaredforsyth.com/posts/papers-we-love-lens-on-linearity/">Flow Typing, A New Lens on Linearity</a></h3>
+    <p class="dateline"><span class="badge">L</span>      31 points · by azhenley · jaredforsyth.com · <a class="discuss" href="https://lobste.rs/s/cquwex/flow_typing_new_lens_on_linearity">discuss</a>
+    </p>
+<p class="lede">In my various efforts to develop new programming languages, I’ve occasionally looked sidelong at linear types, as something that looks like it could be really useful if it wasn’t so incredibly cumbersome. And now some folks have come up with a way to make them much easier to use [1] ! Or at least that’s the hope. This past week I’ve been trying to implement their execution model into a new programming language , to get a feel for what it’s like to actually use. Check out my field notes , if you’re already familiar with the paper. I’m going to quote the abstract in full, as it does a great job of introducing the paper: Linear type systems often suffer from a threading problem: if a value is used more than once, then it must be explicitly threaded through each usage. Existing solutions …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lwn.net/SubscriberLink/1094226/7bb13383b169d475/">Understanding Nix flakes</a></h3>
+    <p class="dateline"><span class="badge">L</span>      31 points · by vinipsmaker · lwn.net · <a class="discuss" href="https://lobste.rs/s/wno4h3/understanding_nix_flakes">discuss</a>
+    </p>
+<p class="lede">Welcome to LWN.net The following subscription-only content has been made available to you by an LWN subscriber. Thousands of subscribers depend on LWN for the best news from the Linux and free software communities. If you enjoy this article, please consider subscribing to LWN . Thank you for visiting LWN.net! October 21, 2026 This article was contributed by Tyler Langlois Nix flakes are an experimental feature of the Nix package-management tool designed to build projects in a more self-contained and reproducible way. Despite the feature&#39;s experimental status, it has become increasingly popular for open-source projects to publish flake.nix files that offer predefined development environments and build automation even when those repositories may not offer an upstream package or module for …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://duckdb.org/images/blog/thumbs/duckdb-release-2-0-0.png" alt="Announcing DuckDB 2.0.0 LTS “Cinnamon Teal”" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://duckdb.org/2026/10/21/announcing-duckdb-200.html">Announcing DuckDB 2.0.0 LTS “Cinnamon Teal”</a></h3>
+    <p class="dateline"><span class="badge">L</span>      30 points · by pgr0ss · duckdb.org · <a class="discuss" href="https://lobste.rs/s/dcvs3u/announcing_duckdb_2_0_0_lts_cinnamon_teal">discuss</a>
+    </p>
+<p class="lede">TL;DR: The DuckDB team is happy to announce that today we&#39;re releasing DuckDB version 2.0.0 LTS, codenamed “Cinnamon Teal” (Spatula cyanoptera). This is our biggest feature release so far, and it ships a polished version of the Quack protocol, asynchronous I/O, a first-class VARIANT type, agent mode, triggers, an extensible SQL parser and much more, built from close to 20,000 commits since DuckDB 1.5. We are proud to release DuckDB 2.0.0, codenamed “Cinnamon Teal” after the Spatula cyanoptera , a strikingly reddish-brown duck found in the western Americas. While DuckDB 1.0 was all about stability and backward compatibility, DuckDB 2.0 is above all a feature release. In this blog post, we summarize the highlights and then walk through the breaking changes and how to migrate. We showcased …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://mjtsai.com/blog/2026/10/15/passkeys-attestation-trap/">Passkeys Attestation Trap</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by kaimac · mjtsai.com · <a class="discuss" href="https://lobste.rs/s/cdnepk/passkeys_attestation_trap">discuss</a>
+    </p>
+<p class="lede">Like the Trojan Horse, passkeys are legitimately elegant on the surface, but there is something troubling inside. What’s important to know is that unlike with any other kind of login credential, you do not have ultimate control over your passkeys . With passwords, you can choose where to write them down; with authenticator apps, you can decide for yourself which ones to use (they’re pretty interchangeable); and with physical security keys you can hand them to your colleague if you really trust them. But with passkeys come a hidden dial that lets the websites you use them on gradually remove your ability to do as you please with them. This is the feature that means you no longer get to make the calls about your passkeys. Fortunately, attested passkeys are not yet required on most websites …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.axelmagn.com/blog/202610-zig-traits/">We have traits at home</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      29 points · by Ygg2 · axelmagn.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50202482">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/05xrj8/we_have_traits_at_home">discuss on lobste.rs</a>
+    </p>
+<p class="lede">I have had more time recently to write code in Zig [1] , and it has been good for my soul. I wanted to share some insights I have arrived at regarding abstractions in Zig, including some techniques that I have found useful but not seen employed more broadly. Considerable [2] ink [3] has [4] been [5] spilled [6] on Zig Interfaces, and justifiably so. While not a language feature, interfaces are the de-facto way of implementing runtime polymorphism in Zig. Yet [7] more [8] has been said about zig&#39;s comptime, and how it may be leveraged to avoid the performance woes of dynamic dispatch and write slick, data-oriented code. To put it briefly, polymorphism in Zig is conventionally obtained in one of two ways: This state of affairs has proven to be quite effective so far, but it is not without …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://maurycyz.com/misc/real_links/">Please don&#39;t mess with links</a></h3>
+    <p class="dateline"><span class="badge">L</span>      28 points · by gavinmorrow · maurycyz.com · <a class="discuss" href="https://lobste.rs/s/mucay8/please_don_t_mess_with_links">discuss</a>
+    </p>
+<p class="lede">A link is just a button that takes you somewhere when you click it right? Except that&#39;s a pale, shallow imitation of a link. A real link can be: Opened in a new tab. (ctrl) ... or a fresh window. (shift) ... or saved as a file (alt). Copied as a URL (right click) Used with the keyboard (tab + enter) Seen by tools like search engines and screen readers. Hovered over to see the URL. Another common offense is to use a real link, but hook the click event to open a popup. However, with a real &lt;a target=&#34;_blank&#34;&gt; link, I can: See the loading progress... ... or/and cancel it. ... see descriptive error pages and retry if needed. Open multiple at once. Read the original page while it loads. Use my browser&#39;s tabs or/and window manager to organize them. Bookmark the page. Copy the URL and send it to …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="The alien space of science: Coherent but cognitively unavailable directions" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/2603.01092">The alien space of science: Coherent but cognitively unavailable directions</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by martincsweiss · arxiv.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50195002">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cms.railway.com/media/cf05de70-b435-4fe9-8d52-540e0b585874-blog-security-disclosure-wednesday-october-21st.png?w=1200&amp;q=90" alt="Railway Security Disclosure: Wednesday October 21st" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st">Railway Security Disclosure: Wednesday October 21st</a></h3>
+    <p class="dateline"><span class="badge">L</span>      25 points · by veverkap · blog.railway.com · <a class="discuss" href="https://lobste.rs/s/wi4nnl/railway_security_disclosure_wednesday">discuss</a>
+    </p>
+<p class="lede">Earlier this morning, Railway detected anomalous activity involving systems that store customer environment variables. After further investigation, our investigation to date indicates that an unauthorized third party may have accessed encrypted environment variables and, for some of them, obtained the decrypted contents. Environment variables may contain secrets such as API keys or database and registry credentials. We believe this is part of a series of attacks recently targeting platform companies with the aim of compromising AI inference providers. We have notified these upstream providers to revoke all keys proactively, as we take these kinds of events extremely seriously. While our initial analysis suggests the impact may be limited to a subset of users, we are nevertheless …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://developer.chrome.com/static/blog/html-in-canvas-origin-trial/image/thumbnail.png" alt="The HTML-in-Canvas API origin trial" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://developer.chrome.com/blog/html-in-canvas-origin-trial">The HTML-in-Canvas API origin trial</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      25 points · by andrewstuart · developer.chrome.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50200164">discuss</a>
+    </p>
+<p class="lede">For years, web developers have had to make a tough architectural choice when building complex, highly-interactive visual applications on the web/ Should you lean on the DOM for its rich semantic features or render directly to the &lt;canvas&gt; element for low-level graphics performance? With the new experimental HTML-in-Canvas API —available now in origin trial —you don&#39;t have to choose. This API lets you draw DOM content directly into a 2D canvas or a WebGL/WebGPU texture while keeping the UI interactable, accessible, and hooked up to your favorite browser features. By combining HTML with low-level graphics processing, you can create experiences that were previously impossible. To understand the power of this new API, it helps to look at the relative strengths of both the DOM and the Canvas …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-23-p4.html">‹</a><a href="2026-10-23.html">1</a><a href="2026-10-23-p2.html">2</a><a href="2026-10-23-p3.html">3</a><a href="2026-10-23-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-10-23-p6.html">6</a><a href="2026-10-23-p7.html">7</a><a href="2026-10-23-p8.html">8</a><a href="2026-10-23-p9.html">9</a><a class="pg-arrow" href="2026-10-23-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>132 stories · 5 cross-posts merged · 122 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

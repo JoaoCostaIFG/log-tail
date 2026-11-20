@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, October 26, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 299</span>
+      <span>Monday, October 26, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/">A whirlwind tour of systemd-nspawn containers (2025)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by janus · quantum5.ca · <a class="discuss" href="https://lobste.rs/s/yusomz/whirlwind_tour_systemd_nspawn">discuss</a>
+    </p>
+<p class="lede">In the last yearly update , I talked about isolating my self-hosted LLMs running in Ollama as well as Open WebUI in systemd-nspawn containers and promised a blog post about it. However, while writing that blog post, a footnote on why I am using it instead of Docker accidentally turned into a full blog post on its own . Here’s the actual post on systemd-nspawn . Fundamentally, systemd-nspawn is a lightweight Linux namespaces-based container technology, not dissimilar to Docker . The difference is mostly in image management—instead of describing how to build images with Dockerfile s and distributing prebuilt, read-only images containing ready-to-run software, systemd-nspawn is typically used with a writable root filesystem, functioning more similarly to a virtual machine. For those of you …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/9dfdf5efcb49ea597cc468ca863adb56c9dc18f76315a01a9cdd584e5b6bd75c/thomasunise/casecite" alt="Show HN: CaseCite – Free RAG caselaw research and document analysis for lawyers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/thomasunise/casecite">Show HN: CaseCite – Free RAG caselaw research and document analysis for lawyers</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by thomasunise · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50235915">discuss</a>
+    </p>
+<p class="lede">CaseCite is a source-available, self-hosted legal research platform. Upload your firm&#39;s documents, ask questions, and research cases &amp; judges — on infrastructure you control. Documents, the search index and chat history are stored on your own servers. AI features send your questions and the relevant document text to the AI providers you configure, under your own API keys (BYOK); nothing is sent to the CaseCite maintainers, and there is no telemetry. See What leaves your infrastructure . Eight tools behind one login, all reading from the same document corpus. Practice profile. Nothing about any practice area is baked into the product. You state what you practice, CaseCite drafts a profile of what matters in that practice, and you edit and own it (saved via Settings). It then rides along …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://static.media.ccc.de/media/events/matrix-conf/2026/99070-ba0b6749-9cb1-5bf4-b75e-02c270c9c901_preview.jpg" alt="A vision for a next-generation timeline" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://media.ccc.de/v/matrix-conference-2026-99070-a-vision-for-a-next-generation-timeline">A vision for a next-generation timeline</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by JadedBlueEyes · media.ccc.de · <a class="discuss" href="https://lobste.rs/s/jdczl6/vision_for_next_generation_timeline">discuss</a>
+    </p>
+<p class="lede">The timeline is the most interacted-with piece of any chat software. It&#39;s where messages live! It&#39;s hard to have a chat app without one. Unfortunately, the matrix protocol has... compromises... in the timeline made for the sake of federation. From the incosistent ordering between sync and history on Synapse, to the inability to jump to pinned messages from before you joined, to the mystery of what happens when you join a room your server previously left. The good news is we have a solution! The bad news is it&#39;s gonna take a while. This talk is a rundown of every step needed to get a next-generation timeline. I&#39;ll explain stitched ordering, timeline fragments, and why we need state DAGs. Licensed to the public under https://creativecommons.org/licenses/by-sa/4.0/ The timeline is the most …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://internals-for-interns.com/images/go-header.webp" alt="SIMD and Go" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://internals-for-interns.com/posts/go-simd/">SIMD and Go</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by rcalixte · internals-for-interns.com · <a class="discuss" href="https://lobste.rs/s/whgofc/simd_go">discuss</a>
+    </p>
+<p class="lede">Take a really boring loop: walk two []float32 slices and add them together, element by element. Written the normal way in Go, the CPU handles one pair per step. The funny thing is that the same CPU has hardware that could handle eight pairs at once, and a plain Go loop never uses it. That hardware is SIMD . Until recently, the only way to use it from Go was hand-written assembly. Now Go has an experimental simd/archsimd package (Go 1.26) and a portable simd package on top of it (Go 1.27), so you can write normal Go that turns into SIMD instructions. We’ll start with how SIMD works inside the CPU and meet Go’s two SIMD packages. Then we’ll go through the most common SIMD operations, with Go code for each one, peek at how the compiler makes it all work, and finally put everything together …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://voxelmanip.se/media/building-java-me-apps-with-modern-tooling/cover.webp" alt="Building Java ME Apps with Modern Tooling" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://voxelmanip.se/2026/10/24/building-java-me-apps-with-modern-tooling/">Building Java ME Apps with Modern Tooling</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by mhd · voxelmanip.se · <a class="discuss" href="https://lobste.rs/s/ekwolo/building_java_me_apps_with_modern_tooling">discuss</a>
+    </p>
+<p class="lede">Java ME (Micro Edition, also referred to as J2ME) is a platform for running Java applications on small resource constrained devices, such as feature phones from before the iPhone era. It is largely considered a dead platform with the advent of smartphones, and modern feature phones such as KaiOS use web technologies instead for their apps. However it is likely that you or someone you know have one of these old phones lying around, and you may be interested in how you can make Java apps that will run on it. This post goes through how to build a simple Java ME app solely with modern tooling in a modern environment, without needing anything from the old Sun Java ME SDKs. The instructions in this blog post assume a Linux-y terminal environment, but you could also follow along with Git Bash or …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.bitflux.ai/blog/memory-is-slow-part3/">Memory is slow, Disk is fast</a></h3>
+    <p class="dateline"><span class="badge">L</span>      12 points · by typesanitizer · bitflux.ai · <a class="discuss" href="https://lobste.rs/s/pvfzhq/memory_is_slow_disk_is_fast">discuss</a>
+    </p>
+<p class="lede">Big O notation is a lie. Well, okay, it&#39;s a simplification that lies by omission. Can O(√n) scale better than O(log n)? Can a disk-based algorithm outperform an in-RAM data structure? Yes, and yes. Scaled to 2 billion nodes, the AVL binary tree needs 144 GiB of RAM. DiskArray keeps its data on 8 NVMe drives and uses 264 MiB of RAM, but it&#39;s still faster at everything. Part 1 showed that computers are getting wider, not faster, and that PCIe bandwidth is outpacing DRAM bandwidth. Part 2 showed that streaming from disk can beat streaming from the page cache. Part 2.5 showed that with the right hardware and software, streaming from disk can beat a buffer in DRAM. So far I&#39;ve shown how a sequential read from NVMe is fast, which is a cool trick but not controversial enough. I&#39;m getting worried …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html">writing about pratt parsing so I remember it</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by FedericoSchonborn · unix.dog · <a class="discuss" href="https://lobste.rs/s/mu3xcd/writing_about_pratt_parsing_so_i_remember">discuss</a>
+    </p>
+<p class="lede">I got bored and wanted to make a parser of C expressions. this will probably become a compiler at some point. previously, I’ve made a calculator using shunting yard , but with an itch to perhaps make a compiler of some kind, I looked at pratt parsing . you won’t find much information about pratt parsing in a conventional learning path of computer science. the dragon book , for all it talks about parsing, doesn’t mention it. as far as I’m aware, most programming language courses will probably teach either LR or recursive descent depending on how academic it is. pratt parsing specifically appears to be relegated mostly to compiler development and PLT circles. the most mainstream mention I know of it is in crafting interpreters ; wikipedia also links a few other posts. I used the crafting …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://shraiwi.com/blog/simd-fast-esp32s3/">SIMD-accelerated computer vision on a $2 microcontroller</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by nrposner · shraiwi.com · <a class="discuss" href="https://lobste.rs/s/qsmmke/simd_accelerated_computer_vision_on_2">discuss</a>
+    </p>
+<p class="lede">I wrote an accelerated FAST feature detector for the ESP32-S3 that leverages its 128-bit SIMD instructions. It achieves roughly double the performance of the reference implementation, and takes around ~6ms to process a QVGA (320x240) frame. You can find the source code here . For its price, the ESP32-S3 is a powerhouse of a microcontroller. Within its unassuming plastic package lies a dual-core CPU running at a maximum of 240MHz with a slew of peripherals, including WiFi and Bluetooth Low Energy radios. While digging through its technical reference manual I discovered that the chip supports a limited set of SIMD instructions. For silicon that’s cheaper than the average coffee, that’s pretty cool. Let’s see what exciting things we can do with it! In the process of writing a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/7yeH1DqK984/maxresdefault.jpg" alt="How to Make Things, and Why" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=7yeH1DqK984">How to Make Things, and Why</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by daveliepmann · youtube.com · <a class="discuss" href="https://lobste.rs/s/tq5cxv/how_make_things_why">discuss</a>
+    </p>
+<p class="lede">This is a talk about how to find flow, power, and joy in making software. It is about how to share the love of making with others, and how to nurture and protect communities of makers. Biography Stuart Halloway is a Clojure committer, and the architect of the Datomic database. Stuart was a founder and President of Cognitect (formerly Relevance). He has spoken at a variety of industry events, including Strange Loop, Clojure/conj, EuroClojure, Clojure/West, SpeakerConf, QCon, GOTO, OSCON, RailsConf, RubyConf, JavaOne, and NFJS. Stuart has written a number of books and technical articles. Of these, he is most proud of Programming Clojure.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!M_ic!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff69ef3ef-3cfe-4b63-9884-d7faffff5fbc_2844x1600.png" alt="Superhuman Hardware Design Is the Easy Part" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.a16z.news/p/superhuman-hardware-design-is-the">Superhuman Hardware Design Is the Easy Part</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by gmays · a16z.news · <a class="discuss" href="https://news.ycombinator.com/item?id=50210181">discuss</a>
+    </p>
+<p class="lede">We’re excited to announce that Orchestra Bio has been acquired by OpenAI . To read more about the acquisition, read Jay Rughani and Jorge Conde ’s post about it here . For more general information on what OpenAI is up to in the Health space, check out our podcast with them here . It took me eight months to build my first FPV drone. I procured the parts in January, received them in February, remembered I bought them in June, assembled and lit the drone on fire in July, re-assembled and crashed it into my neighbor’s roof in August, and then, and only then, at the behest of my wife, downloaded a FPV flight simulator. A super-intelligent AI surely could have done better. While far from superhuman today, the frontier models can now generate CAD, design custom PCBs, source COTS parts, and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/20726db8dabe286bd5f60d88cc5aaec1412f66741e335f54b42b56a7b1ff1253/SRN0129/Agenttrust" alt="Show HN: AgentTrust – Zero-trust security and human approvals for AI agents" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/SRN0129/Agenttrust">Show HN: AgentTrust – Zero-trust security and human approvals for AI agents</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by SRN0129 · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50235909">discuss</a>
+    </p>
+<p class="lede">The Problem : Autonomous AI agents are being granted bash shells, SQL credentials, cloud infrastructure access, and corporate credit cards. Without a deterministic policy boundary, a single indirect prompt injection or runaway hallucination can delete production tables, exfiltrate API keys, or drain financial budgets. The Solution : AgentTrust sits between autonomous LLM agent runtimes and external tool execution environments. It intercepts every proposed action, screens parameters for prompt injections and data leaks, checks real-time blast radius, enforces fine-grained capability policies, gates dangerous actions behind 1-click human approvals, and records every event into an immutable, hardware-sealed (TPM 2.0 / Nitro Enclave) audit ledger anchored by NIST FIPS 204 (ML-DSA) …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://proc-cli.com/">Show HN: Proc-CLI – An agent-friendly CLI tool for process and port management</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by yazeedaloyoun · proc-cli.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50239041">discuss</a>
+    </p>
+<p class="lede">proc is a semantic CLI tool for process management on macOS, Linux and Windows. Find what&#39;s on a port, why it&#39;s there, and stop it, in one command you&#39;d guess on the first try. Ends whatever is listening on port 3000 immediately (SIGKILL). Asks first, and --dry-run previews. A leading colon means a port: proc acts on whatever is listening on it. The same jobs, without remembering which flags lsof needs or piping PIDs into kill . Every command takes the same targets, and almost all take --in to stay inside one project, --json for scripts, and --dry-run before anything changes. Asks first, or previews with --dry-run . Every command prints one JSON document with --json , and exit codes always mean the same thing. An agent can read proc the way you do, without parsing tables.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2017/08/024-1152x648-1740609184.jpg" alt="Everybody panic: A Valve developer said &#34;HLX&#34; in public" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/">Everybody panic: A Valve developer said &#34;HLX&#34; in public</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by chha · arstechnica.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50239870">discuss</a>
+    </p>
+<p class="lede">Gamers still hoping against hope for a true follow-up to Half-Life 2 (after so, so many years ) may remember last year’s flurry of speculation that Half-Life 3 was finally nearing completion . Amid all those rumors, though, we never got any official sign from anyone inside Valve that a Half-Life project was currently in development. That changed this week thanks to an apparent slip-up during a panel at GameSoundCon , an industry conference devoted to “the art, technology, and business of game audio.” In a panel devoted to Valve’s use of open audio engines (captured in this Vimeo clip ), Valve composer and audio artist Mike Morasky let an interesting string of three letters slip while talking about the way the company implements high dynamic range (HDR) audio: Our HDR system is basically …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://addons.mozilla.org/en-US/firefox/addon/kosh/">Show HN: Kosh - Give the browser bookmarks a second life</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by havu12 · addons.mozilla.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50231566">discuss</a>
+    </p>
+<p class="lede">Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://breakintochat.com/blog/wp-content/uploads/2026/10/LOGON1B.png" alt="Recycling ANSI art: Tracing the origins of Fire Escape&#39;s BBS logon screens" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://breakintochat.com/blog/2026/10/25/recycling-ansi-art/">Recycling ANSI art: Tracing the origins of Fire Escape&#39;s BBS logon screens</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by Kirkman14 · breakintochat.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50238020">discuss</a>
+    </p>
+<p class="lede">Whether you call it “ripping” or “remixing”, the BBS scene had a long tradition of adapting and reusing earlier ANSI art. Fire Escape was one of many sysops around the world who often repurposed older so-called “public domain” ANSI art to enliven her bulletin board. She was famous in St. Louis, Missouri, for her meticulous work as curator of “Fire Escape’s St. Louis BBS Directory,” the authoritative monthly list of bulletin boards in the 314 area code . Even Boardwatch Magazine recognized Fire Escape’s directory as “one of the most accurate and detailed bulletin board lists in the world.” In late 1992, she set up her own BBS — “Fire Escape’s BBS Directory HQ” or “FEHQ” — with the help of her then-husband and it quickly became one of the most popular boards in town. In my last blog post …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-10-26-p6.html">‹</a><a href="2026-10-26.html">1</a><a href="2026-10-26-p2.html">2</a><a href="2026-10-26-p3.html">3</a><a href="2026-10-26-p4.html">4</a><a href="2026-10-26-p5.html">5</a><a href="2026-10-26-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-10-26-p8.html">8</a><a href="2026-10-26-p9.html">9</a><a class="pg-arrow" href="2026-10-26-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>135 stories · 0 cross-posts merged · 121 excerpts · 82 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

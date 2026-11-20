@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, November 20, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 324</span>
+      <span>Friday, November 20, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://dl.acm.org/doi/10.1145/3830418.3843899">Validating a High-Performance Cloud Object Store with Lightweight Formal Methods</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by typesanitizer · dl.acm.org · <a class="discuss" href="https://lobste.rs/s/zfe21b/validating_high_performance_cloud">discuss</a>
+    </p>
+<p class="lede">Abstract: We report on our experience validating S3 Express One Zone, a high-performance Amazon S3 storage class launched in November 2023. We focused on its distributed metadata index, which implements a hierarchical namespace using distributed transactions. We check strong consistency and durability under crashes, network delays, and timeouts. Building on our prior work on lightweight formal methods, we combined executable reference models with property-based testing and stateless model checking. Applying these techniques to a production distributed system required three new techniques: a white-box approach to checking serializability; compositional validation of the data and control planes; and long-running canaries that use reference models to check correctness across deployments. We …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://surfingcomplexity.blog/2026/11/18/incidents-in-the-news/">Incidents in the news</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by azhenley · surfingcomplexity.blog · <a class="discuss" href="https://lobste.rs/s/gpqw7o/incidents_news">discuss</a>
+    </p>
+<p class="lede">This was a big week for IT incidents making it into the news. I wanted to take a moment and capture links on what’s been reported on each of these so far. Note that none of these incidents involved cybersecurity attacks, according to the reporting. While there is reporting that Wall Street executives and the National Security Agency are telling congress that the outages are related to fixing vulnerabilities , the NSA incident is the only one where there is explicit reporting that it involved vulnerability patching work. Charles Lamanna of Microsoft posted an abridged version of Microsoft’s preliminary post-incident report on Twitter. There’s a ton of detail there, and I’m not even going to try to summarize. I’ll write a separate blog post about this one after the final report lands. More …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.internetsociety.org/wp-content/uploads/2026/11/Dave-Taht.jpg" alt="Postel Awardee Dave Täht Made Every Millisecond Count" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.internetsociety.org/blog/2026/11/postel-awardee-dave-taht-made-every-millisecond-count/">Postel Awardee Dave Täht Made Every Millisecond Count</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by robalex · internetsociety.org · <a class="discuss" href="https://lobste.rs/s/03qosm/postel_awardee_dave_taht_made_every">discuss</a>
+    </p>
+<p class="lede">Dave Täht understood the Internet. And it was important to him that everyone else understand it, too. Which is why he spent decades going to ambitious and creative lengths to explain it. To regulators, to standard setting bodies, to the most influential tech companies in the world, to the next generation of Internet leaders, and to absolutely anyone who would ask him about it. This drive stemmed from his visceral understanding that for change to be possible, people need to both understand and care about the stakes of inaction. And what he desperately wanted to change was the Internet. Specifically, people’s ability to use it meaningfully. Täht saw every dropped video call, every slow loading page, and every frozen progress-bar—all symptoms of what’s known as bufferbloat—as a barrier to …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://rust-glancer.github.io/blog/persistent-incrementality-in-rust/">Persistent incrementality in Rust</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by vi_mi · rust-glancer.github.io · <a class="discuss" href="https://lobste.rs/s/9bvpac/persistent_incrementality_rust">discuss</a>
+    </p>
+<p class="lede">There is this cool idea: incremental computations. The concept is simple, if you calculated something and then inputs change, it doesn&#39;t have to mean that you need to recompute everything . Most of your computations might still be valid, and quite often it is the case that you only need to redo a small chunk of changes. This concept usually works the best when you need to compute a lot of stuff, and there are a lot of inputs, and these inputs change independently with different degree of likelihood. Probably, the most common example is incremental compilation, which makes the compilation reuse as much work as possible, making iterations during development much faster. The interesting part is &#34;iterating&#34;: note that incremental compilation doesn&#39;t necessarily makes cold builds faster. The …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://starbright.quickthoughts.ca/">Show HN: 15MB transcription model that runs in the browser/device</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by quickthoughts · starbright.quickthoughts.ca · <a class="discuss" href="https://news.ycombinator.com/item?id=50567436">discuss</a>
+    </p>
+<p class="lede">Private, real-time speech to text transcription in your browser. Once the tiny speech model is downloaded, all compute, text and audio remain local on your device. The speech model and its engine run in this page, on your processor. Your audio stays on this device. The first visit downloads the 15 MB model once. After that Starbright works without a connection. Transcripts are kept in this browser until you delete them. No account, nothing to sync. Word error rate: the share of words it gets wrong. Lower is better. Dropped files on a desktop, full test sets, scored with the evaluation tools in the source download. Live dictation scores within 0.7 points of these on every set (4.4% to 18.1%), measured by replaying the same test sets through the app&#39;s live mode. Compute per second of audio …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://stass.github.io/erXos/">Show HN: erXos – a microkernel OS in Erlang based on Genera/Plan 9/QNX ideas</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by stass · stass.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50568169">discuss</a>
+    </p>
+<p class="lede">erXos is an operating system built on that idea. Its drivers, file systems and services are Erlang processes, supervised and isolated by a small capability microkernel, and its shell feels like UNIX. At the % prompt, try ls / , top , dmesg , ifconfig , ping -c 3 8.8.8.8 , or erl for the Erlang shell. Drivers, file systems and system services are Erlang processes, supervised like any other. When one crashes, its supervisor restarts it. The machine stays open. From an Erlang shell you inspect, trace and change it, all the way down to kernel objects. That is the goal, and the design is built around it: a kernel that knows nothing of Erlang, and an Erlang system that runs the machine. In erXos, Erlang&#39;s process is the operating system&#39;s process: one process space, one message system and one …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://workbook.bui.app/img/hero.jpg" alt="Show HN: Reaktiv Workbook – A spreadsheet where every cell is Python" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://workbook.bui.app/">Show HN: Reaktiv Workbook – A spreadsheet where every cell is Python</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by buibuibui · workbook.bui.app · <a class="discuss" href="https://news.ycombinator.com/item?id=50572351">discuss</a>
+    </p>
+<p class="lede">Change a parameter and every value, plot and paragraph that depends on it updates. Nothing else reruns, nothing goes stale. Notes, a grid of cells and a dependency graph over one plain .workbook.py file. uvx reaktiv-workbook new --from welcome or pip install reaktiv-workbook Works with your stack: NumPy, pandas, scikit-learn, Plotly, Matplotlib, anywidget, and anything you can pip install . Cells update like spreadsheet formulas: change an input and everything that reads it recomputes, in dependency order. No “run all”, no stale variables, no out-of-order surprises. A spreadsheet-style grid puts inputs, intermediate results and plots side by side, so a whole analysis or dashboard fits on one screen instead of a long scroll. The dependency graph is drawn from your code. Follow a parameter …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://cherwellvalleymotorclub.app/share/card.jpg?v=b5b97619" alt="Show HN: Drive around my village in 3D" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://cherwellvalleymotorclub.app">Show HN: Drive around my village in 3D</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by johnwards · cherwellvalleymotorclub.app · <a class="discuss" href="https://news.ycombinator.com/item?id=50574412">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.pgrs.net/2026/11/19/visualizing-a-ledger-with-pgledger-ui/">Visualizing a Ledger with pgledger-ui</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by pgr0ss · pgrs.net · <a class="discuss" href="https://lobste.rs/s/gftix3/visualizing_ledger_with_pgledger_ui">discuss</a>
+    </p>
+<p class="lede">I’m a Principal Software Engineer in Seattle. I have previously worked at Rvvup , Ripple , Braintree / PayPal , and ThoughtWorks . Now, I primarily do independent consulting. I’ve been working on a ledger implementation in pure PostgreSQL called pgledger . As I’ve written about previously, I think more applications should use double-entry ledgers . However, once a ledger is integrated, it can be a bit hard to wrap your head around it visually. What are the money flows? What are the main set of accounts per user? Why is the balance in this account not what I expect? In my work with companies, I’ve often tried to make the ledger more visual and understandable, either with a database dashboard like Metabase or with custom in-app code. The same way that pgledger is meant to be a common …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://spritely.institute/news/lisp-game-jam-devlog-polydraw.html">Lisp Game Jam devlog: Polydraw</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by FedericoSchonborn · spritely.institute · <a class="discuss" href="https://lobste.rs/s/irqtic/lisp_game_jam_devlog_polydraw">discuss</a>
+    </p>
+<p class="lede">This year&#39;s Autumn Lisp Game Jam has just wrapped up! Spritely&#39;s contribution to the jam was Polydraw , a peer-to-peer party game that is easy to pick up and play with friends. In Polydraw, players take turns being the artist who draws an image based on a prompt . The catch is that the artist only has 60 seconds and can only draw using triangles. All of the other players are guessers who try to correctly guess the prompt. We&#39;re quite pleased with how the game turned out! The rest of this post is a daily devlog of how we made Polydraw so you can see what the process look likes to make a game with Goblins and Hoot under a tight deadline. It&#39;s go time! First, we created a Git repository on Codeberg and copied the Hoot game jam template into it. Since the core activity in Polydraw is drawing …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/ce7727c521225367670a15517f797dbc5d778784bcc5d920d607b54dbc034ced/XiaoMi/bsworld" alt="Show HN: BSWorld – AI agents can now test Bluetooth code without hardware" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/XiaoMi/bsworld">Show HN: BSWorld – AI agents can now test Bluetooth code without hardware</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by bsworld-runner · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50570766">discuss</a>
+    </p>
+<p class="lede">BSWorld tests Bluetooth Hosts and applications on Linux through deterministic simulation. Define the topology and expected behavior in pytest. Hosts connect to BSController over H4 HCI and communicate over a shared BabbleSim radio. The Docker image ships with BabbleSim, a 32-bit UML kernel, and a Guest root filesystem with the Host executables. Run the integration tests from the repository root on a host with Docker Engine . The results in .cache/docker-results include pytest.xml , process logs, HCI captures, and RF traces. For suite selection, image versions, and local builds, see the Docker guide . Development and tests require Python 3.12 or newer. Install these tools on Ubuntu 24.04. Clone BSWorld and install it in a virtual environment. Fetch the BabbleSim revisions pinned in …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/afe73baeda8e8fae0af6c320474773880faee5e9c8cbbc46a180a0001895cfb7/pug-sh/pug" alt="Show HN: Pug.sh – open-source product analytics" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/pug-sh/pug">Show HN: Pug.sh – open-source product analytics</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by BajajScooter · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50576620">discuss</a>
+    </p>
+<p class="lede">Pug is an open-source product analytics platform. Capture events, identify the people behind them, and explore behavior through funnels, retention, trends, segmentation, and user-flow analysis, all surfaced on customizable dashboards. Built in Go on PostgreSQL, ClickHouse, and NATS. Overview : a web-analytics view auto-built from your events, with the previous period alongside. Breakdowns : pageviews by country, plus locations, devices, and events; click any value to filter the whole view. Live view : every visitor on a live world map; click one to fly to them and see the page, device, and profile behind it. Events : every raw event as it lands, with its location, platform, properties, and the person behind it. Dashboards : compose insight and markdown tiles on a time-windowed grid …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/">Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by archon1410 · terrytao.wordpress.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50578358">discuss</a>
+    </p>
+<p class="lede">Updates on my research and expository papers, discussion of open problems, and other maths-related topics. By Terence Tao Obviously these results will be reported widely in other outlets, but I will note them here, in decreasing order of how “digested” the results currently are: See also Buckmaster’s Mastodon post regarding the first two results. To enter in LaTeX in comments, use $latex &lt;Your LaTeX code&gt; $ (without the &lt; and &gt; signs, of course; in fact, these signs should be avoided as they can cause formatting errors). Also, backslashes \ need to be doubled as \\. See the about page for details and for other commenting policy. Blog at WordPress.com. Ben Eastaugh and Chris Sternal-Johnson. Have a WordPress.com account? Log in now.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://diff.wikimedia.org/wp-content/uploads/2026/11/1280px-Dulmen_Bornste_Blatterdach_uber_einem_Waldweg_-_2015_-_9901.jpg?fit=1280%2C853" alt="The New Era of Wikimedia Traffic: Thinking Beyond Pageviews" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://diff.wikimedia.org/2026/11/19/the-new-era-of-wikimedia-traffic-thinking-beyond-pageviews/">The New Era of Wikimedia Traffic: Thinking Beyond Pageviews</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by nemoralis · diff.wikimedia.org · <a class="discuss" href="https://lobste.rs/s/nes79l/new_era_wikimedia_traffic_thinking">discuss</a>
+    </p>
+<p class="lede">Part 1 of Wikimedia in a Changing Traffic Ecosystem: This post begins a series for Wikimedia communities, and other interested readers, exploring some recent readership trends and what they mean for the movement’s future. Drawing on research from across the Wikimedia Foundation, we’ll examine the forces shaping our traffic, the implications for readers and contributors, and how these findings can inform our strategy. For more than two decades, billions of visits to Wikipedia and other Wikimedia projects have reflected something remarkable: people around the world choose to seek out, share, and contribute to free, human knowledge. Pageviews have long been one of Wikimedia’s most important measures of readership, helping us understand how people access and engage with our projects. But the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://relic-app.com/opengraph-image.jpg?opengraph-image.20kf8m-3gysbh.jpg" alt="Show HN: Relic – An AI that only answers from what you&#39;ve saved" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://relic-app.com">Show HN: Relic – An AI that only answers from what you&#39;ve saved</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      4 points · by Cenga387 · relic-app.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50564471">discuss</a>
+    </p>
+<p class="lede">Links. PDFs. Notes. YouTube videos. Instagram posts. LinkedIn posts. They end up scattered across tabs, folders, and apps. Relic brings them together, organizes them automatically, and helps you find and use what you&#39;ve already learned. Every day you save something useful. An article for later. A video you&#39;ll revisit. A PDF for a project. A note with a good idea. Weeks later, you know you&#39;ve seen it before, but you can&#39;t find it. Most knowledge isn&#39;t lost because you never learned it. It&#39;s lost because you can&#39;t retrieve it when it matters . Everything you learn from, in one library. Three steps from scattered saves to usable knowledge. Save links, PDFs, videos, notes, and ideas from anywhere. Relic summarizes, sorts, and connects everything behind the scenes. Relic helps you rediscover …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-20-p6.html">‹</a><a href="2026-11-20.html">1</a><a href="2026-11-20-p2.html">2</a><a href="2026-11-20-p3.html">3</a><a href="2026-11-20-p4.html">4</a><a href="2026-11-20-p5.html">5</a><a href="2026-11-20-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-11-20-p8.html">8</a><a href="2026-11-20-p9.html">9</a><a class="pg-arrow" href="2026-11-20-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>134 stories · 5 cross-posts merged · 127 excerpts · 97 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

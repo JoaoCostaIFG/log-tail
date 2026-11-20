@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, September 16, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 259</span>
+      <span>Wednesday, September 16, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://jsgroth.dev/blog/posts/trying-to-make-a-loop-auto-vectorize/">Trying to Make a Loop Auto-Vectorize</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by fanf · jsgroth.dev · <a class="discuss" href="https://lobste.rs/s/4nhhax/trying_make_loop_auto_vectorize">discuss</a>
+    </p>
+<p class="lede">You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. This can and does cause downtime for the websites, which makes their resources inaccessible for everyone. Anubis is a compromise. Anubis uses a Proof-of-Work scheme in the vein of Hashcash, a proposed proof-of-work scheme for reducing email spam. The idea is that at individual scales the additional load is ignorable, but at mass scraper levels it adds up and makes scraping much more expensive. Ultimately, this is a placeholder solution so that more time can be spent on fingerprinting and identifying headless browsers (EG: via how they do font rendering) so that the challenge proof of work page doesn&#39;t need to be presented …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://lemire.me/blog/wp-content/uploads/2026/09/Gemini_Generated_Image_gh1asmgh1asmgh1a-1024x559.jpg" alt="Subnormal floating-point numbers are expensive… on Intel processors" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lemire.me/blog/2026/09/15/subnormal-floating-point-numbers-are-expensive-on-intel-processors/">Subnormal floating-point numbers are expensive… on Intel processors</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by kevincox · lemire.me · <a class="discuss" href="https://lobste.rs/s/hv3l4v/subnormal_floating_point_numbers_are">discuss</a>
+    </p>
+<p class="lede">We represent floating-point numbers using the IEEE standard. For very small numbers, the standard uses special subnormal numbers. Unfortunately, they have a reputation of making operations slow. Thus video game programmers and machine learning specialists sometimes avoid computing with subnormal numbers for performance. How slow are they? Let me measure. I wrote a small C++ benchmark with a few kernels over arrays of 16384 values (small enough to fit in cache): For each kernel, I feed either normal values (in [0.5, 1) ), subnormal values, or normal values where one value in a hundred is subnormal. The compiler is allowed to autovectorize the array computations. I use GCC 15 with -O3 -march=native on Linux and Apple clang 17 with the same flags on macOS. I also checked with clang 21 on …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/67fc6c09bccc95557b91cbfa34eb72a4deb3e2d0b45c8dc8f87d4f3e578e385f/sqliteai/warp" alt="Show HN: Warp – Run DeepSeek v4.1 Flash with 5 GB of RAM at 3.77 tok/s" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/sqliteai/warp">Show HN: Warp – Run DeepSeek v4.1 Flash with 5 GB of RAM at 3.77 tok/s</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by marcobambini · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49714036">discuss</a>
+    </p>
+<p class="lede">WARP is an embeddable inference engine written in C, with no third-party runtime dependencies. It keeps the model trunk in memory, streams selected experts directly from disk, and uses the remaining RAM as a bounded expert cache. The project is driven by humans: the ideas, hypotheses, priorities, tests, and decisions are human. The code is written by LLMs. At this scale, that is the only way to iterate on new algorithms and test hypotheses fast enough. The goal is to run huge frontier models such as Kimi K3 on consumer hardware. Today, the complete 2.78-trillion-parameter Kimi K3 runs on a 64 GB MacBook Pro at about 0.6 tokens per second , the 552-billion-parameter DeepSeek-V4.1-Flash at about 3.8 , and the 313-billion-parameter GLM-5.3-Flash — text and images — at about 3.9 . Ultimately …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://farseer.space/og.png" alt="Show HN: farseer.space – fly anywhere in the universe in your browser" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://farseer.space/">Show HN: farseer.space – fly anywhere in the universe in your browser</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by headsupernova · farseer.space · <a class="discuss" href="https://news.ycombinator.com/item?id=49717936">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://vondra.me/posts/postgres-development-activity/">Postgres development activity</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by fanf · vondra.me · <a class="discuss" href="https://lobste.rs/s/3wmby2/postgres_development_activity">discuss</a>
+    </p>
+<p class="lede">Every now and then I need a break from writing code. In those cases I like looking at data about a subject I’m interested in - looking for trends, quantifying the expected effects, and so on. I needed just such a break a couple days ago, and I decided to look at statistics about the development activity of the Postgres project. So, here’s a bunch of charts (with a bit of commentary). This is not the first time I’m looking at this topic. In 2024 I did a talk about the community, which included a couple charts about different parts of the whole community. In this post I’ll focus on two parts central to the “development” side of the project. First, the pgsql-hackers mailing list, the place where patches are submitted and discussed. And the git repository, with the ultimate record of what got …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://anekstein.com/posts/2026-08-22.html">Search over Algebraic Graphs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by anex9d · anekstein.com · <a class="discuss" href="https://lobste.rs/s/cw8fep/search_over_algebraic_graphs">discuss</a>
+    </p>
+<p class="lede">In my post Generic Recursion Applied to Algebraic Graphs 1 we explored how we can leverage recursion schemes to perform basic operations on a graph data structure. In that post, as well as in the alga library itself 2 , algorithms on graphs were facilitated by first converting the algebraic graph representation into an adjacency map and performing the algorithms on that data structure. In Algebraic Graphs with Class 3 , Andrey Mokhov described a desire to perform algorithms such as search on the algebraic graph representation itself. In this post, we will explore just that and outline a way to conduct Dijkstra’s algorithm over the same algebraic representation alga uses, without first constructing an adjacency map. The algorithm will run in \(O(s \log s)\) time, where \(s\) is the size of …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.amika.dev/opengraph-image?f70946b6a9f74c05" alt="Show HN: Amika – Multiplayer cloud workstations for coding agents and humans" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.amika.dev/">Show HN: Amika – Multiplayer cloud workstations for coding agents and humans</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by dbmikus · amika.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=49716282">discuss</a>
+    </p>
+<p class="lede">We call these cloud workstations Rigs . Each Rig is a VM loaded with your dev setup, your favorite coding agents, and your own AI subscriptions. Boot in seconds into a pre-configured VM with your repos, dev services, and preferred coding agents. Control agents and Rigs from the web, Slack, Linear, SSH, CLI, API, Codex, or Cursor. Invite teammates into the same Rig to inspect previews, share agent sessions, and take over work. No more tedious environment setup. Every Rig is loaded with your git repo(s), development environment, and choice of coding agents. You can control agents and Rigs (VMs) from anywhere. Spin them up programmatically to run background jobs. Connect to a Rig with your favorite agent app, and use it like it was your desktop. Rigs are multiplayer, so you and your …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/495223210/5db0fcaa-9635-4f5f-a9a3-92f108e68911" alt="MartyPC – A Cycle-Accurate IBM PC/XT Emulator" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/dbalsom/martypc">MartyPC – A Cycle-Accurate IBM PC/XT Emulator</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by yitchelle · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49722591">discuss</a>
+    </p>
+<p class="lede">MartyPC is an emulator of early IBM PCs and compatibles. It supports Windows, Linux and macOS. Builds are available through periodic releases . Newer, automatic builds are available via the Actions tab under the Artifacts for each workflow run. (You will need to be logged in to GitHub to download Artifacts). If you&#39;re not on Windows, or you want the latest bleeding-edge version, you&#39;ll need to build MartyPC from source. See the Building MartyPC guide on the MartyPC Wiki for build instructions. MartyPC began as a hobby project to see if I could write an emulator from scratch while learning the Rust programming language. My original goals for MartyPC were modest, but it has reached a level of functionality that I could have never imagined. MartyPC&#39;s intended niche in the emulation world is …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://hackmd.io/api/_/preview/Ovp-ke35S7mG2CTUrMlccA" alt="Unsizing unsized values" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://hackmd.io/@WorldSEnder/Hkyqni6Ofl">Unsizing unsized values</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by fanf · hackmd.io · <a class="discuss" href="https://lobste.rs/s/5uovkh/unsizing_unsized_values">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://chauhankiran.blogspot.com/2026/09/levels.html">From Intern to Software Architect</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by chauhankiran · chauhankiran.blogspot.com · <a class="discuss" href="https://lobste.rs/s/jsvadf/from_intern_software_architect">discuss</a>
+    </p>
+<p class="lede">You start your journey as an intern or junior software engineer. At this level, you care about the syntax and language constructs such as defining variables or constants correctly, writing a function that might be reusable, or constructing conditions correctly. Let&#39;s call this level - 1. As you start to become more familiar with the language and code, your focus shifts towards the program files. Now, you start to care about files instead of language constructs as you&#39;re comfortable with syntax and language constructs. You can now connect the files across a bug fix or a change that you need to make. You&#39;re now at level - 2. As you become more experienced, you now start to care about a module - not just a set of files but a logically related set of files. Previously, it was a set of program …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/9cce8cc4bc302b1958e7a66d04d77599a8f7c432f3b74ce991ddc49817f49e2c/stagas/livediff" alt="Show HN: A live Git diff view cli to stay on top of what agents are doing" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/stagas/livediff">Show HN: A live Git diff view cli to stay on top of what agents are doing</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by stagas · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49712345">discuss</a>
+    </p>
+<p class="lede">Stay on top of what your coding agents are doing with a live diff feed, right in your terminal. livediff watches the current Git repository and shows every edit as it happens, whether it comes from an agent, an editor, or another tool. Changes appear like a regular Git diff: added lines are green, removed lines are red, and unchanged lines provide context. Each edit is shown once, keeping the feed focused on what your agents are changing now. The installer supports Linux and macOS on x64 or ARM64, and Windows x64 through Git Bash. It downloads a standalone executable; only Git needs to be installed. Open a terminal in any Git repository and run: Now edit and save a file. You will see output similar to: Only edits made after livediff starts are displayed. It watches tracked files and new …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://jexxa.org">Show HN: Jexxa: High Speed on Device Dictation</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by sankde · jexxa.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49712720">discuss</a>
+    </p>
+<p class="lede">The model is on your disk. Hold a key, speak, and the words appear where your cursor already is — in any app that takes text. No audio, no transcript. What does leave is small and listed in the privacy policy: your subscription check, update checks, and diagnostics you can turn off. Most dictations are typed within a fifth of a second of letting go of the key. No queue, no per-minute cost. Names and jargon it gets wrong once, it gets right after you fix it. It tells you what it learned, and you can undo it. Say JX minus one to remove the last line, JX minus two for two, JX clear for the lot. A live preview while you talk, so you know it is hearing you. On a plane, on a train, on a bad hotel connection. It does not care. Same app, same features. The difference is how much of your memory …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1368190389/5233a508-a87e-44e2-a8ea-387cbc18977a" alt="Show HN: DaiDocs, AI memory as a plain-text file format, not a service" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/Kerneta/daidocs">Show HN: DaiDocs, AI memory as a plain-text file format, not a service</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by Amin_Rigi · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49715672">discuss</a>
+    </p>
+<p class="lede">An open plain-text format for AI memory (launched Sep 2026). Your assistant&#39;s memory becomes files on your disk that you can open, grep and keep. Second on the LongMemEval-S leaderboard among memory systems anyone can re-run, 22.40 points above the same model with no memory , reading 10x fewer tokens per question. Every number here ships with its per-question judge verdicts and a sha256 manifest. Launch release V4.4n32, 12 September 2026. What is in it. If .dai is useful to you, a star helps other people find it. The whole product, in one loop. Install, build, remember, recall: one store, every model, about a tenth of the tokens. The recording uses invented data. A .dai file is three plain-text zones: a YAML header, a fenced JSON block, and the text. No binary, no database, no SDK …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.tigrisdata.com/blog/assets/images/hero-image-81fc688a5cf1e95701d66a80813da3c1.webp" alt="You can run git on object storage if you re-make packfiles" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.tigrisdata.com/blog/objgit-packfiles/">You can run git on object storage if you re-make packfiles</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by gmem · tigrisdata.com · <a class="discuss" href="https://lobste.rs/s/hyyq9h/you_can_run_git_on_object_storage_if_you_re">discuss</a>
+    </p>
+<p class="lede">It sure seems that a bunch of companies are trying to ship a git product of some kind as of late. Wonder why that is. Either way, I’m building a Git server backed by object storage as an open-source project . It sounded simple enough to start: Git looks like a filesystem, so let’s use a filesystem as a translation layer on top of object storage to make Git speak object storage. This model worked… ok, I guess? But it didn’t work for real-world size repositories, so I needed a different approach. Git stores everything in Objects , so why not store those as objects in Tigris? Turns out Git packfiles and how they intersected with my (admittedly somewhat terrible) filesystem shim were the main reason why it was slow. I ended up having to invent my own packfile format with a columnar store …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://lezli01.is-a.dev/vincent/docs/assets/social/the-terminal-should-not-own-the-work.png" alt="The terminal should not own the work" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lezli01.is-a.dev/vincent/docs/why/the-terminal-should-not-own-the-work.html">The terminal should not own the work</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by sspaeti · lezli01.is-a.dev · <a class="discuss" href="https://lobste.rs/s/m1zfy8/terminal_should_not_own_work">discuss</a>
+    </p>
+<p class="lede">A terminal is a good place to start a process. It is a poor place to store the truth about that process. When an agentic task belongs to one terminal tab, the tab becomes an accidental control plane. Closing it can stop the work. Losing scrollback can erase the useful explanation. Reopening the project means reconstructing what ran, which branch it changed, and whether it was waiting, finished, or quietly stuck. The longer the task runs, the more fragile that arrangement feels. Vincent moves ownership into a background daemon. The daemon owns task state, workflow execution, agent processes, scheduling, the database, and git worktrees. The TUI, CLI, and API are clients of that state. Closing any client changes nothing about the work behind it. That architectural choice has consequences …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-16-p6.html">‹</a><a href="2026-09-16.html">1</a><a href="2026-09-16-p2.html">2</a><a href="2026-09-16-p3.html">3</a><a href="2026-09-16-p4.html">4</a><a href="2026-09-16-p5.html">5</a><a href="2026-09-16-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-09-16-p8.html">8</a><a href="2026-09-16-p9.html">9</a><a class="pg-arrow" href="2026-09-16-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>130 stories · 6 cross-posts merged · 122 excerpts · 71 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

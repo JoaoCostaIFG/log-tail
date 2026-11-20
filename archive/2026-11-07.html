@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, November 7, 2026</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 311</span>
+      <span>Saturday, November 7, 2026</span>
+    </p>
+  </header>
+
+
+
+  <article class="lead story">
+    <p class="kicker">Top Story</p>
+    <h2 class="headline"><a href="https://sshhole.com">sshole</a></h2>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      3113 points · by josemrb · sshhole.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50378228">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/oq5pem/sshhole">discuss on lobste.rs</a>
+    </p>
+<p class="lede">back in old unix your password hash just sat in /etc/passwd , right next to your username. in a file everyone could read. in 1980 bill joy put a * there for an account called daemon . nobody&#39;s supposed to ever log in as it. a * isn&#39;t a hash, so no password can match it. unix still does this today the next field is the real name. he wrote &#34;the devil himself&#34; ok so these days the hash lives in /etc/shadow and looks like $6$abc$k2P9… . the $6$ means sha512, abc is the salt, the rest is the actual hash you type your password, sshd hashes it with that same salt and checks if it comes out identical. same = you&#39;re in. that&#39;s it and if the field is just * ? there&#39;s nothing to match. type whatever you want, it&#39;s never getting you in one more rule. if crypt() can&#39;t do its job, it returns NULL. like …</p>  </article>
+
+  <section id="front-page">
+    <h2 class="section-title">Front Page</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/a4785344a9cc2f82dd8c3d0aa62fa761536deeb3a3f70d05986705305ae54af5/anthropics/claude-code/issues/107757" alt="Claude Code sends your email address to websites" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/anthropics/claude-code/issues/107757">Claude Code sends your email address to websites</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      1581 points · by motoroco · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50385272">discuss</a>
+    </p>
+<p class="lede">I receive dozens of scam emails per day because claude code divulged my email to arbitrary 3rd parties in the User-Agent request header while conducting web searches without my permission. This should not be a setting with opt-out or opt-in behavior, it needs to be removed from the harness entirely. It is not for the good of anyone involved: it does nothing for services which dislike agentic traffic, does not preserve my anonymity on the web, and is a goldmine for scammers. I am migrating my company to Pi with OpenRouter since I have no faith in anthropic preserving my privacy. Hi folks! We introduced a built-in mod called cc-plugin-privacy to deterministically block this behavior in v2.1.317 and later - definitely let us know ASAP though if there&#39;s a gap in the checks introduced by that …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-02/250213-Cybertruck-aa-1045-dd55f3.jpg" alt="Tesla to wind down Cybertruck production" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817">Tesla to wind down Cybertruck production</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      1088 points · by PLenz · nbcnews.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50391456">discuss</a>
+    </p>
+<p class="lede">Tesla will wind down Cybertruck production at its Texas gigafactory around mid-2027, CEO Elon Musk said on Friday, after years of persistently weak sales for a futuristic model once touted as a rival to legacy pickup trucks that ultimately only sold in just a handful of markets because of its heavy, angular design. Musk said in an X post the production wind-down would enable the automaker to accommodate increased output of its newly launched Cybercab model, which the billionaire has made central to Tesla&#39;s robotaxi ambitions. While it was not immediately clear whether Cybertruck production would be moved to another facility or phased out entirely, the automaker&#39;s Austin plant is the only known Tesla facility equipped to manufacture the model&#39;s specialized components. In response to a user …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://mitchellh.com/writing/libghostty-1-0">Libghostty 1.0</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      982 points · by mfiguiere · mitchellh.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50399933">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/0ouxwf/libghostty_1_0">discuss on lobste.rs</a>
+    </p>
+<p class="lede">libghostty-vt 1.0 is here. libghostty is a portable, high-performance C library for terminal emulation, extracted directly from the core of Ghostty. The 1.0 release means both the library itself and the C ABI are now stable. A little over a year ago, I wrote that libghostty is coming . At the time, the Zig module had just been merged, the C API didn&#39;t exist, and nobody but Ghostty was a consumer. Today, the C API is a complete terminal emulator, it runs in production for millions of people across hundreds of products, both free and commercial, and it has a real, enforced ABI stability policy. This post is about how we got here and what 1.0 actually means. 1 Since starting the Ghostty project in 2022, the most common question I&#39;ve been asked is &#34;why?&#34;. I already answered this in the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/13f879ef988c97c1f1d8aac8cd229a2cbbcfcdbb10ca6edf6c7d8d3a142ea97a/ppmpreetham/BUI" alt="Blender&#39;s UI and Runtime: Much Faster Than GPUI" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/ppmpreetham/BUI">Blender&#39;s UI and Runtime: Much Faster Than GPUI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      705 points · by ppmpreetham · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50389333">discuss</a>
+    </p>
+<p class="lede">Blender&#39;s user interface, as a library you can use from Python, Rust, JavaScript (React, Svelte), C, C++ and Dear ImGui. People spent decades building and optimizing Blender&#39;s GUI. It&#39;s battery and memory efficient, and super duper fast. We decoupled it, to give everyone a chance to build their own products with it. It supports multiple languages and frameworks, so you won&#39;t miss a beat! Website and full documentation: bui.preetham.top · Chat: Discord This README is a small book. Read it front to back for the whole story, or jump to the chapter you need. Every chapter links to a longer guide in docs/ or on the website when there&#39;s more to say. BUI takes the user interface of Blender (its widget drawing, its interaction rules and its look) and turns it into a standalone UI library with a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/8863df9fbea9942409eb7ac24d7ba6b60eed0b9e29de0eaee5561d2ddcb67a3b/PrivSec-dev/banking-apps-compat-report/issues/105" alt="Dutch &#39;idealist&#39; bank ASN blocks non-Google Android, including GrapheneOS" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105">Dutch &#39;idealist&#39; bank ASN blocks non-Google Android, including GrapheneOS</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      638 points · by microtonal · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50390124">discuss</a>
+    </p>
+<p class="lede">Ontill this moment, i did not find anything that did not worked. It seems that the app works like on stock OS Also works on Pixel 6 Pro without Google Play and Google Play Services installed. Tried with one of my customers but you cannot log in to the app without Google Play Services @aerique Please correct this @akc3n Tried with one of my customers but you cannot log in to the app without Google Play Services @aerique Please correct this @akc3n No, do not correct anything yet. Lets first figure out which app we&#39;re talking about. I&#39;m using the top app which is the generic banking app. It&#39;s updated, I can login, I can scan QR codes and pay. I use it almost every day, sometimes multiple times. I also do not have Google apps installed, not even in GrapheneOS&#39; sandbox. I&#39;ve also used this app …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.sanity.io/images/pwmfmi47/production/9a5d7191d614c824c822ec90672adaf424699d3d-2400x1256.png?w=1200" alt="A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://hightouch.com/blog/llm-judges-identity-resolution">A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      534 points · by theanomaly · hightouch.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50397429">discuss</a>
+    </p>
+<p class="lede">We tested whether fast, cheap decision models like Jev and GPT-6 Luna could grade identity resolution as well as frontier LLMs, and found that pairing Jev with Claude Opus gets close to Opus-level accuracy for much less. We wanted to test whether LLMs and decision models, specifically Jev and Luna, could solve a hard problem that we encounter regularly (grading identity resolution results). We found that while both models performed okay out of the box (88.8–97.3% accuracy), implementing a hybrid model that combines Jev + Opus achieves frontier accuracy at &gt; 4x lower costs. Identity resolution is the process of mapping data to corresponding real people. More precisely, say you have a set of data records D . Determine a set of identities I and mapping m(D)-&gt;I such that each record d ∈ D …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nfsu2.xyz/">Need for Speed Underground 2 online in the browser</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      401 points · by fluxusars · nfsu2.xyz · <a class="discuss" href="https://news.ycombinator.com/item?id=50403052">discuss</a>
+    </p>
+<p class="lede">Post the log in #bug-reports on our Discord , with what you were doing. The PC game&#39;s own code, recompiled for Chrome and Firefox: up to 120 fps in widescreen, free roam and Online races with friends, and controllers, wheels and touch controls. My brother and I played this game together about 20 years ago. Because of that I tried porting it to the browser so we could play together again. It worked surprisingly well, and it got a bit out of hand. It&#39;s great to see so many people playing it. To help with hosting and development costs, you can buy me a coffee . Everyone gets the same game, with no microtransactions or paid perks. Supporters just get a Discord role. Help, bugs and questions: our Discord . Rights holders: legal (at) nfsu2.xyz. Source code on GitHub . Based on Talha …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/">US FAA says it will phase out floppy disks from air traffic control by 2028</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      372 points · by ChrisArchitect · reuters.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50388001">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.filfre.net/2026/11/deus-ex/">Deus Ex</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      364 points · by cybersoyuz · filfre.net · <a class="discuss" href="https://news.ycombinator.com/item?id=50393758">discuss</a>
+    </p>
+<p class="lede">A slight shift of focus, and the future could still turn out like Deus Ex after all… — Deus Ex lead writer Sheldon Pacotti, speaking in 2014 The reviews that greeted Ion Storm’s Deus Ex upon its release in June of 2000 ranged along a continuum from cautiously to wildly positive. Computer Gaming World , the Gray Lady of the hobby, came with one of the most nuanced takes. Reviewer Thierry Nguyen spoke of “loving” the game in the abstract, but lamented “deep flaws that sometimes frustrated me, as they detracted from its ambitious design”; these included performance issues, poor artificial intelligence on the part of the enemies, and a sense of contrivance that clung to some of the environments and plot points. The excitable lads at Australia’s PC Powerplay , on the other hand, placed no such …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png" alt="Gemini Omni 1.2 Flash" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/">Gemini Omni 1.2 Flash</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      353 points · by thisisauserid · blog.google · <a class="discuss" href="https://news.ycombinator.com/item?id=50392118">discuss</a>
+    </p>
+<p class="lede">Gemini Omni 1.2 Flash brings 15-second clips, stronger consistency, and faster, more cost-effective generation. Your browser does not support the audio element. We’re rolling out Gemini Omni 1.2 Flash, which offers native 15-second video creation, improved reference adherence, and multi-turn conversational editing. This update lowers costs by 30% and provides better consistency for your professional projects. You can start using these capabilities today across the Gemini API, Google Vids, and Gemini for business to produce high-quality video content at scale. Today, we’re rolling out Gemini Omni 1.2 Flash, and making it generally available across the Gemini API and Gemini for business . Gemini Omni 1.2 Flash introduces native 15-second video creation, multi-turn conversational editing …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://8rank.ai/og-apple-intelligence-personal-knowledge-graph.png" alt="Every Mac comes with an (undocumented) family member classifier" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph">Every Mac comes with an (undocumented) family member classifier</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      343 points · by infwhispers · 8rank.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50403097">discuss</a>
+    </p>
+<p class="lede">Every Mac since macOS 13 (2022) ships a pair of daemons whose only purpose in life is to build a graph about who you are, who you know, how those people are related to you and to each other, how you communicate with them, where you go, what you do and when. In this post, we look into how this system works and give you a tool to peek into your own graph. A family fork: one knight on e2 attacks White&#39;s king, queen, rook and bishop at once. White&#39;s pieces are the household the graph is about; the knight is the store, one move from every one of them. White&#39;s own last move, 18.e3 , emptied the square it stands on. White is in check and has one legal reply, Kh1 ; then the knight takes the queen. The check falls on the one who accepted the terms. What is lost is someone else. What if I told you …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!u_X_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd74ff70-df26-4e1a-be31-4fc3543bada8_2048x1072.png" alt="AI is dramatically accelerating AI research" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai">AI is dramatically accelerating AI research</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      341 points · by yurivish · planned-obsolescence.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50397994">discuss</a>
+    </p>
+<p class="lede">This post discusses a public METR report on AI R&amp;D acceleration at Anthropic. I did not work on this project or see the unredacted report. 1 All opinions are my own and do not represent METR or the report authors. Thanks to Ryan Greenblatt for discussion, feedback, and help with modeling, and Daniel Kokotajlo, Eli Lifland, and Hjalmar Wjik for comments. Earlier this week, Anthropic stated in their S1 that they “may imminently meet” the threshold of “dramatically accelerated progress due to AI” as defined in their Responsible Scaling Policy. In their latest RSP (effective July 2026) , say this threshold will be met when: They observe or expect overall capabilities progress to be going twice as fast as the fastest sustained rate before AI was contributing much to AI R&amp;D. 2 This is plausibly …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://pwn.college/themes/dojo_theme/static/img/dojo/ninja.png" alt="Pwn.college" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://pwn.college/">Pwn.college</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      321 points · by tripdout · pwn.college · <a class="discuss" href="https://news.ycombinator.com/item?id=50387796">discuss</a>
+    </p>
+<p class="lede">You have entered the pwn.college DOJO, an education platform for learners to develop and practice core cybersecurity skills in a hands-on fashion. Entering, you receive your &#34;white belt&#34; , signifying the beginning of your hacker life. From here, you will learn cybersecurity by diving deep into the core of computing, using that journey to absorb cybersecurity concepts. This will involve melding your mind to your terminal, whispering instructions to the CPU, and strumming bits directly onto networks. That terminal cursor blinking above? It will be your stalwart companion through this adventure as you practice, earn your belts , and, eventually, make perfect. Every dojo has its sensei. This platform is maintained by an awesome team of hackers at Arizona State University. It powers much of …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout">Anthropic IPO buyers see valuation as low as $1.1T</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      295 points · by dgellow · bloomberg.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50394906">discuss</a>
+    </p>
+<p class="lede">https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3...</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://api.pwn.ai/api/blog/images/photo-2026-11-04-22-55-56-b01dcd719e0c.jpeg" alt="Firecracker VM Escape: PwnEscape Part 2" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://pwn.ai/blog/firecracker-escape">Firecracker VM Escape: PwnEscape Part 2</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      267 points · by SerCe · pwn.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50397219">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/wzz4u3/firecracker_vm_escape_pwnescape_part_2">discuss on lobste.rs</a>
+    </p>
+<p class="lede">Firecracker is supposed to keep untrusted code inside a microVM. We escaped it and achieved code execution as root on the host. We found how it saved registers, changed where it would resume, and made it execute a call of our choosing when it returned from KVM. The guest then restored the temporary stack changes. Firecracker kept running, and the VM remained accessible over SSH. PwnEscape Part 1 introduced the host memory primitive behind this work. Here we follow the next part of the chain: using that access to find Firecracker in memory and take over a live thread from inside the guest. This is a continuation to show CVE-2026-99999 on a Firecracker setup. A Firecracker microVM has a process on the host that manages it. Each virtual CPU, or vCPU, has a thread in that process. The thread …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<span class="pg-current">1</span>
+<a href="2026-11-07-p2.html">2</a><a href="2026-11-07-p3.html">3</a><a href="2026-11-07-p4.html">4</a><a href="2026-11-07-p5.html">5</a><a href="2026-11-07-p6.html">6</a><a href="2026-11-07-p7.html">7</a><a href="2026-11-07-p8.html">8</a><a href="2026-11-07-p9.html">9</a><a class="pg-arrow" href="2026-11-07-p2.html">›</a>  </nav>
+
+  <section id="archive">
+    <h2 class="section-title">Recent Editions</h2>
+    <ul class="archive-list">
+<li><a href="2026-11-06.html">Friday, November 6, 2026</a></li><li><a href="2026-11-05.html">Thursday, November 5, 2026</a></li><li><a href="2026-11-04.html">Wednesday, November 4, 2026</a></li><li><a href="2026-11-03.html">Tuesday, November 3, 2026</a></li><li><a href="2026-11-02.html">Monday, November 2, 2026</a></li><li><a href="2026-11-01.html">Sunday, November 1, 2026</a></li><li><a href="2026-10-31.html">Saturday, October 31, 2026</a></li>    </ul>
+  </section>
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>131 stories · 8 cross-posts merged · 119 excerpts · 82 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, November 9, 2026 — Page 3</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 313</span>
+      <span>Monday, November 9, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 3</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://asahilinux.org/2026/11/progress-report-7-3/">Progress Report: Linux 7.3 - Asahi Linux</a></h3>
+    <p class="dateline"><span class="badge">L</span>      69 points · by signal-11 · asahilinux.org · <a class="discuss" href="https://lobste.rs/s/4qiair/progress_report_linux_7_3_asahi_linux">discuss</a>
+    </p>
+<p class="lede">Well here we are again. Linux 7.3 is out and it’s been an eventful few months, so let’s get stuck in to another Asahi Linux progress report! As always, upstreaming work continues to progress. Aside from the usual patches for low-level SoC blocks, two major drivers made it on to the list this cycle: macaudio and avd. Getting macaudio ready for submission has been a challenge. The audio subsystem on Apple Silicon devices is rather special, and required quite a number of core ALSA changes to properly support it. Apple also uses special variants of speaker and headset amplifiers that were already supported upstream, and these drivers also needed some pretty significant modifications. We have previously discussed a lot of this work at length, and we are finally in a position where we can …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://acid.vegas/blog/the-port-that-does-not-exist/header.png" alt="The Port That Does Not Exist" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://acid.vegas/blog/the-port-that-does-not-exist/">The Port That Does Not Exist</a></h3>
+    <p class="dateline"><span class="badge">L</span>      69 points · by drmorr · acid.vegas · <a class="discuss" href="https://lobste.rs/s/osqswf/port_does_not_exist">discuss</a>
+    </p>
+<p class="lede">Port 0 is the port you are not supposed to use, so nobody looks there. So we put an IRC network on it. Then I got curious whether anyone else had, and scanned all of IPv4 for port 0. Turns out we weren&#39;t alone, and some of our neighbours really shouldn&#39;t be there. Ask any program to listen on port 0 and it will hand you a socket on port 47193...or 58037...or whatever the kernel felt like that day. Port 0 is not a port you can have. It is the number you pass when you want the operating system to pick one for you. But a TCP header is just bytes. The destination port field is 16 bits wide, and 0x0000 fits in 16 bits as well as anything else does. Nothing on the wire stops a packet from being addressed to port 0. Your tools will refuse it, your browser will block it, and your scanner&#39;s …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=50427934">Show HN: DBDelve – Open-Source DB Client Made with Rust and GPUI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      65 points · by shayan_abbas · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50427934">discuss</a>
+    </p>
+<p class="lede">Hi HN, I’m Shayan and a few months ago I started building a DB Client DBDelve with a focus on performance and just making something that feels good to use (in the spirit of Zed, Ghostty, and other tools that just feel pleasant to use). For my workflow I’ve always looked for performance, especially since some time ago I had a really outdated machine and any kind of bloat was really noticeable, I remember using DBeaver and it just crashing on me multiple times, I also had to use postGIS which just made it worse. I migrated all my essential dev tools to use the ones with performance in mind (Zed, Ghostty etc) but the only thing that was missing was DB Client. The main choices everyone has are DBeaver which is a memory hog and an overkill for most of the tasks imo. The other options like …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://op.tngl.io/meridian/">Meridian — an experimental web browser built on Servo and GPUI</a></h3>
+    <p class="dateline"><span class="badge">L</span>      63 points · by icy · op.tngl.io · <a class="discuss" href="https://lobste.rs/s/j63dme/meridian_experimental_web_browser_built">discuss</a>
+    </p>
+<p class="lede">Meridian is a web-browser for MacOS built on GPUI and Servo . Meridian is already quite useful to browse websites that are light on javascript and layouting features. The browser is highly configurable: fonts, keybinds, colors, tabs and all. The project is developed on Tangled , all contributions are welcome, please do browse the list of open issues if you are looking to contribute! Meridian supports the following features: Under the hood, Meridian is written in Rust and built on GPUI and Servo. Web pages and browser state is managed by Servo. The browser&#39;s chrome is drawn by gpui , the UI framework behind the Zed editor. The glue code to interface servo with gpui lives in separate library, gpui-servo , which exposes Servo as an ordinary gpui component, so anybody can now write a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://sunshowers.io/images/4-aaaaaa-card.jpg" alt="*sshole, or when are we finally going to get rid of C?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sunshowers.io/posts/sshole/">*sshole, or when are we finally going to get rid of C?</a></h3>
+    <p class="dateline"><span class="badge">L</span>      63 points · by novedevo · sunshowers.io · <a class="discuss" href="https://lobste.rs/s/owsnms/sshole_when_are_we_finally_going_get_rid_c">discuss</a>
+    </p>
+<p class="lede">Yet another day, yet another vulnerability in core C code. This one happened due to two different conditions using the same sentinel value: The two points combined, along with sshd hashing login attempts for locked accounts to avoid timing leaks, mean that on musl systems without PAM (like, oh, the official Alpine AWS image ), an unauthenticated user now gets a (possibly root!) shell on your computer. See this Alpine advisory for more details. This is not a memory safety vulnerability; rather, it is one of those issues that, people often say, languages with better type systems won’t save you from. This is true! You can very well write a Rust function that returns &#34;*&#34; if the password is too long. But the big difference between C and Rust in this regard is that the norms of the Rust …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://e-means.github.io/assets/emeans_vs_lloyd_readme_v9.png" alt="E-means: 10x faster k-means at equal loss" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://e-means.github.io/">E-means: 10x faster k-means at equal loss</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      60 points · by porridgeraisin · e-means.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50429734">discuss</a>
+    </p>
+<p class="lede">100,000 datapoints in 200 clusters, two wide Gaussians and three small ones, cut off at a box, on a light uniform background. Lloyd has 1 update against 97 per epoch for e-means. Across a large range of scales and datasets , e-means reaches a test loss below Lloyd&#39;s at 25 epochs, in 1.2 to 3 epochs. Measured end to end, that is a 10–45× wall-clock reduction on GPU against the state-of-the-art Lloyd implementation (Flash-KMeans [2] ), and 8–15× on CPU against Faiss [1] . Speed and quality usually trade against each other in k-means, while e-means achieves both better speed and loss. Given a fixed dataset of n points X = {x 1 , ..., x n } ⊂ R d and an integer k , the k-means problem is to find k centroids C = (c 1 , ..., c k ) minimizing the mean squared distance between each point and its …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://maurycyz.com/projects/badcert/">Horrible public key tricks</a></h3>
+    <p class="dateline"><span class="badge">L</span>      55 points · by rrampage · maurycyz.com · <a class="discuss" href="https://lobste.rs/s/txkq8s/horrible_public_key_tricks">discuss</a>
+    </p>
+<p class="lede">So, I&#39;ve always been somewhat annoyed at SSL/TLS. It requires everyone to go through a complex &#34;ACME&#34; dance just to put up a public website. Worse, certificates expire every few months, so it&#39;s not a one and done thing: even with automation, maintaining a certificate requires care to ensure the ACME client always has access to DNS records or the web server. ... and the whole system doesn&#39;t even work because certificates are issued over plaintext connections, and trusted certificate aurthorities use very secure keys like &#34;4&#34; There is prior art of protest SSL implementations , but I do actually want to encrypt web traffic. Passive eavesdropping is a real risk... but preventing it doesn&#39;t require the whole certificate thing: therefore, the best choice is a protest certificate. The only part …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://maurycyz.com/misc/email/">A bit about email</a></h3>
+    <p class="dateline"><span class="badge">L</span>      54 points · by robalex · maurycyz.com · <a class="discuss" href="https://lobste.rs/s/jnz4v5/bit_about_email">discuss</a>
+    </p>
+<p class="lede">First, some terminology; A typical email will past through many different components on the way to the recipient: (These aren&#39;t all necessarily different machines or even different programs, but it is helpful to name each step.) The mail user agent (MUA) runs on the user&#39;s computer and is what they use to send or read messages. Let&#39;s say they send something: that message will be uploaded to to the submission agent (MSA) which checks the user&#39;s password before handing off to the mail transfer agent (MTA). The transfer agent&#39;s job is to talk to other mail servers and get the message to the receiving side&#39;s MTA. Once received, it&#39;s given to the local delivery agent (LDA) to be stored until the recipient checks their email. The name &#34;LDA&#34; is non-standard, but I use it to avoid having four …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://amutable.com/blog/systemd-loves-rust/opengraph-image?df4a8dd696d0f636" alt="systemd loves Rust" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://amutable.com/blog/systemd-loves-rust">systemd loves Rust</a></h3>
+    <p class="dateline"><span class="badge">L</span>      52 points · by lorenzleutgeb · amutable.com · <a class="discuss" href="https://lobste.rs/s/62loik/systemd_loves_rust">discuss</a>
+    </p>
+<p class="lede">By Christian Brauner and Lennart Poettering systemd recently merged support for Rust . Going forward it will be possible to write systemd components in Rust in addition to C. The choice to integrate another core language into a large and established project is always contentious. We have seen the same when Rust was adopted as an additional language for the Linux kernel . As we know by now, that has mostly been successful. Rust support in systemd has two possible meanings: The project came to the conclusion that (1) is acceptable while (2) is (currently) not, as the scope and requirements are very different between these two options. Option (2) is complicated. The details are best left to another blog post but the gist is that we require first-class shared library support in Rust. In the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://isocpp.org/files/papers/P4454R0.pdf">Herb Sutter: When a language’s creator and its owners strongly disagree: C++26 post-DIS, historical experience, and paths forward</a></h3>
+    <p class="dateline"><span class="badge">L</span>      50 points · by mort · isocpp.org · <a class="discuss" href="https://lobste.rs/s/vlagyq/herb_sutter_when_language_s_creator_its">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.infineon.com/etc.clientlibs/ifx/components/common/mainnavigation/clientlibs/resources/logo.svg" alt="Infineon marks innovation milestone with 300mm power silicon carbide wafer" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.infineon.com/press-release/2026/infpr202611-028">Infineon marks innovation milestone with 300mm power silicon carbide wafer</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      47 points · by sshah03 · infineon.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50429430">discuss</a>
+    </p>
+<p class="lede">Munich, Germany – 09 November 2026 – Infineon Technologies AG (FSE: IFX / OTCQX: IFNNY) has successfully processed 300-millimeter silicon carbide wafers into functional power devices at its fab in Villach, Austria. Infineon is the first company to pioneer this innovation milestone in a full-scale semiconductor fab environment. It was realized by utilizing existing silicon (Si) manufacturing equipment. This early achievement of functional power devices reflects Infineon’s strong focus on providing customers with a comprehensive portfolio of high-performance SiC power semiconductors and ensuring long-term supply. Chip production on 300 mm wafers is technologically more advanced and significantly more efficient than 200 mm wafers, since the larger wafer diameter offers 2.3 times more chips …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://leosmith.wtf/blog/not-so-secure-boot.html">Borrowing a Microsoft-signed shim to abuse Secure Boot on corporate hardware</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      45 points · by p4p1 · leosmith.wtf · <a class="discuss" href="https://news.ycombinator.com/item?id=50423151">discuss</a>
+    </p>
+<p class="lede">Halli hallo everyone, this blog post is a continuation of the p3ng0s series that has been going on on this blog for a few years. This is my latest research on how secure boot works that I did back in April of this year and this blog post is a tease for p3ng0s V2 release that will happen probably in 1 Year from now. Before I start on this post I want to explain something really quick I will focus the rest of this year and early next year on finishing maldev academy writing a small research paper on PIC malware and doing CRTO 1 + 2. I really want to add a bunch of stuff to p3ng0s but first I need to finish the stuff I just mentioned so that I am not mentally distracted when doing p3ng0s V2. I really wan&#39;t to push the physical security side of the OS and I have a bunch of great ideas. This …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="http://pigshell.com/v/0.6.4/">Pigshell: Unix the Web</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      45 points · by pbohun · pigshell.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50426831">discuss</a>
+    </p>
+<p class="lede">pigshell - unix the web Loading kernel... unix the web Follow @pigshell Github Blog Data Sources Documentation README Psty User Guide Using GDrive Examples About Terms Privacy</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://goldstein.lol/posts/deno-security/">I’m not a fan of Deno’s security model (2024)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      44 points · by ThinkChaos · goldstein.lol · <a class="discuss" href="https://lobste.rs/s/sh62d1/i_m_not_fan_deno_s_security_model_2024">discuss</a>
+    </p>
+<p class="lede">this has been bothering me for a while now, so I want to write down my thoughts so I can get it out of my head and move on. we’re gonna talk about how Deno approaches security, specifically with its permissions system, and why I think this approach is fundamentally insecure and misleading. Deno is a language runtime for JavaScript. it consists of a standard library, a package manager, a TypeScript transpiler and a bunch of other stuff that’s not important for our story. it’s not a JavaScript implementation , so it does not interpret or compile JavaScript, it reuses V8 for that. one of the flagship features of Deno is its permission system (it’s under the “Secure by default” header on their landing page ). the idea is simple: as JS code running in Deno needs the standard library to access …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="http://mamememo.blogspot.com/2010/09/qlobe.html">The Qlobe: Rotating Quine (2010)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      42 points · by niceguitars · mamememo.blogspot.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50420599">discuss</a>
+    </p>
+<p class="lede">My Quines are sometimes specialized for Japanese. But to attend RubyConf, I should write &#34;global&#34; Quines. This quine turns 45 degrees when executed; thus, it will come around when executed eight times (see below). You can make it any-degree turn by giving an integer as an command-line argument. You are a mad man. You are completely insane. Very, very impressive. Wow. I get a syntax error in line 1 about the token &#39;)&#39;,i don&#39;t have much knowledge of ruby,but i want to experience this amazing program,can someone help me? Crane: What version of ruby are you using? I tested it with ruby 1.8.7-p72 and 1.9.2-p0. I tried it with ruby 1.9.1p378 the total error message is: ./earthrotate.rb: line 1: syntax error near unexpected token `)&#39; ./earthrotate.rb: line 1: `v=0000;eval$s=%q~d=%!^LcfYoP&#39; …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-09-p2.html">‹</a><a href="2026-11-09.html">1</a><a href="2026-11-09-p2.html">2</a><span class="pg-current">3</span>
+<a href="2026-11-09-p4.html">4</a><a href="2026-11-09-p5.html">5</a><a href="2026-11-09-p6.html">6</a><a href="2026-11-09-p7.html">7</a><a href="2026-11-09-p8.html">8</a><a href="2026-11-09-p9.html">9</a><a class="pg-arrow" href="2026-11-09-p4.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 2 cross-posts merged · 122 excerpts · 79 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

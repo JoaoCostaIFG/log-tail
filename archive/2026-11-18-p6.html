@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 18, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 322</span>
+      <span>Wednesday, November 18, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://quuxplusone.github.io/blog/2026/11/16/named-arguments-in-c/">C’s designated initializers give us named arguments</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by nytpu · quuxplusone.github.io · <a class="discuss" href="https://lobste.rs/s/kktn5b/c_s_designated_initializers_give_us_named">discuss</a>
+    </p>
+<p class="lede">C’s designated initializers give us named arguments In my previous post I talked about C++’s “relatively nerfed” form of designated initializers. This time I want to show you a neat thing you can do with C’s full-power designated initializers. I first saw this pattern in Ben Klemens’ book 21st Century C (2014), pages 226–228. ( Godbolt. ) This idiom gives us named, defaultable arguments with natural function-call syntax. It relies on two features of C’s designated initializers that C++20 didn’t adopt: They can appear in any order: (struct IdealVolumeArgs){ .atm=1, .moles=2 } means the same thing as (struct IdealVolumeArgs){ .moles=2, .atm=1 } . The same designator can appear multiple times, and only the last one “sticks”: (struct IdealVolumeArgs){ .atm=1, .moles=2, .atm=3 } means the same …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lisper.cc/ideas/entangle.html">Sexp Matrix</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by dkarvik · lisper.cc · <a class="discuss" href="https://lobste.rs/s/zqidnu/sexp_matrix">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb full" src="https://pbs.twimg.com/media/HXbAtieXIAAnOn5?format=webp&amp;name=large" alt="Is AI a bicycle for the mind, or a car?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://twitter.com/kouhxp/status/2123096768996892959">Is AI a bicycle for the mind, or a car?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by mrkn1 · twitter.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50548667">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.solidjs.com/og/blog/solid-2-0-the-long-hold.png" alt="Solid 2.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.solidjs.com/blog/solid-2-0-the-long-hold">Solid 2.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      13 points · by bio · solidjs.com · <a class="discuss" href="https://lobste.rs/s/dpvrbv/solid_2_0">discuss</a>
+    </p>
+<p class="lede">5 years is a long time to work on anything. It took 5 years from my first commit of Solid to 1.0, and it&#39;s been another 5 since then. A lot changes in 5 years. Solid 1.0 made a bet that fine-grained reactivity, signals, was the right foundation for building user interfaces. Back then it was an unusual position. Today signals are everywhere. In Angular, in Svelte&#39;s runes, in Vue Vapor, and in a proposal before TC39 to put them in the language itself. It even pushed the conversation into React&#39;s compiler. More recently that conversation has shifted to AI, arguably an even larger change in how we build. But Solid has always been about building the right things; the performant things. So for us the mission hasn&#39;t really changed all that much. The things that we identified as standout about …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://www.rfc-editor.org/api/v1/meta-thumbnail/rfc2675.png" alt="RFC 2675: IPv6 Jumbograms" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.rfc-editor.org/info/rfc2675/">RFC 2675: IPv6 Jumbograms</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by caminanteblanco · rfc-editor.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50548214">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bytes.zone/posts/what-is-the-randomart-image-for/">What is the randomart image for? (2023)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      12 points · by TuringTux · bytes.zone · <a class="discuss" href="https://news.ycombinator.com/item?id=50506430">discuss</a>
+    </p>
+<p class="lede">Brian Hicks, February 20, 2023 When you generate an SSH key (like I did when looking at signing commits with SSH keys ), you get a “randomart image” from ssh-keygen . These things: That looks nice, and I appreciate art in my terminal, but what is it for? So, let&#39;s see… first, I looked in man ssh-keygen , because that&#39;s the context in which I see these, but it doesn&#39;t have any hits for randomart or art . But on a hunch I tried man ssh , and that page has some info! Here&#39;s what it says: Because of the difficulty of comparing host keys just by looking at fingerprint strings, there is also support to compare host keys visually, using random art. By setting the VisualHostKey option to “yes”, a small ASCII graphic gets displayed on every login to a server, no matter if the session itself is …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtLHm05FB2LmoHZMLAD5nDmfo_G2tdIqO4URdUwukuooBCVwIJhKC2rUDbDNtsGB8_lwium1MEUD1CxYcix4WMVpCoS58DJivMBSmb9LcIGswQu0nKUNE_sbfH8EsgFfhPrKEgEY7MJHWKyhFqX61ne-AOFKnTNuqIkWez1bec-kq-3Cz8BFbPLrgiV8k/s1600/redhat.jpg" alt="Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html">Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry</a></h3>
+    <p class="dateline"><span class="badge">L</span>      11 points · by dasm · thehackernews.com · <a class="discuss" href="https://lobste.rs/s/qmofba/critical_red_hat_quay_flaw_lets_attackers">discuss</a>
+    </p>
+<p class="lede">A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. Quay enables anonymous access by default, and while it is enabled, the attacker needs no account. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The company has released fixed builds for eight Quay 3 branches. The flaw is tracked as CVE-2026-123710 (CVSS score: 9.8). Quay uses keys it trusts to sign the access tokens that allow image pushes and pulls. The flaw lets an attacker add their own key to the keys Quay trusts, with no expiry date. Quay then accepts tokens signed with that key for any repository. With those tokens, an attacker can retrieve private images and any secrets or credentials …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://motif.blog/opengraph-image?4910f9aec0a12f96" alt="Show HN: Motif, a tracker thin enough to be a sticker" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://motif.blog">Show HN: Motif, a tracker thin enough to be a sticker</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      10 points · by prashaant · motif.blog · <a class="discuss" href="https://news.ycombinator.com/item?id=50541835">discuss</a>
+    </p>
+<p class="lede">Fully refundable · Applied to your order You can’t hang a bulky tag on a water bottle. So the tracker went inside the sticker: a printed top, a paper-thin tracker, a sticky back. Open your phone and every sticker shows up as a pin. Tap one to see what it’s on and where it was last picked up. Spot it on the carousel. Check where it is. It already has stickers. Make one useful. Line drawings, botanicals, a few animals. Want something that is only yours? We make custom designs too. Reserve Motif now to unlock our lowest launch price. Fully refundable · Applied to your order Our lowest launch price and a private order link before public sales open. Your dollar goes toward your order. When orders open, we’ll email your private link. You decide whether to order. There are no automatic charges …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://stng.substack.com/p/automatic-checking-of-compiler-correctness">Automatic Checking of Compiler Correctness with E-Graphs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by saulshanabrook · stng.substack.com · <a class="discuss" href="https://lobste.rs/s/hode45/automatic_checking_compiler">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/op51SyyPJmw/maxresdefault.jpg" alt="Safe Systems-programming with Mutable Value Semantics | Dave Abrahams" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=op51SyyPJmw">Safe Systems-programming with Mutable Value Semantics | Dave Abrahams</a></h3>
+    <p class="dateline"><span class="badge">L</span>      9 points · by trousers · youtube.com · <a class="discuss" href="https://lobste.rs/s/jwtvrw/safe_systems_programming_with_mutable">discuss</a>
+    </p>
+<p class="lede">Hylo is a language founded on strict mutable value semantics (MVS). MVS creates opportunities for safety, ease-of-use, and efficiency, while limiting tensions among those properties, and Hylo’s design takes maximum advantage of that synergy. This talk explains what “value semantics” means, why it matters, and how Hylo supports MVS without introducing reference types. It puts Hylo in an evolutionary context with Swift and Rust, and makes some challenging assertions about language design and about the nature of Rust references. Visit https://hylo-lang.org to find out more. 00:00 Introduction &amp; talk overview 02:06 Origins: music software and discovering the STL 04:51 Making the STL exception-safe 07:04 C++ evolution, Boost &amp; BoostCon 09:03 Sean Parent: Value Semantics and Concept-Based …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://news.ycombinator.com/item?id=50548660">Show HN: Mastra Factory, the open-source software factory we use to build Mastra</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      9 points · by codekarate · news.ycombinator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50548660">discuss</a>
+    </p>
+<p class="lede">Hi HN, we&#39;re Shane, Sam, and Abhi. Almost two years ago, we shared Mastra, our open-source TypeScript agent framework, on Show HN: https://news.ycombinator.com/item?id=43103073 . It got a few hundred upvotes; a couple of weeks later our downloads had doubled, and we were off to the races. Today we&#39;re sharing Mastra Factory, the open-source software factory we built to help maintain Mastra itself. At Mastra, we now average nearly 4M downloads per week, and with Factory our team now merges hundreds of PRs a week across the mastra-ai GitHub org. Last week, Factory opened and merged 238 PRs, alongside 630 merged PRs from humans. There&#39;s a lot of debate about what a software factory is. For us Factory is a configurable agentic kanban board that&#39;s @-taggable in Slack. Under the hood, it uses …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://app.poh.org/social-card.png" alt="Show HN: Can an AI Agent Bypass Your Website Security?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://assess.poh.org/">Show HN: Can an AI Agent Bypass Your Website Security?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by timshell · assess.poh.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50548480">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://threedots.tech/images/covers/making-games-in-go-ecs-social.png" alt="Making Games in Go: Entity Component System (ECS)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://threedots.tech/post/making-games-in-go-ecs/">Making Games in Go: Entity Component System (ECS)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by rcalixte · threedots.tech · <a class="discuss" href="https://lobste.rs/s/zoarxd/making_games_go_entity_component_system">discuss</a>
+    </p>
+<p class="lede">Twice a year, we run an online hands-on training on Event-Driven patterns in Go. The time has come! Learn more. I started my last post on making games by saying gamedev is a great hobby for when you don’t do as much coding day-to-day. A few years later, many of us see even less code, so it feels like a good time to give it another shot. This time I talk about ECS, a data-oriented way to structure games. I show it on a small game you can play right in this post. But first, the elephant in the room: Don’t AI agents one-shot full games now? Sure. Why would that stop you from learning something new? Just for fun, focus on the process instead of the outcome. Make a game your way. It’ll make you want to scream “LOOK WHAT I HAVE CREATED!” like Tom Hanks in Cast Away . (Note: there’s no audience …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.sanity.io/images/3tzzh18d/production/121232c3f63150e294a5a8ba55c42d5df13f0689-1200x675.png" alt="Confronting the Limits of Recursive Self-Improvement" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.techpolicy.press/confronting-the-limits-of-recursive-self-improvement/">Confronting the Limits of Recursive Self-Improvement</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      7 points · by JustinHendrix · techpolicy.press · <a class="discuss" href="https://news.ycombinator.com/item?id=50549433">discuss</a>
+    </p>
+<p class="lede">The logo of Anthropic is visible on a laptop screen against a Nasdaq-100 candlestick chart. The company is scheduled to begin trading on Thursday, Nov. 19, 2026. (Photo by Silas Stein/picture-alliance/dpa/AP Images) In 1965, Irving John Good, a mathematician who worked alongside Alan Turing, proposed the concept of the “ ultraintelligent ” machine. “Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man, however clever. Since the design of machines is one of these intellectual activities, an ultraintelligent machine could design even better machines; there would then unquestionably be an ‘intelligence explosion,’ and the intelligence of man would be left far behind,” he wrote. Today, the prospect of an “intelligence …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://spectralorbit.com/assets/screenshots/trium_2.jpg" alt="How I made a custom game engine for Satelital" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://spectralorbit.com/blog/satelital_game_engine">How I made a custom game engine for Satelital</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by abnercoimbre · spectralorbit.com · <a class="discuss" href="https://lobste.rs/s/eklpkn/how_i_made_custom_game_engine_for">discuss</a>
+    </p>
+<p class="lede">For quite a long time, I&#39;ve been working on a puzzle game called Satelital, a rule-discovery game about learning alien logic. As a solo developer, I decided to start this project from scratch. My motivation was to learn the actual fundamentals behind the technology of videogames. This meant I had to build most of the tools I would need myself, including the game engine, renderer, puzzles, editors, UX, design, art and music. Now that I&#39;ve finally managed to release the game, I think it&#39;s a good moment to share how I built it. The main reason I got into programming was the idea of eventually working on games. I spent many years working on web and building mobile apps. It was fun, but I felt like I wasn&#39;t going in the direction I really wanted to. So one day, after listening to every …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-18-p5.html">‹</a><a href="2026-11-18.html">1</a><a href="2026-11-18-p2.html">2</a><a href="2026-11-18-p3.html">3</a><a href="2026-11-18-p4.html">4</a><a href="2026-11-18-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-11-18-p7.html">7</a><a href="2026-11-18-p8.html">8</a><a href="2026-11-18-p9.html">9</a><a class="pg-arrow" href="2026-11-18-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>133 stories · 4 cross-posts merged · 116 excerpts · 85 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

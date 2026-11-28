@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Saturday, November 14, 2026 — Page 4</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 318</span>
+      <span>Saturday, November 14, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 4</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image3-3.webp" alt="Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/">Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      58 points · by wondersky · developer.nvidia.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50497155">discuss</a>
+    </p>
+<p class="lede">Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations connected over ConnectX-8 RDMA serve one model through a single endpoint, with tensor parallelism splitting the model weights and computation across both GPUs. The NVIDIA GLM-5.3 NVFP4 model, a quantized version of Z.ai ’s mixture-of-experts (MoE) model, has 753 billion parameters, with 40 billion activated per token. Sparse activation reduces computation, but all model weights still need to remain available because each token can be routed to different experts. At about 464 GB, the checkpoint exceeds the 252 GB of HBM3e on a single GB300 GPU. This tutorial uses two DGX Stations to keep the weights in GPU memory, with CPU weight …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dvratil.cz/2026/11/hijacking-samsung-tv-smart-hub-ads/">Hijacking Samsung TV Smart Hub Ads</a></h3>
+    <p class="dateline"><span class="badge">L</span>      53 points · by FedericoSchonborn · dvratil.cz · <a class="discuss" href="https://lobste.rs/s/2drgwh/hijacking_samsung_tv_smart_hub_ads">discuss</a>
+    </p>
+<p class="lede">I have a Samsung smart TV from 2022. At some point, the Smart Hub started displaying ads. I think it’s absolutely disgusting that a device that I paid for and own, and that doesn’t use any additional Samsung “free” services is forcing ads on me, just to generate additional revenue for Samsung from an already-sold device. I was blocking the ads via my Pi-hole instance, until I was tinkering with my homelab and networking setup not that long ago and broke something. That caused the ads to start appearing again, which reminded me of their existence. Around the same time, the eMudhra CA certificate fiasco took place, and the “compromised” private key was added to mitmproxy . mitmproxy is an open-source project for inspecting, replaying and modifying HTTP(S) network traffic. Normally, in order …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://ploum.net/files/bikepunk_logo_petit.png" alt="The anti-marketing aspect of the Gemini network" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://ploum.net/2026-11-12-anti-marketing-gemini.html">The anti-marketing aspect of the Gemini network</a></h3>
+    <p class="dateline"><span class="badge">L</span>      53 points · by cgrinds · ploum.net · <a class="discuss" href="https://lobste.rs/s/pty8pn/anti_marketing_aspect_gemini_network">discuss</a>
+    </p>
+<p class="lede">I like Gemini. Not the Google Chatbot but the network that existed before Google named its product. If you are enough of a geek, you may want to give it a try. Eoin is counting the number of &#34;capsules&#34; on the Gemini network. A capsule is the equivalent of a &#34;website&#34; on the Web or a &#34;hole&#34; on Gopher. It’s a personal space, a bunch of pages. Blogs become &#34;gemlogs&#34;. Eoin’s first observation is that the number of active capsules is slowly growing. The network is healthy. But his second observation is really interesting: there’s absolutely no correlation between the number of new capsules in a given month and articles about the Gemini protocol being promoted on the first page of Hacker News. This is a confirmation of what I’ve been trying to explain for years: your metrics and web statistics …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://sunshowers.io/images/og-image.png" alt="Contra &#34;Glue work considered harmful&#34;" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sunshowers.io/posts/glue-work/">Contra &#34;Glue work considered harmful&#34;</a></h3>
+    <p class="dateline"><span class="badge">L</span>      51 points · by nrposner · sunshowers.io · <a class="discuss" href="https://lobste.rs/s/f6u0cg/contra_glue_work_considered_harmful">discuss</a>
+    </p>
+<p class="lede">Sean Goedecke, Glue work considered harmful (emphasis here, and in the rest of the quotes, in original): So why doesn’t glue work get you promoted, if it’s so crucial to shipping projects? Are companies stupid? Are they deliberately leaving value on the table? No, I don’t think so. Companies don’t reward glue work because they don’t want you prioritizing it. And they don’t want you prioritizing it because they want you shipping features. Glue work is hard. If you’re capable of doing glue work well, they want you to use that ability to deliver projects instead of improving general efficiency. This is an argument to settle for mediocrity. If you’re like most people who have worked in big tech, it is plainly obvious to you that they are leaving value on the table. (Whether it is deliberate …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://gitlab.com/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" alt="Show HN: A terminal-native idle factory game, written in Rust with ratatui" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://gitlab.com/snipedbywifi/terminactory">Show HN: A terminal-native idle factory game, written in Rust with ratatui</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      51 points · by snipedbywifi · gitlab.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50497132">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://antonz.org/probabilistic-data-structures/cover.png" alt="Probabilistic data structures in Go" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://antonz.org/probabilistic-data-structures/">Probabilistic data structures in Go</a></h3>
+    <p class="dateline"><span class="badge">L</span>      50 points · by cgrinds · antonz.org · <a class="discuss" href="https://lobste.rs/s/xca2qj/probabilistic_data_structures_go">discuss</a>
+    </p>
+<p class="lede">Probabilistic data structures give you approximate answers to questions about the data they handle. Does the set contain a certain item? How many unique items are in the collection? Which items appear most often? Unlike deterministic structures like sets and frequency tables, the answers might not be exact, but in return, you can drastically reduce memory usage. In this post, we&#39;ll talk about what probabilistic structures are, how they work, and what kinds of guarantees they provide. I&#39;ll also introduce unsure — a package that implements these structures in Go. It&#39;s simple (the core logic for each data structure is 100–300 LOC), fast (usually several times faster than other implementations), and has no dependencies except for the standard library. A Bloom filter is a set that trades …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://decoded.legal/blog/content/images/decoded.legal_logo.png" alt="Running a law firm on Free software (2026 edition)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/">Running a law firm on Free software (2026 edition)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      43 points · by FedericoSchonborn · decoded.legal · <a class="discuss" href="https://lobste.rs/s/ezl1sa/running_law_firm_on_free_software_2026">discuss</a>
+    </p>
+<p class="lede">I started running decoded.legal - a small English law firm, focussing on Internet, telecoms, and tech law - on Free software, both client and server side, around five years ago. I have used Free software in my personal life for a lot longer than that. Someone asked me recently what I am doing now, and, while it is mostly the same, some bits have changed. So here is the 2026 update. I am still using Debian, with GNOME, and it works well for me. I’m using it on a ThinkPad X1 Yoga Gen 6 , as my primary machine, and, being a “Yoga” version, I rather like being able to fold the screen back and write on it to mark up documents. ( Here are my thoughts on the different “Active Pens” available for it .) However, the machine itself seems to have a hardware problem with the Thunderbolt / USB-C ports …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://herecomesthemoon.net/2026/11/cpp26-failed-the-national-bodies/images/dithers/bjarne_dithered.png" alt="For the first time, a C++ standard failed to pass the national bodies" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://herecomesthemoon.net/2026/11/cpp26-failed-the-national-bodies/">For the first time, a C++ standard failed to pass the national bodies</a></h3>
+    <p class="dateline"><span class="badge">L</span>      40 points · by mond · herecomesthemoon.net · <a class="discuss" href="https://lobste.rs/s/lrpb0m/for_first_time_c_standard_failed_pass">discuss</a>
+    </p>
+<p class="lede">It looks like it happened! A historic first, for better or worse. This is a sign that C++ is (still) struggling with its governance (see a previous article on cultural issues within C++ here ). This is a big deal even if you do not care about programming languages. C++ is arguably the most important programming language in existence. Your computer runs on C or C++. The web browser you are using to read this is written in C++. ~All programming languages depend on C++ (often through LLVM). Likewise, ~all websites with performance requirements (e.g. YouTube) depend on C++, ~all data storage, game engines, finance, etc. In a world that is drowning in exciting new vulnerabilities in ~all software, the ability of C++ to change and adjust to changing times affects you. Let’s take a step back and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg" alt="Advancing science and engineering with Antigravity&#39;s /teamwork" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/">Advancing science and engineering with Antigravity&#39;s /teamwork</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      39 points · by acossta · research.google · <a class="discuss" href="https://news.ycombinator.com/item?id=50496811">discuss</a>
+    </p>
+<p class="lede">Vahab Mirrokni, Google Fellow and VP, Google Research We share recent results from Antigravity’s /teamwork multiagent systems, which enhance human-AI collaborations to solve open problems across mathematics, chemistry, systems software, and ML engineering. All of this work is done in collaboration with human experts, and we are making these tools available externally. Over the past several weeks, teams across Google and academic partner institutions have tackled open problems in math, science, and complex systems engineering that had remained open for years. Using Gemini 4 Argon , Gemini 4 Carbon , Gemini 4 Hydrogen and multi-agent workflows such as Antigravity’s /teamwork (building on various Gemini models), these collaborations have produced new innovations across information theory …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/">Someone&#39;s impersonating this blog</a></h3>
+    <p class="dateline"><span class="badge">L</span>      38 points · by classichasclass · mattbee.mataroa.blog · <a class="discuss" href="https://lobste.rs/s/wqml56/someone_s_impersonating_this_blog">discuss</a>
+    </p>
+<p class="lede">I was googling the name of my website, as one does occasionally, and was surprised to see a link to one of my blog posts on mataroa.site . At first I figured it was just an alternate domain name for mataroa.blog , but no, when you type mataroa.site into your browser, it shows you my blog . It&#39;s the only thing that&#39;s hosted there. My next thought was that someone bought me a URL, but that can&#39;t be the case either: using a custom domain on mataroa requires a premium account, which I don&#39;t have. For anything but a plain redirect, I would have needed to set up the A record my end. I then realized that the version of my blog on that site doesn&#39;t have the latest post . The most recent update on the homepage is my Aug 21 entry . When you scroll down and start clicking some of the older links …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://antithesis.com/optimized-images/dadb612e5ca2add2a753b070b4d0ff187f486498a80d071e24a836d10576f134.jpeg" alt="Beating the frontier on NetHack" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://antithesis.com/blog/2026/nethack/">Beating the frontier on NetHack</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by hwayne · antithesis.com · <a class="discuss" href="https://lobste.rs/s/kb3fs1/beating_frontier_on_nethack">discuss</a>
+    </p>
+<p class="lede">November 13, 2026 | Paul Ryan , Member of Technical Staff | Mikail Khan , Research intern | Will Wilson , Co-founder and CEO That’s not quite true for computer game history (though NetHack was very early and very influential ), but it’s true for the history of Antithesis. The company started when I got lunch with Dave and said: “let’s make the FDB simulator but for everything ” and he was like: “no, let’s make a fuzzer so smart it can beat NetHack,” and then we gradually realized that we were actually talking about the same thing. In the years that followed, NetHack continued to inspire and challenge us. The first Antithesis VCS repo (long since deleted) was called “fuzzhack” because it was a fuzzer for NetHack. Before we built our deterministic hypervisor , we tried Hermit-style …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://stoppels.ch/2026/11/12/paths-in-pieces.html">Paths in pieces</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by stabbles · stoppels.ch · <a class="discuss" href="https://lobste.rs/s/yrpo2q/paths_pieces">discuss</a>
+    </p>
+<p class="lede">Many [1] [2] [3] [4] [5] [6] [7] [8] [9] Linux distributions and package managers audit just-built binaries for non-relocatable absolute paths. If a binary contains a path /path/from/build/machine , it might not run on the end-user&#39;s machine. Now, a basic grep on the binary, or a slightly more sophisticated using GNU binutils&#39;s strings will detect these paths, right? The answer is no , at least when using GCC and targeting x86-64 : you should not assume that string constants end up literally in the binary. In this C++ source we create a std::string from a string constant: Compile with GCC 12 or later and run, which prints the path: But the path occurs precisely 0 times in the binary itself: Surely these bytes must be part of the binary somewhere ? Let&#39;s run strings on it and grep just for …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro/">ML Modules for Mere Mortals</a></h3>
+    <p class="dateline"><span class="badge">L</span>      30 points · by abhin4v · thunderseethe.dev · <a class="discuss" href="https://lobste.rs/s/mgiv0i/ml_modules_for_mere_mortals">discuss</a>
+    </p>
+<p class="lede">I think everyone can agree code needs to be modular. Modularity lets us reason locally about our code no matter how big it grows. However, no one seems to agree on how code should be modular. There are a bunch of different approaches and each new language seems to bring their own spin on it. Today we’re going to talk about a pretty old spin: ML Modules. ML here stands for Meta Language, as seen in SML and OCaml (and not machine learning). Despite SML first appearing in 1983, ML Modules have not caught on. OCaml is the sole production language you’ll find with an ML module system, and at the height of its popularity it’s niche. This is a shame because ML modules have a lot to offer. We’re going to talk about what ML modules are and then touch a little on why ML modules are. Who better …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/119eb287207d62cccccbf5b8716850746a15b5fdc4f7fd4c633f2432bfdf176d/paul-nameless/agweb" alt="Show HN: Agweb – a browser for agents that stays out of your way" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/paul-nameless/agweb">Show HN: Agweb – a browser for agents that stays out of your way</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      29 points · by paul_nameless · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50497147">discuss</a>
+    </p>
+<p class="lede">A browser for coding agents on macOS, built on WebKit (Safari&#39;s engine). I run several coding agents at once, and Playwright&#39;s Chrome windows kept stealing my keyboard, while headless browsers got blocked by some sites and left me guessing what went wrong. agweb is one window that never takes focus: agents drive it from the shell with agweb , a playwright-cli-style command, and you watch them all live. Idle tabs are suspended: on my Mac five open pages sit at 0% CPU, where Chrome&#39;s GPU process kept five to seven cores busy. To build from source instead (Xcode 26 or later): The click&#39;s reply already says what it did, so the agent needs no second snapshot: agweb help lists every command. Settings (⌘,) has text size, dashboard columns, a CPU and memory readout and the ad blocker switch. Same …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arsh.zip/north-east-arrow/og.png" alt="The curious case of the north-east arrow" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arsh.zip/posts/north-east-arrow/">The curious case of the north-east arrow</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by arshxyz · arsh.zip · <a class="discuss" href="https://news.ycombinator.com/item?id=50466069">discuss</a>
+    </p>
+<p class="lede">A few days ago I was scrolling through HN when I saw a landing page that gave me a little deja vu. It was for KetchUp , a SketchUp alternative. I remember playing with Sketchup back when it was still a Google-branded program running on my school’s Win7 machines, but that wasn’t the only reason the landing page looked familiar. It was the north-east arrow (↗) littered everywhere. 3 links to the /play/ page all had the arrow (“Try in browser ↗”, “Open the workspace ↗”, “Let’s make something ↗”). While building Timewarp , I noticed that Astra would sprinkle this Unicode character everywhere, and I would shout at it: “No! Arrows only for external links!” I had a hunch that Astra was the culprit here too, since I’ve mostly been using Opus, Sonnet and DeepSeek for the last few weeks and had …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-14-p3.html">‹</a><a href="2026-11-14.html">1</a><a href="2026-11-14-p2.html">2</a><a href="2026-11-14-p3.html">3</a><span class="pg-current">4</span>
+<a href="2026-11-14-p5.html">5</a><a href="2026-11-14-p6.html">6</a><a href="2026-11-14-p7.html">7</a><a href="2026-11-14-p8.html">8</a><a href="2026-11-14-p9.html">9</a><a class="pg-arrow" href="2026-11-14-p5.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>127 stories · 7 cross-posts merged · 118 excerpts · 85 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 25, 2026 — Page 7</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 329</span>
+      <span>Wednesday, November 25, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 7</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://ii4gsp.github.io/iterm2-rce/">iTerm2 Arbitrary Command Execution via Kitty Image Protocol APC Response Injection</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by nortti · ii4gsp.github.io · <a class="discuss" href="https://lobste.rs/s/j66n8x/iterm2_arbitrary_command_execution_via">discuss</a>
+    </p>
+<p class="lede">iTerm2’s Kitty image protocol implementation has an arbitrary command execution vulnerability in the file transmit error response path. An APC escape sequence embedded in any file is consumed by the VT100 parser and does not appear in the cat output itself, but the Kitty file transmit error response preserves literal newlines from a crafted file path and writes them to PTY stdin — the shell interprets these newlines as command separators, resulting in arbitrary command execution. This is a logic bug — no memory corruption or race condition required — and is 100% reproducible. It works on a default iTerm2 installation with no configuration changes, and triggers on all shells including bash, zsh, and fish . Three independent issues combine into a single exploit chain: (1) the APC handler …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://yogthos.net/posts/2026-11-23-b+trees.html">Swapping Jolt&#39;s sorted collections to a B+tree</a></h3>
+    <p class="dateline"><span class="badge">L</span>      8 points · by Yogthos · yogthos.net · <a class="discuss" href="https://lobste.rs/s/wv9nhw/swapping_jolt_s_sorted_collections_b_tree">discuss</a>
+    </p>
+<p class="lede">Until recently, sorted-map and sorted-set in Jolt were a straight port of Clojure&#39;s PersistentTreeMap , which is backed by a persistent red-black tree. Using a red-black tree has worked well for Clojure, and it provides a solid foundation for backing these data structures. However, red-black trees have a downside, which is that every entry gets its own small node, meaning that every step of a lookup follows a pointer to a different place in memory. So, naturally I got curious to see if a different data structure could be used for the same job which might have a lower overhead. Turns out that a red-black tree can indeed be swapped out for a B+tree here. Updating Jolt&#39;s sorted collections along with the java.util.TreeMap and TreeSet shims to use a persistent B+tree dropped peak memory by …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://spendgap.ai/">Show HN: Free tool to collect invoices and spot forgotten subscriptions</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      8 points · by make_it_sure · spendgap.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50641746">discuss</a>
+    </p>
+<p class="lede">Find missing invoices, spot wasted money on software, catch price rises and renewals, and get the emails to your vendors already written. Pick what you want for each tool. Spendgap writes the email from your bills, and you send it from your own address. An email to your vendor with what you pay, what went up and when it renews. Change anything, then send it. Your own AI finds tools that fit, and there&#39;s an email ready for each vendor you&#39;d like an offer from. When to cancel to skip the next charge, where to do it, and an email if there&#39;s no button. Then we watch that the charges stop. Overlapping tools, double charges and cancelled tools that keep billing. Your AI collects the invoices you already have, or you forward them. A forwarding rule then picks up each new one. We send your …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blueberrywren.dev/blog/anf-mutable/">Flat/non-higher-order construction of ANF via mutable holes</a></h3>
+    <p class="dateline"><span class="badge">L</span>      7 points · by abhin4v · blueberrywren.dev · <a class="discuss" href="https://lobste.rs/s/n0itvf/flat_non_higher_order_construction_anf">discuss</a>
+    </p>
+<p class="lede">This post will describe an algorithm for constructing an ANF/similar IR from a functional-like base language with no closure usage, and with no related excess space requirements. This algorithm is as far as I know not new, and has apparently been known in imperative compilation for a while. However, I admittedly have no source for this, nor have I seen it described for functional-like languages. Thanks to Ryan Brewer and rpjohnst for their inspiration on this. If you are only interested in code, please skip to Implementation. First, let us describe our input and output languages. Our input language will look like this: This is meant to echo some simple functional programming language, and contains all the elements needed to demonstrate the algorithm. Our output language will look like a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dl.acm.org/doi/10.1145/3828523.3857112">SeaStore: Redesigning Ceph’s Storage Backend for CPU-Efficient NVMe Performance</a></h3>
+    <p class="dateline"><span class="badge">L</span>      6 points · by shraddhaag · dl.acm.org · <a class="discuss" href="https://lobste.rs/s/w3zni2/seastore_redesigning_ceph_s_storage">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://lightscale.ai/media/og-image.jpg?v=3" alt="Show HN: Lightscale AI – A language for LLMs to write business software" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lightscale.ai/">Show HN: Lightscale AI – A language for LLMs to write business software</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      6 points · by luc-lightscale- · lightscale.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=50639615">discuss</a>
+    </p>
+<p class="lede">Now with free hosting Prompting is always free Describe the software you need: a CRM, a web shop, applicant tracking, or any other business tool. Lightscale AI builds it for you, with secure sign-in, access control, and protected data built in. Hosted in Switzerland. Free to build. Create and refine your application for free, and host your first one free in Switzerland. Hosting further applications and source download cost CHF 50 a month per project, each. Describe your software Say what should change From HR to finance to sales: purpose-built tools that take the friction out of everyday processes. Employees request PTO, the software checks for clashes in the team, their manager approves, and the balance and team calendar update automatically. “ Add the travel costs to each invoice. ” …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i.ytimg.com/vi/Vi5M-uD2x_U/maxresdefault.jpg" alt="Go Without Wires: TinyGo on ESP32" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.youtube.com/watch?v=Vi5M-uD2x_U">Go Without Wires: TinyGo on ESP32</a></h3>
+    <p class="dateline"><span class="badge">L</span>      5 points · by hartzell · youtube.com · <a class="discuss" href="https://lobste.rs/s/qrhnbc/go_without_wires_tinygo_on_esp32">discuss</a>
+    </p>
+<p class="lede">How can Go, the same language that runs the cloud, also run on the ESP32? Thanks to TinyGo, the Go compiler for small places! We will explore some of the ways you can use TinyGo on Espressif processors for wireless communication. An aerial object may be involved...</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://techcrunch.com/wp-content/uploads/2026/11/Image-from-iOS.jpg?resize=1200,900" alt="Can a TV be too large? An investigation" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://techcrunch.com/2026/11/22/can-a-tv-be-too-large-an-investigation/">Can a TV be too large? An investigation</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by jomon003 · techcrunch.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50608175">discuss</a>
+    </p>
+<p class="lede">For the past couple of years, I’ve wanted to upgrade my home entertainment situation from the humble trappings of my long-sufficient 55-inch TCL smart TV to the model much coveted by cinephiles the world over: the OLED. The organic light-emitting diode is a specific monitor technology that has really changed the TV industry. Unlike an LED TV, which creates images by shining a backlight through a panel of pixels, OLEDs leverage millions of self-lighting pixels, which provides significantly better pixel control and can generate a much more nuanced image with deeply vibrant colors and a more intense light and shadows. They are also significantly more expensive, which is one reason that I’ve held off on investing in one for years. However, this year I couldn’t wait any longer. I finally …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.modelxare.com/">Show HN: ModelXare – Decentralized AI Models</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by sachaa · modelxare.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50634489">discuss</a>
+    </p>
+<p class="lede">modelXare by weXare: decentralized AI. Small models that run on your own laptop, shared by people, owned by no lab.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/f9/3a/42f93ada-6684-98bc-2a12-5aae8942ce3e/Placeholder.mill/1200x630wa.jpg" alt="Show HN: Nemos – one searchable library for links, screenshots and notes (iOS)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://apps.apple.com/us/app/nemos-second-brain-memos/id6791134304">Show HN: Nemos – one searchable library for links, screenshots and notes (iOS)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by brainybeacon · apps.apple.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50634543">discuss</a>
+    </p>
+<p class="lede">Save links, screenshots, notes and files in one searchable library. Find text inside images, transcribe voice notes and turn useful saves into reminders. You saved it for a reason. Nemos finds it when you need it. A link from a friend. A screenshot with a door code. A thought recorded on a walk. A PDF you meant to read. Nemos keeps them in one private library and gives them back the moment you search, so you never have to remember which app you used. FIND WHAT YOU SAVED One search runs across links, the text inside your screenshots, notes, voice transcripts and documents at once. Look for “boarding pass” and the screenshot surfaces, even though you never tagged or filed it. Search is in Spotlight too, so you can start from the Home Screen. SAVE FROM ANY APP Share to Nemos from Safari …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ufoptix.org">Show HN: UFO OPTIX Scanning satellite imagery for flying craft artifacts</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by markmnl · ufoptix.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50636574">discuss</a>
+    </p>
+<p class="lede">Scanner running Last report 19:42 UTC Reading 37 scenes now (2 VPS · 35 remote) · Villa Union, La Rioja, Argentina 20967 scenes read 1465 flight-matched 191 reviewed 4686 candidates 80 false alarms Aircraft found in public satellite pictures, each one linked to its source. How it works . FLIGHT-MATCHED · ADS-B · Commercial aircraft Soledad, California, United States · 24 Nov, 19:04 UTC · 36.1913° N, 120.9509° W · tile 10SFF Matched to Boeing 737-800 N33262 at a reported altitude of 31,950 ft, reported ground speed 439 kt. The flight record was 156 m from the detected position. Measured from the image: heading 116°, apparent speed about 369 kt. Apparent speed is not ground speed. Scene centre: 65 km north-west of Dellys, Boumerdes, Algeria · 24 Nov, 10:40 UTC · tile 31SEB Reviewed. Passed …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://branchbay.dev/images/social-card.jpg" alt="Show HN: Termius was asking me for $120 a year, so I built my own SSH client" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://branchbay.dev/branchshell">Show HN: Termius was asking me for $120 a year, so I built my own SSH client</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by adriant93 · branchbay.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50639212">discuss</a>
+    </p>
+<p class="lede">Your servers, keys, port forwards and databases in an encrypted vault on your computer. Split terminals, SFTP with S3 and R2, a SQL client, mosh. And a link to BranchBay that puts every host one shortcut away from the repository it belongs to. 14-day trial on first launch, then $20 once for 2 computers. No account, no cloud, no telemetry, like BranchBay. On a phone or tablet: free for 14 days, then $14.99 a year in the stores. Written in Rust and drawn on the GPU, on the same engine as BranchBay. The terminal, the widgets and the themes are the ones you already use. Hosts, keys, identities, snippets, forwarding rules and database connections live in an encrypted vault on your computer. No account, no cloud, nothing leaves the machine. Link the two once and the tray lists your whole vault …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/d0b1c57cfe2bcdff579635ad576006b68c651ea3968558b9034fd41fa4818df7/danieldaeschle/rusty-teams" alt="Show HN: Rusty Teams – A Native Microsoft Teams Client in Rust" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/danieldaeschle/rusty-teams">Show HN: Rusty Teams – A Native Microsoft Teams Client in Rust</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by d0dg3r · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50642773">discuss</a>
+    </p>
+<p class="lede">A fast, native Microsoft Teams chat client. Written in Rust, rendered on the GPU. No admin approval needed. Unofficial. Not affiliated with or endorsed by Microsoft. It uses the same web APIs as the Teams web app, which can change at any time. The remaining gaps are planned, see ROADMAP.md . Download the build for your platform from Releases and sign in with your work account. Or build it yourself: Without these env vars the calendar stays Outlook-only. Rusty Teams never sees your password and never stores a token. It signs you in through a real Teams web page and lets that page make the API calls. Open and finished features by priority: ROADMAP.md A fast, native Microsoft Teams chat client.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.subconscious.dev/local/opengraph-image?7b68819d9b569299" alt="Show HN: Run Inkling 2 Mini on Mac Faster Than Anywhere Else" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.subconscious.dev/local">Show HN: Run Inkling 2 Mini on Mac Faster Than Anywhere Else</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      5 points · by Jackobrien · subconscious.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50644653">discuss</a>
+    </p>
+<p class="lede">Marathon Local runs AI models faster than mlx-lm, vllm-metal, and llama.cpp. Run for free, forever. Free and private. For MacBook, Mac Studio, and Mac mini. Enterprise version with 1M-token context Run agents locally for simple, personal workloads. Move to the cloud to give your users ambitious long-running agents. Marathon Local vs mlx-lm, vllm-metal, and llama.cpp, running the same models on the same Mac (Apple M5 Max, 36 GB). One stream decoding behind a 32k-token prompt. Higher is better. MLX 0.32.4, mlx-lm 0.32.3 (mlx_lm.server), vllm-metal 0.33.0, llama.cpp cf4153a9b (llama-server; on Inkling 2 Mini, Unsloth’s build b12572-mix-8eebad4). Measured 2026-11-09 to 2026-11-20; Inkling 2 Mini on its launch day, 2026-11-20. mlx-lm and vllm-metal cannot load Inkling 2 Mini. llama.cpp runs …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.gordo.life/2026/04/12/haskell-websockets.html">Writing a Turn Based Game Websocket Server in Haskell</a></h3>
+    <p class="dateline"><span class="badge">L</span>      4 points · by abhin4v · blog.gordo.life · <a class="discuss" href="https://lobste.rs/s/fxfl8u/writing_turn_based_game_websocket_server">discuss</a>
+    </p>
+<p class="lede">I’d like to share a wee pattern I’ve found useful for writing simple WebSocket apps in Haskell - specifically for my side project wordify - an open source ~ multiplayer crossword board game ~ . I have in mind websocket applications where there’s some sort of ‘resource’ that is shared between multiple websocket clients that need to be kept updated as the state changes such as: For simplicity, we’ll implement a multiplayer server for Noughts and Crosses (as we’ll call it in a parochially defiant act of patriotism against the US-centric internet :P) to illustrate the pattern. I’ll be exploring a pattern where we maintain a Map of all the Noughts and Crosses games we have in progress safely such that all the connected websockets see the same game updates. There’s a few different options for …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-25-p6.html">‹</a><a href="2026-11-25.html">1</a><a href="2026-11-25-p2.html">2</a><a href="2026-11-25-p3.html">3</a><a href="2026-11-25-p4.html">4</a><a href="2026-11-25-p5.html">5</a><a href="2026-11-25-p6.html">6</a><span class="pg-current">7</span>
+<a href="2026-11-25-p8.html">8</a><a href="2026-11-25-p9.html">9</a><a class="pg-arrow" href="2026-11-25-p8.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 9 cross-posts merged · 117 excerpts · 75 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

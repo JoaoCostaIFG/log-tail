@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 25, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 329</span>
+      <span>Wednesday, November 25, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://mastodon.social/@pervognsen/117668394962974183">Per Vognsen on the effect of AVX-512 on lexing and parsing</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by dvogel · mastodon.social · <a class="discuss" href="https://lobste.rs/s/m7gqr6/per_vognsen_on_effect_avx_512_on_lexing">discuss</a>
+    </p>
+<p class="lede">Once again positively surprised how well single-pass compilers synergize with modern branch predictors. The CPU time distribution in my single-pass compiler is roughly 40% lexing + 40% parsing and semantic analysis + 20% code generation (x86-64). The lexer is a conventional switch-based lexer and its hot paths are well optimized but don&#39;t use any crazy tricks: it processes input at ~0.75 GB/s on one thread. But 40% is enough that I thought I&#39;d compare with a full AVX-512 SIMD lexer.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://it-notes.dragas.net/linuxday_2026.jpeg" alt="Beyond Linux: A Journey Through the Open Source Ecosystem" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem/">Beyond Linux: A Journey Through the Open Source Ecosystem</a></h3>
+    <p class="dateline"><span class="badge">L</span>      30 points · by abnercoimbre · it-notes.dragas.net · <a class="discuss" href="https://lobste.rs/s/y56k2b/beyond_linux_journey_through_open_source">discuss</a>
+    </p>
+<p class="lede">What follows is the text of the talk I gave at Linux Day 2026 in Modena, lightly adapted for the blog. The talk was in Italian, in front of a Linux audience - which explains a few of the jokes. Linux is one of the best-known players in the open source world, but it&#39;s not the only possible path. A journey through the BSDs, illumos and other alternative operating systems, to reflect on Open Source as an idea, a philosophy and a practice of sharing knowledge. My name is Stefano Marinelli. I&#39;m a sysadmin and consultant, and I run my own small company specialised in open source services and solutions. I like to call myself the &#34;Barista&#34; of the BSD Cafe and the illumos Cafe , online communities of people passionate about technology, open source and sharing. Today I&#39;m not here just to talk about …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://spectator.com/wp-content/uploads/2026/11/GettyImages-929334326-e1795346317691.jpg" alt="Britain&#39;s ghost stations" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://spectator.com/article/britains-ghost-stations-are-fascinating/">Britain&#39;s ghost stations</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      28 points · by translocator · spectator.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50645074">discuss</a>
+    </p>
+<p class="lede">When I stepped off a train at Achanalt station into the frosty Highlands one morning last March, I did notice that it wasn’t quite Waterloo in the rush hour, but I didn’t realise what an exclusive club I had just joined. According to a list of Britain’s most and least-used stations published this week, I was one of only 352 people to board or get off a train there in the entire 12 months from April 2025 to March 2026. Flanders and Swann wrote ‘The Slow Train’ about the Beeching closures, lamenting the rural stations which were to close. They needn’t have worried: over half a century on, such places still exist. My instinct is to attack the waste of public money in keeping a station open when hardly anyone uses it, but the absurdity of Britain’s ‘ghost’ stations fascinates me more than …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://theconsensus.dev/p/2026/11/15/cgos-pointer-check.html">cgo&#39;s pointer check is all over the place</a></h3>
+    <p class="dateline"><span class="badge">L</span>      27 points · by eatonphil · theconsensus.dev · <a class="discuss" href="https://lobste.rs/s/fgbvtt/cgo_s_pointer_check_is_all_over_place">discuss</a>
+    </p>
+<p class="lede">cgo does syntactic transformations unaware of Go types, allowing almost unnoticeable changes in source code to turn a 48ns call into a 76µs call. And its correctness checks can panic on legal code, while being exhaustive and expensive in some cases and lax in others. You are getting early access to this article as a subscriber. Your support makes articles like this possible. Thank you. In this article, we recap some of the basics of Go &#39;s Foreign Function Interface (FFI), cgo , and take a look at example programs that explain its behavior and limits. In particular we&#39;ll show how passing the same pointer to C can panic on code that the docs allow, how it can be about 1600x slower depending on how the C call is written, and when the cgo argument checker just gives up. Grab dependencies …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://david.alvarezrosa.com/images/home-illustration.png" alt="Deriving Black-Scholes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://david.alvarezrosa.com/posts/deriving-black-scholes/">Deriving Black-Scholes</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      27 points · by meysamazad · david.alvarezrosa.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50644814">discuss</a>
+    </p>
+<p class="lede">Even if it feels unintuitive, the price of an option does not depend on whether the underlying moons or tanks. Under some reasonable market hypotheses, we can build a fully hedged portfolio by holding the underlying and shorting the option. Since it is riskless, by no-arbitrage assumption, it must return the same as the risk-free interest rate. That allows to put together an equation (the Black-Scholes equation), and solve for the option price (the Black-Scholes formula). A European call gives the right, but not the obligation, to buy an underlying at a fixed price K ⁣ K\! K , the strike, on a fixed date T ⁣ T\! T , the maturity. Its value V ⁣ V\! V is the premium you need to pay for having that optionality, and it depends on time and on the underlying stock price S ⁣ S\! S . At maturity …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://donsz.nl/blog/optimizing-rustcs-next-trait-solver">Optimizing Rustc&#39;s next trait solver</a></h3>
+    <p class="dateline"><span class="badge">L</span>      26 points · by jana · donsz.nl · <a class="discuss" href="https://lobste.rs/s/lyyksp/optimizing_rustc_s_next_trait_solver">discuss</a>
+    </p>
+<p class="lede">The next rust trait solver, a large subsystem of the rust compiler that we&#39;ve been trying to replace, will finally land in rust 1.102.0. In the last stages, before stabilizing it, its performance was a major blocker. But what is &#34;a trait solver&#34;? And why is its performance a problem? My goal for this blog post is to answer those questions in a way where you don&#39;t need any prior knowledge. I think discussions of the trait solver can quickly become quite involved, and daunting. So today, we&#39;ll start from the very basics! This is a writeup of my eurorust 2026 talk of the same name, that I gave on October 15, 2026. And if you&#39;d rather watch than read this talk, you can do so here on youtube: The new solver is the codebase I work on daily, and I&#39;ve done so for about a year full-time. I&#39;m not …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://carry.md/og.png" alt="Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://carry.md/">Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      26 points · by iankit17 · carry.md · <a class="discuss" href="https://news.ycombinator.com/item?id=50637995">discuss</a>
+    </p>
+<p class="lede">Black Friday Save $20 on a lifetime license — $59 $79 through Dec 1. $20 off through Dec 1 See offer Automatically back up your chats, projects and files as Markdown in a folder you own — stored locally, searchable and ready to continue in another AI. 5.0 on Chrome Web Store · 14 days free, no card required · Local-only, never uploaded What should I budget for the first month in Lisbon? One Lisbon trip plan, saved from ChatGPT, found by search and continued in Claude. Chats, projects and files land in your folder on their own — no manual exports. Find any line across all your saved chats, filtered by app, date or project. Open a saved chat in ChatGPT, Claude, Gemini or Grok, with the transcript attached. “It gives me control over my data and allows me to build a long-term, searchable …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.interstateweather.com/">Show HN: U.S. Interstate Weather</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      26 points · by projproj · interstateweather.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50638523">discuss</a>
+    </p>
+<p class="lede">Driving weather along US highways, from National Weather Service forecasts and alerts.</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://servo.org/svg/servo-color-positive.svg" alt="October in Servo: video captions and inert content" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://servo.org/blog/2026/11/25/october-in-servo/">October in Servo: video captions and inert content</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by gnafuthegreat · servo.org · <a class="discuss" href="https://lobste.rs/s/tf9ldm/october_servo_video_captions_inert">discuss</a>
+    </p>
+<p class="lede">Plus WebAudio nodes, image inputs, and more! Servo 0.8.0 contains all of the changes we landed in October, spanning 588 commits (a new record)! Servo now renders subtitles and captions over &lt;video&gt; elements ( @TimvdLippe , #48809 )! We’ve shipped new web platform features: Flutter web content no longer hangs now that we fixed a serious performance problem with typed arrays ( @jdm , #48640 ). Example We’re interested to hear how well your favourite websites run in Servo! Report successes in this Zulip thread or this Github discussion , and failures in our GitHub issues . With respect to accessibility in Servo, we report many more ARIA roles for DOM elements ( @alice , @mrobinson , #48839 ). These can be inspected with the Get Computed Role WebDriver command ( @lolaodelola , #47339 ) …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://community.nlnetlabs.nl/uploads/db1741/original/1X/fa7b4ca86dc996e64682185b3ad3aa7990703ae5.png" alt="Release: Roto v0.14.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://community.nlnetlabs.nl/t/release-roto-v0-14-0/3511">Release: Roto v0.14.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      21 points · by fanf · community.nlnetlabs.nl · <a class="discuss" href="https://lobste.rs/s/fygpme/release_roto_v0_14_0">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://lambdacreate.com/static/images/og-default.png" alt="Held together by spare time: Reviving wiki.alpinelinux.org during PHP2Shell" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lambdacreate.com/posts/held-together-by-spare-time">Held together by spare time: Reviving wiki.alpinelinux.org during PHP2Shell</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by durrendal · lambdacreate.com · <a class="discuss" href="https://lobste.rs/s/gtc9rg/held_together_by_spare_time_reviving_wiki">discuss</a>
+    </p>
+<p class="lede">Reviving wiki.alpinelinux.org during PHP2Shell · November 21, 2026 It feels like this month (and last month..) has been nonstop chaos. PHP2Shell threw a nice little grenade into an already busy month, and while that was happening a GitLab RCE took down Alpine&#39;s GitLab instance . It was a whole thing, and as frustrating as it was, I&#39;m kind of proud to say that I got to help respond to the event and write the incident announcement. Ikke did all of the real heavy lifting, but it takes a community to keep a distribution together. Everything, and I mean everything, is kept together by volunteers lending their time and talent with no expectation that there will be a reward for the effort. We do it because we care for the work being done. Whether it&#39;s a critical service enabling a community of …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/">US authorizes SpaceX to deploy 1M satellites for data centers in space</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by jonbaer · reuters.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50644856">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://autoriteitpersoonsgegevens.nl/uploads/styles/og/public/2023-03/Mensen%20op%20roltrappen.jpg.webp?itok=J30vyxg3" alt="Dutch data protection authority advises against purchasing AI camera glasses" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders">Dutch data protection authority advises against purchasing AI camera glasses</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by dgv · autoriteitpersoonsgegevens.nl · <a class="discuss" href="https://lobste.rs/s/l7fel2/dutch_data_protection_authority_advises">discuss</a>
+    </p>
+<p class="lede">The Autoriteit Persoonsgegevens (AP), the Dutch data protection authority, advises consumers against purchasing AI camera glasses for general use. A study on six AI camera glasses, conducted by the AP itself, shows that these &#39;smart&#39; glasses compromise not only the privacy of bystanders, but also the safety of users and those around them. For example, during a simulated resuscitation, one pair of glasses incorrectly indicated that an ambulance was on its way. Moreover, the glasses did not take sufficient account of the safety of minors, and the AP identified security issues in the software. The AP had previously warned that filming bystanders is almost always prohibited . The new study by the AP shows that the risks extend beyond just privacy. Monique Verdier, Deputy Chair of the AP …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://progrium.github.io/9ux/">9/UX: a Macintosh-inspired desktop for 9front</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by lproven · progrium.github.io · <a class="discuss" href="https://lobste.rs/s/vciex6/9_ux_macintosh_inspired_desktop_for">discuss</a>
+    </p>
+<p class="lede">9/UX brings the classic Mac and A/UX desktop (a spatial desktop, a global menu bar, consistent controls and dialogs, icons, and resource-driven presentation) to 9front , built the Plan 9 way: rio and libdraw draw the screen, 9P exposes every application&#39;s UI state and commands as files, namespaces define the working environment, the plumber opens documents, and ndb holds human-editable metadata. It is not an emulator, a Macintosh ABI, or an A/UX reimplementation. Native 9front programs stay first-class, and existing rio programs (acme, sam, rc windows, nested rio) keep working unchanged beside 9/UX apps. These are real frames, not mockups. The GUI tests embed h9 with a headless screen, inject mouse and keyboard input, and drive the 9P files at the same time. Macintosh structure, Plan 9 …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://georgemandis.s3-us-west-1.amazonaws.com/preview.png" alt="Let&#39;s Meet in the Middle" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://george.mand.is/2026/11/lets-meet-in-the-middle/">Let&#39;s Meet in the Middle</a></h3>
+    <p class="dateline"><span class="badge">L</span>      17 points · by Jackevansevo · george.mand.is · <a class="discuss" href="https://lobste.rs/s/7fscqs/let_s_meet_middle">discuss</a>
+    </p>
+<p class="lede">I like making little tools that do one thing well and thing finding clever ways to combine them. It&#39;s the ethos behind a lot of the little software projects I have over at Less Software . One of the first ones I made was a tool called whereami . Tongue-in-cheekly, I wanted to pitch it as the natural compliment to whoami . For that tool, the thinking was nearly every modern OS provides some kind of native API for geolocation. It felt silly to me that I could run a quick command from the terminal for so many things, but I couldn&#39;t run one that taps into this capability. In the pursuit to make that tool cross-platform, one of the things I found myself navigating were the differences between them. Consistently, macOS tended to have a lot of extra niceties baked in, particuarly when it came to …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-25-p4.html">‹</a><a href="2026-11-25.html">1</a><a href="2026-11-25-p2.html">2</a><a href="2026-11-25-p3.html">3</a><a href="2026-11-25-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-11-25-p6.html">6</a><a href="2026-11-25-p7.html">7</a><a href="2026-11-25-p8.html">8</a><a href="2026-11-25-p9.html">9</a><a class="pg-arrow" href="2026-11-25-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 9 cross-posts merged · 117 excerpts · 75 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

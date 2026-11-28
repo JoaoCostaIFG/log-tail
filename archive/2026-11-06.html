@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, November 6, 2026</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 310</span>
+      <span>Friday, November 6, 2026</span>
+    </p>
+  </header>
+
+
+
+  <article class="lead story">
+    <p class="kicker">Top Story</p>
+    <h2 class="headline"><a href="https://sshhole.com">sshole</a></h2>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      3036 points · by josemrb · sshhole.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50378228">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/oq5pem/sshhole">discuss on lobste.rs</a>
+    </p>
+<p class="lede">back in old unix your password hash just sat in /etc/passwd , right next to your username. in a file everyone could read. in 1980 bill joy put a * there for an account called daemon . nobody&#39;s supposed to ever log in as it. a * isn&#39;t a hash, so no password can match it. unix still does this today the next field is the real name. he wrote &#34;the devil himself&#34; ok so these days the hash lives in /etc/shadow and looks like $6$abc$k2P9… . the $6$ means sha512, abc is the salt, the rest is the actual hash you type your password, sshd hashes it with that same salt and checks if it comes out identical. same = you&#39;re in. that&#39;s it and if the field is just * ? there&#39;s nothing to match. type whatever you want, it&#39;s never getting you in one more rule. if crypt() can&#39;t do its job, it returns NULL. like …</p>  </article>
+
+  <section id="front-page">
+    <h2 class="section-title">Front Page</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/4e5b5034b0df40342fd1a2c55b0342174778594b6d7e72efc31ae4570e1e0ac9/anthropics/claude-code/issues/107757" alt="Claude Code sends your email address to websites" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/anthropics/claude-code/issues/107757">Claude Code sends your email address to websites</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      1472 points · by motoroco · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50385272">discuss</a>
+    </p>
+<p class="lede">I receive dozens of scam emails per day because claude code divulged my email to arbitrary 3rd parties in the User-Agent request header while conducting web searches without my permission. This should not be a setting with opt-out or opt-in behavior, it needs to be removed from the harness entirely. It is not for the good of anyone involved: it does nothing for services which dislike agentic traffic, does not preserve my anonymity on the web, and is a goldmine for scammers. I am migrating my company to Pi with OpenRouter since I have no faith in anthropic preserving my privacy. Hi folks! We introduced a built-in mod called cc-plugin-privacy to deterministically block this behavior in v2.1.317 and later - definitely let us know ASAP though if there&#39;s a gap in the checks introduced by that …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://spectrum.ieee.org/media-library/image.jpg?id=68544156&amp;width=1200&amp;height=600&amp;coordinates=0%2C312%2C0%2C313" alt="AI is forcing us to pay off 40 years of technical debt" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">AI is forcing us to pay off 40 years of technical debt</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      1285 points · by pseudolus · spectrum.ieee.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50364336">discuss</a>
+    </p>
+<p class="lede">AI is forcing us to pay off 40 years of technical debt Dina Genkina is the computing and hardware editor at IEEE Spectrum In late October, a slew of major cybersecurity issues came to light. But none were bigger than the so-called PHP2Shell vulnerability , which put a plethora of websites, including those of NASA , Wikipedia , the White House, and all other sites that run on Wordpress or Drupal (among others) at risk of exploits capable of both reading sensitive data and running malicious code on the host server. As far as anyone is aware, disaster has been averted: The hack was discovered by cybersecurity researchers who reported it to the PHP Foundation, and a patch was released before any bad actors got their hands on the exploit. However, PHP2Shell may be the canary in the coal mine …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://kagi.com/changelog#11820">Search for everyone</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      723 points · by elashri · kagi.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50383740">discuss</a>
+    </p>
+<p class="lede">As many of you know, we don&#39;t run ads anywhere . Instead, we are active on social media and online communities to stay close to you, build a great product, and rely on word of mouth . We&#39;ve heard that it can be hard to recommend a search engine when your friends can&#39;t try it without creating an account. That&#39;s changed: anyone, anywhere, can now visit kagi.com and search the web . No account required for the first 50 searches (100 more upon registration). We are counting on you to spread the word to your friends and family &lt;3 Google announced that, starting in early 2027, AI tools will be turned off by default for school accounts. It sounds like a win for schools until you read that Google Search will be switched off along with them. Our take: Education shouldn&#39;t be taken hostage by an …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.cve.org/CVERecord?id=CVE-2026-83844">MS Paint Remote Code Execution Vulnerability</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      668 points · by kuberwastaken · cve.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50384233">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.salon.com/app/uploads/2026/11/Salon-Logos-Background-2.jpg" alt="Goodbye from Salon" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.salon.com/2026/11/05/goodbye-from-salon/">Goodbye from Salon</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      621 points · by mkeeter · salon.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50383739">discuss</a>
+    </p>
+<p class="lede">Today, after 31 years, we are saddened to announce that Salon is ceasing publication. It’s difficult to find the right words for the end of something that has meant so much to so many people. Salon was never just a website. It was an idea about what journalism could be, born at a moment when the internet was still a largely unexplored frontier. When Salon launched in November 1995, the web was a very different place. A small group of journalists set out to create something original: a publication with a strong voice, a curiosity about the world and a belief that the internet could bring journalism and readers together in new ways. They helped pioneer a form of journalism that would come to define an entirely new era of publishing. Over three decades, Salon has brought together politics …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://media.motorolanews.fiestic.com/2026/11/04151018/29260918_MOTOROLA_SIGNATURE_1047-768x1151.png" alt="Motorola Signature 27 with GrapheneOS support" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://motorolanews.com/motorola-signature-27-2/">Motorola Signature 27 with GrapheneOS support</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      556 points · by monneyboi · motorolanews.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50380810">discuss</a>
+    </p>
+<p class="lede">Motorola, a Lenovo Company, is designing to a higher standard with the new motorola signature 27, the company’s most advanced flagship smartphone to date, bringing together distinctive design, category-leading innovation and next-generation AI experiences. From its contoured edges, expressive finishes and refined craftsmanship to the breakthrough technologies within, every detail of the motorola signature 27 was purposefully built to deliver a premium experience without compromise. Featuring Motorola’s most advanced camera system yet, recognized with a DXOMARK Gold Label for image quality performance, the brightest Extreme AMOLED Duo Tandem display¹ available in a smartphone, the Snapdragon® 8 Elite Extreme Gen 6 Mobile Platform, making it among the first smartphones to unlock …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me">I wish tech companies knew more about me</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      527 points · by freetonik · rakhim.exotext.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50378942">discuss</a>
+    </p>
+<p class="lede">&#34;Tech companies are spying on us&#34; is a truism at this point. Endless articles and investigations have ensured that everybody is aware: they are spying on us, they listen to our conversations, they know more about us than we know ourselves, they know you&#39;re going to be fired or become pregnant or become depressed before it happens... I have never felt anything close to that. I get shown ads for products I just purchased. All this spying, machine learning, big data result in &#34;he bought a mattress, show him more mattresses&#34;. Here, I literally just opened a random website with no adblocker, and I see a purple gamepad I recently purchased, with two other gamepads: When listening to personalized playlists on Spotify and YouTube Music I skip every single electronic track with vocals. I listen to …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/59dee268de1876a4d484cfbf630dc45b1c310f39f9783a1eab71556777dbd200/PrivSec-dev/banking-apps-compat-report/issues/105" alt="Dutch &#39;idealist&#39; bank ASN blocks non-Google Android, including GrapheneOS" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105">Dutch &#39;idealist&#39; bank ASN blocks non-Google Android, including GrapheneOS</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      520 points · by microtonal · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50390124">discuss</a>
+    </p>
+<p class="lede">Ontill this moment, i did not find anything that did not worked. It seems that the app works like on stock OS Also works on Pixel 6 Pro without Google Play and Google Play Services installed. Tried with one of my customers but you cannot log in to the app without Google Play Services @aerique Please correct this @akc3n Tried with one of my customers but you cannot log in to the app without Google Play Services @aerique Please correct this @akc3n No, do not correct anything yet. Lets first figure out which app we&#39;re talking about. I&#39;m using the top app which is the generic banking app. It&#39;s updated, I can login, I can scan QR codes and pay. I use it almost every day, sometimes multiple times. I also do not have Google apps installed, not even in GrapheneOS&#39; sandbox. I&#39;ve also used this app …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/0a9aa84764a501fbc73e24a64be811810cc7fcd38c9854ca15f1cbbf7759e76f/ppmpreetham/BUI" alt="Blender&#39;s UI and Runtime: Much Faster Than GPUI" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/ppmpreetham/BUI">Blender&#39;s UI and Runtime: Much Faster Than GPUI</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      516 points · by ppmpreetham · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50389333">discuss</a>
+    </p>
+<p class="lede">Blender&#39;s user interface, as a library you can use from Python, Rust, JavaScript (React, Svelte), C, C++ and Dear ImGui. People spent decades building and optimizing Blender&#39;s GUI. It&#39;s battery and memory efficient, and super duper fast. We decoupled it, to give everyone a chance to build their own products with it. It supports multiple languages and frameworks, so you won&#39;t miss a beat! Website and full documentation: bui.preetham.top · Chat: Discord This README is a small book. Read it front to back for the whole story, or jump to the chapter you need. Every chapter links to a longer guide in docs/ or on the website when there&#39;s more to say. BUI takes the user interface of Blender (its widget drawing, its interaction rules and its look) and turns it into a standalone UI library with a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/">Britain to make salary disclosure in job ads mandatory</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      489 points · by 1659447091 · reuters.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50389222">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/acastro_STK062_01.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="Discord is ditching Electron and its new app uses less RAM" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.theverge.com/news/1027379/discord-ditching-electron-web-app">Discord is ditching Electron and its new app uses less RAM</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      469 points · by archb · theverge.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50378625">discuss</a>
+    </p>
+<p class="lede">Discord is moving its apps fully over to the Rust programming language. Discord is moving its apps fully over to the Rust programming language. Discord is finally giving up on Electron, the cross-platform framework that lets developers build desktop apps using web technologies. Electron web apps are notoriously heavy on system resources, and Discord is now moving its desktop app fully to Rust — a modern programming language designed for speed and memory safety. “We’ve been early adopters of Rust since 2018 and a lot of our infra, voice tech, and even some of the current client is already Rust, the holy grail was getting the whole client there,” explains Discord chief technology officer Stanislav Vishnevskiy in a post on X . “That means Electron goes away, and so does React Native, mobile …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://s.yimg.com/lo/mysterio/api/c7b9e208fd6dff01b9115dea6cf00d560e269c36a6987f309be6e79d843e306b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmoneywise_327%2F892777675c4b84ce45a666a8bfe1fb93.jpg" alt="Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html">Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      469 points · by randycupertino · finance.yahoo.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50385870">discuss</a>
+    </p>
+<p class="lede">Mark Cuban keeps getting emails about a $294 diabetes cure he has never sold. &#34;Every single week I get emails from little old men and ladies saying, &#39;Will my cure for diabetes work?&#39; or &#39;I just ordered your cure for diabetes for $294,&#39;&#34; the 68-year-old billionaire investor said on an August episode of Pivot , the podcast hosted by Kara Swisher and Scott Galloway. Jeff Bezos backs a platform that lets anyone invest in rental homes for as little as $100 — 6 ways to build wealth like a landlord without actually being one Dave Ramsey warns nearly 50% of Americans are making 1 big Social Security mistake. Here&#39;s what it is and 3 simple steps to fix it ASAP A single line on your car insurance policy could be inflating your premium by up to 30% — here&#39;s what to change Those ads are deepfakes …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1370747786/3a594398-957d-455e-a8cd-65e13e23e4b4" alt="Window Sweaters" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/saragordic/window-sweaters">Window Sweaters</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      429 points · by nickswalker · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50381383">discuss</a>
+    </p>
+<p class="lede">A little Mac app I made to give my windows sweaters. 🧶 Knitted borders, colours inspired by your favourite apps, and a cosier desktop. You can just send this repo to your coding agent and ask it to install Window Sweaters for you: Then open Window Sweaters from your Applications folder. You can also grab the latest ZIP from Releases , unzip it, and drag Window Sweaters.app into Applications. If macOS blocks it, open System Settings → Privacy &amp; Security → Open Anyway after trying to launch it. The app isn&#39;t notarized by Apple yet. Apple&#39;s instructions explain this step. Click the yarn icon in your menu bar to change the style, pattern, border width, and stitch size. You can also pause the sweaters or quit from there. To leave an app bare, open Apps and untick it. Its windows lose their …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://bearblog.dev/static/og-image.png" alt="Download your favourite YouTube videos" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/">Download your favourite YouTube videos</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      385 points · by surprisetalk · criminallyvulgar.dev · <a class="discuss" href="https://news.ycombinator.com/item?id=50378571">discuss</a>
+    </p>
+<p class="lede">Signal boosting Laura&#39;s post that you should absolutely download and archive the stuff that matters to you. The corporate internet is hostile to art and the things you love do not belong to you unless you claim them for yourself. If you&#39;ve been around for a while on YouTube, just look at your &#34;liked videos&#34; playlist and see how many of the early ones are no longer available (something you literally have to enable in the playlist settings, it&#39;s that endemic). The tools to do this in a basic way are extremely easy to get hold of, and generally have good defaults. I&#39;m also going to talk a little about my own setup, and why it is the weird way it is, but it&#39;s definitely overkill for most setups. yt-dlp or one of it&#39;s many wrappers 1 will do most of what you need, and a folder on a bulk …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/">The Hackintosh Reborn</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      379 points · by rubatuga · naut.ca · <a class="discuss" href="https://news.ycombinator.com/item?id=50383057">discuss</a>
+    </p>
+<p class="lede">A &#34;Hackintosh&#34; is the feat of running macOS on non-Apple hardware, and has a history dating back to the late 1980s. Almost a decade ago, I released a hackintosh guide on running macOS 10.14 through a VM with an x86 host. At the time KVM and PCI passthrough were relatively new technologies, and this guide allowed near-native performance with GPU acceleration. A few years passed by, and we saw Apple release the first ARM-based Mac in 2021, the M1 MacBook Air. The timing was impeccable, Intel was unable to create competitive processors (due to being stuck on the 14nm node), and Apple had powerful and efficient ARM chips already being shipped in their iPhones. The long battery life, the fanless design, the instant wake, what&#39;s not to like? The benefits of switching to ARM were clear, however …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<span class="pg-current">1</span>
+<a href="2026-11-06-p2.html">2</a><a href="2026-11-06-p3.html">3</a><a href="2026-11-06-p4.html">4</a><a href="2026-11-06-p5.html">5</a><a href="2026-11-06-p6.html">6</a><a href="2026-11-06-p7.html">7</a><a href="2026-11-06-p8.html">8</a><a href="2026-11-06-p9.html">9</a><a class="pg-arrow" href="2026-11-06-p2.html">›</a>  </nav>
+
+  <section id="archive">
+    <h2 class="section-title">Recent Editions</h2>
+    <ul class="archive-list">
+<li><a href="2026-11-05.html">Thursday, November 5, 2026</a></li><li><a href="2026-11-04.html">Wednesday, November 4, 2026</a></li><li><a href="2026-11-03.html">Tuesday, November 3, 2026</a></li><li><a href="2026-11-02.html">Monday, November 2, 2026</a></li><li><a href="2026-11-01.html">Sunday, November 1, 2026</a></li><li><a href="2026-10-31.html">Saturday, October 31, 2026</a></li><li><a href="2026-10-30.html">Friday, October 30, 2026</a></li>    </ul>
+  </section>
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>134 stories · 4 cross-posts merged · 126 excerpts · 90 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

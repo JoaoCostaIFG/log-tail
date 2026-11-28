@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Thursday, September 10, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 253</span>
+      <span>Thursday, September 10, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://www.ianvisits.co.uk/wp-content/uploads/sites/2/social-cards/92107/facebook.jpg" alt="The first drink-driving conviction may have happened in London" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.ianvisits.co.uk/articles/the-worlds-first-drink-driving-conviction-may-have-happened-in-london-92107/">The first drink-driving conviction may have happened in London</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by beardyw · ianvisits.co.uk · <a class="discuss" href="https://news.ycombinator.com/item?id=49639730">discuss</a>
+    </p>
+<p class="lede">Published on 10th September 2026 by Ian Mansfield in History On 10th September 1897, a London taxi driver became the first person in Britain — and quite possibly the world — to be convicted of drink-driving. At the time, there were no breathalysers, no legal blood-alcohol limit and the vehicle involved in the historic incident wasn’t even petrol-powered. It was an early type of electric taxi. The driver was 25-year-old George Smith, who was driving one of the new Bersey electric cabs . According to news reports at the time, he was driving along New Bond Street around midnight when his cab began swerving across the road, mounted the pavement, and crashed into 165 New Bond Street. He was arrested by Police Constable Russell and taken to nearby Vine Street Police Station, where a police …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://tokenstead.ai/og/models/swe-2.png" alt="Cognition&#39;s SWE-2 achieves 92.8 on Terminal-Bench 2.1" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://tokenstead.ai/models/swe-2">Cognition&#39;s SWE-2 achieves 92.8 on Terminal-Bench 2.1</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      17 points · by cdnsteve · tokenstead.ai · <a class="discuss" href="https://news.ycombinator.com/item?id=49646778">discuss</a>
+    </p>
+<p class="lede">2.8T total params, 104B active per token (MoE) - the Kimi K3 base with Cognition’s post-training on top, and the first time Cognition has scaled RL into the multi-trillion-parameter regime. The base had already been RL-heavy for agentic coding; Cognition’s pass added another 5 to 6 points on most benchmarks. Benchmarks (Cognition self-reported): FrontierCode 1.1 Main 50.0, DeepSWE 1.1 73.0, Terminal-Bench 2.1 92.8, Terminal-Bench 4.0 27.3. The headline: 50.0 on FrontierCode is one point behind Claude Fable 5.1 (50.9) and 3.3 behind GPT-6 Astra (53.3) - at a claimed 64% lower cost than Fable 5.1 and a quarter of Astra’s. Terminal-Bench 2.1 is the highest number in the published table. The soft spot is Terminal-Bench 4.0, where SWE-2’s 27.3 trails Fable 5.1 (55.8) and GPT-6 Astra (57.9) by …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://ayles.github.io/doom-in-kernel/">Show HN: DOOM in the kernel, or fibers in eBPF</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by ayles · ayles.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=49630125">discuss</a>
+    </p>
+<p class="lede">DOOM is not supposed to run inside eBPF. Linux should reject a program like that before executing its first instruction. BPF has a tiny stack, five argument registers, and limited call depth. Recursion is forbidden. A loop must be finite not merely because the programmer says so, but in terms the verifier can prove. You cannot simply store a pointer in memory, load it later, and dereference it: the kernel must remember where it came from and what it is allowed to address. And yet an unmodified Linux kernel accepts my BPF object, checks it with the stock verifier, and runs it through the stock JIT. DOOM initialization, game logic, and rendering all execute in the kernel. One game tick, including the complete frame, finishes in a single BPF invocation. Userspace supplies the WAD and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://openjdk.org/jeps/544">JEP 544: Ahead-of-Time Code Compilation</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      16 points · by Skinney · openjdk.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49647404">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/whzj8z/jep_544_ahead_time_code_compilation">discuss on lobste.rs</a>
+    </p>
+<p class="lede">Improve startup and warmup time by making optimized native code for an application instantly available when the HotSpot Java Virtual Machine starts. Achieve this by compiling application code to native code in a training run, storing the native code in the AOT cache for use in subsequent production runs. If the workload changes in production, regenerate native code dynamically for continued peak performance, providing the best of both ahead-of-time (AOT) and just-in-time (JIT) compilation. Enable applications to achieve peak performance more quickly. Enable applications to sustain peak performance even as workloads change. Do not require any change to the code of applications, libraries, or frameworks. Do not require any change to the configuration of HotSpot, beyond requesting the use of …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://codon.org.uk/~mjg59/blog/p/systemio-conflicts-are-not-firmware-bugs/">SystemIO conflicts are not firmware bugs</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by calvin · codon.org.uk · <a class="discuss" href="https://lobste.rs/s/jz8fmz/systemio_conflicts_are_not_firmware_bugs">discuss</a>
+    </p>
+<p class="lede">I’m looking at something entirely unrelated, but tripped over some search results that made me realise that a lot of people still think getting errors like ACPI Warning: SystemIO range 0x0000000000001828-0x000000000000182F conflicts with OpRegion 0x0000000000001800-0x000000000000187F indicate a firmware bug. This is generally untrue. We need to dive a little into what ACPI is to clarify why. The Advanced Configuration and Power Interface 1 specification defines a whole bunch of stuff, but what’s interesting to us here is the hardware abstraction it performs. While PCs are nominally a well-defined platform that’s really not true at the hardware level once you get beyond a certain level of complexity. When you suspend a system you want to power down the hardware in the correct order, for …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.yuo.be/2026/09/10/the-terrible-menu-bar-in-the-windows-11-notepad/card.png" alt="The terrible menu bar in the Windows 11 Notepad" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.yuo.be/2026/09/10/the-terrible-menu-bar-in-the-windows-11-notepad/">The terrible menu bar in the Windows 11 Notepad</a></h3>
+    <p class="dateline"><span class="badge">L</span>      14 points · by FedericoSchonborn · blog.yuo.be · <a class="discuss" href="https://lobste.rs/s/ol8vsp/terrible_menu_bar_windows_11_notepad">discuss</a>
+    </p>
+<p class="lede">10 September 2026 • 3 min read • Tags: #windows It’s been seven weeks since I last complained about something in Windows on this blog. That feels like too long, so here’s a post about menus – specifically, the menu bar in the modern version of Notepad in Windows 11. That menu bar has, unfortunately, quite a few regressions compared to the menu bar in the old Win32 version of Notepad. There’s a longstanding behaviour on Windows where you can press and hold the primary mouse button on one of the top-level items in the menu bar (like ‘File’), move the mouse pointer over one of the items in the opened menu, and then release the mouse button to choose that item and dismiss the menu. Here’s that behaviour in action in the Registry Editor: Does that work in the new Notepad? Nope. Here’s a rather …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1330598771/5faf2175-f1d0-41be-9416-dcead2a05ddc" alt="Show HN: Hydra – Open-source agentic terminal with a PTY daemon" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/hydraterm/hydra-local">Show HN: Hydra – Open-source agentic terminal with a PTY daemon</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by hydraterms · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49634934">discuss</a>
+    </p>
+<p class="lede">Synthetic product illustration; no account, terminal transcript, personal path or live desktop was recorded. Hydra is a local-first terminal desktop for working with terminal sessions and coding agents. Projects, windows, panes, terminal history and retained PTY sessions live on your machine. Official packages include the separate proprietary Hydra Remote component. A source build from this repository is a complete local desktop; it does not include the private remote agent or access to the hosted service. Hydra reads provider-owned local session metadata so it can list and resume sessions created by Claude Code, Codex CLI, GitHub Copilot CLI, Antigravity, Kimi CLI, Kiro CLI, OpenCode, Cursor Agent, Devin CLI and the legacy Gemini CLI. These on-disk formats belong to their providers and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://turdle.fun/">Who Dung It? (Turdle.fun)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      14 points · by nb_quant · turdle.fun · <a class="discuss" href="https://news.ycombinator.com/item?id=49643864">discuss</a>
+    </p>
+<p class="lede">Turdle — Who dung it? Who Dung It? Hints compare body size using length and breadth. Bigger , smaller , or similar .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png" alt="Discrete Dipole Approximation Code Ddscat 7.2 (2012)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://arxiv.org/abs/1202.3424">Discrete Dipole Approximation Code Ddscat 7.2 (2012)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by doener · arxiv.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49580005">discuss</a>
+    </p>
+<p class="lede">arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv&#39;s community? Learn more about arXivLabs .</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://i0.wp.com/terriblesoftware.org/wp-content/uploads/2026/09/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTkzODMtaW1hZ2Uta3d2d3MwemwuanBn.webp?fit=1024%2C683&amp;ssl=1" alt="AI Is Breaking This Thing We Call Trust" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://terriblesoftware.org/2026/09/10/ai-is-breaking-this-thing-we-call-trust/">AI Is Breaking This Thing We Call Trust</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by matheusml · terriblesoftware.org · <a class="discuss" href="https://news.ycombinator.com/item?id=49644179">discuss</a>
+    </p>
+<p class="lede">I want you to picture yourself in the early 1900s (in America), real quick. People have been using horses for their entire lives, and they are pros at it. Entire cities are actually built with the premise that horses are how we move from point A to B. Then this Henry Ford guy shows up and turns the world upside down. Over the next few years, people had to adapt to cars becoming part of everyday life. Habits built around the transportation they knew had to change. I think that’s where we are right now. Most of us can see that AI is turning how we work upside down… But, just like in the early 1900s, we have to adapt to it. And it’s painful. Here’s the thing: most of our habits at work still assume that producing something means you have to understand it. When you send me a PR, I assume …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://usefeyn.com/blog/multimatte/multimatte-cover.png" alt="Show HN: MultiMatte, a Promptable Image Background Removal Model" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://usefeyn.com/blog/multimatte/">Show HN: MultiMatte, a Promptable Image Background Removal Model</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      13 points · by snyy · usefeyn.com · <a class="discuss" href="https://news.ycombinator.com/item?id=49645803">discuss</a>
+    </p>
+<p class="lede">We’re introducing MultiMatte, a background removal model you can aim with words. MultiMatte keeps the object you name and removes everything else. Try MultiMatte on your own images at usefeyn.com/multimatte . MultiMatte is built on SAM 3 ( Meta, 2025 ). We used low-rank fine-tuning to modify 19.49M of its 860M parameters. That update touches only 2.27% of the model weights, yet MultiMatte improves substantially on image segmentation. On the DIS-VD benchmark, it scores a 0.901 S-measure against SAM 3’s 0.667. SAM 3 is a concept-promptable detector. Given a phrase, the model returns binary masks for every matching object. These masks classify each pixel as either inside or outside the object. This binary approach fails on fine or translucent elements with fuzzy boundaries, like hair or a …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://globalnews.ca/wp-content/uploads/2024/12/transgender.flag_1.jpg?quality=65&amp;strip=all&amp;w=720&amp;h=379&amp;crop=1" alt="Alberta First Nation invokes treaty clause to set up gender-affirming care" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://globalnews.ca/news/12053337/alberta-first-nation-gender-affirming-care-safe-haven/">Alberta First Nation invokes treaty clause to set up gender-affirming care</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      11 points · by colinprince · globalnews.ca · <a class="discuss" href="https://news.ycombinator.com/item?id=49647421">discuss</a>
+    </p>
+<p class="lede">Want to discuss? Please read our Commenting Policy first. always fun to see global news do nothing for the ouright calls for violence against first nations, compound with the calls for violence against anyome they deem an, (direct quote) “anti breeder” which just to break that down rather than let it fester, is so vile to imply that the only value a CHILD could have is the being livestock, since we only use that term in english to refer to animals. it’s beyond corrupted. it’s a narrative twisted from seeing that child as a whole person with their own rights, needs, and wants, to seeing that child only as a potential sexual object. “anti breeder” a direct sexualization of children, that’s the real grooming here. not trans people seeking healthcare or hrt. Let me guess. Indians have been …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskHCopDIB5dU1q0D0lGEI6lqkA6e9U01Bym_U9Bv1WKKfrLJtFfe33H2Y-Ewu_AKW7ToWmFMBLHQtvAzR1kbQWV-bOVJej0EPqefkGYf0LRRw8rzQbed490tfEjo85vWnxPhfffnec9fraZJku7ULbAj-jIB0gBksBozA8Jxhkc_L4a1zmB7dFp18mEgT/w1200-h630-p-k-no-nu/v20_die_shot_large_01.jpg" alt="Decoding the NEC V20 Microcode" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://martypc.blogspot.com/2026/09/decoding-nec-v20-microcode.html">Decoding the NEC V20 Microcode</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by robey · martypc.blogspot.com · <a class="discuss" href="https://lobste.rs/s/dfby97/decoding_nec_v20_microcode">discuss</a>
+    </p>
+<p class="lede">reenigne&#39;s decoding of the 8088 microcode in 2020 opened the doors for extremely accurate emulation of the 8088 CPU. Although I had added support for the NEC V20 in MartyPC, the V20 core was not cycle-accurate in terms of the V20&#39;s actual timings. It was an 8088 in a V20&#39;s clothing - a copy-paste of my 8088 core with V20 instructions tacked on. This was not an ideal case, but the prospect of making my V20 core cycle-exact without the microcode seemed like it might be a discouraging slog of trial and error. I recently commissioned InfoSecDJ to take die photography of an NEC V20 CPU (actually a second-source V20 fabricated by Sharp, but a V20 nonetheless). He did an excellent job. This photomosaic is extremely high resolution - 5.6 Gigapixels to be exact, an astonishing 70478x80672 …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://queue.acm.org/doi/10.1145/3831361">How CHERIoT Provides Strong and Usable Isolation Without an MMU</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by rrampage · queue.acm.org · <a class="discuss" href="https://lobste.rs/s/gtvx0w/how_cheriot_provides_strong_usable">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://i0.wp.com/spectrecollie.com/wp-content/uploads/2026/09/playdate-havefun.jpg?fit=1024%2C576&amp;ssl=1" alt="Bad Vibes Coding" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://spectrecollie.com/2026/09/05/bad-vibes-coding/">Bad Vibes Coding</a></h3>
+    <p class="dateline"><span class="badge">L</span>      10 points · by FedericoSchonborn · spectrecollie.com · <a class="discuss" href="https://lobste.rs/s/ifvdvx/bad_vibes_coding">discuss</a>
+    </p>
+<p class="lede">Taking a short break from being spitting mad about AI, to just being sad about how it never needed to be like this My take on generative AI has pretty rapidly gone from a tentative, “it sucks and I hate it, but after the bubble pops, there might be a few very specific use cases for it, like with programming,” to a vehemently zero-tolerance stance. It’s all garbage, burn it down. It’s just so bad, in so many different ways, on so many different levels. Trying to ignore or excuse any one of the points against it will still leave you with dozens more. Have you managed to convince yourself (somehow) that the environmental concerns of the ridiculous over-proliferation of data centers are overblown or inaccurate? You’re still left having to explain why these data centers need to exist at all …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-09-10-p4.html">‹</a><a href="2026-09-10.html">1</a><a href="2026-09-10-p2.html">2</a><a href="2026-09-10-p3.html">3</a><a href="2026-09-10-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-09-10-p6.html">6</a><a href="2026-09-10-p7.html">7</a><a href="2026-09-10-p8.html">8</a><a href="2026-09-10-p9.html">9</a><a class="pg-arrow" href="2026-09-10-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>129 stories · 6 cross-posts merged · 118 excerpts · 68 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

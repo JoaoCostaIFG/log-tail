@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Monday, November 23, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 327</span>
+      <span>Monday, November 23, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://feyor.sh/blog/nixos-bringup-on-an-alibaba-riscv-board/">NixOS bring-up on an Alibaba RISC-V board</a></h3>
+    <p class="dateline"><span class="badge">L</span>      36 points · by Shorden · feyor.sh · <a class="discuss" href="https://lobste.rs/s/6jloca/nixos_bring_up_on_alibaba_risc_v_board">discuss</a>
+    </p>
+<p class="lede">In the process of scouring Alibaba for a cheap Versal devkit, I unexpectedly came into possession of a Zhihe Computing A210 RISC-V SoC . 1 It’s a cool board: there’s a ridiculous amount of IO exposed by the baseboard, not to mention 8 cores clocked at 1.9 GHz is nothing to sniff at for a RISC-V CPU. I’m not sure I could recommend buying any RISC-V SoC currently 2 , but all these distros that are starting to support RISC-V need to run tests somewhere that isn’t Spike/QEMU. I decided to make this board into a NixOS build server so I could learn more about the state of RISC-V support in NixOS and to get some practice in Linux bringup. My complete A210 NixOS configuration can be found here ; I confirmed sound, HDMI, Bluetooth/Wi-Fi, ethernet, and the GPU were all working, but YMMV. Nix makes …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://underjord.io/img/preview.png" alt="Reviving the Donkey Car with Erlang" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://underjord.io/reviving-the-donkey-car-with-erlang.html">Reviving the Donkey Car with Erlang</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      36 points · by lawik · underjord.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50583535">discuss</a>
+    </p>
+<p class="lede">Underjord is an artisanal consultancy doing consulting in Elixir, Nerves with an accidental speciality in marketing and outreach. If you like the writing you should really try the pro version . When I spoke at Oredev this year I nearly stumbled across these fucking things. Some kind of RC-car looking robot vision thing. With Raspberry Pis on them. In the booth next to where I found it Neo4j was doing .. something .. with a PuppyPi robot dog thing. So I thought it was theirs. Or some other exhibitor. But no. Asking the organizers it turns out these were just fun pieces of kit they had around from a past event. No-one quite knew how they worked on the current staff and there hadn’t been enough time or interest to bring them online. They’d been essentially set out as decor …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://antonz.org/probabilistic-data-structures-2/cover.png" alt="Probabilistic data structures in Go, part 2" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://antonz.org/probabilistic-data-structures-2/">Probabilistic data structures in Go, part 2</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by cgrinds · antonz.org · <a class="discuss" href="https://lobste.rs/s/hcofqi/probabilistic_data_structures_go_part_2">discuss</a>
+    </p>
+<p class="lede">Probabilistic data structures give you approximate answers to questions about the data they handle. Does the set contain a certain item? How many unique items are in the collection? What is the 99th percentile in a stream of numbers? How similar are two sets? Unlike deterministic structures, the answers might not be exact, but in return, you can save a lot of memory. Previously, we reviewed the following data structures : Bloom filter (for checking if an item is in a set), Count-min sketch (for counting items), HyperLogLog (for counting unique items), T-digest (for finding quantiles), and Top-k (for finding the most frequent items). In this post, we&#39;ll talk about other probabilistic structures and compare them to the ones we&#39;ve already covered. We&#39;ll look at how they work and what kinds …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://progrium.xyz/articles/2026/single-binary-postgres.card.png" alt="How I Got Postgres into a Single Binary" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://progrium.xyz/articles/2026/single-binary-postgres">How I Got Postgres into a Single Binary</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by rrampage · progrium.xyz · <a class="discuss" href="https://lobste.rs/s/pvylnk/how_i_got_postgres_into_single_binary">discuss</a>
+    </p>
+<p class="lede">SQLite is one of my favorite database technologies. It&#39;s a full SQL database, designed as an embeddable library, that stores all its data in a single file. The sqlite3 command line tool is great too. You point it at a file and run queries. There&#39;s no server to run. At the other end of the spectrum is Postgres. It&#39;s the most capable general purpose SQL database, trusted in production at scale, and is something of an industry standard. With that comes complexity, starting with the fact that it&#39;s client-server. SQLite is a natural fit for software that needs a database but isn&#39;t meant to be deployed in the cloud at scale: desktop apps, self-hosted tools, things you run locally. These applications can use SQLite and manage it themselves, so you barely know there&#39;s a database involved. So when …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://greptile.com/opengraph/greptile-blog.png" alt="How should an LLM see a computer?" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.greptile.com/blog/trex-computer-use">How should an LLM see a computer?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      33 points · by dakshgupta · greptile.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50615520">discuss</a>
+    </p>
+<p class="lede">Introducing a new way to review your PRs. Claude Code and Codex can both use your computer. Under the hood they work in a similar manner: both can give the model a screenshot and an accessibility tree, a text description of every button on screen, and let it click by position or by naming an element. The text version of the screen was built decades ago, for people who couldn’t see it. In 1984, two IBM mathematicians, Jim Thatcher and his former thesis adviser, Jesse Wright, who was blind, started a side project to read the PC’s screen out loud. When GUIs turned the screen into pixels, apps had to start describing themselves instead. Microsoft shipped Active Accessibility in 1997, Sun started AT-SPI for Linux in 2001, and Apple added its Accessibility API in 2002. This text has been useful …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf">Microsoft 365 Outage - Post Incident Report</a></h3>
+    <p class="dateline"><span class="badge">L</span>      30 points · by rrampage · tianyin.github.io · <a class="discuss" href="https://lobste.rs/s/becitz/microsoft_365_outage_post_incident">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://www.alicecaml.org/logo512x256.png" alt="Alice v0.6.0" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.alicecaml.org/blog/alice-v0-6-0/">Alice v0.6.0</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by olex · alicecaml.org · <a class="discuss" href="https://lobste.rs/s/18c0lq/alice_v0_6_0">discuss</a>
+    </p>
+<p class="lede">Announcing the release of Alice v0.6.0 ! This change introduces several new features needed to build a small collection of packages from the Opam repository which I&#39;ve been manually porting to Alice&#39;s package format in alice-ports . Alice packages may now refer to modules from the standard library which are excluded from the prelude, such as Unix and Str . A new builtins section in Alice.kdl can be used to list the built-in modules a package can access: Packages may include C source files in their src directory. All C files will be compiled and linked into the resulting executable when building a project. The ability to compile C code raises the question of how to pass custom linker arguments to the C compiler, and this is addressed with another new feature: config scripts. A package may …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/">C++26 is done (again)! — Trip report: November 2026 ISO C++ standards meeting (Búzios, Brazil)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      24 points · by olliej · herbsutter.com · <a class="discuss" href="https://lobste.rs/s/fjueso/c_26_is_done_again_trip_report_november">discuss</a>
+    </p>
+<p class="lede">Today, the ISO C++ committee completed technical work on C++26 for a second time in beautiful Búzios, Rio de Janeiro, Brazil (hybrid online via Zoom). As I reported in March , the ISO C++ committee completed technical work on C++26 at our March meeting; following that, we held the first meeting of C++29 in June . Since then, the approval (Draft International Standard, or DIS) ballot for C++26 was held but, for the first time, did not pass unanimously and was sent back to the ISO C++ committee with additional international comments to address, mostly about the contracts feature ( pre , post , and contract_assert ). So this week we addressed the additional comments on C++26, including by adopting an extension to contracts and providing a detailed rationale and timeline to inform national …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://images.aeonmedia.co/images/60bea515-b55f-48e9-9e81-4fe8bf8afde7/essay-uncavaliersurunepetiteeminencesurlagrandeplacedumarche_cadrageplusserre_a70091x.jpg?width=1200&amp;quality=75&amp;format=jpeg" alt="The horse made the state" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://aeon.co/essays/the-origins-of-the-state-are-not-agrarian-but-pastoralist">The horse made the state</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      24 points · by ersinesen · aeon.co · <a class="discuss" href="https://news.ycombinator.com/item?id=50619186">discuss</a>
+    </p>
+<p class="lede">A horse rider at the market place in Urga (now Ulaanbaatar), Mongolia, photographed by Stéphane Passet in July 1913. Courtesy the Musée Albert-Kahn, France Transportation is the backbone of civilisation, which is why controlling the Strait of Hormuz grants global leverage. Because oil fuels more than 90 per cent of global transit, the source of this power lies not in the waterway, but in the control of global mobility. Halting all oil supplies paralyses virtually all transport, communication and supply lines: cities collapse, states disintegrate, societies break down and populations die off, throwing humanity back to the pre-industrial age. Without transport animals, humanity would still be back in the Stone Age. No city or state can exist without transportation, for there can be no …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://repository-images.githubusercontent.com/1452419503/9760540a-afd2-417a-a82e-53306712d601" alt="Anatomia Di Tor – The Tor Protocol, Byte by Byte" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/aleff-github/onion-routing-anatomy">Anatomia Di Tor – The Tor Protocol, Byte by Byte</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      23 points · by aleff · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50584327">discuss</a>
+    </p>
+<p class="lede">Anatomia di Tor — The Tor Protocol, Byte by Byte A free, open-source technical book about the Tor protocol, written in Italian: how Tor works from the bytes two relays exchange up to design choices, real attacks and open problems — with twenty laboratories that rebuild and test each mechanism on a private Tor network. Origin, method, and an invitation to contribute. This book builds on study documents I produced over several years, beginning with my bachelor&#39;s thesis. Under my editorial direction, AI tools made substantial contributions to expanding and organizing that material into the present technical narrative, as well as drafting figures, exercises, code, and laboratories. Despite technical checks, the book has not undergone independent expert review; mistakes may remain. Readers are …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://aerogramme.deuxfleurs.fr/blog/2026-quality-imap-part-2/">Quality IMAP, Part 2: Mailbox Concurrency</a></h3>
+    <p class="dateline"><span class="badge">L</span>      22 points · by armael · aerogramme.deuxfleurs.fr · <a class="discuss" href="https://lobste.rs/s/lnpwpu/quality_imap_part_2_mailbox_concurrency">discuss</a>
+    </p>
+<p class="lede">In the past year, we have been significantly improving the reliability and correctness of Aerogramme&#39;s IMAP implementation. This is the second part in a series discussing why implementing IMAP correctly is not so easy, and presenting our work on making Aerogramme&#39;s IMAP code as high-quality as we can. Today we focus on challenges that arise when considering concurrent access to a mailbox. Aerogramme is an experimental email server (&amp; calendar, contacts), designed to be geo-distributed, hosted outside of datacenters, on refurbished hardware, and reliable even in presence of network issues and hardware failures. It is built on top of Garage and shares the same philosophy. Aerogramme is AI-free: we do not wish to use unethical technology and prefer to spend effort on careful craftmanship and …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dave.writersweb.org/index.md">Good morning and welcome to my idea of a new web</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by spc476 · dave.writersweb.org · <a class="discuss" href="https://lobste.rs/s/l8u1tj/good_morning_welcome_my_idea_new_web">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://alanpearce.eu/post/scriptura/">scriptura: a cozy corner for your scripts</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by winter · alanpearce.eu · <a class="discuss" href="https://lobste.rs/s/oeamed/scriptura_cozy_corner_for_your_scripts">discuss</a>
+    </p>
+<p class="lede">I’ve created a new little tool to help run and manage scripts in a folder tree, called scriptura . It is based on the idea behind sd and is made for fish users. If I type in scriptura run os update linde , it will run the script at ~/scripts/os/update/linde , whilst providing tab completion for each element. Pressing tab after a script has been resolved will first add -- to clearly show the end of the script part of the command line, then use the default shell filename completion. The usage information gives more detail on what can be done. To reduce the amount of typing required, I have set the following aliases. The fish completion system handles these well: sf &lt;tab&gt; will show me scripts to be run, whereas sfm will show me the subcommands of the tool. To aid documentation, scriptura …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/ab31b792ee30a0ed5d67c33f2b28c6c130f525647d84d1297cb95b9d928431a9/ruairidhflint/news-blocklist" alt="Show HN: News Blocklist – a DNS blocklist of 14k news and current-affairs sites" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/ruairidhflint/news-blocklist">Show HN: News Blocklist – a DNS blocklist of 14k news and current-affairs sites</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by mrroryflint · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50611026">discuss</a>
+    </p>
+<p class="lede">A DNS blocklist of news and current-affairs websites, for people who want a break from the news. It covers newspapers, broadcasters&#39; news sites, news agencies, news magazines, political news and commentary, business news, local news and news aggregators, worldwide. Major and regional outlets are curated in this repository. The long tail of smaller news sites is pulled from Wikidata, filtered automatically, checked against DNS, and refreshed every week. Works with Pi-hole, AdGuard Home, uBlock Origin, AdGuard, dnsmasq, hosts files and any blocker that subscribes to a list by URL. Both block the same major sites. news adds thousands of smaller ones. Each list comes in five formats. Use the URL as-is to subscribe; lists update when the data changes and at least weekly. Pi-hole · Lists (v6) …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.sciencedaily.com/images/1920/noaa-south-pole-observatory-station-weather-balloon.webp" alt="Earth&#39;s ozone hole has grown to a size not seen in a decade" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.sciencedaily.com/releases/2026/11/261110042546.htm">Earth&#39;s ozone hole has grown to a size not seen in a decade</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by geox · sciencedaily.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50617302">discuss</a>
+    </p>
+<p class="lede">Unusual weather patterns over Antarctica caused the ozone hole to expand dramatically in 2026, reaching one of its largest sizes on record. Despite the striking increase, scientists from NASA and NOAA say Earth&#39;s protective ozone layer is continuing its gradual recovery and remains on track to heal later this century. The 2026 Antarctic ozone hole ranked as the seventh-largest in 48 years of observations, based on its average seasonal area. Scientists attributed the expansion primarily to an exceptionally strong polar vortex, a large circulation of winds that influences atmospheric conditions over Antarctica. They also emphasized that international efforts to reduce harmful chemicals have prevented the hole from becoming even larger. Between September 7 and October 13, 2026, when ozone …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-23-p4.html">‹</a><a href="2026-11-23.html">1</a><a href="2026-11-23-p2.html">2</a><a href="2026-11-23-p3.html">3</a><a href="2026-11-23-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-11-23-p6.html">6</a><a href="2026-11-23-p7.html">7</a><a href="2026-11-23-p8.html">8</a><a href="2026-11-23-p9.html">9</a><a class="pg-arrow" href="2026-11-23-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>135 stories · 3 cross-posts merged · 123 excerpts · 87 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

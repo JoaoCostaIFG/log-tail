@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Wednesday, November 11, 2026 — Page 2</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 315</span>
+      <span>Wednesday, November 11, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 2</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/">Using voltage glitching to unleash the A100 in my mining card</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      200 points · by lae · blog.kate.land · <a class="discuss" href="https://news.ycombinator.com/item?id=50451903">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/zy4p7f/using_voltage_glitching_unleash_a100_my">discuss on lobste.rs</a>
+    </p>
+<p class="lede">I’ve discovered a voltage fault injection vulnerability on the GA100 die, allowing an operator to blow arbitrary fuses. Utilizing this vulnerability, I’ve converted my CMP 170HX 8GB card into what is effectively an A100-80G! Further, my unlocked cards actually perform ~1.2x faster than a retail A100 by having all functional SMs enabled (~120-126, die-lottery dependent), rather than the yield-safe 108 SMs NVIDIA chose for all production A100 cards. Finally, CMP-disabled features like NVLink, PCIe Gen4, NVJPG, NVDEC, MIG are all unlockable with this approach, though I haven’t specifically tested NVJPG/NVDEC/MIG. Here’s how my “A100-80G” appears and functions. NVIDIA uses fuses for product segmentation, security features, and other fun access control features - and crucially, there are …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Apple-Support-Community-forum.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="Apple is killing its Support Community forum next week" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.theverge.com/tech/1031507/apple-community-support-forum-shutting-down">Apple is killing its Support Community forum next week</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      176 points · by saikatsg · theverge.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50453555">discuss</a>
+    </p>
+<p class="lede">The Apple Support Community platform is now read-only, and will permanently close on November 20th.﻿ The Apple Support Community platform is now read-only, and will permanently close on November 20th.﻿ It’s the end of the road for the Apple Support Community. The dedicated discussion forum, which gave Apple users a place to exchange advice, troubleshoot, and generally chat about Apple products, has been placed into read-only mode, with a message from the company announcing that the Support Community will shut down for good on November 20th. Here’s the full banner notice that’s currently displayed on the website: “The Apple Support Community will permanently close on November 20, 2026. Starting today, the site will no longer accept new posts and is available in a read-only state. You can …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://happihacking.com/images/og/thebeambooks.jpg" alt="Why I wrote the BEAM book (2025)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://happihacking.com/blog/posts/2025/why_I_wrote_theBEAMBook/">Why I wrote the BEAM book (2025)</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      175 points · by zenincognito · happihacking.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50427107">discuss</a>
+    </p>
+<p class="lede">After ten years of keeping Klarna’s core system upright I know this: a 15 millisecond pause in the BEAM can stall millions of peak-shopping payments, trigger a 3 a.m. Christmas-Eve post-mortem, and earn you a very awake call from the CEO. I wrote The BEAM Book so the next engineer fixes that pause before the coffee cools. I opened the project on 12 October 2012 with a lone DocBook file with four lines of text and an oversized sense of optimism. After two weeks, the commit log is mostly me adding structure, moving headings, and updating metadata. Most of it is scaffolding. The actual content is still just a few hopeful lines. By November I had abandoned DocBook for AsciiDoc, written a custom build script, and convinced myself the book could be wrapped up in six months. Those early commits …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://nathan.rs/posts/weight-space-lp/">Can a Linear Program Do Weight-Space Programming?</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      166 points · by emschwartz · nathan.rs · <a class="discuss" href="https://news.ycombinator.com/item?id=50452655">discuss</a>
+    </p>
+<p class="lede">Last week, MIT CSAIL published Sparks of Weight-Space Programming . Given the raw weights of a small network, GPT-6 Astra could tell which game it had been trained to play. Given only a game’s rules, it could write the weights of a small network from scratch and beat networks trained with PPO for 100 million steps. No gradients, no training loop, just reasoning about what the weights compute. They coined this weight-space programming . In another experiment, they asked Astra to make Qwen3.5-0.8B better at math by editing its weights. Astra changed only 0.016% of the weights, and MATH-500 accuracy jumped from 7.9% to 48.1%. 1 Looking at Astra’s edit, I realized most of its search was solving a linear program by trial and error. It spent about 8 hours and 28 forward passes choosing which …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://terminal2shell.com/og.png" alt="Terminal2Shell: Critical flaw grants instant shell access on every major OS" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://terminal2shell.com/">Terminal2Shell: Critical flaw grants instant shell access on every major OS</a></h3>
+    <p class="dateline"><span class="badge">L</span>      148 points · by whjms · terminal2shell.com · <a class="discuss" href="https://lobste.rs/s/vghqe8/terminal2shell_critical_flaw_grants">discuss</a>
+    </p>
+<p class="lede">Terminal2Shell is a design-level vulnerability in terminal emulators. When a terminal is launched, it immediately spawns a shell process and connects it directly to the user&#39;s keyboard. From there, the attacker can issue arbitrary commands with the full privileges of the logged-in user. Researchers have confirmed that the shell will execute any command typed into it, including commands that delete files, install software, and modify system configuration. In some cases, the shell has been observed executing commands the user typed themselves . We are releasing a working proof of concept below. It is fully weaponized. Click inside and start typing. Try help . The page you are reading now has a shell in it. Close the tab if you are concerned. Exploitation requires local access, a working …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://av.github.io/safe-sand/icons/icon-512.png" alt="Hyper-Realistic Sand with WebGL2" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://av.github.io/safe-sand/">Hyper-Realistic Sand with WebGL2</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      141 points · by everlier · av.github.io · <a class="discuss" href="https://news.ycombinator.com/item?id=50453288">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://p0pcycle.com/wp-content/uploads/2026/11/image-3.png" alt="Hacking the Meta Ray-Ban smartglasses" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/">Hacking the Meta Ray-Ban smartglasses</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      139 points · by moooooky · p0pcycle.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50406224">discuss</a>
+    </p>
+<p class="lede">Back in July I wanted to check out the pwn2own targets for 2026. Since the rules hadn’t been released yet, I decided I would check last year’s targets in the hope that it would be similar. Imagine my surprise when I managed to get arbitrary code execution on the glasses and they weren’t in the wearables category anymore :’). It’s fine though because I still reported it to meta, and after fighting the payout a few times, we settled (ok there was no settling but I agreed to the new payout). Before attempting this, I remember telling my friend about it. They said “ooof good luck. These are usually pretty hardened and no-one attempted them last year at p2o.” First step was acquiring the glasses. I am lucky that my brother-in-law had a pair he didn’t really use, so I could steal them for a few …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://tendrils.co/blog/2026-11-10/30m-raised">$30M Raised to Redo the CPU</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      131 points · by shioyama · tendrils.co · <a class="discuss" href="https://news.ycombinator.com/item?id=50447036">discuss</a>
+    </p>
+<p class="lede">As of today, Tendrils has completed a $30M round led by Benchmark to rebuild general-purpose computing. Contemporary CPUs are made under the constraint of backwards compatibility with sequential, single-core chips. Accumulated layers of historical designs are locking engineers into decisions dating back to the 1970s. As a result, all existing CPUs are bottlenecked by complex cache coherency protocols and elaborate reorder buffers. CPU scaling is sabotaged from the start. At Tendrils, we believe that the future of general-purpose computing lies beyond legacy architectures for legacy software. Tendrils is answering the question: what if we redo the CPU? Instead of starting from a sequential design, we’re building our processor to have thousands of cores operating in parallel. This requires …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/">Open research, stronger privacy: Making Firefox users harder to fingerprint</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      131 points · by Vinnl · blog.mozilla.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50452742">discuss</a>
+    </p>
+<p class="lede">Firefox is strengthening protection against trackers that recognize you across websites, even when they don’t use cookies. The latest fingerprinting protections shipped in Firefox reduce the extractable distinguishing details, making more Firefox users look alike to tracking scripts and strengthening individuals’ privacy in everyday browsing. These protections build on our research into browser and device fingerprinting, a technique that combines details about your browser and device to identify you across websites. We investigated which details contribute most to make users uniquely identifiable, turned those findings into practical protections for Firefox users, and shared our results openly so the wider web security and privacy community can build stronger defenses. Our findings are …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/659a2903921109e853e0abffd622ce4cf504b9992605c9beea867c3615190dad/adrbn/bo2-mac" alt="Show HN: Black Ops II statically recompiled to native ARM64 macOS" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/adrbn/bo2-mac">Show HN: Black Ops II statically recompiled to native ARM64 macOS</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      119 points · by adrbn · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50449891">discuss</a>
+    </p>
+<p class="lede">Call of Duty: Black Ops II, statically recompiled from 32-bit x86 Windows to native ARM64 macOS. Campaign, Zombies and multiplayer against bots, built on your Mac from your own Steam copy. Why · Abstract · Method · Limits · Repository · Legal Beta, 2026-11-03 · measured on one Apple M1 (4 performance + 4 efficiency cores, 16 GB) Campaign (Angola), Zombies (Town) and multiplayer (Hijacked, against bots) on an Apple M1, recorded while playing; the number in the top right corner is frames per second, and the screen recording itself costs some, mostly in the campaign. 80-second video (MP4, 20 MB) This repository contains no game file and no translated game code. It turns your own Steam copy of Black Ops II into an app for your Mac, on your Mac. The game&#39;s code ends up inside that app, so …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://maurycyz.com/projects/badcert/">Horrible public key tricks</a></h3>
+    <p class="dateline"><span class="badge">L</span>      118 points · by rrampage · maurycyz.com · <a class="discuss" href="https://lobste.rs/s/txkq8s/horrible_public_key_tricks">discuss</a>
+    </p>
+<p class="lede">So, I&#39;ve always been somewhat annoyed at SSL/TLS. It requires everyone to go through a complex &#34;ACME&#34; dance just to put up a public website. Worse, certificates expire every few months, so it&#39;s not a one and done thing: even with automation, maintaining a certificate requires care to ensure the ACME client always has access to DNS records or the web server. ... and the whole system doesn&#39;t even work because certificates are issued over plaintext connections, and trusted certificate aurthorities use very secure keys like &#34;4&#34; There is prior art of protest SSL implementations , but I do actually want to encrypt web traffic. Passive eavesdropping is a real risk... but preventing it doesn&#39;t require the whole certificate thing: therefore, the best choice is a protest certificate. The only part …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/6d1ae629e1218e5f05d16f27628df0bdffa68e9f8fce515a055c89e06a2d92eb/gmkurtzer/ginux" alt="Greg Kurtzer&#39;s Ginux is now a userspace kernel" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/gmkurtzer/ginux">Greg Kurtzer&#39;s Ginux is now a userspace kernel</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      111 points · by d3Xt3r · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50450007">discuss</a>
+    </p>
+<p class="lede">Ginux is a configurable userspace kernel for isolated Linux compatibility instances. It runs as an ordinary Linux process and places an explicit, versioned contract between managed workloads and the host kernel. Ginux began as an independent Rust kernel that booted directly through UEFI and ran a Rocky Linux 10 userspace. That research phase is complete. Its final source is permanently preserved on the bootable-kernel branch and at the bootable-kernel-final tag. Active development now continues here as a userspace kernel. The standalone-kernel experiment proved that an AI coding agent, directed by an experienced human through architecture, gates, and executable tests, could construct a new kernel capable of running meaningful Linux userspace. It also made the limits of that result …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://substackcdn.com/image/fetch/$s_!U0Ia!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9268745d-f194-4df1-8598-5f351867b5b4_1245x813.jpeg" alt="We need more goat sacrifices" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.experimental-history.com/p/we-need-more-goat-sacrifices">We need more goat sacrifices</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      104 points · by iamnothere · experimental-history.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50452652">discuss</a>
+    </p>
+<p class="lede">Just a quick thing before this week’s post. If you’ve preordered THE STRANGEST IDEA IN THE WORLD , I’d like to send you a little something extra in the mail. Submit your preorder receipt and your mailing address here . This is only available to folks with US or UK addresses—apologies to those who live elsewhere! In the US, everyone with a valid entry will get one; in the UK they’ll pick winners randomly. The link will be open until December 11, and we’ll start mailing things out after that. I won’t spoil the surprise, but I will say that a) it’s very silly, and b) I can’t wait to get mine. (For the US: US Residents, 18+. Ends December 11, 2026. See terms at https://sites.prh.com/strangestidea-preorder ) Before anybody enacts a major social policy or launches any philanthropic programs …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.atuin.sh/threads-agent-sessions/">Atuin Threads: All your agent sessions on every machine</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      103 points · by linsomniac · blog.atuin.sh · <a class="discuss" href="https://news.ycombinator.com/item?id=50453637">discuss</a>
+    </p>
+<p class="lede">Over the past year or two, how I use my terminal has changed dramatically. For years I was the sole user of my shell, and everything in my Atuin history was authored by me. Now, more than half the commands running on my machines weren’t written by me. These days, much of my work happens through a coding agent, typed into a little “Topsy-turvying” text box. But while my shell history follows me everywhere, my agent sessions do not. They&#39;re scattered across different tools and machines (a laptop, a dev server, ephemeral instances on exe.dev , a surprisingly cheap bare metal box in Germany), difficult to search, and often forgotten once I&#39;ve moved on. I started working on Atuin because the history of my work was ephemeral: every command I typed was destined to vanish on line 501 of …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.wezm.net/v2/posts/2026/distro-energy-use/">How Much Energy Does Building Distro Packages Use</a></h3>
+    <p class="dateline"><span class="badge">L</span>      100 points · by wezm · wezm.net · <a class="discuss" href="https://lobste.rs/s/ezjewj/how_much_energy_does_building_distro">discuss</a>
+    </p>
+<p class="lede">When I set up the infrastructure for Casuarina Linux I repurposed an AMD AM4 system with Ryzen 9 5950X 16-Core CPU (105W TDP) and 32Gb of DDR4 RAM as the build server. I set it up in our laundry, connected it via a smart plug, and reset its counters. Over the course of the project I would regularly pull package updates from Chimera Linux , build and install them locally, and then push them to the repo, which would trigger Buildbot to build and publish them. The project ran from 30 March 2026 to 8 November 2026 (a bit over 7 months) the total energy used was 98.4 kWh. My electricity plan is a 100% renewable plan (meaning they offset the non-renewable parts) and costs AU$0.33 kWh. Ignoring the daily service fee the cost of that electricity is AU$32.47 . Since it turned out I was the only …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-11.html">‹</a><a href="2026-11-11.html">1</a><span class="pg-current">2</span>
+<a href="2026-11-11-p3.html">3</a><a href="2026-11-11-p4.html">4</a><a href="2026-11-11-p5.html">5</a><a href="2026-11-11-p6.html">6</a><a href="2026-11-11-p7.html">7</a><a href="2026-11-11-p8.html">8</a><a href="2026-11-11-p9.html">9</a><a class="pg-arrow" href="2026-11-11-p3.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>128 stories · 6 cross-posts merged · 119 excerpts · 81 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

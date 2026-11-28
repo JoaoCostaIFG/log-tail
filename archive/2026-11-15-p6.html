@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Sunday, November 15, 2026 — Page 6</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 319</span>
+      <span>Sunday, November 15, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 6</h2>
+    <div class="columns">
+  <article class="story">
+    <h3 class="headline"><a href="https://bike.github.io/posts/kildall.html">Kildall&#39;s algorithm</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by veqq · bike.github.io · <a class="discuss" href="https://lobste.rs/s/1nmzz6/kildall_s_algorithm">discuss</a>
+    </p>
+<p class="lede">I got a part time job writing a Lisp compiler, so I’m going to talk about that. This post might be hard to understand if you do not program. Or if you do. There’s a fair amount of background required. You might be familiar with Lisp in the form of a Scheme interpreter you used for a few semesters in college. You might think things about it like “it’s so elegant, but it’s kind of impractical for day-to-day use”. You might think of it as “an interpreted language” and so don’t understand what I mean by Lisp compiler. If you don’t think these things you can probably skip to the next section. In Lisp, in contrast with some languages, the semantics are essentially built around interpretation. When you give a Lisp interpreter some code it goes through it step by step and executes it. This …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://goliath32.com/blog/ziphead.html">Creating a self booting ZIP archive</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by rw-rw-rw- · goliath32.com · <a class="discuss" href="https://lobste.rs/s/ebahfz/creating_self_booting_zip_archive">discuss</a>
+    </p>
+<p class="lede">So, after a debugging session the other day, I was having some shower thoughts regarding early userspace and initrd. Linux initramfs supports unpacking CPIO, a stupid, simple, standardized format. In the discussion on whether to support TAR instead, much emphasize has been put on the fact that CPIO is standardized and less fragmented. Luckily, Linux (the kernel) includes its own tool to produce the specific variant of the standard that it happens to implement. The standard CPIO tool is possibly the most cursed archiver under the SUN. In the old DOS/WinDOS world, ZIP was probably the most wide spread and well known archive format, being displaced to some extend by the rise of RAR during the 2000s. Because of the design of the format, ZIP lends itself to all kinds of polyglot trickery. Way …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://sofiabelen.github.io/projects/pointer-provenance-in-rust-vs-cpp/yves-alarie-MmZet_7mzMY-unsplash.jpg" alt="Pointer Provenance in Rust vs C++" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sofiabelen.github.io/projects/pointer-provenance-in-rust-vs-cpp/">Pointer Provenance in Rust vs C++</a></h3>
+    <p class="dateline"><span class="badge">L</span>      20 points · by gignico · sofiabelen.github.io · <a class="discuss" href="https://lobste.rs/s/xmtjzq/pointer_provenance_rust_vs_c">discuss</a>
+    </p>
+<p class="lede">I’ve been exploring Rust, and one topic that got me intrigued is pointer provenance, particularly because it’s not easy to visualize. To get a feel for vtables , what I wanted was to look at the actual memory, to see what it really looked like and prove that I could in fact call these functions through their respective function pointers. With provenance, I wanted to take it apart the same way, but it turns out it’s not so straightforward. This only got me more intrigued, so let’s see what we can find! My first time hearing about provenance, I wondered, why hadn’t I heard about it before? It seems so crucial, yet a bit of an obscure concept. Let’s start by taking a good look at this snippet. It’s short, but our intuition can trick us if it’s our first time coming across this concept. void …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bitbanksoftware.blogspot.com/2026/11/how-to-read-codes-from-many-ir-remote.html">How to read codes from (many) IR remote controls with as little code as possible</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      20 points · by speckx · bitbanksoftware.blogspot.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50457979">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bernsteinbear.com/blog/ssa-bytecode/">SSA from bytecode: imperative pearl</a></h3>
+    <p class="dateline"><span class="badge">L</span>      19 points · by asb · bernsteinbear.com · <a class="discuss" href="https://lobste.rs/s/x5uq91/ssa_from_bytecode_imperative_pearl">discuss</a>
+    </p>
+<p class="lede">Ufuk made a comment that he enjoyed my description of SSA from bytecode in Aaron’s livestream with me . While filming the livestream—an intro to ZJIT internals—I got a little nervous that people would shy away from our 1900 line add_iseq_to_hir function. This function is responsible for converting CRuby’s stack based bytecode for the YARV virtual machine into a high-level SSA IR for ZJIT to analyze and optimize. It takes bytecode that looks roughly like this: into SSA form, giving an SSA value to each stack slot, ish: While our function is 2000 lines long because it handles a lot of specific opcodes and weird facts about those opcodes, the core of it is small. Here is that core. The bytecode assumes that when it is run, it will be operating on a stack. This means that every opcode has …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://dkim2.com/">DKIM2 – Every system that handles an email signs for what it did</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      19 points · by u1hcw9nx · dkim2.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50505312">discuss</a>
+    </p>
+<p class="lede">Today, a lot of legitimate mail is impossible to tell apart from abuse. forwarding · mailing lists · Bcc · replayed signatures · forged bounces The goal: move legitimate mail out of the grey area — so anything still there can be treated as bad. Good means: from who it says it’s from, with every change attributable to whoever made it. Forwarding, mailing lists, Bcc and bounces are legitimate, but today they look just like the tricks abusers use: replayed signatures, forged bounces, spoofed From addresses. Receivers have to guess, and both good and bad mail get caught. DKIM2 gives each legitimate use a clear, verifiable way to do what it does — forwarders sign, lists record their changes, each Bcc copy is signed for the recipient it was sent to, bounces follow the chain — so it leaves the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://sable.moe/og.png" alt="Link Previews and You" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sable.moe/en/blog/link-previews-and-you/">Link Previews and You</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by JadedBlueEyes · sable.moe · <a class="discuss" href="https://lobste.rs/s/0rmq2f/link_previews_you">discuss</a>
+    </p>
+<p class="lede">If you’re an avid user of programs like Discord , you might be familiar with the venerable ‘link preview’. This is a little block that shows below a link, and hints at what might lie on the other end of that URL. These are a little messaging convenience that allows for many things, like conveniently sharing social media posts without logging into a platform and providing a description for a blog post. It encourages sharing: the open internet is built on a diversity of open websites, where people can freely view content without stepping into walled gardens and discourse chambers. Discord, as a centralised platform, employs their servers to visit web pages for you, grab metadata from tags specified in markup headers, and caches that response. Clients then query that server to get a …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://linebender.org/blog/jit-bitmap-text/">JIT bitmap text rendering for microcontrollers</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by wezm · linebender.org · <a class="discuss" href="https://lobste.rs/s/a3elxr/jit_bitmap_text_rendering_for">discuss</a>
+    </p>
+<p class="lede">I&#39;ve been working on vic-2350 , a re-envisioning of an 80s home computer on an RP2350 microcontroller board. Of course, such a project needs text rendering. Though bitmap fonts are now out of favor, I chose them both for efficiency and because, at low resolutions, I prefer the aesthetic of a crisp, intentionally designed bitmap font over the blurry mush of antialiased font rendering. They still have a niche, if a narrow one. I also wanted proportional spacing and kerning, again because I love the aesthetic of early Macintosh and its predecessors. Most text rendering in RP2350 projects is based on a fixed character cell, as achieving good performance is tricky. This blog post presents a technique for extremely fast rendering of bitmap text on microcontrollers such as the RP2350. I&#39;ve …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://blog.kizu.dev/cursors/">cursor:pointer on buttons</a></h3>
+    <p class="dateline"><span class="badge">L</span>      18 points · by two · blog.kizu.dev · <a class="discuss" href="https://lobste.rs/s/h8tghc/cursor_pointer_on_buttons">discuss</a>
+    </p>
+<p class="lede">Three weeks ago, at a CSS Working Grouping meeting, we discussed an issue “ Cursors for base appearance ” , and resolved on the following: The CSS Working Group just discussed [css-forms-1] Cursors for base appearance, and agreed to the following: One of the rules from the “last comment” mentioned there is Or, if we were to remove all non-button selectors, That is, of course, not a change to the default styles in the browser — this is a rule for elements that will have an appearance: base-… . Also note that, this user agent style will be very much overrideable — no !important . Anyone who does not like cursor: pointer on buttons and other similar elements, are free to override it to default (or anything else) in their stylesheets. The rest of us can, I guess, celebrate? I was always on …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.commondreams.org/media-library/image.jpg?id=68687838&amp;width=1200&amp;height=600&amp;coordinates=0%2C416%2C0%2C417" alt="&#39;Duffy Lied&#39;: Controllers Refute Transportation Secretary&#39;s Ground Stop Story" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.commondreams.org/news/duffy-ground-stop-explanation">&#39;Duffy Lied&#39;: Controllers Refute Transportation Secretary&#39;s Ground Stop Story</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      18 points · by mikestew · commondreams.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50507791">discuss</a>
+    </p>
+<p class="lede">To donate by check, phone, or other method, see our More Ways to Give page. Daily news &amp; progressive opinion—funded by the people, not the corporations—delivered straight to your inbox. US Transportation Secretary Sean Duffy speaks during a press briefing at the Department of Transportation headquarters building in Washington, DC, on November 14, 2026. &#34;I’ve spoken with 60 air traffic controllers tonight about what Sean Duffy said at the White House today,&#34; said one journalist. &#34;None of them are buying what he said.&#34; Air traffic controllers are rejecting US Transportation Secretary Sean Duffy&#39;s explanation for Friday&#39;s nationwide flight ground stop, raising questions about the Trump administration&#39;s account of a communications failure that disrupted air travel across the United States …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://bvisness.me/periodic-oriented-programming/">Periodic-Oriented Programming for FIRST Robotics</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by robalex · bvisness.me · <a class="discuss" href="https://lobste.rs/s/bwjt1b/periodic_oriented_programming_for_first">discuss</a>
+    </p>
+<p class="lede">I recently retired from mentoring my FIRST Robotics Competition (FRC) team. I started as a student in 2010, and went straight into mentoring upon graduation, so in total I have been writing FRC programs for about 17 years. Over time though I&#39;ve become more and more dismayed with how FRC programs are typically written. For decades, I feel that FIRST and WPILib have encouraged students to severely overengineer their robot programs. As time has gone on, I have become more and more frustrated with the state of FRC programming, and our team&#39;s code style has drifted further and further away from the norm. To be clear, I have the utmost respect for the time and effort that FIRST and the WPILib maintainers put in every year, and it is thanks to their efforts that FRC teams have reliable and …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/spmd.png" alt="Writing a DSL for high performance parallel programming in OxCaml" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/">Writing a DSL for high performance parallel programming in OxCaml</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by typesanitizer · blog.janestreet.com · <a class="discuss" href="https://lobste.rs/s/kh9fri/writing_dsl_for_high_performance">discuss</a>
+    </p>
+<p class="lede">The following is part of a series of posts about 2026 summer intern projects—for more, see “What the interns have wrought, special jumbo 2026 edition” We have a lot of performance-critical SIMD code (single-instruction, multiple-data) running on CPUs across the firm. These are highly parallel programs where you run the same computation across arrays of data, in our case for options pricing or for low-latency risk checks. Because OCaml hasn’t historically exposed SIMD instructions, these programs often involve an inner loop written in fairly esoteric C. Writing these loops requires implementers to think carefully about hardware, and doing performance tuning, such as modifying unroll factors or vector widths, can require major changes to the code. Moreover, these programs are constrained to …</p>  </article>
+  <article class="story">
+<img class="thumb full" src="https://us1.discourse-cdn.com/flex002/uploads/haskell/original/1X/89166504e40f4869ea825dd70048017861ec8578.png" alt="A technical vision for the Haskell ecosystem" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078">A technical vision for the Haskell ecosystem</a></h3>
+    <p class="dateline"><span class="badge">L</span>      16 points · by janus · discourse.haskell.org · <a class="discuss" href="https://lobste.rs/s/xe0prv/technical_vision_for_haskell_ecosystem">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://pypy.org/posts/2026/11/20-years-of-pyrolog.html">20 Years of Pyrolog</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      16 points · by lumpa · pypy.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50467539">discuss</a>
+    </p>
+<p class="lede">On November 12, 2006 I did the first surviving commit of my RPython based Prolog implementation Pyrolog into the PyPy repository. I had been working on it since spring 2006 already. In that year we were finishing up the first PyPy EU research project and I was finishing up my Bachelor studies at Uni Düsseldorf. Since it&#39;s now 20 years later I wanted to write a personal retrospective post on this project. Pyrolog never had any real users, but it still led to some interesting research and influenced a number of other RPython projects. As part of the EU project we had promised lots of things, including implementing some constraint programming in PyPy. For this strand of the work I learned Prolog by reading Clocksin and Mellish&#39;s Programming Prolog [CM2003] and later the Art of Prolog …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://unsung.aresluna.org/_media/from-digital-mischief-to-outright-destruction/ogimage.jpg" alt="“From digital mischief to outright destruction”" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://unsung.aresluna.org/from-digital-mischief-to-outright-destruction">“From digital mischief to outright destruction”</a></h3>
+    <p class="dateline"><span class="badge">L</span>      15 points · by calvin · unsung.aresluna.org · <a class="discuss" href="https://lobste.rs/s/cjnwcg/from_digital_mischief_outright">discuss</a>
+    </p>
+<p class="lede">Send me feedback, tips, bug reports, and anything else: My name is Marcin Wichary (he/him). I’ve worked as a UX designer, typographer, front-end person, and manager at Google, Medium, and Figma . I’ve also written a book about keyboards and typing , gave talks, and published essays about design, typography, and technology. Unsung is my blog about software craft and quality. Send me feedback, tips, bug reports, and anything else: The 1980s and 1990s PC viruses were a special breed. The MS-DOS operating system wasn’t particularly secure – few home computer operating systems were back then – so viruses could spread quickly, and many did. Some of the viruses focused more on actually wreaking havoc and destroying things, and some primarily on effective propagation that served no additional …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-15-p5.html">‹</a><a href="2026-11-15.html">1</a><a href="2026-11-15-p2.html">2</a><a href="2026-11-15-p3.html">3</a><a href="2026-11-15-p4.html">4</a><a href="2026-11-15-p5.html">5</a><span class="pg-current">6</span>
+<a href="2026-11-15-p7.html">7</a><a href="2026-11-15-p8.html">8</a><a href="2026-11-15-p9.html">9</a><a class="pg-arrow" href="2026-11-15-p7.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>133 stories · 3 cross-posts merged · 124 excerpts · 80 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

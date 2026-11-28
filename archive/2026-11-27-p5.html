@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log Tail — Friday, November 27, 2026 — Page 5</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css?v=85f37727">
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <nav class="topbar">
+      <a href="../index.html">Front Page</a>
+      <a href="../index.html#archive">Archive</a>
+    </nav>
+    <h1><a class="masthead-link" href="../index.html">Log Tail</a></h1>
+    <p class="edition-line">
+      <span>Vol. I · No. 331</span>
+      <span>Friday, November 27, 2026</span>
+    </p>
+  </header>
+
+
+
+
+  <section id="front-page">
+    <h2 class="section-title">Page 5</h2>
+    <div class="columns">
+  <article class="story">
+<img class="thumb" src="https://lucumr.pocoo.org/social/2026-11-25-poisoning-social.png" alt="Abolish Lock Poisoning" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://lucumr.pocoo.org/2026/11/25/poisoning/">Abolish Lock Poisoning</a></h3>
+    <p class="dateline"><span class="badge">L</span>      55 points · by fanf · lucumr.pocoo.org · <a class="discuss" href="https://lobste.rs/s/sj2pkv/abolish_lock_poisoning">discuss</a>
+    </p>
+<p class="lede">Rust has a curious feature that I don’t think the language would land today, if it was not there for a long time: mutex poisoning. When some Rust code panics while holding a std::sync::Mutex , the mutex is poisoned . That means that any further call to lock() returns a PoisonError . The motivation for this feature is that an object might have some internal invariants that need to be upheld and panicking in the wrong moment might invalidate reasonable at and leave an object behind in a broken state. Personally I absolutely hate this feature as it has bitten me so many times and I cannot once remember it helping me. The libs team is discussing making the non-poisoning locks the default in the next edition but entirely expectedly it has caused quite a few people to jump to the defence of the …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://aresluna.org/images/ui-style-guides/ogimage.png" alt="UI style guides" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://aresluna.org/ui-style-guides/">UI style guides</a></h3>
+    <p class="dateline"><span class="badge">L</span>      52 points · by lorddimwit · aresluna.org · <a class="discuss" href="https://lobste.rs/s/pbfhis/ui_style_guides">discuss</a>
+    </p>
+<p class="lede">This is a collection of preserved UI style guides a.k.a. interface guidelines from various companies, starting from the early 1980s and continuing to today. Many of the PDFs have been floating around, but I collected them in one place. Within each set, I tried to group them depending on themes and eras, and highlight the most important ones. Some required more effort to find, I scanned a few myself, plus also created standalone mirrors of various minisites. Some of the mirrors were lightly cleaned up to make their consumption easier – stuff like pixellating images better, inlining images instead of linking to them, or fixing YouTube embeds. Enjoy! (Commodore) Amiga was a multimedia personal computer particularly popular in the 1980s and 1990s in Europe. Its GUI was called Intuition and/or …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas/og.jpg" alt="Making a 3D fantasy map like a 16th-Century atlas" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas">Making a 3D fantasy map like a 16th-Century atlas</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      50 points · by HugoDz · spritefusion.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50667062">discuss</a>
+    </p>
+<p class="lede">Over the last few weeks, I worked on a map of various game dev techniques for people to refer to and learn from. Like, a real map! With each town being a technique&#39;s home, provided with a concise, illustrated example. And here we are. Today we are diving into the making of The Game Dev Atlas . If you want to pull off a cohesive art direction, you need to spend most of your time learning about your reference materials. No C code, no IDE, no sub-agents doing things. Just explore and wander on Google Images (old-school, I know), Wikipedia, and online museum galleries. Gather things, ideas, and visuals! You should feel the inspiration (literally, as you inspire fresh air) inflating your mind, and the first scraps of decisions starting to flow through your head, like: I want a bit of that …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://blog.pimalaya.org/og.png" alt="Pimalaya goes stable: Himalaya v3 and the pimdir standard" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://blog.pimalaya.org/pimalaya-goes-stable/">Pimalaya goes stable: Himalaya v3 and the pimdir standard</a></h3>
+    <p class="dateline"><span class="badge">HN</span><span class="badge">L</span>      45 points · by joshcsimmons · blog.pimalaya.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50664931">discuss on HN</a> · <a class="discuss" href="https://lobste.rs/s/kaj037/pimalaya_goes_stable">discuss on lobste.rs</a>
+    </p>
+<p class="lede">It took months, but here we are: the whole Pimalaya CLI family is released at once , at the top of the first stable version of the pimdir standard. Here the list: Most of them are majors, and they all break something for somebody. This post explains why, how, and where it goes from here. It is long, feel free to jump to the tool you care about. In Another year with NLnet I said this year was about consolidation and about a standard for PIM on disk. This release is the result of both. The thing is, every piece is now connected: Releasing them one by one meant releasing tools that disagree with each other: one version of the store here, another version of the output there. So I decided to bring every tool to release level first, then to release them all together. It took way longer than I …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://jmmv.dev/images/2026-11-24-gemini-capsules.jpg" alt="Entering the Geminispace" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://jmmv.dev/2026/11/entering-the-geminispace.html">Entering the Geminispace</a></h3>
+    <p class="dateline"><span class="badge">L</span>      44 points · by jmmv · jmmv.dev · <a class="discuss" href="https://lobste.rs/s/8rgqmw/entering_geminispace">discuss</a>
+    </p>
+<p class="lede">November 25, 2026 · About 13 minutes · Tags: blogsystem5 , gemini This article was originally published on Substack in the Blog System/5 newsletter and is replicated here for archival purposes. On May 1st, 2020, Project Gemini made the rounds for the first time via a Hacker News discussion thread . I remember seeing the announcement back then, barely a month after the Covid 19 worldwide lockdown, and thinking it was a cool gimmick. But that was that. However, I’ve recently been seeing a few gemini:// links here and there as footers in hand-crafted blogs, and I nerd-snipped myself to export this blog as a Gemini capsule that you can find at gemini://capsule.jmmv.dev/ . The process has been fun, and I actually quite like the extreme minimalism of the resulting site. So what else would you …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://opengraph.githubassets.com/cda20fa89e99b5acc703456522e46fde887df822efa1ce304a4b59317734d8e5/convex/convex-backend-skill/issues/64" alt="Convex skills send the user&#39;s app idea to a remote server without telling them" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://github.com/convex/convex-backend-skill/issues/64">Convex skills send the user&#39;s app idea to a remote server without telling them</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      41 points · by MickyTheMouse · github.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50669765">discuss</a>
+    </p>
+<p class="lede">Three skills in this plugin (listed in Anthropic&#39;s claude-plugins-official marketplace) raised the same concern for me: I read this as a team trying to make onboarding reliable, not as anything malicious. But the last item tells the agent to change the shape of a command so that the user&#39;s safety tooling does not catch it, which removes the check the user or their administrator chose to have. Together with an unpinned script from a generated-name host, a user has no way to review what runs. (All three are still on main as of 26 October; in labs-quickstart the passage is now lines 73 to 80.) Suggestions: tell the user before the idea is sent, and make it optional; ship the bootstrap and add scripts in the plugin (or pin them by hash) instead of fetching them at run time; and drop the …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://roboticoverlords.org/tinyhat">Tiny Hat: a new Linux distro dedicated to retro gamedev</a></h3>
+    <p class="dateline"><span class="badge">L</span>      35 points · by xyproto · roboticoverlords.org · <a class="discuss" href="https://lobste.rs/s/mbm7xw/tiny_hat_new_linux_distro_dedicated_retro">discuss</a>
+    </p>
+<p class="lede">Tiny Hat Tiny Hat A Linux distro for 32-bit and 64-bit x86 computers. Intended for retro gaming and retro game development (DOS, GBA, SNES, NES, TIC-80, CHIP-8, C64 and ZX Spectrum). The image is signed and fully reproducible. Uses less than 100M RAM after booting (87M on the 32-bit version, right over 100M on the 64-bit version). Uses just a bit more than 600M disk space, and is fully usable on a 1G memory stick. Works better than MS-DOS and FreeDOS for playing games on the old x86 retro gaming computer I created the distro for (because of hardware support). Comes with modern libraries, like SDL3, Pipewire and Raylib. Uses dwl and Wayland. Comes with the Orbiton editor and an easy way to compile and run C programs, DOS Assembly programs, GBA programs and also LÖVE+Fennel programs. Some …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://fzakaria.com/2026/11/25/browser-tabs-as-a-container-runtime">Browser tabs as a container runtime</a></h3>
+    <p class="dateline"><span class="badge">L</span>      34 points · by mrw · fzakaria.com · <a class="discuss" href="https://lobste.rs/s/hge0sd/browser_tabs_as_container_runtime">discuss</a>
+    </p>
+<p class="lede">tl;dr tabc is a container runtime, like runc, that runs each container in a Chromium tab. docker run --runtime tabc alpine works and starts in under a second. On a Mac it needs no hypervisor and no Linux VM ; Linux for everyone! Despite my zealot love for Nix , there is no denying the convenience and ubiquity of Docker. Containers have become the standard unit of software deployment, providing a consistent environment across different machines and simplifying the management of dependencies. 1 1 Containers are not even a “real” thing within the Linux kernel although there are recent attempts to formalize them as a kernel-level abstraction. Despite all the footguns you can get yourself into by writing a non-reproducible Dockerfile, it was a still a remarkable step forward in making software …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://patrickbrosset.com/assets/mixin-zen-garden.png" alt="The beauty of CSS mixins" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://patrickbrosset.com/articles/2026-11-25-the-beauty-of-css-mixins/">The beauty of CSS mixins</a></h3>
+    <p class="dateline"><span class="badge">L</span>      33 points · by carlana · patrickbrosset.com · <a class="discuss" href="https://lobste.rs/s/faqxns/beauty_css_mixins">discuss</a>
+    </p>
+<p class="lede">I&#39;ve been playing with CSS mixins recently, and I&#39;m super excited about what this new CSS construct will bring to the way we write CSS. I think the CSS we&#39;ll write when CSS mixins are available will look very different from the CSS we write today. In its simplest form, a mixin is a named piece of CSS code that you define once and can reuse elsewhere in a style sheet. In that sense, it&#39;s very similar to a custom property (also known as a CSS variable) or a CSS function. The big difference is what mixins can hold: So, instead of just returning the value red , a mixin can return background: red; color: white; border-radius: 2px; all at once. My team at Microsoft is implementing mixins in the Chromium open source project. They&#39;ve covered a lot of ground, and we&#39;re getting ready to ship this …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://lvignoli.eu/posts/2026-11-16-typed-indexes-in-zig/">Typed indexes in Zig</a></h3>
+    <p class="dateline"><span class="badge">L</span>      32 points · by lvig · lvignoli.eu · <a class="discuss" href="https://lobste.rs/s/l6g7j1/typed_indexes_zig">discuss</a>
+    </p>
+<p class="lede">The named integer or Newtype Index pattern prevents mixing up indexes on different arrays. The above examples were not particularly illuminating to me. Andrew’s example don’t show much of how to enforce the safety at call site: any caller could call @backingInt (it used to be @intFromEnum ) to recover a numerical index and pass it to the wrong array, or access array elements with a plain integer. And matklad’s one focus on building a tree data structure in a neat way, but that’s a totally different challenge that the introductory problem of mixing array indexes, so it was not a super convincing illustration for me. In practice, to make good use of the pattern, a getter helper is required as the conventional way of accessing elements of the array. It can be a method on the array type—or …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/">Show HN: I restored Palm&#39;s last device, and brought its OS to other platforms</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      32 points · by codepoet80 · webosarchive.org · <a class="discuss" href="https://news.ycombinator.com/item?id=50667452">discuss</a>
+    </p>
+<p class="lede">27 November 2026 · by Codepoet · Editorial In socializing recent innovations for the platform, I began to realize that there are people out there who don’t really know what webOS was . I guess I’ve lived with it so long that it never occurred to me that the rest of the world has moved on. While I had intended to write a post about the future for the platform, maybe a little primer on the past is in order – for the more casual explorer… Long before the iPhone, the Palm Pilot was the “it” gadget that everyone wanted to have. Palm’s own OS made these devices useful and responsive, but by 2004, both the company and its platform were in a tough place. Efforts began to re-imagine both, and a completely new “web OS” was created to be contemporary of the original iPhone. Under Apple alum Jon …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://idiotecon.substack.com/p/palliative-care-for-the-chronically">Palliative Care for the Chronically Online</a></h3>
+    <p class="dateline"><span class="badge">HN</span>      32 points · by paulpauper · idiotecon.substack.com · <a class="discuss" href="https://news.ycombinator.com/item?id=50669026">discuss</a>
+    </p>
+  </article>
+  <article class="story">
+<img class="thumb" src="https://sunshowers.io/images/ferris-heart.jpg" alt="In defense of lock poisoning in Rust (2025)" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://sunshowers.io/posts/on-poisoning/">In defense of lock poisoning in Rust (2025)</a></h3>
+    <p class="dateline"><span class="badge">L</span>      30 points · by m0th · sunshowers.io · <a class="discuss" href="https://lobste.rs/s/wpylec/defense_lock_poisoning_rust_2025">discuss</a>
+    </p>
+<p class="lede">There’s recently been some discussion about the benefits and downsides of lock (mutex) poisoning in Rust, spurred by a recent proposal to make the default mutex non-poisoned, i.e. silently unlock on panic (see also, recent discussion on Hacker News ). As a passionate defender of lock poisoning, I thought I’d gather and write about my thoughts on this matter. Rust, like most multithreaded languages, has mutexes : a construct to ensure that a particular piece of data can only be accessed by one thread at a time. The way mutexes work in Rust is particularly well-considered: This is all quite reasonable! Let’s look at an example that processes incoming messages for a set of tracked operations. Let’s assume that multiple threads could be processing messages, so we have to guard the internal …</p>  </article>
+  <article class="story">
+    <h3 class="headline"><a href="https://jackkelly.name/blog/archives/2026/11/26/make_the_plan_a_value">Make the Plan a Value</a></h3>
+    <p class="dateline"><span class="badge">L</span>      29 points · by jackdk · jackkelly.name · <a class="discuss" href="https://lobste.rs/s/9imhob/make_plan_value">discuss</a>
+    </p>
+<p class="lede">I recently finished adding support for idempotency tokens to amazonka (the unofficial Haskell AWS SDK), using the client token support provided by AWS . Implementing this required making some fairly substantial changes to the generator, the bespoke Haskell program that turns the service definitions in botocore into cabal packages. amazonka is over a decade old, and the generator has evolved as AWS have added new styles of APIs for their different services. Some services return XML, some return JSON, some return raw bytes, some return additional information in HTTP response headers, and so on. As a result, the generator’s logic had been extended each time and had grown gnarly. To untangle things, I resolved to make one of my favourite programming moves, “make the plan a value” or “decide …</p>  </article>
+  <article class="story">
+<img class="thumb" src="https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/6afdc01d62cd6e97b94540b6_Elastic%20IP%20adresses%20(1).jpg" alt="Taking over US Treasury subdomains for $3 each" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">    <h3 class="headline"><a href="https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each">Taking over US Treasury subdomains for $3 each</a></h3>
+    <p class="dateline"><span class="badge">L</span>      28 points · by sjamaan · intruder.io · <a class="discuss" href="https://lobste.rs/s/ogxwpi/taking_over_us_treasury_subdomains_for_3">discuss</a>
+    </p>
+<p class="lede">Elastic IP addresses (EIPs) in AWS are internet routable addresses available for use on cloud systems, by anyone. A common DNS mistake can leave them open for attackers to grab, which can lead to credential theft and worse. We demonstrated the attack is still possible in 2026, including finding real takeovers on US treasury domains, which were reported via a bug bounty program. The cost to us for doing this was just $3 per valid takeover - what a bargain! We only covered less than 1% of the total IP space, so there are many more out there for attackers to grab. So, now is the time to review your DNS records and get those dangling records squashed ASAP. As of the time of writing, the attack still works in practice, and though there are some controls to ban attackers abusing the system …</p>  </article>
+    </div>
+  </section>
+
+  <nav class="pagination" aria-label="Pages">
+<a class="pg-arrow" href="2026-11-27-p4.html">‹</a><a href="2026-11-27.html">1</a><a href="2026-11-27-p2.html">2</a><a href="2026-11-27-p3.html">3</a><a href="2026-11-27-p4.html">4</a><span class="pg-current">5</span>
+<a href="2026-11-27-p6.html">6</a><a href="2026-11-27-p7.html">7</a><a href="2026-11-27-p8.html">8</a><a href="2026-11-27-p9.html">9</a><a class="pg-arrow" href="2026-11-27-p6.html">›</a>  </nav>
+
+
+  <footer>
+    <p>Assembled automatically each day from <a href="https://news.ycombinator.com/">Hacker News</a> and <a href="https://lobste.rs/">lobste.rs</a>. Not affiliated with either.</p>
+    <p>131 stories · 6 cross-posts merged · 114 excerpts · 72 images</p>
+    <p><a href="https://github.com/JoaoCostaIFG/log-tail">Source code</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
